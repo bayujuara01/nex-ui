@@ -1,0 +1,47 @@
+{
+  "include": [
+    "./scripts",
+    "./@types",
+    "./packages/@nex-ui-tests/*/src",
+    // "./packages/@docs/*/src",
+    "./packages/@nex-ui/*/src",
+    // "./packages/@mantinex/*/src",
+    "./apps/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./packages/@nex-ui-tests/*/esm/**/*",
+    "./packages/@nex-ui-tests/*/cjs/**/*",
+    "./packages/@nex-ui-tests/*/lib/**/*",
+    // "./packages/@docs/*/esm/**/*",
+    // "./packages/@docs/*/cjs/**/*",
+    // "./packages/@docs/*/lib/**/*",
+    "./packages/@nex-ui/*/lib/**/*",
+    "./packages/@nex-ui/*/esm/**/*",
+    "./packages/@nex-ui/*/cjs/**/*",
+    // "./packages/@mantinex/*/esm/**/*",
+    // "./packages/@mantinex/*/cjs/**/*",
+    // "./packages/@mantinex/*/lib/**/*"
+  ],
+  "compilerOptions": {
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "target": "ES2015",
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "allowJs": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nex-ui/*": ["./packages/@nex-ui/*/src"],
+      // "@mantinex/*": ["./packages/@mantinex/*/src"],
+      "@nex-ui-tests/*": ["./packages/@nex-ui-tests/*/src"],
+      // "@docs/*": ["./packages/@docs/*/src"]
+    }
+  }
+}
