@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, MantineTheme } from '@mantine/core';
+import { DEFAULT_THEME, MantineTheme } from '@nex-ui/core';
 import { render } from '../render';
 
 interface Options<Props = any> {

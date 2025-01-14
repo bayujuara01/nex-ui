@@ -1,4 +1,4 @@
-import type { __BaseInputProps, __InputStylesNames } from '@mantine/core';
+import type { __BaseInputProps, __InputStylesNames } from '@nex-ui/core';
 
 export const inputDefaultProps: __BaseInputProps = {
   label: 'test-label',

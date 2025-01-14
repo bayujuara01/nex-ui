@@ -1,5 +1,5 @@
 import { act, RenderResult, render as testingLibraryRender } from '@testing-library/react';
-import { MantineProvider, MantineProviderProps, MantineThemeOverride } from '@mantine/core';
+import { MantineProvider, MantineProviderProps, MantineThemeOverride } from '@nex-ui/core';
 
 export function render(
   ui: React.ReactNode,
