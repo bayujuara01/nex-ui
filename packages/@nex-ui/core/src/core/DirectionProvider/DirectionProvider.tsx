@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from 'react';
-import { useIsomorphicEffect } from '@mantine/hooks';
+import { useIsomorphicEffect } from '@nex-ui/hooks';
 
 export type Direction = 'ltr' | 'rtl';
 

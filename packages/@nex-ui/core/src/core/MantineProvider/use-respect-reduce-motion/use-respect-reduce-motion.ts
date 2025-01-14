@@ -1,4 +1,4 @@
-import { useIsomorphicEffect } from '@mantine/hooks';
+import { useIsomorphicEffect } from '@nex-ui/hooks';
 
 interface UseRespectReduceMotionOptions {
   respectReducedMotion: boolean;

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { useIsomorphicEffect } from '@mantine/hooks';
+import { useIsomorphicEffect } from '@nex-ui/hooks';
 import type { MantineColorSchemeManager } from '../color-scheme-managers';
 import type { MantineColorScheme } from '../theme.types';
 

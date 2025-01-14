@@ -32,8 +32,8 @@ export function updateImports(filePath: string) {
 
   // Regular expression to find and replace the import statement
   const updatedContent = content.replace(
-    /(import\s+.*\s+from\s+['"])@mantine\/hooks(['"])/g,
-    '$1@nex-ui/hooks$2'
+    /(import\s+.*\s+from\s+['"])@mantine\/([^'"]+)(['"])/g,
+    '$1@nex-ui/$2$3'
   );
 
   if (content !== updatedContent) {

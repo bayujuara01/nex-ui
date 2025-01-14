@@ -1,4 +1,4 @@
-import { useMediaQuery, UseMediaQueryOptions } from '@mantine/hooks';
+import { useMediaQuery, UseMediaQueryOptions } from '@nex-ui/hooks';
 import { useMantineTheme } from '../MantineThemeProvider';
 import { MantineBreakpoint } from '../theme.types';
 

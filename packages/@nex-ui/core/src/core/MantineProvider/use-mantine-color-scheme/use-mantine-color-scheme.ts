@@ -1,5 +1,5 @@
 import { useCallback, useContext, useEffect, useRef } from 'react';
-import { useColorScheme } from '@mantine/hooks';
+import { useColorScheme } from '@nex-ui/hooks';
 import { noop } from '../../utils';
 import { MantineContext, useMantineStyleNonce } from '../Mantine.context';
 import { MantineColorScheme } from '../theme.types';
