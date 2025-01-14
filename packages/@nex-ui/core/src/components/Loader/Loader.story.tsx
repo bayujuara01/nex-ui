@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, MantineProvider } from '@nex-ui/core';
 import { defaultLoaders, Loader } from './Loader';
 import { MantineLoaderComponent } from './Loader.types';
 

@@ -43,4 +43,4 @@ export function updateImports(filePath: string) {
 }
 
 // Starting point
-export const componentsDir = './packages/@nex-ui';
+export const componentsDir = './packages';

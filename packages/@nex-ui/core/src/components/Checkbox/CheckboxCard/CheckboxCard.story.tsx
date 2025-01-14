@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 import { CheckboxGroup } from '../CheckboxGroup/CheckboxGroup';
 import { CheckboxIndicator } from '../CheckboxIndicator/CheckboxIndicator';
 import { CheckboxCard } from './CheckboxCard';

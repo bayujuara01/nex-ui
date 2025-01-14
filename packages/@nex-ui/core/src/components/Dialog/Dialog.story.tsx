@@ -1,4 +1,4 @@
-import { Button, Group, Text, TextInput } from '@mantine/core';
+import { Button, Group, Text, TextInput } from '@nex-ui/core';
 import { useDisclosure } from '@nex-ui/hooks';
 import { Dialog } from './Dialog';
 

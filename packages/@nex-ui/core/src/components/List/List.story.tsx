@@ -1,5 +1,5 @@
 import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
-import { ThemeIcon } from '@mantine/core';
+import { ThemeIcon } from '@nex-ui/core';
 import { List } from './List';
 
 export default { title: 'List' };
