@@ -36,6 +36,9 @@
     "type": "git",
     "directory": "packages/@nex-ui/hooks"
   },
+  "publishConfig": {
+    "registry": "http://127.0.0.1:5000"
+  },
   "peerDependencies": {
     "react": "^18.x || ^19.x"
   }
