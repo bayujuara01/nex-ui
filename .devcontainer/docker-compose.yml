@@ -1,0 +1,6 @@
+# your file should look like this
+services:
+  dev:
+    # other definitions
+    extra_hosts: 
+      - "host.docker.internal:host-gateway"

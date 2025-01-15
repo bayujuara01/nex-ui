@@ -5,7 +5,7 @@ import {
   useMergedRef,
   useMove,
   UseMovePosition,
-} from '@mantine/hooks';
+} from '@nex-ui/hooks';
 import {
   Box,
   BoxProps,
