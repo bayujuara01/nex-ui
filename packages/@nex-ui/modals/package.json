@@ -1,10 +1,10 @@
 {
-  "name": "@mantine/modals",
+  "name": "@nex-ui/modals",
   "version": "7.15.3",
-  "description": "Modals manager based on Mantine components",
-  "homepage": "https://mantine.dev/x/modals/",
+  "description": "Modals manager based on Nex UI components",
+  "homepage": "https://nex-ui.dev/x/modals/",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev@gmail.com>",
   "keywords": [
     "components",
     "confirm",
@@ -34,19 +34,19 @@
     }
   },
   "repository": {
-    "url": "https://github.com/mantinedev/mantine.git",
+    "url": "https://github.com/bayujuara01/nex-ui.git",
     "type": "git",
-    "directory": "packages/@mantine/modals"
+    "directory": "packages/@nex-ui/modals"
   },
   "peerDependencies": {
-    "@mantine/core": "7.15.3",
-    "@mantine/hooks": "7.15.3",
+    "@nex-ui/core": "~7.15.3",
+    "@nex-ui/hooks": "~7.15.3",
     "react": "^18.x || ^19.x",
     "react-dom": "^18.x || ^19.x"
   },
   "devDependencies": {
-    "@mantine/core": "workspace:*",
-    "@mantine/hooks": "workspace:*",
+    "@nex-ui/core": "workspace:*",
+    "@nex-ui/hooks": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }

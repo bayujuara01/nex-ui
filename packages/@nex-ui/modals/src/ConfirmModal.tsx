@@ -1,4 +1,4 @@
-import { Box, Button, ButtonProps, Group, GroupProps } from '@mantine/core';
+import { Box, Button, ButtonProps, Group, GroupProps } from '@nex-ui/core';
 import { ConfirmLabels } from './context';
 import { useModals } from './use-modals/use-modals';
 

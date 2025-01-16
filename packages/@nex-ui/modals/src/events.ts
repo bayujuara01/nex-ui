@@ -1,5 +1,5 @@
-import { createUseExternalEvents } from '@mantine/core';
-import { randomId } from '@mantine/hooks';
+import { createUseExternalEvents } from '@nex-ui/core';
+import { randomId } from '@nex-ui/hooks';
 import {
   MantineModal,
   MantineModals,

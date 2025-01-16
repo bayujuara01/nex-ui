@@ -1,6 +1,6 @@
 import { useCallback, useReducer, useRef } from 'react';
-import { getDefaultZIndex, Modal } from '@mantine/core';
-import { randomId } from '@mantine/hooks';
+import { getDefaultZIndex, Modal } from '@nex-ui/core';
+import { randomId } from '@nex-ui/hooks';
 import { ConfirmModal } from './ConfirmModal';
 import {
   ConfirmLabels,

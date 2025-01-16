@@ -3788,6 +3788,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nex-ui/modals@workspace:packages/@nex-ui/modals":
+  version: 0.0.0-use.local
+  resolution: "@nex-ui/modals@workspace:packages/@nex-ui/modals"
+  dependencies:
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/hooks": "workspace:*"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+  peerDependencies:
+    "@nex-ui/core": ~7.15.3
+    "@nex-ui/hooks": ~7.15.3
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
 "@nex-ui/notifications@workspace:packages/@nex-ui/notifications":
   version: 0.0.0-use.local
   resolution: "@nex-ui/notifications@workspace:packages/@nex-ui/notifications"
