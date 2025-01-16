@@ -1,4 +1,4 @@
-import { render, screen, tests } from '@mantine-tests/core';
+import { render, screen, tests } from '@nex-ui-tests/core';
 import { Fieldset, FieldsetProps, FieldsetStylesNames } from './Fieldset';
 
 const defaultProps: FieldsetProps = {

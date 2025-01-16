@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { SliderStylesNames } from '../Slider.context';
 import { RangeSlider, RangeSliderProps } from './RangeSlider';
 

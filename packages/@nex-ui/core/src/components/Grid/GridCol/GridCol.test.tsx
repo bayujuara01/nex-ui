@@ -1,4 +1,4 @@
-import { createContextContainer, tests } from '@mantine-tests/core';
+import { createContextContainer, tests } from '@nex-ui-tests/core';
 import { Grid } from '../Grid';
 import { GridCol, GridColProps, GridColStylesNames } from './GridCol';
 

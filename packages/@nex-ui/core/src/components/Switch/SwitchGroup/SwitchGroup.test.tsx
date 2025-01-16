@@ -1,4 +1,4 @@
-import { render, screen, tests, userEvent } from '@mantine-tests/core';
+import { render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { Switch } from '../Switch';
 import { SwitchGroup, SwitchGroupProps, SwitchGroupStylesNames } from './SwitchGroup';
 

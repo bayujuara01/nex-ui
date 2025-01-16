@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { Stack, StackProps, StackStylesNames } from './Stack';
 
 const defaultProps: StackProps = {};

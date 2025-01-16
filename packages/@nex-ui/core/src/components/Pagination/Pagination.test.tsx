@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Pagination, PaginationProps, PaginationStylesNames } from './Pagination';
 
 const defaultProps: PaginationProps = {

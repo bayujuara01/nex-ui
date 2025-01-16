@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Button, ButtonProps, ButtonStylesNames } from './Button';
 import { ButtonGroup } from './ButtonGroup/ButtonGroup';
 

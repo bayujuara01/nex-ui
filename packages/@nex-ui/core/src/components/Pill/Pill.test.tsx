@@ -1,4 +1,4 @@
-import { render, tests, userEvent } from '@mantine-tests/core';
+import { render, tests, userEvent } from '@nex-ui-tests/core';
 import { Pill, PillProps, PillStylesNames } from './Pill';
 
 const defaultProps: PillProps = {

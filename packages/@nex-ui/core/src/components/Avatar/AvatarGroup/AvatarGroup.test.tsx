@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { AvatarGroup, AvatarGroupProps, AvatarGroupStylesNames } from './AvatarGroup';
 
 const defaultProps: AvatarGroupProps = {};

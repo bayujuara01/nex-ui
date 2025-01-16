@@ -1,4 +1,4 @@
-import { render, screen, tests } from '@mantine-tests/core';
+import { render, screen, tests } from '@nex-ui-tests/core';
 import { CheckboxCard, CheckboxCardProps, CheckboxCardStylesNames } from './CheckboxCard';
 
 const defaultProps: CheckboxCardProps = {};

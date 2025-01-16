@@ -1,16 +1,16 @@
 import { act, RenderResult, render as testingLibraryRender } from '@testing-library/react';
-import { MantineProvider, MantineProviderProps, MantineThemeOverride } from '@nex-ui/core';
+import { NexProvider, NexProviderProps, MantineThemeOverride } from '@nex-ui/core';
 
 export function render(
   ui: React.ReactNode,
   themeOverride?: MantineThemeOverride,
-  providerProps?: Omit<MantineProviderProps, 'theme'>
+  providerProps?: Omit<NexProviderProps, 'theme'>
 ) {
   return testingLibraryRender(<>{ui}</>, {
     wrapper: ({ children }: { children: React.ReactNode }) => (
-      <MantineProvider theme={themeOverride} {...providerProps}>
+      <NexProvider theme={themeOverride} {...providerProps}>
         {children}
-      </MantineProvider>
+      </NexProvider>
     ),
   });
 }

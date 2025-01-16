@@ -1,4 +1,4 @@
-import { createContextContainer, tests } from '@mantine-tests/core';
+import { createContextContainer, tests } from '@nex-ui-tests/core';
 import { AppShell } from '../AppShell';
 import { AppShellMain, AppShellMainProps, AppShellMainStylesNames } from './AppShellMain';
 

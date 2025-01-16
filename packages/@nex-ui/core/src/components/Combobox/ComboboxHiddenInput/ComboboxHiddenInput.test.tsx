@@ -1,4 +1,4 @@
-import { render } from '@mantine-tests/core';
+import { render } from '@nex-ui-tests/core';
 import { ComboboxHiddenInput } from './ComboboxHiddenInput';
 
 describe('@mantine/core/ComboboxHiddenInput', () => {

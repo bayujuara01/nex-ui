@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Card, CardProps, CardStylesNames } from './Card';
 import { CardSection } from './CardSection/CardSection';
 

@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Skeleton, SkeletonProps, SkeletonStylesNames } from './Skeleton';
 
 const defaultProps: SkeletonProps = {};

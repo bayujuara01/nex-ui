@@ -1,4 +1,4 @@
-import { createContextContainer, render, tests } from '@mantine-tests/core';
+import { createContextContainer, render, tests } from '@nex-ui-tests/core';
 import { Combobox } from '../Combobox';
 import {
   ComboboxDropdown,

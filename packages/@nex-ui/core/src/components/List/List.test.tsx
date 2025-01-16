@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { List, ListProps, ListStylesNames } from './List';
 import { ListItem } from './ListItem/ListItem';
 

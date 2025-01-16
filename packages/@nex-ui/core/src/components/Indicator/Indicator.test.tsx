@@ -1,4 +1,4 @@
-import { render, screen, tests } from '@mantine-tests/core';
+import { render, screen, tests } from '@nex-ui-tests/core';
 import { Indicator, IndicatorProps, IndicatorStylesNames } from './Indicator';
 
 const defaultProps: IndicatorProps = {};

@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Text, TextProps, TextStylesNames } from './Text';
 
 const defaultProps: TextProps = {};

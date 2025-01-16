@@ -1,5 +1,5 @@
 import { createRef } from 'react';
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Radio, RadioProps, RadioStylesNames } from './Radio';
 import { RadioGroup } from './RadioGroup/RadioGroup';
 

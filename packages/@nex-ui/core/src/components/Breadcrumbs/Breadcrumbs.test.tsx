@@ -1,4 +1,4 @@
-import { render, screen, tests } from '@mantine-tests/core';
+import { render, screen, tests } from '@nex-ui-tests/core';
 import { Breadcrumbs, BreadcrumbsProps, BreadcrumbsStylesNames } from './Breadcrumbs';
 
 const defaultProps: BreadcrumbsProps = {

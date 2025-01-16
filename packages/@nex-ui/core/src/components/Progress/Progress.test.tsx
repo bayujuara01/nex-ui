@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { Progress, ProgressProps, ProgressStylesNames } from './Progress';
 import { ProgressLabel } from './ProgressLabel/ProgressLabel';
 import { ProgressRoot } from './ProgressRoot/ProgressRoot';

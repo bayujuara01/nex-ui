@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { ActionIcon, ActionIconProps, ActionIconStylesNames } from './ActionIcon';
 import { ActionIconGroup } from './ActionIconGroup/ActionIconGroup';
 

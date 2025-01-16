@@ -1,5 +1,5 @@
 import { createRef } from 'react';
-import { render, screen, tests } from '@mantine-tests/core';
+import { render, screen, tests } from '@nex-ui-tests/core';
 import { Checkbox, CheckboxProps, CheckboxStylesNames } from './Checkbox';
 
 const defaultProps: CheckboxProps = {

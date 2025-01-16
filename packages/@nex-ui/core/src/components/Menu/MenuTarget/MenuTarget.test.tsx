@@ -1,4 +1,4 @@
-import { createContextContainer, patchConsoleError, render, tests } from '@mantine-tests/core';
+import { createContextContainer, patchConsoleError, render, tests } from '@nex-ui-tests/core';
 import { Menu } from '../Menu';
 import { MenuTarget, MenuTargetProps } from './MenuTarget';
 

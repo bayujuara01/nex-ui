@@ -1,4 +1,4 @@
-import { createContextContainer, render, screen, tests, userEvent } from '@mantine-tests/core';
+import { createContextContainer, render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { Combobox } from '../Combobox';
 import { ComboboxOption, ComboboxOptionProps, ComboboxOptionStylesNames } from './ComboboxOption';
 

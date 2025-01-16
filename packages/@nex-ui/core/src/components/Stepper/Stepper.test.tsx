@@ -1,4 +1,4 @@
-import { render, screen, tests, userEvent } from '@mantine-tests/core';
+import { render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { Stepper, StepperProps, StepperStylesNames } from './Stepper';
 import { StepperCompleted } from './StepperCompleted/StepperCompleted';
 import { StepperStep } from './StepperStep/StepperStep';

@@ -1,4 +1,4 @@
-import { render, tests, userEvent } from '@mantine-tests/core';
+import { render, tests, userEvent } from '@nex-ui-tests/core';
 import { ColorPicker, ColorPickerProps, ColorPickerStylesNames } from './ColorPicker';
 
 const defaultProps: ColorPickerProps = {

@@ -5,7 +5,7 @@ import { createLogger } from '../utils/signale';
 export const logger = createLogger('transform-file');
 
 // Function to recursively traverse directories
-export function traverseDirectory(dir: string, callback: (filePath: string) => void) {
+export function traverseDirectory(dir: string, callbacks: ((filePath: string) => void)[]) {
   logger.log(`Directory : ${dir}`)
   const files = fs.readdirSync(dir);
   logger.log(files)
@@ -14,9 +14,9 @@ export function traverseDirectory(dir: string, callback: (filePath: string) => v
     const stats = fs.statSync(filePath);
 
     if (stats.isDirectory()) {
-      traverseDirectory(filePath, callback);
+      traverseDirectory(filePath, callbacks);
     } else if (stats.isFile()) {
-      callback(filePath);
+      callbacks.forEach((callback) => callback(filePath));
     }
   });
 }
@@ -39,6 +39,27 @@ export function updateImports(filePath: string) {
   if (content !== updatedContent) {
     fs.writeFileSync(filePath, updatedContent, 'utf8');
     logger.log(`Updated imports in: ${filePath}`);
+  }
+}
+
+export function updateImportTest(filePath: string) {
+  const fileExtensions = ['.test.ts', '.test.tsx'];
+
+  if (!fileExtensions.some(extension => filePath.endsWith(extension))) {
+    return;
+  }
+
+  const content = fs.readFileSync(filePath, 'utf8');
+
+  // Regular expression to find and replace the import statement
+  const updatedContent = content.replace(
+    /(import\s+.*\s+from\s+['"])@mantine-tests\/([^'"]+)(['"])/g,
+    '$1@nex-ui-tests/$2$3'
+  );
+
+  if (content !== updatedContent) {
+    fs.writeFileSync(filePath, updatedContent, 'utf8');
+    logger.log(`Updated test imports in: ${filePath}`);
   }
 }
 

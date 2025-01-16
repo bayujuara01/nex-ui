@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, MantineTheme } from '@nex-ui/core';
+import { DEFAULT_THEME, NexTheme } from '@nex-ui/core';
 import { render } from '../render';
 
 interface Options<Props = any> {
@@ -22,7 +22,7 @@ export function itSupportsStyle<Props>(options: Options<Props>, name = 'supports
     const { container } = render(
       <options.component
         {...options.props}
-        style={(theme: MantineTheme) => ({ color: theme.colors.pink[4] })}
+        style={(theme: NexTheme) => ({ color: theme.colors.pink[4] })}
       />
     );
 
@@ -50,8 +50,8 @@ export function itSupportsStyle<Props>(options: Options<Props>, name = 'supports
       <options.component
         {...options.props}
         style={[
-          (theme: MantineTheme) => ({ color: theme.colors.pink[4] }),
-          (theme: MantineTheme) => ({ background: theme.colors.orange[9] }),
+          (theme: NexTheme) => ({ color: theme.colors.pink[4] }),
+          (theme: NexTheme) => ({ background: theme.colors.orange[9] }),
         ]}
       />
     );

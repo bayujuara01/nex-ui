@@ -1,4 +1,4 @@
-import { patchConsoleError, render, screen, tests, userEvent } from '@mantine-tests/core';
+import { patchConsoleError, render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { Tooltip, TooltipProps } from './Tooltip';
 import { TooltipStylesNames } from './Tooltip.types';
 import { TooltipFloating } from './TooltipFloating/TooltipFloating';
