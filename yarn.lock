@@ -3788,6 +3788,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nex-ui/notifications@workspace:packages/@nex-ui/notifications":
+  version: 0.0.0-use.local
+  resolution: "@nex-ui/notifications@workspace:packages/@nex-ui/notifications"
+  dependencies:
+    "@nex-ui-tests/core": "workspace:*"
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/hooks": "workspace:*"
+    "@nex-ui/store": "workspace:*"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    react-transition-group: "npm:4.4.5"
+  peerDependencies:
+    "@nex-ui/core": ~7.15.3
+    "@nex-ui/hooks": ~7.15.3
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
+"@nex-ui/store@workspace:*, @nex-ui/store@workspace:packages/@nex-ui/store":
+  version: 0.0.0-use.local
+  resolution: "@nex-ui/store@workspace:packages/@nex-ui/store"
+  peerDependencies:
+    react: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
 "@next/env@npm:14.2.12":
   version: 14.2.12
   resolution: "@next/env@npm:14.2.12"
