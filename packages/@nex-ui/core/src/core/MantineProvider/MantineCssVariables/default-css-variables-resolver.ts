@@ -1,11 +1,11 @@
 import { keys, rem } from '../../utils';
 import { getPrimaryContrastColor, getPrimaryShade } from '../color-functions';
 import { ConvertCSSVariablesInput } from '../convert-css-variables';
-import { MantineTheme } from '../theme.types';
+import { NexTheme } from '../theme.types';
 import { getCSSColorVariables } from './get-css-color-variables';
 import { isVirtualColor } from './virtual-color/virtual-color';
 
-export type CSSVariablesResolver = (theme: MantineTheme) => ConvertCSSVariablesInput;
+export type CSSVariablesResolver = (theme: NexTheme) => ConvertCSSVariablesInput;
 
 function assignSizeVariables(
   variables: Record<string, string>,

@@ -5,7 +5,7 @@ import {
   Factory,
   factory,
   getStyleObject,
-  useMantineTheme,
+  useNexTheme,
   useProps,
 } from '../../core';
 import { useCollapse } from './use-collapse';
@@ -52,7 +52,7 @@ export const Collapse = factory<CollapseFactory>((props, ref) => {
     ...others
   } = useProps('Collapse', defaultProps, props);
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const shouldReduceMotion = useReducedMotion();
   const reduceMotion = theme.respectReducedMotion ? shouldReduceMotion : false;
   const duration = reduceMotion ? 0 : transitionDuration;

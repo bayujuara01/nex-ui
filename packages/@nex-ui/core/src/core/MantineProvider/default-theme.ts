@@ -1,12 +1,12 @@
 import { rem } from '../utils';
 import { defaultVariantColorsResolver } from './color-functions';
 import { DEFAULT_COLORS } from './default-colors';
-import type { MantineTheme } from './theme.types';
+import type { NexTheme } from './theme.types';
 
 const DEFAULT_FONT_FAMILY =
   '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji';
 
-export const DEFAULT_THEME: MantineTheme = {
+export const DEFAULT_THEME: NexTheme = {
   scale: 1,
   fontSmoothing: true,
   focusRing: 'auto',

@@ -1,6 +1,6 @@
 import type { CSSProperties, MantineStyleProp } from '../Box';
 import type { FactoryPayload } from '../factory';
-import type { MantineTheme } from '../MantineProvider';
+import type { NexTheme } from '../MantineProvider';
 import { PartialVarsResolver } from './create-vars-resolver/create-vars-resolver';
 
 export interface GetStylesApiOptions {
@@ -26,7 +26,7 @@ export type StylesApiRecord<
     ?
         | StylesRecord<Payload['stylesNames'], DataType>
         | ((
-            theme: MantineTheme,
+            theme: NexTheme,
             props: Payload['props'],
             ctx: Payload['ctx']
           ) => StylesRecord<Payload['stylesNames'], DataType>)

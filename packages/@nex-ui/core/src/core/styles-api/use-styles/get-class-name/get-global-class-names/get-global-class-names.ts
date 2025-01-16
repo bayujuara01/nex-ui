@@ -1,9 +1,9 @@
 import cx from 'clsx';
-import { MantineTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../MantineProvider';
 import { GetStylesApiOptions } from '../../../styles-api.types';
 
 interface GetGlobalClassNamesOptions {
-  theme: MantineTheme;
+  theme: NexTheme;
   unstyled: boolean | undefined;
   options: GetStylesApiOptions | undefined;
 }

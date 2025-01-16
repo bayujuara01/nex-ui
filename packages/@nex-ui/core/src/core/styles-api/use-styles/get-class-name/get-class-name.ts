@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { MantineTheme } from '../../../MantineProvider';
+import { NexTheme } from '../../../MantineProvider';
 import { GetStylesApiOptions } from '../../styles-api.types';
 import { getGlobalClassNames } from './get-global-class-names/get-global-class-names';
 import { getOptionsClassNames } from './get-options-class-names/get-options-class-names';
@@ -14,7 +14,7 @@ type __ClassNames =
   | undefined
   | Partial<Record<string, string>>
   | ((
-      theme: MantineTheme,
+      theme: NexTheme,
       props: Record<string, any>,
       ctx: Record<string, any> | undefined
     ) => Partial<Record<string, string>>);
@@ -23,7 +23,7 @@ export type _ClassNames = __ClassNames | __ClassNames[];
 
 export interface GetClassNameOptions {
   /** Theme object, resolved by hook */
-  theme: MantineTheme;
+  theme: NexTheme;
 
   /** Options for specified selector, may include `classNames` or `className` */
   options: GetStylesApiOptions | undefined;

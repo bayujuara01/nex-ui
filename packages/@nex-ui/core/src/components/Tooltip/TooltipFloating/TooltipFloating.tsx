@@ -11,7 +11,7 @@ import {
   getStyleObject,
   getThemeColor,
   isElement,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useStyles,
 } from '../../../core';
@@ -77,7 +77,7 @@ export const TooltipFloating = factory<TooltipFloatingFactory>((_props, ref) => 
     ...others
   } = props;
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const getStyles = useStyles<TooltipFloatingFactory>({
     name: 'TooltipFloating',
     props,

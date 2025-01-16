@@ -15,7 +15,7 @@ import {
   MantineSize,
   rem,
   StylesApiProps,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useStyles,
 } from '../../../core';
@@ -93,7 +93,7 @@ export const ColorSlider = factory<ColorSliderFactory>((_props, ref) => {
   const ctxGetStyles = useColorPickerContext()?.getStyles;
   const getStyles = ctxGetStyles || _getStyles;
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const [position, setPosition] = useState({ y: 0, x: value / maxValue });
   const positionRef = useRef(position);
   const getChangeValue = (val: number) => (round ? Math.round(val * maxValue) : val * maxValue);

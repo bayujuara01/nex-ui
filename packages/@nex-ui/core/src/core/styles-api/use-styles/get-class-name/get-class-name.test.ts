@@ -1,8 +1,8 @@
-import { DEFAULT_THEME, MantineTheme } from '../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../MantineProvider';
 import { getClassName, GetClassNameOptions } from './get-class-name';
 import { FOCUS_CLASS_NAMES } from './get-global-class-names/get-global-class-names';
 
-const THEME_WITH_CLASSNAMES: MantineTheme = {
+const THEME_WITH_CLASSNAMES: NexTheme = {
   ...DEFAULT_THEME,
   components: {
     TestComponentObject: {

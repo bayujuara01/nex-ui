@@ -1,6 +1,6 @@
 import { convertCssVariables } from '../convert-css-variables/convert-css-variables';
-import { useMantineCssVariablesResolver, useMantineStyleNonce } from '../Mantine.context';
-import { useMantineTheme } from '../MantineThemeProvider';
+import { useMantineCssVariablesResolver, useMantineStyleNonce } from '../Nex.context';
+import { useNexTheme } from '../NexThemeProvider';
 import { getMergedVariables } from './get-merged-variables';
 import { removeDefaultVariables } from './remove-default-variables';
 
@@ -20,7 +20,7 @@ export function MantineCssVariables({
   cssVariablesSelector,
   deduplicateCssVariables,
 }: MantineCssVariablesProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const nonce = useMantineStyleNonce();
   const generator = useMantineCssVariablesResolver();
   const mergedVariables = getMergedVariables({ theme, generator });

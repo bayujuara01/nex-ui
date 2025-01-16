@@ -1,6 +1,6 @@
 import {
   MantineColor,
-  MantineTheme,
+  NexTheme,
   polymorphicFactory,
   PolymorphicFactory,
   useProps,
@@ -17,7 +17,7 @@ export interface HighlightProps extends Omit<TextProps, 'color'> {
   color?: MantineColor | string;
 
   /** Styles applied to `mark` elements */
-  highlightStyles?: React.CSSProperties | ((theme: MantineTheme) => React.CSSProperties);
+  highlightStyles?: React.CSSProperties | ((theme: NexTheme) => React.CSSProperties);
 
   /** String parts of which must be highlighted */
   children: string;

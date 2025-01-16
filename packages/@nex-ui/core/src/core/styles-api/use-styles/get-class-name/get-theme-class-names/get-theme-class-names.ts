@@ -1,8 +1,8 @@
-import { MantineTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../MantineProvider';
 import { resolveClassNames } from '../resolve-class-names/resolve-class-names';
 
 interface GetThemeClassNamesOptions {
-  theme: MantineTheme;
+  theme: NexTheme;
   themeName: string[];
   selector: string;
   props: Record<string, any>;

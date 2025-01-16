@@ -1,10 +1,10 @@
 import { renderHook } from '@testing-library/react';
-import { MantineProvider } from '../MantineProvider';
+import { NexProvider } from '../NexProvider';
 import { useProps } from './use-props';
 
 function Wrapper({ children }: { children: React.ReactNode }) {
   return (
-    <MantineProvider
+    <NexProvider
       theme={{
         components: {
           TestComponent: {
@@ -16,7 +16,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
       }}
     >
       {children}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 
@@ -44,7 +44,7 @@ describe('@mantine/core/use-component-default-props', () => {
           { test: 'component-prop' },
           { test: 'direct-prop' }
         ),
-      { wrapper: MantineProvider }
+      { wrapper: NexProvider }
     );
     expect(result.current.test).toBe('direct-prop');
   });

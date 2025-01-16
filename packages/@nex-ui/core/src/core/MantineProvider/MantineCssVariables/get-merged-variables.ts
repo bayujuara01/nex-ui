@@ -1,11 +1,11 @@
 import { deepMerge } from '../../utils';
 import { ConvertCSSVariablesInput } from '../convert-css-variables';
-import { MantineTheme } from '../theme.types';
+import { NexTheme } from '../theme.types';
 import { defaultCssVariablesResolver } from './default-css-variables-resolver';
 
 interface GetMergedVariablesInput {
-  theme: MantineTheme;
-  generator?: (theme: MantineTheme) => ConvertCSSVariablesInput;
+  theme: NexTheme;
+  generator?: (theme: NexTheme) => ConvertCSSVariablesInput;
 }
 
 export function getMergedVariables({ theme, generator }: GetMergedVariablesInput) {

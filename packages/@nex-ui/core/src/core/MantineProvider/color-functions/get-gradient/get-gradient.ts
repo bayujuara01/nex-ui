@@ -1,7 +1,7 @@
-import { MantineGradient, MantineTheme } from '../../theme.types';
+import { MantineGradient, NexTheme } from '../../theme.types';
 import { getThemeColor } from '../get-theme-color/get-theme-color';
 
-export function getGradient(gradient: MantineGradient | undefined, theme: MantineTheme) {
+export function getGradient(gradient: MantineGradient | undefined, theme: NexTheme) {
   const merged = {
     from: gradient?.from || theme.defaultGradient.from,
     to: gradient?.to || theme.defaultGradient.to,

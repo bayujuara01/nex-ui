@@ -4,7 +4,7 @@ import {
   getSortedBreakpoints,
   InlineStyles,
   keys,
-  useMantineTheme,
+  useNexTheme,
 } from '../../../core';
 import { GridBreakpoints, useGridContext } from '../Grid.context';
 import type { ColSpan, GridColProps } from './GridCol';
@@ -56,7 +56,7 @@ const getColumnOffset = (offset: number | undefined, columns: number) =>
   offset === 0 ? '0' : offset ? `${100 / (columns / offset)}%` : undefined;
 
 export function GridColVariables({ span, order, offset, selector }: GridColVariablesProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const ctx = useGridContext();
   const _breakpoints = ctx.breakpoints || theme.breakpoints;
 

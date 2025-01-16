@@ -1,5 +1,5 @@
 import { deepMerge } from '../../utils';
-import type { MantineTheme, MantineThemeOverride } from '../theme.types';
+import type { NexTheme, MantineThemeOverride } from '../theme.types';
 
 export const INVALID_PRIMARY_COLOR_ERROR =
   '[@mantine/core] MantineProvider: Invalid theme.primaryColor, it accepts only key of theme.colors, learn more – https://mantine.dev/theming/colors/#primary-color';
@@ -15,7 +15,7 @@ function isValidPrimaryShade(shade: number) {
   return parseInt(shade.toString(), 10) === shade;
 }
 
-export function validateMantineTheme(theme: MantineTheme): asserts theme is MantineTheme {
+export function validateMantineTheme(theme: NexTheme): asserts theme is NexTheme {
   if (!(theme.primaryColor in theme.colors)) {
     throw new Error(INVALID_PRIMARY_COLOR_ERROR);
   }
@@ -35,7 +35,7 @@ export function validateMantineTheme(theme: MantineTheme): asserts theme is Mant
 }
 
 export function mergeMantineTheme(
-  currentTheme: MantineTheme,
+  currentTheme: NexTheme,
   themeOverride?: MantineThemeOverride
 ) {
   if (!themeOverride) {

@@ -1,9 +1,9 @@
-import { MantineTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../MantineProvider';
 import { rem } from '../../../../utils';
 
 const headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
 
-export function fontSizeResolver(value: unknown, theme: MantineTheme) {
+export function fontSizeResolver(value: unknown, theme: NexTheme) {
   if (typeof value === 'string' && value in theme.fontSizes) {
     return `var(--mantine-font-size-${value})`;
   }

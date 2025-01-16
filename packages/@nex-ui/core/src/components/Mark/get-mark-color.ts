@@ -1,8 +1,8 @@
-import { MantineColor, MantineTheme, parseThemeColor } from '../../core';
+import { MantineColor, NexTheme, parseThemeColor } from '../../core';
 
 interface GetMarkColorInput {
   color: MantineColor | string | undefined;
-  theme: MantineTheme;
+  theme: NexTheme;
   defaultShade: number;
 }
 

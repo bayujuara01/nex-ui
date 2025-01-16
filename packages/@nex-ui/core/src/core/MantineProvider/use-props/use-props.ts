@@ -1,5 +1,5 @@
 import { filterProps } from '../../utils';
-import { useMantineTheme } from '../MantineThemeProvider';
+import { useNexTheme } from '../NexThemeProvider';
 
 export function useProps<T extends Record<string, any>, U extends Partial<T> = {}>(
   component: string,
@@ -8,7 +8,7 @@ export function useProps<T extends Record<string, any>, U extends Partial<T> = {
 ): T & {
   [Key in Extract<keyof T, keyof U>]-?: U[Key] | NonNullable<T[Key]>;
 } {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const contextPropsPayload = theme.components[component]?.defaultProps;
   const contextProps =
     typeof contextPropsPayload === 'function' ? contextPropsPayload(theme) : contextPropsPayload;

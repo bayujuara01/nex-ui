@@ -1,7 +1,7 @@
 import type { PartialDeep } from 'type-fest';
 import type { VariantColorsResolver } from './color-functions';
 
-export interface MantineTheme {
+export interface NexTheme {
   /** Controls focus ring styles. Supports the following options:
    *  - `auto` – focus ring is displayed only when the user navigates with keyboard (default value)
    *  - `always` – focus ring is displayed when the user navigates with keyboard and mouse
@@ -134,7 +134,7 @@ export interface MantineTheme {
 
 export type MantineColorScheme = 'light' | 'dark' | 'auto';
 
-export type MantineThemeOverride = PartialDeep<MantineTheme>;
+export type MantineThemeOverride = PartialDeep<NexTheme>;
 
 export type MantineStylesRecord = Record<string, React.CSSProperties>;
 

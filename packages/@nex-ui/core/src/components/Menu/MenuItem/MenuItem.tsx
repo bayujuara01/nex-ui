@@ -10,7 +10,7 @@ import {
   polymorphicFactory,
   PolymorphicFactory,
   useDirection,
-  useMantineTheme,
+  useNexTheme,
   useProps,
 } from '../../../core';
 import { UnstyledButton } from '../../UnstyledButton';
@@ -66,7 +66,7 @@ export const MenuItem = polymorphicFactory<MenuItemFactory>((props, ref) => {
   } = useProps('MenuItem', defaultProps, props);
 
   const ctx = useMenuContext();
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const { dir } = useDirection();
   const itemRef = useRef<HTMLButtonElement>(null);
   const itemIndex = ctx.getItemIndex(itemRef.current!);

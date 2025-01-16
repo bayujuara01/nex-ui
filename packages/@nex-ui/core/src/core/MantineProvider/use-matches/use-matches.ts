@@ -1,5 +1,5 @@
 import { useMediaQuery, UseMediaQueryOptions } from '@nex-ui/hooks';
-import { useMantineTheme } from '../MantineThemeProvider';
+import { useNexTheme } from '../NexThemeProvider';
 import { MantineBreakpoint } from '../theme.types';
 
 type UseMatchesInput<T> = Partial<Record<MantineBreakpoint, T>>;
@@ -31,7 +31,7 @@ function getFirstMatchingBreakpoint(matches: (boolean | undefined)[]) {
 }
 
 export function useMatches<T>(payload: UseMatchesInput<T>, options?: UseMediaQueryOptions) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const xsMatches = useMediaQuery(`(min-width: ${theme.breakpoints.xs})`, false, options);
   const smMatches = useMediaQuery(`(min-width: ${theme.breakpoints.sm})`, false, options);
   const mdMatches = useMediaQuery(`(min-width: ${theme.breakpoints.md})`, false, options);

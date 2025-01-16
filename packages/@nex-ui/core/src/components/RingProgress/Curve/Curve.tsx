@@ -1,4 +1,4 @@
-import { Box, GetStylesApi, getThemeColor, MantineColor, useMantineTheme } from '../../../core';
+import { Box, GetStylesApi, getThemeColor, MantineColor, useNexTheme } from '../../../core';
 import { Tooltip } from '../../Tooltip';
 import type { RingProgressFactory } from '../RingProgress';
 import { getCurveProps } from './get-curve-props';
@@ -30,7 +30,7 @@ export function Curve({
   display,
   ...others
 }: CurveProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   return (
     <Tooltip.Floating disabled={!tooltip} label={tooltip}>

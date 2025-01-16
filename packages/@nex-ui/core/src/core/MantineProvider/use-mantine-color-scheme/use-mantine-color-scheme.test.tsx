@@ -1,9 +1,9 @@
 import { renderHook } from '@testing-library/react';
-import { MantineProvider } from '../MantineProvider';
+import { NexProvider } from '../NexProvider';
 import { useMantineColorScheme } from './use-mantine-color-scheme';
 
 function Wrapper({ children }: { children: React.ReactNode }) {
-  return <MantineProvider defaultColorScheme="dark">{children}</MantineProvider>;
+  return <NexProvider defaultColorScheme="dark">{children}</NexProvider>;
 }
 
 describe('@mantine/core/MantineProvider/use-mantine-color-scheme', () => {
@@ -14,7 +14,7 @@ describe('@mantine/core/MantineProvider/use-mantine-color-scheme', () => {
 
   describe('with default values', () => {
     function DefaultWrapper({ children }: { children: React.ReactNode }) {
-      return <MantineProvider>{children}</MantineProvider>;
+      return <NexProvider>{children}</NexProvider>;
     }
 
     it('returns the correct color schema based on prefers-color-scheme', () => {

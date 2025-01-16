@@ -1,10 +1,10 @@
 import './global.css';
 
 import { localStorageColorSchemeManager, MantineColorSchemeManager } from './color-scheme-managers';
-import { MantineContext, MantineStylesTransform } from './Mantine.context';
+import { NexContext, MantineStylesTransform } from './Nex.context';
 import { MantineClasses } from './MantineClasses';
 import { CSSVariablesResolver, MantineCssVariables } from './MantineCssVariables';
-import { MantineThemeProvider } from './MantineThemeProvider';
+import { NexThemeProvider } from './NexThemeProvider';
 import { suppressNextjsWarning } from './suppress-nextjs-warning';
 import type { MantineColorScheme, MantineThemeOverride } from './theme.types';
 import { useProviderColorScheme } from './use-mantine-color-scheme';
@@ -12,7 +12,7 @@ import { useRespectReduceMotion } from './use-respect-reduce-motion';
 
 suppressNextjsWarning();
 
-export interface MantineProviderProps {
+export interface NexProviderProps {
   /** Theme override object */
   theme?: MantineThemeOverride;
 
@@ -59,7 +59,7 @@ export interface MantineProviderProps {
   children?: React.ReactNode;
 }
 
-export function MantineProvider({
+export function NexProvider({
   theme,
   children,
   getStyleNonce,
@@ -75,7 +75,7 @@ export function MantineProvider({
   cssVariablesResolver,
   forceColorScheme,
   stylesTransform,
-}: MantineProviderProps) {
+}: NexProviderProps) {
   const { colorScheme, setColorScheme, clearColorScheme } = useProviderColorScheme({
     defaultColorScheme,
     forceColorScheme,
@@ -89,7 +89,7 @@ export function MantineProvider({
   });
 
   return (
-    <MantineContext.Provider
+    <NexContext.Provider
       value={{
         colorScheme,
         setColorScheme,
@@ -103,7 +103,7 @@ export function MantineProvider({
         stylesTransform,
       }}
     >
-      <MantineThemeProvider theme={theme}>
+      <NexThemeProvider theme={theme}>
         {withCssVariables && (
           <MantineCssVariables
             cssVariablesSelector={cssVariablesSelector}
@@ -112,12 +112,12 @@ export function MantineProvider({
         )}
         {withGlobalClasses && <MantineClasses />}
         {children}
-      </MantineThemeProvider>
-    </MantineContext.Provider>
+      </NexThemeProvider>
+    </NexContext.Provider>
   );
 }
 
-MantineProvider.displayName = '@mantine/core/MantineProvider';
+NexProvider.displayName = '@mantine/core/MantineProvider';
 
 export interface HeadlessMantineProviderProps {
   /** Theme override object */
@@ -129,7 +129,7 @@ export interface HeadlessMantineProviderProps {
 
 export function HeadlessMantineProvider({ children, theme }: HeadlessMantineProviderProps) {
   return (
-    <MantineContext.Provider
+    <NexContext.Provider
       value={{
         colorScheme: 'auto',
         setColorScheme: () => {},
@@ -141,8 +141,8 @@ export function HeadlessMantineProvider({ children, theme }: HeadlessMantineProv
         headless: true,
       }}
     >
-      <MantineThemeProvider theme={theme}>{children}</MantineThemeProvider>
-    </MantineContext.Provider>
+      <NexThemeProvider theme={theme}>{children}</NexThemeProvider>
+    </NexContext.Provider>
   );
 }
 

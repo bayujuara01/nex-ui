@@ -1,5 +1,5 @@
 import { rem } from '../../../utils';
-import { MantineColor, MantineGradient, MantineTheme } from '../../theme.types';
+import { MantineColor, MantineGradient, NexTheme } from '../../theme.types';
 import { darken } from '../darken/darken';
 import { getGradient } from '../get-gradient/get-gradient';
 import { parseThemeColor } from '../parse-theme-color/parse-theme-color';
@@ -7,7 +7,7 @@ import { rgba } from '../rgba/rgba';
 
 export interface VariantColorsResolverInput {
   color: MantineColor | undefined;
-  theme: MantineTheme;
+  theme: NexTheme;
   variant: string;
   gradient?: MantineGradient;
   autoContrast?: boolean;

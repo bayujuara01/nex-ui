@@ -7,7 +7,7 @@ import {
   keys,
   MantineBreakpoint,
   px,
-  useMantineTheme,
+  useNexTheme,
 } from '../../core';
 import type { SimpleGridProps } from './SimpleGrid';
 
@@ -21,7 +21,7 @@ export function SimpleGridMediaVariables({
   cols,
   selector,
 }: SimpleGridVariablesProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const _verticalSpacing = verticalSpacing === undefined ? spacing : verticalSpacing;
 
   const baseStyles: Record<string, string | undefined> = filterProps({

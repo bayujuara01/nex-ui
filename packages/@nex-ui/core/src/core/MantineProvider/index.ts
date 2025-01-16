@@ -5,10 +5,10 @@ export * from './use-mantine-color-scheme';
 export * from './ColorSchemeScript';
 export { DEFAULT_THEME } from './default-theme';
 export { validateMantineTheme, mergeMantineTheme } from './merge-mantine-theme';
-export { MantineProvider, HeadlessMantineProvider } from './MantineProvider';
+export { NexProvider, HeadlessMantineProvider } from './NexProvider';
 export {
-  MantineContext,
-  useMantineContext,
+  NexContext,
+  useNexContext,
   useMantineClassNamesPrefix,
   useMantineStyleNonce,
   useMantineCssVariablesResolver,
@@ -16,15 +16,15 @@ export {
   useMantineIsHeadless,
   useMantineSxTransform,
   useMantineStylesTransform,
-} from './Mantine.context';
+} from './Nex.context';
 export {
-  useMantineTheme,
-  useSafeMantineTheme,
-  MantineThemeContext,
-  MantineThemeProvider,
-} from './MantineThemeProvider';
-export type { MantineThemeProviderProps } from './MantineThemeProvider';
-export type { MantineProviderProps, HeadlessMantineProviderProps } from './MantineProvider';
+  useNexTheme,
+  useSafeNexTheme,
+  NexThemeContext,
+  NexThemeProvider,
+} from './NexThemeProvider';
+export type { NexThemeProviderProps } from './NexThemeProvider';
+export type { NexProviderProps, HeadlessMantineProviderProps } from './NexProvider';
 export { useProps } from './use-props/use-props';
 export { convertCssVariables } from './convert-css-variables';
 export type { ConvertCSSVariablesInput } from './convert-css-variables';
@@ -34,5 +34,5 @@ export { defaultCssVariablesResolver } from './MantineCssVariables/default-css-v
 export type { CSSVariablesResolver } from './MantineCssVariables/default-css-variables-resolver';
 export { virtualColor, getCSSColorVariables, isVirtualColor } from './MantineCssVariables';
 export { useMatches } from './use-matches/use-matches';
-export type { MantineStylesTransform } from './Mantine.context';
+export type { MantineStylesTransform } from './Nex.context';
 export { mantineHtmlProps } from './mantine-html-props';

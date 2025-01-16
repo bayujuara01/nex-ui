@@ -16,7 +16,7 @@ import {
   MantineRadius,
   MantineSize,
   StylesApiProps,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useStyles,
 } from '../../core';
@@ -169,7 +169,7 @@ export const SegmentedControl = factory<SegmentedControlFactory>((_props, ref) =
     varsResolver,
   });
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const _data = data.map((item) =>
     typeof item === 'string' ? { label: item, value: item } : item

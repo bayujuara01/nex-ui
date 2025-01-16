@@ -1,5 +1,5 @@
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
-import { DEFAULT_THEME, MantineThemeProvider, rem } from '../../core';
+import { DEFAULT_THEME, NexThemeProvider, rem } from '../../core';
 import { ActionIcon, ActionIconProps } from './ActionIcon';
 
 export default { title: 'ActionIcon' };
@@ -45,7 +45,7 @@ export function AutoContrast() {
 export function SingleButton() {
   return (
     <div style={{ padding: 40 }}>
-      <MantineThemeProvider
+      <NexThemeProvider
         theme={{
           components: {
             ActionIcon: ActionIcon.extend({
@@ -57,7 +57,7 @@ export function SingleButton() {
         }}
       >
         <ActionIcon loading>$$</ActionIcon>
-      </MantineThemeProvider>
+      </NexThemeProvider>
     </div>
   );
 }

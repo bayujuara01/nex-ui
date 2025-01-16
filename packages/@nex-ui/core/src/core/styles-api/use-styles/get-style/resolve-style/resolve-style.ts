@@ -1,10 +1,10 @@
 import { CSSProperties } from 'react';
 import { MantineStyleProp } from '../../../../Box';
-import { MantineTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../MantineProvider';
 
 interface ResolveStyleInput {
   style: MantineStyleProp | undefined;
-  theme: MantineTheme;
+  theme: NexTheme;
 }
 
 export function resolveStyle({ style, theme }: ResolveStyleInput): CSSProperties {

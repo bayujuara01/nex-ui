@@ -1,4 +1,4 @@
-import { em, getSortedBreakpoints, keys, MantineTheme } from '../../../../core';
+import { em, getSortedBreakpoints, keys, NexTheme } from '../../../../core';
 import type { AppShellProps } from '../../AppShell';
 import { assignAsideVariables } from '../assign-aside-variables/assign-aside-variables';
 import { assignFooterVariables } from '../assign-footer-variables/assign-footer-variables';
@@ -15,7 +15,7 @@ interface GetVariablesInput {
   footer: AppShellProps['footer'] | undefined;
   aside: AppShellProps['aside'] | undefined;
   padding: AppShellProps['padding'] | undefined;
-  theme: MantineTheme;
+  theme: NexTheme;
 }
 
 export function getVariables({ navbar, header, footer, aside, padding, theme }: GetVariablesInput) {

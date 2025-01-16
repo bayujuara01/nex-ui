@@ -1,7 +1,7 @@
 import { useCallback, useContext, useEffect, useRef } from 'react';
 import { useColorScheme } from '@nex-ui/hooks';
 import { noop } from '../../utils';
-import { MantineContext, useMantineStyleNonce } from '../Mantine.context';
+import { NexContext, useMantineStyleNonce } from '../Nex.context';
 import { MantineColorScheme } from '../theme.types';
 
 function disableTransition(nonce: string | undefined) {
@@ -22,7 +22,7 @@ function disableTransition(nonce: string | undefined) {
 export function useMantineColorScheme({ keepTransitions }: { keepTransitions?: boolean } = {}) {
   const clearStylesRef = useRef<() => void>(noop);
   const timeoutRef = useRef<number>(-1);
-  const ctx = useContext(MantineContext);
+  const ctx = useContext(NexContext);
   const nonce = useMantineStyleNonce();
   const nonceValue = useRef(nonce?.());
 

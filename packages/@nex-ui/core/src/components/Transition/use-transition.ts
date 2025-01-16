@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { useDidUpdate, useReducedMotion } from '@nex-ui/hooks';
-import { useMantineTheme } from '../../core';
+import { useNexTheme } from '../../core';
 
 export type TransitionStatus =
   | 'entered'
@@ -36,7 +36,7 @@ export function useTransition({
   enterDelay,
   exitDelay,
 }: UseTransition) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const shouldReduceMotion = useReducedMotion();
   const reduceMotion = theme.respectReducedMotion ? shouldReduceMotion : false;
   const [transitionDuration, setTransitionDuration] = useState(reduceMotion ? 0 : duration);

@@ -1,11 +1,11 @@
 import type { CssVariable } from '../../../Box';
-import type { MantineColorScheme, MantineColorShade, MantineTheme } from '../../theme.types';
+import type { MantineColorScheme, MantineColorShade, NexTheme } from '../../theme.types';
 import { getPrimaryShade } from '../get-primary-shade/get-primary-shade';
 import { isLightColor } from '../luminance/luminance';
 
 interface ParseThemeColorOptions {
   color: unknown;
-  theme: MantineTheme;
+  theme: NexTheme;
   colorScheme?: MantineColorScheme;
 }
 

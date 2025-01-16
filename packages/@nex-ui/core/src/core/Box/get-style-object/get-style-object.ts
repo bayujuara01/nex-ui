@@ -1,9 +1,9 @@
-import type { MantineTheme } from '../../MantineProvider';
+import type { NexTheme } from '../../MantineProvider';
 import type { MantineStyleProp } from '../Box.types';
 
 export function getStyleObject(
   style: MantineStyleProp | undefined,
-  theme: MantineTheme
+  theme: NexTheme
 ): React.CSSProperties {
   if (Array.isArray(style)) {
     return [...style].reduce<Record<string, any>>(

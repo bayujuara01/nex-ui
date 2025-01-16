@@ -4,7 +4,7 @@ import { FactoryPayload } from '../../factory';
 import {
   useMantineClassNamesPrefix,
   useMantineIsHeadless,
-  useMantineTheme,
+  useNexTheme,
   useMantineWithStaticClasses,
 } from '../../MantineProvider';
 import { PartialVarsResolver, VarsResolver } from '../create-vars-resolver/create-vars-resolver';
@@ -50,7 +50,7 @@ export function useStyles<Payload extends FactoryPayload>({
   vars,
   varsResolver,
 }: UseStylesInput<Payload>): GetStylesApi<Payload> {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const classNamesPrefix = useMantineClassNamesPrefix();
   const withStaticClasses = useMantineWithStaticClasses();
   const headless = useMantineIsHeadless();

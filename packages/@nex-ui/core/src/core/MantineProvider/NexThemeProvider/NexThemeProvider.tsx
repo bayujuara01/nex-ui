@@ -1,14 +1,14 @@
 import { createContext, useContext, useMemo } from 'react';
 import { DEFAULT_THEME } from '../default-theme';
 import { mergeMantineTheme } from '../merge-mantine-theme';
-import { MantineTheme, MantineThemeOverride } from '../theme.types';
+import { NexTheme, MantineThemeOverride } from '../theme.types';
 
-export const MantineThemeContext = createContext<MantineTheme | null>(null);
+export const NexThemeContext = createContext<NexTheme | null>(null);
 
-export const useSafeMantineTheme = () => useContext(MantineThemeContext) || DEFAULT_THEME;
+export const useSafeNexTheme = () => useContext(NexThemeContext) || DEFAULT_THEME;
 
-export function useMantineTheme() {
-  const ctx = useContext(MantineThemeContext);
+export function useNexTheme() {
+  const ctx = useContext(NexThemeContext);
   if (!ctx) {
     throw new Error(
       '@mantine/core: MantineProvider was not found in component tree, make sure you have it in your app'
@@ -18,7 +18,7 @@ export function useMantineTheme() {
   return ctx;
 }
 
-export interface MantineThemeProviderProps {
+export interface NexThemeProviderProps {
   /** Determines whether theme should be inherited from parent MantineProvider, `true` by default */
   inherit?: boolean;
 
@@ -29,20 +29,20 @@ export interface MantineThemeProviderProps {
   children?: React.ReactNode;
 }
 
-export function MantineThemeProvider({
+export function NexThemeProvider({
   theme,
   children,
   inherit = true,
-}: MantineThemeProviderProps) {
-  const parentTheme = useSafeMantineTheme();
+}: NexThemeProviderProps) {
+  const parentTheme = useSafeNexTheme();
   const mergedTheme = useMemo(
     () => mergeMantineTheme(inherit ? parentTheme : DEFAULT_THEME, theme),
     [theme, parentTheme, inherit]
   );
 
   return (
-    <MantineThemeContext.Provider value={mergedTheme}>{children}</MantineThemeContext.Provider>
+    <NexThemeContext.Provider value={mergedTheme}>{children}</NexThemeContext.Provider>
   );
 }
 
-MantineThemeProvider.displayName = '@mantine/core/MantineThemeProvider';
+NexThemeProvider.displayName = '@mantine/core/MantineThemeProvider';

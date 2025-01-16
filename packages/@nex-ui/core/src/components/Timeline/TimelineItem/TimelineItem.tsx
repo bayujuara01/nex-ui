@@ -9,7 +9,7 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  useMantineTheme,
+  useNexTheme,
   useProps,
 } from '../../../core';
 import { useTimelineContext } from '../Timeline.context';
@@ -86,7 +86,7 @@ export const TimelineItem = factory<TimelineItemFactory>((_props, ref) => {
   } = props;
 
   const ctx = useTimelineContext();
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const stylesApiProps = { classNames, styles };
 

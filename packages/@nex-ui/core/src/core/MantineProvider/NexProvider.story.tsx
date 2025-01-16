@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { MantineProvider } from './MantineProvider';
+import { NexProvider } from './NexProvider';
 
-export default { title: 'MantineProvider' };
+export default { title: 'NexProvider' };
 
 export function ForceColorScheme() {
   const [forceColorScheme, setForceColorScheme] = useState<'light' | 'dark' | undefined>(undefined);
   return (
     <div style={{ padding: 40 }}>
-      <MantineProvider forceColorScheme={forceColorScheme} defaultColorScheme="auto">
+      <NexProvider forceColorScheme={forceColorScheme} defaultColorScheme="auto">
         <button type="button" onClick={() => setForceColorScheme('light')}>
           Force light
         </button>
@@ -17,7 +17,7 @@ export function ForceColorScheme() {
         <button type="button" onClick={() => setForceColorScheme(undefined)}>
           Force undefined
         </button>
-      </MantineProvider>
+      </NexProvider>
     </div>
   );
 }

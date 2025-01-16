@@ -10,7 +10,7 @@ import {
   PolymorphicFactory,
   StyleProp,
   StylesApiProps,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useRandomClassName,
   useStyles,
@@ -83,7 +83,7 @@ export const Flex = polymorphicFactory<FlexFactory>((_props, ref) => {
     vars,
   });
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const responsiveClassName = useRandomClassName();
   const parsedStyleProps = parseStyleProps({
     styleProps: { gap, rowGap, columnGap, align, justify, wrap, direction },

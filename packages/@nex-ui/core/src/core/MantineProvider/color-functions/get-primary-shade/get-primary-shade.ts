@@ -1,6 +1,6 @@
-import type { MantineColorScheme, MantineTheme } from '../../theme.types';
+import type { MantineColorScheme, NexTheme } from '../../theme.types';
 
-export function getPrimaryShade(theme: MantineTheme, colorScheme: MantineColorScheme) {
+export function getPrimaryShade(theme: NexTheme, colorScheme: MantineColorScheme) {
   if (typeof theme.primaryShade === 'number') {
     return theme.primaryShade;
   }

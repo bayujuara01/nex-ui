@@ -1,4 +1,4 @@
-import { InlineStyles, useMantineContext, useMantineTheme } from '../../../core';
+import { InlineStyles, useNexContext, useNexTheme } from '../../../core';
 import type { AppShellProps } from '../AppShell';
 import { getVariables } from './get-variables/get-variables';
 
@@ -17,8 +17,8 @@ export function AppShellMediaStyles({
   footer,
   padding,
 }: AppShellMediaStylesProps) {
-  const theme = useMantineTheme();
-  const ctx = useMantineContext();
+  const theme = useNexTheme();
+  const ctx = useNexContext();
   const { media, baseStyles } = getVariables({ navbar, header, footer, aside, padding, theme });
   return <InlineStyles media={media} styles={baseStyles} selector={ctx.cssVariablesSelector} />;
 }

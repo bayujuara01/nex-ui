@@ -1,9 +1,9 @@
 import { em, keys, px } from '../../utils';
-import { useMantineStyleNonce } from '../Mantine.context';
-import { useMantineTheme } from '../MantineThemeProvider';
+import { useMantineStyleNonce } from '../Nex.context';
+import { useNexTheme } from '../NexThemeProvider';
 
 export function MantineClasses() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const nonce = useMantineStyleNonce();
 
   const classes = keys(theme.breakpoints).reduce<string>((acc, breakpoint) => {

@@ -1,8 +1,8 @@
 import { alpha, getPrimaryShade } from '../color-functions';
-import { MantineColor, MantineTheme } from '../theme.types';
+import { MantineColor, NexTheme } from '../theme.types';
 
 interface GetColorVariablesInput {
-  theme: MantineTheme;
+  theme: NexTheme;
   color: MantineColor;
   colorScheme: 'light' | 'dark';
   name?: string;
