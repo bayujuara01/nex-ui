@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { DatesProvider } from '@mantine/dates';
+import { DatesProvider } from '@nex-ui/dates';
 import { render } from '@mantine-tests/core';
 
 interface Options {

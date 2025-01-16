@@ -8,7 +8,7 @@ import {
   StylesApiProps,
   useProps,
   useStyles,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import classes from './LevelsGroup.module.css';
 
 export type LevelsGroupStylesNames = 'levelsGroup';

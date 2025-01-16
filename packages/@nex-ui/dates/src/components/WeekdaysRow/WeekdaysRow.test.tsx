@@ -1,5 +1,5 @@
-import { patchConsoleError, render, screen, tests } from '@mantine-tests/core';
-import { datesTests } from '@mantine-tests/dates';
+import { patchConsoleError, render, screen, tests } from '@nex-ui-tests/core';
+import { datesTests } from '@nex-ui-tests/dates';
 import { WeekdaysRow, WeekdaysRowProps, WeekdaysRowStylesNames } from './WeekdaysRow';
 
 const defaultProps: WeekdaysRowProps = {};

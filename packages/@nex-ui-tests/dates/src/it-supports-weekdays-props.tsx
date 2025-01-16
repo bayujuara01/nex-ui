@@ -2,7 +2,7 @@ import 'dayjs/locale/ru';
 
 import dayjs from 'dayjs';
 import { screen } from '@testing-library/react';
-import { DatesProvider } from '@mantine/dates';
+import { DatesProvider } from '@nex-ui/dates';
 import { render } from '@mantine-tests/core';
 
 export function expectWeekdaysNames(names: string[]) {

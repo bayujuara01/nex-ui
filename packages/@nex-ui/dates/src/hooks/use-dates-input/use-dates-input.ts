@@ -1,4 +1,4 @@
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure } from '@nex-ui/hooks';
 import { useDatesContext } from '../../components/DatesProvider';
 import { DatePickerType, DatePickerValue } from '../../types';
 import { DateFormatter, getFormattedDate } from '../../utils';

@@ -4,7 +4,7 @@ import 'dayjs/locale/ru';
 
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import { useState } from 'react';
-import { Button, Group, TextInput } from '@mantine/core';
+import { Button, Group, TextInput } from '@nex-ui/core';
 import { DatePickerInput } from '../DatePickerInput';
 import { DatesProvider } from '../DatesProvider';
 import { DateInput } from './DateInput';

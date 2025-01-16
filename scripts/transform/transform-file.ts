@@ -32,7 +32,7 @@ export function updateImports(filePath: string) {
 
   // Regular expression to find and replace the import statement
   const updatedContent = content.replace(
-    /(import\s+.*\s+from\s+['"])@mantine\/([^'"]+)(['"])/g,
+    /(import\s+[\s\S]*?\s+from\s+['"])@mantine\/([^'"]+)(['"])/g,
     '$1@nex-ui/$2$3'
   );
 
@@ -53,7 +53,7 @@ export function updateImportTest(filePath: string) {
 
   // Regular expression to find and replace the import statement
   const updatedContent = content.replace(
-    /(import\s+.*\s+from\s+['"])@mantine-tests\/([^'"]+)(['"])/g,
+    /(import\s+[\s\S]*?\s+from\s+['"])@mantine-tests\/([^'"]+)(['"])/g,
     '$1@nex-ui-tests/$2$3'
   );
 

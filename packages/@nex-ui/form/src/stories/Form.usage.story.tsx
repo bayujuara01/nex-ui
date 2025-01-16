@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import { useState } from 'react';
-import { Button, Checkbox, Group, NativeSelect, Select, Textarea, TextInput } from '@mantine/core';
+import { Button, Checkbox, Group, NativeSelect, Select, Textarea, TextInput } from '@nex-ui/core';
 import { useForm } from '../use-form';
 import { FormBase } from './_base';
 

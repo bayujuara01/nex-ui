@@ -1,7 +1,7 @@
 import 'dayjs/locale/ru';
 
 import { useState } from 'react';
-import { Button, Stack } from '@mantine/core';
+import { Button, Stack } from '@nex-ui/core';
 import { DatesRangeValue } from '../../types';
 import { DatePicker } from './DatePicker';
 

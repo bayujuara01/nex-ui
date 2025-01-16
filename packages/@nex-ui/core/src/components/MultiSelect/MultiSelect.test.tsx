@@ -5,7 +5,7 @@ import {
   screen,
   tests,
   userEvent,
-} from '@mantine-tests/core';
+} from '@nex-ui-tests/core';
 import { MultiSelect, MultiSelectProps, MultiSelectStylesNames } from './MultiSelect';
 
 const defaultProps: MultiSelectProps = {

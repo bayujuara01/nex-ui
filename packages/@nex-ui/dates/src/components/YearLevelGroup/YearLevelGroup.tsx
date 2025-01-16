@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { useRef } from 'react';
-import { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '@mantine/core';
+import { BoxProps, ElementProps, factory, Factory, StylesApiProps, useProps } from '@nex-ui/core';
 import { handleControlKeyDown } from '../../utils';
 import { LevelsGroup, LevelsGroupStylesNames } from '../LevelsGroup';
 import { YearLevel, YearLevelSettings, YearLevelStylesNames } from '../YearLevel';

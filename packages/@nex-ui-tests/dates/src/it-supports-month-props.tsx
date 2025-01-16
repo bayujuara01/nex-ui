@@ -3,7 +3,7 @@ import 'dayjs/locale/ru';
 import dayjs from 'dayjs';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { DatesProvider } from '@mantine/dates';
+import { DatesProvider } from '@nex-ui/dates';
 import { render } from '@mantine-tests/core';
 import { itSupportsWeekdaysProps } from './it-supports-weekdays-props';
 

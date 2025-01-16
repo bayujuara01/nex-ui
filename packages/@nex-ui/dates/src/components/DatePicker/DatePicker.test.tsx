@@ -1,5 +1,5 @@
-import { render, tests, userEvent } from '@mantine-tests/core';
-import { datesTests } from '@mantine-tests/dates';
+import { render, tests, userEvent } from '@nex-ui-tests/core';
+import { datesTests } from '@nex-ui-tests/dates';
 import { DatePicker, DatePickerProps, DatePickerStylesNames } from './DatePicker';
 
 const defaultProps = {

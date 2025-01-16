@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { Group } from '@mantine/core';
+import { Group } from '@nex-ui/core';
 import { DateInput } from '../DateInput';
 import { MonthPickerInput } from './MonthPickerInput';
 

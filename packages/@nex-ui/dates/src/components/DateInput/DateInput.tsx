@@ -15,8 +15,8 @@ import {
   PopoverProps,
   StylesApiProps,
   useInputProps,
-} from '@mantine/core';
-import { useClickOutside, useDidUpdate } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useClickOutside, useDidUpdate } from '@nex-ui/hooks';
 import { useUncontrolledDates } from '../../hooks';
 import { CalendarLevel, DateValue } from '../../types';
 import { assignTime } from '../../utils';

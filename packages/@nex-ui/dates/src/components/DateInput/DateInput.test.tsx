@@ -1,4 +1,4 @@
-import { __InputStylesNames } from '@mantine/core';
+import { __InputStylesNames } from '@nex-ui/core';
 import {
   inputDefaultProps,
   inputStylesApiSelectors,
@@ -6,14 +6,14 @@ import {
   screen,
   tests,
   userEvent,
-} from '@mantine-tests/core';
+} from '@nex-ui-tests/core';
 import {
   clickControl,
   datesTests,
   expectNoPopover,
   expectOpenedPopover,
   expectValue,
-} from '@mantine-tests/dates';
+} from '@nex-ui-tests/dates';
 import { DatesProvider } from '../DatesProvider';
 import { DateInput, DateInputProps } from './DateInput';
 

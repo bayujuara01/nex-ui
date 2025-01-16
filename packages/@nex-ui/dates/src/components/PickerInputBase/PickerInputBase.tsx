@@ -16,8 +16,8 @@ import {
   PopoverProps,
   StylesApiProps,
   useInputProps,
-} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 import { DatePickerType } from '../../types';
 import { DateFormatter } from '../../utils';
 import { HiddenDatesInput, HiddenDatesInputValue } from '../HiddenDatesInput';

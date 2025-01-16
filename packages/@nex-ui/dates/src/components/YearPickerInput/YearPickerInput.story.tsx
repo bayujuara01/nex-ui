@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import { YearPickerInput } from './YearPickerInput';
 
 export default { title: 'YearPickerInput' };

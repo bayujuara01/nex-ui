@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useUncontrolled } from '@mantine/hooks';
+import { useUncontrolled } from '@nex-ui/hooks';
 import { useDatesContext } from '../../components/DatesProvider';
 import { DatePickerType, DatePickerValue } from '../../types';
 import { shiftTimezone } from '../../utils';

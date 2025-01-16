@@ -8,8 +8,8 @@ import {
   StylesApiProps,
   useProps,
   useResolvedStylesApi,
-} from '@mantine/core';
-import { useUncontrolled } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useUncontrolled } from '@nex-ui/hooks';
 import { useUncontrolledDates } from '../../hooks';
 import { CalendarLevel } from '../../types';
 import { shiftTimezone } from '../../utils';

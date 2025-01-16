@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { useState } from 'react';
-import { Button, Group } from '@mantine/core';
+import { Button, Group } from '@nex-ui/core';
 import { DatesProvider } from '../DatesProvider';
 import { DatePickerInput } from './DatePickerInput';
 

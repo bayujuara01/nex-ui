@@ -1,5 +1,5 @@
-import { __InputStylesNames } from '@mantine/core';
-import { inputDefaultProps, inputStylesApiSelectors, tests } from '@mantine-tests/core';
+import { __InputStylesNames } from '@nex-ui/core';
+import { inputDefaultProps, inputStylesApiSelectors, tests } from '@nex-ui-tests/core';
 import { TimeInput, TimeInputProps } from './TimeInput';
 
 const defaultProps: TimeInputProps = {

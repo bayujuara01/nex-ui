@@ -1,5 +1,5 @@
-import { render, tests } from '@mantine-tests/core';
-import { datesTests } from '@mantine-tests/dates';
+import { render, tests } from '@nex-ui-tests/core';
+import { datesTests } from '@nex-ui-tests/dates';
 import { Month, MonthProps, MonthStylesNames } from './Month';
 
 const defaultProps: MonthProps = {

@@ -1,5 +1,5 @@
-import { render, screen, userEvent } from '@mantine-tests/core';
-import { datesTests } from '@mantine-tests/dates';
+import { render, screen, userEvent } from '@nex-ui-tests/core';
+import { datesTests } from '@nex-ui-tests/dates';
 import { PickerInputBase, PickerInputBaseProps } from './PickerInputBase';
 
 const noop = () => {};

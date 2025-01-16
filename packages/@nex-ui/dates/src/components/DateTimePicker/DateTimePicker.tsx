@@ -12,8 +12,8 @@ import {
   useProps,
   useResolvedStylesApi,
   useStyles,
-} from '@mantine/core';
-import { useDidUpdate, useDisclosure, useMergedRef } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useDidUpdate, useDisclosure, useMergedRef } from '@nex-ui/hooks';
 import { useUncontrolledDates } from '../../hooks';
 import { CalendarLevel, DateValue } from '../../types';
 import { assignTime, shiftTimezone } from '../../utils';

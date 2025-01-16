@@ -7,7 +7,7 @@ import {
   Factory,
   StylesApiProps,
   useProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import {
   CalendarHeader,
   CalendarHeaderSettings,

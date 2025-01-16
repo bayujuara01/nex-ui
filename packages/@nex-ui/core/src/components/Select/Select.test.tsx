@@ -6,7 +6,7 @@ import {
   screen,
   tests,
   userEvent,
-} from '@mantine-tests/core';
+} from '@nex-ui-tests/core';
 import { Select, SelectProps, SelectStylesNames } from './Select';
 
 const defaultProps: SelectProps = {

@@ -1,5 +1,5 @@
-import { render, screen, tests } from '@mantine-tests/core';
-import { datesTests } from '@mantine-tests/dates';
+import { render, screen, tests } from '@nex-ui-tests/core';
+import { datesTests } from '@nex-ui-tests/dates';
 import { YearLevel, YearLevelProps, YearLevelStylesNames } from './YearLevel';
 
 const defaultProps: YearLevelProps = {

@@ -1,5 +1,5 @@
 import lodash from 'lodash';
-import { render, screen, tests } from '@mantine-tests/core';
+import { render, screen, tests } from '@nex-ui-tests/core';
 import { PickerControl, PickerControlProps, PickerControlStylesNames } from './PickerControl';
 
 const defaultProps: PickerControlProps = {};

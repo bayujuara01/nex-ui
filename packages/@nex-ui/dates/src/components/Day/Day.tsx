@@ -11,7 +11,7 @@ import {
   UnstyledButton,
   useProps,
   useStyles,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { shiftTimezone } from '../../utils';
 import { useDatesContext } from '../DatesProvider';
 import classes from './Day.module.css';

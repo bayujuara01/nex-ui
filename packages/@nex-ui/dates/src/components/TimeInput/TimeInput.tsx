@@ -10,7 +10,7 @@ import {
   StylesApiProps,
   useProps,
   useResolvedStylesApi,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import classes from './TimeInput.module.css';
 
 export interface TimeInputProps

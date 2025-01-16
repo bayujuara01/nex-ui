@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Group } from '@mantine/core';
+import { Button, Group } from '@nex-ui/core';
 import { DateTimePicker } from './DateTimePicker';
 
 export default { title: 'DateTimePicker' };

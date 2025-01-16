@@ -11,7 +11,7 @@ import {
   StylesApiProps,
   useProps,
   useStyles,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import type { DayOfWeek } from '../../types';
 import { useDatesContext } from '../DatesProvider';
 import { getWeekdayNames } from './get-weekdays-names/get-weekdays-names';

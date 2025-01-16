@@ -13,7 +13,7 @@ import {
   useProps,
   useResolvedStylesApi,
   useStyles,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { ControlKeydownPayload, DayOfWeek } from '../../types';
 import { useDatesContext } from '../DatesProvider';
 import { Day, DayProps, DayStylesNames } from '../Day';

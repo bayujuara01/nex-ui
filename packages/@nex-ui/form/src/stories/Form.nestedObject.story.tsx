@@ -1,4 +1,4 @@
-import { Checkbox, TextInput } from '@mantine/core';
+import { Checkbox, TextInput } from '@nex-ui/core';
 import { useForm } from '../use-form';
 import { FormBase } from './_base';
 

@@ -1,4 +1,4 @@
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@nex-ui/core';
 import { createFormContext } from '../index';
 
 export default { title: 'Form' };

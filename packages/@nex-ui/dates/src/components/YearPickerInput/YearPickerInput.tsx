@@ -8,7 +8,7 @@ import {
   StylesApiProps,
   useProps,
   useResolvedStylesApi,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { useDatesInput } from '../../hooks';
 import { DatePickerType } from '../../types';
 import { getDefaultClampedDate, shiftTimezone } from '../../utils';

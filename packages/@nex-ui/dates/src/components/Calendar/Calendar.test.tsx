@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
-import { render, screen, tests, userEvent } from '@mantine-tests/core';
-import { datesTests } from '@mantine-tests/dates';
+import { render, screen, tests, userEvent } from '@nex-ui-tests/core';
+import { datesTests } from '@nex-ui-tests/dates';
 import { DatesProvider } from '../DatesProvider';
 import { Calendar, CalendarProps, CalendarStylesNames } from './Calendar';
 

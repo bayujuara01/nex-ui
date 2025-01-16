@@ -1,6 +1,6 @@
-import { __InputStylesNames } from '@mantine/core';
-import { inputDefaultProps, inputStylesApiSelectors, render, tests } from '@mantine-tests/core';
-import { clickControl, clickInput, datesTests, expectValue } from '@mantine-tests/dates';
+import { __InputStylesNames } from '@nex-ui/core';
+import { inputDefaultProps, inputStylesApiSelectors, render, tests } from '@nex-ui-tests/core';
+import { clickControl, clickInput, datesTests, expectValue } from '@nex-ui-tests/dates';
 import { DatePickerInput, DatePickerInputProps } from './DatePickerInput';
 
 const defaultProps = {

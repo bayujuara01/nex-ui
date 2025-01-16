@@ -1,4 +1,4 @@
-import { render } from '@mantine-tests/core';
+import { render } from '@nex-ui-tests/core';
 import { HiddenDatesInput } from './HiddenDatesInput';
 
 describe('@mantine/dates/HiddenDatesInput', () => {

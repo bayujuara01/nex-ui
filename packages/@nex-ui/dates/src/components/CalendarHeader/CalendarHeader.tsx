@@ -13,7 +13,7 @@ import {
   UnstyledButton,
   useProps,
   useStyles,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import classes from './CalendarHeader.module.css';
 
 export type CalendarHeaderStylesNames =

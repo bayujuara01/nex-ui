@@ -1,12 +1,12 @@
-import { __InputStylesNames } from '@mantine/core';
+import { __InputStylesNames } from '@nex-ui/core';
 import {
   inputDefaultProps,
   inputStylesApiSelectors,
   render,
   tests,
   userEvent,
-} from '@mantine-tests/core';
-import { clickInput, datesTests, expectValue } from '@mantine-tests/dates';
+} from '@nex-ui-tests/core';
+import { clickInput, datesTests, expectValue } from '@nex-ui-tests/dates';
 import { DatesProvider } from '../DatesProvider';
 import { YearPickerInput, YearPickerInputProps } from './YearPickerInput';
 

@@ -1,5 +1,5 @@
-import { ActionIcon, Button, Group, Switch, Text, TextInput } from '@mantine/core';
-import { randomId } from '@mantine/hooks';
+import { ActionIcon, Button, Group, Switch, Text, TextInput } from '@nex-ui/core';
+import { randomId } from '@nex-ui/hooks';
 import { useForm } from '../use-form';
 import { FormBase } from './_base';
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Button, Code, Group, rem } from '@mantine/core';
+import { Box, Button, Code, Group, rem } from '@nex-ui/core';
 
 export function FormBase({ children, form }: any) {
   const [values, setValues] = useState({});
