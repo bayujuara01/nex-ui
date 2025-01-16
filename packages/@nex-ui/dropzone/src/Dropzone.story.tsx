@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { useRef } from 'react';
-import { Button, Group } from '@mantine/core';
+import { Button, Group } from '@nex-ui/core';
 import { Dropzone } from './index';
 
 export default { title: 'Dropzone' };

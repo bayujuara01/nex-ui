@@ -1,4 +1,4 @@
-import { createSafeContext } from '@mantine/core';
+import { createSafeContext } from '@nex-ui/core';
 
 export interface DropzoneContextValue {
   idle: boolean;

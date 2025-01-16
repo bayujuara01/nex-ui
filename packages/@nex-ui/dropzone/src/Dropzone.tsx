@@ -21,8 +21,8 @@ import {
   StylesApiProps,
   useProps,
   useStyles,
-} from '@mantine/core';
-import { assignRef } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { assignRef } from '@nex-ui/hooks';
 import { DropzoneProvider } from './Dropzone.context';
 import type { DropzoneFullScreenType } from './DropzoneFullScreen';
 import { DropzoneAccept, DropzoneIdle, DropzoneReject } from './DropzoneStatus';

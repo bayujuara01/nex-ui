@@ -1,6 +1,6 @@
 import { cloneElement } from 'react';
-import { isElement, useProps } from '@mantine/core';
-import { upperFirst } from '@mantine/hooks';
+import { isElement, useProps } from '@nex-ui/core';
+import { upperFirst } from '@nex-ui/hooks';
 import { DropzoneContextValue, useDropzoneContext } from './Dropzone.context';
 
 export interface DropzoneStatusProps {

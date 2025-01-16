@@ -1,5 +1,5 @@
 import { createRef } from 'react';
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { DropzoneFullScreen } from './DropzoneFullScreen';
 import { DropzoneAccept, DropzoneIdle, DropzoneReject } from './DropzoneStatus';
 import { Dropzone, DropzoneProps, DropzoneStylesNames } from './index';

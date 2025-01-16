@@ -12,8 +12,8 @@ import {
   useProps,
   useResolvedStylesApi,
   useStyles,
-} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 import { Dropzone, DropzoneProps, DropzoneStylesNames, DropzoneVariant } from './Dropzone';
 import classes from './Dropzone.module.css';
 
