@@ -1,0 +1,62 @@
+{
+  "name": "@nex-ui/dropzone",
+  "version": "7.15.3",
+  "description": "Dropzone component built with Nex UI theme and components",
+  "homepage": "https://nex-ui.dev/x/dropzone/",
+  "license": "MIT",
+  "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev@gmail.com>",
+  "keywords": [
+    "components",
+    "dragndrop",
+    "dropzone",
+    "frontend",
+    "library",
+    "next",
+    "nextjs",
+    "react",
+    "ui",
+    "ui-kit",
+    "upload"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./cjs/index.cjs"
+      }
+    },
+    "./styles.css": "./styles.css",
+    "./styles.layer.css": "./styles.layer.css"
+  },
+  "repository": {
+    "url": "https://github.com/bayujuara01/nex-ui.git",
+    "type": "git",
+    "directory": "packages/@nex-ui/dropzone"
+  },
+  "peerDependencies": {
+    "@nex-ui/core": "~7.15.3",
+    "@nex-ui/hooks": "~7.15.3",
+    "react": "^18.x || ^19.x",
+    "react-dom": "^18.x || ^19.x"
+  },
+  "dependencies": {
+    "react-dropzone-esm": "15.2.0"
+  },
+  "devDependencies": {
+    "@nex-ui-tests/core": "workspace:*",
+    "@nex-ui/core": "workspace:*",
+    "@nex-ui/hooks": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
