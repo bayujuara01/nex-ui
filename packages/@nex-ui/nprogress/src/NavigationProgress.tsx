@@ -6,7 +6,7 @@ import {
   OptionalPortal,
   PortalProps,
   Progress,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import {
   NprogressStore,
   nprogressStore,

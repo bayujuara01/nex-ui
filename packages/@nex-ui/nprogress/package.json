@@ -1,10 +1,10 @@
 {
-  "name": "@mantine/nprogress",
+  "name": "@nex-ui/nprogress",
   "version": "7.15.3",
   "description": "Navigation progress bar",
-  "homepage": "https://mantine.dev/x/nprogress/",
+  "homepage": "https://nex-ui.dev/x/nprogress/",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev@gmail.com>",
   "keywords": [
     "components",
     "frontend",
@@ -38,23 +38,24 @@
     "./styles.layer.css": "./styles.layer.css"
   },
   "repository": {
-    "url": "https://github.com/mantinedev/mantine.git",
+    "url": "https://github.com/bayujuara01/nex-ui.git",
     "type": "git",
-    "directory": "packages/@mantine/nprogress"
+    "directory": "packages/@nex-ui/nprogress"
   },
   "peerDependencies": {
-    "@mantine/core": "7.15.3",
-    "@mantine/hooks": "7.15.3",
+    "@nex-ui/core": "~7.15.3",
+    "@nex-ui/hooks": "~7.15.3",
     "react": "^18.x || ^19.x",
     "react-dom": "^18.x || ^19.x"
   },
   "dependencies": {
-    "@mantine/store": "7.15.3"
+    "@nex-ui/store": "~7.15.3"
   },
   "devDependencies": {
-    "@mantine-tests/core": "workspace:*",
-    "@mantine/core": "workspace:*",
-    "@mantine/hooks": "workspace:*",
+    "@nex-ui-tests/core": "workspace:*",
+    "@nex-ui/core": "workspace:*",
+    "@nex-ui/hooks": "workspace:*",
+    "@nex-ui/store": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }

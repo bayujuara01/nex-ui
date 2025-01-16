@@ -1,5 +1,5 @@
-import { clamp } from '@mantine/hooks';
-import { createStore, MantineStore, useStore } from '@mantine/store';
+import { clamp } from '@nex-ui/hooks';
+import { createStore, MantineStore, useStore } from '@nex-ui/store';
 
 function getIntervalProgressValue(currentProgress: number) {
   let next = 0.5;

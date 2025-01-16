@@ -1,4 +1,4 @@
-import { Button, Group } from '@mantine/core';
+import { Button, Group } from '@nex-ui/core';
 import { NavigationProgress } from './NavigationProgress';
 import { nprogress } from './nprogress.store';
 
