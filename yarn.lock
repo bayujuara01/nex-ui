@@ -4057,6 +4057,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nex-uix/nex-ui-meta@workspace:packages/@nex-uix/nex-ui-meta":
+  version: 0.0.0-use.local
+  resolution: "@nex-uix/nex-ui-meta@workspace:packages/@nex-uix/nex-ui-meta"
+  languageName: unknown
+  linkType: soft
+
 "@nex-uix/shiki@workspace:*, @nex-uix/shiki@workspace:packages/@nex-uix/shiki":
   version: 0.0.0-use.local
   resolution: "@nex-uix/shiki@workspace:packages/@nex-uix/shiki"
