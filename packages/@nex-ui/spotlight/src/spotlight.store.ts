@@ -1,5 +1,5 @@
-import { clamp } from '@mantine/hooks';
-import { createStore, MantineStore, useStore } from '@mantine/store';
+import { clamp } from '@nex-ui/hooks';
+import { createStore, MantineStore, useStore } from '@nex-ui/store';
 
 export interface SpotlightState {
   opened: boolean;

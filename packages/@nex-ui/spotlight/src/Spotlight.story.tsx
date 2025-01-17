@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { useState } from 'react';
 import { IconSearch } from '@tabler/icons-react';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import { Spotlight, SpotlightActionData } from './Spotlight';
 import { createSpotlight } from './spotlight.store';
 

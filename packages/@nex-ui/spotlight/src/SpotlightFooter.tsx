@@ -6,7 +6,7 @@ import {
   factory,
   Factory,
   useProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { useSpotlightContext } from './Spotlight.context';
 import classes from './Spotlight.module.css';
 

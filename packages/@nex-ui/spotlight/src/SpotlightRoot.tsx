@@ -9,11 +9,11 @@ import {
   resolveClassNames,
   resolveStyles,
   StylesApiProps,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useStyles,
-} from '@mantine/core';
-import { useDidUpdate, useHotkeys } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useDidUpdate, useHotkeys } from '@nex-ui/hooks';
 import { getHotkeys } from './get-hotkeys';
 import { SpotlightProvider } from './Spotlight.context';
 import { spotlightActions, SpotlightStore, spotlightStore, useSpotlight } from './spotlight.store';
@@ -137,7 +137,7 @@ export const SpotlightRoot = factory<SpotlightRootFactory>((_props, ref) => {
     ...others
   } = props;
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const { opened, query: storeQuery } = useSpotlight(store!);
   const _query = query || storeQuery;
   const setQuery = (q: string) => {

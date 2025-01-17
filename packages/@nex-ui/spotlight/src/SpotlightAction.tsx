@@ -9,7 +9,7 @@ import {
   MantineColor,
   UnstyledButton,
   useProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { useSpotlightContext } from './Spotlight.context';
 import { spotlightActions } from './spotlight.store';
 import classes from './Spotlight.module.css';

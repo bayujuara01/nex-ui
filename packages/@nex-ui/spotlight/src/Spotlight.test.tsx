@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { Spotlight, SpotlightProps, SpotlightStylesNames } from './Spotlight';
 import { spotlight } from './spotlight.store';
 import { SpotlightAction } from './SpotlightAction';
