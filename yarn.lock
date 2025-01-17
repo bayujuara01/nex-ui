@@ -3885,6 +3885,25 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nex-ui/tiptap@workspace:packages/@nex-ui/tiptap":
+  version: 0.0.0-use.local
+  resolution: "@nex-ui/tiptap@workspace:packages/@nex-ui/tiptap"
+  dependencies:
+    "@nex-ui-tests/core": "workspace:*"
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/hooks": "workspace:*"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+  peerDependencies:
+    "@nex-ui/core": ~7.15.3
+    "@nex-ui/hooks": ~7.15.3
+    "@tiptap/extension-link": ">=2.1.12"
+    "@tiptap/react": ">=2.1.12"
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
 "@next/env@npm:14.2.12":
   version: 14.2.12
   resolution: "@next/env@npm:14.2.12"
