@@ -1,4 +1,4 @@
-import { DiscordIcon } from '@mantinex/dev-icons';
+import { DiscordIcon } from '@nex-uix/dev-icons';
 import { HeaderControl } from './HeaderControl';
 import classes from './DiscordControl.module.css';
 

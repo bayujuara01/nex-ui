@@ -1,6 +1,6 @@
 import { IconSearch } from '@tabler/icons-react';
 import cx from 'clsx';
-import { BoxProps, ElementProps, Group, rem, Text, UnstyledButton } from '@mantine/core';
+import { BoxProps, ElementProps, Group, rem, Text, UnstyledButton } from '@nex-ui/core';
 import classes from './SearchControl.module.css';
 
 interface SearchControlProps extends BoxProps, ElementProps<'button'> {}

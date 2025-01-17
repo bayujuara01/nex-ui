@@ -1,4 +1,4 @@
-import { GithubIcon } from '@mantinex/dev-icons';
+import { GithubIcon } from '@nex-uix/dev-icons';
 import { HeaderControl } from './HeaderControl';
 
 interface GithubControlProps {

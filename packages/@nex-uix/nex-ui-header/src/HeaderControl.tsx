@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { BoxProps, createPolymorphicComponent, Tooltip, UnstyledButton } from '@mantine/core';
+import { BoxProps, createPolymorphicComponent, Tooltip, UnstyledButton } from '@nex-ui/core';
 import classes from './HeaderControl.module.css';
 
 export interface HeaderControlProps extends BoxProps {

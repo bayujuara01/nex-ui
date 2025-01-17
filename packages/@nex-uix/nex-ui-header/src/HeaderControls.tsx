@@ -1,4 +1,4 @@
-import { BoxProps, Group, Tooltip } from '@mantine/core';
+import { BoxProps, Group, Tooltip } from '@nex-ui/core';
 import { ColorSchemeControl } from './ColorSchemeControl';
 import { DirectionControl } from './DirectionControl';
 import { DiscordControl } from './DiscordControl';

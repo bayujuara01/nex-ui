@@ -1,6 +1,6 @@
 import { IconMoon, IconSun } from '@tabler/icons-react';
 import cx from 'clsx';
-import { useComputedColorScheme, useMantineColorScheme } from '@mantine/core';
+import { useComputedColorScheme, useMantineColorScheme } from '@nex-ui/core';
 import { HeaderControl } from './HeaderControl';
 import classes from './ColorSchemeControl.module.css';
 

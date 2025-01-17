@@ -1,5 +1,5 @@
 import { IconTextDirectionLtr, IconTextDirectionRtl } from '@tabler/icons-react';
-import { rem, useDirection } from '@mantine/core';
+import { rem, useDirection } from '@nex-ui/core';
 import { HeaderControl } from './HeaderControl';
 
 export function DirectionControl() {

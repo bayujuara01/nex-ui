@@ -1,5 +1,5 @@
 import { IconHeartFilled } from '@tabler/icons-react';
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 import { HeaderControl } from './HeaderControl';
 import classes from './SupportControl.module.css';
 
