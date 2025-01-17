@@ -1,10 +1,10 @@
 {
-  "name": "@mantine/carousel",
+  "name": "@nex-ui/carousel",
   "version": "7.15.3",
-  "description": "Embla based carousel",
-  "homepage": "https://mantine.dev/x/carousel/",
+  "description": "Embla based carousel for Nex UI",
+  "homepage": "https://nex-ui.dev/x/carousel/",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev@gmail.com>",
   "keywords": [
     "carousel",
     "components",
@@ -39,21 +39,21 @@
     "./styles.layer.css": "./styles.layer.css"
   },
   "repository": {
-    "url": "https://github.com/mantinedev/mantine.git",
+    "url": "https://github.com/bayujuara01/nex-ui.git",
     "type": "git",
-    "directory": "packages/@mantine/carousel"
+    "directory": "packages/@nex-ui/carousel"
   },
   "peerDependencies": {
-    "@mantine/core": "7.15.3",
-    "@mantine/hooks": "7.15.3",
+    "@nex-ui/core": "~7.15.3",
+    "@nex-ui/hooks": "~7.15.3",
     "embla-carousel-react": ">=7.0.0",
     "react": "^18.x || ^19.x",
     "react-dom": "^18.x || ^19.x"
   },
   "devDependencies": {
-    "@mantine-tests/core": "workspace:*",
-    "@mantine/core": "workspace:*",
-    "@mantine/hooks": "workspace:*",
+    "@nex-ui-tests/core": "workspace:*",
+    "@nex-ui/core": "workspace:*",
+    "@nex-ui/hooks": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }

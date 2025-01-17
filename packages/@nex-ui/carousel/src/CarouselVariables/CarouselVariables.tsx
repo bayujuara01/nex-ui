@@ -7,8 +7,8 @@ import {
   keys,
   MantineBreakpoint,
   rem,
-  useMantineTheme,
-} from '@mantine/core';
+  useNexTheme,
+} from '@nex-ui/core';
 import type { CarouselProps } from '../Carousel';
 
 interface CarouselVariablesProps extends CarouselProps {
@@ -16,7 +16,7 @@ interface CarouselVariablesProps extends CarouselProps {
 }
 
 export function CarouselVariables({ slideGap, slideSize, selector }: CarouselVariablesProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const baseStyles: Record<string, string | undefined> = filterProps({
     '--carousel-slide-gap': getSpacing(getBaseValue(slideGap)),

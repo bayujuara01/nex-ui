@@ -18,8 +18,8 @@ import {
   useProps,
   useRandomClassName,
   useStyles,
-} from '@mantine/core';
-import { clamp } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { clamp } from '@nex-ui/hooks';
 import { CarouselProvider } from './Carousel.context';
 import { CarouselSlide } from './CarouselSlide/CarouselSlide';
 import { CarouselVariables } from './CarouselVariables/CarouselVariables';

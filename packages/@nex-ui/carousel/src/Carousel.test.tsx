@@ -1,4 +1,4 @@
-import { render, screen, tests, userEvent } from '@mantine-tests/core';
+import { render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { Carousel, CarouselProps, CarouselStylesNames } from './Carousel';
 
 const defaultProps: CarouselProps = {
