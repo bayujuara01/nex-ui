@@ -7,7 +7,7 @@ export default { title: 'CodeHighlight' };
 
 const tsxCode = `
 import { forwardRef } from 'react';
-import { Group, Avatar, Text, Select } from '@mantine/core';
+import { Group, Avatar, Text, Select } from '@nex-ui/core';
 
 // Data for select
 // You can use any data structure you want

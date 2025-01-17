@@ -3746,6 +3746,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nex-ui/code-highlight@workspace:packages/@nex-ui/code-highlight":
+  version: 0.0.0-use.local
+  resolution: "@nex-ui/code-highlight@workspace:packages/@nex-ui/code-highlight"
+  dependencies:
+    "@nex-ui-tests/core": "workspace:*"
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/hooks": "workspace:*"
+    clsx: "npm:^2.1.1"
+    highlight.js: "npm:^11.10.0"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+  peerDependencies:
+    "@nex-ui/core": ~7.15.3
+    "@nex-ui/hooks": ~7.15.3
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
+"@nex-ui/colors-generator@workspace:packages/@nex-ui/colors-generator":
+  version: 0.0.0-use.local
+  resolution: "@nex-ui/colors-generator@workspace:packages/@nex-ui/colors-generator"
+  peerDependencies:
+    chroma-js: ">=2.4.2"
+  languageName: unknown
+  linkType: soft
+
 "@nex-ui/core@workspace:*, @nex-ui/core@workspace:packages/@nex-ui/core":
   version: 0.0.0-use.local
   resolution: "@nex-ui/core@workspace:packages/@nex-ui/core"

@@ -12,7 +12,7 @@ import {
   Tooltip,
   useProps,
   useStyles,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { CopyIcon } from './CopyIcon';
 import { useHighlight } from './use-highlight';
 import _classes from './CodeHighlight.module.css';

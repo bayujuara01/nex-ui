@@ -16,8 +16,8 @@ import {
   UnstyledButton,
   useProps,
   useStyles,
-} from '@mantine/core';
-import { useUncontrolled } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useUncontrolled } from '@nex-ui/hooks';
 import { CopyIcon } from './CopyIcon';
 import { ExpandIcon } from './ExpandIcon';
 import { FileIcon } from './FileIcon';

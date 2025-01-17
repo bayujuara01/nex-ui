@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { CodeHighlight, CodeHighlightProps, CodeHighlightStylesNames } from './CodeHighlight';
 
 const defaultProps: CodeHighlightProps = {
