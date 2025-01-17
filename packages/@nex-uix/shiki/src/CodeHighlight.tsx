@@ -11,7 +11,7 @@ import {
   Tooltip,
   useProps,
   useStyles,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { CopyIcon } from './CopyIcon';
 import { useShiki } from './ShikiProvider';
 import { ShikiLanguage } from './types';
