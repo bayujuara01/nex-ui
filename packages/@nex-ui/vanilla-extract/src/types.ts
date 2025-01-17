@@ -6,7 +6,7 @@ import {
   MantineRadius,
   MantineShadow,
   MantineSpacing,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 interface ColorValues {
   0: string;

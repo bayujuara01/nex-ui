@@ -1,10 +1,10 @@
 import {
   DEFAULT_THEME,
   em,
-  MantineTheme,
+  NexTheme,
   MantineThemeOverride,
   mergeMantineTheme,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import {
   Colors,
   FontSizes,
@@ -24,7 +24,7 @@ function getSizesVariables<Result>(theme: any, themeKey: string, name: string): 
   }, {});
 }
 
-function getBreakpointValue(value: string | number, theme: MantineTheme) {
+function getBreakpointValue(value: string | number, theme: NexTheme) {
   return value in theme.breakpoints ? (theme.breakpoints as any)[value] : em(value);
 }
 
