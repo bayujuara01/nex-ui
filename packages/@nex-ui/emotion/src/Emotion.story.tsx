@@ -5,14 +5,14 @@ import {
   Box,
   Button,
   ButtonProps,
-  MantineProvider,
-  MantineTheme,
+  NexProvider,
+  NexTheme,
   SegmentedControl,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { createStyles, EmotionHelpers } from './create-styles';
 import { emotionTransform } from './emotion-transform';
 import { Global } from './Global';
-import { MantineEmotionProvider, useEmotionCache } from './MantineEmotionProvider';
+import { NexEmotionProvider, useEmotionCache } from './NexEmotionProvider';
 
 export default { title: 'Emotion' };
 
@@ -27,9 +27,9 @@ function CacheConsumer() {
 export function Usage() {
   return (
     <div style={{ padding: 40 }}>
-      <MantineEmotionProvider>
+      <NexEmotionProvider>
         <CacheConsumer />
-      </MantineEmotionProvider>
+      </NexEmotionProvider>
     </div>
   );
 }
@@ -37,7 +37,7 @@ export function Usage() {
 export function GlobalStyles() {
   return (
     <CacheProvider value={testCache}>
-      <MantineEmotionProvider>
+      <NexEmotionProvider>
         <Global styles={{ body: { background: 'silver' } }} />
         <Global
           styles={(theme) => ({
@@ -45,7 +45,7 @@ export function GlobalStyles() {
           })}
         />
         <p>GlobalStyles</p>
-      </MantineEmotionProvider>
+      </NexEmotionProvider>
     </CacheProvider>
   );
 }
@@ -86,9 +86,9 @@ function CreateStylesConsumer() {
 export function CreateStyles() {
   return (
     <CacheProvider value={testCache}>
-      <MantineEmotionProvider>
+      <NexEmotionProvider>
         <CreateStylesConsumer />
-      </MantineEmotionProvider>
+      </NexEmotionProvider>
     </CacheProvider>
   );
 }
@@ -96,8 +96,8 @@ export function CreateStyles() {
 export function EmotionSxTransform() {
   return (
     <CacheProvider value={testCache}>
-      <MantineProvider stylesTransform={emotionTransform}>
-        <MantineEmotionProvider>
+      <NexProvider stylesTransform={emotionTransform}>
+        <NexEmotionProvider>
           <Box<any>
             sx={(theme: any) => ({
               color: theme.colors.blue[7],
@@ -108,8 +108,8 @@ export function EmotionSxTransform() {
           </Box>
 
           <SegmentedControl data={['React', 'Angular', 'Vue']} />
-        </MantineEmotionProvider>
-      </MantineProvider>
+        </NexEmotionProvider>
+      </NexProvider>
     </CacheProvider>
   );
 }
@@ -117,12 +117,12 @@ export function EmotionSxTransform() {
 export function EmotionStylesTransform() {
   return (
     <CacheProvider value={testCache}>
-      <MantineProvider
+      <NexProvider
         stylesTransform={emotionTransform}
         theme={{
           components: {
             Button: {
-              styles: (theme: MantineTheme, props: ButtonProps, u: EmotionHelpers) => ({
+              styles: (theme: NexTheme, props: ButtonProps, u: EmotionHelpers) => ({
                 label: {
                   backgroundColor: theme.colors[props.color || 'cyan'][5],
 
@@ -140,7 +140,7 @@ export function EmotionStylesTransform() {
           },
         }}
       >
-        <MantineEmotionProvider>
+        <NexEmotionProvider>
           <Button
             color="orange"
             styles={(theme) => ({
@@ -154,8 +154,8 @@ export function EmotionStylesTransform() {
           >
             Button
           </Button>
-        </MantineEmotionProvider>
-      </MantineProvider>
+        </NexEmotionProvider>
+      </NexProvider>
     </CacheProvider>
   );
 }

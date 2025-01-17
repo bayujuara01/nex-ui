@@ -1,10 +1,10 @@
-import { MantineStylesTransform, useMantineTheme } from '@mantine/core';
+import { MantineStylesTransform, useNexTheme } from '@nex-ui/core';
 import { getHelpers } from './create-styles';
 // prettier-ignore
 import { useCss } from './use-css';
 
 function sxTransform() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const { css } = useCss();
 
   return (sx: any) => {
@@ -14,7 +14,7 @@ function sxTransform() {
 }
 
 function stylesTransform() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const { css } = useCss();
 
   return (styles: any, payload: any) => {

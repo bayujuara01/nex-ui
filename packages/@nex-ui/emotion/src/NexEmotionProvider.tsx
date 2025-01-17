@@ -8,7 +8,7 @@ export function useEmotionCache() {
 
   if (cache === null) {
     throw new Error(
-      'Emotion cache is not available in context, make sure that you have MantineEmotionProvider in the component tree'
+      'Emotion cache is not available in context, make sure that you have NexEmotionProvider in the component tree'
     );
   }
 
@@ -20,7 +20,7 @@ interface EmotionCacheProviderProps {
   cache?: EmotionCache;
 }
 
-export const MantineEmotionProvider = withEmotionCache<EmotionCacheProviderProps>(
+export const NexEmotionProvider = withEmotionCache<EmotionCacheProviderProps>(
   ({ children, cache }, ctx) => (
     <EmotionCacheContext.Provider value={cache || ctx}>{children}</EmotionCacheContext.Provider>
   )
