@@ -1,0 +1,55 @@
+{
+  "name": "@nex-uix/demo",
+  "version": "1.2.0",
+  "description": "Demo base components used on *.nex-ui.dev websites",
+  "homepage": "https://nex-ui.dev/",
+  "license": "MIT",
+  "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev@gmail.com>",
+  "keywords": [
+    "react",
+    "ui"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./cjs/index.cjs"
+      }
+    },
+    "./styles.css": "./styles.css",
+    "./styles.layer.css": "./styles.layer.css"
+  },
+  "repository": {
+    "url": "https://github.com/nex-ui/nex-ui.git",
+    "type": "git",
+    "directory": "packages/@nex-uix/demo"
+  },
+  "peerDependencies": {
+    "@nex-ui/core": ">=7.0.0",
+    "@nex-ui/hooks": ">=7.0.0",
+    "@nex-uix/dev-icons": ">=1.0.0",
+    "@nex-uix/shiki": ">=1.0.0",
+    "react": "^18.x || ^19.x",
+    "react-dom": "^18.x || ^19.x",
+    "shiki": "^1.23.1"
+  },
+  "devDependencies": {
+    "@nex-ui-tests/core": "workspace:*",
+    "@nex-ui/core": "workspace:*",
+    "@nex-ui/hooks": "workspace:*",
+    "@nex-uix/shiki": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "shiki": "^1.23.1"
+  }
+}
