@@ -1,9 +1,9 @@
-import { Highlight, HighlightProps } from '@mantine/core';
+import { Highlight, HighlightProps } from '@nex-ui/core';
 import { ConfiguratorDemo } from './ConfiguratorDemo';
 
 export default { title: 'DS/ConfiguratorDemo' };
 
-const code = `import { Highlight } from '@mantine/core';
+const code = `import { Highlight } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -36,8 +36,13 @@ export function updateImports(filePath: string) {
     '$1@nex-ui/$2$3'
   );
 
-  if (content !== updatedContent) {
-    fs.writeFileSync(filePath, updatedContent, 'utf8');
+  const updatedContentExtension = updatedContent.replace(
+    /(import\s+[\s\S]*?\s+from\s+['"])@mantinex\/([^'"]+)(['"])/g,
+    '$1@nex-uix/$2$3'
+  );
+
+  if (content !== updatedContentExtension) {
+    fs.writeFileSync(filePath, updatedContentExtension, 'utf8');
     logger.log(`Updated imports in: ${filePath}`);
   }
 }

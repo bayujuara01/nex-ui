@@ -1,4 +1,4 @@
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 import { DemoArea, DemoAreaProps } from '../DemoArea';
 import classes from './DemoColumns.module.css';
 

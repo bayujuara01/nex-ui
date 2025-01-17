@@ -1,5 +1,5 @@
 import { cloneElement, useState } from 'react';
-import { Stack } from '@mantine/core';
+import { Stack } from '@nex-ui/core';
 import { DemoAreaProps } from '../DemoArea';
 import { DemoCode } from '../DemoCode';
 import { DemoColumns } from '../DemoColumns';

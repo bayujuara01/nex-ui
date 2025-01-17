@@ -1,4 +1,4 @@
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 
 export function ColorWheelIcon() {
   return (

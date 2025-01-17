@@ -11,7 +11,7 @@ import {
   Popover,
   TextInput,
   UnstyledButton,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { ColorWheelIcon } from './ColorWheelIcon';
 import { getControlLabel } from './get-control-label';
 import { ConfiguratorControl } from './types';

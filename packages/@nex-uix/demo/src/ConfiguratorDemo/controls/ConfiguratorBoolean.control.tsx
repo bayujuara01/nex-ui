@@ -1,4 +1,4 @@
-import { BoxProps, ElementProps, Switch } from '@mantine/core';
+import { BoxProps, ElementProps, Switch } from '@nex-ui/core';
 import { getControlLabel } from './get-control-label';
 import { ConfiguratorControl } from './types';
 

@@ -1,5 +1,5 @@
-import { getCodeFileIcon } from '@mantinex/dev-icons';
-import { CodeHighlightTabs, CodeHighlightTabsCode } from '@mantinex/shiki';
+import { getCodeFileIcon } from '@nex-uix/dev-icons';
+import { CodeHighlightTabs, CodeHighlightTabsCode } from '@nex-uix/shiki';
 import classes from './DemoCode.module.css';
 
 export interface DemoCodeProps {

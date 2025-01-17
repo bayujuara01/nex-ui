@@ -1,4 +1,4 @@
-import { upperFirst } from '@mantine/hooks';
+import { upperFirst } from '@nex-ui/hooks';
 
 interface SelectDataItem {
   label: string;

@@ -1,4 +1,4 @@
-import { CodeHighlightTabsCode } from '@mantinex/shiki';
+import { CodeHighlightTabsCode } from '@nex-uix/shiki';
 import { CodeDemo } from './CodeDemo';
 
 export default { title: 'DS/CodeDemo' };
