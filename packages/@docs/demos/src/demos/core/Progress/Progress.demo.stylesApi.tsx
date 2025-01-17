@@ -1,9 +1,9 @@
-import { Progress } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Progress } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { ProgressStylesApi } from '@docs/styles-api';
 
 const code = `
-import { Progress } from '@mantine/core';
+import { Progress } from '@nex-ui/core';
 
 function Demo() {
   return (

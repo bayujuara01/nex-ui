@@ -1,11 +1,11 @@
-import { Button, Text } from '@mantine/core';
-import { modals } from '@mantine/modals';
-import { notifications } from '@mantine/notifications';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Text } from '@nex-ui/core';
+import { modals } from '@nex-ui/modals';
+import { notifications } from '@nex-ui/notifications';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Text } from '@mantine/core';
-import { modals } from '@mantine/modals';
+import { Button, Text } from '@nex-ui/core';
+import { modals } from '@nex-ui/modals';
 
 function Demo() {
   const openModal = () => modals.openConfirmModal({

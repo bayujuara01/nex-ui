@@ -1,8 +1,8 @@
-import { AspectRatio, Overlay } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { AspectRatio, Overlay } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Overlay, AspectRatio } from '@mantine/core';
+import { Overlay, AspectRatio } from '@nex-ui/core';
 
 function Demo() {
   return (

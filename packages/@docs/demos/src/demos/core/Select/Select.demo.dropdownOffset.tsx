@@ -1,5 +1,5 @@
-import { Select } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Select } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Select.demo.dropdownOffset.module.css';
 
 const cssCode = `.dropdown {
@@ -21,7 +21,7 @@ const cssCode = `.dropdown {
 `;
 
 const code = `
-import { Select } from '@mantine/core';
+import { Select } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

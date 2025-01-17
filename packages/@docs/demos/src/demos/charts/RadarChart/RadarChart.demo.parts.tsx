@@ -1,9 +1,9 @@
-import { RadarChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { RadarChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { multiData, multiDataCode } from './_data';
 
 const code = `
-import { RadarChart } from '@mantine/charts';
+import { RadarChart } from '@nex-ui/charts';
 import { data } from './data';
 
 

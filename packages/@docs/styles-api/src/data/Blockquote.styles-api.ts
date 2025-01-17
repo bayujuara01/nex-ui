@@ -1,4 +1,4 @@
-import type { BlockquoteFactory } from '@mantine/core';
+import type { BlockquoteFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const BlockquoteStylesApi: StylesApiData<BlockquoteFactory> = {

@@ -1,9 +1,9 @@
-import { Box, ScrollArea } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, ScrollArea } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { Content } from './_content';
 
 const code = `
-import { ScrollArea, Box } from '@mantine/core';
+import { ScrollArea, Box } from '@nex-ui/core';
 
 function Demo() {
   return (

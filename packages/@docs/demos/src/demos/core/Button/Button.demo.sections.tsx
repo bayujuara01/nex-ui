@@ -1,9 +1,9 @@
 import { IconArrowRight, IconDownload, IconPhoto } from '@tabler/icons-react';
-import { Button, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group, Button } from '@mantine/core';
+import { Group, Button } from '@nex-ui/core';
 import { IconPhoto, IconDownload, IconArrowRight } from '@tabler/icons-react';
 
 function Demo() {

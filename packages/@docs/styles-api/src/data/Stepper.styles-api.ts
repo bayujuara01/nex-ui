@@ -1,4 +1,4 @@
-import type { StepperFactory } from '@mantine/core';
+import type { StepperFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const StepperStylesApi: StylesApiData<StepperFactory> = {

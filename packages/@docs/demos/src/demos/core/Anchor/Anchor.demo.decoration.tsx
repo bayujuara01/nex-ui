@@ -1,8 +1,8 @@
-import { Anchor, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Anchor, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Anchor, Group } from '@mantine/core';
+import { Anchor, Group } from '@nex-ui/core';
 
 function Demo() {
   return (

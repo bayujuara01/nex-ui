@@ -1,9 +1,9 @@
 import { IconAt } from '@tabler/icons-react';
-import { Badge, Group, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge, Group, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Badge, Group, rem } from '@mantine/core';
+import { Badge, Group, rem } from '@nex-ui/core';
 import { IconAt } from '@tabler/icons-react';
 
 function Demo() {

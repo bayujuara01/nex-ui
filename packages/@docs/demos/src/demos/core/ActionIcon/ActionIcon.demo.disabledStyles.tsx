@@ -1,10 +1,10 @@
 import { IconHeart } from '@tabler/icons-react';
-import { ActionIcon } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './ActionIcon.demo.disabledStyles.module.css';
 
 const code = `
-import { ActionIcon } from '@mantine/core';
+import { ActionIcon } from '@nex-ui/core';
 import { IconHeart } from '@tabler/icons-react';
 import classes from './Demo.module.css';
 

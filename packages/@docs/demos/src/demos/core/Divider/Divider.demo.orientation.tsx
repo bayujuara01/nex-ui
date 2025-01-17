@@ -1,8 +1,8 @@
-import { Divider, Group, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Divider, Group, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Divider, Group, Text } from '@mantine/core';
+import { Divider, Group, Text } from '@nex-ui/core';
 
 function Demo() {
   return (

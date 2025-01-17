@@ -1,6 +1,6 @@
-import { Text } from '@mantine/core';
-import { Dropzone, IMAGE_MIME_TYPE } from '@mantine/dropzone';
-import { MantineDemo } from '@mantinex/demo';
+import { Text } from '@nex-ui/core';
+import { Dropzone, IMAGE_MIME_TYPE } from '@nex-ui/dropzone';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Dropzone.demo.stylesApi.module.css';
 
 const cssCode = `
@@ -26,8 +26,8 @@ const cssCode = `
 `;
 
 const code = `
-import { Text } from '@mantine/core';
-import { Dropzone, IMAGE_MIME_TYPE } from '@mantine/dropzone';
+import { Text } from '@nex-ui/core';
+import { Dropzone, IMAGE_MIME_TYPE } from '@nex-ui/dropzone';
 import classes from './Demo.module.css';
 
 function Demo() {

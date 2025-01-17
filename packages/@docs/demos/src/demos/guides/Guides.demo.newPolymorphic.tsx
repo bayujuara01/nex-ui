@@ -1,10 +1,10 @@
 import { forwardRef } from 'react';
-import { Box, BoxProps, createPolymorphicComponent, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, BoxProps, createPolymorphicComponent, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { forwardRef } from 'react';
-import { Box, BoxProps, createPolymorphicComponent, Group } from '@mantine/core';
+import { Box, BoxProps, createPolymorphicComponent, Group } from '@nex-ui/core';
 
 interface MyButtonProps extends BoxProps {
   label: string;

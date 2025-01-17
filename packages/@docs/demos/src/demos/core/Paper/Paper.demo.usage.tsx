@@ -1,5 +1,5 @@
-import { Box, Paper, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Paper, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: any) {
   return (
@@ -16,7 +16,7 @@ function Wrapper(props: any) {
 }
 
 const code = `
-import { Text, Paper } from '@mantine/core';
+import { Text, Paper } from '@nex-ui/core';
 
 function Demo() {
   return (

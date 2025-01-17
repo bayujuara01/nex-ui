@@ -1,11 +1,11 @@
-import { Button, Group } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group } from '@nex-ui/core';
+import { notifications } from '@nex-ui/notifications';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Notifications.demo.customize.module.css';
 
 const code = `
-import { Button, Group } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
+import { Button, Group } from '@nex-ui/core';
+import { notifications } from '@nex-ui/notifications';
 import classes from './Demo.module.css';
 
 function Demo() {

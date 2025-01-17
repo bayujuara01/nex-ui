@@ -1,9 +1,9 @@
-import { Checkbox } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { CheckboxStylesApi } from '@docs/styles-api';
 
 const code = `
-import { Checkbox } from '@mantine/core';
+import { Checkbox } from '@nex-ui/core';
 
 function Demo() {
   return (

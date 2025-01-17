@@ -1,11 +1,11 @@
 import { IconHeart } from '@tabler/icons-react';
-import { ActionIcon, Group, Switch } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, Group, Switch } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { ActionIcon, Group, Switch } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { ActionIcon, Group, Switch } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 import { IconHeart } from '@tabler/icons-react';
 
 function Demo() {

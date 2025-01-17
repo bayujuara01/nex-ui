@@ -1,4 +1,4 @@
-import { TreeNodeData } from '@mantine/core';
+import { TreeNodeData } from '@nex-ui/core';
 
 export const data: TreeNodeData[] = [
   {
@@ -70,7 +70,7 @@ export const data: TreeNodeData[] = [
   },
 ];
 
-export const dataCode = `import { TreeNodeData } from '@mantine/core';
+export const dataCode = `import { TreeNodeData } from '@nex-ui/core';
 
 export const data: TreeNodeData[] = [
   {

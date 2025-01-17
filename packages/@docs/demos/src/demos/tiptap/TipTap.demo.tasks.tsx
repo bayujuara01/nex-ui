@@ -2,15 +2,15 @@ import TaskItem from '@tiptap/extension-task-item';
 import TipTapTaskList from '@tiptap/extension-task-list';
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { getTaskListExtension, RichTextEditor } from '@mantine/tiptap';
-import { MantineDemo } from '@mantinex/demo';
+import { getTaskListExtension, RichTextEditor } from '@nex-ui/tiptap';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import TaskItem from '@tiptap/extension-task-item';
 import TipTapTaskList from '@tiptap/extension-task-list';
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { RichTextEditor, getTaskListExtension } from '@mantine/tiptap';
+import { RichTextEditor, getTaskListExtension } from '@nex-ui/tiptap';
 
 function Demo() {
   const editor = useEditor({

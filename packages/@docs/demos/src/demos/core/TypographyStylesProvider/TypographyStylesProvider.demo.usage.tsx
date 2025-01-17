@@ -1,5 +1,5 @@
-import { Box, TypographyStylesProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, TypographyStylesProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const html = `
 <h1>Example article</h1>
@@ -26,7 +26,7 @@ const html = `
 `;
 
 const code = `
-import { TypographyStylesProvider } from '@mantine/core';
+import { TypographyStylesProvider } from '@nex-ui/core';
 
 const html = '...html content here...';
 

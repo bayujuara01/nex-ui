@@ -1,10 +1,10 @@
-import { Button, Group, Text } from '@mantine/core';
-import { useCounter } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Text } from '@nex-ui/core';
+import { useCounter } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group, Button, Text } from '@mantine/core';
-import { useCounter } from '@mantine/hooks';
+import { Group, Button, Text } from '@nex-ui/core';
+import { useCounter } from '@nex-ui/hooks';
 
 function Demo() {
   const [count, handlers] = useCounter(0, { min: 0, max: 10 });

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Button, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Tooltip, Button } from '@mantine/core';
+import { Tooltip, Button } from '@nex-ui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(true);

@@ -3,7 +3,7 @@ import type {
   CheckboxFactory,
   CheckboxGroupFactory,
   CheckboxIndicatorFactory,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { InputWrapperStylesApi } from './Input.styles-api';
 

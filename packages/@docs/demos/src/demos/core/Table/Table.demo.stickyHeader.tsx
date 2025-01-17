@@ -1,9 +1,9 @@
-import { Table } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Table } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { elements } from './_data';
 
 const code = `
-import { Table } from '@mantine/core';
+import { Table } from '@nex-ui/core';
 
 const elements = [
   { position: 6, mass: 12.011, symbol: 'C', name: 'Carbon' },

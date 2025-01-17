@@ -1,10 +1,10 @@
-import { Box, Text, TextInput } from '@mantine/core';
-import { useDebouncedState } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Text, TextInput } from '@nex-ui/core';
+import { useDebouncedState } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useDebouncedState } from '@mantine/hooks';
-import { TextInput, Text } from '@mantine/core';
+import { useDebouncedState } from '@nex-ui/hooks';
+import { TextInput, Text } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useDebouncedState('', 200);

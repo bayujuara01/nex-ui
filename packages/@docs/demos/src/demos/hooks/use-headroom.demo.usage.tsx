@@ -1,10 +1,10 @@
-import { Box, Portal, rem, Text } from '@mantine/core';
-import { useHeadroom } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Portal, rem, Text } from '@nex-ui/core';
+import { useHeadroom } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Box, Portal, rem, Text } from '@mantine/core';
-import { useHeadroom } from '@mantine/hooks';
+import { Box, Portal, rem, Text } from '@nex-ui/core';
+import { useHeadroom } from '@nex-ui/hooks';
 
 function Demo() {
   const pinned = useHeadroom({ fixedAt: 120 });

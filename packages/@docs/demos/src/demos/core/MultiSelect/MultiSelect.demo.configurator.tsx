@@ -1,9 +1,9 @@
-import { MultiSelect } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { MultiSelect } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { inputControls } from '../../../shared';
 
 const code = `
-import { MultiSelect } from '@mantine/core';
+import { MultiSelect } from '@nex-ui/core';
 
 
 function Demo() {

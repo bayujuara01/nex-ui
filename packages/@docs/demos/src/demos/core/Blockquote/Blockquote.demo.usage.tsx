@@ -1,9 +1,9 @@
 import { IconInfoCircle } from '@tabler/icons-react';
-import { Blockquote } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Blockquote } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Blockquote } from '@mantine/core';
+import { Blockquote } from '@nex-ui/core';
 import { IconInfoCircle } from '@tabler/icons-react';
 
 function Demo() {

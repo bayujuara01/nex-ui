@@ -1,10 +1,10 @@
-import { Box, Checkbox } from '@mantine/core';
-import { randomId, useListState } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Checkbox } from '@nex-ui/core';
+import { randomId, useListState } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useListState, randomId } from '@mantine/hooks';
-import { Checkbox } from '@mantine/core';
+import { useListState, randomId } from '@nex-ui/hooks';
+import { Checkbox } from '@nex-ui/core';
 
 const initialValues = [
   { label: 'Receive email notifications', checked: false, key: randomId() },

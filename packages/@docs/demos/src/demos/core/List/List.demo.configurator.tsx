@@ -1,5 +1,5 @@
-import { List, ListProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { List, ListProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: ListProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ListProps) {
 }
 
 const code = `
-import { List } from '@mantine/core';
+import { List } from '@nex-ui/core';
 
 function Demo() {
   return (

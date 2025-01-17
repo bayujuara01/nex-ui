@@ -1,5 +1,5 @@
-import { Pagination } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Pagination } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Demo() {
   return <Pagination total={10} />;

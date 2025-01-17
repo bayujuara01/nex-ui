@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
 
-import { Button, Checkbox, Group, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Checkbox, Group, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TextInput, Checkbox, Button, Group } from '@mantine/core';
-import { useForm } from '@mantine/form';
+import { TextInput, Checkbox, Button, Group } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
 
 function Demo() {
   const form = useForm({

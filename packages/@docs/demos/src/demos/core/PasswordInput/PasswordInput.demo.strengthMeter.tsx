@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { IconCheck, IconX } from '@tabler/icons-react';
-import { Box, PasswordInput, Popover, Progress, rem, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, PasswordInput, Popover, Progress, rem, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
 import { IconX, IconCheck } from '@tabler/icons-react';
-import { PasswordInput, Progress, Text, Popover, Box, rem } from '@mantine/core';
+import { PasswordInput, Progress, Text, Popover, Box, rem } from '@nex-ui/core';
 
 function PasswordRequirement({ meets, label }: { meets: boolean; label: string }) {
   return (

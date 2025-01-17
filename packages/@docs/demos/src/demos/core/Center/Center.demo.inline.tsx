@@ -1,9 +1,9 @@
 import { IconArrowLeft } from '@tabler/icons-react';
-import { Anchor, Box, Center, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Anchor, Box, Center, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Center, Anchor, Box, rem } from '@mantine/core';
+import { Center, Anchor, Box, rem } from '@nex-ui/core';
 import { IconArrowLeft } from '@tabler/icons-react';
 
 function Demo() {

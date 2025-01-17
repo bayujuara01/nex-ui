@@ -1,9 +1,9 @@
 import { IconSearch } from '@tabler/icons-react';
-import { Anchor, Box, Divider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Anchor, Box, Divider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Divider, Box, Anchor } from '@mantine/core';
+import { Divider, Box, Anchor } from '@nex-ui/core';
 import { IconSearch } from '@tabler/icons-react';
 
 function Demo() {

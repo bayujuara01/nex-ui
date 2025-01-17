@@ -1,5 +1,5 @@
-import { ColorInput, ColorInputProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorInput, ColorInputProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: ColorInputProps) {
   return (
@@ -15,7 +15,7 @@ function Wrapper(props: ColorInputProps) {
 }
 
 const code = `
-import { ColorInput } from '@mantine/core';
+import { ColorInput } from '@nex-ui/core';
 
 function Demo() {
   return <ColorInput defaultValue="#C5D899"{{props}} />;

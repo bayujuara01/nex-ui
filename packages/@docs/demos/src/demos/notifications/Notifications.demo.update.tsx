@@ -1,11 +1,11 @@
 import { IconCheck } from '@tabler/icons-react';
-import { Button, rem } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, rem } from '@nex-ui/core';
+import { notifications } from '@nex-ui/notifications';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, rem } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
+import { Button, rem } from '@nex-ui/core';
+import { notifications } from '@nex-ui/notifications';
 import { IconCheck } from '@tabler/icons-react';
 
 function Demo() {

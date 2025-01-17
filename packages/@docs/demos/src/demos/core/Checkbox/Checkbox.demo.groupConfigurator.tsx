@@ -1,8 +1,8 @@
-import { Checkbox, CheckboxGroupProps, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, CheckboxGroupProps, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Checkbox, Group } from '@mantine/core';
+import { Checkbox, Group } from '@nex-ui/core';
 
 
 function Demo() {

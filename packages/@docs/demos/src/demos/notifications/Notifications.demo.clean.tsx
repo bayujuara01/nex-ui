@@ -1,10 +1,10 @@
-import { Button, Group } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group } from '@nex-ui/core';
+import { notifications } from '@nex-ui/notifications';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group, Button } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
+import { Group, Button } from '@nex-ui/core';
+import { notifications } from '@nex-ui/notifications';
 
 function Demo() {
   return (

@@ -1,12 +1,12 @@
 import { IconSearch } from '@tabler/icons-react';
-import { rem } from '@mantine/core';
-import { SpotlightActionData } from '@mantine/spotlight';
-import { MantineDemo } from '@mantinex/demo';
+import { rem } from '@nex-ui/core';
+import { SpotlightActionData } from '@nex-ui/spotlight';
+import { MantineDemo } from '@nex-uix/demo';
 import { SpotlightDemoBase } from './_demo-base';
 
 const code = `
-import { rem, Button } from '@mantine/core';
-import { Spotlight, SpotlightActionData, spotlight } from '@mantine/spotlight';
+import { rem, Button } from '@nex-ui/core';
+import { Spotlight, SpotlightActionData, spotlight } from '@nex-ui/spotlight';
 import { IconSearch } from '@tabler/icons-react';
 
 const actions: SpotlightActionData[] = Array(3000)

@@ -1,8 +1,8 @@
-import { Box, RangeSlider, Slider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, RangeSlider, Slider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Slider, RangeSlider } from '@mantine/core';
+import { Slider, RangeSlider } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,12 +1,12 @@
 import { useRef } from 'react';
-import { Button, Group } from '@mantine/core';
-import { Dropzone } from '@mantine/dropzone';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group } from '@nex-ui/core';
+import { Dropzone } from '@nex-ui/dropzone';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useRef } from 'react';
-import { Button, Group } from '@mantine/core';
-import { Dropzone } from '@mantine/dropzone';
+import { Button, Group } from '@nex-ui/core';
+import { Dropzone } from '@nex-ui/dropzone';
 
 function Demo() {
   const openRef = useRef<() => void>(null);

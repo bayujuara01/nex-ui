@@ -14,7 +14,7 @@ import type {
   YearLevelGroupFactory,
   YearPickerFactory,
   YearPickerInputFactory,
-} from '@mantine/dates';
+} from '@nex-ui/dates';
 import type { StylesApiData } from '../types';
 import { InputBaseStylesApi } from './InputBase.styles-api';
 

@@ -1,9 +1,9 @@
 import { IMaskInput } from 'react-imask';
-import { InputBase } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { InputBase } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { InputBase } from '@mantine/core';
+import { InputBase } from '@nex-ui/core';
 import { IMaskInput } from 'react-imask';
 
 function Demo() {

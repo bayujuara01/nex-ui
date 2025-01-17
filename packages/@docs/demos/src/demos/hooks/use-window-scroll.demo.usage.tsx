@@ -1,10 +1,10 @@
-import { Button, Group, Text } from '@mantine/core';
-import { useWindowScroll } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Text } from '@nex-ui/core';
+import { useWindowScroll } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useWindowScroll } from '@mantine/hooks';
-import { Button, Text, Group } from '@mantine/core';
+import { useWindowScroll } from '@nex-ui/hooks';
+import { Button, Text, Group } from '@nex-ui/core';
 
 function Demo() {
   const [scroll, scrollTo] = useWindowScroll();

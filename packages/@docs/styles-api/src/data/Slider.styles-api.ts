@@ -1,4 +1,4 @@
-import type { SliderFactory } from '@mantine/core';
+import type { SliderFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const SliderStylesApi: StylesApiData<SliderFactory> = {

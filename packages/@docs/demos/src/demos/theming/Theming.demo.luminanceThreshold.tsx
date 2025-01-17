@@ -1,15 +1,15 @@
 import {
   Button,
   DEFAULT_THEME,
-  MantineThemeProvider,
+  NexThemeProvider,
   parseThemeColor,
   Stack,
-  useMantineTheme,
-} from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+  useNexTheme,
+} from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: Record<string, any>) => `
-import { Button, createTheme, MantineProvider, Stack } from '@mantine/core';
+import { Button, createTheme, NexProvider, Stack } from '@nex-ui/core';
 
 const theme = createTheme({
   autoContrast: true,
@@ -33,15 +33,15 @@ function Wrapper(props: any) {
     ));
 
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Stack>{buttons}</Stack>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
 
 function Wrapper(props: any) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const buttons = Array(10)
     .fill(0)
@@ -59,7 +59,7 @@ function Wrapper(props: any) {
     ));
 
   return (
-    <MantineThemeProvider
+    <NexThemeProvider
       inherit
       theme={{
         autoContrast: true,
@@ -67,7 +67,7 @@ function Wrapper(props: any) {
       }}
     >
       <Stack>{buttons}</Stack>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

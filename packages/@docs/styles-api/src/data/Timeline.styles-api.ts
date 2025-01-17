@@ -1,4 +1,4 @@
-import type { TimelineFactory } from '@mantine/core';
+import type { TimelineFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const TimelineStylesApi: StylesApiData<TimelineFactory> = {

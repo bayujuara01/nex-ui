@@ -1,8 +1,8 @@
-import { ActionIcon, Group, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, Group, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { ActionIcon, Group, TextInput } from '@mantine/core';
+import { ActionIcon, Group, TextInput } from '@nex-ui/core';
 
 function Demo() {
   return (

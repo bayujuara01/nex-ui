@@ -1,4 +1,4 @@
-import type { ColorInputFactory } from '@mantine/core';
+import type { ColorInputFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { ColorPickerStylesApi } from './ColorPicker.styles-api';
 import { InputStylesApi, InputWrapperStylesApi } from './Input.styles-api';

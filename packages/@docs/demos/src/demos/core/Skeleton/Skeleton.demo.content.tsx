@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Button, Group, Skeleton, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Skeleton, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Skeleton, Button } from '@mantine/core';
+import { Skeleton, Button } from '@nex-ui/core';
 
 function Demo() {
   const [loading, setLoading] = useState(true);

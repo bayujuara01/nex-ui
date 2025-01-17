@@ -1,4 +1,4 @@
-import { Box, Spoiler, SpoilerProps, Text } from '@mantine/core';
+import { Box, Spoiler, SpoilerProps, Text } from '@nex-ui/core';
 
 const content = (
   <div>

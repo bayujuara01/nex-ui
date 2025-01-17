@@ -1,8 +1,8 @@
-import { AspectRatio, Image, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { AspectRatio, Image, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { AspectRatio, Image, rem } from '@mantine/core';
+import { AspectRatio, Image, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

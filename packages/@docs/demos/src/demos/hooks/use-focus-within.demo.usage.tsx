@@ -1,10 +1,10 @@
-import { Box, Button, Text, TextInput } from '@mantine/core';
-import { useFocusWithin } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Text, TextInput } from '@nex-ui/core';
+import { useFocusWithin } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useFocusWithin } from '@mantine/hooks';
-import { TextInput, Button, Box, Text } from '@mantine/core';
+import { useFocusWithin } from '@nex-ui/hooks';
+import { TextInput, Button, Box, Text } from '@nex-ui/core';
 
 function Demo() {
   const { ref, focused } = useFocusWithin();

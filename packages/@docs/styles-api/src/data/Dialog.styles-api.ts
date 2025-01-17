@@ -1,4 +1,4 @@
-import type { DialogFactory } from '@mantine/core';
+import type { DialogFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const DialogStylesApi: StylesApiData<DialogFactory> = {

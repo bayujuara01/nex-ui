@@ -1,9 +1,9 @@
 import { IconEyeCheck, IconEyeOff } from '@tabler/icons-react';
-import { PasswordInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { PasswordInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { PasswordInput } from '@mantine/core';
+import { PasswordInput } from '@nex-ui/core';
 import { IconEyeCheck, IconEyeOff } from '@tabler/icons-react';
 
 const VisibilityToggleIcon = ({ reveal }: { reveal: boolean }) =>

@@ -1,8 +1,8 @@
-import { TimeInput } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { TimeInput } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TimeInput } from '@mantine/dates';
+import { TimeInput } from '@nex-ui/dates';
 
 function Demo() {
   return <TimeInput disabled />;

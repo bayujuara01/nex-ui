@@ -1,11 +1,11 @@
 import { IconAt } from '@tabler/icons-react';
-import { FileInput, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { FileInput, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { FileInputStylesApi } from '@docs/styles-api';
 
 const code = `
 import { IconAt } from '@tabler/icons-react';
-import { FileInput, rem } from '@mantine/core';
+import { FileInput, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

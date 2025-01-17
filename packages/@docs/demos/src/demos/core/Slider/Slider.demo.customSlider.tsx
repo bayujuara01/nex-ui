@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IconGripVertical } from '@tabler/icons-react';
-import { clamp, useMove } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { clamp, useMove } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Slider.demo.customSlider.module.css';
 
 const cssCode = `
@@ -92,7 +92,7 @@ const cssCode = `
 const code = `
 import { useState } from 'react';
 import { IconGripVertical } from '@tabler/icons-react';
-import { clamp, useMove } from '@mantine/hooks';
+import { clamp, useMove } from '@nex-ui/hooks';
 import classes from './Demo.module.css';
 
 function Demo() {

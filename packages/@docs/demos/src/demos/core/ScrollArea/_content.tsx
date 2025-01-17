@@ -1,4 +1,4 @@
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 
 export function Content() {
   return (

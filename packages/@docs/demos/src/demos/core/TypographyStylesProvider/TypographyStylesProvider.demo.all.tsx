@@ -1,5 +1,5 @@
-import { TypographyStylesProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { TypographyStylesProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const html = `<h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -33,7 +33,7 @@ const html = `<h1>Heading 1</h1>
 <p>This is <code>code</code>, <kbd>kbd</kbd> and <mark>mark</mark> inside paragraph</p>
 
 <pre>
-import { Avatar } from '@mantine/core';
+import { Avatar } from '@nex-ui/core';
 import image from './image.png';
 
 export function AvatarDemo() {

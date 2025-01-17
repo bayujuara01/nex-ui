@@ -1,8 +1,8 @@
-import { Button, Code, Group, Title } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Code, Group, Title } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Code, Title, MantineProvider, createTheme } from '@mantine/core';
+import { Button, Code, Title, NexProvider, createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   fontFamily: 'Verdana, sans-serif',
@@ -12,11 +12,11 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Title order={3}>Greycliff CF or sans-serif title</Title>
       <Button>Verdana button</Button>
       <Code>Monaco, Courier Code</Code>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;

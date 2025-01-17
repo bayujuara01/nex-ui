@@ -1,9 +1,9 @@
-import { Table } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Table } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { elements } from './_data';
 
 const code = `
-import { Table } from '@mantine/core';
+import { Table } from '@nex-ui/core';
 
 function Demo() {
   const rows = elements.map((element) => (

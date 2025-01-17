@@ -1,4 +1,4 @@
-import type { ThemeIconFactory } from '@mantine/core';
+import type { ThemeIconFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ThemeIconStylesApi: StylesApiData<ThemeIconFactory> = {

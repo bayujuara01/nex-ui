@@ -1,5 +1,5 @@
-import { Button, Flex, FlexProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Flex, FlexProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: FlexProps) {
   return (
@@ -12,7 +12,7 @@ function Wrapper(props: FlexProps) {
 }
 
 const code = `
-import { Flex, Button } from '@mantine/core';
+import { Flex, Button } from '@nex-ui/core';
 
 
 function Demo() {

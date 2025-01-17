@@ -1,10 +1,10 @@
-import { rem } from '@mantine/core';
-import { createStyles, keyframes } from '@mantine/emotion';
-import { MantineDemo } from '@mantinex/demo';
+import { rem } from '@nex-ui/core';
+import { createStyles, keyframes } from '@nex-ui/emotion';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { createStyles, keyframes } from '@mantine/emotion';
-import { rem } from '@mantine/core';
+import { createStyles, keyframes } from '@nex-ui/emotion';
+import { rem } from '@nex-ui/core';
 
 // Export animation to reuse it in other components
 export const bounce = keyframes({

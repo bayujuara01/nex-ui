@@ -1,8 +1,8 @@
-import { Autocomplete, AutocompleteProps, Avatar, Group, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Autocomplete, AutocompleteProps, Avatar, Group, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Autocomplete, AutocompleteProps, Avatar, Group, Text } from '@mantine/core';
+import { Autocomplete, AutocompleteProps, Avatar, Group, Text } from '@nex-ui/core';
 
 const usersData: Record<string, { image: string; email: string }> = {
   'Emily Johnson': {

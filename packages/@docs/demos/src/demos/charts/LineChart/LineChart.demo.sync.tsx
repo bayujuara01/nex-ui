@@ -1,11 +1,11 @@
-import { LineChart } from '@mantine/charts';
-import { Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { LineChart } from '@nex-ui/charts';
+import { Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { Text } from '@mantine/core';
-import { LineChart } from '@mantine/charts';
+import { Text } from '@nex-ui/core';
+import { LineChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

@@ -1,5 +1,5 @@
-import { DonutChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { DonutChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 import classes from './DonutChart.demo.strokeColor.module.css';
 
@@ -14,7 +14,7 @@ const cssCode = `
 `;
 
 const code = `
-import { DonutChart } from '@mantine/charts';
+import { DonutChart } from '@nex-ui/charts';
 import { data } from './data';
 import classes from './Demo.module.css';
 

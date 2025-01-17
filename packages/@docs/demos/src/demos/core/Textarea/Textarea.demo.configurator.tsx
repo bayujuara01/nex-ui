@@ -1,9 +1,9 @@
-import { Textarea } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Textarea } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { inputControls } from '../../../shared';
 
 const code = `
-import { Textarea } from '@mantine/core';
+import { Textarea } from '@nex-ui/core';
 
 
 function Demo() {

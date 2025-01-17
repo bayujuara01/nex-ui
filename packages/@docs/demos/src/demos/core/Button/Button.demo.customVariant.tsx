@@ -1,9 +1,9 @@
-import { Button, createTheme, Group, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, createTheme, Group, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Button.demo.customVariant.module.css';
 
 const code = `
-import { Group, Button, MantineProvider, createTheme } from '@mantine/core';
+import { Group, Button, NexProvider, createTheme } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -16,12 +16,12 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Group>
         <Button variant="danger">Danger variant</Button>
         <Button variant="primary">Primary variant</Button>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -51,12 +51,12 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Group>
         <Button variant="danger">Danger variant</Button>
         <Button variant="primary">Primary variant</Button>
       </Group>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

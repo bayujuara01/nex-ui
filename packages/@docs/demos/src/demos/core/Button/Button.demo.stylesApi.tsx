@@ -1,10 +1,10 @@
 import { IconAt } from '@tabler/icons-react';
-import { Button, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { ButtonStylesApi } from '@docs/styles-api';
 
 const code = `
-import { Button, rem } from '@mantine/core';
+import { Button, rem } from '@nex-ui/core';
 import { IconAt } from '@tabler/icons-react';
 
 function Demo() {

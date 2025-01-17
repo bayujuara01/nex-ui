@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { DatePicker, DatePickerProps } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { DatePicker, DatePickerProps } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { DatePicker, DatePickerProps } from '@mantine/dates';
+import { DatePicker, DatePickerProps } from '@nex-ui/dates';
 
 const getDayProps: DatePickerProps['getDayProps'] = (date) => {
   if (date.getDay() === 5 && date.getDate() === 13) {

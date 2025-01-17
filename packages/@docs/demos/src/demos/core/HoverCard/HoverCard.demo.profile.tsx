@@ -1,8 +1,8 @@
-import { Anchor, Avatar, Group, HoverCard, Stack, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Anchor, Avatar, Group, HoverCard, Stack, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { HoverCard, Avatar, Text, Group, Anchor, Stack } from '@mantine/core';
+import { HoverCard, Avatar, Text, Group, Anchor, Stack } from '@nex-ui/core';
 
 function Demo() {
   return (

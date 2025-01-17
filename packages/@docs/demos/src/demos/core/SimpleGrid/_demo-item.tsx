@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { Box, BoxProps, ElementProps, Text } from '@mantine/core';
+import { Box, BoxProps, ElementProps, Text } from '@nex-ui/core';
 import classes from './_item.module.css';
 
 interface GridItemProps extends BoxProps, ElementProps<'div'> {}

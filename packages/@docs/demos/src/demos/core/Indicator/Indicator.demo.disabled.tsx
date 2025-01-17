@@ -1,10 +1,10 @@
-import { Avatar, Button, Indicator, Stack } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar, Button, Indicator, Stack } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useDisclosure } from '@mantine/hooks';
-import { Avatar, Indicator, Button, Stack } from '@mantine/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { Avatar, Indicator, Button, Stack } from '@nex-ui/core';
 
 function Demo() {
   const [visible, { toggle }] = useDisclosure();

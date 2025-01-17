@@ -1,9 +1,9 @@
-import { Box } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Styles.demo.className.module.css';
 
 const code = `
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

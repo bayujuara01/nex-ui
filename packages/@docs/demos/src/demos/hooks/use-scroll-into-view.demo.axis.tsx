@@ -1,10 +1,10 @@
-import { Box, Button, Group, Paper, Text } from '@mantine/core';
-import { useScrollIntoView } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Group, Paper, Text } from '@nex-ui/core';
+import { useScrollIntoView } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useScrollIntoView } from '@mantine/hooks';
-import { Button, Text, Group, Paper, Box } from '@mantine/core';
+import { useScrollIntoView } from '@nex-ui/hooks';
+import { Button, Text, Group, Paper, Box } from '@nex-ui/core';
 
 function Demo() {
   const { scrollIntoView, targetRef, scrollableRef } = useScrollIntoView<

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Button, Flex, Paper, Transition } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Flex, Paper, Transition } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Button, Flex, Paper, Transition } from '@mantine/core';
+import { Button, Flex, Paper, Transition } from '@nex-ui/core';
 
 export function Demo() {
   const [opened, setOpened] = useState(false);

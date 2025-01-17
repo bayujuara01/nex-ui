@@ -1,11 +1,11 @@
-import { FunnelChart } from '@mantine/charts';
-import { Group, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { FunnelChart } from '@nex-ui/charts';
+import { Group, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { Group, Text } from '@mantine/core';
-import { FunnelChart } from '@mantine/charts';
+import { Group, Text } from '@nex-ui/core';
+import { FunnelChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

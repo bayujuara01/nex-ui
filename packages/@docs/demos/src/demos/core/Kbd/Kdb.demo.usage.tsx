@@ -1,8 +1,8 @@
-import { Kbd } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Kbd } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Kbd } from '@mantine/core';
+import { Kbd } from '@nex-ui/core';
 
 function Demo() {
   return (

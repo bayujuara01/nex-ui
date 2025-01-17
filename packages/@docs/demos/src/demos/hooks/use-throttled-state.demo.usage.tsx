@@ -1,10 +1,10 @@
-import { Text, TextInput } from '@mantine/core';
-import { useThrottledState } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Text, TextInput } from '@nex-ui/core';
+import { useThrottledState } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Text, TextInput } from '@mantine/core';
-import { useThrottledState } from '@mantine/hooks';
+import { Text, TextInput } from '@nex-ui/core';
+import { useThrottledState } from '@nex-ui/hooks';
 
 function Demo() {
   const [throttledValue, setThrottledValue] = useThrottledState('', 1000);

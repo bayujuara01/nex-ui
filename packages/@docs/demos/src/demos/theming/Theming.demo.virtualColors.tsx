@@ -1,8 +1,8 @@
-import { Box } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 export function Demo() {
   return (
@@ -15,7 +15,7 @@ export function Demo() {
 `;
 
 const appCode = `
-import { createTheme, MantineProvider, virtualColor } from '@mantine/core';
+import { createTheme, NexProvider, virtualColor } from '@nex-ui/core';
 import { Demo } from './Demo';
 
 const theme = createTheme({
@@ -30,9 +30,9 @@ const theme = createTheme({
 
 function App() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Demo />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;

@@ -1,8 +1,8 @@
-import { Group, Radio, RadioGroupProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, Radio, RadioGroupProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Radio, Group } from '@mantine/core';
+import { Radio, Group } from '@nex-ui/core';
 
 
 function Demo() {

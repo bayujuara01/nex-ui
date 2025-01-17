@@ -1,16 +1,16 @@
-import { Button, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Theming.demo.activeClassName.module.css';
 
 const tsxCode = `
-import { MantineProvider, Button } from '@mantine/core';
+import { NexProvider, Button } from '@nex-ui/core';
 import classes from './active.module.css';
 
 function Demo() {
   return (
-    <MantineProvider theme={{ activeClassName: classes.active }}>
+    <NexProvider theme={{ activeClassName: classes.active }}>
       <Button>Press me to see active styles</Button>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -27,9 +27,9 @@ const cssCode = `
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={{ activeClassName: classes.active }}>
+    <NexThemeProvider theme={{ activeClassName: classes.active }}>
       <Button>Press me to see active styles</Button>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

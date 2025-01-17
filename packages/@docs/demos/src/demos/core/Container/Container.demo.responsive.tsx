@@ -1,11 +1,11 @@
 import cx from 'clsx';
-import { Container, createTheme, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Container, createTheme, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Container.demo.responsive.module.css';
 
 const code = `
 import cx from 'clsx';
-import { MantineProvider, Container, createTheme } from '@mantine/core';
+import { NexProvider, Container, createTheme } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -20,11 +20,11 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Container size="responsive" bg="var(--mantine-color-blue-light)">
         Container with responsive size
       </Container>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -55,11 +55,11 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Container size="responsive" bg="var(--mantine-color-blue-light)">
         Container with responsive size
       </Container>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

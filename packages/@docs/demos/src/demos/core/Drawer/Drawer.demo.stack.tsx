@@ -1,8 +1,8 @@
-import { Button, Drawer, Group, useDrawersStack } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Drawer, Group, useDrawersStack } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Group, Drawer, useDrawersStack } from '@mantine/core';
+import { Button, Group, Drawer, useDrawersStack } from '@nex-ui/core';
 
 function Demo() {
   const stack = useDrawersStack(['delete-page', 'confirm-action', 'really-confirm-action']);

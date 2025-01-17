@@ -1,11 +1,11 @@
-import { AreaChart, getFilteredChartTooltipPayload } from '@mantine/charts';
-import { Paper, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { AreaChart, getFilteredChartTooltipPayload } from '@nex-ui/charts';
+import { Paper, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { AreaChart, getFilteredChartTooltipPayload } from '@mantine/charts';
-import { Paper, Text } from '@mantine/core';
+import { AreaChart, getFilteredChartTooltipPayload } from '@nex-ui/charts';
+import { Paper, Text } from '@nex-ui/core';
 import { data } from './data';
 
 interface ChartTooltipProps {

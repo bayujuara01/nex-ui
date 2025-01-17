@@ -1,4 +1,4 @@
-import type { BarChartFactory } from '@mantine/charts';
+import type { BarChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const BarChartStylesApi: StylesApiData<BarChartFactory> = {

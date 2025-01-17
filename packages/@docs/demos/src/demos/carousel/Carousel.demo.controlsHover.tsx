@@ -1,5 +1,5 @@
-import { Carousel } from '@mantine/carousel';
-import { MantineDemo } from '@mantinex/demo';
+import { Carousel } from '@nex-ui/carousel';
+import { MantineDemo } from '@nex-uix/demo';
 import { Slides } from './_slides';
 import classes from './Carousel.demo.controlsHover.module.css';
 
@@ -17,7 +17,7 @@ const cssCode = `.controls {
 }`;
 
 const code = `
-import { Carousel } from '@mantine/carousel';
+import { Carousel } from '@nex-ui/carousel';
 import classes from './Demo.module.css';
 
 function Demo() {

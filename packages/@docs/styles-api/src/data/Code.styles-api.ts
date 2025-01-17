@@ -1,4 +1,4 @@
-import type { CodeFactory } from '@mantine/core';
+import type { CodeFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const CodeStylesApi: StylesApiData<CodeFactory> = {

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { ColorPicker, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorPicker, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { ColorPicker, Text } from '@mantine/core';
+import { ColorPicker, Text } from '@nex-ui/core';
 
 function Demo() {
   const [value, onChange] = useState('rgba(47, 119, 150, 0.7)');

@@ -1,5 +1,5 @@
-import { Accordion, AccordionProps, Avatar, Group, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Accordion, AccordionProps, Avatar, Group, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const charactersList = [
   {
@@ -31,7 +31,7 @@ const charactersList = [
 ];
 
 const code = `
-import { Group, Avatar, Text, Accordion } from '@mantine/core';
+import { Group, Avatar, Text, Accordion } from '@nex-ui/core';
 
 const charactersList = [
   {

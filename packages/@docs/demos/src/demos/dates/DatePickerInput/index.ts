@@ -1,4 +1,4 @@
-import { DatePickerInput } from '@mantine/dates';
+import { DatePickerInput } from '@nex-ui/dates';
 import { getSharedPickerInputDemos } from '../_shared';
 
 export const { usage, multiple, range, configurator, modal, icon, clearable, valueFormatter } =

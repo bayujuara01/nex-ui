@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Button, Code, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Code, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { useForm } from '@mantine/form';
-import { TextInput, Button, Code } from '@mantine/core';
+import { useForm } from '@nex-ui/form';
+import { TextInput, Button, Code } from '@nex-ui/core';
 
 function Demo() {
   const [submittedValues, setSubmittedValues] = useState('');

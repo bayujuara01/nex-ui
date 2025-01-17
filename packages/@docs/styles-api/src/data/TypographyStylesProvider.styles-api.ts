@@ -1,4 +1,4 @@
-import type { TypographyStylesProviderFactory } from '@mantine/core';
+import type { TypographyStylesProviderFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const TypographyStylesProviderStylesApi: StylesApiData<TypographyStylesProviderFactory> = {

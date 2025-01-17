@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
 
-import { Button, NumberInput, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, NumberInput, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useForm } from '@mantine/form';
-import { NumberInput, TextInput, Button } from '@mantine/core';
+import { useForm } from '@nex-ui/form';
+import { NumberInput, TextInput, Button } from '@nex-ui/core';
 
 function Demo() {
   const form = useForm({

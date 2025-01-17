@@ -1,9 +1,9 @@
-import { Autocomplete } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Autocomplete } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { inputControls } from '../../../shared';
 
 const code = `
-import { Autocomplete } from '@mantine/core';
+import { Autocomplete } from '@nex-ui/core';
 
 
 function Demo() {

@@ -1,9 +1,9 @@
-import { Avatar, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { avatars } from './_mockdata';
 
 const code = `
-import { Avatar, Tooltip } from '@mantine/core';
+import { Avatar, Tooltip } from '@nex-ui/core';
 
 function Demo() {
   return (

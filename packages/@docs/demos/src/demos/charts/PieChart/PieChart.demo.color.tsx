@@ -1,8 +1,8 @@
-import { PieChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { PieChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: any) => `
-import { PieChart } from '@mantine/charts';
+import { PieChart } from '@nex-ui/charts';
 
 function Demo() {
   return (

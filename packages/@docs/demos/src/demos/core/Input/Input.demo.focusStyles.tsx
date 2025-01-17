@@ -1,9 +1,9 @@
-import { Input, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Input, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Input.demo.focusStyles.module.css';
 
 const code = `
-import { Input, TextInput } from '@mantine/core';
+import { Input, TextInput } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

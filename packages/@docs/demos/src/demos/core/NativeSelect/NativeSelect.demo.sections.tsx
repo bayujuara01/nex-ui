@@ -1,9 +1,9 @@
 import { IconChevronDown, IconHash } from '@tabler/icons-react';
-import { NativeSelect, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NativeSelect, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { NativeSelect, rem } from '@mantine/core';
+import { NativeSelect, rem } from '@nex-ui/core';
 import { IconChevronDown, IconHash } from '@tabler/icons-react';
 
 function Demo() {

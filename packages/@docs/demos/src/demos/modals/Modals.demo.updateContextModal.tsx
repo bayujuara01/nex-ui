@@ -1,10 +1,10 @@
-import { Button } from '@mantine/core';
-import { modals } from '@mantine/modals';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { modals } from '@nex-ui/modals';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Text, Stack, Center, Loader, rem } from '@mantine/core';
-import { modals, ContextModalProps, ModalsProvider } from '@mantine/modals';
+import { Button, Text, Stack, Center, Loader, rem } from '@nex-ui/core';
+import { modals, ContextModalProps, ModalsProvider } from '@nex-ui/modals';
 import { IconCheck } from '@tabler/icons-react';
 
 const TestModal = ({

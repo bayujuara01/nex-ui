@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { ColorInput, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorInput, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { ColorInput, Text } from '@mantine/core';
+import { ColorInput, Text } from '@nex-ui/core';
 
 function Demo() {
   const [changeEndValue, setChangeEndValue] = useState('#FFFFFF');

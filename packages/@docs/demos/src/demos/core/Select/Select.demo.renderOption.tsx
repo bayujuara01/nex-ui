@@ -5,8 +5,8 @@ import {
   IconAlignRight,
   IconCheck,
 } from '@tabler/icons-react';
-import { Group, Select, SelectProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, Select, SelectProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import {
@@ -16,7 +16,7 @@ import {
   IconAlignRight,
   IconCheck,
 } from '@tabler/icons-react';
-import { Group, Select, SelectProps } from '@mantine/core';
+import { Group, Select, SelectProps } from '@nex-ui/core';
 
 const iconProps = {
   stroke: 1.5,

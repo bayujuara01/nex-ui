@@ -1,7 +1,7 @@
 import { IconFolder, IconFolderOpen } from '@tabler/icons-react';
-import { Group, RenderTreeNodePayload, Tree } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
-import { CssIcon, NpmIcon, TypeScriptCircleIcon } from '@mantinex/dev-icons';
+import { Group, RenderTreeNodePayload, Tree } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
+import { CssIcon, NpmIcon, TypeScriptCircleIcon } from '@nex-uix/dev-icons';
 import { data, dataCode } from './data';
 import classes from './Tree.demo.files.module.css';
 
@@ -41,8 +41,8 @@ const cssCode = `.root {
 
 const code = `
 import { IconFolder, IconFolderOpen } from '@tabler/icons-react';
-import { Group, RenderTreeNodePayload, Tree } from '@mantine/core';
-import { CssIcon, NpmIcon, TypeScriptCircleIcon } from '@mantinex/dev-icons';
+import { Group, RenderTreeNodePayload, Tree } from '@nex-ui/core';
+import { CssIcon, NpmIcon, TypeScriptCircleIcon } from '@nex-uix/dev-icons';
 import { data, dataCode } from './data';
 import classes from './Demo.module.css';
 

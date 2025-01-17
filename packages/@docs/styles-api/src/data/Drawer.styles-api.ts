@@ -1,4 +1,4 @@
-import type { DrawerFactory } from '@mantine/core';
+import type { DrawerFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const DrawerStylesApi: StylesApiData<DrawerFactory> = {

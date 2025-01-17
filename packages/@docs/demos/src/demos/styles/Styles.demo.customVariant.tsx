@@ -1,9 +1,9 @@
-import { Input } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Input } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Styles.demo.customVariant.module.css';
 
 const code = `
-import { Input, MantineProvider, createTheme } from '@mantine/core';
+import { Input, NexProvider, createTheme } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 // It is better to add new variants in theme.components
@@ -16,10 +16,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Input variant="underline" placeholder="Underline input" />
       <Input variant="filled" placeholder="Filled input" mt="md" />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;

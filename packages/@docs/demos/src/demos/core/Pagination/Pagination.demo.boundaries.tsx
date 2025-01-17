@@ -1,8 +1,8 @@
-import { Pagination, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Pagination, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Text, Pagination } from '@mantine/core';
+import { Text, Pagination } from '@nex-ui/core';
 
 function Demo() {
   return (

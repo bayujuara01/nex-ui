@@ -1,23 +1,23 @@
-import { Button, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { MantineProvider, Button } from '@mantine/core';
+import { NexProvider, Button } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider theme={{ activeClassName: '' }}>
+    <NexProvider theme={{ activeClassName: '' }}>
       <Button>No active styles</Button>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={{ activeClassName: '' }}>
+    <NexThemeProvider theme={{ activeClassName: '' }}>
       <Button>No active styles</Button>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

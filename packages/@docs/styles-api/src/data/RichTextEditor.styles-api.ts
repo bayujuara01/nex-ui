@@ -1,4 +1,4 @@
-import type { RichTextEditorFactory } from '@mantine/tiptap';
+import type { RichTextEditorFactory } from '@nex-ui/tiptap';
 import type { StylesApiData } from '../types';
 
 export const RichTextEditorStylesApi: StylesApiData<RichTextEditorFactory> = {

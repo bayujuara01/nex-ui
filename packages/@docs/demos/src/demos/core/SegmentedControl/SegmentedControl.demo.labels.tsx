@@ -1,9 +1,9 @@
 import { IconCode, IconExternalLink, IconEye } from '@tabler/icons-react';
-import { Center, rem, SegmentedControl } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Center, rem, SegmentedControl } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Center, SegmentedControl, rem } from '@mantine/core';
+import { Center, SegmentedControl, rem } from '@nex-ui/core';
 import { IconEye, IconCode, IconExternalLink } from '@tabler/icons-react';
 
 function Demo() {

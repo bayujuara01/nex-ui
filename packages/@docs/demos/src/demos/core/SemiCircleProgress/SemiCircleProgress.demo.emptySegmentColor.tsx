@@ -1,8 +1,8 @@
-import { SemiCircleProgress } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { SemiCircleProgress } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { SemiCircleProgress } from '@mantine/core';
+import { SemiCircleProgress } from '@nex-ui/core';
 
 function Demo() {
   return <SemiCircleProgress value={30} emptySegmentColor="var(--mantine-color-dimmed)" />;

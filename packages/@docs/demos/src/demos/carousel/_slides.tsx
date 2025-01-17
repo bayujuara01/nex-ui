@@ -1,5 +1,5 @@
-import { Carousel } from '@mantine/carousel';
-import { Box, rem } from '@mantine/core';
+import { Carousel } from '@nex-ui/carousel';
+import { Box, rem } from '@nex-ui/core';
 
 function Slide({ children }: { children: React.ReactNode }) {
   return (

@@ -1,5 +1,5 @@
-import { Sparkline } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { Sparkline } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Sparkline.demo.colorSchemeColor.module.css';
 
 const cssCode = `.root {
@@ -14,7 +14,7 @@ const cssCode = `.root {
 `;
 
 const code = `
-import { Sparkline } from '@mantine/charts';
+import { Sparkline } from '@nex-ui/charts';
 import classes from './Demo.module.css';
 
 function Demo() {

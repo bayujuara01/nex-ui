@@ -1,8 +1,8 @@
-import { ColorPicker, DEFAULT_THEME, Stack } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorPicker, DEFAULT_THEME, Stack } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { ColorPicker } from '@mantine/core';
+import { ColorPicker } from '@nex-ui/core';
 
 function Demo() {
   return (

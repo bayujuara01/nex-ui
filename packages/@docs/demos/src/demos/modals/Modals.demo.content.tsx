@@ -1,10 +1,10 @@
-import { Button, TextInput } from '@mantine/core';
-import { modals } from '@mantine/modals';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, TextInput } from '@nex-ui/core';
+import { modals } from '@nex-ui/modals';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TextInput, Button } from '@mantine/core';
-import { modals } from '@mantine/modals';
+import { TextInput, Button } from '@nex-ui/core';
+import { modals } from '@nex-ui/modals';
 
 function Demo() {
   return (

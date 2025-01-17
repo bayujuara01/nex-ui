@@ -1,9 +1,9 @@
-import { Grid } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Grid } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { ColWrapper as Col } from './_col-wrapper';
 
 const code = `
-import { Grid } from '@mantine/core';
+import { Grid } from '@nex-ui/core';
 
 function Demo() {
   return (

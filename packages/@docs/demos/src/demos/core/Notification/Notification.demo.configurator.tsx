@@ -1,5 +1,5 @@
-import { Box, Notification, NotificationProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Notification, NotificationProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: NotificationProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: NotificationProps) {
 }
 
 const code = `
-import { Notification } from '@mantine/core';
+import { Notification } from '@nex-ui/core';
 
 function Demo() {
   return (

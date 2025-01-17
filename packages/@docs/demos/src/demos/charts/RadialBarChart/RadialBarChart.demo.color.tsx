@@ -1,8 +1,8 @@
-import { RadialBarChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { RadialBarChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: any) => `
-import { RadialBarChart } from '@mantine/charts';
+import { RadialBarChart } from '@nex-ui/charts';
 
 const data = [
     { name: '18-24', value: 31.47, color: '${props.color}' },

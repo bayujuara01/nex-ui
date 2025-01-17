@@ -1,5 +1,5 @@
-import { Tabs, TabsListProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Tabs, TabsListProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: TabsListProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: TabsListProps) {
 }
 
 const code = `
-import { Tabs } from '@mantine/core';
+import { Tabs } from '@nex-ui/core';
 
 function Demo() {
   return (

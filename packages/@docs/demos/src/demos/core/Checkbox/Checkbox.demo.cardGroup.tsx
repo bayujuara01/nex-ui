@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Checkbox, Group, Stack, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, Group, Stack, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Checkbox.demo.card.module.css';
 
 const cssCode = `.root {
@@ -40,7 +40,7 @@ const cssCode = `.root {
 
 const code = `
 import { useState } from 'react';
-import { Checkbox, Group, Stack, Text } from '@mantine/core';
+import { Checkbox, Group, Stack, Text } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const data = [

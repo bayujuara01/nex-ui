@@ -1,11 +1,11 @@
-import { LineChart } from '@mantine/charts';
-import { Paper, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { LineChart } from '@nex-ui/charts';
+import { Paper, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { LineChart } from '@mantine/charts';
-import { Paper, Text } from '@mantine/core';
+import { LineChart } from '@nex-ui/charts';
+import { Paper, Text } from '@nex-ui/core';
 import { data } from './data';
 
 interface ChartTooltipProps {

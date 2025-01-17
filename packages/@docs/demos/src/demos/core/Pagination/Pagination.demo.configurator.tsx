@@ -1,12 +1,12 @@
-import { Pagination } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Pagination } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: any) {
   return <Pagination total={10} {...props} />;
 }
 
 const code = `
-import { Pagination } from '@mantine/core';
+import { Pagination } from '@nex-ui/core';
 
 function Demo() {
   return <Pagination total={10}{{props}} />;

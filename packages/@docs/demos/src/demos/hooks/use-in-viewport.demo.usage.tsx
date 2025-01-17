@@ -1,10 +1,10 @@
-import { Box, Text } from '@mantine/core';
-import { useInViewport } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Text } from '@nex-ui/core';
+import { useInViewport } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Box, Text } from '@mantine/core';
-import { useInViewport } from '@mantine/hooks';
+import { Box, Text } from '@nex-ui/core';
+import { useInViewport } from '@nex-ui/hooks';
 
 function Demo() {
   const { ref, inViewport } = useInViewport();

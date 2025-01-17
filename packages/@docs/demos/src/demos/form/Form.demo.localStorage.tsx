@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import { Box, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useEffect } from 'react';
-import { useForm } from '@mantine/form';
-import { TextInput, Box } from '@mantine/core';
+import { useForm } from '@nex-ui/form';
+import { TextInput, Box } from '@nex-ui/core';
 
 function Demo() {
   const form = useForm({

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Box, Button, Combobox, Text, useCombobox } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Combobox, Text, useCombobox } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Button, Combobox, useCombobox, Text, Box } from '@mantine/core';
+import { Button, Combobox, useCombobox, Text, Box } from '@nex-ui/core';
 
 const groceries = ['🍎 Apples', '🍌 Bananas', '🥦 Broccoli', '🥕 Carrots', '🍫 Chocolate'];
 

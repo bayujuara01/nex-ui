@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Button, FileButton, Group, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, FileButton, Group, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { FileButton, Button, Group, Text } from '@mantine/core';
+import { FileButton, Button, Group, Text } from '@nex-ui/core';
 
 function Demo() {
   const [file, setFile] = useState<File | null>(null);

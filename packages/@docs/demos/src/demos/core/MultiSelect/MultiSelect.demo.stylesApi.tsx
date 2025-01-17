@@ -1,11 +1,11 @@
 import { IconAt } from '@tabler/icons-react';
-import { MultiSelect, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { MultiSelect, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { MultiSelectStylesApi } from '@docs/styles-api';
 
 const code = `
 import { IconAt } from '@tabler/icons-react';
-import { MultiSelect, rem } from '@mantine/core';
+import { MultiSelect, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

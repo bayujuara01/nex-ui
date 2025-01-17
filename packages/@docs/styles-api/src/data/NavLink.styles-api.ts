@@ -1,4 +1,4 @@
-import type { NavLinkFactory } from '@mantine/core';
+import type { NavLinkFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const NavLinkStylesApi: StylesApiData<NavLinkFactory> = {

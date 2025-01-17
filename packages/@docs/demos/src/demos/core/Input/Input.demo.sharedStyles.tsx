@@ -1,9 +1,9 @@
-import { createTheme, Input, MantineThemeProvider, NativeSelect, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { createTheme, Input, NexThemeProvider, NativeSelect, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Input.demo.sharedStyles.module.css';
 
 const code = `
-import { TextInput, NativeSelect, MantineProvider, createTheme, Input } from '@mantine/core';
+import { TextInput, NativeSelect, NexProvider, createTheme, Input } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -24,7 +24,7 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <TextInput label="Text input" placeholder="Text input" />
 
       <NativeSelect
@@ -32,7 +32,7 @@ function Demo() {
         label="Native select"
         data={['React', 'Angular', 'Vue', 'Svelte']}
       />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -65,10 +65,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <TextInput label="Text input" placeholder="Text input" />
       <NativeSelect mt="md" label="Native select" data={['React', 'Angular', 'Vue', 'Svelte']} />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

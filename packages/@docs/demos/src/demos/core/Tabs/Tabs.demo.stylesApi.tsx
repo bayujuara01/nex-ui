@@ -1,10 +1,10 @@
 import { IconMessageCircle, IconPhoto, IconSettings } from '@tabler/icons-react';
-import { rem, Tabs, TabsProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Tabs, TabsProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { TabsStylesApi } from '@docs/styles-api';
 
 const code = `
-import { Tabs, rem } from '@mantine/core';
+import { Tabs, rem } from '@nex-ui/core';
 
 function Demo() {
   const iconStyle = { width: rem(12), height: rem(12) };

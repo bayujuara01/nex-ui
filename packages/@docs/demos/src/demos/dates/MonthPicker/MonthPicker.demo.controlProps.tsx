@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { MonthPicker, MonthPickerProps } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { MonthPicker, MonthPickerProps } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { MonthPicker, MonthPickerProps } from '@mantine/dates';
+import { MonthPicker, MonthPickerProps } from '@nex-ui/dates';
 
 const getYearControlProps: MonthPickerProps['getYearControlProps'] = (date) => {
   if (date.getFullYear() === new Date().getFullYear()) {

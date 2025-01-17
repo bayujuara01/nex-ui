@@ -1,5 +1,5 @@
-import { Tabs, TabsProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Tabs, TabsProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: TabsProps) {
   const panelProps = props.placement === 'left' ? { pl: 'xs' } : { pr: 'xs' };
@@ -25,7 +25,7 @@ function Wrapper(props: TabsProps) {
 }
 
 const code = `
-import { Tabs } from '@mantine/core';
+import { Tabs } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,10 +1,10 @@
-import { Button, Popover, Text } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Popover, Text } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useDisclosure } from '@mantine/hooks';
-import { Popover, Text, Button } from '@mantine/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { Popover, Text, Button } from '@nex-ui/core';
 
 function Demo() {
   const [opened, { close, open }] = useDisclosure(false);

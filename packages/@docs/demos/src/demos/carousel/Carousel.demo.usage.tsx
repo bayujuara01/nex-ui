@@ -1,9 +1,9 @@
-import { Carousel } from '@mantine/carousel';
-import { MantineDemo } from '@mantinex/demo';
+import { Carousel } from '@nex-ui/carousel';
+import { MantineDemo } from '@nex-uix/demo';
 import { Slides } from './_slides';
 
 const code = `
-import { Carousel } from '@mantine/carousel';
+import { Carousel } from '@nex-ui/carousel';
 
 function Demo() {
   return (

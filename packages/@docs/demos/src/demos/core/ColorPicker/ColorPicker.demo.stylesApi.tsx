@@ -1,9 +1,9 @@
-import { ColorPicker } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorPicker } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { ColorPickerStylesApi } from '@docs/styles-api';
 
 const code = `
-import { ColorPicker } from '@mantine/core';
+import { ColorPicker } from '@nex-ui/core';
 
 function Demo() {
   return (

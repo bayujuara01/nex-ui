@@ -1,4 +1,4 @@
-import type { SpotlightFactory } from '@mantine/spotlight';
+import type { SpotlightFactory } from '@nex-ui/spotlight';
 import type { StylesApiData } from '../types';
 import { ModalStylesApi } from './Modal.styles-api';
 

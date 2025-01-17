@@ -1,4 +1,4 @@
-import type { AffixFactory } from '@mantine/core';
+import type { AffixFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const AffixStylesApi: StylesApiData<AffixFactory> = {

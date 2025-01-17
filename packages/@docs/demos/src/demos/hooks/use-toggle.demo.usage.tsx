@@ -1,10 +1,10 @@
-import { Button } from '@mantine/core';
-import { upperFirst, useToggle } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { upperFirst, useToggle } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button } from '@mantine/core';
-import { useToggle } from '@mantine/hooks';
+import { Button } from '@nex-ui/core';
+import { useToggle } from '@nex-ui/hooks';
 
 function Demo() {
   const [value, toggle] = useToggle(['blue', 'orange', 'cyan', 'teal']);

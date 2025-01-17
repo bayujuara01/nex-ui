@@ -1,9 +1,9 @@
-import { Avatar } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { staticVariantsControl } from '../../../shared';
 
 const code = `
-import { Avatar } from '@mantine/core';
+import { Avatar } from '@nex-ui/core';
 
 function Demo() {
   return <Avatar{{props}} />;

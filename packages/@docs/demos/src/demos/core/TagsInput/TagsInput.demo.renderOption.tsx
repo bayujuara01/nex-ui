@@ -1,8 +1,8 @@
-import { Group, TagsInput, TagsInputProps, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, TagsInput, TagsInputProps, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group, TagsInput, TagsInputProps, Text } from '@mantine/core';
+import { Group, TagsInput, TagsInputProps, Text } from '@nex-ui/core';
 
 const data: Record<string, { emoji: string; description: string }> = {
   Apples: {

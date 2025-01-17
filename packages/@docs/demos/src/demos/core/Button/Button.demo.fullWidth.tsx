@@ -1,8 +1,8 @@
-import { Button } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return <Button fullWidth>Full width button</Button>;

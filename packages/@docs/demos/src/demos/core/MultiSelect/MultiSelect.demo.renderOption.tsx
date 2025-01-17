@@ -1,8 +1,8 @@
-import { Avatar, Group, MultiSelect, MultiSelectProps, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar, Group, MultiSelect, MultiSelectProps, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { MultiSelect, MultiSelectProps, Avatar, Group, Text } from '@mantine/core';
+import { MultiSelect, MultiSelectProps, Avatar, Group, Text } from '@nex-ui/core';
 
 const usersData: Record<string, { image: string; email: string }> = {
   'Emily Johnson': {

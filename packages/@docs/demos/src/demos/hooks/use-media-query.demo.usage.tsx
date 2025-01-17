@@ -1,10 +1,10 @@
-import { Badge, em } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge, em } from '@nex-ui/core';
+import { useMediaQuery } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Badge } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { Badge } from '@nex-ui/core';
+import { useMediaQuery } from '@nex-ui/hooks';
 
 function Demo() {
   const matches = useMediaQuery('(min-width: ${em(900)})');

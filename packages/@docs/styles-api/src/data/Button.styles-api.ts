@@ -1,4 +1,4 @@
-import type { ButtonFactory, ButtonGroupFactory } from '@mantine/core';
+import type { ButtonFactory, ButtonGroupFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ButtonStylesApi: StylesApiData<ButtonFactory> = {

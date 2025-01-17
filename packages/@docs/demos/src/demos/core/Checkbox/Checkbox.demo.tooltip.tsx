@@ -1,8 +1,8 @@
-import { Checkbox, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Tooltip, Checkbox } from '@mantine/core';
+import { Tooltip, Checkbox } from '@nex-ui/core';
 
 function Demo() {
   return (

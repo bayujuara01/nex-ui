@@ -1,8 +1,8 @@
-import { Button, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, rem } from '@mantine/core';
+import { Button, rem } from '@nex-ui/core';
 
 function Demo() {
   const gradient =

@@ -1,9 +1,9 @@
-import { ColorInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { ColorInputStylesApi } from '@docs/styles-api';
 
 const code = `
-import { ColorInput, rem } from '@mantine/core';
+import { ColorInput, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

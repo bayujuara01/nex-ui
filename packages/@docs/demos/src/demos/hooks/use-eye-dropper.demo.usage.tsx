@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { IconColorPicker } from '@tabler/icons-react';
-import { ActionIcon, ColorSwatch, Group, Text } from '@mantine/core';
-import { useEyeDropper } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, ColorSwatch, Group, Text } from '@nex-ui/core';
+import { useEyeDropper } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { ActionIcon, Group, ColorSwatch, Text } from '@mantine/core';
+import { ActionIcon, Group, ColorSwatch, Text } from '@nex-ui/core';
 import { IconColorPicker } from '@tabler/icons-react';
-import { useEyeDropper } from '@mantine/hooks';
+import { useEyeDropper } from '@nex-ui/hooks';
 
 function Demo() {
   const [color, setColor] = useState('');

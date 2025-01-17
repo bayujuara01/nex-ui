@@ -1,4 +1,4 @@
-import type { PillFactory, PillGroupFactory } from '@mantine/core';
+import type { PillFactory, PillGroupFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const PillStylesApi: StylesApiData<PillFactory> = {

@@ -1,5 +1,5 @@
-import { Skeleton, SkeletonProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Skeleton, SkeletonProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: Partial<SkeletonProps>) {
   return (
@@ -13,7 +13,7 @@ function Wrapper(props: Partial<SkeletonProps>) {
 }
 
 const code = (props: any) => `
-  import { Skeleton } from '@mantine/core';
+  import { Skeleton } from '@nex-ui/core';
 
   function Demo() {
     return (

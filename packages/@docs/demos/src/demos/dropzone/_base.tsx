@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 
 import { IconPhoto, IconUpload, IconX } from '@tabler/icons-react';
-import { Group, rem, Text } from '@mantine/core';
-import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@mantine/dropzone';
+import { Group, rem, Text } from '@nex-ui/core';
+import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@nex-ui/dropzone';
 
 export function DropzoneDemoChildren() {
   return (

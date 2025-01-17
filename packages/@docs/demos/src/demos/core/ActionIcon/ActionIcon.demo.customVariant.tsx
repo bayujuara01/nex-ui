@@ -1,10 +1,10 @@
 import { IconHeart } from '@tabler/icons-react';
-import { ActionIcon, createTheme, Group, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, createTheme, Group, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './ActionIcon.demo.customVariant.module.css';
 
 const code = `
-import { Group, ActionIcon, MantineProvider, createTheme } from '@mantine/core';
+import { Group, ActionIcon, NexProvider, createTheme } from '@nex-ui/core';
 import { IconHeart } from '@tabler/icons-react';
 import classes from './Demo.module.css';
 
@@ -18,7 +18,7 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Group justify="center">
         <ActionIcon size="xl" variant="danger" aria-label="Danger variant">
           <IconHeart />
@@ -27,7 +27,7 @@ function Demo() {
           <IconHeart />
         </ActionIcon>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -56,7 +56,7 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Group justify="center">
         <ActionIcon size="xl" variant="danger" aria-label="Danger variant">
           <IconHeart />
@@ -65,7 +65,7 @@ function Demo() {
           <IconHeart />
         </ActionIcon>
       </Group>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

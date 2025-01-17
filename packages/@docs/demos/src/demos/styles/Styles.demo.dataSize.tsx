@@ -1,9 +1,9 @@
-import { createTheme, Input, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { createTheme, Input, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Styles.demo.dataSize.module.css';
 
 const code = `
-import { Input, createTheme, MantineProvider } from '@mantine/core';
+import { Input, createTheme, NexProvider } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -14,10 +14,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Input placeholder="Size XXL" size="xxl" />
       <Input placeholder="Size XXS" size="xxs" mt="md" />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -52,10 +52,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Input placeholder="Size XXL" size="xxl" />
       <Input placeholder="Size XXS" size="xxs" mt="md" />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

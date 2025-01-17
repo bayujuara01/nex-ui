@@ -1,12 +1,12 @@
-import { Highlight, HighlightProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Highlight, HighlightProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: HighlightProps) {
   return <Highlight maw={400} mx="auto" {...props} />;
 }
 
 const code = `
-import { Highlight } from '@mantine/core';
+import { Highlight } from '@nex-ui/core';
 
 function Demo() {
   return (

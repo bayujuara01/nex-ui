@@ -1,4 +1,4 @@
-import { PinInputFactory } from '@mantine/core';
+import { PinInputFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const PinInputStylesApi: StylesApiData<PinInputFactory> = {

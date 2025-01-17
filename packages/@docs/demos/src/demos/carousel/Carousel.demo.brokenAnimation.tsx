@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Carousel } from '@mantine/carousel';
-import { Button, Modal, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Carousel } from '@nex-ui/carousel';
+import { Button, Modal, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Button, Modal, rem } from '@mantine/core';
-import { Carousel } from '@mantine/carousel';
+import { Button, Modal, rem } from '@nex-ui/core';
+import { Carousel } from '@nex-ui/carousel';
 
 function Demo() {
   const TRANSITION_DURATION = 200;

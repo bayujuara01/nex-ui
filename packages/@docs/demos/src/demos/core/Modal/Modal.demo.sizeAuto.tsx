@@ -1,10 +1,10 @@
-import { Badge, Button, Group, Modal, Text } from '@mantine/core';
-import { useCounter, useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge, Button, Group, Modal, Text } from '@nex-ui/core';
+import { useCounter, useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useDisclosure, useCounter } from '@mantine/hooks';
-import { Modal, Button, Group, Text, Badge } from '@mantine/core';
+import { useDisclosure, useCounter } from '@nex-ui/hooks';
+import { Modal, Button, Group, Text, Badge } from '@nex-ui/core';
 
 function Demo() {
   const [opened, { close, open }] = useDisclosure(false);

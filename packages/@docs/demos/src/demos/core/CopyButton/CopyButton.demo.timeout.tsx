@@ -1,9 +1,9 @@
 import { IconCheck, IconCopy } from '@tabler/icons-react';
-import { ActionIcon, CopyButton, rem, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, CopyButton, rem, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { CopyButton, ActionIcon, Tooltip, rem } from '@mantine/core';
+import { CopyButton, ActionIcon, Tooltip, rem } from '@nex-ui/core';
 import { IconCopy, IconCheck } from '@tabler/icons-react';
 
 function Demo() {

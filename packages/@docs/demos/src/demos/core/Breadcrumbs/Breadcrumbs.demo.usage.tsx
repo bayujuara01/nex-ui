@@ -1,8 +1,8 @@
-import { Anchor, Breadcrumbs } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Anchor, Breadcrumbs } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Breadcrumbs, Anchor } from '@mantine/core';
+import { Breadcrumbs, Anchor } from '@nex-ui/core';
 
 const items = [
   { title: 'Mantine', href: '#' },

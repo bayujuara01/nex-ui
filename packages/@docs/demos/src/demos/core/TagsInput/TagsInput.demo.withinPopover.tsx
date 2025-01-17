@@ -1,8 +1,8 @@
-import { Button, Popover, TagsInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Popover, TagsInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Popover, Button, TagsInput } from '@mantine/core';
+import { Popover, Button, TagsInput } from '@nex-ui/core';
 
 function Demo() {
   return (

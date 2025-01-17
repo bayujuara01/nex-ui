@@ -1,4 +1,4 @@
-import type { RadarChartFactory } from '@mantine/charts';
+import type { RadarChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const RadarChartStylesApi: StylesApiData<RadarChartFactory> = {

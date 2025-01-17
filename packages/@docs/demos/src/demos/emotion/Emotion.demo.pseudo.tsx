@@ -1,9 +1,9 @@
 import React from 'react';
-import { createStyles } from '@mantine/emotion';
-import { MantineDemo } from '@mantinex/demo';
+import { createStyles } from '@nex-ui/emotion';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { createStyles } from '@mantine/emotion';
+import { createStyles } from '@nex-ui/emotion';
 
 const useStyles = createStyles((theme) => ({
   button: {

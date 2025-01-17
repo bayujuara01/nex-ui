@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import { TextInput } from '@mantine/core';
-import { getHotkeyHandler, useHotkeys } from '@mantine/hooks';
-import { notifications } from '@mantine/notifications';
-import { MantineDemo } from '@mantinex/demo';
+import { TextInput } from '@nex-ui/core';
+import { getHotkeyHandler, useHotkeys } from '@nex-ui/hooks';
+import { notifications } from '@nex-ui/notifications';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { getHotkeyHandler } from '@mantine/hooks';
-import { notifications } from '@mantine/notifications';
-import { TextInput } from '@mantine/core';
+import { getHotkeyHandler } from '@nex-ui/hooks';
+import { notifications } from '@nex-ui/notifications';
+import { TextInput } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState("I've just used a hotkey to send a message");

@@ -1,4 +1,4 @@
-import type { ListFactory } from '@mantine/core';
+import type { ListFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ListStylesApi: StylesApiData<ListFactory> = {

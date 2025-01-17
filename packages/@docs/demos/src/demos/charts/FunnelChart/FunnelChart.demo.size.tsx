@@ -1,10 +1,10 @@
-import { FunnelChart } from '@mantine/charts';
-import { Center } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { FunnelChart } from '@nex-ui/charts';
+import { Center } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { FunnelChart } from '@mantine/charts';
+import { FunnelChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

@@ -1,13 +1,13 @@
 import { useRef } from 'react';
 import { IconClock } from '@tabler/icons-react';
-import { ActionIcon, rem } from '@mantine/core';
-import { TimeInput } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, rem } from '@nex-ui/core';
+import { TimeInput } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useRef } from 'react';
-import { ActionIcon, rem } from '@mantine/core';
-import { TimeInput } from '@mantine/dates';
+import { ActionIcon, rem } from '@nex-ui/core';
+import { TimeInput } from '@nex-ui/dates';
 import { IconClock } from '@tabler/icons-react';
 
 function Demo() {

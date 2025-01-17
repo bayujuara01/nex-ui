@@ -1,8 +1,8 @@
-import { Text, Title } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Text, Title } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Text, Title } from '@mantine/core';
+import { Text, Title } from '@nex-ui/core';
 
 function Demo() {
   return <Title order={3}>Title in which you want to <Text span c="blue" inherit>highlight</Text> something</Title>;

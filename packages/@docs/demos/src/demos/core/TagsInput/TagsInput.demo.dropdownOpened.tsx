@@ -1,10 +1,10 @@
-import { Button, TagsInput } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, TagsInput } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TagsInput, Button } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { TagsInput, Button } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 
 function Demo() {
   const [dropdownOpened, { toggle }] = useDisclosure();

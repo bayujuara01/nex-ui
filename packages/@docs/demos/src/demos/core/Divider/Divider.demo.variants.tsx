@@ -1,8 +1,8 @@
-import { Divider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Divider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Divider } from '@mantine/core';
+import { Divider } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,10 +1,10 @@
-import { Button, Code, Group, Text } from '@mantine/core';
-import { useStateHistory } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Code, Group, Text } from '@nex-ui/core';
+import { useStateHistory } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Code, Group, Text } from '@mantine/core';
-import { useStateHistory } from '@mantine/hooks';
+import { Button, Code, Group, Text } from '@nex-ui/core';
+import { useStateHistory } from '@nex-ui/hooks';
 
 function Demo() {
   const [value, handlers, history] = useStateHistory(1);

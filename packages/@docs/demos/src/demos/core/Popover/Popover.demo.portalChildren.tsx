@@ -1,10 +1,10 @@
-import { Button, Popover, Select } from '@mantine/core';
-import { DatePickerInput } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Popover, Select } from '@nex-ui/core';
+import { DatePickerInput } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Popover, Select } from '@mantine/core';
-import { DatePickerInput } from '@mantine/dates';
+import { Button, Popover, Select } from '@nex-ui/core';
+import { DatePickerInput } from '@nex-ui/dates';
 
 function Demo() {
   return (

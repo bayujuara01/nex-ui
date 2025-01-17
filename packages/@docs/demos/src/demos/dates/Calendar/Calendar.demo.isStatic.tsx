@@ -1,10 +1,10 @@
-import { Indicator } from '@mantine/core';
-import { Calendar } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { Indicator } from '@nex-ui/core';
+import { Calendar } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Indicator } from '@mantine/core';
-import { Calendar } from '@mantine/dates';
+import { Indicator } from '@nex-ui/core';
+import { Calendar } from '@nex-ui/dates';
 
 function Demo() {
   return (

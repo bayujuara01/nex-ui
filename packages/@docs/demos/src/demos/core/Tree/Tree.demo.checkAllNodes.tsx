@@ -7,8 +7,8 @@ import {
   RenderTreeNodePayload,
   Tree,
   useTree,
-} from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+} from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './data';
 
 const code = `
@@ -21,7 +21,7 @@ import {
   RenderTreeNodePayload,
   Tree,
   useTree,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { data } from './data';
 
 const renderTreeNode = ({

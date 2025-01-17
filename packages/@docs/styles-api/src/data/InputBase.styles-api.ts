@@ -1,4 +1,4 @@
-import type { InputBaseFactory } from '@mantine/core';
+import type { InputBaseFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { InputStylesApi, InputWrapperStylesApi } from './Input.styles-api';
 

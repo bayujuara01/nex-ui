@@ -1,4 +1,4 @@
-import type { DropzoneFactory, DropzoneFullScreenFactory } from '@mantine/dropzone';
+import type { DropzoneFactory, DropzoneFullScreenFactory } from '@nex-ui/dropzone';
 import type { StylesApiData } from '../types';
 
 export const DropzoneStylesApi: StylesApiData<DropzoneFactory> = {

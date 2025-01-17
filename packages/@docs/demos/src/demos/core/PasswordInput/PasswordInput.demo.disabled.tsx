@@ -1,8 +1,8 @@
-import { PasswordInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { PasswordInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { PasswordInput } from '@mantine/core';
+import { PasswordInput } from '@nex-ui/core';
 
 function Demo() {
   return (

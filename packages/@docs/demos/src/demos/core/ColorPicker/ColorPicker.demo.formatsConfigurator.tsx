@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { ColorPicker, ColorPickerProps, Stack, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorPicker, ColorPickerProps, Stack, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: ColorPickerProps) {
   const [value, onChange] = useState('#C5D899');
@@ -14,7 +14,7 @@ function Wrapper(props: ColorPickerProps) {
 }
 
 const code = `
-import { ColorPicker } from '@mantine/core';
+import { ColorPicker } from '@nex-ui/core';
 
 function Demo() {
   return <ColorPicker{{props}} />;

@@ -1,9 +1,9 @@
-import { AreaChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { AreaChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = (props: Record<string, any>) => `
-import { AreaChart } from '@mantine/charts';
+import { AreaChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

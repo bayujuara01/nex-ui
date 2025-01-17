@@ -1,13 +1,13 @@
 import { IconBold, IconItalic } from '@tabler/icons-react';
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { RichTextEditor } from '@mantine/tiptap';
-import { MantineDemo } from '@mantinex/demo';
+import { RichTextEditor } from '@nex-ui/tiptap';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { RichTextEditor } from '@mantine/tiptap';
+import { RichTextEditor } from '@nex-ui/tiptap';
 import { IconBold, IconItalic } from '@tabler/icons-react';
 
 const BoldIcon = () => <IconBold size="1rem" stroke={3.5} />;

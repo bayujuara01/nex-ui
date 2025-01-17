@@ -1,5 +1,5 @@
-import { Button, Code, Group, MantineThemeProvider, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Code, Group, NexThemeProvider, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Demo() {
   return (
@@ -13,7 +13,7 @@ function Demo() {
         <Button size="xs">Button 2</Button>
       </Group>
 
-      <MantineThemeProvider inherit theme={{ focusRing: 'always' }}>
+      <NexThemeProvider inherit theme={{ focusRing: 'always' }}>
         <Text mt="lg">
           Focus ring: <Code>always</Code>
         </Text>
@@ -22,9 +22,9 @@ function Demo() {
           <Button size="xs">Button 1</Button>
           <Button size="xs">Button 2</Button>
         </Group>
-      </MantineThemeProvider>
+      </NexThemeProvider>
 
-      <MantineThemeProvider inherit theme={{ focusRing: 'never' }}>
+      <NexThemeProvider inherit theme={{ focusRing: 'never' }}>
         <Text mt="lg">
           Focus ring: <Code>never</Code>
         </Text>
@@ -33,7 +33,7 @@ function Demo() {
           <Button size="xs">Button 1</Button>
           <Button size="xs">Button 2</Button>
         </Group>
-      </MantineThemeProvider>
+      </NexThemeProvider>
     </>
   );
 }

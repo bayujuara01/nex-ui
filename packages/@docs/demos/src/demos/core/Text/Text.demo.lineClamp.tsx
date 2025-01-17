@@ -1,8 +1,8 @@
-import { Text, TypographyStylesProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Text, TypographyStylesProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TypographyStylesProvider, Text } from '@mantine/core';
+import { TypographyStylesProvider, Text } from '@nex-ui/core';
 
 function Demo() {
   return (

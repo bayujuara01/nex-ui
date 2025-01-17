@@ -1,8 +1,8 @@
-import { Card, Image, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Card, Image, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Card, Image, Text } from '@mantine/core';
+import { Card, Image, Text } from '@nex-ui/core';
 
 function Demo() {
   return (

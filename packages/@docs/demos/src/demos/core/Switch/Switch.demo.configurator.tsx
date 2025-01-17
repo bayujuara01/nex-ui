@@ -1,8 +1,8 @@
-import { Switch } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Switch } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Switch } from '@mantine/core';
+import { Switch } from '@nex-ui/core';
 
 
 function Demo() {

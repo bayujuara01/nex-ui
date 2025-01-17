@@ -1,4 +1,4 @@
-import type { BadgeFactory } from '@mantine/core';
+import type { BadgeFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const BadgeStylesApi: StylesApiData<BadgeFactory> = {

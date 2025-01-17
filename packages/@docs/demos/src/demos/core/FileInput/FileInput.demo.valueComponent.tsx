@@ -1,8 +1,8 @@
-import { FileInput, FileInputProps, Pill } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { FileInput, FileInputProps, Pill } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { FileInput, FileInputProps, Pill } from '@mantine/core';
+import { FileInput, FileInputProps, Pill } from '@nex-ui/core';
 
 const ValueComponent: FileInputProps['valueComponent'] = ({ value }) => {
   if (value === null) {

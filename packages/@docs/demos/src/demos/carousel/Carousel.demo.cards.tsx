@@ -1,7 +1,7 @@
-import { Carousel, CarouselProps } from '@mantine/carousel';
-import { Button, Paper, Text, Title, useMantineTheme } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Carousel, CarouselProps } from '@nex-ui/carousel';
+import { Button, Paper, Text, Title, useNexTheme } from '@nex-ui/core';
+import { useMediaQuery } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Carousel.demo.cards.module.css';
 
 const cssCode = `.card {
@@ -33,9 +33,9 @@ const cssCode = `.card {
 `;
 
 const code = `
-import { Carousel } from '@mantine/carousel';
-import { useMediaQuery } from '@mantine/hooks';
-import { Button, Paper, Title, useMantineTheme, Text } from '@mantine/core';
+import { Carousel } from '@nex-ui/carousel';
+import { useMediaQuery } from '@nex-ui/hooks';
+import { Button, Paper, Title, useNexTheme, Text } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const data = [
@@ -108,7 +108,7 @@ function Card({ image, title, category }: CardProps) {
 }
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const mobile = useMediaQuery(\`(max-width: \${theme.breakpoints.sm})\`);
   const slides = data.map((item) => (
     <Carousel.Slide key={item.title}>
@@ -199,7 +199,7 @@ export function Card({ image, title, category }: CardProps) {
 }
 
 export function CarouselCardsDemos(props: CarouselProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const slides = data.map((item) => (
     <Carousel.Slide key={item.title}>

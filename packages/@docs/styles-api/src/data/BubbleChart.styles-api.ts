@@ -1,4 +1,4 @@
-import type { BubbleChartFactory } from '@mantine/charts';
+import type { BubbleChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const BubbleChartStylesApi: StylesApiData<BubbleChartFactory> = {

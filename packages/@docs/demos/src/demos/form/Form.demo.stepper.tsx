@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Button, Code, Group, PasswordInput, Stepper, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Code, Group, PasswordInput, Stepper, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Stepper, Button, Group, TextInput, PasswordInput, Code } from '@mantine/core';
-import { useForm } from '@mantine/form';
+import { Stepper, Button, Group, TextInput, PasswordInput, Code } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
 
 function Demo() {
   const [active, setActive] = useState(0);

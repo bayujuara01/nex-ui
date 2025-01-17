@@ -1,4 +1,4 @@
-import { ConfiguratorControlOptions } from '@mantinex/demo';
+import { ConfiguratorControlOptions } from '@nex-uix/demo';
 
 export const gradientControls: ConfiguratorControlOptions[] = [
   { type: 'color', prop: 'gradientFrom', initialValue: 'blue', libraryValue: '__none__' },

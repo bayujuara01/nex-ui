@@ -1,4 +1,4 @@
-import type { PopoverFactory } from '@mantine/core';
+import type { PopoverFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const PopoverStylesApi: StylesApiData<PopoverFactory> = {

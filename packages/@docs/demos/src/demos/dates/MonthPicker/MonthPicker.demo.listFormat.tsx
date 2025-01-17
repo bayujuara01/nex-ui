@@ -1,8 +1,8 @@
-import { MonthPicker } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { MonthPicker } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { MonthPicker } from '@mantine/dates';
+import { MonthPicker } from '@nex-ui/dates';
 
 function Demo() {
   return <MonthPicker monthsListFormat="MM" yearsListFormat="YY" />;

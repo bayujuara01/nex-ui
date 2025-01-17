@@ -1,5 +1,5 @@
-import { BackgroundImage, BackgroundImageProps, Box, Center, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { BackgroundImage, BackgroundImageProps, Box, Center, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: BackgroundImageProps) {
   return (
@@ -20,7 +20,7 @@ function Wrapper(props: BackgroundImageProps) {
 }
 
 const code = `
-import { BackgroundImage, Center, Text, Box } from '@mantine/core';
+import { BackgroundImage, Center, Text, Box } from '@nex-ui/core';
 
 
 function Demo() {

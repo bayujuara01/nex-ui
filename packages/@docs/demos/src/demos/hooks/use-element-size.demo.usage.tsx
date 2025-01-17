@@ -1,10 +1,10 @@
-import { Group, rem, Text, useMantineTheme } from '@mantine/core';
-import { useElementSize } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, rem, Text, useNexTheme } from '@nex-ui/core';
+import { useElementSize } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useElementSize } from '@mantine/hooks';
-import { rem } from '@mantine/core';
+import { useElementSize } from '@nex-ui/hooks';
+import { rem } from '@nex-ui/core';
 
 function Demo() {
   const { ref, width, height } = useElementSize();
@@ -18,7 +18,7 @@ function Demo() {
 }`;
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const { ref, width, height } = useElementSize();
 
   return (

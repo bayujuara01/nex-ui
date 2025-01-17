@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Button, Group, Text } from '@mantine/core';
-import { randomId, useTimeout } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Text } from '@nex-ui/core';
+import { randomId, useTimeout } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Button, Text, Group } from '@mantine/core';
-import { randomId, useTimeout } from '@mantine/hooks';
+import { Button, Text, Group } from '@nex-ui/core';
+import { randomId, useTimeout } from '@nex-ui/hooks';
 
 function Demo() {
   const [value, setValue] = useState('');

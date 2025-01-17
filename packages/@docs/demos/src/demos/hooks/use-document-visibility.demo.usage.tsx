@@ -1,10 +1,10 @@
-import { Text } from '@mantine/core';
-import { useDocumentTitle, useDocumentVisibility } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Text } from '@nex-ui/core';
+import { useDocumentTitle, useDocumentVisibility } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Text } from '@mantine/core';
-import { useDocumentTitle, useDocumentVisibility } from '@mantine/hooks';
+import { Text } from '@nex-ui/core';
+import { useDocumentTitle, useDocumentVisibility } from '@nex-ui/hooks';
 
 function Demo() {
   const documentState = useDocumentVisibility();

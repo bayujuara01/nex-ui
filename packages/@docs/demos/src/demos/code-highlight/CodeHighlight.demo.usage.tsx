@@ -1,5 +1,5 @@
-import { CodeHighlight } from '@mantine/code-highlight';
-import { MantineDemo } from '@mantinex/demo';
+import { CodeHighlight } from '@nex-ui/code-highlight';
+import { MantineDemo } from '@nex-uix/demo';
 
 const exampleCode = `
 // VisuallyHidden component source code
@@ -54,7 +54,7 @@ VisuallyHidden.displayName = '@mantine/core/VisuallyHidden';
 `;
 
 const code = `
-import { CodeHighlight } from '@mantine/code-highlight';
+import { CodeHighlight } from '@nex-ui/code-highlight';
 
 const exampleCode = \`${exampleCode}\`;
 

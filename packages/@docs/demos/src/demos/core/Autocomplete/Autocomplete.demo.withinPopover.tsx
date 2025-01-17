@@ -1,8 +1,8 @@
-import { Autocomplete, Button, Popover } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Autocomplete, Button, Popover } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Popover, Button, Autocomplete } from '@mantine/core';
+import { Popover, Button, Autocomplete } from '@nex-ui/core';
 
 function Demo() {
   return (

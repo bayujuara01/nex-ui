@@ -1,4 +1,4 @@
-import type { AreaChartFactory } from '@mantine/charts';
+import type { AreaChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const AreaChartStylesApi: StylesApiData<AreaChartFactory> = {

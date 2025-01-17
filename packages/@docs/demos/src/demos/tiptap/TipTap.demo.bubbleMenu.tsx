@@ -1,12 +1,12 @@
 import { BubbleMenu, useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { Link, RichTextEditor } from '@mantine/tiptap';
-import { MantineDemo } from '@mantinex/demo';
+import { Link, RichTextEditor } from '@nex-ui/tiptap';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useEditor, BubbleMenu } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { RichTextEditor, Link } from '@mantine/tiptap';
+import { RichTextEditor, Link } from '@nex-ui/tiptap';
 
 function Demo() {
   const editor = useEditor({

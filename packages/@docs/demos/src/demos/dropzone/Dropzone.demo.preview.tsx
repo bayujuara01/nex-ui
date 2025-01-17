@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Image, SimpleGrid, Text } from '@mantine/core';
-import { Dropzone, FileWithPath, IMAGE_MIME_TYPE } from '@mantine/dropzone';
-import { MantineDemo } from '@mantinex/demo';
+import { Image, SimpleGrid, Text } from '@nex-ui/core';
+import { Dropzone, FileWithPath, IMAGE_MIME_TYPE } from '@nex-ui/dropzone';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Text, Image, SimpleGrid } from '@mantine/core';
-import { Dropzone, IMAGE_MIME_TYPE, FileWithPath } from '@mantine/dropzone';
+import { Text, Image, SimpleGrid } from '@nex-ui/core';
+import { Dropzone, IMAGE_MIME_TYPE, FileWithPath } from '@nex-ui/dropzone';
 
 function Demo() {
   const [files, setFiles] = useState<FileWithPath[]>([]);

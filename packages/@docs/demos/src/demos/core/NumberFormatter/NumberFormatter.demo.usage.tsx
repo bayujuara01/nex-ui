@@ -1,8 +1,8 @@
-import { NumberFormatter } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NumberFormatter } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { NumberFormatter } from '@mantine/core';
+import { NumberFormatter } from '@nex-ui/core';
 
 function Demo() {
   return <NumberFormatter prefix="$ " value={1000000} thousandSeparator />;

@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { IconCheck, IconX } from '@tabler/icons-react';
-import { rem, Switch, useMantineTheme } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Switch, useNexTheme } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Switch, useMantineTheme, rem } from '@mantine/core';
+import { Switch, useNexTheme, rem } from '@nex-ui/core';
 import { IconCheck, IconX } from '@tabler/icons-react';
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const [checked, setChecked] = useState(false);
   return (
     <Switch
@@ -39,7 +39,7 @@ function Demo() {
 `;
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const [checked, setChecked] = useState(false);
   return (
     <Switch

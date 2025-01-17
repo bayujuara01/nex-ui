@@ -1,4 +1,4 @@
-import type { MenuFactory } from '@mantine/core';
+import type { MenuFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { PopoverStylesApi } from './Popover.styles-api';
 

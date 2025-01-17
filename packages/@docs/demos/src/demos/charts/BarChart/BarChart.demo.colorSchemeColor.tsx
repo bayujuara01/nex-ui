@@ -1,5 +1,5 @@
-import { BarChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { BarChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 import classes from './BarChart.demo.colorSchemeColor.module.css';
 
@@ -15,7 +15,7 @@ const cssCode = `.root {
 `;
 
 const code = `
-import { BarChart } from '@mantine/charts';
+import { BarChart } from '@nex-ui/charts';
 import { data } from './data';
 import classes from './Demo.module.css';
 

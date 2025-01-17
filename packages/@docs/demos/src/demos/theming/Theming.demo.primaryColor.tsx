@@ -1,8 +1,8 @@
-import { Button, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group, Button, MantineProvider, createTheme } from '@mantine/core';
+import { Group, Button, NexProvider, createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   primaryColor: 'bright-pink',
@@ -13,12 +13,12 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Group>
         <Button>Primary button</Button>
         <Button color="blue">Blue button</Button>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 

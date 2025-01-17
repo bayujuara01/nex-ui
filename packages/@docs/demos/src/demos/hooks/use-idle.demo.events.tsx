@@ -1,10 +1,10 @@
-import { Badge } from '@mantine/core';
-import { useIdle } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge } from '@nex-ui/core';
+import { useIdle } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const eventsCode = `
-import { Badge } from '@mantine/core';
-import { useIdle } from '@mantine/hooks';
+import { Badge } from '@nex-ui/core';
+import { useIdle } from '@nex-ui/hooks';
 
 function Demo() {
   const idle = useIdle(2000, { events: ['click', 'touchstart'] });

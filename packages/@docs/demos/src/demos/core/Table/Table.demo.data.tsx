@@ -1,8 +1,8 @@
-import { Table, TableData } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Table, TableData } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Table, TableData } from '@mantine/core';
+import { Table, TableData } from '@nex-ui/core';
 
 const tableData: TableData = {
   caption: 'Some elements from periodic table',

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { FloatingIndicator, Tabs } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { FloatingIndicator, Tabs } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './FloatingIndicator.demo.tabs.module.css';
 
 const cssCode = `
@@ -43,7 +43,7 @@ const cssCode = `
 
 const code = `
 import { useState } from 'react';
-import { FloatingIndicator, Tabs } from '@mantine/core';
+import { FloatingIndicator, Tabs } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

@@ -1,11 +1,11 @@
-import { BarChart } from '@mantine/charts';
-import { useMediaQuery } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { BarChart } from '@nex-ui/charts';
+import { useMediaQuery } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 import { overlayData, overlayDataCode } from './_data';
 import classes from './BarChart.demo.overlay.module.css';
 
 const code = `
-import { BarChart } from '@mantine/charts';
+import { BarChart } from '@nex-ui/charts';
 import classes from './Demo.module.css';
 import { data } from './data';
 

@@ -1,9 +1,9 @@
-import { SimpleGrid } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { SimpleGrid } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { defaultItems } from './_demo-item';
 
 const code = `
-import { SimpleGrid } from '@mantine/core';
+import { SimpleGrid } from '@nex-ui/core';
 
 function Demo() {
   return (

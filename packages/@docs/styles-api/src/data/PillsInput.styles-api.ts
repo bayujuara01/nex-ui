@@ -1,4 +1,4 @@
-import type { PillsInputFactory, PillsInputFieldFactory } from '@mantine/core';
+import type { PillsInputFactory, PillsInputFieldFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { InputStylesApi, InputWrapperStylesApi } from './Input.styles-api';
 

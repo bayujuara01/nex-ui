@@ -1,10 +1,10 @@
 import { IconMessageCircle, IconPhoto, IconSettings } from '@tabler/icons-react';
-import { rem, Tabs } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Tabs } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Tabs.demo.customize.module.css';
 
 const code = `
-import { Tabs, rem } from '@mantine/core';
+import { Tabs, rem } from '@nex-ui/core';
 import { IconPhoto, IconMessageCircle, IconSettings } from '@tabler/icons-react';
 import classes from './Demo.module.css';
 

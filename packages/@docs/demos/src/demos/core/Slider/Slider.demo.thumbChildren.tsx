@@ -1,9 +1,9 @@
 import { IconHeart, IconHeartBroken } from '@tabler/icons-react';
-import { RangeSlider, rem, Slider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { RangeSlider, rem, Slider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Slider, RangeSlider, rem } from '@mantine/core';
+import { Slider, RangeSlider, rem } from '@nex-ui/core';
 import { IconHeart, IconHeartBroken } from '@tabler/icons-react';
 
 function Demo() {

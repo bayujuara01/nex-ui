@@ -1,10 +1,10 @@
-import { Button, Code, Group, Text } from '@mantine/core';
-import { randomId, useHash } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Code, Group, Text } from '@nex-ui/core';
+import { randomId, useHash } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useHash, randomId } from '@mantine/hooks';
-import { Button, Text, Code } from '@mantine/core';
+import { useHash, randomId } from '@nex-ui/hooks';
+import { Button, Text, Code } from '@nex-ui/core';
 
 function Demo() {
   const [hash, setHash] = useHash();

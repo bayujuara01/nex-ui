@@ -1,5 +1,5 @@
-import { CompositeChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { CompositeChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 import classes from './CompositeChart.demo.colorSchemeColor.module.css';
 
@@ -15,7 +15,7 @@ const cssCode = `.root {
 `;
 
 const code = `
-import { CompositeChart } from '@mantine/charts';
+import { CompositeChart } from '@nex-ui/charts';
 import { data } from './data';
 import classes from './Demo.module.css';
 

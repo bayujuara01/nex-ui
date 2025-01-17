@@ -1,9 +1,9 @@
 import { IconX } from '@tabler/icons-react';
-import { Chip, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Chip, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Chip, rem } from '@mantine/core';
+import { Chip, rem } from '@nex-ui/core';
 import { IconX } from '@tabler/icons-react';
 
 function Demo() {

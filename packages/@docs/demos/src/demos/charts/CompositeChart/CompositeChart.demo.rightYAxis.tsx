@@ -1,9 +1,9 @@
-import { CompositeChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { CompositeChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { biaxialData, biaxialDataCode } from './_data';
 
 const code = `
-import { CompositeChart } from '@mantine/charts';
+import { CompositeChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

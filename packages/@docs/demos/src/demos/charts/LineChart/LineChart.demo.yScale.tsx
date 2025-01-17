@@ -1,9 +1,9 @@
-import { LineChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { LineChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { yScaleData, yScaleDataCode } from './_data';
 
 const code = `
-import { LineChart } from '@mantine/charts';
+import { LineChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

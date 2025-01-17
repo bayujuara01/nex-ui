@@ -2215,6 +2215,72 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docs/demos@workspace:packages/@docs/demos":
+  version: 0.0.0-use.local
+  resolution: "@docs/demos@workspace:packages/@docs/demos"
+  dependencies:
+    "@docs/styles-api": "workspace:*"
+    "@nex-ui/carousel": "workspace:*"
+    "@nex-ui/charts": "workspace:*"
+    "@nex-ui/code-highlight": "workspace:*"
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/dates": "workspace:*"
+    "@nex-ui/dropzone": "workspace:*"
+    "@nex-ui/form": "workspace:*"
+    "@nex-ui/hooks": "workspace:*"
+    "@nex-ui/notifications": "workspace:*"
+    "@nex-ui/nprogress": "workspace:*"
+    "@nex-ui/spotlight": "workspace:*"
+    "@nex-ui/tiptap": "workspace:*"
+    "@nex-uix/demo": "workspace:*"
+    "@nex-uix/dev-icons": "workspace:*"
+    "@nex-uix/shiki": "workspace:*"
+    "@tiptap/core": "npm:^2.9.1"
+    "@tiptap/extension-link": "npm:^2.9.1"
+    "@tiptap/pm": "npm:^2.9.1"
+    "@tiptap/react": "npm:^2.9.1"
+    dayjs: "npm:^1.11.13"
+    embla-carousel-react: "npm:^7.1.0"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    recharts: "npm:^2.13.3"
+    shiki: "npm:^1.23.1"
+  peerDependencies:
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
+"@docs/styles-api@workspace:*, @docs/styles-api@workspace:packages/@docs/styles-api":
+  version: 0.0.0-use.local
+  resolution: "@docs/styles-api@workspace:packages/@docs/styles-api"
+  dependencies:
+    "@nex-ui/carousel": "workspace:*"
+    "@nex-ui/charts": "workspace:*"
+    "@nex-ui/code-highlight": "workspace:*"
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/dates": "workspace:*"
+    "@nex-ui/dropzone": "workspace:*"
+    "@nex-ui/notifications": "workspace:*"
+    "@nex-ui/nprogress": "workspace:*"
+    "@nex-ui/spotlight": "workspace:*"
+    "@nex-ui/tiptap": "workspace:*"
+    "@tiptap/core": "npm:^2.9.1"
+    "@tiptap/extension-link": "npm:^2.9.1"
+    "@tiptap/pm": "npm:^2.9.1"
+    "@tiptap/react": "npm:^2.9.1"
+    dayjs: "npm:^1.11.13"
+    embla-carousel-react: "npm:^7.1.0"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    recharts: "npm:^2.13.3"
+    shiki: "npm:^1.23.1"
+  peerDependencies:
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
 "@dual-bundle/import-meta-resolve@npm:^4.1.0":
   version: 4.1.0
   resolution: "@dual-bundle/import-meta-resolve@npm:4.1.0"
@@ -3710,7 +3776,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/carousel@workspace:packages/@nex-ui/carousel":
+"@nex-ui/carousel@workspace:*, @nex-ui/carousel@workspace:packages/@nex-ui/carousel":
   version: 0.0.0-use.local
   resolution: "@nex-ui/carousel@workspace:packages/@nex-ui/carousel"
   dependencies:
@@ -3728,7 +3794,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/charts@workspace:packages/@nex-ui/charts":
+"@nex-ui/charts@workspace:*, @nex-ui/charts@workspace:packages/@nex-ui/charts":
   version: 0.0.0-use.local
   resolution: "@nex-ui/charts@workspace:packages/@nex-ui/charts"
   dependencies:
@@ -3746,7 +3812,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/code-highlight@workspace:packages/@nex-ui/code-highlight":
+"@nex-ui/code-highlight@workspace:*, @nex-ui/code-highlight@workspace:packages/@nex-ui/code-highlight":
   version: 0.0.0-use.local
   resolution: "@nex-ui/code-highlight@workspace:packages/@nex-ui/code-highlight"
   dependencies:
@@ -3814,7 +3880,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/dropzone@workspace:packages/@nex-ui/dropzone":
+"@nex-ui/dropzone@workspace:*, @nex-ui/dropzone@workspace:packages/@nex-ui/dropzone":
   version: 0.0.0-use.local
   resolution: "@nex-ui/dropzone@workspace:packages/@nex-ui/dropzone"
   dependencies:
@@ -3854,7 +3920,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/form@workspace:packages/@nex-ui/form":
+"@nex-ui/form@workspace:*, @nex-ui/form@workspace:packages/@nex-ui/form":
   version: 0.0.0-use.local
   resolution: "@nex-ui/form@workspace:packages/@nex-ui/form"
   dependencies:
@@ -3889,7 +3955,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/notifications@workspace:packages/@nex-ui/notifications":
+"@nex-ui/notifications@workspace:*, @nex-ui/notifications@workspace:packages/@nex-ui/notifications":
   version: 0.0.0-use.local
   resolution: "@nex-ui/notifications@workspace:packages/@nex-ui/notifications"
   dependencies:
@@ -3908,7 +3974,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/nprogress@workspace:packages/@nex-ui/nprogress":
+"@nex-ui/nprogress@workspace:*, @nex-ui/nprogress@workspace:packages/@nex-ui/nprogress":
   version: 0.0.0-use.local
   resolution: "@nex-ui/nprogress@workspace:packages/@nex-ui/nprogress"
   dependencies:
@@ -3926,7 +3992,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/spotlight@workspace:packages/@nex-ui/spotlight":
+"@nex-ui/spotlight@workspace:*, @nex-ui/spotlight@workspace:packages/@nex-ui/spotlight":
   version: 0.0.0-use.local
   resolution: "@nex-ui/spotlight@workspace:packages/@nex-ui/spotlight"
   dependencies:
@@ -3952,7 +4018,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-ui/tiptap@workspace:packages/@nex-ui/tiptap":
+"@nex-ui/tiptap@workspace:*, @nex-ui/tiptap@workspace:packages/@nex-ui/tiptap":
   version: 0.0.0-use.local
   resolution: "@nex-ui/tiptap@workspace:packages/@nex-ui/tiptap"
   dependencies:
@@ -3982,7 +4048,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-uix/demo@workspace:packages/@nex-uix/demo":
+"@nex-uix/demo@workspace:*, @nex-uix/demo@workspace:packages/@nex-uix/demo":
   version: 0.0.0-use.local
   resolution: "@nex-uix/demo@workspace:packages/@nex-uix/demo"
   dependencies:
@@ -4004,7 +4070,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@nex-uix/dev-icons@workspace:packages/@nex-uix/dev-icons":
+"@nex-uix/dev-icons@workspace:*, @nex-uix/dev-icons@workspace:packages/@nex-uix/dev-icons":
   version: 0.0.0-use.local
   resolution: "@nex-uix/dev-icons@workspace:packages/@nex-uix/dev-icons"
   dependencies:

@@ -1,8 +1,8 @@
-import { Slider, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Slider, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Slider, Text } from '@mantine/core';
+import { Slider, Text } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,4 +1,4 @@
-import type { BreadcrumbsFactory } from '@mantine/core';
+import type { BreadcrumbsFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const BreadcrumbsStylesApi: StylesApiData<BreadcrumbsFactory> = {

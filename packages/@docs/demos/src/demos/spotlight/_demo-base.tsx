@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { Button, Group } from '@mantine/core';
-import { createSpotlight, Spotlight, SpotlightProps } from '@mantine/spotlight';
+import { Button, Group } from '@nex-ui/core';
+import { createSpotlight, Spotlight, SpotlightProps } from '@nex-ui/spotlight';
 
 export function SpotlightDemoBase(props: Partial<SpotlightProps>) {
   const [store, actions] = useMemo(createSpotlight, []);

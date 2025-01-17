@@ -1,10 +1,10 @@
-import { Button, Group, NumberInput, TextInput } from '@mantine/core';
-import { hasLength, isEmail, isInRange, isNotEmpty, matches, useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, NumberInput, TextInput } from '@nex-ui/core';
+import { hasLength, isEmail, isInRange, isNotEmpty, matches, useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useForm, isNotEmpty, isEmail, isInRange, hasLength, matches } from '@mantine/form';
-import { Button, Group, TextInput, NumberInput } from '@mantine/core';
+import { useForm, isNotEmpty, isEmail, isInRange, hasLength, matches } from '@nex-ui/form';
+import { Button, Group, TextInput, NumberInput } from '@nex-ui/core';
 
 function Demo() {
   const form = useForm({

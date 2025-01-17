@@ -1,10 +1,10 @@
-import { em, getBreakpointValue, rem } from '@mantine/core';
-import { createStyles } from '@mantine/emotion';
-import { MantineDemo } from '@mantinex/demo';
+import { em, getBreakpointValue, rem } from '@nex-ui/core';
+import { createStyles } from '@nex-ui/emotion';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { em, getBreakpointValue, rem } from '@mantine/core';
-import { createStyles } from '@mantine/emotion';
+import { em, getBreakpointValue, rem } from '@nex-ui/core';
+import { createStyles } from '@nex-ui/emotion';
 
 const useStyles = createStyles((theme, _, u) => ({
   container: {

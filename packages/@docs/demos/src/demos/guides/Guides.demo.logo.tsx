@@ -1,8 +1,8 @@
-import { MantineDemo } from '@mantinex/demo';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { MantineDemo } from '@nex-uix/demo';
+import { MantineLogo } from '@nex-uix/nex-ui-logo';
 
 const code = `
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { MantineLogo } from '@nex-uix/mantine-logo';
 
 function Demo() {
   return <MantineLogo{{props}} />;

@@ -1,10 +1,10 @@
-import { Button, Modal, ScrollArea } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Modal, ScrollArea } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useDisclosure } from '@mantine/hooks';
-import { Modal, Button, ScrollArea } from '@mantine/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { Modal, Button, ScrollArea } from '@nex-ui/core';
 
 function Demo() {
   const [opened, { open, close }] = useDisclosure(false);

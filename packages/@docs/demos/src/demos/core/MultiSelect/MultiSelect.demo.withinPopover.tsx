@@ -1,8 +1,8 @@
-import { Button, MultiSelect, Popover } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, MultiSelect, Popover } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Popover, Button, MultiSelect } from '@mantine/core';
+import { Popover, Button, MultiSelect } from '@nex-ui/core';
 
 function Demo() {
   return (

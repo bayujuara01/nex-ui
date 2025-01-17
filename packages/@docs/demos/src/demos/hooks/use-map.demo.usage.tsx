@@ -1,12 +1,12 @@
 import { IconPlus, IconTrash } from '@tabler/icons-react';
-import { ActionIcon, Group, Table } from '@mantine/core';
-import { useMap } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, Group, Table } from '@nex-ui/core';
+import { useMap } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { IconPlus, IconTrash } from '@tabler/icons-react';
-import { ActionIcon, Group, Table } from '@mantine/core';
-import { useMap } from '@mantine/hooks';
+import { ActionIcon, Group, Table } from '@nex-ui/core';
+import { useMap } from '@nex-ui/hooks';
 
 function Demo() {
   const map = useMap([

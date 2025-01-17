@@ -1,8 +1,8 @@
-import { NativeSelect } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NativeSelect } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { NativeSelect } from '@mantine/core';
+import { NativeSelect } from '@nex-ui/core';
 
 function Demo() {
   return <NativeSelect disabled data={['React', 'Angular']} label="Disabled NativeSelect" />;

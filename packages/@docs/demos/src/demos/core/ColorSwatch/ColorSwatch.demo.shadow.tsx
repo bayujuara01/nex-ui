@@ -1,8 +1,8 @@
-import { ColorSwatch } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorSwatch } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { ColorSwatch } from '@mantine/core';
+import { ColorSwatch } from '@nex-ui/core';
 
 function Demo() {
   return <ColorSwatch color="rgba(255, 255, 255, 0.7)"{{props}} />;

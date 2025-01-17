@@ -1,8 +1,8 @@
-import { Radio, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Radio, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Tooltip, Radio } from '@mantine/core';
+import { Tooltip, Radio } from '@nex-ui/core';
 
 function Demo() {
   return (

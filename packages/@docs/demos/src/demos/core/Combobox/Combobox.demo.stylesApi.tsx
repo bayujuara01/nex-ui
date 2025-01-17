@@ -1,9 +1,9 @@
-import { Combobox, TextInput, useCombobox } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Combobox, TextInput, useCombobox } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { ComboboxStylesApi } from '@docs/styles-api';
 
 const code = `
-import { Combobox, TextInput, useCombobox } from '@mantine/core';
+import { Combobox, TextInput, useCombobox } from '@nex-ui/core';
 
 function Demo() {
   const combobox = useCombobox({ opened: true });

@@ -1,10 +1,10 @@
-import { Text, TextInput } from '@mantine/core';
-import { useInputState, usePrevious } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Text, TextInput } from '@nex-ui/core';
+import { useInputState, usePrevious } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TextInput, Text } from '@mantine/core';
-import { usePrevious, useInputState } from '@mantine/hooks';
+import { TextInput, Text } from '@nex-ui/core';
+import { usePrevious, useInputState } from '@nex-ui/hooks';
 
 function Demo() {
   const [value, setValue] = useInputState('');

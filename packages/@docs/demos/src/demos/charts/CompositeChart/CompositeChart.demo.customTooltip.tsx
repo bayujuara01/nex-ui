@@ -1,11 +1,11 @@
-import { CompositeChart } from '@mantine/charts';
-import { alpha, Paper, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { CompositeChart } from '@nex-ui/charts';
+import { alpha, Paper, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { CompositeChart } from '@mantine/charts';
-import { alpha, Paper, Text } from '@mantine/core';
+import { CompositeChart } from '@nex-ui/charts';
+import { alpha, Paper, Text } from '@nex-ui/core';
 import { data } from './data';
 
 interface ChartTooltipProps {

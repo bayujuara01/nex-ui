@@ -1,8 +1,8 @@
-import { Progress, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Progress, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Progress, Tooltip } from '@mantine/core';
+import { Progress, Tooltip } from '@nex-ui/core';
 
 function Demo() {
   return (

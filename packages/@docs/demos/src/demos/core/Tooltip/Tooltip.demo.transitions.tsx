@@ -1,5 +1,5 @@
-import { Badge, Group, keys, MANTINE_TRANSITIONS, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge, Group, keys, MANTINE_TRANSITIONS, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 export function Demo() {
   const transitions = keys(MANTINE_TRANSITIONS).map((transition) => (

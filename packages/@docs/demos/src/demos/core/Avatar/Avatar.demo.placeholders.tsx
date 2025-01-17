@@ -1,9 +1,9 @@
 import { IconStar } from '@tabler/icons-react';
-import { Avatar, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Avatar } from '@mantine/core';
+import { Avatar } from '@nex-ui/core';
 import { IconStar } from '@tabler/icons-react';
 
 function Demo() {

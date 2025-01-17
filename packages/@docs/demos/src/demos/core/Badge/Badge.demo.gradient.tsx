@@ -1,9 +1,9 @@
-import { Badge } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { gradientControls } from '../../../shared';
 
 const code = (props: any) => `
-import { Badge } from '@mantine/core';
+import { Badge } from '@nex-ui/core';
 
 function Demo() {
   return (

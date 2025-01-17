@@ -1,4 +1,4 @@
-import type { SemiCircleProgressFactory } from '@mantine/core';
+import type { SemiCircleProgressFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const SemiCircleProgressStylesApi: StylesApiData<SemiCircleProgressFactory> = {

@@ -2,7 +2,7 @@ import type {
   CodeHighlightFactory,
   CodeHighlightTabsFactory,
   InlineCodeHighlightFactory,
-} from '@mantine/code-highlight';
+} from '@nex-ui/code-highlight';
 import type { StylesApiData } from '../types';
 
 export const CodeHighlightTabsStylesApi: StylesApiData<CodeHighlightTabsFactory> = {

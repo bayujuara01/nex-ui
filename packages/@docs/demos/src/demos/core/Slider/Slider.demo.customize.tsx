@@ -1,9 +1,9 @@
-import { Box, Slider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Slider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Slider.demo.customize.module.css';
 
 const code = `
-import { Slider } from '@mantine/core';
+import { Slider } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

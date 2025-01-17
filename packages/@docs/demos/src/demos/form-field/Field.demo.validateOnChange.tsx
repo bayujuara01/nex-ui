@@ -1,10 +1,10 @@
-import { TextInput } from '@mantine/core';
-import { isEmail, useField } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { TextInput } from '@nex-ui/core';
+import { isEmail, useField } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TextInput } from '@mantine/core';
-import { useField, isEmail } from '@mantine/form';
+import { TextInput } from '@nex-ui/core';
+import { useField, isEmail } from '@nex-ui/form';
 
 function Demo() {
   const field = useField({

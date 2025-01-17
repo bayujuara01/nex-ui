@@ -1,8 +1,8 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 import { Wrapper } from './_wrapper';
 
 const code = `
-import { Spoiler } from '@mantine/core';
+import { Spoiler } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,4 +1,4 @@
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 
 interface AddressBookIconProps extends React.ComponentPropsWithoutRef<'svg'> {
   size?: number | string;

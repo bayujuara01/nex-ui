@@ -1,13 +1,13 @@
 import { IconTrash } from '@tabler/icons-react';
-import { ActionIcon, Box, Button, Group, Switch, Text, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { randomId } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, Box, Button, Group, Switch, Text, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { randomId } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useForm } from '@mantine/form';
-import { TextInput, Switch, Group, ActionIcon, Box, Text, Button } from '@mantine/core';
-import { randomId } from '@mantine/hooks';
+import { useForm } from '@nex-ui/form';
+import { TextInput, Switch, Group, ActionIcon, Box, Text, Button } from '@nex-ui/core';
+import { randomId } from '@nex-ui/hooks';
 import { IconTrash } from '@tabler/icons-react';
 
 function Demo() {

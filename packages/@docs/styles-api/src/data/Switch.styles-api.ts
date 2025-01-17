@@ -1,4 +1,4 @@
-import type { SwitchFactory, SwitchGroupFactory } from '@mantine/core';
+import type { SwitchFactory, SwitchGroupFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { InputWrapperStylesApi } from './Input.styles-api';
 

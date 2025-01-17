@@ -1,10 +1,10 @@
-import { Badge } from '@mantine/core';
-import { useReducedMotion } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge } from '@nex-ui/core';
+import { useReducedMotion } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Badge } from '@mantine/core';
-import { useReducedMotion } from '@mantine/hooks';
+import { Badge } from '@nex-ui/core';
+import { useReducedMotion } from '@nex-ui/hooks';
 
 function Demo() {
   const reduceMotion = useReducedMotion();

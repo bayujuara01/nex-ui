@@ -1,9 +1,9 @@
 import { IconChartBubble } from '@tabler/icons-react';
-import { NumberInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NumberInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { NumberInput } from '@mantine/core';
+import { NumberInput } from '@nex-ui/core';
 import { IconChartBubble } from '@tabler/icons-react';
 
 function Demo() {

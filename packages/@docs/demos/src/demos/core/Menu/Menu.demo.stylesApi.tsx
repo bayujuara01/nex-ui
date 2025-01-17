@@ -1,10 +1,10 @@
-import { Menu } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Menu } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { MenuStylesApi } from '@docs/styles-api';
 import { DemoMenuItems } from './_menu-items';
 
 const code = `
-import { Menu } from '@mantine/core';
+import { Menu } from '@nex-ui/core';
 
 function Demo() {
   return (

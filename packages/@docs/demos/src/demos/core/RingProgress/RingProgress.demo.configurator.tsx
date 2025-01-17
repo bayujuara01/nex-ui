@@ -1,5 +1,5 @@
-import { RingProgress, RingProgressProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { RingProgress, RingProgressProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: RingProgressProps) {
   return (
@@ -15,7 +15,7 @@ function Wrapper(props: RingProgressProps) {
 }
 
 const code = `
-import { RingProgress } from '@mantine/core';
+import { RingProgress } from '@nex-ui/core';
 
 function Demo() {
   return (

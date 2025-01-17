@@ -1,15 +1,15 @@
-import { Button, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: Record<string, any>) => `
-import { MantineProvider, TextInput, Button } from '@mantine/core';
+import { NexProvider, TextInput, Button } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider theme={{ defaultRadius: '${props.defaultRadius}' }}>
+    <NexProvider theme={{ defaultRadius: '${props.defaultRadius}' }}>
       <Button fullWidth>Button with defaultRadius</Button>
       <TextInput mt="sm" label="TextInput with defaultRadius" placeholder="TextInput with default radius" />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;

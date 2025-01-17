@@ -1,9 +1,9 @@
-import { Tree } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Tree } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './data';
 
 const code = `
-import { Tree } from '@mantine/core';
+import { Tree } from '@nex-ui/core';
 import { data } from './data';
 
 function Demo() {

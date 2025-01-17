@@ -1,8 +1,8 @@
-import { Button, Flex } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Flex } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Flex, Button } from '@mantine/core';
+import { Flex, Button } from '@nex-ui/core';
 
 function Demo() {
   return (

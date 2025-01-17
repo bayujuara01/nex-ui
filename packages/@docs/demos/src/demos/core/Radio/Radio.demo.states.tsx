@@ -1,8 +1,8 @@
-import { Radio, Stack } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Radio, Stack } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Radio, Stack } from '@mantine/core';
+import { Radio, Stack } from '@nex-ui/core';
 
 function Demo() {
   return (

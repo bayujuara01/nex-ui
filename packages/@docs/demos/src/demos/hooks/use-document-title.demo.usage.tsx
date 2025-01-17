@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Button } from '@mantine/core';
-import { randomId, useDocumentTitle } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { randomId, useDocumentTitle } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { useDocumentTitle, randomId } from '@mantine/hooks';
-import { Button } from '@mantine/core';
+import { useDocumentTitle, randomId } from '@nex-ui/hooks';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   const [title, setTitle] = useState('');

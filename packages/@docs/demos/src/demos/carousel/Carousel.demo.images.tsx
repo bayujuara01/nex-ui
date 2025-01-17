@@ -1,11 +1,11 @@
-import { Carousel } from '@mantine/carousel';
-import { Image } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Carousel } from '@nex-ui/carousel';
+import { Image } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { images as _images } from './_images';
 
 const code = `
-import { Carousel } from '@mantine/carousel';
-import { Image } from '@mantine/core';
+import { Carousel } from '@nex-ui/carousel';
+import { Image } from '@nex-ui/core';
 
 const images = [
   'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png',

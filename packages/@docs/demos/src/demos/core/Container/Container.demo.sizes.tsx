@@ -1,8 +1,8 @@
-import { Container, createTheme, MantineThemeProvider, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Container, createTheme, NexThemeProvider, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Container, MantineProvider, createTheme, rem } from '@mantine/core';
+import { Container, NexProvider, createTheme, rem } from '@nex-ui/core';
 
 const CONTAINER_SIZES: Record<string, string> = {
   xxs: rem(300),
@@ -32,11 +32,11 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Container size="xxs" bg="var(--mantine-color-blue-light)">
         Container with custom size
       </Container>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 
@@ -70,11 +70,11 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Container size="xxs" bg="var(--mantine-color-blue-light)">
         Container with custom size
       </Container>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

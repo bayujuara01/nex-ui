@@ -1,9 +1,9 @@
-import { BubbleChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { BubbleChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { BubbleChart } from '@mantine/charts';
+import { BubbleChart } from '@nex-ui/charts';
 import { data } from './data';
 
 

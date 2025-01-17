@@ -1,4 +1,4 @@
-import type { SelectFactory } from '@mantine/core';
+import type { SelectFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { ComboboxLikeSelectors } from './Combobox.styles-api';
 import { InputStylesApi, InputWrapperStylesApi } from './Input.styles-api';

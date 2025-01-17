@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Group, Radio, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, Radio, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Radio.demo.card.module.css';
 
 const cssCode = `.root {
@@ -40,7 +40,7 @@ const cssCode = `.root {
 
 const code = `
 import { useState } from 'react';
-import { Radio, Group, Text } from '@mantine/core';
+import { Radio, Group, Text } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

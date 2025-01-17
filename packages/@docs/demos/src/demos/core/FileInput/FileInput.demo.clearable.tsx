@@ -1,8 +1,8 @@
-import { FileInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { FileInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { FileInput } from '@mantine/core';
+import { FileInput } from '@nex-ui/core';
 
 function Demo() {
   return <FileInput clearable label="Upload files" placeholder="Upload files" />;

@@ -1,9 +1,9 @@
 import { IconCircleX } from '@tabler/icons-react';
-import { rem, Stepper } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Stepper } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Stepper, rem } from '@mantine/core';
+import { Stepper, rem } from '@nex-ui/core';
 import { IconCircleX } from '@tabler/icons-react';
 
 function Demo() {

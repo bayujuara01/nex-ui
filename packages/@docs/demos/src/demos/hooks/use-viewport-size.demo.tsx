@@ -1,9 +1,9 @@
-import { Text } from '@mantine/core';
-import { useViewportSize } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Text } from '@nex-ui/core';
+import { useViewportSize } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useViewportSize } from '@mantine/hooks';
+import { useViewportSize } from '@nex-ui/hooks';
 
 function Demo() {
   const { height, width } = useViewportSize();

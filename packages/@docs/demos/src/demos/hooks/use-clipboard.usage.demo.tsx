@@ -1,10 +1,10 @@
-import { Button } from '@mantine/core';
-import { useClipboard } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { useClipboard } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button } from '@mantine/core';
-import { useClipboard } from '@mantine/hooks';
+import { Button } from '@nex-ui/core';
+import { useClipboard } from '@nex-ui/hooks';
 
 function Demo() {
   const clipboard = useClipboard({ timeout: 500 });

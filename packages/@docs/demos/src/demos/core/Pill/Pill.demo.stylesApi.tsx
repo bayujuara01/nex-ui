@@ -1,10 +1,10 @@
-import { Pill } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Pill } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { PillStylesApi } from '@docs/styles-api';
 import classes from './_demo.module.css';
 
 const code = `
-import { Pill } from '@mantine/core';
+import { Pill } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

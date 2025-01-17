@@ -1,6 +1,6 @@
 import { IconPhoto } from '@tabler/icons-react';
-import { ThemeIcon, ThemeIconProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ThemeIcon, ThemeIconProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: ThemeIconProps) {
   return (
@@ -13,7 +13,7 @@ function Wrapper(props: ThemeIconProps) {
 }
 
 const code = `
-import { ThemeIcon } from '@mantine/core';
+import { ThemeIcon } from '@nex-ui/core';
 import { IconPhoto } from '@tabler/icons-react';
 
 function Demo() {

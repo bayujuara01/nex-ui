@@ -1,5 +1,5 @@
 import type { EmptyObject } from 'type-fest';
-import type { FactoryPayload, TransformVars } from '@mantine/core';
+import type { FactoryPayload, TransformVars } from '@nex-ui/core';
 
 export interface Modifier<StylesNames extends string> {
   modifier: string;

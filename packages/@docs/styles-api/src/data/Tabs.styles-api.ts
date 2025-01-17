@@ -1,4 +1,4 @@
-import type { TabsFactory } from '@mantine/core';
+import type { TabsFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const TabsStylesApi: StylesApiData<TabsFactory> = {

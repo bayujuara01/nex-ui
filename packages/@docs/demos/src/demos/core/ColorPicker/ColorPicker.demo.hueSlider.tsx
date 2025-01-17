@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { HueSlider, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { HueSlider, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { HueSlider, Text } from '@mantine/core';
+import { HueSlider, Text } from '@nex-ui/core';
 
 function Demo() {
   const [value, onChange] = useState(250);

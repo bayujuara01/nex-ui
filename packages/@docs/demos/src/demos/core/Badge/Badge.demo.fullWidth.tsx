@@ -1,8 +1,8 @@
-import { Badge } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Badge } from '@mantine/core';
+import { Badge } from '@nex-ui/core';
 
 function Demo() {
   return <Badge fullWidth>Full width badge</Badge>;

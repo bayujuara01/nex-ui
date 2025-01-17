@@ -1,8 +1,8 @@
-import { Box, Title } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Title } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Title, Box } from '@mantine/core';
+import { Title, Box } from '@nex-ui/core';
 
 function Demo() {
   return (

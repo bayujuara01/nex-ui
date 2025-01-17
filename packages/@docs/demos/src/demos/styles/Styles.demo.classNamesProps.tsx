@@ -1,11 +1,11 @@
 import cx from 'clsx';
-import { createTheme, MantineThemeProvider, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { createTheme, NexThemeProvider, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Styles.demo.classNamesProps.module.css';
 
 const code = `
 import cx from 'clsx';
-import { MantineProvider, createTheme, TextInput } from '@mantine/core';
+import { NexProvider, createTheme, TextInput } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -21,10 +21,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <TextInput required label="Required input" placeholder="Required input" />
       <TextInput error label="Input with error" placeholder="Input with error" mt="md" />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -52,10 +52,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <TextInput required label="Required input" placeholder="Required input" />
       <TextInput error label="Input with error" placeholder="Input with error" mt="md" />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

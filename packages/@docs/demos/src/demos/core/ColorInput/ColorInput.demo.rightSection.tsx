@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { IconRefresh } from '@tabler/icons-react';
-import { ActionIcon, ColorInput, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, ColorInput, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
 import { IconRefresh } from '@tabler/icons-react';
-import { ActionIcon, ColorInput, rem } from '@mantine/core';
+import { ActionIcon, ColorInput, rem } from '@nex-ui/core';
 
 const randomColor = () => \`#\${Math.floor(Math.random() * 16777215).toString(16)}\`;
 

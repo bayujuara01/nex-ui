@@ -1,9 +1,9 @@
 import { IconHeart } from '@tabler/icons-react';
-import { ActionIcon, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { ActionIcon, Tooltip } from '@mantine/core';
+import { ActionIcon, Tooltip } from '@nex-ui/core';
 import { IconHeart } from '@tabler/icons-react';
 
 function Demo() {

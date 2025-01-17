@@ -1,10 +1,10 @@
-import { InlineCodeHighlight } from '@mantine/code-highlight';
-import { Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { InlineCodeHighlight } from '@nex-ui/code-highlight';
+import { Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Text } from '@mantine/core';
-import { InlineCodeHighlight } from '@mantine/code-highlight';
+import { Text } from '@nex-ui/core';
+import { InlineCodeHighlight } from '@nex-ui/code-highlight';
 
 function Demo() {
   return (

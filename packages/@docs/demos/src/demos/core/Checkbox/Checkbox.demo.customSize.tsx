@@ -1,5 +1,5 @@
-import { Checkbox, createTheme, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, createTheme, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Checkbox.demo.customSize.module.css';
 
 const cssCode = `.root {
@@ -23,7 +23,7 @@ const cssCode = `.root {
 `;
 
 const code = `
-import { MantineProvider, Checkbox, createTheme } from '@mantine/core';
+import { NexProvider, Checkbox, createTheme } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -34,10 +34,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Checkbox size="xxs" label="Extra small checkbox" />
       <Checkbox size="xxl" label="Extra large checkbox" mt="md" />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -50,10 +50,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Checkbox size="xxs" label="Extra small checkbox" />
       <Checkbox size="xxl" label="Extra large checkbox" mt="md" />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

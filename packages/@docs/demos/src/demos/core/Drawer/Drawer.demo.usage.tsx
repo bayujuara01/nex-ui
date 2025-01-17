@@ -1,11 +1,11 @@
-import { Button, Drawer } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Drawer } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const code = `
-import { useDisclosure } from '@mantine/hooks';
-import { Drawer, Button } from '@mantine/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { Drawer, Button } from '@nex-ui/core';
 
 function Demo() {
   const [opened, { open, close }] = useDisclosure(false);

@@ -1,4 +1,4 @@
-import { Accordion, AccordionProps } from '@mantine/core';
+import { Accordion, AccordionProps } from '@nex-ui/core';
 
 export const groceries = [
   {

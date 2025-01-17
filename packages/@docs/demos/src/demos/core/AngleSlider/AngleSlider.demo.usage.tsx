@@ -1,8 +1,8 @@
-import { AngleSlider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { AngleSlider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { AngleSlider } from '@mantine/core';
+import { AngleSlider } from '@nex-ui/core';
 
 function Demo() {
   return <AngleSlider aria-label="Angle slider"{{props}} />;

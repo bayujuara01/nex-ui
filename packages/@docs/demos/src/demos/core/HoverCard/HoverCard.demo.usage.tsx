@@ -1,8 +1,8 @@
-import { Button, Group, HoverCard, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, HoverCard, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { HoverCard, Button, Text, Group } from '@mantine/core';
+import { HoverCard, Button, Text, Group } from '@nex-ui/core';
 
 function Demo() {
   return (

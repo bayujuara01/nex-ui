@@ -5,11 +5,11 @@ import {
   IconArrowRight,
   IconGripHorizontal,
 } from '@tabler/icons-react';
-import { Group, Pagination } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, Pagination } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group, Pagination } from '@mantine/core';
+import { Group, Pagination } from '@nex-ui/core';
 import {
   IconArrowBarToRight,
   IconArrowBarToLeft,

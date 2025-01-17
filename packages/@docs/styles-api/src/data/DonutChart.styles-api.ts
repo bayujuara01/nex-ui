@@ -1,4 +1,4 @@
-import type { DonutChartFactory } from '@mantine/charts';
+import type { DonutChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const DonutChartStylesApi: StylesApiData<DonutChartFactory> = {

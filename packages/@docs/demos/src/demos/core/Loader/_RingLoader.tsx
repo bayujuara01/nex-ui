@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { MantineLoaderComponent } from '@mantine/core';
+import { MantineLoaderComponent } from '@nex-ui/core';
 
 export const RingLoader: MantineLoaderComponent = forwardRef(({ style, ...others }, ref) => (
   <svg
@@ -84,7 +84,7 @@ export const RingLoader: MantineLoaderComponent = forwardRef(({ style, ...others
 
 export const ringLoaderCode = `
 import { forwardRef } from 'react';
-import { MantineLoaderComponent } from '@mantine/core';
+import { MantineLoaderComponent } from '@nex-ui/core';
 
 const RingLoader: MantineLoaderComponent = forwardRef(({ style, ...others }, ref) => (
   <svg

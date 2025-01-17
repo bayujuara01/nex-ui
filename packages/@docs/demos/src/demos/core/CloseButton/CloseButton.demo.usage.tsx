@@ -1,8 +1,8 @@
-import { CloseButton } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { CloseButton } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { CloseButton } from '@mantine/core';
+import { CloseButton } from '@nex-ui/core';
 
 function Demo() {
   return <CloseButton{{props}} />;

@@ -1,11 +1,11 @@
 import { IconChevronDown } from '@tabler/icons-react';
-import { Checkbox, Group, RenderTreeNodePayload, Tree } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, Group, RenderTreeNodePayload, Tree } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './data';
 
 const code = `
 import { IconChevronDown } from '@tabler/icons-react';
-import { Checkbox, Group, RenderTreeNodePayload, Tree } from '@mantine/core';
+import { Checkbox, Group, RenderTreeNodePayload, Tree } from '@nex-ui/core';
 import { data } from './data';
 
 const renderTreeNode = ({

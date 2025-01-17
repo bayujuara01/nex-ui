@@ -1,4 +1,4 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 import { BaseDemo } from './_base';
 import classes from './Dropzone.disabled.module.css';
 
@@ -15,7 +15,7 @@ const cssCode = `
 `;
 
 const code = `
-import { Dropzone } from '@mantine/dropzone';
+import { Dropzone } from '@nex-ui/dropzone';
 import classes from './Demo.module.css';
 
 function Demo() {

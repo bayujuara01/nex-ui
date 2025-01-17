@@ -1,5 +1,5 @@
-import { SimpleGrid, SimpleGridProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { SimpleGrid, SimpleGridProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { defaultItems } from './_demo-item';
 
 function Demo(props: SimpleGridProps) {
@@ -11,7 +11,7 @@ function Demo(props: SimpleGridProps) {
 }
 
 const code = `
-import { SimpleGrid } from '@mantine/core';
+import { SimpleGrid } from '@nex-ui/core';
 
 function Demo() {
   return (

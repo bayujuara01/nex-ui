@@ -1,10 +1,10 @@
-import { Box, Code, Group, Text } from '@mantine/core';
-import { useMouse } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Code, Group, Text } from '@nex-ui/core';
+import { useMouse } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Text, Code, Group, Box } from '@mantine/core';
-import { useMouse } from '@mantine/hooks';
+import { Text, Code, Group, Box } from '@nex-ui/core';
+import { useMouse } from '@nex-ui/hooks';
 
 function Demo() {
   const { ref, x, y } = useMouse();

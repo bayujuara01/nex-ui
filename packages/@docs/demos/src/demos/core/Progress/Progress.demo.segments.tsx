@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Group, PasswordInput, Progress } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, PasswordInput, Progress } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Group, PasswordInput, Progress } from '@mantine/core';
+import { Group, PasswordInput, Progress } from '@nex-ui/core';
 
 const requirements = [
   { re: /[0-9]/, label: 'Includes number' },

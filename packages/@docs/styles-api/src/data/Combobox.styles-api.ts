@@ -1,4 +1,4 @@
-import type { ComboboxFactory, ComboboxLikeStylesNames } from '@mantine/core';
+import type { ComboboxFactory, ComboboxLikeStylesNames } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ComboboxStylesApi: StylesApiData<ComboboxFactory> = {

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Button, Group, Modal } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Modal } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Modal, Group, Button } from '@mantine/core';
+import { Modal, Group, Button } from '@nex-ui/core';
 
 function Demo() {
   const [noTransitionOpened, setNoTransitionOpened] = useState(false);

@@ -1,8 +1,8 @@
-import { ComboboxItem, MultiSelect, OptionsFilter } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ComboboxItem, MultiSelect, OptionsFilter } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { MultiSelect, ComboboxItem, OptionsFilter } from '@mantine/core';
+import { MultiSelect, ComboboxItem, OptionsFilter } from '@nex-ui/core';
 
 const optionsFilter: OptionsFilter = ({ options, search }) => {
   const filtered = (options as ComboboxItem[]).filter((option) =>

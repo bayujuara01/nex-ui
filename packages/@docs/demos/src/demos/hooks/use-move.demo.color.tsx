@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { rem } from '@mantine/core';
-import { useMove } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { rem } from '@nex-ui/core';
+import { useMove } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { rem } from '@mantine/core';
-import { useMove } from '@mantine/hooks';
+import { rem } from '@nex-ui/core';
+import { useMove } from '@nex-ui/hooks';
 
 function Demo() {
   const [value, setValue] = useState({ x: 0.2, y: 0.6 });

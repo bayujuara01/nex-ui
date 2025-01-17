@@ -1,10 +1,10 @@
-import { Box, Checkbox, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Checkbox, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useForm } from '@mantine/form';
-import { Box, Checkbox, TextInput } from '@mantine/core';
+import { useForm } from '@nex-ui/form';
+import { Box, Checkbox, TextInput } from '@nex-ui/core';
 
 function Demo() {
   const form = useForm({

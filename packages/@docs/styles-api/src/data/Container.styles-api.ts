@@ -1,4 +1,4 @@
-import type { ContainerFactory } from '@mantine/core';
+import type { ContainerFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ContainerStylesApi: StylesApiData<ContainerFactory> = {

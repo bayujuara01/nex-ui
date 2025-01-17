@@ -1,5 +1,5 @@
-import { Chip, ChipProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Chip, ChipProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: ChipProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: ChipProps) {
 }
 
 const code = `
-import { Chip } from '@mantine/core';
+import { Chip } from '@nex-ui/core';
 
 function Demo() {
   return <Chip defaultChecked{{props}}>Awesome chip</Chip>

@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
-import { ScrollArea, TextInput, UnstyledButton } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ScrollArea, TextInput, UnstyledButton } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState, useRef } from 'react';
-import { ScrollArea, UnstyledButton, TextInput } from '@mantine/core';
+import { ScrollArea, UnstyledButton, TextInput } from '@nex-ui/core';
 
 const groceries: string[] = [
   '🍎 Apples',

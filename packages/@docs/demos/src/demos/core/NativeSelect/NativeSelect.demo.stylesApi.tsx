@@ -1,9 +1,9 @@
-import { NativeSelect } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NativeSelect } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { NativeSelectStylesApi } from '@docs/styles-api';
 
 const code = `
-import { NativeSelect } from '@mantine/core';
+import { NativeSelect } from '@nex-ui/core';
 
 function Demo() {
   return <NativeSelect{{props}} data={['React', 'Angular']} label="NativeSelect label" description="NativeSelect description" error="NativeSelect error" withAsterisk />;

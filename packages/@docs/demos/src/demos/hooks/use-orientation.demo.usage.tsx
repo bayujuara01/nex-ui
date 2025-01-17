@@ -1,10 +1,10 @@
-import { Code, Text } from '@mantine/core';
-import { useOrientation } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Code, Text } from '@nex-ui/core';
+import { useOrientation } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Code, Text } from '@mantine/core';
-import { useOrientation } from '@mantine/hooks';
+import { Code, Text } from '@nex-ui/core';
+import { useOrientation } from '@nex-ui/hooks';
 
 function Demo() {
   const { angle, type } = useOrientation();

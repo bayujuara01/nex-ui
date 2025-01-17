@@ -1,9 +1,9 @@
-import { Button } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { AddressBookIcon } from './_CustomIcon';
 
 const code = `
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import { AddressBookIcon } from './AddressBookIcon';
 
 function Demo() {
@@ -12,7 +12,7 @@ function Demo() {
 `;
 
 const iconCode = `
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 
 interface AddressBookIconProps extends React.ComponentPropsWithoutRef<'svg'> {
   size?: number | string;

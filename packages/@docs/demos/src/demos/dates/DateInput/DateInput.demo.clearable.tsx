@@ -1,8 +1,8 @@
-import { DateInput } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { DateInput } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { DateInput } from '@mantine/dates';
+import { DateInput } from '@nex-ui/dates';
 
 function Demo() {
   return (

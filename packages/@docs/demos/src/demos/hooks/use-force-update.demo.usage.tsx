@@ -1,10 +1,10 @@
-import { Button, Group, Text } from '@mantine/core';
-import { randomId, useForceUpdate } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Text } from '@nex-ui/core';
+import { randomId, useForceUpdate } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Text, Group } from '@mantine/core';
-import { useForceUpdate, randomId } from '@mantine/hooks';
+import { Button, Text, Group } from '@nex-ui/core';
+import { useForceUpdate, randomId } from '@nex-ui/hooks';
 
 function Demo() {
   const forceUpdate = useForceUpdate();

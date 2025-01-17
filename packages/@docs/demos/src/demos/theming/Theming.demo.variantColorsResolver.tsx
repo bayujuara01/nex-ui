@@ -3,26 +3,26 @@ import {
   darken,
   defaultVariantColorsResolver,
   Group,
-  MantineThemeProvider,
+  NexThemeProvider,
   parseThemeColor,
   rem,
   rgba,
   VariantColorsResolver,
-} from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+} from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import {
   Button,
   Group,
-  MantineProvider,
+  NexProvider,
   defaultVariantColorsResolver,
   VariantColorsResolver,
   parseThemeColor,
   rem,
   rgba,
   darken,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 const variantColorResolver: VariantColorsResolver = (input) => {
   const defaultResolvedColors = defaultVariantColorsResolver(input);
@@ -65,7 +65,7 @@ const variantColorResolver: VariantColorsResolver = (input) => {
 
 function Demo() {
   return (
-    <MantineProvider theme={{ variantColorResolver }}>
+    <NexProvider theme={{ variantColorResolver }}>
       <Group>
         <Button color="lime.4" variant="filled">
           Lime filled button
@@ -77,7 +77,7 @@ function Demo() {
 
         <Button variant="danger">Danger button</Button>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -123,7 +123,7 @@ const variantColorResolver: VariantColorsResolver = (input) => {
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={{ variantColorResolver }}>
+    <NexThemeProvider theme={{ variantColorResolver }}>
       <Group>
         <Button color="lime.4" variant="filled">
           Lime filled button
@@ -135,7 +135,7 @@ function Demo() {
 
         <Button variant="danger">Danger button</Button>
       </Group>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

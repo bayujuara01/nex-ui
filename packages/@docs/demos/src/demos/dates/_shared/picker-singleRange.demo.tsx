@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 
 const getCode = (name: string) => `
 import { useState } from 'react';
-import { ${name} } from '@mantine/dates';
+import { ${name} } from '@nex-ui/dates';
 
 function Demo() {
   const [value, setValue] = useState<[Date | null, Date | null]>([null, null]);

@@ -1,4 +1,4 @@
-import type { SegmentedControlFactory } from '@mantine/core';
+import type { SegmentedControlFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const SegmentedControlStylesApi: StylesApiData<SegmentedControlFactory> = {

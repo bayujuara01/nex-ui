@@ -1,8 +1,8 @@
-import { Button, ButtonFactory, Group, PartialVarsResolver, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, ButtonFactory, Group, PartialVarsResolver, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const inlineCode = `
-import { Button, rem, PartialVarsResolver, ButtonFactory, Group } from '@mantine/core';
+import { Button, rem, PartialVarsResolver, ButtonFactory, Group } from '@nex-ui/core';
 
 const varsResolver: PartialVarsResolver<ButtonFactory> = (theme, props) => {
   if (props.size === 'xxl') {
@@ -43,7 +43,7 @@ function Demo() {
 `;
 
 const providerCode = `
-import { Button, rem, Group, MantineProvider, createTheme } from '@mantine/core';
+import { Button, rem, Group, NexProvider, createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   components: {
@@ -77,12 +77,12 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Group>
         <Button size="xxl">XXL Button</Button>
         <Button size="xxs">XXS Button</Button>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -155,7 +155,7 @@ export const vars: MantineDemo = {
   component: Demo,
   centered: true,
   code: [
-    { code: providerCode, language: 'tsx', fileName: 'MantineProvider.tsx' },
+    { code: providerCode, language: 'tsx', fileName: 'NexProvider.tsx' },
     { code: inlineCode, language: 'tsx', fileName: 'Inline.tsx' },
   ],
 };

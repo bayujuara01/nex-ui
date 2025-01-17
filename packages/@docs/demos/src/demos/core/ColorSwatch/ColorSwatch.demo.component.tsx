@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { CheckIcon, ColorSwatch, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { CheckIcon, ColorSwatch, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { ColorSwatch, CheckIcon, rem } from '@mantine/core';
+import { ColorSwatch, CheckIcon, rem } from '@nex-ui/core';
 
 function Demo() {
   const [checked, setChecked] = useState(true);

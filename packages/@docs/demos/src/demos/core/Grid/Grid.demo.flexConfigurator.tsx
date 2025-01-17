@@ -1,5 +1,5 @@
-import { Grid, GridProps, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Grid, GridProps, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { ColWrapper as Col } from './_col-wrapper';
 
 function Wrapper(props: GridProps) {
@@ -17,7 +17,7 @@ function Wrapper(props: GridProps) {
 }
 
 const code = `
-import { Grid, rem } from '@mantine/core';
+import { Grid, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

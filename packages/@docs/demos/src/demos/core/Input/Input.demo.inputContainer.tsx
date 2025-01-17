@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { TextInput, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { TextInput, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { TextInput, Tooltip } from '@mantine/core';
+import { TextInput, Tooltip } from '@nex-ui/core';
 
 function Demo() {
   const [focused, setFocused] = useState(false);

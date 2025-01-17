@@ -1,9 +1,9 @@
-import { Accordion, AccordionProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Accordion, AccordionProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { groceries } from './_base';
 
 const code = `
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 
 function Demo() {
   // See groceries data above

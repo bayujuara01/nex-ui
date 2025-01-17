@@ -1,8 +1,8 @@
-import { Loader } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Loader } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Loader } from '@mantine/core';
+import { Loader } from '@nex-ui/core';
 
 function Demo() {
   return <Loader{{props}} />;

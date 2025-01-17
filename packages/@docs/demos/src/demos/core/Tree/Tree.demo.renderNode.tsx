@@ -1,11 +1,11 @@
 import { IconChevronDown } from '@tabler/icons-react';
-import { Group, Tree } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, Tree } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './data';
 
 const code = `
 import { IconChevronDown } from '@tabler/icons-react';
-import { Group, Tree } from '@mantine/core';
+import { Group, Tree } from '@nex-ui/core';
 import { data } from './data';
 
 function Demo() {

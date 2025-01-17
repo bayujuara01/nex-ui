@@ -1,10 +1,10 @@
-import { rem } from '@mantine/core';
-import { createStyles } from '@mantine/emotion';
-import { MantineDemo } from '@mantinex/demo';
+import { rem } from '@nex-ui/core';
+import { createStyles } from '@nex-ui/emotion';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { createStyles } from '@mantine/emotion';
-import { rem } from '@mantine/core';
+import { createStyles } from '@nex-ui/emotion';
+import { rem } from '@nex-ui/core';
 
 const useStyles = createStyles((theme, _, u) => ({
   wrapper: {

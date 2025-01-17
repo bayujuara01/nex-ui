@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Box, Button, Group, Text, TextInput } from '@mantine/core';
-import { useDebouncedValue } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Group, Text, TextInput } from '@nex-ui/core';
+import { useDebouncedValue } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { useDebouncedValue } from '@mantine/hooks';
-import { TextInput, Text, Button } from '@mantine/core';
+import { useDebouncedValue } from '@nex-ui/hooks';
+import { TextInput, Text, Button } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');

@@ -4,7 +4,7 @@ import {
   IconGitPullRequest,
   IconMessageDots,
 } from '@tabler/icons-react';
-import { Text, Timeline, TimelineProps } from '@mantine/core';
+import { Text, Timeline, TimelineProps } from '@nex-ui/core';
 
 export function TimelineBase({ noIcon, ...props }: Partial<TimelineProps> & { noIcon?: boolean }) {
   const displayIcon = !noIcon;

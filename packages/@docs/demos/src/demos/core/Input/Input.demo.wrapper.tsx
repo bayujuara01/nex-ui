@@ -1,9 +1,9 @@
-import { Input } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Input } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { inputWrapperOnlyControls } from '../../../shared';
 
 const code = `
-import { Input } from '@mantine/core';
+import { Input } from '@nex-ui/core';
 
 function Wrapper() {
   return (

@@ -1,9 +1,9 @@
 import { IconComponents } from '@tabler/icons-react';
-import { rem, Select } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Select } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Select, rem } from '@mantine/core';
+import { Select, rem } from '@nex-ui/core';
 import { IconComponents } from '@tabler/icons-react';
 
 function Demo() {

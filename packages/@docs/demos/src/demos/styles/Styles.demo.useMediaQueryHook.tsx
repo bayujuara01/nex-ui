@@ -1,10 +1,10 @@
-import { Button, em, Tooltip } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, em, Tooltip } from '@nex-ui/core';
+import { useMediaQuery } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Tooltip, Button, em } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { Tooltip, Button, em } from '@nex-ui/core';
+import { useMediaQuery } from '@nex-ui/hooks';
 
 function Demo() {
   const isMobile = useMediaQuery(\`(max-width: \${em(750)})\`);

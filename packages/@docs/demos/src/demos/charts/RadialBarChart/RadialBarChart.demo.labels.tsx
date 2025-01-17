@@ -1,9 +1,9 @@
-import { RadialBarChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { RadialBarChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { RadialBarChart } from '@mantine/charts';
+import { RadialBarChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

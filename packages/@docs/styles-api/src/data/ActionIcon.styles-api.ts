@@ -1,4 +1,4 @@
-import type { ActionIconFactory, ActionIconGroupFactory } from '@mantine/core';
+import type { ActionIconFactory, ActionIconGroupFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ActionIconStylesApi: StylesApiData<ActionIconFactory> = {

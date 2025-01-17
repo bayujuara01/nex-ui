@@ -1,6 +1,6 @@
 import { IconMessageCircle, IconPhoto, IconSettings } from '@tabler/icons-react';
-import { rem, Tabs, TabsProps, useDirection } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Tabs, TabsProps, useDirection } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: TabsProps) {
   const { dir } = useDirection();
@@ -38,7 +38,7 @@ function Wrapper(props: TabsProps) {
 }
 
 const code = `
-import { Tabs, rem } from '@mantine/core';
+import { Tabs, rem } from '@nex-ui/core';
 import { IconPhoto, IconMessageCircle, IconSettings } from '@tabler/icons-react';
 
 function Demo() {

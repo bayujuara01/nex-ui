@@ -1,12 +1,12 @@
 import dayjs from 'dayjs';
 import { useState } from 'react';
-import { DateFormatter } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { DateFormatter } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const getCode = (name: string) => `
 import dayjs from 'dayjs';
 import { useState } from 'react';
-import { ${name}, DateFormatter } from '@mantine/dates';
+import { ${name}, DateFormatter } from '@nex-ui/dates';
 
 const formatter: DateFormatter = ({ type, date, locale, format }) => {
   if (type === 'multiple' && Array.isArray(date)) {

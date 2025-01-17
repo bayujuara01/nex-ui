@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { YearPicker } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { YearPicker } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { YearPicker } from '@mantine/dates';
+import { YearPicker } from '@nex-ui/dates';
 
 function Demo() {
   const [value, setValue] = useState<Date | null>(null);

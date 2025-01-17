@@ -1,8 +1,8 @@
-import { Checkbox, createTheme, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, createTheme, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { MantineProvider, createTheme, Checkbox } from '@mantine/core';
+import { NexProvider, createTheme, Checkbox } from '@nex-ui/core';
 
 const theme = createTheme({
   cursorType: 'pointer',
@@ -13,9 +13,9 @@ function Demo() {
     <>
       <Checkbox label="Default cursor" />
 
-      <MantineProvider theme={theme}>
+      <NexProvider theme={theme}>
         <Checkbox label="Pointer cursor" mt="md" />
-      </MantineProvider>
+      </NexProvider>
     </>
   );
 }
@@ -30,13 +30,13 @@ function Demo() {
     <>
       <Checkbox label="Default cursor" />
 
-      <MantineThemeProvider theme={theme}>
+      <NexThemeProvider theme={theme}>
         <Checkbox
           label="Pointer cursor"
           mt="md"
           styles={{ input: { cursor: 'pointer' }, label: { cursor: 'pointer' } }}
         />
-      </MantineThemeProvider>
+      </NexThemeProvider>
     </>
   );
 }

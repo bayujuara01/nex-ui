@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const getCode = (name: string) => `
 import { useState } from 'react';
-import { ${name} } from '@mantine/dates';
+import { ${name} } from '@nex-ui/dates';
 
 function Demo() {
   const [value, setValue] = useState<[Date | null, Date | null]>([null, null]);

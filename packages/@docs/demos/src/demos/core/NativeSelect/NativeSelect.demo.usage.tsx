@@ -1,9 +1,9 @@
-import { NativeSelect } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NativeSelect } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { inputControls } from '../../../shared';
 
 const code = `
-import { NativeSelect } from '@mantine/core';
+import { NativeSelect } from '@nex-ui/core';
 
 function Demo() {
   return <NativeSelect{{props}} data={['React', 'Angular', 'Vue']} />;

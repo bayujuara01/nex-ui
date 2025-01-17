@@ -1,4 +1,4 @@
-import type { ColorSwatchFactory } from '@mantine/core';
+import type { ColorSwatchFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ColorSwatchStylesApi: StylesApiData<ColorSwatchFactory> = {

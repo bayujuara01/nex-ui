@@ -1,8 +1,8 @@
-import { createTheme, Input, MantineThemeProvider, NativeSelect, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { createTheme, Input, NexThemeProvider, NativeSelect, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TextInput, NativeSelect, MantineProvider, createTheme, Input } from '@mantine/core';
+import { TextInput, NativeSelect, NexProvider, createTheme, Input } from '@nex-ui/core';
 
 const theme = createTheme({
   components: {
@@ -22,7 +22,7 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <TextInput
         label="Text input"
         placeholder="Text input"
@@ -35,7 +35,7 @@ function Demo() {
         data={['React', 'Angular', 'Vue', 'Svelte']}
         description="Description below the input"
       />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -58,7 +58,7 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <TextInput
         label="Text input"
         placeholder="Text input"
@@ -71,7 +71,7 @@ function Demo() {
         data={['React', 'Angular', 'Vue', 'Svelte']}
         description="Description below the input"
       />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

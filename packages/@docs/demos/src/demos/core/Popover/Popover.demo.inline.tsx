@@ -1,8 +1,8 @@
-import { Mark, Popover, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Mark, Popover, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Popover, Mark, Text } from '@mantine/core';
+import { Popover, Mark, Text } from '@nex-ui/core';
 
 function Demo() {
   return (

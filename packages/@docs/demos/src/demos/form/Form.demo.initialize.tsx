@@ -1,10 +1,10 @@
-import { Button, NumberInput, TextInput } from '@mantine/core';
-import { isInRange, isNotEmpty, useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, NumberInput, TextInput } from '@nex-ui/core';
+import { isInRange, isNotEmpty, useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, NumberInput, TextInput } from '@mantine/core';
-import { isInRange, isNotEmpty, useForm } from '@mantine/form';
+import { Button, NumberInput, TextInput } from '@nex-ui/core';
+import { isInRange, isNotEmpty, useForm } from '@nex-ui/form';
 
 interface FormValues {
   name: string;

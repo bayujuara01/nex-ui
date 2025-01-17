@@ -1,4 +1,4 @@
-import type { SpoilerFactory } from '@mantine/core';
+import type { SpoilerFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const SpoilerStylesApi: StylesApiData<SpoilerFactory> = {

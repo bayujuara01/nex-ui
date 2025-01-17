@@ -1,8 +1,8 @@
-import { Button, CopyButton } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, CopyButton } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { CopyButton, Button } from '@mantine/core';
+import { CopyButton, Button } from '@nex-ui/core';
 
 function Demo() {
   return (

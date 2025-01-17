@@ -1,10 +1,10 @@
 import { IconHeart } from '@tabler/icons-react';
-import { ActionIcon, createTheme, Group, MantineThemeProvider, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ActionIcon, createTheme, Group, NexThemeProvider, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './ActionIcon.demo.customSize.module.css';
 
 const code = `
-import { ActionIcon, createTheme, Group, MantineThemeProvider, rem } from '@mantine/core';
+import { ActionIcon, createTheme, Group, NexThemeProvider, rem } from '@nex-ui/core';
 import { IconHeart } from '@tabler/icons-react';
 import classes from './Demo.module.css';
 
@@ -18,7 +18,7 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Group justify="center">
         <ActionIcon size="xxs" aria-label="Custom xxs size">
           <IconHeart style={{ width: rem(10), height: rem(10) }} />
@@ -28,7 +28,7 @@ function Demo() {
           <IconHeart style={{ width: rem(32), height: rem(32) }} />
         </ActionIcon>
       </Group>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 `;
@@ -50,7 +50,7 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Group justify="center">
         <ActionIcon size="xxs" aria-label="Custom xxs size">
           <IconHeart style={{ width: rem(10), height: rem(10) }} />
@@ -60,7 +60,7 @@ function Demo() {
           <IconHeart style={{ width: rem(32), height: rem(32) }} />
         </ActionIcon>
       </Group>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

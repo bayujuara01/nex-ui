@@ -1,9 +1,9 @@
-import { Switch } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Switch } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { SwitchStylesApi } from '@docs/styles-api';
 
 const code = `
-import { Switch } from '@mantine/core';
+import { Switch } from '@nex-ui/core';
 
 function Demo() {
   return <Switch{{props}} label="Switch component" description="Switch description" error="Switch error />;

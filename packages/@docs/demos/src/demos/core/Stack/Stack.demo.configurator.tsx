@@ -1,5 +1,5 @@
-import { Button, Stack, StackProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Stack, StackProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: StackProps) {
   return (
@@ -12,7 +12,7 @@ function Wrapper(props: StackProps) {
 }
 
 const code = `
-import { Stack, Button } from '@mantine/core';
+import { Stack, Button } from '@nex-ui/core';
 
 function Demo() {
   return (

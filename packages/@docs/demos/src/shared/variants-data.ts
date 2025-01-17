@@ -1,4 +1,4 @@
-import { ConfiguratorControlOptions } from '@mantinex/demo';
+import { ConfiguratorControlOptions } from '@nex-uix/demo';
 
 export const STATIC_VARIANTS = ['filled', 'light', 'outline', 'transparent', 'white', 'default'];
 

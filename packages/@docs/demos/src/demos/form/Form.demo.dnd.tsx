@@ -1,14 +1,14 @@
 import { DragDropContext, Draggable, Droppable } from '@hello-pangea/dnd';
 import { IconGripVertical } from '@tabler/icons-react';
-import { Button, Center, Group, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { randomId } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Center, Group, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { randomId } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group, TextInput, Button, Center } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { randomId } from '@mantine/hooks';
+import { Group, TextInput, Button, Center } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { randomId } from '@nex-ui/hooks';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { IconGripVertical } from '@tabler/icons-react';
 

@@ -1,10 +1,10 @@
-import { Accordion } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Accordion } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { groceries } from './_base';
 import classes from './Accordion.demo.customize.module.css';
 
 const code = `
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

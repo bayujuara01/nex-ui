@@ -1,8 +1,8 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 import { BaseDemo } from './_base';
 
 const code = `
-import { Dropzone } from '@mantine/dropzone';
+import { Dropzone } from '@nex-ui/dropzone';
 
 function Demo() {
   return (

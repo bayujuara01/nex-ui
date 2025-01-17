@@ -1,4 +1,4 @@
-import type { DividerFactory } from '@mantine/core';
+import type { DividerFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const DividerStylesApi: StylesApiData<DividerFactory> = {

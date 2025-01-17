@@ -1,8 +1,8 @@
-import { Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: any) => `
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,9 +1,9 @@
 import { IconComponents } from '@tabler/icons-react';
-import { Autocomplete, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Autocomplete, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Autocomplete, rem } from '@mantine/core';
+import { Autocomplete, rem } from '@nex-ui/core';
 import { IconComponents } from '@tabler/icons-react';
 
 function Demo() {

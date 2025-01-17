@@ -1,8 +1,8 @@
-import { DatePickerInput } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { DatePickerInput } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { DatePickerInput } from '@mantine/dates';
+import { DatePickerInput } from '@nex-ui/dates';
 
 function Demo() {
   return (

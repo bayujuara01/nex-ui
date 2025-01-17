@@ -1,8 +1,8 @@
-import { FunnelChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { FunnelChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: any) => `
-import { FunnelChart } from '@mantine/charts';
+import { FunnelChart } from '@nex-ui/charts';
 
 function Demo() {
   return (

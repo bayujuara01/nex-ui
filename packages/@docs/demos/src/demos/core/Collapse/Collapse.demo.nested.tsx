@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Box, Button, Collapse, CollapseProps, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Collapse, CollapseProps, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 export function CollapsedDemo({
   children,

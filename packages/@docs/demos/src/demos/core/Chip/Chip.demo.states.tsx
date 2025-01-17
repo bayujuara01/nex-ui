@@ -1,5 +1,5 @@
-import { Chip, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Chip, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Demo() {
   return (

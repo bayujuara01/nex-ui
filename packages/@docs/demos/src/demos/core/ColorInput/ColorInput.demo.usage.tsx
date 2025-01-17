@@ -1,9 +1,9 @@
-import { ColorInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { inputControls } from '../../../shared';
 
 const code = `
-import { ColorInput } from '@mantine/core';
+import { ColorInput } from '@nex-ui/core';
 
 
 function Demo() {

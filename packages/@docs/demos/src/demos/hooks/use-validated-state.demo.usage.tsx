@@ -1,10 +1,10 @@
-import { Box, Text, TextInput } from '@mantine/core';
-import { useValidatedState } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Text, TextInput } from '@nex-ui/core';
+import { useValidatedState } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { TextInput, Text, Box } from '@mantine/core';
-import { useValidatedState } from '@mantine/hooks';
+import { TextInput, Text, Box } from '@nex-ui/core';
+import { useValidatedState } from '@nex-ui/hooks';
 
 function Demo() {
   const [{ value, lastValidValue, valid }, setEmail] = useValidatedState(

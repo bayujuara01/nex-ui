@@ -1,8 +1,8 @@
-import { Input } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Input } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Input } from '@mantine/core';
+import { Input } from '@nex-ui/core';
 
 function Demo() {
   return (

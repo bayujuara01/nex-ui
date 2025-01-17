@@ -1,4 +1,4 @@
-import type { RatingFactory } from '@mantine/core';
+import type { RatingFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const RatingStylesApi: StylesApiData<RatingFactory> = {

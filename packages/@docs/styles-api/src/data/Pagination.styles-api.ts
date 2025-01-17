@@ -1,4 +1,4 @@
-import type { PaginationFactory } from '@mantine/core';
+import type { PaginationFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const PaginationStylesApi: StylesApiData<PaginationFactory> = {

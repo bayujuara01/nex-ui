@@ -1,5 +1,5 @@
-import { Mark, MarkProps, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Mark, MarkProps, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: MarkProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: MarkProps) {
 }
 
 const code = `
-import { Text, Mark } from '@mantine/core';
+import { Text, Mark } from '@nex-ui/core';
 
 function Demo() {
   return (

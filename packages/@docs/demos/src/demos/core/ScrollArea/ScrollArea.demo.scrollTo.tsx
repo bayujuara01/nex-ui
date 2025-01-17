@@ -1,11 +1,11 @@
 import { useRef } from 'react';
-import { Button, Group, ScrollArea, Stack } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, ScrollArea, Stack } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { Content } from './_content';
 
 const code = `
 import { useRef } from 'react';
-import { ScrollArea, Button, Stack, Group } from '@mantine/core';
+import { ScrollArea, Button, Stack, Group } from '@nex-ui/core';
 
 function Demo() {
   const viewport = useRef<HTMLDivElement>(null);

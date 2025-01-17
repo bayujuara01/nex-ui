@@ -1,4 +1,4 @@
-import type { ScrollAreaFactory } from '@mantine/core';
+import type { ScrollAreaFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ScrollAreaStylesApi: StylesApiData<ScrollAreaFactory> = {

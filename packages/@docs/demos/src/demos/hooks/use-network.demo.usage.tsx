@@ -1,10 +1,10 @@
-import { Table, Text } from '@mantine/core';
-import { useNetwork } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Table, Text } from '@nex-ui/core';
+import { useNetwork } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Text, Table } from '@mantine/core';
-import { useNetwork } from '@mantine/hooks';
+import { Text, Table } from '@nex-ui/core';
+import { useNetwork } from '@nex-ui/hooks';
 
 function Demo() {
   const networkStatus = useNetwork();

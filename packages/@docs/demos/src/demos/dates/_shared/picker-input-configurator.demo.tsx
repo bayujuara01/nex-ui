@@ -1,7 +1,7 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 
 const getCodeTemplate = (component: string) =>
-  `import { ${component} } from '@mantine/dates';
+  `import { ${component} } from '@nex-ui/dates';
 
 
 function Demo() {

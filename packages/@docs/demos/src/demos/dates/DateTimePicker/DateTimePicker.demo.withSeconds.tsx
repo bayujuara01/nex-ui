@@ -1,8 +1,8 @@
-import { DateTimePicker } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { DateTimePicker } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { DateTimePicker } from '@mantine/dates';
+import { DateTimePicker } from '@nex-ui/dates';
 
 function Demo() {
   return <DateTimePicker withSeconds label="Pick date and time" placeholder="Pick date and time" />;

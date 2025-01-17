@@ -1,4 +1,4 @@
-import type { CarouselFactory } from '@mantine/carousel';
+import type { CarouselFactory } from '@nex-ui/carousel';
 import type { StylesApiData } from '../types';
 
 export const CarouselStylesApi: StylesApiData<CarouselFactory> = {

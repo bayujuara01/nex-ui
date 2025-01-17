@@ -1,11 +1,11 @@
 import dayjs from 'dayjs';
 import { useState } from 'react';
-import { Calendar } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { Calendar } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Calendar } from '@mantine/dates';
+import { Calendar } from '@nex-ui/dates';
 import dayjs from 'dayjs';
 
 function getDay(date: Date) {

@@ -1,8 +1,8 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 import { BaseDemo } from './_base';
 
 const getCode = (prop: string) => `
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 
 function Demo() {
   return (

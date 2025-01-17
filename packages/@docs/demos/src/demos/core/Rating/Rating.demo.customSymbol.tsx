@@ -5,11 +5,11 @@ import {
   IconMoodSad,
   IconMoodSmile,
 } from '@tabler/icons-react';
-import { Rating, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Rating, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Rating, rem } from '@mantine/core';
+import { Rating, rem } from '@nex-ui/core';
 import {
   IconMoodCry,
   IconMoodSad,

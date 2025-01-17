@@ -1,4 +1,4 @@
-import type { CompositeChartFactory } from '@mantine/charts';
+import type { CompositeChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const CompositeChartStylesApi: StylesApiData<CompositeChartFactory> = {

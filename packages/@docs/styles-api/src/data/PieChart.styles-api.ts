@@ -1,4 +1,4 @@
-import type { PieChartFactory } from '@mantine/charts';
+import type { PieChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const PieChartStylesApi: StylesApiData<PieChartFactory> = {

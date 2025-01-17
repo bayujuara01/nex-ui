@@ -1,10 +1,10 @@
-import { Box, Button, Collapse, Group, Text } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Collapse, Group, Text } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Group, Text, Collapse, Box } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { Button, Group, Text, Collapse, Box } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 
 function Demo() {
   const [opened, { toggle }] = useDisclosure(false);

@@ -1,9 +1,9 @@
-import { Button, Popover, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Popover, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { FLOATING_POSITION_DATA } from '../../../shared';
 
 const code = (props: any) => `
-import { Popover, Button, Text } from '@mantine/core';
+import { Popover, Button, Text } from '@nex-ui/core';
 
 function Demo() {
   return (

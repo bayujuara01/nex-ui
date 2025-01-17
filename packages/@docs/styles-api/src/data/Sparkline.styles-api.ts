@@ -1,4 +1,4 @@
-import type { SparklineFactory } from '@mantine/charts';
+import type { SparklineFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const SparklineStylesApi: StylesApiData<SparklineFactory> = {

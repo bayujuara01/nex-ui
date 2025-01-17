@@ -1,4 +1,4 @@
-import type { BurgerFactory } from '@mantine/core';
+import type { BurgerFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const BurgerStylesApi: StylesApiData<BurgerFactory> = {

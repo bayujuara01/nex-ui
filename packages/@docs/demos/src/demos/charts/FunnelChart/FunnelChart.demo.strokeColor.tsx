@@ -1,5 +1,5 @@
-import { FunnelChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { FunnelChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 import classes from './FunnelChart.demo.strokeColor.module.css';
 
@@ -14,7 +14,7 @@ const cssCode = `
 `;
 
 const code = `
-import { FunnelChart } from '@mantine/charts';
+import { FunnelChart } from '@nex-ui/charts';
 import { data } from './data';
 import classes from './Demo.module.css';
 

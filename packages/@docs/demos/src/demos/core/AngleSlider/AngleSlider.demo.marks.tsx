@@ -1,8 +1,8 @@
-import { AngleSlider, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { AngleSlider, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { AngleSlider, Group } from '@mantine/core';
+import { AngleSlider, Group } from '@nex-ui/core';
 
 function Demo() {
   return (

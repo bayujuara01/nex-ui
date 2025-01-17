@@ -1,4 +1,4 @@
-import type { NotificationsFactory } from '@mantine/notifications';
+import type { NotificationsFactory } from '@nex-ui/notifications';
 import type { StylesApiData } from '../types';
 
 export const NotificationsStylesApi: StylesApiData<NotificationsFactory> = {

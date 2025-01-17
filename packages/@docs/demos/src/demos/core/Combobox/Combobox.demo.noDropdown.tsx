@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Combobox, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Combobox, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Combobox, TextInput } from '@mantine/core';
+import { Combobox, TextInput } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');

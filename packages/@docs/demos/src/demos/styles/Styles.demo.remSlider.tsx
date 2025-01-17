@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { Slider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Slider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Slider } from '@mantine/core';
+import { Slider } from '@nex-ui/core';
 
 function Demo() {
   return (

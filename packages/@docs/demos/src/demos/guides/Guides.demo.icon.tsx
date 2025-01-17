@@ -1,9 +1,9 @@
 import { IconBrandMantine } from '@tabler/icons-react';
-import { rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 import { IconBrandMantine } from '@tabler/icons-react';
 
 function Demo() {

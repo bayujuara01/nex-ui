@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react';
-import { Button, Group, MantineProvider, useMantineColorScheme } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, NexProvider, useMantineColorScheme } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: any) => `
-import { MantineProvider, Button, Group } from '@mantine/core';
+import { NexProvider, Button, Group } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider theme={{ primaryShade: ${props.primaryShade} }}>
+    <NexProvider theme={{ primaryShade: ${props.primaryShade} }}>
       <Group>
         <Button>Filled</Button>
         <Button variant="light">Light</Button>
         <Button variant="outline">Outline</Button>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -28,7 +28,7 @@ function Wrapper(props: any) {
 
   return (
     <div id="primary-color-demo-root" data-mantine-color-scheme={attr}>
-      <MantineProvider
+      <NexProvider
         cssVariablesSelector="#primary-color-demo-root"
         getRootElement={() => document.createElement('div')}
         theme={{ primaryShade: props.primaryShade }}
@@ -38,7 +38,7 @@ function Wrapper(props: any) {
           <Button variant="light">Light</Button>
           <Button variant="outline">Outline</Button>
         </Group>
-      </MantineProvider>
+      </NexProvider>
     </div>
   );
 }

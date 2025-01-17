@@ -1,8 +1,8 @@
-import { Group, Rating, Stack } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, Rating, Stack } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Rating, Group, Stack } from '@mantine/core';
+import { Rating, Group, Stack } from '@nex-ui/core';
 
 function Demo() {
   return (

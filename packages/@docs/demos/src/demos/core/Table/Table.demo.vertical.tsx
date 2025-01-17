@@ -1,8 +1,8 @@
-import { Table } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Table } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Table } from '@mantine/core';
+import { Table } from '@nex-ui/core';
 
 export function Demo() {
   return (

@@ -1,7 +1,7 @@
-import { Button, Code, Text } from '@mantine/core';
-import { useCounter } from '@mantine/hooks';
-import { notifications, useNotifications } from '@mantine/notifications';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Code, Text } from '@nex-ui/core';
+import { useCounter } from '@nex-ui/hooks';
+import { notifications, useNotifications } from '@nex-ui/notifications';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 function Demo() {

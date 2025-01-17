@@ -1,9 +1,9 @@
-import { createTheme, Loader, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { createTheme, Loader, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { RingLoader, ringLoaderCode } from './_RingLoader';
 
 const code = `
-import { MantineProvider, Loader } from '@mantine/core';
+import { NexProvider, Loader } from '@nex-ui/core';
 import { RingLoader } from './RingLoader';
 
 const theme = createTheme({
@@ -19,9 +19,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Loader />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 `;
@@ -39,9 +39,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Loader />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

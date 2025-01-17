@@ -1,8 +1,8 @@
-import { createTheme, MantineThemeProvider, useProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { createTheme, NexThemeProvider, useProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useProps, MantineThemeProvider, createTheme } from '@mantine/core';
+import { useProps, NexThemeProvider, createTheme } from '@nex-ui/core';
 
 interface CustomComponentProps {
   color?: string;
@@ -33,10 +33,10 @@ function Demo() {
     <div>
       <CustomComponent>Default color</CustomComponent>
 
-      <MantineThemeProvider theme={theme}>
+      <NexThemeProvider theme={theme}>
         <CustomComponent>Provider color</CustomComponent>
         <CustomComponent color="blue">Prop color</CustomComponent>
-      </MantineThemeProvider>
+      </NexThemeProvider>
     </div>
   );
 }
@@ -71,10 +71,10 @@ function Demo() {
     <div>
       <CustomComponent>Default color</CustomComponent>
 
-      <MantineThemeProvider theme={theme}>
+      <NexThemeProvider theme={theme}>
         <CustomComponent>Provider color</CustomComponent>
         <CustomComponent color="blue">Prop color</CustomComponent>
-      </MantineThemeProvider>
+      </NexThemeProvider>
     </div>
   );
 }

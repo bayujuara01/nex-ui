@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
 import { useEffect } from 'react';
-import { Checkbox, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useEffect } from 'react';
-import { useForm } from '@mantine/form';
-import { TextInput, Checkbox } from '@mantine/core';
+import { useForm } from '@nex-ui/form';
+import { TextInput, Checkbox } from '@nex-ui/core';
 
 interface FormValues {
   email: string;

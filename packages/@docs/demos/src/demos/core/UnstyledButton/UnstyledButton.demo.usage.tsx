@@ -1,8 +1,8 @@
-import { UnstyledButton } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { UnstyledButton } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { UnstyledButton } from '@mantine/core';
+import { UnstyledButton } from '@nex-ui/core';
 
 function Demo() {
   return <UnstyledButton>Button without styles</UnstyledButton>;

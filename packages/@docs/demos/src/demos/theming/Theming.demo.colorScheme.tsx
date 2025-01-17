@@ -1,8 +1,8 @@
-import { Button, Group, useMantineColorScheme } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, useMantineColorScheme } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useMantineColorScheme, Button, Group } from '@mantine/core';
+import { useMantineColorScheme, Button, Group } from '@nex-ui/core';
 
 function Demo() {
   const { setColorScheme, clearColorScheme } = useMantineColorScheme();

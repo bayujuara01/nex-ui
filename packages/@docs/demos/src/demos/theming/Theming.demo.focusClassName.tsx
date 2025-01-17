@@ -1,16 +1,16 @@
-import { Button, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Theming.demo.focusClassName.module.css';
 
 const tsxCode = `
-import { MantineProvider, Button } from '@mantine/core';
+import { NexProvider, Button } from '@nex-ui/core';
 import classes from './focus.module.css';
 
 function Demo() {
   return (
-    <MantineProvider theme={{ focusClassName: classes.focus }}>
+    <NexProvider theme={{ focusClassName: classes.focus }}>
       <Button>Click button to see custom focus ring</Button>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -36,9 +36,9 @@ const cssCode = `
 
 function Demo() {
   return (
-    <MantineThemeProvider inherit theme={{ focusClassName: classes.focus }}>
+    <NexThemeProvider inherit theme={{ focusClassName: classes.focus }}>
       <Button>Click button to see custom focus ring</Button>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Loader, Text, TextInput } from '@mantine/core';
-import { useDebouncedCallback } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Loader, Text, TextInput } from '@nex-ui/core';
+import { useDebouncedCallback } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Loader, Text, TextInput } from '@mantine/core';
-import { useDebouncedCallback } from '@mantine/hooks';
+import { Loader, Text, TextInput } from '@nex-ui/core';
+import { useDebouncedCallback } from '@nex-ui/hooks';
 
 function getSearchResults(query: string): Promise<{ id: number; title: string }[]> {
   return new Promise((resolve) => {

@@ -1,5 +1,5 @@
-import { ColorPicker, ColorPickerProps, DEFAULT_THEME } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorPicker, ColorPickerProps, DEFAULT_THEME } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 function Wrapper(props: ColorPickerProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ColorPickerProps) {
 }
 
 const code = `
-import { ColorPicker } from '@mantine/core';
+import { ColorPicker } from '@nex-ui/core';
 
 function Demo() {
   return <ColorPicker{{props}} />;

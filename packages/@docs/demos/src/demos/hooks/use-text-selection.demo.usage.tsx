@@ -1,8 +1,8 @@
-import { useTextSelection } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { useTextSelection } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useTextSelection } from '@mantine/hooks';
+import { useTextSelection } from '@nex-ui/hooks';
 
 function Demo() {
   const selection = useTextSelection();

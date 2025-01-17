@@ -1,4 +1,4 @@
-import type { JsonInputFactory } from '@mantine/core';
+import type { JsonInputFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 import { InputStylesApi, InputWrapperStylesApi } from './Input.styles-api';
 

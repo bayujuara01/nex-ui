@@ -1,8 +1,8 @@
-import { PinInput, PinInputProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { PinInput, PinInputProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { PinInput } from '@mantine/core';
+import { PinInput } from '@nex-ui/core';
 
 function Demo() {
   return <PinInput{{props}} />

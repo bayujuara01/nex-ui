@@ -1,11 +1,11 @@
-import { Box, Button, Group, LoadingOverlay } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Group, LoadingOverlay } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const code = `
-import { useDisclosure } from '@mantine/hooks';
-import { LoadingOverlay, Button, Group, Box } from '@mantine/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { LoadingOverlay, Button, Group, Box } from '@nex-ui/core';
 
 function Demo() {
   const [visible, { toggle }] = useDisclosure(false);

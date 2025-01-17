@@ -1,11 +1,11 @@
 import { IconAt } from '@tabler/icons-react';
-import { rem, Select } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Select } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { SelectStylesApi } from '@docs/styles-api';
 
 const code = `
 import { IconAt } from '@tabler/icons-react';
-import { Select, rem } from '@mantine/core';
+import { Select, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

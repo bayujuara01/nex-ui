@@ -1,8 +1,8 @@
-import { Pill, PillsInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Pill, PillsInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { PillsInput, Pill } from '@mantine/core';
+import { PillsInput, Pill } from '@nex-ui/core';
 
 function Demo() {
   return (

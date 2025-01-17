@@ -3,27 +3,27 @@ import {
   darken,
   defaultVariantColorsResolver,
   Group,
-  MantineThemeProvider,
+  NexThemeProvider,
   parseThemeColor,
   rem,
   rgba,
   VariantColorsResolver,
-} from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+} from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { IconPhoto, IconFingerprint, IconError404 } from '@tabler/icons-react';
 import {
   Badge,
   Group,
-  MantineProvider,
+  NexProvider,
   defaultVariantColorsResolver,
   VariantColorsResolver,
   parseThemeColor,
   rem,
   rgba,
   darken,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 const variantColorResolver: VariantColorsResolver = (input) => {
   const defaultResolvedColors = defaultVariantColorsResolver(input);
@@ -66,7 +66,7 @@ const variantColorResolver: VariantColorsResolver = (input) => {
 
 function Demo() {
   return (
-    <MantineProvider theme={{ variantColorResolver }}>
+    <NexProvider theme={{ variantColorResolver }}>
       <Group>
         <Badge color="lime.4" variant="filled">
           Lime filled
@@ -80,7 +80,7 @@ function Demo() {
           Danger
         </Badge>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -126,7 +126,7 @@ const variantColorResolver: VariantColorsResolver = (input) => {
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={{ variantColorResolver }}>
+    <NexThemeProvider theme={{ variantColorResolver }}>
       <Group>
         <Badge color="lime.4" variant="filled" size="lg">
           Lime filled
@@ -140,7 +140,7 @@ function Demo() {
           Danger
         </Badge>
       </Group>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

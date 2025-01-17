@@ -1,5 +1,5 @@
-import { Table, TableProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Table, TableProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { elements } from './_data';
 
 function Wrapper(props: TableProps) {
@@ -26,7 +26,7 @@ function Wrapper(props: TableProps) {
 }
 
 const code = `
-import { Table } from '@mantine/core';
+import { Table } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,4 +1,4 @@
-import type { LoadingOverlayFactory } from '@mantine/core';
+import type { LoadingOverlayFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const LoadingOverlayStylesApi: StylesApiData<LoadingOverlayFactory> = {

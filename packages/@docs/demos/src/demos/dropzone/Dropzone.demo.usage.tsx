@@ -1,10 +1,10 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 import { BaseDemo } from './_base';
 
 const code = `
-import { Group, Text, rem } from '@mantine/core';
+import { Group, Text, rem } from '@nex-ui/core';
 import { IconUpload, IconPhoto, IconX } from '@tabler/icons-react';
-import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@mantine/dropzone';
+import { Dropzone, DropzoneProps, IMAGE_MIME_TYPE } from '@nex-ui/dropzone';
 
 export function BaseDemo(props: Partial<DropzoneProps>) {
   return (

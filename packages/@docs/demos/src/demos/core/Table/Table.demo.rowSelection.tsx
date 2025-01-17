@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Checkbox, Table } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, Table } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Table, Checkbox } from '@mantine/core';
+import { Table, Checkbox } from '@nex-ui/core';
 
 const elements = [
   { position: 6, mass: 12.011, symbol: 'C', name: 'Carbon' },

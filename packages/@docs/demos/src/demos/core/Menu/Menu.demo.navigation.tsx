@@ -1,9 +1,9 @@
-import { Group, Menu } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Group, Menu } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { DemoMenuItems } from './_menu-items';
 
 const code = `
-import { Group, Menu } from '@mantine/core';
+import { Group, Menu } from '@nex-ui/core';
 
 function Demo() {
   const menus = Array(4)

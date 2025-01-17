@@ -1,8 +1,8 @@
-import { YearPickerInput } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { YearPickerInput } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { YearPickerInput } from '@mantine/dates';
+import { YearPickerInput } from '@nex-ui/dates';
 
 function Demo() {
   return (

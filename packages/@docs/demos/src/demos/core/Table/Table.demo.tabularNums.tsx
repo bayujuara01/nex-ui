@@ -1,8 +1,8 @@
-import { NumberFormatter, Table } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NumberFormatter, Table } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { NumberFormatter, Table } from '@mantine/core';
+import { NumberFormatter, Table } from '@nex-ui/core';
 
 const data = [
   { product: 'Apples', unitsSold: 2214411234 },

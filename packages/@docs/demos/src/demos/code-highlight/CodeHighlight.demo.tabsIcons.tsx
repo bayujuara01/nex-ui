@@ -1,6 +1,6 @@
-import { CodeHighlightTabs } from '@mantine/code-highlight';
-import { MantineDemo } from '@mantinex/demo';
-import { CssIcon, TypeScriptIcon } from '@mantinex/dev-icons';
+import { CodeHighlightTabs } from '@nex-ui/code-highlight';
+import { MantineDemo } from '@nex-uix/demo';
+import { CssIcon, TypeScriptIcon } from '@nex-uix/dev-icons';
 
 const tsxCode = `
 function Button() {
@@ -16,8 +16,8 @@ const cssCode = `
 `;
 
 const code = `
-import { CodeHighlightTabs } from '@mantine/code-highlight';
-import { TypeScriptIcon, CssIcon } from '@mantinex/dev-icons';
+import { CodeHighlightTabs } from '@nex-ui/code-highlight';
+import { TypeScriptIcon, CssIcon } from '@nex-uix/dev-icons';
 
 const tsxCode = \`${tsxCode}\`;
 

@@ -1,8 +1,8 @@
-import { Fieldset, TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Fieldset, TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Fieldset, TextInput } from '@mantine/core';
+import { Fieldset, TextInput } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,13 +1,13 @@
 import { IconStar } from '@tabler/icons-react';
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { RichTextEditor, useRichTextEditorContext } from '@mantine/tiptap';
-import { MantineDemo } from '@mantinex/demo';
+import { RichTextEditor, useRichTextEditorContext } from '@nex-ui/tiptap';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { RichTextEditor, useRichTextEditorContext } from '@mantine/tiptap';
+import { RichTextEditor, useRichTextEditorContext } from '@nex-ui/tiptap';
 import { IconStar } from '@tabler/icons-react';
 
 function InsertStarControl() {

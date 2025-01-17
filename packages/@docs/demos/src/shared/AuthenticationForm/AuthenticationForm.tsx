@@ -10,8 +10,8 @@ import {
   PasswordInput,
   Text,
   TextInput,
-} from '@mantine/core';
-import { useForm } from '@mantine/form';
+} from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
 
 export interface AuthenticationFormProps {
   noShadow?: boolean;

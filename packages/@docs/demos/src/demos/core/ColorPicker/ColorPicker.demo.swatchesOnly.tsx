@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { ColorPicker, DEFAULT_THEME, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { ColorPicker, DEFAULT_THEME, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { DEFAULT_THEME, ColorPicker, Text } from '@mantine/core';
+import { DEFAULT_THEME, ColorPicker, Text } from '@nex-ui/core';
 
 function Demo() {
   const [value, onChange] = useState('#fff');

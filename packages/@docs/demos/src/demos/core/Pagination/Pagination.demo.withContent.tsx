@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Pagination, Text } from '@mantine/core';
-import { randomId } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Pagination, Text } from '@nex-ui/core';
+import { randomId } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { randomId } from '@mantine/hooks';
-import { Pagination, Text } from '@mantine/core';
+import { randomId } from '@nex-ui/hooks';
+import { Pagination, Text } from '@nex-ui/core';
 
 function chunk<T>(array: T[], size: number): T[][] {
   if (!array.length) {

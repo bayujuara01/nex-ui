@@ -1,9 +1,9 @@
-import { Button, Group, Tree, useTree } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Tree, useTree } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './data';
 
 const code = `
-import { Button, Group, Tree, useTree } from '@mantine/core';
+import { Button, Group, Tree, useTree } from '@nex-ui/core';
 import { data } from './data';
 
 function Demo() {

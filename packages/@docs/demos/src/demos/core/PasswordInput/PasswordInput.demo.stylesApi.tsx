@@ -1,11 +1,11 @@
 import { IconLock } from '@tabler/icons-react';
-import { PasswordInput, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { PasswordInput, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { PasswordInputStylesApi } from '@docs/styles-api';
 
 const code = `
 import { IconLock } from '@tabler/icons-react';
-import { PasswordInput, rem } from '@mantine/core';
+import { PasswordInput, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

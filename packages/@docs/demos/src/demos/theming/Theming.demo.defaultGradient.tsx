@@ -1,8 +1,8 @@
-import { Button, createTheme, MantineThemeProvider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, createTheme, NexThemeProvider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { MantineProvider, createTheme, Button } from '@mantine/core';
+import { NexProvider, createTheme, Button } from '@nex-ui/core';
 
 const theme = createTheme({
   defaultGradient: {
@@ -14,9 +14,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Button variant="gradient">Button with custom default gradient</Button>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -31,9 +31,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Button variant="gradient">Button with custom default gradient</Button>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

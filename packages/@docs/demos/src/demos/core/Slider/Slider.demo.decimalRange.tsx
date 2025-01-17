@@ -1,8 +1,8 @@
-import { RangeSlider } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { RangeSlider } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { RangeSlider } from '@mantine/core';
+import { RangeSlider } from '@nex-ui/core';
 
 function Demo() {
   return (

@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import cx from 'clsx';
-import { Box, MantineLoaderComponent } from '@mantine/core';
+import { Box, MantineLoaderComponent } from '@nex-ui/core';
 import classes from './CssLoader.module.css';
 
 export const CssLoader: MantineLoaderComponent = forwardRef(({ className, ...others }, ref) => (
@@ -10,7 +10,7 @@ export const CssLoader: MantineLoaderComponent = forwardRef(({ className, ...oth
 export const cssLoaderTsxCode = `
 import { forwardRef } from 'react';
 import cx from 'clsx';
-import { Box, MantineLoaderComponent } from '@mantine/core';
+import { Box, MantineLoaderComponent } from '@nex-ui/core';
 import classes from './CssLoader.module.css';
 
 export const CssLoader: MantineLoaderComponent = forwardRef(({ className, ...others }, ref) => (

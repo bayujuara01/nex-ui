@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
 
-import { Box, Button, Group, NumberInput, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Group, NumberInput, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useForm } from '@mantine/form';
-import { Box, TextInput, NumberInput, Button, Group } from '@mantine/core';
+import { useForm } from '@nex-ui/form';
+import { Box, TextInput, NumberInput, Button, Group } from '@nex-ui/core';
 
 function Demo() {
   const form = useForm<{ name: string; age: number | undefined }>({

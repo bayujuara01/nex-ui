@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { AspectRatio, Button, Overlay } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { AspectRatio, Button, Overlay } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Button, Overlay, AspectRatio } from '@mantine/core';
+import { Button, Overlay, AspectRatio } from '@nex-ui/core';
 
 function Demo() {
   const [visible, setVisible] = useState(true);

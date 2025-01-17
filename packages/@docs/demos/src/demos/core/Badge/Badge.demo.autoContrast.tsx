@@ -1,8 +1,8 @@
-import { Badge, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Badge, Group } from '@mantine/core';
+import { Badge, Group } from '@nex-ui/core';
 
 function Demo() {
   return (

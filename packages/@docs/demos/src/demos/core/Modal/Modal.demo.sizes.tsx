@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Button, Group, Modal } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, Modal } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 const SIZES = ['xs', 'sm', 'md', 'lg', 'xl', '55rem', '70%', '100%'];

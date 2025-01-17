@@ -1,8 +1,8 @@
-import { SegmentedControl, Stack, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { SegmentedControl, Stack, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { SegmentedControl } from '@mantine/core';
+import { SegmentedControl } from '@nex-ui/core';
 
 function Demo() {
   return (

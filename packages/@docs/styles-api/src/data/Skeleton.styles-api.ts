@@ -1,4 +1,4 @@
-import type { SkeletonFactory } from '@mantine/core';
+import type { SkeletonFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const SkeletonStylesApi: StylesApiData<SkeletonFactory> = {

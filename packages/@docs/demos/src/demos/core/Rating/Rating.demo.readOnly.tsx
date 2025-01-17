@@ -1,8 +1,8 @@
-import { Rating } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Rating } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Rating } from '@mantine/core';
+import { Rating } from '@nex-ui/core';
 
 function Demo() {
   return <Rating value={3.5} fractions={2} readOnly />;

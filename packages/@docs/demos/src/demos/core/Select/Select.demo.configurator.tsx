@@ -1,9 +1,9 @@
-import { Select } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Select } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { inputControls } from '../../../shared';
 
 const code = `
-import { Select } from '@mantine/core';
+import { Select } from '@nex-ui/core';
 
 
 function Demo() {

@@ -1,11 +1,11 @@
 import 'dayjs/locale/ru';
 
-import { DatePicker } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { DatePicker } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import 'dayjs/locale/ru';
-import { DatePicker } from '@mantine/dates';
+import { DatePicker } from '@nex-ui/dates';
 
 function Demo() {
   return <DatePicker locale="ru" />;

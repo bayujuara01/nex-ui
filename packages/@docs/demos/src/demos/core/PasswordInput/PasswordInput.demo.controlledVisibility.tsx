@@ -1,10 +1,10 @@
-import { PasswordInput, Stack } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { PasswordInput, Stack } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useDisclosure } from '@mantine/hooks';
-import { PasswordInput, Stack } from '@mantine/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { PasswordInput, Stack } from '@nex-ui/core';
 
 function Demo() {
   const [visible, { toggle }] = useDisclosure(false);

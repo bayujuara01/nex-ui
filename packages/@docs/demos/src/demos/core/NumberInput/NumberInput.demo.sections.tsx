@@ -1,9 +1,9 @@
 import { IconCurrencyDram } from '@tabler/icons-react';
-import { NumberInput, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NumberInput, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { NumberInput, rem } from '@mantine/core';
+import { NumberInput, rem } from '@nex-ui/core';
 import { IconCurrencyDram } from '@tabler/icons-react';
 
 function Demo() {

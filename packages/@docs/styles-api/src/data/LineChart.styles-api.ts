@@ -1,4 +1,4 @@
-import type { LineChartFactory } from '@mantine/charts';
+import type { LineChartFactory } from '@nex-ui/charts';
 import type { StylesApiData } from '../types';
 
 export const LineChartStylesApi: StylesApiData<LineChartFactory> = {

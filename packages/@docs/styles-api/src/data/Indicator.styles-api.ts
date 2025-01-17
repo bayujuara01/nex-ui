@@ -1,4 +1,4 @@
-import type { IndicatorFactory } from '@mantine/core';
+import type { IndicatorFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const IndicatorStylesApi: StylesApiData<IndicatorFactory> = {

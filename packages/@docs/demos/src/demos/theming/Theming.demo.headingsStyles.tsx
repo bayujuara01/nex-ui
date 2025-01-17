@@ -1,9 +1,9 @@
-import { createTheme, MantineThemeProvider, Title } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { createTheme, NexThemeProvider, Title } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Theming.demo.headingStyles.module.css';
 
 const code = `
-import { Title, MantineProvider } from '@mantine/core';
+import { Title, NexProvider } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -18,14 +18,14 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Title order={1}>Heading 1</Title>
       <Title order={2}>Heading 2</Title>
       <Title order={3}>Heading 3</Title>
       <Title order={4}>Heading 4</Title>
       <Title order={5}>Heading 5</Title>
       <Title order={6}>Heading 6</Title>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 `;
@@ -55,14 +55,14 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Title order={1}>Heading 1</Title>
       <Title order={2}>Heading 2</Title>
       <Title order={3}>Heading 3</Title>
       <Title order={4}>Heading 4</Title>
       <Title order={5}>Heading 5</Title>
       <Title order={6}>Heading 6</Title>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

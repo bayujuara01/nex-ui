@@ -1,9 +1,9 @@
 import { IconSun, IconVideo } from '@tabler/icons-react';
-import { Avatar, Text, ThemeIcon, Timeline } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar, Text, ThemeIcon, Timeline } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { ThemeIcon, Text, Avatar, Timeline } from '@mantine/core';
+import { ThemeIcon, Text, Avatar, Timeline } from '@nex-ui/core';
 import { IconSun, IconVideo } from '@tabler/icons-react';
 
 function Demo() {

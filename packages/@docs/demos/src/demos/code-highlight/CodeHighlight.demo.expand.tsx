@@ -1,8 +1,8 @@
-import { CodeHighlightTabs } from '@mantine/code-highlight';
-import { MantineDemo } from '@mantinex/demo';
+import { CodeHighlightTabs } from '@nex-ui/code-highlight';
+import { MantineDemo } from '@nex-uix/demo';
 
 const tsxCode = `
-import { Group, Button, MantineProvider, createTheme } from '@mantine/core';
+import { Group, Button, NexProvider, createTheme } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -15,12 +15,12 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Group>
         <Button variant="danger">Danger variant</Button>
         <Button variant="primary">Primary variant</Button>
       </Group>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;
@@ -40,7 +40,7 @@ const cssCode = `
 `;
 
 const code = `
-import { CodeHighlightTabs } from '@mantine/code-highlight';
+import { CodeHighlightTabs } from '@nex-ui/code-highlight';
 
 const tsxCode = \`${tsxCode}\`;
 

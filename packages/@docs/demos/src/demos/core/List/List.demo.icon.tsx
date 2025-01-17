@@ -1,9 +1,9 @@
 import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
-import { List, rem, ThemeIcon } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { List, rem, ThemeIcon } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { List, ThemeIcon, rem } from '@mantine/core';
+import { List, ThemeIcon, rem } from '@nex-ui/core';
 import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
 
 function Demo() {

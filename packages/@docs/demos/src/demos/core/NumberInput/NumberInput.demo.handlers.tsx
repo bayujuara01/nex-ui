@@ -1,10 +1,10 @@
 import { useRef } from 'react';
-import { Button, Group, NumberInput, NumberInputHandlers } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group, NumberInput, NumberInputHandlers } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useRef } from 'react';
-import { NumberInput, Group, Button, NumberInputHandlers } from '@mantine/core';
+import { NumberInput, Group, Button, NumberInputHandlers } from '@nex-ui/core';
 
 function Demo() {
   const handlersRef = useRef<NumberInputHandlers>(null);

@@ -1,13 +1,13 @@
 import { useMemo, useState } from 'react';
 import { IconSearch } from '@tabler/icons-react';
-import { Button } from '@mantine/core';
-import { createSpotlight, Spotlight } from '@mantine/spotlight';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { createSpotlight, Spotlight } from '@nex-ui/spotlight';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Spotlight, spotlight } from '@mantine/spotlight';
-import { Button } from '@mantine/core';
+import { Spotlight, spotlight } from '@nex-ui/spotlight';
+import { Button } from '@nex-ui/core';
 import { IconSearch } from '@tabler/icons-react';
 
 const data = ['Home', 'About us', 'Contacts', 'Blog', 'Careers', 'Terms of service'];

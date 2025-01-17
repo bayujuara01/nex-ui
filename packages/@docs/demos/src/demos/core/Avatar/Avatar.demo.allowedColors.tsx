@@ -1,9 +1,9 @@
-import { Avatar, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { names, namesCode } from './_mockdata';
 
 const code = `
-import { Avatar, Group } from '@mantine/core';
+import { Avatar, Group } from '@nex-ui/core';
 
 ${namesCode}
 

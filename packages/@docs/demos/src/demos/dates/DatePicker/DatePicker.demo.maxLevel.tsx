@@ -1,10 +1,10 @@
-import { Group } from '@mantine/core';
-import { DatePicker } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { Group } from '@nex-ui/core';
+import { DatePicker } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Group } from '@mantine/core';
-import { DatePicker } from '@mantine/dates';
+import { Group } from '@nex-ui/core';
+import { DatePicker } from '@nex-ui/dates';
 
 function Demo() {
   return (

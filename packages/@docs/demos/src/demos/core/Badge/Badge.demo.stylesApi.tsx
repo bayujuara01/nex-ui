@@ -1,10 +1,10 @@
 import { IconAt } from '@tabler/icons-react';
-import { Badge, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { BadgeStylesApi } from '@docs/styles-api';
 
 const code = `
-import { Badge, rem } from '@mantine/core';
+import { Badge, rem } from '@nex-ui/core';
 import { IconAt } from '@tabler/icons-react';
 
 function Demo() {

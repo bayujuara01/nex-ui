@@ -1,10 +1,10 @@
-import { Button } from '@mantine/core';
-import { useFullscreen } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button } from '@nex-ui/core';
+import { useFullscreen } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useFullscreen } from '@mantine/hooks';
-import { Button } from '@mantine/core';
+import { useFullscreen } from '@nex-ui/hooks';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   const { toggle, fullscreen } = useFullscreen();

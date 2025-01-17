@@ -1,4 +1,4 @@
-import type { TreeFactory } from '@mantine/core';
+import type { TreeFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const TreeStylesApi: StylesApiData<TreeFactory> = {

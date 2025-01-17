@@ -1,8 +1,8 @@
-import { Button, Group } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Group } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Button, Group } from '@mantine/core';
+import { Button, Group } from '@nex-ui/core';
 
 function Demo() {
   return (

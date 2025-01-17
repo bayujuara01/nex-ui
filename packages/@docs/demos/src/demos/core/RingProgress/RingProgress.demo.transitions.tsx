@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Button, RingProgress, Stack, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, RingProgress, Stack, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { Button, RingProgress, Stack, Text } from '@mantine/core';
+import { Button, RingProgress, Stack, Text } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState(30);

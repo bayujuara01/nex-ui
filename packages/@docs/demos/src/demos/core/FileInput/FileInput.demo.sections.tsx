@@ -1,9 +1,9 @@
 import { IconFileCv } from '@tabler/icons-react';
-import { FileInput, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { FileInput, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { FileInput, rem } from '@mantine/core';
+import { FileInput, rem } from '@nex-ui/core';
 import { IconFileCv } from '@tabler/icons-react';
 
 function Demo() {

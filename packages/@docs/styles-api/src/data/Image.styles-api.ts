@@ -1,4 +1,4 @@
-import type { ImageFactory } from '@mantine/core';
+import type { ImageFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const ImageStylesApi: StylesApiData<ImageFactory> = {

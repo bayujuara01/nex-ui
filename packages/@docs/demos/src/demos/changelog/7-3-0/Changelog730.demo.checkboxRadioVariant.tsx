@@ -1,8 +1,8 @@
-import { Checkbox, Radio, Stack } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Checkbox, Radio, Stack } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Radio, Checkbox, Stack } from '@mantine/core';
+import { Radio, Checkbox, Stack } from '@nex-ui/core';
 
 function Demo() {
   return (

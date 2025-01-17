@@ -1,9 +1,9 @@
 import { IconFingerprint, IconGauge } from '@tabler/icons-react';
-import { NavLink } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { NavLink } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { NavLink } from '@mantine/core';
+import { NavLink } from '@nex-ui/core';
 import { IconGauge, IconFingerprint } from '@tabler/icons-react';
 
 function Demo() {

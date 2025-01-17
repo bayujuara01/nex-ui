@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { TextInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { TextInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Styles.demo.classNames.module.css';
 
 const code = `
 import { useState } from 'react';
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 function Demo() {

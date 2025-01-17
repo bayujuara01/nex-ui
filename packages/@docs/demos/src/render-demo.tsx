@@ -1,4 +1,4 @@
-import { Demo, MantineDemo } from '@mantinex/demo';
+import { Demo, MantineDemo } from '@nex-uix/demo';
 
 export function renderDemo(demo: MantineDemo) {
   return () => (

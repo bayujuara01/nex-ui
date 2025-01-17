@@ -1,11 +1,11 @@
-import { PieChart } from '@mantine/charts';
-import { Group, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { PieChart } from '@nex-ui/charts';
+import { Group, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { data, dataCode } from './_data';
 
 const code = `
-import { Group, Text } from '@mantine/core';
-import { PieChart } from '@mantine/charts';
+import { Group, Text } from '@nex-ui/core';
+import { PieChart } from '@nex-ui/charts';
 import { data } from './data';
 
 function Demo() {

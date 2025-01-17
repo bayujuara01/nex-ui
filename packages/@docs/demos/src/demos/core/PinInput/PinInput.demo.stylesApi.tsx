@@ -1,9 +1,9 @@
-import { PinInput } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { PinInput } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { PinInputStylesApi } from '@docs/styles-api';
 
 const code = `
-import { PinInput } from '@mantine/core';
+import { PinInput } from '@nex-ui/core';
 
 function Demo() {
   return (

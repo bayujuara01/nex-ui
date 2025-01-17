@@ -1,8 +1,8 @@
-import { Autocomplete } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Autocomplete } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Autocomplete } from '@mantine/core';
+import { Autocomplete } from '@nex-ui/core';
 
 const data = Array(100)
   .fill(0)

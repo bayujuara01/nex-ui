@@ -1,10 +1,10 @@
-import { Box, Button, Code, Group, LoadingOverlay, Text } from '@mantine/core';
-import { useFetch } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, Code, Group, LoadingOverlay, Text } from '@nex-ui/core';
+import { useFetch } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Box, Button, Code, Group, LoadingOverlay, Text } from '@mantine/core';
-import { useFetch } from '@mantine/hooks';
+import { Box, Button, Code, Group, LoadingOverlay, Text } from '@nex-ui/core';
+import { useFetch } from '@nex-ui/hooks';
 
 interface Item {
   userId: number;

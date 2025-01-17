@@ -1,9 +1,9 @@
-import { rem, Text } from '@mantine/core';
-import { useHover } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Text } from '@nex-ui/core';
+import { useHover } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useHover } from '@mantine/hooks';
+import { useHover } from '@nex-ui/hooks';
 
 function Demo() {
   const { hovered, ref } = useHover();

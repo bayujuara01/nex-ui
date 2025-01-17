@@ -1,9 +1,9 @@
-import { Text } from '@mantine/core';
-import { useOs } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Text } from '@nex-ui/core';
+import { useOs } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useOs } from '@mantine/hooks';
+import { useOs } from '@nex-ui/hooks';
 
 function Demo() {
   const os = useOs();

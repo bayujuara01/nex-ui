@@ -5,8 +5,8 @@ import {
   IconShieldCheck,
   IconUserCheck,
 } from '@tabler/icons-react';
-import { rem, Stepper } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Stepper } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
@@ -16,7 +16,7 @@ import {
   IconShieldCheck,
   IconCircleCheck,
 } from '@tabler/icons-react';
-import { Stepper, rem } from '@mantine/core';
+import { Stepper, rem } from '@nex-ui/core';
 
 function Demo() {
   const [active, setActive] = useState(1);

@@ -1,8 +1,8 @@
-import { DonutChart } from '@mantine/charts';
-import { MantineDemo } from '@mantinex/demo';
+import { DonutChart } from '@nex-ui/charts';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = (props: any) => `
-import { DonutChart } from '@mantine/charts';
+import { DonutChart } from '@nex-ui/charts';
 
 function Demo() {
   return (

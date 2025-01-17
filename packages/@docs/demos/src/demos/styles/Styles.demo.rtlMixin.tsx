@@ -1,4 +1,4 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Styles.demo.rtlMixin.module.css';
 
 const code = `

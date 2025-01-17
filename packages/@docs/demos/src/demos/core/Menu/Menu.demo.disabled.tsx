@@ -6,11 +6,11 @@ import {
   IconSettings,
   IconTrash,
 } from '@tabler/icons-react';
-import { Button, Menu, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Menu, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Menu, Button, rem } from '@mantine/core';
+import { Menu, Button, rem } from '@nex-ui/core';
 import { IconSearch } from '@tabler/icons-react';
 
 function Demo() {

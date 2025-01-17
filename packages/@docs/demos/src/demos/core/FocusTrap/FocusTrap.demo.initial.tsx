@@ -1,10 +1,10 @@
-import { Box, Button, FocusTrap, TextInput } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, Button, FocusTrap, TextInput } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { useDisclosure } from '@mantine/hooks';
-import { FocusTrap, TextInput, Button, Box } from '@mantine/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { FocusTrap, TextInput, Button, Box } from '@nex-ui/core';
 
 function Demo() {
   const [active, { toggle }] = useDisclosure(false);

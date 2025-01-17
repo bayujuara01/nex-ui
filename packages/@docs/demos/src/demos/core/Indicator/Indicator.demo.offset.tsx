@@ -1,8 +1,8 @@
-import { Avatar, Indicator } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Avatar, Indicator } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Avatar, Indicator } from '@mantine/core';
+import { Avatar, Indicator } from '@nex-ui/core';
 
 function Demo() {
   return (

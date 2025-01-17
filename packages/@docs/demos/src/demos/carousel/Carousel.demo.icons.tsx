@@ -1,12 +1,12 @@
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
-import { Carousel } from '@mantine/carousel';
-import { rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Carousel } from '@nex-ui/carousel';
+import { rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { Slides } from './_slides';
 
 const code = `
-import { rem } from '@mantine/core';
-import { Carousel } from '@mantine/carousel';
+import { rem } from '@nex-ui/core';
+import { Carousel } from '@nex-ui/carousel';
 import { IconArrowRight, IconArrowLeft } from '@tabler/icons-react';
 
 function Demo() {

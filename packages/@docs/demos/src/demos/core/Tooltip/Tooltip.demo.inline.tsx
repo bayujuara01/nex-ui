@@ -1,8 +1,8 @@
-import { Mark, Text, Tooltip } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Mark, Text, Tooltip } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Tooltip, Mark, Text } from '@mantine/core';
+import { Tooltip, Mark, Text } from '@nex-ui/core';
 
 function Demo() {
   return (

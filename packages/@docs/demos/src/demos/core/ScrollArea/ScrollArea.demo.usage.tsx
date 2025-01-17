@@ -1,5 +1,5 @@
-import { Box, ScrollArea, ScrollAreaProps } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Box, ScrollArea, ScrollAreaProps } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { Content } from './_content';
 
 function Wrapper(props: ScrollAreaProps) {
@@ -13,7 +13,7 @@ function Wrapper(props: ScrollAreaProps) {
 }
 
 const code = `
-import { ScrollArea } from '@mantine/core';
+import { ScrollArea } from '@nex-ui/core';
 
 function Demo() {
   return (

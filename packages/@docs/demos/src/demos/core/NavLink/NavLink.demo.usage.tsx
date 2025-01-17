@@ -5,11 +5,11 @@ import {
   IconGauge,
   IconHome2,
 } from '@tabler/icons-react';
-import { Badge, NavLink } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Badge, NavLink } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Badge, NavLink } from '@mantine/core';
+import { Badge, NavLink } from '@nex-ui/core';
 import { IconHome2, IconGauge, IconChevronRight, IconActivity, IconCircleOff } from '@tabler/icons-react';
 
 function Demo() {

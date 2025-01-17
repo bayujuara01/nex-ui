@@ -1,7 +1,7 @@
-import { MantineDemo } from '@mantinex/demo';
+import { MantineDemo } from '@nex-uix/demo';
 
 const getCode = (name: string) => `
-import { ${name} } from '@mantine/dates';
+import { ${name} } from '@nex-ui/dates';
 
 function Demo() {
   return (

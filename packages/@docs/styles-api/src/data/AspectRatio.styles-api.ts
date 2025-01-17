@@ -1,4 +1,4 @@
-import type { AspectRatioFactory } from '@mantine/core';
+import type { AspectRatioFactory } from '@nex-ui/core';
 import type { StylesApiData } from '../types';
 
 export const AspectRatioStylesApi: StylesApiData<AspectRatioFactory> = {

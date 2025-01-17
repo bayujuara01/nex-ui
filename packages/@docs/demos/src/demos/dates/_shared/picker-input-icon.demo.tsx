@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { IconCalendar } from '@tabler/icons-react';
-import { rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const getCode = (name: string) => `
 import { useState } from 'react';
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 import { IconCalendar } from '@tabler/icons-react';
-import { ${name} } from '@mantine/dates';
+import { ${name} } from '@nex-ui/dates';
 
 function Demo() {
   const [value, setValue] = useState<Date | null>(null);

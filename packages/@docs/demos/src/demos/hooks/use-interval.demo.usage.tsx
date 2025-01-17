@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Button, Stack, Text } from '@mantine/core';
-import { useInterval } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, Stack, Text } from '@nex-ui/core';
+import { useInterval } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState, useEffect } from 'react';
-import { useInterval } from '@mantine/hooks';
-import { Stack, Button, Text } from '@mantine/core';
+import { useInterval } from '@nex-ui/hooks';
+import { Stack, Button, Text } from '@nex-ui/core';
 
 function Demo() {
   const [seconds, setSeconds] = useState(0);

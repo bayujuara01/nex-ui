@@ -1,10 +1,10 @@
 import { IconArrowRight } from '@tabler/icons-react';
-import { Button, ButtonProps, Group, rem } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { Button, ButtonProps, Group, rem } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import classes from './Styles.demo.dataAttributes.module.css';
 
 const code = `
-import { Button, ButtonProps, Group, rem } from '@mantine/core';
+import { Button, ButtonProps, Group, rem } from '@nex-ui/core';
 import { IconArrowRight } from '@tabler/icons-react';
 import classes from './Demo.module.css';
 

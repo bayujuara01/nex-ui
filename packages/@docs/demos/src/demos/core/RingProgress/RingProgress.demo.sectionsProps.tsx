@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { RingProgress, Text } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { RingProgress, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { useState } from 'react';
-import { RingProgress, Text } from '@mantine/core';
+import { RingProgress, Text } from '@nex-ui/core';
 
 function Demo() {
   const [hovered, setHovered] = useState(-1);

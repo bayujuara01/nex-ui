@@ -1,12 +1,12 @@
 import { IconArrowUp } from '@tabler/icons-react';
-import { Affix, Button, rem, Text, Transition } from '@mantine/core';
-import { useWindowScroll } from '@mantine/hooks';
-import { MantineDemo } from '@mantinex/demo';
+import { Affix, Button, rem, Text, Transition } from '@nex-ui/core';
+import { useWindowScroll } from '@nex-ui/hooks';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
 import { IconArrowUp } from '@tabler/icons-react';
-import { useWindowScroll } from '@mantine/hooks';
-import { Affix, Button, Text, Transition, rem } from '@mantine/core';
+import { useWindowScroll } from '@nex-ui/hooks';
+import { Affix, Button, Text, Transition, rem } from '@nex-ui/core';
 
 function Demo() {
   const [scroll, scrollTo] = useWindowScroll();

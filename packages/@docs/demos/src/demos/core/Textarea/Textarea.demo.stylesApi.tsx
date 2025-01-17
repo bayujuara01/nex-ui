@@ -1,11 +1,11 @@
 import { IconAt } from '@tabler/icons-react';
-import { rem, Textarea } from '@mantine/core';
-import { MantineDemo } from '@mantinex/demo';
+import { rem, Textarea } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
 import { TextareaStylesApi } from '@docs/styles-api';
 
 const code = `
 import { IconAt } from '@tabler/icons-react';
-import { Textarea, rem } from '@mantine/core';
+import { Textarea, rem } from '@nex-ui/core';
 
 function Demo() {
   return (

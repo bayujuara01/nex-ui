@@ -1,8 +1,8 @@
-import { Calendar } from '@mantine/dates';
-import { MantineDemo } from '@mantinex/demo';
+import { Calendar } from '@nex-ui/dates';
+import { MantineDemo } from '@nex-uix/demo';
 
 const code = `
-import { Calendar } from '@mantine/dates';
+import { Calendar } from '@nex-ui/dates';
 
 function Demo() {
   return <Calendar />;
