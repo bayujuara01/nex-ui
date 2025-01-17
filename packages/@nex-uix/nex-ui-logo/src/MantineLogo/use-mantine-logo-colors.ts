@@ -1,4 +1,4 @@
-import { MantineColor, parseThemeColor, useMantineTheme } from '@mantine/core';
+import { MantineColor, parseThemeColor, useNexTheme } from '@nex-ui/core';
 
 export type MantineLogoVariant = 'mantine.dev' | 'ui.mantine.dev';
 
@@ -10,7 +10,7 @@ export interface LogoProps extends React.ComponentPropsWithoutRef<'svg'> {
 }
 
 export function useMantineLogoColors({ color, inverted }: LogoProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const parsedColor = parseThemeColor({ color: color || 'blue', theme });
   const mainColor = parsedColor.isThemeColor ? theme.colors[parsedColor.color][5] : color;
 

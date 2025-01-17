@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 import { LogoProps, useMantineLogoColors } from './use-mantine-logo-colors';
 import classes from './MantineLogo.module.css';
 
