@@ -1,4 +1,4 @@
-import { Box, rem } from '@mantine/core';
+import { Box, rem } from '@nex-ui/core';
 import { DevIconProps } from './types';
 
 export function YarnIcon({ size, style, ...others }: DevIconProps) {

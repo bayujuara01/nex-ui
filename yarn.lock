@@ -3982,6 +3982,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nex-uix/dev-icons@workspace:packages/@nex-uix/dev-icons":
+  version: 0.0.0-use.local
+  resolution: "@nex-uix/dev-icons@workspace:packages/@nex-uix/dev-icons"
+  dependencies:
+    "@nex-ui-tests/core": "workspace:*"
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/hooks": "workspace:*"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+  peerDependencies:
+    "@nex-ui/core": ">=7.0.0"
+    "@nex-ui/hooks": ">=7.0.0"
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
 "@nex-uix/shiki@workspace:packages/@nex-uix/shiki":
   version: 0.0.0-use.local
   resolution: "@nex-uix/shiki@workspace:packages/@nex-uix/shiki"
