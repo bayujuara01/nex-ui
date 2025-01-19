@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../../NexProvider';
 import { resolveClassNames } from './resolve-class-names';
 
 describe('@mantine/core/resolve-class-names', () => {

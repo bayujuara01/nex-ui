@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, NexTheme } from '../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../NexProvider';
 import { getClassName, GetClassNameOptions } from './get-class-name';
 import { FOCUS_CLASS_NAMES } from './get-global-class-names/get-global-class-names';
 

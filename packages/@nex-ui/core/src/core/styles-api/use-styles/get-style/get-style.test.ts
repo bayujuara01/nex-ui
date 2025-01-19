@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, NexTheme } from '../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../NexProvider';
 import { getStyle, GetStyleInput } from './get-style';
 
 const THEME_WITH_STYLES: NexTheme = {

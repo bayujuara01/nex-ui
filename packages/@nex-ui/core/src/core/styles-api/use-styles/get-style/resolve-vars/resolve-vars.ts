@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 import { CssVariable } from '../../../../Box';
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { mergeVars } from './merge-vars';
 
 type ResolvedVars = Partial<Record<string, Record<CssVariable, string>>>;

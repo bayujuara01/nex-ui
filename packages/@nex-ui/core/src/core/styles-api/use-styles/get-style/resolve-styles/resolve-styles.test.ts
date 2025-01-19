@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../../NexProvider';
 import { resolveStyles } from './resolve-styles';
 
 describe('@mantine/core/resolve-styles', () => {

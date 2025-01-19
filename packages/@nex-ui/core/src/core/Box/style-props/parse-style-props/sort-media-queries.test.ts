@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../NexProvider';
 import { sortMediaQueries } from './sort-media-queries';
 
 describe('@mantine/core/Box/sort-media-queries', () => {

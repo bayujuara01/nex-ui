@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 import { MantineStyleProp } from '../../../Box';
-import { NexTheme } from '../../../MantineProvider';
+import { NexTheme } from '../../../NexProvider';
 import { GetStylesApiOptions } from '../../styles-api.types';
 import { getThemeStyles } from './get-theme-styles/get-theme-styles';
 import { resolveStyle } from './resolve-style/resolve-style';

@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../../NexProvider';
 import { colorResolver } from './color-resolver';
 
 describe('@mantine/core/Box/color-resolver', () => {

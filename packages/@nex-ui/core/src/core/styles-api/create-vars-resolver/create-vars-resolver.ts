@@ -1,6 +1,6 @@
 import { CssVariable } from '../../Box';
 import { FactoryPayload } from '../../factory';
-import { NexTheme } from '../../MantineProvider';
+import { NexTheme } from '../../NexProvider';
 
 export type TransformVars<V> = {
   [Key in keyof V]: V[Key] extends CssVariable ? Record<V[Key], string | undefined> : never;

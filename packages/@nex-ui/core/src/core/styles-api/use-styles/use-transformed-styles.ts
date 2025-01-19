@@ -1,4 +1,4 @@
-import { useMantineStylesTransform, useNexTheme } from '../../MantineProvider';
+import { useMantineStylesTransform, useNexTheme } from '../../NexProvider';
 
 interface UseTransformedStylesInput {
   props: Record<string, any>;

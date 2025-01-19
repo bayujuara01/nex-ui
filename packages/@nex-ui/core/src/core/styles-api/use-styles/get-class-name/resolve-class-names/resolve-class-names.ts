@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import type { _ClassNames } from '../get-class-name';
 
 export interface ResolveClassNamesInput {

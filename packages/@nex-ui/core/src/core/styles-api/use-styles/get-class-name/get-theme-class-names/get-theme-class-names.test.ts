@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, NexTheme } from '../../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../../NexProvider';
 import { getThemeClassNames } from './get-theme-class-names';
 
 const testTheme: NexTheme = {

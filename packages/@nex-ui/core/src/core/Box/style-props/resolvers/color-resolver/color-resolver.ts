@@ -1,4 +1,4 @@
-import { NexTheme, parseThemeColor } from '../../../../MantineProvider';
+import { NexTheme, parseThemeColor } from '../../../../NexProvider';
 
 export function colorResolver(color: unknown, theme: NexTheme) {
   const parsedColor = parseThemeColor({ color, theme });

@@ -1,6 +1,6 @@
 import type { CSSProperties, MantineStyleProp } from '../Box';
 import type { FactoryPayload } from '../factory';
-import type { NexTheme } from '../MantineProvider';
+import type { NexTheme } from '../NexProvider';
 import { PartialVarsResolver } from './create-vars-resolver/create-vars-resolver';
 
 export interface GetStylesApiOptions {

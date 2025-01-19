@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { GetStylesApiOptions } from '../../../styles-api.types';
 
 interface GetGlobalClassNamesOptions {

@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { createTheme, MantineProvider } from '@nex-ui/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 import { defaultLoaders, Loader } from './Loader';
 import { MantineLoaderComponent } from './Loader.types';
 
@@ -30,13 +30,13 @@ export function LoaderOnProvider() {
     },
   });
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <div style={{ padding: 40 }}>
         <Loader />
         <Loader type="bars" mt="xl" />
         <Loader type="dots" mt="xl" />
       </div>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 

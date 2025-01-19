@@ -1,4 +1,4 @@
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { resolveClassNames } from '../resolve-class-names/resolve-class-names';
 
 interface GetThemeClassNamesOptions {

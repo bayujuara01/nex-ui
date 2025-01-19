@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 import { MantineStyleProp } from '../../../../Box';
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 
 interface ResolveStyleInput {
   style: MantineStyleProp | undefined;

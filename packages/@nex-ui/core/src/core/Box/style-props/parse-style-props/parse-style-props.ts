@@ -1,4 +1,4 @@
-import { NexTheme } from '../../../MantineProvider';
+import { NexTheme } from '../../../NexProvider';
 import { keys } from '../../../utils';
 import { resolvers } from '../resolvers';
 import type { SystemPropData } from '../style-props-data';

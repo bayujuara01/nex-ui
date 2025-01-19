@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../../NexProvider';
 import { getResolvedClassNames } from './get-resolved-class-names';
 
 const testObjectClassNames = {

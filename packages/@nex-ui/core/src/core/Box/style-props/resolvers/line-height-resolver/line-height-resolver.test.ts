@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../../NexProvider';
 import { lineHeightResolver } from './line-height-resolver';
 
 describe('@mantine/core/Box/line-height-resolver', () => {

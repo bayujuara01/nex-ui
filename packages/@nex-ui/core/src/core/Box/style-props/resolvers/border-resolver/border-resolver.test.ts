@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../../NexProvider';
 import { rem } from '../../../../utils';
 import { borderResolver } from './border-resolver';
 

@@ -6,7 +6,7 @@ import {
   useMantineIsHeadless,
   useNexTheme,
   useMantineWithStaticClasses,
-} from '../../MantineProvider';
+} from '../../NexProvider';
 import { PartialVarsResolver, VarsResolver } from '../create-vars-resolver/create-vars-resolver';
 import { ClassNames, ClassNamesArray, GetStylesApiOptions, Styles } from '../styles-api.types';
 import { getClassName } from './get-class-name/get-class-name';

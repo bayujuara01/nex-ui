@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, rgba } from '../MantineProvider';
+import { DEFAULT_THEME, rgba } from '../NexProvider';
 import { Box } from './Box';
 
 export default { title: 'Box' };

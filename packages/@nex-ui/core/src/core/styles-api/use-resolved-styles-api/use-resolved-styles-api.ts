@@ -1,5 +1,5 @@
 import { FactoryPayload } from '../../factory';
-import { useNexTheme } from '../../MantineProvider';
+import { useNexTheme } from '../../NexProvider';
 import { ClassNames, Styles } from '../styles-api.types';
 import { resolveClassNames } from '../use-styles/get-class-name/resolve-class-names/resolve-class-names';
 import { resolveStyles } from '../use-styles/get-style/resolve-styles/resolve-styles';

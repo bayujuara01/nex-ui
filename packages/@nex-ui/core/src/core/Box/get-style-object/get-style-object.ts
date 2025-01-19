@@ -1,4 +1,4 @@
-import type { NexTheme } from '../../MantineProvider';
+import type { NexTheme } from '../../NexProvider';
 import type { MantineStyleProp } from '../Box.types';
 
 export function getStyleObject(

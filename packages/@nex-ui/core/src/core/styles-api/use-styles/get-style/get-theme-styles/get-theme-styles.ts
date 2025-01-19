@@ -1,4 +1,4 @@
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { resolveStyles } from '../resolve-styles/resolve-styles';
 
 interface GetThemeStylesOptions {

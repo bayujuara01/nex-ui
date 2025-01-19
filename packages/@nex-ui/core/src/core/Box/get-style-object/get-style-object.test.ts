@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../MantineProvider';
+import { DEFAULT_THEME } from '../../NexProvider';
 import { getStyleObject } from './get-style-object';
 
 describe('@mantine/core/Box/get-style-object', () => {

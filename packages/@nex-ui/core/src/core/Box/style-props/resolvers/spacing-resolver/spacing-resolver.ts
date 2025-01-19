@@ -1,4 +1,4 @@
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { rem } from '../../../../utils';
 
 export function spacingResolver(value: unknown, theme: NexTheme) {

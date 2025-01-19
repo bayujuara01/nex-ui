@@ -1,4 +1,4 @@
-import type { MantineBreakpoint } from '../../MantineProvider';
+import type { MantineBreakpoint } from '../../NexProvider';
 import { px } from '../units-converters';
 
 export type BreakpointsSource = Record<MantineBreakpoint, number | string>;

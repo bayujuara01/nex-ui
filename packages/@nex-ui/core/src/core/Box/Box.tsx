@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import cx from 'clsx';
 import { createPolymorphicComponent } from '../factory';
 import { InlineStyles } from '../InlineStyles';
-import { MantineBreakpoint, useMantineSxTransform, useNexTheme } from '../MantineProvider';
+import { MantineBreakpoint, useMantineSxTransform, useNexTheme } from '../NexProvider';
 import { isNumberLike } from '../utils';
 import type { CssVarsProp, MantineStyleProp } from './Box.types';
 import { getBoxMod } from './get-box-mod/get-box-mod';

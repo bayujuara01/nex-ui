@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, NexTheme } from '../../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../../NexProvider';
 import { resolveVars } from './resolve-vars';
 
 const themeWithVars: NexTheme = {

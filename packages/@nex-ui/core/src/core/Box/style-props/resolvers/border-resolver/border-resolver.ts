@@ -1,4 +1,4 @@
-import { NexTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { rem } from '../../../../utils';
 import { colorResolver } from '../color-resolver/color-resolver';
 

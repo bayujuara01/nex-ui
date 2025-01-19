@@ -1,6 +1,6 @@
 export * from './utils';
 export * from './styles-api';
-export * from './MantineProvider';
+export * from './NexProvider';
 export * from './InlineStyles';
 export * from './Box';
 export * from './factory';

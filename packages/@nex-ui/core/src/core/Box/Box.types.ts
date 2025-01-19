@@ -1,4 +1,4 @@
-import type { NexTheme } from '../MantineProvider';
+import type { NexTheme } from '../NexProvider';
 
 export interface CSSProperties extends React.CSSProperties {
   [key: string]: any;
