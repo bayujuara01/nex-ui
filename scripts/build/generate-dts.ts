@@ -9,7 +9,6 @@ export async function generateDts(packagePath: string) {
 
   try {
     const currentPath = path.join(packagePath, 'tsconfig.build.json')
-    logger.log(`Building types from 'tsconfig.build.json' on ${currentPath}`)
     await $`yarn tsc --project ${currentPath}`
   } catch (err) {
     logger.error(`Failed to building types of 'tsconfig.build.json'`)

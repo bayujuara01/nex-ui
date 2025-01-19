@@ -11,7 +11,6 @@ const logger = createLogger('build-all-packages');
 
 export async function buildAllPackages() {
   const packages = await getPackagesBuildOrder();
-
   const startTime = Date.now();
   logger.log('Building all packages...');
 
@@ -23,7 +22,9 @@ export async function buildAllPackages() {
     }
   }
 
+  logger.log('Generating CSS Modules...');
   await generateCSS();
+  logger.success(`CSS Modules has been built`);
 
   logger.success(`All packages have been built in ${chalk.green(getBuildTime(startTime))}`);
 

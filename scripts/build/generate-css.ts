@@ -7,12 +7,8 @@ import postcss from 'postcss';
 import postcssModules from 'postcss-modules';
 import postcssPresetMantine from 'postcss-preset-mantine';
 import { getPath } from '../utils/get-path';
-import {createLogger} from "../utils/signale";
-
-const logger = createLogger('generate-css');
 
 function transformFileName(filePath: string) {
-  logger.log(`Generating CSS module [${filePath}]`);
   return path.basename(filePath).replace('.module.css', '.css');
 }
 
