@@ -17,7 +17,7 @@ regular styles.
 // Import order does not affect styles in this case
 import classes from './Demo.module.css';
 
-import '@mantine/core/styles.layer.css';
+import '@nex-ui/core/styles.layer.css';
 ```
 
 You can import styles within a layer by importing `@mantine/*/styles.layer.css` files.
@@ -25,8 +25,8 @@ Note that these files are a full replacement for `@mantine/*/styles.css` files â
 you should not import both of them.
 
 ```tsx
-import '@mantine/core/styles.layer.css';
-import '@mantine/dates/styles.layer.css';
+import '@nex-ui/core/styles.layer.css';
+import '@nex-ui/dates/styles.layer.css';
 
 // ... other styles
 ```
@@ -61,7 +61,7 @@ to any other component or HTML tag with a callback function. It can be used in c
 ```tsx
 import cx from 'clsx';
 import { NavLink } from 'react-router-dom';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -85,7 +85,7 @@ function Demo() {
 
 ```tsx
 import Link from 'next/link';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -111,7 +111,7 @@ It is now possible to define CSS variables in `style` prop in all Mantine compon
 [style](/styles/style) prop is no longer restricted by `React.CSSProperties` type:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -130,7 +130,7 @@ want to update values that are used in `form.reset` and to compare values for di
 
 ```tsx
 import { useEffect } from 'react';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 function Demo() {
   const form = useForm({

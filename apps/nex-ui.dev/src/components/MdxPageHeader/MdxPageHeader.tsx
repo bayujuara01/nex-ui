@@ -1,6 +1,6 @@
 import { IconCalendar, IconLicense, IconPencil, IconSwitch2 } from '@tabler/icons-react';
-import { Box, rem, Text, Title } from '@mantine/core';
-import { GithubIcon, NpmIcon } from '@mantinex/dev-icons';
+import { Box, rem, Text, Title } from '@nex-ui/core';
+import { GithubIcon, NpmIcon } from '@nex-uix/dev-icons';
 import { Frontmatter } from '@/types';
 import { ImportStatement } from './ImportStatement/ImportStatement';
 import { LinkItem } from './LinkItem/LinkItem';

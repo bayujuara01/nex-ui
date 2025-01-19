@@ -1,7 +1,7 @@
 import { IconCheck } from '@tabler/icons-react';
 import cx from 'clsx';
-import { FOCUS_CLASS_NAMES, Title, UnstyledButton } from '@mantine/core';
-import { useClipboard } from '@mantine/hooks';
+import { FOCUS_CLASS_NAMES, Title, UnstyledButton } from '@nex-ui/core';
+import { useClipboard } from '@nex-ui/hooks';
 import { LinkIcon } from './LinkIcon';
 import classes from './MdxTitle.module.css';
 

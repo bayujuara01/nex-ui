@@ -1,4 +1,4 @@
-import { Space } from '@mantine/core';
+import { Space } from '@nex-ui/core';
 import { FrameworksGuides } from '../../FrameworksGuides';
 import { PageSection } from '../PageSection/PageSection';
 

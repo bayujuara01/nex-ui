@@ -23,7 +23,7 @@ If the current form input asks for this code, your keyboard adapts and proposes 
 Prop `oneTimeCode` makes your input setting `autocomplete="one-time-code"` which allows using that feature.
 
 ```tsx
-import { PinInput } from '@mantine/core';
+import { PinInput } from '@nex-ui/core';
 
 function OneTimeCodeInput() {
   return <PinInput oneTimeCode />;
@@ -39,7 +39,7 @@ function OneTimeCodeInput() {
 Inputs do not have associated labels, set `aria-label` to make component visible to the screen reader:
 
 ```tsx
-import { PinInput } from '@mantine/core';
+import { PinInput } from '@nex-ui/core';
 
 function Accessibility() {
   return <PinInput aria-label="One time code" />;

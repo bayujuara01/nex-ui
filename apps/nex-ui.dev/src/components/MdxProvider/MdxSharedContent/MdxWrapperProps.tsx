@@ -3,7 +3,7 @@ import { MdxTitle } from '../MdxTitle/MdxTitle';
 import { MdxCode, MdxLi, MdxParagraph, MdxUl } from '../MdxTypography/MdxTypography';
 
 const getCode = (component: string) => `
-import { ${component} } from '@mantine/core';
+import { ${component} } from '@nex-ui/core';
 
 function Demo() {
   return <${component} wrapperProps={{ 'data-testid': 'wrapper' }} data-testid="input" />;

@@ -75,7 +75,7 @@ Example of zod resolver:
 ```tsx
 import { zodResolver } from 'mantine-form-zod-resolver';
 import { z } from 'zod';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const schema = z.object({
   name: z
@@ -112,7 +112,7 @@ both in `rem` function exported from `@mantine/core` package and [postcss-preset
 Note that you need to update [postcss-preset-mantine](/styles/postcss-preset) to `1.11.0` to use this feature.
 
 ```tsx
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 
 rem('16px 32px');
 // -> calc(1rem * var(--mantine-scale)) calc(2rem * var(--mantine-scale))
@@ -122,7 +122,7 @@ All components props that are converted to `rem` units now support space-separat
 For example, space-separated values can be used in `radius` prop of [Modal](/core/modal) component:
 
 ```tsx
-import { Modal } from '@mantine/core';
+import { Modal } from '@nex-ui/core';
 
 function Demo() {
   return <Modal radius="10px 10px 0 0" opened onClose={() => {}} />;
@@ -138,7 +138,7 @@ components only include props that are specific to the original component. It is
 improve TypeScript performance.
 
 ```tsx
-import { Group } from '@mantine/core';
+import { Group } from '@nex-ui/core';
 
 // Group is not polymorphic component,
 // but it still supports component and renderRoot props
@@ -218,10 +218,10 @@ You can preview new colors on [this page](/theming/colors/#default-colors). New 
 --mantine-color-dark-9: #141414;
 ```
 
-If you prefer old colors, change theme settings on `MantineProvider`:
+If you prefer old colors, change theme settings on `NexProvider`:
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   colors: {
@@ -242,9 +242,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -275,4 +275,4 @@ function Demo() {
 - [mantine-flagpack](https://mantinedev.github.io/mantine-flagpack/) has been migrated to support `7.x` versions of `@mantine/core`. To use it, update `mantine-flagpack` to `4.0.0`.
 - [vite-template](https://github.com/mantinedev/vite-template) was migrated from Jest to [Vitest](https://vitest.dev/).
 - The main [Mantine repository](https://github.com/mantinedev/mantine) was migrated to [yarn v4](https://yarnpkg.com/blog/release/4.0). The process of getting started locally [was changed](/contribute/#get-started-with-mantine-locally)
-- `@mantine/ds` package has been deprecated. You can use `@mantinex/mantine-logo` package to use `MantineLogo` component in your project.
+- `@mantine/ds` package has been deprecated. You can use `@mantinex/nex-ui-logo` package to use `MantineLogo` component in your project.

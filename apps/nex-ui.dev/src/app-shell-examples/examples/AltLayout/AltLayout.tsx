@@ -1,6 +1,6 @@
-import { AppShell, Burger, Group, Skeleton, Text } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { AppShell, Burger, Group, Skeleton, Text } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineLogo } from '@nex-uix/nex-ui-logo';
 
 export function AltLayout() {
   const [opened, { toggle }] = useDisclosure();

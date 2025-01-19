@@ -1,4 +1,4 @@
-import { Highlight, Table, Text } from '@mantine/core';
+import { Highlight, Table, Text } from '@nex-ui/core';
 import docgenData from '@/.docgen/docgen.json';
 import { DocsSection } from '@/components/DocsSection';
 import { HtmlText } from '@/components/HtmlText';

@@ -1,7 +1,7 @@
 import cx from 'clsx';
-import { BoxProps, Button, ElementProps } from '@mantine/core';
-import { DiscordIcon, XIcon } from '@mantinex/dev-icons';
-import { meta } from '@mantinex/mantine-meta';
+import { BoxProps, Button, ElementProps } from '@nex-ui/core';
+import { DiscordIcon, XIcon } from '@nex-uix/dev-icons';
+import { meta } from '@nex-uix/nex-ui-meta';
 import classes from './SocialButton.module.css';
 
 export interface SocialButtonProps extends BoxProps, ElementProps<'a', 'type'> {

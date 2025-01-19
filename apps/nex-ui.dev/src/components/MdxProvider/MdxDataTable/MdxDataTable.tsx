@@ -1,4 +1,4 @@
-import { rem, Table } from '@mantine/core';
+import { rem, Table } from '@nex-ui/core';
 import { DocsSection } from '@/components/DocsSection';
 
 interface DataTableProps {

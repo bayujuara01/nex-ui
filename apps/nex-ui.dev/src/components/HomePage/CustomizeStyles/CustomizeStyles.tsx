@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { IconArrowRight } from '@tabler/icons-react';
-import { Button, rem, SimpleGrid, Slider, Text } from '@mantine/core';
-import { getCodeFileIcon } from '@mantinex/dev-icons';
-import { CodeHighlight, CodeHighlightTabs } from '@mantinex/shiki';
+import { Button, rem, SimpleGrid, Slider, Text } from '@nex-ui/core';
+import { getCodeFileIcon } from '@nex-uix/dev-icons';
+import { CodeHighlight, CodeHighlightTabs } from '@nex-uix/shiki';
 import { SliderStylesApi } from '@docs/styles-api';
 import { MdxDataTable } from '../../MdxProvider/MdxDataTable/MdxDataTable';
 import { PageSection } from '../PageSection/PageSection';
@@ -16,7 +16,7 @@ const marks = [
 ];
 
 const defaultCode = `
-import { Slider } from '@mantine/core';
+import { Slider } from '@nex-ui/core';
 
 const marks = [
   { value: 20, label: '20%' },

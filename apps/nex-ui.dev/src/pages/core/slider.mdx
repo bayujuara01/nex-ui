@@ -14,7 +14,7 @@ Controlled `Slider`:
 
 ```tsx
 import { useState } from 'react';
-import { Slider } from '@mantine/core';
+import { Slider } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState(40);
@@ -26,7 +26,7 @@ Controlled `RangeSlider`:
 
 ```tsx
 import { useState } from 'react';
-import { RangeSlider } from '@mantine/core';
+import { RangeSlider } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<[number, number]>([20, 80]);
@@ -147,7 +147,7 @@ If `Slider` component does not meet your requirements, you can build a custom sl
 To label component for screen readers, add labels to thumbs:
 
 ```tsx
-import { RangeSlider, Slider } from '@mantine/core';
+import { RangeSlider, Slider } from '@nex-ui/core';
 
 function Demo() {
   return (

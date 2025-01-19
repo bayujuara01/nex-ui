@@ -23,8 +23,8 @@ the page.
 Navbar is hidden on mobile by default and toggled with the burger button.
 
 ```tsx
-import { AppShell, Burger } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { AppShell, Burger } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 
 function Demo() {
   const [opened, { toggle }] = useDisclosure();
@@ -132,7 +132,7 @@ are positioned relative to each other. It accepts `alt` and `default` values:
 Examples:
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // Height is a number, it will be converted to rem
 // and used as height at all viewport sizes
@@ -146,7 +146,7 @@ function Demo() {
 ```
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // Height is an object with breakpoints:
 // - height is 48 when viewport width is < theme.breakpoints.sm
@@ -174,7 +174,7 @@ function Demo() {
 Examples:
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // Width is a number, it will be converted to rem
 // and used as width when viewport is larger than theme.breakpoints.sm
@@ -188,7 +188,7 @@ function Demo() {
 ```
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // Width is an object with breakpoints:
 // - width is 100% when viewport width is < theme.breakpoints.sm
@@ -216,7 +216,7 @@ accepts numbers, strings and objects with breakpoints as keys and padding as val
 reference `theme.spacing` values or use any valid CSS values.
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // Padding is always theme.spacing.md
 function Demo() {
@@ -225,7 +225,7 @@ function Demo() {
 ```
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // Padding is:
 // - 10 when viewport width is < theme.breakpoints.sm
@@ -247,8 +247,8 @@ It is useful when you want to collapse `AppShell.Header` based on the scroll pos
 [use-headroom](/hooks/use-headroom) hook to collapse header when user scrolls down and expand it when user scrolls up ([example](/app-shell?e=Headroom)).
 
 ```tsx
-import { AppShell, rem } from '@mantine/core';
-import { useHeadroom } from '@mantine/hooks';
+import { AppShell, rem } from '@nex-ui/core';
+import { useHeadroom } from '@nex-ui/hooks';
 
 function Demo() {
   const pinned = useHeadroom({ fixedAt: 120 });
@@ -279,8 +279,8 @@ depending on the viewport width.
 [Example](/app-shell?e=CollapseDesktop) with separate collapsed state for mobile and desktop:
 
 ```tsx
-import { AppShell, Button } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { AppShell, Button } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 
 export function CollapseDesktop() {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
@@ -322,7 +322,7 @@ For example, `AppShell.Header` is located at the top of the page – it has a bo
 To remove the border from all components, set `withBorder={false}` on the `AppShell`:
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // None of the components will have a border
 function Demo() {
@@ -335,7 +335,7 @@ function Demo() {
 To remove the border from a specific component, set `withBorder={false}` on that component:
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // AppShell.Header does not have a border
 // AppShell.Navbar and AppShell.Aside have a border
@@ -358,7 +358,7 @@ By default, all sections `z-index` is `200`.
 To change `z-index` of all sections, set `zIndex` prop on the `AppShell`:
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // All sections will have z-index of 100
 function Demo() {
@@ -369,7 +369,7 @@ function Demo() {
 To change `z-index` of a specific section, set `zIndex` prop on that section:
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 // AppShell.Header has z-index of 100
 // AppShell.Navbar and AppShell.Aside have z-index of 300
@@ -389,7 +389,7 @@ function Demo() {
 Set `transitionDuration` and `transitionTimingFunction` props on the `AppShell` to control transitions:
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -409,7 +409,7 @@ Set `disabled` prop on the `AppShell` to prevent all sections except `AppShell.M
 It is useful when you want to hide the shell on some pages of your application.
 
 ```tsx
-import { AppShell } from '@mantine/core';
+import { AppShell } from '@nex-ui/core';
 
 function Demo() {
   return <AppShell disabled>{/* AppShell content */}</AppShell>;
@@ -429,7 +429,7 @@ In the following example:
 - Second section will take all available space and will be scrollable if content height exceeds available space
 
 ```tsx
-import { AppShell, ScrollArea } from '@mantine/core';
+import { AppShell, ScrollArea } from '@nex-ui/core';
 
 function Demo() {
   return (

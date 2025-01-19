@@ -17,7 +17,7 @@ If you do not provide `ref`, mouse position is tracked relative to the document 
 Set `resetOnExit` option to reset mouse position to `0, 0` when mouse leaves the element:
 
 ```tsx
-import { useMouse } from '@mantine/hooks';
+import { useMouse } from '@nex-ui/hooks';
 
 const { ref, x, y } = useMouse({ resetOnExit: true });
 ```
@@ -25,7 +25,7 @@ const { ref, x, y } = useMouse({ resetOnExit: true });
 The hook returns an object with `ref` and `x`, `y` mouse coordinates:
 
 ```tsx
-import { useMouse } from '@mantine/hooks';
+import { useMouse } from '@nex-ui/hooks';
 
 const {
   ref, // -> pass ref to target element, if not used document element will be used as target element

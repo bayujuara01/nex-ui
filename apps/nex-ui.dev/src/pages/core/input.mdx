@@ -12,7 +12,7 @@ Use `Input` to create custom inputs, for other cases prefer [TextInput](/core/te
 or other component.
 
 ```tsx
-import { Input, TextInput } from '@mantine/core';
+import { Input, TextInput } from '@nex-ui/core';
 
 // Incorrect usage, input is not accessible
 function Incorrect() {
@@ -90,7 +90,7 @@ The only difference is whether input element will have `required` attribute, exa
 [TextInput](/core/text-input/) component:
 
 ```tsx
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@nex-ui/core';
 
 // Will display required asterisk and add `required` attribute to the input element
 function RequiredDemo() {
@@ -175,7 +175,7 @@ you can customize styles of any inner element with `classNames` and `styles` pro
 If you use `Input` component without associated label element, set `aria-label`:
 
 ```tsx
-import { Input } from '@mantine/core';
+import { Input } from '@nex-ui/core';
 
 // ok – the input is labelled by the aria-label
 function WithAriaLabel() {
@@ -197,7 +197,7 @@ When you use `Input` with `Input.Wrapper` it is required to set `id` on both com
 to connect label and other elements with the input:
 
 ```tsx
-import { Input } from '@mantine/core';
+import { Input } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -211,8 +211,8 @@ function Demo() {
 You can use [use-id](/hooks/use-id) to generate unique ids:
 
 ```tsx
-import { Input } from '@mantine/core';
-import { useId } from '@mantine/hooks';
+import { Input } from '@nex-ui/core';
+import { useId } from '@nex-ui/hooks';
 
 function Demo() {
   const id = useId();

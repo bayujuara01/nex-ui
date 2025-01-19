@@ -24,10 +24,10 @@ to `@mantine/emotion`:
 
 ```tsx
 // 6.x
-import { createStyles, Global } from '@mantine/core';
+import { createStyles, Global } from '@nex-ui/core';
 
 // 7.x
-import { createStyles, Global } from '@mantine/emotion';
+import { createStyles, Global } from '@nex-ui/emotion';
 ```
 
 ### sx and styles props
@@ -36,7 +36,7 @@ import { createStyles, Global } from '@mantine/emotion';
 
 ```tsx
 // 6.x and 7.x, no changes
-import { Box, Button } from '@mantine/core';
+import { Box, Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -52,7 +52,7 @@ function Demo() {
 
 ### theme.colorScheme
 
-In v7 color scheme value is managed by [MantineProvider](/theming/mantine-provider),
+In v7 color scheme value is managed by [NexProvider](/theming/mantine-provider),
 [theme object](/theming/theme-object) no longer includes `colorScheme` property.
 Although it is still possible to access color scheme value in components with
 [useMantineColorScheme](/theming/color-schemes#use-mantine-color-scheme-hook) hook,
@@ -63,7 +63,7 @@ Example of 6.x `createStyles` with `theme.colorScheme` migration to 7.0:
 
 ```tsx
 // 6.x
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@nex-ui/core';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -78,7 +78,7 @@ const useStyles = createStyles((theme) => ({
 
 ```tsx
 // 7.x
-import { createStyles } from '@mantine/emotion';
+import { createStyles } from '@nex-ui/emotion';
 
 const useStyles = createStyles((theme, _, u) => ({
   root: {
@@ -116,7 +116,7 @@ in your project.
 
 ```tsx
 // 6.x
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@nex-ui/core';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -138,7 +138,7 @@ const useStyles = createStyles((theme) => ({
 
 ```tsx
 // 6.x
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -149,7 +149,7 @@ function Demo() {
 
 ```tsx
 // 7.0
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -162,7 +162,7 @@ Nested selectors are not supported in [style prop](/styles/style), use `classNam
 
 ```tsx
 // 6.x
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return <Box sx={{ '&:hover': { background: 'red' } }} />;
@@ -184,7 +184,7 @@ function Demo() {
 
 ```tsx
 // 6.x – nested selectors
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -214,7 +214,7 @@ Regular selectors are still supported:
 
 ```tsx
 // Works both in 6.x and 7.x
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -236,7 +236,7 @@ create a global stylesheet (`.css` file) and import it in your application entry
 
 ```tsx
 // 6.x
-import { Global } from '@mantine/core';
+import { Global } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -308,7 +308,7 @@ All [theme](/theming/theme-object) properties are now available as [CSS variable
 
 ```tsx
 // 6.x
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -334,7 +334,7 @@ function Demo() {
 
 ### theme.colorScheme
 
-Color scheme value is managed by [MantineProvider](/theming/mantine-provider),
+Color scheme value is managed by [NexProvider](/theming/mantine-provider),
 [theme object](/theming/theme-object) no longer includes `colorScheme` property.
 Although it is still possible to access color scheme value in components with
 [useMantineColorScheme](/theming/color-schemes#use-mantine-color-scheme-hook) hook,
@@ -345,7 +345,7 @@ Example of 6.x `createStyles` with `theme.colorScheme` migration to 7.0:
 
 ```tsx
 // 6.x
-import { createStyles } from '@mantine/core';
+import { createStyles } from '@nex-ui/core';
 
 const useStyles = createStyles((theme) => ({
   root: {

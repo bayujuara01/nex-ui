@@ -1,7 +1,7 @@
 import { IconFileInvoice } from '@tabler/icons-react';
-import { Button, Code, Group, Text } from '@mantine/core';
-import { GithubIcon } from '@mantinex/dev-icons';
-import { allVersions } from '@mantinex/mantine-meta';
+import { Button, Code, Group, Text } from '@nex-ui/core';
+import { GithubIcon } from '@nex-uix/dev-icons';
+import { allVersions } from '@nex-uix/nex-ui-meta';
 import classes from './VersionsList.module.css';
 
 function getMinorXVersion(version: string) {

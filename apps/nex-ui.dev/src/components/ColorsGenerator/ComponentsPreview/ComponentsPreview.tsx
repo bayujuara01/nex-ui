@@ -1,5 +1,5 @@
-import { Button, Input, MantineColorsTuple, MantineProvider, Table } from '@mantine/core';
-import { useDebouncedValue } from '@mantine/hooks';
+import { Button, Input, MantineColorsTuple, NexProvider, Table } from '@nex-ui/core';
+import { useDebouncedValue } from '@nex-ui/hooks';
 
 interface ComponentsPreviewProps {
   colors: MantineColorsTuple;
@@ -14,7 +14,7 @@ export function ComponentsPreview({ colors }: ComponentsPreviewProps) {
         Variants preview
       </Input.Label>
 
-      <MantineProvider theme={{ colors: { '__colors-generator__': debouncedColors } }}>
+      <NexProvider theme={{ colors: { '__colors-generator__': debouncedColors } }}>
         <Table.ScrollContainer minWidth={600}>
           <Table withTableBorder withColumnBorders>
             <Table.Thead>
@@ -52,7 +52,7 @@ export function ComponentsPreview({ colors }: ComponentsPreviewProps) {
             </Table.Tbody>
           </Table>
         </Table.ScrollContainer>
-      </MantineProvider>
+      </NexProvider>
     </>
   );
 }

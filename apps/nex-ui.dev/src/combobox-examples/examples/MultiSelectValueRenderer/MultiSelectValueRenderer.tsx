@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CheckIcon, Combobox, Group, Input, Pill, PillsInput, useCombobox } from '@mantine/core';
+import { CheckIcon, Combobox, Group, Input, Pill, PillsInput, useCombobox } from '@nex-ui/core';
 import { countriesData, flags } from './countries-data';
 import { CountryPill } from './CountryPill';
 

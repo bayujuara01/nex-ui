@@ -24,7 +24,7 @@ Example of transformed code:
 
 ```tsx
 // TypeScript code
-import { Button, ButtonProps } from '@mantine/core';
+import { Button, ButtonProps } from '@nex-ui/core';
 
 interface MyButtonProps extends ButtonProps {
   myProp: string;
@@ -37,7 +37,7 @@ function MyButton({ myProp, ...others }: MyButtonProps) {
 
 ```tsx
 // JavaScript code
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function MyButton({ myProp, ...others }) {
   return <Button {...others} />;

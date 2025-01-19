@@ -1,4 +1,4 @@
-import { Code, DEFAULT_THEME, defaultCssVariablesResolver } from '@mantine/core';
+import { Code, DEFAULT_THEME, defaultCssVariablesResolver } from '@nex-ui/core';
 import { MdxDataTable } from '../MdxProvider';
 
 interface CssVariablesTableProps {

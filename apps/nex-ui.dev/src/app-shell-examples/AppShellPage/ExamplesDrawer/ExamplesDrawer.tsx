@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { IconArrowLeft, IconCode, IconLayoutBoard, IconMenu2 } from '@tabler/icons-react';
-import { Affix, Button, Drawer, Group, rem, ScrollArea, Text, UnstyledButton } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { Affix, Button, Drawer, Group, rem, ScrollArea, Text, UnstyledButton } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
 import { APP_SHELL_EXAMPLES_DATA } from '../../app-shell-examples-data';
 import classes from './ExamplesDrawer.module.css';
 

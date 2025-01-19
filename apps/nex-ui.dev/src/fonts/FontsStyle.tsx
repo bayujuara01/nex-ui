@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { DEFAULT_THEME } from '@mantine/core';
+import { DEFAULT_THEME } from '@nex-ui/core';
 import { greycliffCF } from './GreycliffCF/GreycliffCF';
 
 export function FontsStyle() {

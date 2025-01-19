@@ -1,26 +1,26 @@
-import '@mantine/core/styles.css';
-import '@mantine/dates/styles.css';
-import '@mantine/notifications/styles.css';
-import '@mantine/code-highlight/styles.css';
-import '@mantine/dropzone/styles.css';
-import '@mantine/nprogress/styles.css';
-import '@mantine/spotlight/styles.css';
-import '@mantine/carousel/styles.css';
-import '@mantine/tiptap/styles.css';
-import '@mantine/charts/styles.css';
-import '@mantinex/demo/styles.css';
-import '@mantinex/mantine-logo/styles.css';
-import '@mantinex/mantine-header/styles.css';
-import '@mantinex/shiki/styles.css';
+import '@nex-ui/core/styles.css';
+import '@nex-ui/dates/styles.css';
+import '@nex-ui/notifications/styles.css';
+import '@nex-ui/code-highlight/styles.css';
+import '@nex-ui/dropzone/styles.css';
+import '@nex-ui/nprogress/styles.css';
+import '@nex-ui/spotlight/styles.css';
+import '@nex-ui/carousel/styles.css';
+import '@nex-ui/tiptap/styles.css';
+import '@nex-ui/charts/styles.css';
+import '@nex-uix/demo/styles.css';
+import '@nex-uix/nex-ui-logo/styles.css';
+import '@nex-uix/nex-ui-header/styles.css';
+import '@nex-uix/shiki/styles.css';
 import '@docs/demos/styles.css';
 
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { DirectionProvider, MantineProvider } from '@mantine/core';
-import { MantineEmotionProvider } from '@mantine/emotion';
-import { useHotkeys, useLocalStorage } from '@mantine/hooks';
-import { Notifications } from '@mantine/notifications';
-import { ShikiProvider } from '@mantinex/shiki';
+import { DirectionProvider, NexProvider } from '@nex-ui/core';
+import { NexEmotionProvider } from '@nex-ui/emotion';
+import { useHotkeys, useLocalStorage } from '@nex-ui/hooks';
+import { Notifications } from '@nex-ui/notifications';
+import { ShikiProvider } from '@nex-uix/shiki';
 import { GaScript } from '@/components/GaScript';
 import { HotKeysHandler } from '@/components/HotKeysHandler';
 import { MdxProvider } from '@/components/MdxProvider';
@@ -57,7 +57,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Head>
-        <title>Mantine</title>
+        <title>Nex UI</title>
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta
           name="viewport"
@@ -76,8 +76,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
       <GaScript />
       <FontsStyle />
       <DirectionProvider initialDirection="ltr" detectDirection={false}>
-        <MantineEmotionProvider cache={emotionCache}>
-          <MantineProvider theme={theme} defaultColorScheme="light">
+        <NexEmotionProvider cache={emotionCache}>
+          <NexProvider theme={theme} defaultColorScheme="light">
             <ShikiProvider loadShiki={loadShiki}>
               <Search />
               <Notifications />
@@ -94,8 +94,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
                 </MdxProvider>
               </ModalsProviderDemo>
             </ShikiProvider>
-          </MantineProvider>
-        </MantineEmotionProvider>
+          </NexProvider>
+        </NexEmotionProvider>
       </DirectionProvider>
     </>
   );

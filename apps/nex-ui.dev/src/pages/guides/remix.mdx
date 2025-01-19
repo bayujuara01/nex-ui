@@ -49,12 +49,12 @@ module.exports = {
 
 ## Setup
 
-Add styles imports, [MantineProvider](/theming/mantine-provider/) and [ColorSchemeScript](/theming/color-schemes) to `app/root.tsx`:
+Add styles imports, [NexProvider](/theming/mantine-provider/) and [ColorSchemeScript](/theming/color-schemes) to `app/root.tsx`:
 
 ```tsx
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
 import {
   Links,
@@ -63,7 +63,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, NexProvider } from '@nex-ui/core';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -79,7 +79,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <NexProvider>{children}</NexProvider>
         <ScrollRestoration />
         <Scripts />
       </body>

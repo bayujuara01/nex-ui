@@ -1,8 +1,8 @@
 import { Frontmatter } from '@/types';
 
 export const MDX_THEMING_DATA: Record<string, Frontmatter> = {
-  MantineProvider: {
-    title: 'MantineProvider',
+  NexProvider: {
+    title: 'NexProvider',
     slug: '/theming/mantine-provider',
     search: 'Theme context, CSS reset, CSS variables, context classes and styles',
     hideHeader: true,

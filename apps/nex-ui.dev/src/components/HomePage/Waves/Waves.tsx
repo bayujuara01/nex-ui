@@ -1,4 +1,4 @@
-import { Box, rem } from '@mantine/core';
+import { Box, rem } from '@nex-ui/core';
 import classes from './Waves.module.css';
 
 interface WavesProps {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Combobox, InputBase, useCombobox } from '@mantine/core';
+import { Combobox, InputBase, useCombobox } from '@nex-ui/core';
 
 const MOCKDATA = Array(100000)
   .fill(0)

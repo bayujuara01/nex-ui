@@ -29,7 +29,7 @@ to set `scale` to `1 / (10 / 16)` (16 – default font-size) = `1 / 0.625` = `1.
 ```
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   scale: 1.6,
@@ -37,9 +37,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -54,7 +54,7 @@ function Demo() {
 You can use numbers in some Mantine components props. Numbers are treated as `px` and converted to `rem`, for example:
 
 ```tsx
-import { ColorSwatch } from '@mantine/core';
+import { ColorSwatch } from '@nex-ui/core';
 
 function DemoPx() {
   // Specify ColorSwatch size in px, it will be automatically converted to rem
@@ -71,7 +71,7 @@ function DemoRem() {
 The same conversion happens in [style props](/styles/style-props/):
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   // width: calc(2rem * var(--mantine-scale))
@@ -85,7 +85,7 @@ function Demo() {
 `@mantine/core` package exports `rem` and `em` function that can be used to convert `px` into `rem`/`em`:
 
 ```tsx
-import { em, rem } from '@mantine/core';
+import { em, rem } from '@nex-ui/core';
 
 // numbers and values in px are converted to rem
 rem(32); // -> calc(2rem * var(--mantine-scale))
@@ -111,7 +111,7 @@ rem('16px 2rem'); // -> calc(1rem * var(--mantine-scale)) calc(2rem * var(--mant
 To convert `rem`/`em` to `px` use `px` function exported from `@mantine/core`:
 
 ```tsx
-import { px } from '@mantine/core';
+import { px } from '@nex-ui/core';
 
 px('2rem'); // -> 32
 px('10rem'); // -> 160

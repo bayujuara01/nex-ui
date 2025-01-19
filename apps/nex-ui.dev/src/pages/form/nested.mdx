@@ -10,7 +10,7 @@ Most of `form` handlers accept property path as the first argument.
 Property path includes keys/indices of objects/arrays at which target property is contained:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -50,7 +50,7 @@ form.validateField('deeply.nested.object.0.item');
 ## Set nested object value
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -73,7 +73,7 @@ form.setFieldValue('user', { name: 'Jane', occupation: 'Architect' });
 ## Nested object values validation
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -114,7 +114,7 @@ form.errors; // -> { 'user.name': 'Name is too short', 'user.occupation': 'Occup
 ## List values validation
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',

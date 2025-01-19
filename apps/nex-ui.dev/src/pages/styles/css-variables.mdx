@@ -8,7 +8,7 @@ export default Layout(MDX_DATA.CssVariables);
 
 # Mantine CSS variables
 
-[MantineProvider](/theming/mantine-provider) exposes all Mantine CSS variables based on the given [theme](/theming/theme-object).
+[NexProvider](/theming/mantine-provider) exposes all Mantine CSS variables based on the given [theme](/theming/theme-object).
 You can use these variables in [CSS](/styles/css-modules) files, [style prop](/styles/style) or any other styles.
 Note that not all values are documented on this page, you can find full list of variables on [this page](/styles/css-variables-list).
 
@@ -47,7 +47,7 @@ You can control these variables in the [theme](/theming/theme-object). Note that
 will be the same as `--mantine-font-family`.
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   // Controls --mantine-font-family
@@ -67,7 +67,7 @@ If you want to use system fonts as a fallback for custom fonts, you can referenc
 value instead of defining it manually:
 
 ```tsx
-import { createTheme, DEFAULT_THEME } from '@mantine/core';
+import { createTheme, DEFAULT_THEME } from '@nex-ui/core';
 
 const theme = createTheme({
   fontFamily: `Roboto, ${DEFAULT_THEME.fontFamily}`,
@@ -97,7 +97,7 @@ And in [ff style prop](/styles/style-props):
 - `ff="heading"` will use `--mantine-font-family-headings` variable
 
 ```tsx
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -149,7 +149,7 @@ You can reference font size variables in CSS:
 And in [fz style prop](/styles/style-props):
 
 ```tsx
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -163,7 +163,7 @@ function Demo() {
 To define custom font sizes, can use `theme.fontSizes` property:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   fontSizes: {
@@ -180,7 +180,7 @@ Note that `theme.fontSizes` object is merged with the `DEFAULT_THEME.fontSizes` 
 it is not required to define all values, only those that you want to change.
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 // Changes only xs font size,
 // other values will be taken from the DEFAULT_THEME
@@ -195,7 +195,7 @@ You can add any number of additional font sizes to the `theme.fontSizes` object.
 These values will be defined as CSS variables in `--mantine-font-size-{size}` format:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   fontSizes: {
@@ -265,7 +265,7 @@ You can reference line height variables in your CSS:
 And in [lh style prop](/styles/style-props):
 
 ```tsx
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -279,7 +279,7 @@ function Demo() {
 To define custom line heights, you can use `theme.lineHeights` property:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   lineHeights: {
@@ -414,7 +414,7 @@ You can reference heading variables in your CSS:
 And in [fz and lh style props](/styles/style-props):
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -428,7 +428,7 @@ function Demo() {
 To change heading styles, can use `theme.headings` property:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   headings: {
@@ -453,7 +453,7 @@ const theme = createTheme({
 it is not required to define all values, only those that you want to change.
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 // Changes only font-size of h1,
 // other values will be taken from the DEFAULT_THEME
@@ -494,7 +494,7 @@ If you need to override font smoothing values, the best way is to disable `theme
 on the body element:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 // Disable font smoothing in your theme
 const theme = createTheme({
@@ -519,7 +519,7 @@ referenced by its name and shade index, for example, `--mantine-color-red-6`.
 You can define new colors on the theme object or override existing colors:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   colors: {
@@ -639,7 +639,7 @@ For example, for the default `blue` color the following CSS variables are define
 For example, if you use [Button](/core/button) component the following way:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -825,7 +825,7 @@ spacing-related properties. The following CSS variables are defined based on `th
 To define custom spacing values, use `theme.spacing` property:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   spacing: {
@@ -874,7 +874,7 @@ value. If `radius` prop on components is not set explicitly, `--mantine-radius-d
 To define custom border radius values, use `theme.radius` and `theme.defaultRadius` properties:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   defaultRadius: 'sm',
@@ -926,7 +926,7 @@ variables are defined based on `theme.shadows`:
 To define custom shadow values, use `theme.shadows` property:
 
 ```tsx
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   shadows: {
@@ -981,7 +981,7 @@ You can reference z-index variables in CSS:
 And in components by referencing CSS variable:
 
 ```tsx
-import { Modal } from '@mantine/core';
+import { Modal } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -998,7 +998,7 @@ function Demo() {
 
 ## CSS variables resolver
 
-`cssVariablesResolver` prop on [MantineProvider](/theming/mantine-provider) allows you to
+`cssVariablesResolver` prop on [NexProvider](/theming/mantine-provider) allows you to
 modify values of Mantine CSS variables or even add your own variables.
 `cssVariablesResolver` is a function that accepts [theme](/theming/theme-object) as a single
 argument and returns an object with CSS variables divided into three groups:
@@ -1013,9 +1013,9 @@ Example of adding new CSS variables based on `theme.other`:
 import {
   createTheme,
   CSSVariablesResolver,
-  MantineProvider,
+  NexProvider,
   rem,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 const themeOverride = createTheme({
   other: {
@@ -1039,12 +1039,12 @@ const resolver: CSSVariablesResolver = (theme) => ({
 
 function Demo() {
   return (
-    <MantineProvider
+    <NexProvider
       theme={themeOverride}
       cssVariablesResolver={resolver}
     >
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```

@@ -1,4 +1,4 @@
-import { Anchor, Text } from '@mantine/core';
+import { Anchor, Text } from '@nex-ui/core';
 
 interface TableErrorProps {
   errorOf: string;

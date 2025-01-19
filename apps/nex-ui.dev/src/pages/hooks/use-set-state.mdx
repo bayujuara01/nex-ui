@@ -10,7 +10,7 @@ export default Layout(MDX_DATA.useSetState);
 into current state.
 
 ```tsx
-import { useSetState } from '@mantine/hooks';
+import { useSetState } from '@nex-ui/hooks';
 
 const [state, setState] = useSetState({
   name: 'John',
@@ -28,7 +28,7 @@ setState((current) => ({ age: current.age + 7 })); // -> { name: 'Jane', age: 32
 Note that it can work only with objects: primitive values and arrays are not supported:
 
 ```tsx
-import { useSetState } from '@mantine/hooks';
+import { useSetState } from '@nex-ui/hooks';
 
 useSetState([1, 2, 3]); // -> will not work
 useSetState(1); // -> will not work

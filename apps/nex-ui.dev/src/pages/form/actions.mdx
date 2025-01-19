@@ -12,7 +12,7 @@ The mechanism of form actions is similar to [notifications system](/x/notificati
 To use form actions, set `name` property in [use-form](/form/use-form/) settings:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 export interface DemoFormValues {
   name: string;
@@ -35,7 +35,7 @@ Then call `createFormActions` function with the same form name as specified in `
 
 ```tsx
 // Import type of form values from the file where you defined useForm
-import { createFormActions } from '@mantine/form';
+import { createFormActions } from '@nex-ui/form';
 import type { DemoFormValues } from './DemoForm';
 
 export const demoFormActions =
@@ -48,7 +48,7 @@ to the form state:
 
 ```tsx
 import { useEffect } from 'react';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import { demoFormActions } from './demoFormActions';
 
 function ExternalComponent() {
@@ -76,7 +76,7 @@ function ExternalComponent() {
 Form name must be a string that contains only letters, numbers and dashes:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 // ✅ Valid form name
 const valid = useForm({

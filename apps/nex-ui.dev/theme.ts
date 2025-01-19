@@ -1,4 +1,4 @@
-import { createTheme, DEFAULT_THEME, virtualColor } from '@mantine/core';
+import { createTheme, DEFAULT_THEME, virtualColor } from '@nex-ui/core';
 
 export const theme = createTheme({
   fontFamilyMonospace: `Menlo, Monaco, ${DEFAULT_THEME.fontFamilyMonospace}`,

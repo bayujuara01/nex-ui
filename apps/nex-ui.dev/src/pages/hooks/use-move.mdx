@@ -16,7 +16,7 @@ The hook accepts a callback that is called when user moves pressed mouse over th
 and returns an object with `ref` and active state:
 
 ```tsx
-import { useMove } from '@mantine/hooks';
+import { useMove } from '@nex-ui/hooks';
 
 const {
   ref, // -> pass ref to target element
@@ -58,7 +58,7 @@ Moving the slider down increases the value, to reverse that set value to `1 - y`
 It is useful when you want to use external events to change the value, for example changing value with keyboard arrows:
 
 ```tsx
-import { clampUseMovePosition } from '@mantine/hooks';
+import { clampUseMovePosition } from '@nex-ui/hooks';
 
 clampUseMovePosition({ x: 0.5, y: 0.5 }); // -> { x: 0.5, y: 0.5 }
 clampUseMovePosition({ x: 1.5, y: 0.5 }); // -> { x: 1, y: 0.5 }
@@ -71,7 +71,7 @@ clampUseMovePosition({ x: -0.5, y: 0.5 }); // -> { x: 0, y: 0.5 }
 
 ```tsx
 import { useState } from 'react';
-import { UseMovePosition } from '@mantine/hooks';
+import { UseMovePosition } from '@nex-ui/hooks';
 
 const [value, setValue] = useState<UseMovePosition>({
   x: 0.5,

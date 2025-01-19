@@ -33,7 +33,7 @@ Some of the most common use cases are:
 - Changing text color and font-size
 
 ```tsx
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -52,7 +52,7 @@ function Demo() {
 - Applying margins to inputs inside a form:
 
 ```tsx
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -68,7 +68,7 @@ function Demo() {
 - Adding padding to various elements:
 
 ```tsx
-import { Paper } from '@mantine/core';
+import { Paper } from '@nex-ui/core';
 
 function Demo() {
   return <Paper p="xl">My custom card</Paper>;
@@ -89,7 +89,7 @@ CSS properties as well as CSS variables. It is useful in the following cases:
 - You want to apply a single CSS property to a component:
 
 ```tsx
-import { Button, Flex } from '@mantine/core';
+import { Button, Flex } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -104,7 +104,7 @@ function Demo() {
 - You want to set a CSS variable based on component prop:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo({ color }: { color: string }) {
   // Later you will be able to use var(--my-color) in any nested element
@@ -198,7 +198,7 @@ You can reference Mantine [theme](/theming/theme-object/) values in any styles w
 - In [style props](/styles/style-props/):
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   // bg="red.5" references theme.colors.red[5]
@@ -217,7 +217,7 @@ function Demo() {
 - In [style prop](/styles/style/):
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (

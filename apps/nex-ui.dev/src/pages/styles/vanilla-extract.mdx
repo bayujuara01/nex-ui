@@ -58,9 +58,9 @@ to create an object with CSS variables from Mantine theme:
 
 ```tsx
 // theme.ts
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
-// Do not forget to pass theme to MantineProvider
+// Do not forget to pass theme to NexProvider
 export const theme = createTheme({
   fontFamily: 'serif',
   primaryColor: 'cyan',
@@ -70,7 +70,7 @@ export const theme = createTheme({
 ```tsx
 // theme.css.ts
 import { theme } from './theme';
-import { themeToVars } from '@mantine/vanilla-extract';
+import { themeToVars } from '@nex-ui/vanilla-extract';
 
 // CSS variables object, can be access in *.css.ts files
 export const vars = themeToVars(theme);
@@ -99,7 +99,7 @@ To convert px to [rem or em](/styles/rem) use `rem` and `em` functions from `@ma
 ```tsx
 // Demo.css.ts
 import { style } from '@vanilla-extract/css';
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 
 export const demo = style({
   fontSize: rem(16),

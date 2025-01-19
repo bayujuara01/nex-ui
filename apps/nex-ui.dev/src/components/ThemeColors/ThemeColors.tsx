@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '@mantine/core';
+import { DEFAULT_THEME } from '@nex-ui/core';
 import { ColorsGroup } from './ColorsGroup/ColorsGroup';
 import classes from './ThemeColors.module.css';
 

@@ -1,4 +1,4 @@
-import { Code, Kbd, rem, Table } from '@mantine/core';
+import { Code, Kbd, rem, Table } from '@nex-ui/core';
 
 interface KeyboardEventsTableProps {
   data: { key: string; description: string; condition: string }[];

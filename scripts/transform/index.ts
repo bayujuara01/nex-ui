@@ -1,6 +1,9 @@
-import { componentsDir, traverseDirectory, updateImports, updateImportTest, logger } from './transform-file';
+import { componentsDir, appsDir, traverseDirectory, updateImports, updateImportTest, updateImportMDX, logger } from './transform-file';
 
 (() => {
   traverseDirectory(componentsDir, [updateImports, updateImportTest]);
-  logger.log('Import replacement completed!');
+  logger.log(`Import replacement at [${componentsDir}] completed!`);
+
+  traverseDirectory(appsDir, [updateImports, updateImportTest, updateImportMDX]);
+  logger.log(`Import replacement at [${appsDir}] completed!`);
 })();

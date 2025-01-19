@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { IconCircleDashed, IconExternalLink } from '@tabler/icons-react';
-import { Button, Table, Text } from '@mantine/core';
+import { Button, Table, Text } from '@nex-ui/core';
 import { frameworkIcons } from '@/components/icons';
 import { COMMUNITY_TEMPLATES_DATA } from './community-data';
 import { Template, TEMPLATES_DATA } from './data';

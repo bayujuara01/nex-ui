@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { getCodeFileIcon } from '@mantinex/dev-icons';
-import { CodeHighlightTabs } from '@mantinex/shiki';
+import { getCodeFileIcon } from '@nex-uix/dev-icons';
+import { CodeHighlightTabs } from '@nex-uix/shiki';
 import { PageHead } from '@/components/PageHead';
 import { APP_SHELL_EXAMPLES_COMPONENTS } from '../examples';
 import { ExamplesDrawer } from './ExamplesDrawer/ExamplesDrawer';

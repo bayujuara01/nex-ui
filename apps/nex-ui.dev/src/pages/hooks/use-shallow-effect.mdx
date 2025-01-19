@@ -10,7 +10,7 @@ export default Layout(MDX_DATA.useShallowEffect);
 
 ```tsx
 import { useEffect } from 'react';
-import { useShallowEffect } from '@mantine/hooks';
+import { useShallowEffect } from '@nex-ui/hooks';
 
 // Will be called on each render
 useEffect(() => {}, [{ a: 1 }]);
@@ -22,7 +22,7 @@ useShallowEffect(() => {}, [{ a: 1 }]);
 Hook works with primitive values, arrays and objects:
 
 ```tsx
-import { useShallowEffect } from '@mantine/hooks';
+import { useShallowEffect } from '@nex-ui/hooks';
 
 // Primitive values are handled like in useEffect
 useShallowEffect(() => {}, [1, 2, 3]);

@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import { IconHeartFilled } from '@tabler/icons-react';
 import { FrameworksGuides } from '@/components/FrameworksGuides';
 import { SocialCards } from '@/components/SocialCards';
@@ -97,20 +97,20 @@ you can import styles in `_app.tsx` file:
 
 ```tsx
 // core styles are required for all packages
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
 // other css files are required only if
 // you are using components from the corresponding package
-// import '@mantine/dates/styles.css';
-// import '@mantine/dropzone/styles.css';
-// import '@mantine/code-highlight/styles.css';
+// import '@nex-ui/dates/styles.css';
+// import '@nex-ui/dropzone/styles.css';
+// import '@nex-ui/code-highlight/styles.css';
 // ...
 ```
 
-Wrap your application with [MantineProvider](/theming/mantine-provider/):
+Wrap your application with [NexProvider](/theming/mantine-provider/):
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   /** Put your mantine theme override here */
@@ -118,9 +118,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -129,7 +129,7 @@ If your application has server side rendering, add [ColorSchemeScript](/theming/
 to the `<head />` of your application:
 
 ```tsx
-import { ColorSchemeScript } from '@mantine/core';
+import { ColorSchemeScript } from '@nex-ui/core';
 
 function Demo() {
   return (

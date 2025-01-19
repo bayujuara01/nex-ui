@@ -1,4 +1,4 @@
-import { Title } from '@mantine/core';
+import { Title } from '@nex-ui/core';
 import * as stylesData from '@docs/styles-api';
 import type { Modifier } from '@docs/styles-api';
 import { getComponentName } from '@/components/PropsTable';

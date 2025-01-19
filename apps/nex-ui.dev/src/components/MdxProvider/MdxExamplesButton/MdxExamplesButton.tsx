@@ -1,5 +1,5 @@
 import { IconExternalLink } from '@tabler/icons-react';
-import { Button, rem } from '@mantine/core';
+import { Button, rem } from '@nex-ui/core';
 
 interface MdxExamplesButtonProps {
   label: string;

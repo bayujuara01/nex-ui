@@ -1,4 +1,4 @@
-import { Input } from '@mantine/core';
+import { Input } from '@nex-ui/core';
 import { MdxCodeHighlight } from '@/components/MdxProvider';
 
 interface ColorsOutputProps {
@@ -6,7 +6,7 @@ interface ColorsOutputProps {
 }
 
 function getProviderCode(colors: string[]) {
-  return `import { MantineProvider, createTheme, MantineColorsTuple } from '@mantine/core';
+  return `import { NexProvider, createTheme, MantineColorsTuple } from '@nex-ui/core';
 
 const myColor: MantineColorsTuple = ${JSON.stringify(colors, null, 2).replace(/"/g, "'")};
 
@@ -18,9 +18,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }`;
 }
@@ -41,7 +41,7 @@ export function ColorsOutput({ colors }: ColorsOutputProps) {
       />
 
       <Input.Label size="md" labelElement="div" mt="xl">
-        Usage with MantineProvider
+        Usage with NexProvider
       </Input.Label>
 
       <MdxCodeHighlight language="tsx" code={getProviderCode(colors)} key={keyBase} />

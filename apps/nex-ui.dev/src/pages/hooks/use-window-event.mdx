@@ -10,7 +10,7 @@ export default Layout(MDX_DATA.useWindowEvent);
 
 ```tsx
 import { useEffect } from 'react';
-import { useWindowEvent } from '@mantine/hooks';
+import { useWindowEvent } from '@nex-ui/hooks';
 
 const handler = (event: KeyboardEvent) => console.log(event);
 
@@ -30,7 +30,7 @@ Search focus with `⌘ + K` on mac or `Ctrl + K` on windows and linux on Mantine
 
 ```tsx
 import { useRef } from 'react';
-import { useWindowEvent } from '@mantine/hooks';
+import { useWindowEvent } from '@nex-ui/hooks';
 
 function Demo() {
   const inputRef = useRef<HTMLInputElement>(null);

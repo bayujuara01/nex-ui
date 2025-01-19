@@ -16,7 +16,7 @@ To include these styles, you need to import `@mantine/{package}/styles.css` file
 Example with `@mantine/core` package:
 
 ```tsx
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 ```
 
 By adding this import, you will have all styles of `@mantine/core` components in your application.
@@ -29,8 +29,8 @@ component internally, so you need to import styles for both components. You can 
 exported styles from `@mantine/core` package and additional instructions on [this page](/styles/css-files-list).
 
 ```tsx
-import '@mantine/core/styles/UnstyledButton.css';
-import '@mantine/core/styles/Button.css';
+import '@nex-ui/core/styles/UnstyledButton.css';
+import '@nex-ui/core/styles/Button.css';
 ```
 
 Note that individual component styles are available only for `@mantine/core` package.
@@ -43,25 +43,25 @@ styles must always be imported before any other Mantine package styles:
 
 ```tsx
 // ✅ Correct order
-import '@mantine/core/styles.css';
-import '@mantine/dates/styles.css';
+import '@nex-ui/core/styles.css';
+import '@nex-ui/dates/styles.css';
 // ❌ Incorrect order
-import '@mantine/dates/styles.css';
-import '@mantine/core/styles.css';
+import '@nex-ui/dates/styles.css';
+import '@nex-ui/core/styles.css';
 ```
 
 Your application styles must always be imported after all `@mantine/*` packages styles:
 
 ```tsx
 // ✅ Correct order - your styles will override Mantine styles
-import '@mantine/core/styles.css';
-import '@mantine/dates/styles.css';
+import '@nex-ui/core/styles.css';
+import '@nex-ui/dates/styles.css';
 import classes from './Demo.module.css';
 
 // ❌ Incorrect order – Mantine styles will override your styles
 import classes from './Demo.module.css';
-import '@mantine/core/styles.css';
-import '@mantine/dates/styles.css';
+import '@nex-ui/core/styles.css';
+import '@nex-ui/dates/styles.css';
 ```
 
 ## CSS layers
@@ -75,8 +75,8 @@ All `@mantine/*` packages that export styles have an additional file in which al
 `@layer mantine` directive.
 
 ```tsx
-import '@mantine/core/styles.layer.css';
-import '@mantine/dates/styles.layer.css';
+import '@nex-ui/core/styles.layer.css';
+import '@nex-ui/dates/styles.layer.css';
 
 // ... other styles
 ```
@@ -86,15 +86,15 @@ Make sure that you do not import both `styles.css` and `styles.layer.css` files 
 
 ```tsx
 // ❌ Do not import both styles.css and styles.layer.css
-import '@mantine/core/styles.css';
-import '@mantine/core/styles.layer.css';
+import '@nex-ui/core/styles.css';
+import '@nex-ui/core/styles.layer.css';
 ```
 
 Similar to package styles, you can import individual component styles with `@layer mantine` directive:
 
 ```tsx
-import '@mantine/core/styles/UnstyledButton.layer.css';
-import '@mantine/core/styles/Button.layer.css';
+import '@nex-ui/core/styles/UnstyledButton.layer.css';
+import '@nex-ui/core/styles/Button.layer.css';
 
 // ... other styles
 ```
@@ -110,7 +110,7 @@ regular styles.
 // they will be applied after Mantine styles
 import classes from './Demo.module.css';
 
-import '@mantine/core/styles.layer.css';
+import '@nex-ui/core/styles.layer.css';
 ```
 
 CSS layers are also useful if you want to combine Mantine components with other libraries which also

@@ -57,11 +57,11 @@ Install dependencies:
 Create `emotion.d.ts` file in `src` directory to add types support for `sx` and `styles` props:
 
 ```tsx
-import '@mantine/core';
+import '@nex-ui/core';
 
-import type { EmotionStyles, EmotionSx } from '@mantine/emotion';
+import type { EmotionStyles, EmotionSx } from '@nex-ui/emotion';
 
-declare module '@mantine/core' {
+declare module '@nex-ui/core' {
   export interface BoxProps {
     sx?: EmotionSx;
     styles?: EmotionStyles;
@@ -69,22 +69,22 @@ declare module '@mantine/core' {
 }
 ```
 
-Wrap your application with `MantineEmotionProvider` and add `emotionTransform` to `MantineProvider`:
+Wrap your application with `MantineEmotionProvider` and add `emotionTransform` to `NexProvider`:
 
 ```tsx
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 import {
   emotionTransform,
   MantineEmotionProvider,
-} from '@mantine/emotion';
+} from '@nex-ui/emotion';
 
 export default function App() {
   return (
-    <MantineProvider stylesTransform={emotionTransform}>
+    <NexProvider stylesTransform={emotionTransform}>
       <MantineEmotionProvider>App</MantineEmotionProvider>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -92,7 +92,7 @@ export default function App() {
 Done! You can now use `sx`, `styles` props and `createStyles` in your application:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -137,11 +137,11 @@ export const emotionCache = createCache({ key: 'css' });
 `emotion.d.ts` file:
 
 ```tsx
-import '@mantine/core';
+import '@nex-ui/core';
 
-import type { EmotionStyles, EmotionSx } from '@mantine/emotion';
+import type { EmotionStyles, EmotionSx } from '@nex-ui/emotion';
 
-declare module '@mantine/core' {
+declare module '@nex-ui/core' {
   export interface BoxProps {
     sx?: EmotionSx;
     styles?: EmotionStyles;
@@ -159,8 +159,8 @@ import NextDocument, {
   NextScript,
 } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
-import { ColorSchemeScript } from '@mantine/core';
-import { createGetInitialProps } from '@mantine/emotion';
+import { ColorSchemeScript } from '@nex-ui/core';
+import { createGetInitialProps } from '@nex-ui/emotion';
 // Import cache created in the previous step
 import { emotionCache } from '../emotion/cache';
 
@@ -189,20 +189,20 @@ Document.getInitialProps = createGetInitialProps(
 Add `MantineEmotionProvider` and `emotionTransform` to `pages/_app.tsx` file:
 
 ```tsx
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
 import Head from 'next/head';
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 import {
   emotionTransform,
   MantineEmotionProvider,
-} from '@mantine/emotion';
+} from '@nex-ui/emotion';
 import { emotionCache } from '../emotion/cache';
 
 export default function App({ Component, pageProps }: any) {
   return (
     <MantineEmotionProvider cache={emotionCache}>
-      <MantineProvider stylesTransform={emotionTransform}>
+      <NexProvider stylesTransform={emotionTransform}>
         <Head>
           <title>Mantine Template</title>
           <meta
@@ -212,7 +212,7 @@ export default function App({ Component, pageProps }: any) {
           <link rel="shortcut icon" href="/favicon.svg" />
         </Head>
         <Component {...pageProps} />
-      </MantineProvider>
+      </NexProvider>
     </MantineEmotionProvider>
   );
 }
@@ -221,7 +221,7 @@ export default function App({ Component, pageProps }: any) {
 Done! You can now use `sx`, `styles` props and `createStyles` in your application:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -256,11 +256,11 @@ Install dependencies:
 Create `app/emotion.d.ts` file with the following content:
 
 ```tsx
-import '@mantine/core';
+import '@nex-ui/core';
 
-import type { EmotionStyles, EmotionSx } from '@mantine/emotion';
+import type { EmotionStyles, EmotionSx } from '@nex-ui/emotion';
 
-declare module '@mantine/core' {
+declare module '@nex-ui/core' {
   export interface BoxProps {
     sx?: EmotionSx;
     styles?: EmotionStyles;
@@ -328,13 +328,13 @@ Add `RootStyleRegistry`, `MantineEmotionProvider` and `emotionTransform` to `app
 It should look something like this:
 
 ```tsx
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, NexProvider } from '@nex-ui/core';
 import {
   emotionTransform,
   MantineEmotionProvider,
-} from '@mantine/emotion';
+} from '@nex-ui/emotion';
 import { RootStyleRegistry } from './EmotionRootStyleRegistry';
 
 export const metadata = {
@@ -356,9 +356,9 @@ export default function RootLayout({ children }: { children: any }) {
       <body>
         <RootStyleRegistry>
           <MantineEmotionProvider>
-            <MantineProvider stylesTransform={emotionTransform}>
+            <NexProvider stylesTransform={emotionTransform}>
               {children}
-            </MantineProvider>
+            </NexProvider>
           </MantineEmotionProvider>
         </RootStyleRegistry>
       </body>
@@ -373,7 +373,7 @@ Note that `'use client'` is required in most components that use `sx`, `styles` 
 ```tsx
 'use client';
 
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 export default function HomePage() {
   return (
@@ -404,7 +404,7 @@ With the setup above you can use `sx` prop in all Mantine components.
 It accepts either a styles object or a function that receives theme, utilities and returns styles object:
 
 ```tsx
-import { Box, Button } from '@mantine/core';
+import { Box, Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -454,7 +454,7 @@ nested elements of the components that are specified in the Styles API table.
 receives theme, component props, utilities and returns styles object:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -494,8 +494,8 @@ Emotion with `styles` prop. Note that to avoid types collisions, you should not 
 `Component.extend` method and just pass component configuration object directly.
 
 ```tsx
-import { createTheme, MantineTheme, TextProps } from '@mantine/core';
-import { EmotionHelpers } from '@mantine/emotion';
+import { createTheme, MantineTheme, TextProps } from '@nex-ui/core';
+import { EmotionHelpers } from '@nex-ui/emotion';
 
 export const theme = createTheme({
   components: {
@@ -563,7 +563,7 @@ as it will produce styles collisions.
 ### Media queries
 
 You can use nested media queries like in Sass. Within query body you can use `theme.breakpoints`
-defined with [MantineProvider](/theming/mantine-provider) or just static values:
+defined with [NexProvider](/theming/mantine-provider) or just static values:
 
 <Demo data={EmotionDemos.media} />
 

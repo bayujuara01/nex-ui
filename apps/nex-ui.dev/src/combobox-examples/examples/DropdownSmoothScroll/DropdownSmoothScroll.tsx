@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Combobox, ScrollArea, TextInput, useCombobox } from '@mantine/core';
+import { Combobox, ScrollArea, TextInput, useCombobox } from '@nex-ui/core';
 
 const groceries = [
   '🍎 Apples',

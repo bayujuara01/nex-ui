@@ -11,7 +11,7 @@ and accepts optional `onOpen` and `onClose` callbacks. It can be used to manage 
 popovers and other similar components:
 
 ```tsx
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure } from '@nex-ui/hooks';
 
 function Demo() {
   const [opened, handlers] = useDisclosure(false);
@@ -32,7 +32,7 @@ function Demo() {
 `onOpen` and `onClose` callbacks are called when opened state changes:
 
 ```tsx
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure } from '@nex-ui/hooks';
 
 function Demo() {
   const [opened, handlers] = useDisclosure(false, {

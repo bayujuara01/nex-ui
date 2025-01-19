@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '@mantine/core';
+import { DEFAULT_THEME } from '@nex-ui/core';
 import { MdxCodeHighlight } from '../MdxProvider';
 
 export function DefaultThemeData() {

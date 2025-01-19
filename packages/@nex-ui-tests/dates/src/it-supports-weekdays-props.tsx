@@ -3,7 +3,7 @@ import 'dayjs/locale/ru';
 import dayjs from 'dayjs';
 import { screen } from '@testing-library/react';
 import { DatesProvider } from '@nex-ui/dates';
-import { render } from '@mantine-tests/core';
+import { render } from '@nex-ui-tests/core';
 
 export function expectWeekdaysNames(names: string[]) {
   expect(screen.getAllByRole('columnheader').map((th) => th.textContent)).toStrictEqual(names);

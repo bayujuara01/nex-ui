@@ -1,4 +1,4 @@
-import { TypeScriptCircleIcon } from '@mantinex/dev-icons';
+import { TypeScriptCircleIcon } from '@nex-uix/dev-icons';
 import { MdxInfo } from '../MdxInfo/MdxInfo';
 import { MdxLink } from '../MdxLink/MdxLink';
 import { MdxCodeHighlight } from '../MdxPre/MdxPre';
@@ -14,7 +14,7 @@ interface MdxPolymorphicProps {
 }
 
 function getElementCode(input: MdxPolymorphicProps) {
-  return `import { ${input.component} } from '${input.package || '@mantine/core'}';
+  return `import { ${input.component} } from '${input.package || '@nex-ui/core'}';
 
 function Demo() {
   return <${input.component} component="${input.changeToElement}" />;
@@ -24,7 +24,7 @@ function Demo() {
 
 function getNextLinkCode(input: MdxPolymorphicProps) {
   return `import Link from 'next/link';
-import { ${input.component} } from '${input.package || '@mantine/core'}';
+import { ${input.component} } from '${input.package || '@nex-ui/core'}';
 
 function Demo() {
   return <${input.component} component={Link} href="/" />;
@@ -33,7 +33,7 @@ function Demo() {
 
 function getInterfaceCode(input: MdxPolymorphicProps) {
   return `import type { ${input.component}Props, ElementProps } from '${
-    input.package || '@mantine/core'
+    input.package || '@nex-ui/core'
   }';
 
 interface My${input.component}Props extends ${input.component}Props,

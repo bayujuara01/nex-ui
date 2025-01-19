@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 import classes from './HeaderItem.module.css';
 
 interface HeaderItemProps {

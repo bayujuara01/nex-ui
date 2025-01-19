@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { rem, Tabs } from '@mantine/core';
+import { rem, Tabs } from '@nex-ui/core';
 import { MdxSiblings } from '@/components/MdxSiblings';
 import { PageBase } from '@/components/PageBase';
 import { PropsTablesList } from '@/components/PropsTable';

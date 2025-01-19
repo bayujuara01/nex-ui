@@ -7,7 +7,7 @@ import {
   Select,
   SimpleGrid,
   TextInput,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 export function Inputs() {
   return (

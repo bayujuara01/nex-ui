@@ -58,7 +58,7 @@ To shared [theme object](/theming/theme-object) between your application and Sto
 
 ```tsx
 // src/theme.ts
-import { createTheme } from '@mantine/core';
+import { createTheme } from '@nex-ui/core';
 
 export const theme = createTheme({
   fontFamily: 'serif',
@@ -71,11 +71,11 @@ Then you will be able to use the same theme both in your application and Storybo
 ```tsx
 // In your application
 
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 import { theme } from './theme';
 
 function App() {
-  return <MantineProvider theme={theme}>{/* ... */}</MantineProvider>;
+  return <NexProvider theme={theme}>{/* ... */}</NexProvider>;
 }
 ```
 
@@ -87,15 +87,15 @@ the following content:
 ```tsx
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
 import { useEffect } from 'react';
 import { addons } from '@storybook/preview-api';
 import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
 import {
-  MantineProvider,
+  NexProvider,
   useMantineColorScheme,
-} from '@mantine/core';
+} from '@nex-ui/core';
 // theme.ts file from previous step
 import { theme } from '../src/theme';
 
@@ -123,7 +123,7 @@ export const decorators = [
     <ColorSchemeWrapper>{renderStory()}</ColorSchemeWrapper>
   ),
   (renderStory: any) => (
-    <MantineProvider theme={theme}>{renderStory()}</MantineProvider>
+    <NexProvider theme={theme}>{renderStory()}</NexProvider>
   ),
 ];
 ```

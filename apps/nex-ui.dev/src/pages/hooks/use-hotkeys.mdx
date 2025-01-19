@@ -13,7 +13,7 @@ export default Layout(MDX_DATA.useHotkeys);
 - `options` - object with extra options for hotkey handler
 
 ```tsx
-import { useHotkeys } from '@mantine/hooks';
+import { useHotkeys } from '@nex-ui/hooks';
 
 function Demo() {
   // ctrl + J and ⌘ + J to toggle color scheme
@@ -32,7 +32,7 @@ The second argument is a list of HTML tags on which hotkeys should be ignored.
 By default, hotkeys events are ignored if the focus is in `input`, `textarea` and `select` elements.
 
 ```tsx
-import { useHotkeys } from '@mantine/hooks';
+import { useHotkeys } from '@nex-ui/hooks';
 
 function Demo() {
   // Ignore hotkeys events only when focus is in input and textarea elements
@@ -57,7 +57,7 @@ which should be used with `onKeyDown`:
 With `getHotkeyHandler` you can also add events to any dom node using `.addEventListener`:
 
 ```tsx
-import { getHotkeyHandler } from '@mantine/hooks';
+import { getHotkeyHandler } from '@nex-ui/hooks';
 
 document.body.addEventListener(
   'keydown',
@@ -95,7 +95,7 @@ type HotkeyItem = [
 `HotkeyItem` type can be used to create hotkey items outside of `use-hotkeys` hook:
 
 ```tsx
-import { HotkeyItem, useHotkeys } from '@mantine/hooks';
+import { HotkeyItem, useHotkeys } from '@nex-ui/hooks';
 
 const hotkeys: HotkeyItem[] = [
   [

@@ -20,7 +20,7 @@ Unlike [Autocomplete](/core/autocomplete/), `Select` does not allow entering cus
 
 ```tsx
 import { useState } from 'react';
-import { Select } from '@mantine/core';
+import { Select } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string | null>('');
@@ -39,7 +39,7 @@ If you prefer object format in state, use second argument of onChange handler:
 
 ```tsx
 import { useState } from 'react';
-import { ComboboxItem, Select } from '@mantine/core';
+import { ComboboxItem, Select } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<ComboboxItem | null>(null);
@@ -83,7 +83,7 @@ You can control search value with `searchValue` and `onSearchChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { Select } from '@mantine/core';
+import { Select } from '@nex-ui/core';
 
 function Demo() {
   const [searchValue, setSearchValue] = useState('');
@@ -249,7 +249,7 @@ To set `aria-label` on the clear button, use `clearButtonProps`. Note that it is
 only when `clearable` is set.
 
 ```tsx
-import { Select } from '@mantine/core';
+import { Select } from '@nex-ui/core';
 
 function Demo() {
   return (

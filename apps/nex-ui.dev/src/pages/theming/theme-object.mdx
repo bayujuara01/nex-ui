@@ -143,11 +143,11 @@ interface MantineTheme {
 
 ## Usage
 
-To customize theme, pass theme override object to [MantineProvider](/theming/mantine-provider/) `theme` prop.
+To customize theme, pass theme override object to [NexProvider](/theming/mantine-provider/) `theme` prop.
 Theme override will be deeply merged with the default theme.
 
 ```tsx
-import { createTheme, MantineProvider, rem } from '@mantine/core';
+import { createTheme, NexProvider, rem } from '@nex-ui/core';
 
 const theme = createTheme({
   colors: {
@@ -194,9 +194,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -310,7 +310,7 @@ You can learn more about these features in [default props](/theming/default-prop
 `theme.other` is an object that can be used to store any other properties that you want to access with the theme objects.
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   other: {
@@ -325,9 +325,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -337,7 +337,7 @@ function Demo() {
 To store theme override object in a variable, use `createTheme` function:
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const myTheme = createTheme({
   primaryColor: 'orange',
@@ -346,9 +346,9 @@ const myTheme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={myTheme}>
+    <NexProvider theme={myTheme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -360,9 +360,9 @@ Use `mergeThemeOverrides` function to merge multiple themes into one theme overr
 ```tsx
 import {
   createTheme,
-  MantineProvider,
+  NexProvider,
   mergeThemeOverrides,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 const theme1 = createTheme({
   primaryColor: 'orange',
@@ -379,22 +379,22 @@ const myTheme = mergeThemeOverrides(theme1, theme2);
 
 function Demo() {
   return (
-    <MantineProvider theme={myTheme}>
+    <NexProvider theme={myTheme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
 
 ## use-mantine-theme hook
 
-`useMantineTheme` hook returns theme object from [MantineProvider](/theming/mantine-provider) context:
+`useNexTheme` hook returns theme object from [NexProvider](/theming/mantine-provider) context:
 
 ```tsx
-import { useMantineTheme } from '@mantine/core';
+import { useNexTheme } from '@nex-ui/core';
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   return <div style={{ background: theme.colors.blue[5] }} />;
 }
 ```
@@ -403,12 +403,12 @@ function Demo() {
 
 You can import default theme object from `@mantine/core` package. It includes
 all theme properties with default values. When you pass theme override to
-[MantineProvider](/theming/mantine-provider), it will be deeply merged with
+[NexProvider](/theming/mantine-provider), it will be deeply merged with
 the default theme. You can find contents of `DEFAULT_THEME` object
 on [this page](/theming/default-theme).
 
 ```tsx
-import { DEFAULT_THEME } from '@mantine/core';
+import { DEFAULT_THEME } from '@nex-ui/core';
 ```
 
 ## Access theme outside of components
@@ -422,7 +422,7 @@ import {
   createTheme,
   DEFAULT_THEME,
   mergeMantineTheme,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 const themeOverride = createTheme({
   primaryColor: 'orange',

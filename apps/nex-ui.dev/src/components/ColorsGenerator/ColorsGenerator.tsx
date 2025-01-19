@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { generateColorsMap } from '@mantine/colors-generator';
-import { useLocalStorage } from '@mantine/hooks';
+import { generateColorsMap } from '@nex-ui/colors-generator';
+import { useLocalStorage } from '@nex-ui/hooks';
 import { MdxTitle } from '@/components/MdxProvider';
 import { ColorsInput } from './ColorsInput/ColorsInput';
 import { ColorsList } from './ColorsList/ColorsList';

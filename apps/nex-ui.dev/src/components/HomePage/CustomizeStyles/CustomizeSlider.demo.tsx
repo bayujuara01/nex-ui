@@ -1,4 +1,4 @@
-import { Slider } from '@mantine/core';
+import { Slider } from '@nex-ui/core';
 import classes from './CustomizeSlider.demo.module.css';
 
 const marks = [
@@ -12,7 +12,7 @@ export function CustomizeSliderDemo() {
 }
 
 const tsxCode = `
-import { Slider } from '@mantine/core';
+import { Slider } from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const marks = [

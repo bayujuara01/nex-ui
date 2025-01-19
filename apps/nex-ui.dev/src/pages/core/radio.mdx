@@ -12,7 +12,7 @@ export default Layout(MDX_DATA.Radio);
 
 ```tsx
 import { useState } from 'react';
-import { Radio } from '@mantine/core';
+import { Radio } from '@nex-ui/core';
 
 function Demo() {
   const [checked, setChecked] = useState(false);
@@ -47,7 +47,7 @@ By default, radio input and label have `cursor: default` (same as native `input[
 To change cursor to pointer, set `cursorType` on [theme](/theming/theme-object/):
 
 ```tsx
-import { createTheme, MantineProvider, Radio } from '@mantine/core';
+import { createTheme, NexProvider, Radio } from '@nex-ui/core';
 
 const theme = createTheme({
   cursorType: 'pointer',
@@ -55,9 +55,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Radio label="Pointer cursor" />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -81,7 +81,7 @@ You can change target element to which tooltip is attached with `refProp`:
 
 ```tsx
 import { useState } from 'react';
-import { Radio } from '@mantine/core';
+import { Radio } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('react');
@@ -140,7 +140,7 @@ You can use `Radio.Card` with `Radio.Group` the same way as `Radio` component:
 Set `aria-label` or `label` prop to make the radio accessible:
 
 ```tsx
-import { Radio } from '@mantine/core';
+import { Radio } from '@nex-ui/core';
 
 // Not ok, input is not labeled
 function Bad() {

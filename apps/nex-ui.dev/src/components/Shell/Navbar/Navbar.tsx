@@ -7,7 +7,7 @@ import {
   IconPalette,
 } from '@tabler/icons-react';
 import cx from 'clsx';
-import { Box, rem, RemoveScroll, ScrollArea, useDirection } from '@mantine/core';
+import { Box, rem, RemoveScroll, ScrollArea, useDirection } from '@nex-ui/core';
 import { MDX_PAGES_GROUPS } from '@/mdx';
 import { NavbarLinksGroup } from './NavbarLinksGroup/NavbarLinksGroup';
 import { NavbarMainLink } from './NavbarMainLink/NavbarMainLink';

@@ -13,14 +13,14 @@ export default Layout(MDX_DATA.Modals);
 Wrap your app with `ModalsProvider` component:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
-import { ModalsProvider } from '@mantine/modals';
+import { NexProvider } from '@nex-ui/core';
+import { ModalsProvider } from '@nex-ui/modals';
 
 function Demo() {
   return (
-    <MantineProvider>
+    <NexProvider>
       <ModalsProvider>{/* Your app here */}</ModalsProvider>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -53,7 +53,7 @@ Using this properties you can customize confirm modal to match current context r
 To setup shared labels for confirm modals set `labels` on `ModalsProvider`:
 
 ```tsx
-import { ModalsProvider } from '@mantine/modals';
+import { ModalsProvider } from '@nex-ui/modals';
 
 function Demo() {
   return (
@@ -69,8 +69,8 @@ function Demo() {
 You can define any amount of modals in ModalsProvider context:
 
 ```tsx
-import { Button, Text } from '@mantine/core';
-import { ContextModalProps, ModalsProvider } from '@mantine/modals';
+import { Button, Text } from '@nex-ui/core';
+import { ContextModalProps, ModalsProvider } from '@nex-ui/modals';
 
 const TestModal = ({
   context,
@@ -122,7 +122,7 @@ const modals = {
   demonstration: TestModal,
   /* ...other modals */
 };
-declare module '@mantine/modals' {
+declare module '@nex-ui/modals' {
   export interface MantineModalsOverride {
     modals: typeof modals;
   }
@@ -139,7 +139,7 @@ function Demo() {
 Typesafe context modals will force you to use the correct types for `openContextModal`:
 
 ```tsx
-import { closeModal, openContextModal } from '@mantine/modals';
+import { closeModal, openContextModal } from '@nex-ui/modals';
 
 openContextModal({
   modal: 'demonstration',

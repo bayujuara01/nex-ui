@@ -1,4 +1,4 @@
-import { Box, BoxProps, Container, ElementProps, Text } from '@mantine/core';
+import { Box, BoxProps, Container, ElementProps, Text } from '@nex-ui/core';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import classes from './PageSection.module.css';
 

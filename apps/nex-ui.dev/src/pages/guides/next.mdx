@@ -51,15 +51,15 @@ module.exports = {
 
 ## Setup with pages router
 
-Add styles imports and [MantineProvider](/theming/mantine-provider) to the `pages/_app.tsx` file:
+Add styles imports and [NexProvider](/theming/mantine-provider) to the `pages/_app.tsx` file:
 
 ```tsx
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
 import type { AppProps } from 'next/app';
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   /** Put your mantine theme override here */
@@ -67,9 +67,9 @@ const theme = createTheme({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Component {...pageProps} />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -79,7 +79,7 @@ Note that it is required even if you use only one color scheme in your applicati
 
 ```tsx
 import { Head, Html, Main, NextScript } from 'next/document';
-import { ColorSchemeScript, mantineHtmlProps } from '@mantine/core';
+import { ColorSchemeScript, mantineHtmlProps } from '@nex-ui/core';
 
 export default function Document() {
   return (
@@ -104,15 +104,15 @@ npm run dev
 
 ## Setup with app router
 
-Add [MantineProvider](/theming/mantine-provider), [ColorSchemeScript](/theming/color-schemes)
+Add [NexProvider](/theming/mantine-provider), [ColorSchemeScript](/theming/color-schemes)
 and styles imports to the `app/layout.tsx` file:
 
 ```tsx
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
-import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
+import { ColorSchemeScript, NexProvider, mantineHtmlProps } from '@nex-ui/core';
 
 export const metadata = {
   title: 'My Mantine app',
@@ -130,7 +130,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <NexProvider>{children}</NexProvider>
       </body>
     </html>
   );
@@ -152,7 +152,7 @@ and `app/layout.tsx` files as described above.
 
 ```tsx
 import Link from 'next/link';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -181,7 +181,7 @@ Instead, use `ComponentXXX` syntax or add `'use client';` directive to the top o
 Example that will not work in server components:
 
 ```tsx
-import { Popover } from '@mantine/core';
+import { Popover } from '@nex-ui/core';
 
 // This will throw an error
 export default function Page() {
@@ -199,7 +199,7 @@ Example with `'use client';` directive:
 ```tsx
 'use client';
 
-import { Popover } from '@mantine/core';
+import { Popover } from '@nex-ui/core';
 
 // No error
 export default function Page() {
@@ -219,7 +219,7 @@ import {
   Popover,
   PopoverDropdown,
   PopoverTarget,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 // No error
 export default function Page() {
@@ -241,7 +241,7 @@ your `next.config.mjs`:
 export default {
   // ...other configuration
   experimental: {
-    optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
+    optimizePackageImports: ['@nex-ui/core', '@nex-ui/hooks'],
   },
 };
 ```

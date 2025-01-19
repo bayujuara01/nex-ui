@@ -11,25 +11,25 @@ export default Layout(MDX_DATA.Notifications);
 After installation import package styles at the root of your application:
 
 ```tsx
-import '@mantine/notifications/styles.css';
+import '@nex-ui/notifications/styles.css';
 ```
 
 Add `Notifications` component anywhere in your application. Note that:
 
-- It is required to render `Notifications` component inside [MantineProvider](/theming/mantine-provider/)
+- It is required to render `Notifications` component inside [NexProvider](/theming/mantine-provider/)
 - You do not need to wrap your application with `Notifications` component – it is not a provider, it is a regular component
 - You should not render multiple `Notifications` components – if you do that, your notifications will be duplicated
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
-import { Notifications } from '@mantine/notifications';
+import { NexProvider } from '@nex-ui/core';
+import { Notifications } from '@nex-ui/notifications';
 
 function Demo() {
   return (
-    <MantineProvider>
+    <NexProvider>
       <Notifications />
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -52,7 +52,7 @@ All set! You can now use all notifications system features.
 All functions can be imported from `@mantine/notifications` package and can be used in any part of your application:
 
 ```tsx
-import { notifications } from '@mantine/notifications';
+import { notifications } from '@nex-ui/notifications';
 ```
 
 You can also import these functions separately:
@@ -66,7 +66,7 @@ import {
   showNotification, // notifications.show
   updateNotification, // notifications.update
   updateNotificationsState, // notifications.updateState
-} from '@mantine/notifications';
+} from '@nex-ui/notifications';
 ```
 
 ## Notification props
@@ -87,7 +87,7 @@ All properties except `message` are optional.
 
 ```tsx
 import { IconX } from '@tabler/icons-react';
-import { notifications } from '@mantine/notifications';
+import { notifications } from '@nex-ui/notifications';
 
 // Bare minimum – message is required for all notifications
 notifications.show({ message: 'Hello' });
@@ -142,7 +142,7 @@ In the following example, notifications will be displayed in the top right corne
 if `position` is not defined in `notifications.show` function:
 
 ```tsx
-import { Notifications } from '@mantine/notifications';
+import { Notifications } from '@nex-ui/notifications';
 
 function Demo() {
   return <Notifications position="top-right" zIndex={1000} />;
@@ -155,7 +155,7 @@ You can limit maximum number of notifications that are displayed at a time by se
 `limit` prop on `Notifications`:
 
 ```tsx
-import { Notifications } from '@mantine/notifications';
+import { Notifications } from '@nex-ui/notifications';
 
 function Demo() {
   return <Notifications limit={5} />;
@@ -172,7 +172,7 @@ and displayed when notification from current state is hidden.
 To remove specific notification from state or queue use `notifications.hide` function:
 
 ```tsx
-import { notifications } from '@mantine/notifications';
+import { notifications } from '@nex-ui/notifications';
 
 const id = notifications.show({ message: 'Hello!' });
 notifications.hide(id);
@@ -192,7 +192,7 @@ Use `notifications.cleanQueue` function to remove all notifications from the que
 You can configure auto close timeout with `Notifications`:
 
 ```tsx
-import { Notifications } from '@mantine/notifications';
+import { Notifications } from '@nex-ui/notifications';
 
 // All notifications will be closed automatically in 4000ms
 function Demo() {
@@ -203,7 +203,7 @@ function Demo() {
 Or per notification in `notifications.show`/`notifications.update` functions:
 
 ```tsx
-import { notifications } from '@mantine/notifications';
+import { notifications } from '@nex-ui/notifications';
 
 notifications.show({
   message: 'I will close in 500ms seconds',

@@ -16,9 +16,9 @@ This guide will help you get familiar with core Mantine concepts.
 Please read this guide, [theming](/theming/theme-object/) and [styles](/styles/css-modules/) sections before starting development
 to learn about all of the available theming and styling features.
 
-## MantineProvider
+## NexProvider
 
-[MantineProvider](/theming/mantine-provider) is required to be rendered at the root of your application.
+[NexProvider](/theming/mantine-provider) is required to be rendered at the root of your application.
 It is responsible for:
 
 - Providing [theme](/theming/theme-object) context
@@ -26,10 +26,10 @@ It is responsible for:
 - Managing [color scheme](/theming/color-schemes) (light, dark, auto)
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
-  return <MantineProvider>{/* Your app here */}</MantineProvider>;
+  return <NexProvider>{/* Your app here */}</NexProvider>;
 }
 ```
 
@@ -40,7 +40,7 @@ and other data that can be accessed by any Mantine component. Most of the `theme
 [CSS variables](/styles/css-variables) and can be accessed both in JavaScript and CSS.
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 // Your theme configuration is merged with default theme
 const theme = createTheme({
@@ -50,9 +50,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -71,10 +71,10 @@ Access theme values in styles:
 Access theme values in JavaScript:
 
 ```tsx
-import { lighten, useMantineTheme } from '@mantine/core';
+import { lighten, useNexTheme } from '@nex-ui/core';
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const style = {
     // You can use CSS variables in inline styles
@@ -224,16 +224,16 @@ These selectors can be used to apply styles to inner elements with [classNames o
 All Mantine components support `light`, `dark` and `auto` [color schemes](/theming/color-schemes). By default,
 the color scheme is `light`, it can be changed by the user and will be persisted in `localStorage`.
 
-You can configure the default color scheme on [MantineProvider](/theming/mantine-provider):
+You can configure the default color scheme on [NexProvider](/theming/mantine-provider):
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider defaultColorScheme="dark">
+    <NexProvider defaultColorScheme="dark">
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```

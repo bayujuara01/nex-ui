@@ -14,7 +14,7 @@ are not documented anywhere else.
 It clamps number within the inclusive lower and upper bounds.
 
 ```tsx
-import { clamp } from '@mantine/hooks';
+import { clamp } from '@nex-ui/hooks';
 
 // With both min and max boundaries
 clamp(10, 0, 5); // 5
@@ -36,7 +36,7 @@ clamp(10, undefined, 5); // 5
 It converts first character of a string to lower case.
 
 ```tsx
-import { lowerFirst } from '@mantine/hooks';
+import { lowerFirst } from '@nex-ui/hooks';
 
 lowerFirst('Mantine'); // mantine
 lowerFirst('mantine'); // mantine
@@ -48,7 +48,7 @@ lowerFirst('mantine'); // mantine
 It converts first character of a string to upper case.
 
 ```tsx
-import { upperFirst } from '@mantine/hooks';
+import { upperFirst } from '@nex-ui/hooks';
 
 upperFirst('Mantine'); // Mantine
 upperFirst('mantine'); // Mantine
@@ -60,7 +60,7 @@ upperFirst('mantine'); // Mantine
 It generates random id with `mantine-` prefix.
 
 ```tsx
-import { randomId } from '@mantine/hooks';
+import { randomId } from '@nex-ui/hooks';
 
 randomId(); // mantine-d7h137oav
 randomId(); // mantine-1q2j3j4j5
@@ -72,7 +72,7 @@ randomId(); // mantine-1q2j3j4j5
 It generates array of numbers from `start` to `end` (inclusive).
 
 ```tsx
-import { range } from '@mantine/hooks';
+import { range } from '@nex-ui/hooks';
 
 range(0, 5); // [0, 1, 2, 3, 4, 5]
 range(5, 0); // [5, 4, 3, 2, 1, 0]
@@ -84,7 +84,7 @@ range(5, 0); // [5, 4, 3, 2, 1, 0]
 It performs shallow equal check of two objects.
 
 ```tsx
-import { shallowEqual } from '@mantine/hooks';
+import { shallowEqual } from '@nex-ui/hooks';
 
 shallowEqual({ a: 1 }, { a: 1 }); // true
 shallowEqual({ a: 1 }, { a: 2 }); // false

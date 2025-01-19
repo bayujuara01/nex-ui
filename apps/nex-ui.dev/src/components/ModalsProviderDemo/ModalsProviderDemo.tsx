@@ -1,6 +1,6 @@
 import { IconCheck } from '@tabler/icons-react';
-import { Button, Center, Loader, rem, Stack, Text } from '@mantine/core';
-import { ContextModalProps, ModalsProvider } from '@mantine/modals';
+import { Button, Center, Loader, rem, Stack, Text } from '@nex-ui/core';
+import { ContextModalProps, ModalsProvider } from '@nex-ui/modals';
 
 interface ModalsProviderDemoProps {
   children: React.ReactNode;

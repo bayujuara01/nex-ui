@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Embla, useAnimationOffsetEffect } from '@mantine/carousel';
+import { Embla, useAnimationOffsetEffect } from '@nex-ui/carousel';
 import { CarouselCardsDemos } from '@docs/demos';
 
 export function Carousel() {

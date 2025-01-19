@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import { StylesDemos } from '@docs/demos';
 import { ButtonStylesApi } from '@docs/styles-api';
 import {
@@ -37,7 +37,7 @@ Example of [Button](/core/button) component selectors:
 You can use these selectors in `classNames` and `styles` in, both, component props and `theme.components`:
 
 ```tsx
-import { Button, createTheme, MantineProvider } from '@mantine/core';
+import { Button, createTheme, NexProvider } from '@nex-ui/core';
 
 function ClassNamesDemo() {
   return (
@@ -86,9 +86,9 @@ const theme = createTheme({
 
 function ProviderDemo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Button>Button</Button>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -109,9 +109,9 @@ components of a specific type:
 import { useState } from 'react';
 import {
   createTheme,
-  MantineProvider,
+  NexProvider,
   TextInput,
-} from '@mantine/core';
+} from '@nex-ui/core';
 // Styles are the same as in previous example
 import classes from './Demo.module.css';
 
@@ -129,9 +129,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -197,7 +197,7 @@ You can use static classes to style a component with CSS or [any other styling s
 }
 ```
 
-The prefix of static classes can be changed with `classNamesPrefix` of [MantineProvider](/theming/mantine-provider#classnamesprefix).
+The prefix of static classes can be changed with `classNamesPrefix` of [NexProvider](/theming/mantine-provider#classnamesprefix).
 
 ## Components classes
 
@@ -215,7 +215,7 @@ find the classes of [Button](/core/button) in `Button.classes`:
 You can use these classes to create components with the same styles as Mantine components:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return <button type="button" className={Button.classes.root} />;

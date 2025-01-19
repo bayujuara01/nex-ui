@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { ColorSwatch, Group, isLightColor } from '@mantine/core';
+import { ColorSwatch, Group, isLightColor } from '@nex-ui/core';
 import classes from './ColorsList.module.css';
 
 interface ColorsListProps {

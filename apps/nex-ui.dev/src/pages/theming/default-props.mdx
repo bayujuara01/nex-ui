@@ -11,17 +11,17 @@ These props will be used by default by all components of your application unless
 
 <Demo data={ThemingDemos.defaultProps} />
 
-## Default props with MantineThemeProvider
+## Default props with NexThemeProvider
 
-You can also use `MantineThemeProvider` to define default props
+You can also use `NexThemeProvider` to define default props
 for a part of your application:
 
 ```tsx
 import {
   Button,
   createTheme,
-  MantineThemeProvider,
-} from '@mantine/core';
+  NexThemeProvider,
+} from '@nex-ui/core';
 
 const theme = createTheme({
   components: {
@@ -37,9 +37,9 @@ const theme = createTheme({
 function Demo() {
   return (
     <>
-      <MantineThemeProvider theme={theme}>
+      <NexThemeProvider theme={theme}>
         {/* Part of the app with theme */}
-      </MantineThemeProvider>
+      </NexThemeProvider>
 
       {/* Another part without theme */}
     </>
@@ -55,10 +55,10 @@ Some components like [Menu](/core/menu/) and [Tabs](/core/tabs/) have associated
 ```tsx
 import {
   createTheme,
-  MantineProvider,
+  NexProvider,
   Menu,
   Tabs,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 const theme = createTheme({
   components: {
@@ -76,9 +76,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -101,7 +101,7 @@ add default props to the component:
 
 ```tsx
 import { IMaskInput } from 'react-imask';
-import { Button, InputBase } from '@mantine/core';
+import { Button, InputBase } from '@nex-ui/core';
 
 const LinkButton = Button.withProps({
   component: 'a',

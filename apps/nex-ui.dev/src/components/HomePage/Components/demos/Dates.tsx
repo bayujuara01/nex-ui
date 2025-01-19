@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
-import { Input, Paper, SimpleGrid } from '@mantine/core';
-import { DatePicker, DatePickerInput, DateTimePicker, TimeInput } from '@mantine/dates';
+import { Input, Paper, SimpleGrid } from '@nex-ui/core';
+import { DatePicker, DatePickerInput, DateTimePicker, TimeInput } from '@nex-ui/dates';
 import classes from './Demos.module.css';
 
 function CalendarWrapper() {

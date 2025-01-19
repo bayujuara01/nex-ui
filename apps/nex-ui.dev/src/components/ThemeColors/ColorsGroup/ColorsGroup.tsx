@@ -1,4 +1,4 @@
-import { Box, ColorSwatch, Text, useMantineTheme } from '@mantine/core';
+import { Box, ColorSwatch, Text, useNexTheme } from '@nex-ui/core';
 import classes from './ColorsGroup.module.css';
 
 interface ColorsGroupProps {
@@ -6,7 +6,7 @@ interface ColorsGroupProps {
 }
 
 export function ColorsGroup({ group }: ColorsGroupProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const colors = theme.colors[group].map((color, index) => (
     <div key={color} className={classes.color}>

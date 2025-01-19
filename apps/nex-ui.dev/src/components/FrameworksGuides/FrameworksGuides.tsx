@@ -1,4 +1,4 @@
-import { SimpleGrid, SimpleGridProps, Space } from '@mantine/core';
+import { SimpleGrid, SimpleGridProps, Space } from '@nex-ui/core';
 import { GettingStartedCard } from './GettingStartedCard/GettingStartedCard';
 
 interface FrameworksGuidesProps {

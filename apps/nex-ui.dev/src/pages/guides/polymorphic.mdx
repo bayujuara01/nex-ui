@@ -25,7 +25,7 @@ when the component that you want to pass to the `component` is generic
 Example of using `renderRoot` prop, the result is the same as in the previous demo:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -50,7 +50,7 @@ For example, you can pass `Link` component from `react-router-dom`:
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -69,7 +69,7 @@ With Next.js 12 and below:
 
 ```tsx
 import Link from 'next/link';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -84,7 +84,7 @@ With Next.js 13 and above:
 
 ```tsx
 import Link from 'next/link';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -106,7 +106,7 @@ To make generic components work with polymorphic components, use `renderRoot` pr
 
 ```tsx
 import Link from 'next/link';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -126,7 +126,7 @@ incompatible with Mantine `component` prop, but you can use `renderRoot` prop in
 ```tsx
 import cx from 'clsx';
 import { NavLink } from 'react-router-dom';
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -169,7 +169,7 @@ You can use dynamic value in the `component` prop, but in this case, you need to
 or disable type checking by passing `any` as a type argument to the polymorphic component:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function KeepTypes() {
   return (
@@ -206,7 +206,7 @@ import {
   createPolymorphicComponent,
   Group,
   GroupProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 const PolymorphicGroup = createPolymorphicComponent<
   'button',

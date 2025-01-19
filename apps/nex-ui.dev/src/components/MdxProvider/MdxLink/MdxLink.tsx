@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Anchor } from '@mantine/core';
+import { Anchor } from '@nex-ui/core';
 import classes from './MdxLink.module.css';
 
 export function MdxLink({ href, ...others }: React.ComponentPropsWithoutRef<'a'>) {

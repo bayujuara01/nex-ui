@@ -14,7 +14,7 @@ import {
   Stepper,
   Tabs,
   Text,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import { AuthenticationForm, HoverCardHomePageDemo } from '@docs/demos';
 
 function StepperDemo() {

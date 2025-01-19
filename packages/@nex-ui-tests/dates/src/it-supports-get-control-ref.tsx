@@ -1,4 +1,4 @@
-import { render } from '@mantine-tests/core';
+import { render } from '@nex-ui-tests/core';
 
 export interface ComponentTestProps {
   __getControlRef?: (rowIndex: number, cellIndex: number, node: HTMLButtonElement) => void;

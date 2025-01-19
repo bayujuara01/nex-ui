@@ -20,7 +20,7 @@ export default Layout(MDX_DATA.MultiSelect);
 
 ```tsx
 import { useState } from 'react';
-import { MultiSelect } from '@mantine/core';
+import { MultiSelect } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string[]>([]);
@@ -51,7 +51,7 @@ You can control search value with `searchValue` and `onSearchChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { MultiSelect } from '@mantine/core';
+import { MultiSelect } from '@nex-ui/core';
 
 function Demo() {
   const [searchValue, setSearchValue] = useState('');
@@ -232,7 +232,7 @@ To set `aria-label` on the clear button, use `clearButtonProps`. Note that it is
 only when `clearable` is set.
 
 ```tsx
-import { MultiSelect } from '@mantine/core';
+import { MultiSelect } from '@nex-ui/core';
 
 function Demo() {
   return (

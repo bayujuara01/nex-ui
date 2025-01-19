@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { IconArrowUpRight } from '@tabler/icons-react';
-import { Badge, Card, Text } from '@mantine/core';
+import { Badge, Card, Text } from '@nex-ui/core';
 import { frameworkIcons } from '@/components/icons';
 import classes from './GettingStartedCard.module.css';
 

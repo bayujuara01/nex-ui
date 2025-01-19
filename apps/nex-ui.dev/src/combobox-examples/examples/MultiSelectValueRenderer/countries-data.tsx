@@ -1,4 +1,4 @@
-import { rem } from '@mantine/core';
+import { rem } from '@nex-ui/core';
 
 const flagProps = {
   xmlns: 'http://www.w3.org/2000/svg',

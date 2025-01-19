@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { useComputedColorScheme, useDirection, useMantineColorScheme } from '@mantine/core';
-import { useHotkeys } from '@mantine/hooks';
+import { useComputedColorScheme, useDirection, useMantineColorScheme } from '@nex-ui/core';
+import { useHotkeys } from '@nex-ui/hooks';
 
 const EXCLUDE_RTL = ['/combobox'];
 

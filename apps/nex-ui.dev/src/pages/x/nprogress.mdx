@@ -11,23 +11,23 @@ export default Layout(MDX_DATA.Nprogress);
 After installation import package styles at the root of your application:
 
 ```tsx
-import '@mantine/nprogress/styles.css';
+import '@nex-ui/nprogress/styles.css';
 ```
 
 ## Setup NavigationProgress
 
-Render `NavigationProgress` anywhere in your app within [MantineProvider](/theming/mantine-provider/):
+Render `NavigationProgress` anywhere in your app within [NexProvider](/theming/mantine-provider/):
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
-import { NavigationProgress } from '@mantine/nprogress';
+import { NexProvider } from '@nex-ui/core';
+import { NavigationProgress } from '@nex-ui/nprogress';
 
 function Demo() {
   return (
-    <MantineProvider>
+    <NexProvider>
       <NavigationProgress />
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```

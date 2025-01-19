@@ -1,4 +1,4 @@
-import { ShikiLanguage } from '@mantinex/shiki';
+import { ShikiLanguage } from '@nex-uix/shiki';
 import { AltLayout } from './AltLayout/AltLayout';
 import AltLayoutCode from './AltLayout/code.json';
 import { BasicAppShell } from './BasicAppShell/BasicAppShell';

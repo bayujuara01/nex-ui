@@ -29,7 +29,7 @@ Combine `PillsInput` with [Combobox](/core/combobox) to create searchable multis
 If `PillsInput` is used without label prop, it will not be announced properly by screen reader:
 
 ```tsx
-import { PillsInput } from '@mantine/core';
+import { PillsInput } from '@nex-ui/core';
 
 // Inaccessible input – screen reader will not announce it properly
 function Demo() {
@@ -45,7 +45,7 @@ Set `aria-label` on the `PillsInput.Field` component to make the input accessibl
 In this case label will not be visible, but screen reader will announce it:
 
 ```tsx
-import { PillsInput } from '@mantine/core';
+import { PillsInput } from '@nex-ui/core';
 
 // Accessible input – it has aria-label
 function Demo() {
@@ -60,7 +60,7 @@ function Demo() {
 If `label` prop is set, the input will be accessible it is not required to set `aria-label`:
 
 ```tsx
-import { PillsInput } from '@mantine/core';
+import { PillsInput } from '@nex-ui/core';
 
 // Accessible input – it has associated label element
 function Demo() {

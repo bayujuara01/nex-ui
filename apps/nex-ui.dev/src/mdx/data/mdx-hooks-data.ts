@@ -4,10 +4,10 @@ function hDocs(hook: string, description: string): Frontmatter {
   const name = hook.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`);
   return {
     title: name,
-    package: '@mantine/hooks',
+    package: '@nex-ui/hooks',
     slug: `/hooks/${name}`,
     description,
-    import: `import { ${hook} } from '@mantine/hooks';`,
+    import: `import { ${hook} } from '@nex-ui/hooks';`,
     source: `@mantine/hooks/src/${name}/${name}.ts`,
     docs: `hooks/${name}.mdx`,
     searchTags: `${hook} ${name.split('-').join(' ')}`,
@@ -45,11 +45,11 @@ export const MDX_HOOKS_DATA: Record<string, Frontmatter> = {
 
   useElementSize: {
     title: 'use-element-size',
-    package: '@mantine/hooks',
+    package: '@nex-ui/hooks',
     slug: '/hooks/use-element-size',
     description: 'Returns element width and height and observes changes with ResizeObserver',
-    import: "import { useElementSize } from '@mantine/hooks';",
-    source: '@mantine/hooks/src/use-resize-observer/use-resize-observer.ts',
+    import: "import { useElementSize } from '@nex-ui/hooks';",
+    source: '@nex-ui/hooks/src/use-resize-observer/use-resize-observer.ts',
     docs: 'hooks/use-element-size.mdx',
   },
 

@@ -35,7 +35,7 @@ function Demo() {
 `;
 
 export function MdxInputAccessibility(props: MdxInputAccessibilityProps) {
-  const packageName = props.package || '@mantine/core';
+  const packageName = props.package || '@nex-ui/core';
   return (
     <>
       <MdxTitle id="accessibility">Accessibility</MdxTitle>

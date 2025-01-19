@@ -2,18 +2,18 @@ import { ThemingDemos } from '@docs/demos';
 import { Layout } from '@/layout';
 import { MDX_DATA } from '@/mdx';
 
-export default Layout(MDX_DATA.MantineProvider);
+export default Layout(MDX_DATA.NexProvider);
 
-# MantineProvider
+# NexProvider
 
-`MantineProvider` provides a [theme object](/theming/theme-object) context value, manages color scheme
+`NexProvider` provides a [theme object](/theming/theme-object) context value, manages color scheme
 changes and injects [CSS variables](/styles/css-variables/). It must be rendered at the root of your
 application and should be used only once.
 
 ## Usage
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   /** Your theme override here */
@@ -21,19 +21,19 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
 
-## MantineProvider props
+## NexProvider props
 
-`MantineProvider` supports the following props:
+`NexProvider` supports the following props:
 
 ```tsx
-interface MantineProviderProps {
+interface NexProviderProps {
   /** Theme override object */
   theme?: MantineThemeOverride;
 
@@ -43,7 +43,7 @@ interface MantineProviderProps {
   /** Default color scheme value used when `colorSchemeManager` cannot retrieve value from external storage, `light` by default */
   defaultColorScheme?: MantineColorScheme;
 
-  /** Forces color scheme value, if set, MantineProvider ignores `colorSchemeManager` and `defaultColorScheme` */
+  /** Forces color scheme value, if set, NexProvider ignores `colorSchemeManager` and `defaultColorScheme` */
   forceColorScheme?: 'light' | 'dark';
 
   /** CSS selector to which CSS variables should be added, `:root` by default */
@@ -84,7 +84,7 @@ Pass [theme object](/theming/theme-object) override to `theme` prop. It will be 
 theme and used in all components.
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   fontFamily: 'Open Sans, sans-serif',
@@ -93,9 +93,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -103,15 +103,15 @@ function Demo() {
 ### colorSchemeManager
 
 `colorSchemeManager` is used to retrieve and set color scheme value in external storage. By default,
-`MantineProvider` uses `window.localStorage` to store color scheme value, but you can pass your own
+`NexProvider` uses `window.localStorage` to store color scheme value, but you can pass your own
 implementation to `colorSchemeManager` prop. You can learn more about color scheme management in the
 [color schemes guide](/theming/color-schemes).
 
 ```tsx
 import {
   localStorageColorSchemeManager,
-  MantineProvider,
-} from '@mantine/core';
+  NexProvider,
+} from '@nex-ui/core';
 
 const colorSchemeManager = localStorageColorSchemeManager({
   key: 'my-app-color-scheme',
@@ -119,9 +119,9 @@ const colorSchemeManager = localStorageColorSchemeManager({
 
 function Demo() {
   return (
-    <MantineProvider colorSchemeManager={colorSchemeManager}>
+    <NexProvider colorSchemeManager={colorSchemeManager}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -134,13 +134,13 @@ Possible values are `light`, `dark` and `auto`. By default, color scheme value i
 You can learn more about color scheme management in the [color schemes guide](/theming/color-schemes).
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider defaultColorScheme="dark">
+    <NexProvider defaultColorScheme="dark">
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -148,18 +148,18 @@ function Demo() {
 ### cssVariablesSelector
 
 `cssVariablesSelector` is a CSS selector to which [CSS variables](/styles/css-variables/) should be added.
-By default, it is `:root`. `MantineProvider` generates CSS variables based on given [theme override](/theming/theme-object/)
+By default, it is `:root`. `NexProvider` generates CSS variables based on given [theme override](/theming/theme-object/)
 and `cssVariablesResolver`, then these variables are rendered into `<style />` tag next to your application.
 You can learn more about Mantine CSS variables in the [CSS variables guide](/styles/css-variables/).
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider cssVariablesSelector="html">
+    <NexProvider cssVariablesSelector="html">
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -172,13 +172,13 @@ via `.css` file (Note that in this case you will need to generate all theme toke
 that are not a part of the default theme on your side).
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider withCssVariables={false}>
+    <NexProvider withCssVariables={false}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -190,13 +190,13 @@ By default, it is set to `true`. If set to `false`, all Mantine CSS variables wi
 even if they have the same value as in the default theme.
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider deduplicateCssVariables={false}>
+    <NexProvider deduplicateCssVariables={false}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -209,16 +209,16 @@ attribute will be added to `<html />` tag. You can learn more about color scheme
 [color schemes guide](/theming/color-schemes).
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 const getRootElement = () =>
   typeof window === 'undefined' ? undefined : document.body;
 
 function Demo() {
   return (
-    <MantineProvider getRootElement={getRootElement}>
+    <NexProvider getRootElement={getRootElement}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -229,13 +229,13 @@ function Demo() {
 Default value is `mantine` – all components will have `mantine-` prefix in their **static classes**.
 
 ```tsx
-import { MantineProvider, Text } from '@mantine/core';
+import { NexProvider, Text } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider>
+    <NexProvider>
       <Text>Just some text</Text>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -249,13 +249,13 @@ In this case (default `classNamesPrefix`), [Text](/core/text) component will hav
 With `classNamesPrefix` you can change only **static class**:
 
 ```tsx
-import { MantineProvider, Text } from '@mantine/core';
+import { NexProvider, Text } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider classNamesPrefix="app">
+    <NexProvider classNamesPrefix="app">
       <Text>Just some text</Text>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -272,13 +272,13 @@ Now [Text](/core/text) component will have the following classes:
 By default, static classes are enabled, to disable them set `withStaticClasses` to `false`:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider withStaticClasses={false}>
+    <NexProvider withStaticClasses={false}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -291,13 +291,13 @@ By default, global classes are enabled, to disable them set `withGlobalClasses` 
 disabling global classes may break styles of some components.
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider withGlobalClasses={false}>
+    <NexProvider withGlobalClasses={false}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```

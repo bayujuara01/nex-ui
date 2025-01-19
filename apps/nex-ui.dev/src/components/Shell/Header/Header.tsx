@@ -1,8 +1,8 @@
 import { IconChevronDown, IconExternalLink } from '@tabler/icons-react';
 import cx from 'clsx';
-import { Box, Burger, Code, Group, Menu, RemoveScroll, Text, UnstyledButton } from '@mantine/core';
-import { ColorSchemeControl, HeaderControls, SearchMobileControl } from '@mantinex/mantine-header';
-import { majorVersions, meta } from '@mantinex/mantine-meta';
+import { Box, Burger, Code, Group, Menu, RemoveScroll, Text, UnstyledButton } from '@nex-ui/core';
+import { ColorSchemeControl, HeaderControls, SearchMobileControl } from '@nex-uix/nex-ui-header';
+import { majorVersions, meta } from '@nex-uix/nex-ui-meta';
 import { Logo } from '@/components/Logo';
 import { searchHandlers } from '@/components/Search';
 import packageJson from '../../../../../../package.json';

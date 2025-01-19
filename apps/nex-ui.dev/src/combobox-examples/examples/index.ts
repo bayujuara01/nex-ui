@@ -1,4 +1,4 @@
-import { ShikiLanguage } from '@mantinex/shiki';
+import { ShikiLanguage } from '@nex-uix/shiki';
 import { ActiveOptionsFilter } from './ActiveOptionsFilter/ActiveOptionsFilter';
 import ActiveOptionsFilterCode from './ActiveOptionsFilter/code.json';
 import { AsyncAutocomplete } from './AsyncAutocomplete/AsyncAutocomplete';

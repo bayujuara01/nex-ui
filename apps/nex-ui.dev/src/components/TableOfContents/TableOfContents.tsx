@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import { IconList } from '@tabler/icons-react';
-import { Box, rem, ScrollArea, Text } from '@mantine/core';
+import { Box, rem, ScrollArea, Text } from '@nex-ui/core';
 import { getHeadings, Heading } from './get-headings';
 import classes from './TableOfContents.module.css';
 

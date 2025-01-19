@@ -16,7 +16,7 @@ Close the modal with the `Escape` key and see how focus returns to the button af
 In most cases, you should use this hook with [use-focus-trap](/hooks/use-focus-trap/).
 
 ```tsx
-import { useFocusReturn } from '@mantine/hooks';
+import { useFocusReturn } from '@nex-ui/hooks';
 
 useFocusReturn({
   // Is region with focus trap active?
@@ -32,7 +32,7 @@ useFocusReturn({
 If `shouldReturnFocus` option is set to `false` you can call returned function to focus last active element:
 
 ```tsx
-import { useFocusReturn } from '@mantine/hooks';
+import { useFocusReturn } from '@nex-ui/hooks';
 
 const returnFocus = useFocusReturn({
   opened: false,

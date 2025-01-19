@@ -15,7 +15,7 @@ as React `style` prop. You can use Mantine [CSS variables](/styles/css-variables
 the same way as in [.css files](/styles/css-modules).
 
 ```tsx
-import { Box, rem } from '@mantine/core';
+import { Box, rem } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -34,7 +34,7 @@ function Demo() {
 You can define CSS variables in the style prop. Note that it only works with Mantine components:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -52,7 +52,7 @@ It is useful when you need to access [theme](/theming/theme-object/) properties 
 for example, properties from `theme.other`.
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -73,7 +73,7 @@ It is useful when you want to create a wrapper around Mantine component, add inl
 `style` prop to it.
 
 ```tsx
-import { Box, MantineStyleProp } from '@mantine/core';
+import { Box, MantineStyleProp } from '@nex-ui/core';
 
 interface DemoProps {
   style?: MantineStyleProp;

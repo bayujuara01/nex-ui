@@ -9,8 +9,8 @@ export default Layout(MDX_DATA.createFormContext);
 `createFormContext` function creates context provider and hook to get form object from context:
 
 ```tsx
-import { TextInput } from '@mantine/core';
-import { createFormContext } from '@mantine/form';
+import { TextInput } from '@nex-ui/core';
+import { createFormContext } from '@nex-ui/form';
 
 // Definition of form values is required
 interface FormValues {
@@ -63,7 +63,7 @@ Usually it is a good idea to store form context in separate file to avoid depend
 
 ```tsx
 // form-context.ts file
-import { createFormContext } from '@mantine/form';
+import { createFormContext } from '@nex-ui/form';
 
 interface UserFormValues {
   age: number;
@@ -79,7 +79,7 @@ Then you can import context variables from anywhere:
 
 ```tsx
 // NameInput.tsx
-import { TextInput } from '@mantine/core';
+import { TextInput } from '@nex-ui/core';
 import { useUserFormContext } from './form-context';
 
 export function NameInput() {
@@ -96,7 +96,7 @@ export function NameInput() {
 
 ```tsx
 // UserForm.tsx
-import { NumberInput } from '@mantine/core';
+import { NumberInput } from '@nex-ui/core';
 import { UserFormProvider, useUserForm } from './form-context';
 import { NameInput } from './NameInput';
 

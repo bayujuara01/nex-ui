@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import cx from 'clsx';
-import { Combobox, Input, InputBase, useCombobox } from '@mantine/core';
+import { Combobox, Input, InputBase, useCombobox } from '@nex-ui/core';
 import classes from './DropdownOptionsAnimation.module.css';
 
 const groceries = [

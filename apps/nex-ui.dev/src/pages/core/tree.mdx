@@ -57,7 +57,7 @@ const data = [
 You can import `TreeNodeData` type to define data type for your tree:
 
 ```tsx
-import { TreeNodeData } from '@mantine/core';
+import { TreeNodeData } from '@nex-ui/core';
 
 const data: TreeNodeData[] = [
   {
@@ -256,7 +256,7 @@ it accepts data and an array of expanded nodes values and returns expanded state
 If `'*'` is passed as the second argument to `getTreeExpandedState`, all nodes will be expanded:
 
 ```tsx
-import { getTreeExpandedState } from '@mantine/core';
+import { getTreeExpandedState } from '@nex-ui/core';
 
 // Expand two given nodes
 getTreeExpandedState(data, ['src', 'src/components']);

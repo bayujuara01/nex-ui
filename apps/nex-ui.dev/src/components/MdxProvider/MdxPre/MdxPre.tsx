@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { CodeHighlight, CodeHighlightProps } from '@mantinex/shiki';
+import { CodeHighlight, CodeHighlightProps } from '@nex-uix/shiki';
 import classes from './MdxPre.module.css';
 
 interface PreProps {

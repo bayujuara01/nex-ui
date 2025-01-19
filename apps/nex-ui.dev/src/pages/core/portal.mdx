@@ -15,7 +15,7 @@ and portals are used for components with fixed position, for example, modals.
 
 ```tsx
 import { useState } from 'react';
-import { Portal } from '@mantine/core';
+import { Portal } from '@nex-ui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);
@@ -44,7 +44,7 @@ but still receives `opened` and `onClose` props. The element will not be affecte
 You can specify dom node where portal will be rendered by passing `target` prop:
 
 ```tsx
-import { Portal } from '@mantine/core';
+import { Portal } from '@nex-ui/core';
 
 const container = document.createElement('div');
 document.body.appendChild(container);
@@ -57,7 +57,7 @@ function Demo() {
 Alternatively, you can specify selector to render portal in existing element:
 
 ```tsx
-import { Portal } from '@mantine/core';
+import { Portal } from '@nex-ui/core';
 
 function Demo() {
   return <Portal target="#portal-container">My portal</Portal>;
@@ -77,7 +77,7 @@ All components inside Portal are rendered only after the application was mounted
 It accepts the same props as the `Portal` component:
 
 ```tsx
-import { OptionalPortal } from '@mantine/core';
+import { OptionalPortal } from '@nex-ui/core';
 
 function Demo() {
   return (

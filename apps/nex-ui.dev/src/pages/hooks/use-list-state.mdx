@@ -9,7 +9,7 @@ export default Layout(MDX_DATA.useListState);
 `use-list-state` provides an API to work with list state:
 
 ```tsx
-import { useListState } from '@mantine/hooks';
+import { useListState } from '@nex-ui/hooks';
 
 const [values, handlers] = useListState([{ a: 1 }]);
 
@@ -134,7 +134,7 @@ The type is useful when you want to pass `use-list-state` handlers to child comp
 as a prop:
 
 ```tsx
-import { UseListStateHandlers } from '@mantine/hooks';
+import { UseListStateHandlers } from '@nex-ui/hooks';
 
 interface Props {
   handlers: UseListStateHandlers<string>;
@@ -155,7 +155,7 @@ By default, `use-list-state` will use type from `initialValues`.
 If you call the hook with an empty array, you must specify item type:
 
 ```tsx
-import { useListState } from '@mantine/hooks';
+import { useListState } from '@nex-ui/hooks';
 
 useListState(['hello']); // ok, item type is string
 useListState([]); // not ok, item type is any

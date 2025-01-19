@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import {
   CarouselDemos,
   CodeHighlightDemos,
@@ -30,7 +30,7 @@ packages are now shipped with native CSS files which can be imported from `@mant
 for example:
 
 ```tsx
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 ```
 
 This change improves performance, reduces bundle size of the library and allows using Mantine
@@ -58,18 +58,18 @@ All components now support system color scheme – when `colorScheme` value is `
 components will use `prefers-color-scheme` media query to determine if the user prefers light or dark color scheme.
 
 Note that `auto` is not the default value. You need to set it manually to enable system color scheme support
-both on [MantineProvider](/theming/mantine-provider) and in [ColorSchemeScript](/theming/color-schemes#colorschemescript):
+both on [NexProvider](/theming/mantine-provider) and in [ColorSchemeScript](/theming/color-schemes#colorschemescript):
 
 ```tsx
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
     <>
       <ColorSchemeScript defaultColorScheme="auto" />
-      <MantineProvider defaultColorScheme="auto">
+      <NexProvider defaultColorScheme="auto">
         {/* Your app here */}
-      </MantineProvider>
+      </NexProvider>
     </>
   );
 }
@@ -77,7 +77,7 @@ function Demo() {
 
 ## Built-in color scheme manager
 
-[MantineProvider](/theming/mantine-provider) now comes with a built-in color scheme manager.
+[NexProvider](/theming/mantine-provider) now comes with a built-in color scheme manager.
 It is no longer required to use any other components to set up color scheme logic.
 Color scheme can be changed with [useMantineColorScheme hook](/theming/color-schemes#use-mantine-color-scheme-hook):
 
@@ -111,7 +111,7 @@ You can now use Mantine as a [headless](/styles/unstyled) library. To achieve th
 override, it will give you autocomplete for all theme properties:
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   fontFamily: 'sans-serif',
@@ -120,9 +120,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -136,9 +136,9 @@ on [theme](/theming/theme-object):
 ```tsx
 import {
   createTheme,
-  MantineProvider,
+  NexProvider,
   TextInput,
-} from '@mantine/core';
+} from '@nex-ui/core';
 import classes from './Demo.module.css';
 
 const theme = createTheme({
@@ -165,9 +165,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -226,7 +226,7 @@ to set `scale` to `1 / (10 / 16)` (16 – default font-size) = `1 / 0.625` = `1.
 ```
 
 ```tsx
-import { createTheme, MantineProvider } from '@mantine/core';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   scale: 1.6,
@@ -234,9 +234,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -267,7 +267,7 @@ find [Button](/core/button) classes in `Button.classes`:
 You can use these classes to create components with the same styles as Mantine components:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return <button type="button" className={Button.classes.root} />;
@@ -296,8 +296,8 @@ color palettes based on single color value. It is also available as [online tool
 Note that it is usually better to generate colors in advance to avoid contrast issues.
 
 ```tsx
-import { generateColors } from '@mantine/colors-generator';
-import { createTheme, MantineProvider } from '@mantine/core';
+import { generateColors } from '@nex-ui/colors-generator';
+import { createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   colors: {
@@ -307,9 +307,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -332,7 +332,7 @@ Components that previously had `rightSection` and `icon` props, now use `leftSec
 Example of [Button](/core/button) sections:
 
 ```tsx
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 function Demo() {
   return (

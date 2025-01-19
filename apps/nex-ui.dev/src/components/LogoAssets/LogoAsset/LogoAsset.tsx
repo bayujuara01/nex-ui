@@ -1,5 +1,5 @@
-import { Button, Group } from '@mantine/core';
-import { useClipboard } from '@mantine/hooks';
+import { Button, Group } from '@nex-ui/core';
+import { useClipboard } from '@nex-ui/hooks';
 import classes from './LogoAsset.module.css';
 
 export interface LogoAssetProps extends React.ComponentPropsWithoutRef<'div'> {

@@ -12,7 +12,7 @@ Style props add styles to the **root** element, if you need to style nested elem
 use [Styles API](/styles/styles-api/) instead.
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -35,7 +35,7 @@ Some style props can reference values from theme, for example `mt` will use `the
 if you set `xs`, `sm`, `md`, `lg`, `xl`:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -62,7 +62,7 @@ function Demo() {
 In `c`, `bd` and `bg` props you can reference colors from `theme.colors`:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -108,7 +108,7 @@ Responsive values are calculated the following way:
 - `xs`, `sm`, `md`, `lg`, `xl` values are used when the viewport width is larger that the value of corresponding breakpoint specified in [theme.breakpoints](/styles/responsive/)
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 function Demo() {
   return <Box w={{ base: 320, sm: 480, lg: 640 }} />;

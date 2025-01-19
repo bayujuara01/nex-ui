@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import { render } from '@mantine-tests/core';
+import { render } from '@nex-ui-tests/core';
 
 interface Options {
   component: React.ComponentType<any>;

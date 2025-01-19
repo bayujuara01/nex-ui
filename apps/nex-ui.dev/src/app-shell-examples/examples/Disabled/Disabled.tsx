@@ -1,6 +1,6 @@
-import { AppShell, Burger, Button, Group, Skeleton } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { AppShell, Burger, Button, Group, Skeleton } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineLogo } from '@nex-uix/nex-ui-logo';
 
 export function Disabled() {
   const [opened, { toggle }] = useDisclosure();

@@ -16,7 +16,7 @@ export default Layout(MDX_DATA.formStatus);
 ## isTouched and isDirty functions
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -45,7 +45,7 @@ It accepts two options:
 Example of using `focus` trigger:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -68,7 +68,7 @@ You can provide initial touched and dirty values with `initialTouched` and `init
 Both properties support [the same fields path format as errors](/form/errors/):
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -84,7 +84,7 @@ const form = useForm({
 Note that `form.reset` will also reset `touched` and `dirty` state:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -106,7 +106,7 @@ form.isDirty('a'); // -> false
 To reset values that are used for dirty check call `form.resetDirty` with new values:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -134,7 +134,7 @@ form.isDirty(); // -> true
 You can also manually set `form.submitting` to `true` or `false`:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({ mode: 'uncontrolled' });
 form.submitting; // -> false

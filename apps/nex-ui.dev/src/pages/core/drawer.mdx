@@ -34,7 +34,7 @@ You can change drawer width/height (depends on `position`) by setting `size` pro
 for example, `size="55%"` or `size={200}`:
 
 ```tsx
-import { Drawer } from '@mantine/core';
+import { Drawer } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -109,7 +109,7 @@ package to lock scroll. You can pass props down to the `RemoveScroll` component
 with `removeScrollProps`:
 
 ```tsx
-import { Drawer } from '@mantine/core';
+import { Drawer } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -196,7 +196,7 @@ interface UseDrawersStackReturnType<T extends string> {
 Example of using `useDrawersStack` with `Drawer` component:
 
 ```tsx
-import { Drawer, useDrawersStack } from '@mantine/core';
+import { Drawer, useDrawersStack } from '@nex-ui/core';
 
 function Demo() {
   const stack = useDrawersStack(['first', 'second']);
@@ -217,7 +217,7 @@ function Demo() {
 package to lock scroll. To properly size these `elements` add a `className` to them ([documentation](https://github.com/theKashey/react-remove-scroll#positionfixed-elements)):
 
 ```tsx
-import { RemoveScroll } from '@mantine/core';
+import { RemoveScroll } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -240,7 +240,7 @@ function Demo() {
 Set `title` props to make component accessible, will add `aria-labelledby` to the content element:
 
 ```tsx
-import { Drawer } from '@mantine/core';
+import { Drawer } from '@nex-ui/core';
 
 function Demo() {
   return <Drawer title="Drawer label" opened onClose={() => {}} />;
@@ -250,7 +250,7 @@ function Demo() {
 To set close button `aria-label` use `closeButtonProps`:
 
 ```tsx
-import { Drawer } from '@mantine/core';
+import { Drawer } from '@nex-ui/core';
 
 function Demo() {
   return (

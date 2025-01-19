@@ -1,6 +1,6 @@
-import { InlineCodeHighlight } from '@mantine/code-highlight';
-import { em, Tooltip, UnstyledButton } from '@mantine/core';
-import { useClipboard, useMediaQuery } from '@mantine/hooks';
+import { InlineCodeHighlight } from '@nex-ui/code-highlight';
+import { em, Tooltip, UnstyledButton } from '@nex-ui/core';
+import { useClipboard, useMediaQuery } from '@nex-ui/hooks';
 import { HeaderItem } from '../HeaderItem/HeaderItem';
 import classes from './ImportStatement.module.css';
 

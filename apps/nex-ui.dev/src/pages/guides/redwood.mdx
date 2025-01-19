@@ -58,29 +58,29 @@ module.exports = {
 
 ## Setup
 
-Add styles imports, [MantineProvider](/theming/mantine-provider) and [ColorSchemeScript](/theming/color-schemes)
+Add styles imports, [NexProvider](/theming/mantine-provider) and [ColorSchemeScript](/theming/color-schemes)
 to `web/src/App.tsx` file:
 
 ```tsx
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
 import { FatalErrorBoundary, RedwoodProvider } from '@redwoodjs/web';
 import { RedwoodApolloProvider } from '@redwoodjs/web/apollo';
 import FatalErrorPage from 'src/pages/FatalErrorPage';
 import Routes from 'src/Routes';
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, NexProvider } from '@nex-ui/core';
 
 const App = () => (
   <FatalErrorBoundary page={FatalErrorPage}>
     <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
       <ColorSchemeScript />
-      <MantineProvider>
+      <NexProvider>
         <RedwoodApolloProvider>
           <Routes />
         </RedwoodApolloProvider>
-      </MantineProvider>
+      </NexProvider>
     </RedwoodProvider>
   </FatalErrorBoundary>
 );

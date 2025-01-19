@@ -1,4 +1,4 @@
-import { CloseButton } from '@mantine/core';
+import { CloseButton } from '@nex-ui/core';
 import { countriesData, flags } from './countries-data';
 import classes from './CountryPill.module.css';
 

@@ -23,7 +23,7 @@ Each form rule receives the following arguments:
 for example you can get index of array element:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -57,7 +57,7 @@ from the validation results.
 To validate all fields on change set `validateInputOnChange` option to `true`:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -70,7 +70,7 @@ const form = useForm({
 You can also provide an array of fields paths to validate only those values:
 
 ```tsx
-import { FORM_INDEX, useForm } from '@mantine/form';
+import { FORM_INDEX, useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -92,7 +92,7 @@ const form = useForm({
 To validate all fields on blur set `validateInputOnBlur` option to `true`:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -105,7 +105,7 @@ const form = useForm({
 You can also provide an array of fields paths to validate only those values:
 
 ```tsx
-import { FORM_INDEX, useForm } from '@mantine/form';
+import { FORM_INDEX, useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -123,7 +123,7 @@ const form = useForm({
 By default, field error is cleared when value changes. To change this, set `clearInputErrorOnChange` to `false`:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -152,7 +152,7 @@ for example, you can show a notification:
 `form.validate` it does not set `form.errors` and just returns boolean value that indicates whether form is valid.
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',

@@ -70,7 +70,7 @@ CSS property. It controls how text inside an element is wrapped.
 You can also set `textWrap` on [theme](/theming/theme-object):
 
 ```tsx
-import { createTheme, MantineProvider, Title } from '@mantine/core';
+import { createTheme, NexProvider, Title } from '@nex-ui/core';
 
 const theme = createTheme({
   headings: {
@@ -80,9 +80,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Title>Some very long title that should wrap</Title>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -95,7 +95,7 @@ All components now support `mod` prop, which allows adding data attributes to
 the root element:
 
 ```tsx
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 <Box mod="data-button" />;
 // -> <div data-button />

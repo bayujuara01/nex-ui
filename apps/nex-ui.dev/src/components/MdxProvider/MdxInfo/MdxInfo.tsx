@@ -1,10 +1,10 @@
 import { IconInfoCircle } from '@tabler/icons-react';
 import cx from 'clsx';
-import { Blockquote, BlockquoteProps, rgba, useMantineTheme } from '@mantine/core';
+import { Blockquote, BlockquoteProps, rgba, useNexTheme } from '@nex-ui/core';
 import classes from './MdxInfo.module.css';
 
 export function MdxInfo({ className, ...others }: BlockquoteProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   return (
     <Blockquote
       className={cx(classes.root, className)}

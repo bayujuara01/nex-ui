@@ -1,4 +1,4 @@
-import { Breadcrumbs, Code, STYlE_PROPS_DATA } from '@mantine/core';
+import { Breadcrumbs, Code, STYlE_PROPS_DATA } from '@nex-ui/core';
 import { MdxDataTable } from '@/components/MdxProvider';
 
 const THEME_KEYS: Record<string, string> = {

@@ -68,5 +68,27 @@ export function updateImportTest(filePath: string) {
   }
 }
 
+export function updateImportMDX(filePath: string) {
+  const fileExtensions = ['.mdx'];
+
+  if (!fileExtensions.some(extension => filePath.endsWith(extension))) {
+    return;
+  }
+
+  const content = fs.readFileSync(filePath, 'utf8');
+
+  // Regular expression to find and replace the import statement
+  const updatedContent = content.replace(
+    /(import\s+[\s\S]*?\s+from\s+['"])@mantine-tests\/([^'"]+)(['"])/g,
+    '$1@nex-ui-tests/$2$3'
+  );
+
+  if (content !== updatedContent) {
+    fs.writeFileSync(filePath, updatedContent, 'utf8');
+    logger.log(`Updated test imports in: ${filePath}`);
+  }
+}
+
 // Starting point
 export const componentsDir = './packages';
+export const appsDir = './apps';

@@ -1,4 +1,4 @@
-import { Box, Text } from '@mantine/core';
+import { Box, Text } from '@nex-ui/core';
 import { AccordionDemo, TimelineBase } from '@docs/demos';
 
 export function Content() {

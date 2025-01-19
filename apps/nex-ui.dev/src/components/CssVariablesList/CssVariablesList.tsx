@@ -1,4 +1,4 @@
-import { Code, DEFAULT_THEME, defaultCssVariablesResolver, keys } from '@mantine/core';
+import { Code, DEFAULT_THEME, defaultCssVariablesResolver, keys } from '@nex-ui/core';
 import { MdxDataTable, MdxTitle } from '../MdxProvider';
 import { CssVariableColorSwatch } from './CssVariableColorSwatch/CssVariableColorSwatch';
 

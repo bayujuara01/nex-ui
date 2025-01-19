@@ -13,7 +13,7 @@ Install with yarn:
 After installation import package styles at the root of your application:
 
 ```tsx
-import '@mantine/tiptap/styles.css';
+import '@nex-ui/tiptap/styles.css';
 ```
 
 ## TipTap editor
@@ -47,7 +47,7 @@ to `useEditor` hook:
 ```tsx
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { RichTextEditor as MantineRichTextEditor } from '@mantine/tiptap';
+import { RichTextEditor as MantineRichTextEditor } from '@nex-ui/tiptap';
 
 interface RichTextEditorProps {
   value: string;
@@ -150,7 +150,7 @@ To use placeholder you will need to install [@tiptap/extension-placeholder](http
 ```tsx
 // Use Link extension exported from the @mantine/tiptap package
 import { useEditor } from '@tiptap/react';
-import { Link, RichTextEditor } from '@mantine/tiptap';
+import { Link, RichTextEditor } from '@nex-ui/tiptap';
 
 function Demo() {
   const editor = useEditor({
@@ -205,7 +205,7 @@ You can disable these styles by setting `withTypographyStyles={false}`:
 
 ```tsx
 import { useEditor } from '@tiptap/react';
-import { RichTextEditor } from '@mantine/tiptap';
+import { RichTextEditor } from '@nex-ui/tiptap';
 
 function Demo() {
   const editor = useEditor({
@@ -257,8 +257,8 @@ the context. This hook can be used to create custom control or run any operation
 by the Tiptap [editor API](https://tiptap.dev/api/editor).
 
 ```tsx
-import { Button } from '@mantine/core';
-import { useRichTextEditorContext } from '@mantine/tiptap';
+import { Button } from '@nex-ui/core';
+import { useRichTextEditorContext } from '@nex-ui/tiptap';
 
 function Demo() {
   const { editor } = useRichTextEditorContext();
@@ -293,7 +293,7 @@ that must handle `size` prop:
 
 ```tsx
 import { useEditor } from '@tiptap/react';
-import { RichTextEditor } from '@mantine/tiptap';
+import { RichTextEditor } from '@nex-ui/tiptap';
 
 function Demo() {
   const editor = useEditor({
@@ -457,7 +457,7 @@ export interface RichTextEditorLabels {
 Default labels (can be imported from `@mantine/tiptap` package):
 
 ```tsx
-import { RichTextEditorLabels } from '@mantine/tiptap';
+import { RichTextEditorLabels } from '@nex-ui/tiptap';
 
 export const DEFAULT_LABELS: RichTextEditorLabels = {
   // Controls labels

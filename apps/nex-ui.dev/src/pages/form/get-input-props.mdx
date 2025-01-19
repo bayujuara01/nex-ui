@@ -19,8 +19,8 @@ You can pass the following options to `form.getInputProps` as second argument:
 - Any additional props that can be accessed with `enhanceGetInputProps` function. These props are not passed to the input.
 
 ```tsx
-import { Checkbox, TextInput } from '@mantine/core';
-import { useForm } from '@mantine/form';
+import { Checkbox, TextInput } from '@nex-ui/core';
+import { useForm } from '@nex-ui/form';
 
 function Demo() {
   const form = useForm({
@@ -85,7 +85,7 @@ Example with [TanStack Query](https://tanstack.com/query/latest) (react-query):
 ```tsx
 import { useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 function Demo() {
   const query = useQuery({
@@ -162,7 +162,7 @@ export function CustomInput({
 Then use it with `form.getInputProps`:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 import { CustomInput } from './CustomInput';
 
 function Demo() {

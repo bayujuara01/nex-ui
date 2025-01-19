@@ -20,7 +20,7 @@ The hook returns a `ref` object that must be passed to the element
 based on which outside clicks should be captured.
 
 ```tsx
-import { useClickOutside } from '@mantine/hooks';
+import { useClickOutside } from '@nex-ui/hooks';
 
 function Example() {
   const handleClickOutside = () =>
@@ -42,8 +42,8 @@ you can change these events by passing an array of events as second argument:
 ```tsx
 // Will work only with useState, not useRef
 import { useState } from 'react';
-import { Portal } from '@mantine/core';
-import { useClickOutside } from '@mantine/hooks';
+import { Portal } from '@nex-ui/core';
+import { useClickOutside } from '@nex-ui/hooks';
 
 function Demo() {
   const [dropdown, setDropdown] = useState<HTMLDivElement | null>(
@@ -71,7 +71,7 @@ function Demo() {
 ## Set ref type
 
 ```tsx
-import { useClickOutside } from '@mantine/hooks';
+import { useClickOutside } from '@nex-ui/hooks';
 
 const ref = useClickOutside<HTMLDivElement>(() =>
   console.log('Click outside')

@@ -50,17 +50,17 @@ module.exports = {
 
 ## Setup
 
-Add styles imports and [MantineProvider](/theming/mantine-provider/) to your application root component (usually `App.tsx`):
+Add styles imports and [NexProvider](/theming/mantine-provider/) to your application root component (usually `App.tsx`):
 
 ```tsx
 // Import styles of packages that you've installed.
 // All packages except `@mantine/hooks` require styles imports
-import '@mantine/core/styles.css';
+import '@nex-ui/core/styles.css';
 
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 export default function App() {
-  return <MantineProvider>{/* Your app here */}</MantineProvider>;
+  return <NexProvider>{/* Your app here */}</NexProvider>;
 }
 ```
 

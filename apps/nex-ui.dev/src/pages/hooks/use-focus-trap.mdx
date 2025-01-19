@@ -9,7 +9,7 @@ export default Layout(MDX_DATA.useFocusTrap);
 Node must include at least one focusable element. When the node unmounts, the focus trap is automatically released.
 
 ```tsx
-import { useFocusTrap } from '@mantine/hooks';
+import { useFocusTrap } from '@nex-ui/hooks';
 
 function Demo() {
   const focusTrapRef = useFocusTrap();
@@ -27,7 +27,7 @@ function Demo() {
 The hook accepts focus trap active state as a single argument:
 
 ```tsx
-import { useFocusTrap } from '@mantine/hooks';
+import { useFocusTrap } from '@nex-ui/hooks';
 
 useFocusTrap(); // -> focus trap inactive
 useFocusTrap(true); // -> focus trap active
@@ -38,8 +38,8 @@ useFocusTrap(false); // -> focus trap disabled
 The hook returns `ref` that should be passed to the element:
 
 ```tsx
-import { Paper } from '@mantine/core';
-import { useFocusTrap } from '@mantine/hooks';
+import { Paper } from '@nex-ui/core';
+import { useFocusTrap } from '@nex-ui/hooks';
 
 function Demo() {
   const focusTrapRef = useFocusTrap();
@@ -66,7 +66,7 @@ import {
   useClickOutside,
   useFocusTrap,
   useMergedRef,
-} from '@mantine/hooks';
+} from '@nex-ui/hooks';
 
 function Demo() {
   const myRef = useRef();
@@ -88,7 +88,7 @@ By default, focus trap will move focus to the first interactive element.
 To specify the element that should receive initial focus, add `data-autofocus` attribute:
 
 ```tsx
-import { useFocusTrap } from '@mantine/hooks';
+import { useFocusTrap } from '@nex-ui/hooks';
 
 function Demo() {
   const focusTrapRef = useFocusTrap();

@@ -14,10 +14,10 @@ Colors are exposed on the [theme object](/theming/theme-object) as an array of s
 you can access color shade by color name and index (0-9), colors with larger index are darker:
 
 ```tsx
-import { useMantineTheme } from '@mantine/core';
+import { useNexTheme } from '@nex-ui/core';
 
 function Demo() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   return (
     <div
@@ -81,7 +81,7 @@ Use `colorsTuple` function to:
 - Transform dynamic string arrays to Mantine color tuple (the array should still have 10 values)
 
 ```tsx
-import { colorsTuple, createTheme } from '@mantine/core';
+import { colorsTuple, createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   colors: {
@@ -121,17 +121,17 @@ Example of adding oklch color to theme:
 > You cannot assign CSS color values, for example, the following code will throw an error during theme merging:
 >
 > ```tsx
-> import { MantineProvider } from '@mantine/core';
+> import { NexProvider } from '@nex-ui/core';
 >
 > function Demo() {
 >   return (
->     <MantineProvider
+>     <NexProvider
 >       theme={{
 >         primaryColor: '#CEFEDC', // This will throw an error
 >       }}
 >     >
 >       {/* Your app here */}
->     </MantineProvider>
+>     </NexProvider>
 >   );
 > }
 > ```
@@ -145,13 +145,13 @@ Example of adding oklch color to theme:
 You can also customize primary shade for dark and light color schemes separately:
 
 ```tsx
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider theme={{ primaryShade: { light: 6, dark: 8 } }}>
+    <NexProvider theme={{ primaryShade: { light: 6, dark: 8 } }}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -243,12 +243,12 @@ colors with poor contrast for lighter colors (yellow, teal, orange). Usually, it
 colors in advance to avoid contrast issues.
 
 ```tsx
-import { generateColors } from '@mantine/colors-generator';
-import { MantineProvider } from '@mantine/core';
+import { generateColors } from '@nex-ui/colors-generator';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider
+    <NexProvider
       theme={{
         colors: {
           'pale-blue': generateColors('#375EAC'),
@@ -256,7 +256,7 @@ function Demo() {
       }}
     >
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -273,14 +273,14 @@ TypeScript will only autocomplete Mantine's default colors when accessing the th
 import {
   DefaultMantineColor,
   MantineColorsTuple,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 type ExtendedCustomColors =
   | 'primaryColorName'
   | 'secondaryColorName'
   | DefaultMantineColor;
 
-declare module '@mantine/core' {
+declare module '@nex-ui/core' {
   export interface MantineThemeColorsOverride {
     colors: Record<ExtendedCustomColors, MantineColorsTuple>;
   }

@@ -9,7 +9,7 @@ export default Layout(MDX_DATA.useUncontrolled);
 `use-uncontrolled` manages state for both controlled and uncontrolled components:
 
 ```tsx
-import { useUncontrolled } from '@mantine/hooks';
+import { useUncontrolled } from '@nex-ui/hooks';
 
 interface CustomInputProps {
   value?: string;
@@ -44,7 +44,7 @@ function CustomInput({
 By default, the hook will set type automatically, but you can provide your own type:
 
 ```tsx
-import { useUncontrolled } from '@mantine/hooks';
+import { useUncontrolled } from '@nex-ui/hooks';
 
 function Demo() {
   const [_value, handleChange] = useUncontrolled<number>({

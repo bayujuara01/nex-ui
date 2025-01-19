@@ -16,7 +16,7 @@ import {
   useClickOutside,
   useFocusTrap,
   useMergedRef,
-} from '@mantine/hooks';
+} from '@nex-ui/hooks';
 
 function Demo() {
   const myRef = useRef();
@@ -41,7 +41,7 @@ across two renders. To fix that issue, use `mergeRefs` function instead:
 
 ```tsx
 import { useRef } from 'react';
-import { mergeRefs, useClickOutside } from '@mantine/hooks';
+import { mergeRefs, useClickOutside } from '@nex-ui/hooks';
 
 function Demo() {
   const myRef = useRef();
@@ -63,7 +63,7 @@ It is usually used to assign refs that do not reference elements:
 
 ```tsx
 import { useState } from 'react';
-import { assignRef } from '@mantine/hooks';
+import { assignRef } from '@nex-ui/hooks';
 
 interface NumberInputHandlers {
   increment: () => void;
@@ -94,7 +94,7 @@ function Demo({ handlersRef }: DemoProps) {
 ## Set node type
 
 ```tsx
-import { useMergedRef } from '@mantine/hooks';
+import { useMergedRef } from '@nex-ui/hooks';
 
 const ref = useMergedRef<HTMLDivElement>();
 ```

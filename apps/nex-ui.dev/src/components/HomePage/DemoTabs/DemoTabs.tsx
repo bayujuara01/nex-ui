@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { IconForms } from '@tabler/icons-react';
-import { Box, Container, Grid, rem, Text, UnstyledButton, useMantineTheme } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { Box, Container, Grid, rem, Text, UnstyledButton, useNexTheme } from '@nex-ui/core';
+import { useMediaQuery } from '@nex-ui/hooks';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import classes from './DemoTabs.module.css';
 
@@ -19,7 +19,7 @@ export function DemoTabs({ data, title }: DemoTabsProps) {
   const [shouldAnimate, setShouldAnimate] = useState(false);
   const animationTimeout = useRef<number>(-1);
   const [active, setActive] = useState(0);
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const controlSize = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`) ? 60 : 80;
 
   const handleActiveChange = (index: number) => {

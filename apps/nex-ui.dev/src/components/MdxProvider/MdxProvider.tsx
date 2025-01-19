@@ -1,5 +1,5 @@
 import { MDXProvider } from '@mdx-js/react';
-import { Demo } from '@mantinex/demo';
+import { Demo } from '@nex-uix/demo';
 import { MdxDataTable } from './MdxDataTable/MdxDataTable';
 import { MdxExamplesButton } from './MdxExamplesButton/MdxExamplesButton';
 import { MdxInfo } from './MdxInfo/MdxInfo';

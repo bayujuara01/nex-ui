@@ -12,7 +12,7 @@ export default Layout(MDX_DATA.Switch);
 
 ```tsx
 import { useState } from 'react';
-import { Switch } from '@mantine/core';
+import { Switch } from '@nex-ui/core';
 
 function Demo() {
   const [checked, setChecked] = useState(false);
@@ -49,7 +49,7 @@ By default, switch input and label have `cursor: default` (same as native `input
 To change cursor to pointer, set `cursorType` on [theme](/theming/theme-object/):
 
 ```tsx
-import { createTheme, MantineProvider, Switch } from '@mantine/core';
+import { createTheme, NexProvider, Switch } from '@nex-ui/core';
 
 const theme = createTheme({
   cursorType: 'pointer',
@@ -57,9 +57,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Switch label="Pointer cursor" />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```
@@ -74,7 +74,7 @@ function Demo() {
 
 ```tsx
 import { useState } from 'react';
-import { Switch } from '@mantine/core';
+import { Switch } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string[]>([]);
@@ -96,7 +96,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { Switch } from '@mantine/core';
+import { Switch } from '@nex-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>(null);
@@ -109,7 +109,7 @@ function Demo() {
 `Switch` is a regular `input[type="checkbox"]`. Set `aria-label` if the `Switch` is used without `label` prop:
 
 ```tsx
-import { Switch } from '@mantine/core';
+import { Switch } from '@nex-ui/core';
 
 // -> not ok, input is not labeled
 function Bad() {

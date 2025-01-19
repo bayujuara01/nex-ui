@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 import { IconHeartFilled } from '@tabler/icons-react';
 import { ActionIconDemos, TableDemos, BarChartDemos, ModalsDemos, FormDemos, TipTapDemos, ModalDemos, HooksDemos, DatePickerDemos } from '@docs/demos';
 import { Layout } from '@/layout';
@@ -80,7 +80,7 @@ and `form.setSubmitting` function to track form submission state.
 You can also manually set `form.submitting` to `true` or `false`:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({ mode: 'uncontrolled' });
 form.submitting; // -> false
@@ -105,7 +105,7 @@ to `useForm` hook. It can have the following values:
 - `validation-failed` - call `event.preventDefault()` only if validation failed
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -144,11 +144,11 @@ data after modal is closed:
 Example of adding custom variant type to [Button](/core/button) component:
 
 ```tsx
-import { ButtonVariant, MantineSize } from '@mantine/core';
+import { ButtonVariant, MantineSize } from '@nex-ui/core';
 
 type ExtendedButtonVariant = ButtonVariant | 'contrast' | 'radial-gradient';
 
-declare module '@mantine/core' {
+declare module '@nex-ui/core' {
   export interface ButtonProps {
     variant?: ExtendedButtonVariant;
   }

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { IconExternalLink } from '@tabler/icons-react';
-import { UnstyledButton } from '@mantine/core';
+import { UnstyledButton } from '@nex-ui/core';
 import classes from './NavbarMainLink.module.css';
 
 interface NavbarMainLinkProps extends React.ComponentPropsWithoutRef<'a'> {

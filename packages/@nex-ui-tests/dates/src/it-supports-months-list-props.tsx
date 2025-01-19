@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { DatesProvider } from '@nex-ui/dates';
-import { render } from '@mantine-tests/core';
+import { render } from '@nex-ui-tests/core';
 
 interface Options {
   component: React.ComponentType<any>;

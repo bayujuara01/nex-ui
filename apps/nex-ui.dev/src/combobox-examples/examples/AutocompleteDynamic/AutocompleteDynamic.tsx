@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Combobox, TextInput, useCombobox } from '@mantine/core';
+import { Combobox, TextInput, useCombobox } from '@nex-ui/core';
 
 export function AutocompleteDynamic() {
   const combobox = useCombobox();

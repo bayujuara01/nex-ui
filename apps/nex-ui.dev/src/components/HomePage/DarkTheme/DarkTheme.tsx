@@ -1,6 +1,6 @@
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
-import { Button, Group, Image, SimpleGrid, Text, useMantineColorScheme } from '@mantine/core';
-import { CodeHighlight } from '@mantinex/shiki';
+import { Button, Group, Image, SimpleGrid, Text, useMantineColorScheme } from '@nex-ui/core';
+import { CodeHighlight } from '@nex-uix/shiki';
 import { PageSection } from '../PageSection/PageSection';
 import image from './dark-theme-image.png';
 import classes from './DarkTheme.module.css';
@@ -9,13 +9,13 @@ export function DarkTheme() {
   const { toggleColorScheme } = useMantineColorScheme();
 
   const code = `
-import { MantineProvider } from '@mantine/core';
+import { NexProvider } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <MantineProvider defaultColorScheme="dark">
+    <NexProvider defaultColorScheme="dark">
       <App />
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;

@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { Code } from '@mantine/core';
+import { Code } from '@nex-ui/core';
 import classes from './MdxTypography.module.css';
 
 export function MdxParagraph({ className, ...others }: React.ComponentPropsWithoutRef<'p'>) {

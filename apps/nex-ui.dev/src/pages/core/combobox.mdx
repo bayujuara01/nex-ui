@@ -27,7 +27,7 @@ The component is very flexible – you have full control of the rendering and lo
 and handlers to update it. Created store must be passed to the `store` prop of `Combobox`:
 
 ```tsx
-import { Combobox, useCombobox } from '@mantine/core';
+import { Combobox, useCombobox } from '@nex-ui/core';
 
 function Demo() {
   const combobox = useCombobox();
@@ -69,7 +69,7 @@ interface UseComboboxOptions {
 You can import `UseComboboxOptions` type from `@mantine/core` package:
 
 ```tsx
-import type { UseComboboxOptions } from '@mantine/core';
+import type { UseComboboxOptions } from '@nex-ui/core';
 ```
 
 ## Combobox store
@@ -155,7 +155,7 @@ interface ComboboxStore {
 You can import `ComboboxStore` type from `@mantine/core` package:
 
 ```tsx
-import type { ComboboxStore } from '@mantine/core';
+import type { ComboboxStore } from '@nex-ui/core';
 ```
 
 ## useCombobox handlers
@@ -164,7 +164,7 @@ Combobox store handlers can be used to control `Combobox` state.
 For example, to open the dropdown, call `openDropdown` handler:
 
 ```tsx
-import { Button, Combobox, useCombobox } from '@mantine/core';
+import { Button, Combobox, useCombobox } from '@nex-ui/core';
 
 function Demo() {
   const combobox = useCombobox();
@@ -188,7 +188,7 @@ call `selectFirstOption` when the dropdown is opened and `resetSelectedOption`
 when it is closed:
 
 ```tsx
-import { Combobox, useCombobox } from '@mantine/core';
+import { Combobox, useCombobox } from '@nex-ui/core';
 
 function Demo() {
   const combobox = useCombobox({

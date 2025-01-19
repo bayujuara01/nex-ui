@@ -131,7 +131,7 @@ Will be transformed to:
 In `.ts`/`.js` files:
 
 ```tsx
-import { alpha, lighten } from '@mantine/core';
+import { alpha, lighten } from '@nex-ui/core';
 
 alpha('#4578FC', 0.45); // -> rgba(69, 120, 252, 0.45)
 alpha('var(--mantine-color-gray-4)', 0.74);
@@ -182,7 +182,7 @@ Example with [TanStack Query](https://tanstack.com/query/latest) (react-query):
 ```tsx
 import { useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 function Demo() {
   const query = useQuery({
@@ -231,7 +231,7 @@ import {
   object,
   string,
 } from 'valibot';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const schema = object({
   name: string([minLength(2, 'Name should have at least 2 letters')]),
@@ -264,7 +264,7 @@ Nested fields validation
 ```tsx
 import { valibotResolver } from 'mantine-form-valibot-resolver';
 import { minLength, object, string } from 'valibot';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const nestedSchema = object({
   nested: object({
@@ -295,7 +295,7 @@ List fields validation:
 ```tsx
 import { valibotResolver } from 'mantine-form-valibot-resolver';
 import { array, minLength, object, string } from 'valibot';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const listSchema = object({
   list: array(
@@ -363,7 +363,7 @@ CSS variables for primary color are now available, you can use the following var
 asked questions. Currently, it has 14 questions, more FAQs will be added in the next releases.
 
 - [Is there DataGrid component that I can use with Mantine?](https://help.mantine.dev/q/data-grid-i-need)
-- [MantineProvider was not found in component tree. What should I do?](https://help.mantine.dev/q/mantine-provider-missing)
+- [NexProvider was not found in component tree. What should I do?](https://help.mantine.dev/q/mantine-provider-missing)
 - [Can I use Mantine components as server components?](https://help.mantine.dev/q/server-components)
 - [Can I use Mantine with Create React App (CRA)?](https://help.mantine.dev/q/can-i-use-mantine-with-cra)
 - [How can I lint CSS files?](https://help.mantine.dev/q/how-to-setup-stylelint)

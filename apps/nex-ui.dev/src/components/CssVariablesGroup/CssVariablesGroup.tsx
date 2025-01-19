@@ -1,4 +1,4 @@
-import { Code, Table, Text } from '@mantine/core';
+import { Code, Table, Text } from '@nex-ui/core';
 import classes from './CssVariablesGroup.module.css';
 
 interface CssVariableData {

@@ -1,5 +1,5 @@
-import { Button, Container, Overlay, Text, Title } from '@mantine/core';
-import { GithubIcon } from '@mantinex/dev-icons';
+import { Button, Container, Overlay, Text, Title } from '@nex-ui/core';
+import { GithubIcon } from '@nex-uix/dev-icons';
 import banner from './banner.webp';
 import classes from './Banner.module.css';
 

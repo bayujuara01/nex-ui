@@ -1,4 +1,4 @@
-import { Code, Title } from '@mantine/core';
+import { Code, Title } from '@nex-ui/core';
 import { MdxLink, MdxParagraph } from '@/components/MdxProvider';
 import { StylesApiTable } from './StylesApiTable';
 import classes from './StylesApiTable.module.css';

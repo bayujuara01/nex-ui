@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { IconSearch } from '@tabler/icons-react';
-import { ScrollArea, Text, TextInput } from '@mantine/core';
-import { useHotkeys } from '@mantine/hooks';
+import { ScrollArea, Text, TextInput } from '@nex-ui/core';
+import { useHotkeys } from '@nex-ui/hooks';
 import { COMBOBOX_EXAMPLES_DATA } from '../../combobox-examples-data';
 import { ComboboxLinksGroup } from './ComboboxLinksGroup/ComboboxLinksGroup';
 import { getGroupedData } from './get-grouped-data';

@@ -1,8 +1,8 @@
-import { useMantineTheme } from '@mantine/core';
+import { useNexTheme } from '@nex-ui/core';
 import classes from './Jumbotron.module.css';
 
 export function Hero() {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ Use `underline` prop to configure `text-decoration` property. It accepts the fol
 You can also configure `underline` prop for all `Anchor` components with [default props](/theming/default-props):
 
 ```tsx
-import { Anchor, createTheme, MantineProvider } from '@mantine/core';
+import { Anchor, createTheme, NexProvider } from '@nex-ui/core';
 
 const theme = createTheme({
   components: {
@@ -35,9 +35,9 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       {/* Your app here */}
-    </MantineProvider>
+    </NexProvider>
   );
 }
 ```

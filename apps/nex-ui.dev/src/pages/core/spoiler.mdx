@@ -22,7 +22,7 @@ is less than given `maxHeight`.
 
 ```tsx
 import { useState } from 'react';
-import { Spoiler } from '@mantine/core';
+import { Spoiler } from '@nex-ui/core';
 
 function Demo() {
   const [expanded, setExpanded] = useState(false);
@@ -45,7 +45,7 @@ function Demo() {
 Use `onExpandedChange` to subscribe to expanded state changes:
 
 ```tsx
-import { Spoiler } from '@mantine/core';
+import { Spoiler } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -71,7 +71,7 @@ To disable animations, set `transitionDuration={0}`:
 
 ```tsx
 import { useRef } from 'react';
-import { Spoiler } from '@mantine/core';
+import { Spoiler } from '@nex-ui/core';
 
 function Demo() {
   const spoilerControlRef = useRef<HTMLButtonElement>(null);

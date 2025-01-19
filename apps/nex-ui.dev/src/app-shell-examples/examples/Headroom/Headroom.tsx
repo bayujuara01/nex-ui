@@ -1,6 +1,6 @@
-import { AppShell, Group, rem, Text } from '@mantine/core';
-import { useHeadroom } from '@mantine/hooks';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { AppShell, Group, rem, Text } from '@nex-ui/core';
+import { useHeadroom } from '@nex-ui/hooks';
+import { MantineLogo } from '@nex-uix/nex-ui-logo';
 
 const lorem =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ullam, ex cum repellat alias ea nemo. Ducimus ex nesciunt hic ad saepe molestiae nobis necessitatibus laboriosam officia, reprehenderit, earum fugiat?';

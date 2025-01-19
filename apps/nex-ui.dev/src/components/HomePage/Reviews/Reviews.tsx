@@ -1,5 +1,5 @@
 import { IconExternalLink } from '@tabler/icons-react';
-import { Button, Group, SimpleGrid, Space } from '@mantine/core';
+import { Button, Group, SimpleGrid, Space } from '@nex-ui/core';
 import { PageSection } from '../PageSection/PageSection';
 import { Review } from './Review/Review';
 import { reviews } from './reviews-data';

@@ -14,7 +14,7 @@ Dropdown opened state can be controlled with `opened` and `onChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { Menu } from '@mantine/core';
+import { Menu } from '@nex-ui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);
@@ -65,7 +65,7 @@ By default, `Menu.Item` renders as button element, to change that set `component
 Note that the component you pass to `component` prop should allow spreading props to its root element:
 
 ```tsx
-import { Menu } from '@mantine/core';
+import { Menu } from '@nex-ui/core';
 
 // ❌ Will not work with Menu.Item
 function IncorrectItem() {

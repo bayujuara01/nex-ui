@@ -1,5 +1,5 @@
 import { IconCheck, IconCopy } from '@tabler/icons-react';
-import { ActionIcon, Code, CopyButton, Group } from '@mantine/core';
+import { ActionIcon, Code, CopyButton, Group } from '@nex-ui/core';
 import CSS_FILES_LIST from '@/.docgen/css-exports.json';
 import { MdxDataTable } from '../MdxProvider';
 
@@ -7,8 +7,8 @@ export function CssFilesList() {
   const files = ['global.css', ...CSS_FILES_LIST.modules].map((file) => [
     file.replace('.css', ''),
     <Group>
-      <Code style={{ whiteSpace: 'nowrap' }}>{`import '@mantine/core/styles/${file}';`}</Code>
-      <CopyButton value={`import '@mantine/core/styles/${file}';`}>
+      <Code style={{ whiteSpace: 'nowrap' }}>{`import '@nex-ui/core/styles/${file}';`}</Code>
+      <CopyButton value={`import '@nex-ui/core/styles/${file}';`}>
         {({ copy, copied }) => (
           <ActionIcon
             variant={copied ? 'filled' : 'default'}

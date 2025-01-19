@@ -11,8 +11,8 @@ import {
   rem,
   Switch,
   TextInput,
-} from '@mantine/core';
-import { useClipboard } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useClipboard } from '@nex-ui/hooks';
 import { COLORS_PRESET } from './colors-preset';
 import classes from './ColorsInput.module.css';
 

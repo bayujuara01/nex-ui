@@ -19,7 +19,7 @@ export function HomePage() {
   return (
     <>
       <Head>
-        <title>Mantine</title>
+        <title>Nex UI</title>
       </Head>
       <Shell mobileNavbarOnly>
         <div className={classes.root}>

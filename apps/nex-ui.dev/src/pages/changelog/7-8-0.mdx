@@ -72,7 +72,7 @@ With uncontrolled mode, you can not access `form.values` as a state variable,
 instead, you can use `form.getValues()` method to get current form values at any time:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -89,7 +89,7 @@ form.getValues(); // { name: 'John Smith' }
 after state updates:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -129,7 +129,7 @@ an object to the `middlewares` prop. For example, to change [shift](https://floa
 middleware padding to `20px` use the following configuration:
 
 ```tsx
-import { Popover } from '@mantine/core';
+import { Popover } from '@nex-ui/core';
 
 function Demo() {
   return (

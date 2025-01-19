@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Text } from '@mantine/core';
+import { Text } from '@nex-ui/core';
 import classes from './LinksGroup.module.css';
 
 export interface LinksGroupProps {

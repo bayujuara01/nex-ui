@@ -11,7 +11,7 @@ export default Layout(MDX_DATA.Spotlight);
 After installation import package styles at the root of your application:
 
 ```tsx
-import '@mantine/spotlight/styles.css';
+import '@nex-ui/spotlight/styles.css';
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ It is used as a search on mantine.dev website, you can trigger it with `Ctrl + K
 `@mantine/spotlight` package exports an object with actions that can be used to control the spotlight:
 
 ```tsx
-import { spotlight } from '@mantine/spotlight';
+import { spotlight } from '@nex-ui/spotlight';
 
 spotlight.open(); // -> opens spotlight
 spotlight.close(); // -> closes spotlight
@@ -38,8 +38,8 @@ These actions can be passed to event listeners or used anywhere in your applicat
 (not limited to React components):
 
 ```tsx
-import { Button } from '@mantine/core';
-import { spotlight } from '@mantine/spotlight';
+import { Button } from '@nex-ui/core';
+import { spotlight } from '@nex-ui/spotlight';
 
 function Demo() {
   return <Button onClick={spotlight.open}>Open spotlight</Button>;
@@ -53,7 +53,7 @@ import {
   closeSpotlight,
   openSpotlight,
   toggleSpotlight,
-} from '@mantine/spotlight';
+} from '@nex-ui/spotlight';
 
 openSpotlight(); // same as spotlight.open()
 closeSpotlight(); // same as spotlight.close()
@@ -66,8 +66,8 @@ toggleSpotlight(); // same as spotlight.toggle()
 in your application. In case you need multiple spotlights, you need to create your own store for each of them:
 
 ```tsx
-import { Button } from '@mantine/core';
-import { createSpotlight, Spotlight } from '@mantine/spotlight';
+import { Button } from '@nex-ui/core';
+import { createSpotlight, Spotlight } from '@nex-ui/spotlight';
 
 // You can import `firstSpotlight` and `secondSpotlight` anywhere
 // in your application and use `open`, `close` and `toggle` actions
@@ -99,7 +99,7 @@ By default, `Ctrl + K` and `Cmd + K` shortcuts are used to open spotlight, you c
 with `shortcut` prop:
 
 ```tsx
-import { Spotlight } from '@mantine/spotlight';
+import { Spotlight } from '@nex-ui/spotlight';
 
 function SingleShortcut() {
   return <Spotlight shortcut="mod + J" actions={[]} />;
@@ -178,7 +178,7 @@ For example, with compound components pattern you can customize actions contents
 package to lock scroll. To properly size these `elements` add a `className` to them ([documentation](https://github.com/theKashey/react-remove-scroll#positionfixed-elements)):
 
 ```tsx
-import { RemoveScroll } from '@mantine/core';
+import { RemoveScroll } from '@nex-ui/core';
 
 function Demo() {
   return (

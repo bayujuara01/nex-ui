@@ -1,10 +1,10 @@
-import { Badge, Button, Group } from '@mantine/core';
-import { CodeHighlight } from '@mantinex/shiki';
+import { Badge, Button, Group } from '@nex-ui/core';
+import { CodeHighlight } from '@nex-uix/shiki';
 import { PageSection } from '../PageSection/PageSection';
 import classes from './Theming.module.css';
 
 const code = `
-import { Badge, Button, MantineProvider, createTheme } from '@mantine/core';
+import { Badge, Button, NexProvider, createTheme } from '@nex-ui/core';
 
 const theme = createTheme({
   fontFamily: 'Greycliff CF, sans-serif',
@@ -16,10 +16,10 @@ const theme = createTheme({
 
 function Demo() {
   return (
-    <MantineProvider theme={theme}>
+    <NexProvider theme={theme}>
       <Button color="ocean-blue">Ocean blue button</Button>
       <Badge color="bright-pink" variant="filled">Bright pink badge</Badge>
-    </MantineProvider>
+    </NexProvider>
   );
 }
 `;

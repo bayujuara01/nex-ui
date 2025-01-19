@@ -1,5 +1,5 @@
 import { IconExternalLink } from '@tabler/icons-react';
-import { ActionIcon, Avatar, Card, Group, Text } from '@mantine/core';
+import { ActionIcon, Avatar, Card, Group, Text } from '@nex-ui/core';
 import { ReviewData } from '../reviews-data';
 import classes from './Review.module.css';
 

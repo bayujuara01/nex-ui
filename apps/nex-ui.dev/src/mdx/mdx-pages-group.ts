@@ -6,7 +6,7 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
   {
     group: 'theming',
     pages: [
-      MDX_DATA.MantineProvider,
+      MDX_DATA.NexProvider,
       MDX_DATA.ThemeObject,
       MDX_DATA.Colors,
       MDX_DATA.ColorSchemes,

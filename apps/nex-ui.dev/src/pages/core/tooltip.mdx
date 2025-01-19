@@ -16,7 +16,7 @@ Custom components must provide a prop to get root element ref,
 all Mantine components support ref out of the box.
 
 ```tsx
-import { Badge, Tooltip } from '@mantine/core';
+import { Badge, Tooltip } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -55,7 +55,7 @@ Custom components that are rendered inside `Tooltip` are required to support `re
 
 ```tsx
 // Example of code that WILL NOT WORK
-import { Tooltip } from '@mantine/core';
+import { Tooltip } from '@nex-ui/core';
 
 function MyComponent() {
   return <div>My component</div>;
@@ -76,7 +76,7 @@ Use `forwardRef` function to forward ref to root element:
 ```tsx
 // Example of code that will work
 import { forwardRef } from 'react';
-import { Tooltip } from '@mantine/core';
+import { Tooltip } from '@nex-ui/core';
 
 const MyComponent = forwardRef<HTMLDivElement>((props, ref) => (
   <div ref={ref} {...props}>
@@ -136,7 +136,7 @@ with the following properties that determine which events will trigger tooltip:
 - `touch` – events for touchscreen devices, `false` by default
 
 ```tsx
-import { Tooltip } from '@mantine/core';
+import { Tooltip } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -167,7 +167,7 @@ Set `inline` prop to use `Tooltip` with inline elements:
 Tooltip is built with [Transition](/core/transition/) component, it supports `transitionProps` props:
 
 ```tsx
-import { Button, Tooltip } from '@mantine/core';
+import { Button, Tooltip } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -211,7 +211,7 @@ This logic is applied to Tooltip and Tooltip.Floating components:
 
 ```tsx
 import { forwardRef } from 'react';
-import { Tooltip } from '@mantine/core';
+import { Tooltip } from '@nex-ui/core';
 
 // forwardRef function will allow to get root element ref
 const MyBadge = forwardRef<HTMLDivElement, { color: string }>(
@@ -265,7 +265,7 @@ or navigate with keyboard will not be able to get tooltip content. Set `events` 
 focus/blur tooltip events:
 
 ```tsx
-import { Button, Tooltip } from '@mantine/core';
+import { Button, Tooltip } from '@nex-ui/core';
 
 // Tooltip will be visible for screen readers
 function Demo() {

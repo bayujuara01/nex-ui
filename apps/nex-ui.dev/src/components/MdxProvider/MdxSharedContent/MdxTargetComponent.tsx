@@ -2,7 +2,7 @@ import { MdxCodeHighlight } from '../MdxPre/MdxPre';
 import { MdxTitle } from '../MdxTitle/MdxTitle';
 import { MdxCode, MdxParagraph } from '../MdxTypography/MdxTypography';
 
-const getTargetCode = (component: string) => `import { ${component}, Button } from '@mantine/core';
+const getTargetCode = (component: string) => `import { ${component}, Button } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -38,7 +38,7 @@ function Demo() {
 
 const getNoRefCode = (component: string) => `
 // Example of code that WILL NOT WORK
-import { ${component} } from '@mantine/core';
+import { ${component} } from '@nex-ui/core';
 
 function MyComponent() {
   return <div>My component</div>;
@@ -58,7 +58,7 @@ function Demo() {
 const getForwardRefCode = (component: string) => `
 // Example of code that will work
 import { forwardRef } from 'react';
-import { ${component} } from '@mantine/core';
+import { ${component} } from '@nex-ui/core';
 
 const MyComponent = forwardRef<HTMLDivElement, React.ComponentPropsWithoutRef<'div'>>((props, ref) => (
   <div ref={ref} {...props}>

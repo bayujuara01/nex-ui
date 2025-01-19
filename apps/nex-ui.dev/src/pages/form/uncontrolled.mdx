@@ -39,7 +39,7 @@ used anywhere in the component to get the current form values. It can
 be used in both controlled and uncontrolled modes.
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -58,7 +58,7 @@ values while `form.values` is outdated in uncontrolled mode and before state
 update in controlled mode.
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -85,7 +85,7 @@ reference.
 
 ```tsx
 import { useEffect } from 'react';
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({ mode: 'uncontrolled' });
 
@@ -99,7 +99,7 @@ Instead of observing form values with `useEffect`, use `onValuesChange` callback
 to listen to form values changes:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 const form = useForm({
   mode: 'uncontrolled',
@@ -123,7 +123,7 @@ set `key` supplied by `form.key()` to the input component to ensure that it has
 updated value:
 
 ```tsx
-import { useForm } from '@mantine/form';
+import { useForm } from '@nex-ui/form';
 
 function Demo() {
   const form = useForm({
@@ -142,8 +142,8 @@ do not pass `key` to the input component directly, instead add a wrapper
 element and pass `key` to it:
 
 ```tsx
-import { useForm } from '@mantine/form';
-import { randomId } from '@mantine/hooks';
+import { useForm } from '@nex-ui/form';
+import { randomId } from '@nex-ui/hooks';
 
 // ❌ Incorrect: Do not override key prop, even in lists
 function Demo() {
@@ -196,7 +196,7 @@ you must add support for `defaultValue` prop. The best way to add support for
 `defaultValue` is to use [use-uncontrolled](/hooks/use-uncontrolled/) hook:
 
 ```tsx
-import { useUncontrolled } from '@mantine/hooks';
+import { useUncontrolled } from '@nex-ui/hooks';
 
 interface CustomInputProps {
   value?: string;

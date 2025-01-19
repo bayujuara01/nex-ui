@@ -1,4 +1,4 @@
-import { useUncontrolled } from '@mantine/hooks';
+import { useUncontrolled } from '@nex-ui/hooks';
 import { Header, HeaderControlsProps } from './Header/Header';
 import { Navbar } from './Navbar/Navbar';
 import classes from './Shell.module.css';

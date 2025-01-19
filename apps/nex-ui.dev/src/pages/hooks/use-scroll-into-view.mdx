@@ -33,7 +33,7 @@ Hook returns an object with:
 Returned `scrollIntoView` function accepts single optional argument `alignment` - optional target element alignment relatively to parent based on current axis.
 
 ```tsx
-import { useScrollIntoView } from '@mantine/hooks';
+import { useScrollIntoView } from '@nex-ui/hooks';
 
 const { scrollIntoView } = useScrollIntoView();
 
@@ -49,7 +49,7 @@ Default easing is `easeInOutQuad` - more info [here](https://easings.net/#easeIn
 You can find other popular examples on [easings.net](https://easings.net/)
 
 ```tsx
-import { useScrollIntoView } from '@mantine/hooks';
+import { useScrollIntoView } from '@nex-ui/hooks';
 
 useScrollIntoView({
   easing: (t) => (t < 0.5 ? 16 * t ** 5 : 1 - (-2 * t + 2) ** 5 / 2), // easeInOutQuint

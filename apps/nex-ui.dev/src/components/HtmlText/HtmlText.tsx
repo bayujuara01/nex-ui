@@ -1,4 +1,4 @@
-import { ElementProps, Text, TextProps } from '@mantine/core';
+import { ElementProps, Text, TextProps } from '@nex-ui/core';
 import classes from './HtmlText.module.css';
 
 interface HtmlTextProps extends TextProps, ElementProps<'span', 'color'> {

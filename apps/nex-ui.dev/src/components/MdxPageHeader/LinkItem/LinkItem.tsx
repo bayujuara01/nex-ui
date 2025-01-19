@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Anchor } from '@mantine/core';
+import { Anchor } from '@nex-ui/core';
 import { HeaderItem } from '../HeaderItem/HeaderItem';
 import classes from './LinkItem.module.css';
 

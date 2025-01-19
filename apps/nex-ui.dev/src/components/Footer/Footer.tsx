@@ -1,5 +1,5 @@
 import cx from 'clsx';
-import { Box, Container, Group, RemoveScroll, Text } from '@mantine/core';
+import { Box, Container, Group, RemoveScroll, Text } from '@nex-ui/core';
 import { Logo } from '../Logo/Logo';
 import { DiscordButton, TwitterButton } from '../SocialButton';
 import { FOOTER_LINKS_DATA } from './data';

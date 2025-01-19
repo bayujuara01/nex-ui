@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { IconChevronRight } from '@tabler/icons-react';
-import { ActionIcon, Checkbox, Combobox, Group, TextInput, useCombobox } from '@mantine/core';
+import { ActionIcon, Checkbox, Combobox, Group, TextInput, useCombobox } from '@nex-ui/core';
 import classes from './TransferList.module.css';
 
 const fruits = ['🍎 Apples', '🍌 Bananas', '🍓 Strawberries'];

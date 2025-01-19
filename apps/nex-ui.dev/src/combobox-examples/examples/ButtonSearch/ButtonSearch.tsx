@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Button, Combobox, Text, useCombobox } from '@mantine/core';
+import { Box, Button, Combobox, Text, useCombobox } from '@nex-ui/core';
 
 const groceries = [
   '🍎 Apples',

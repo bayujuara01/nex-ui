@@ -16,7 +16,7 @@ of a given element with its scroll container or body element with [Intersection 
 The hook accepts `IntersectionObserver`'s options as its only optional argument:
 
 ```tsx
-import { useIntersection } from '@mantine/hooks';
+import { useIntersection } from '@nex-ui/hooks';
 
 useIntersection({
   root: document.querySelector('#some-element'),
@@ -31,8 +31,8 @@ See [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API
 On the first render (as well as during SSR), or when no element is being observed, the entry is `null`.
 
 ```tsx
-import { Paper } from '@mantine/core';
-import { useIntersection } from '@mantine/hooks';
+import { Paper } from '@nex-ui/core';
+import { useIntersection } from '@nex-ui/hooks';
 
 function Demo() {
   const { ref } = useIntersection();

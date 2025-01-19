@@ -16,7 +16,7 @@ When `multiple` is `false`:
 
 ```tsx
 import { useState } from 'react';
-import { FileInput } from '@mantine/core';
+import { FileInput } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<File | null>(null);
@@ -28,7 +28,7 @@ When `multiple` is `true`:
 
 ```tsx
 import { useState } from 'react';
-import { FileInput } from '@mantine/core';
+import { FileInput } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<File[]>([]);
@@ -86,7 +86,7 @@ will not be rendered.
 `multiple` value.
 
 ```tsx
-import type { FileInputProps } from '@mantine/core';
+import type { FileInputProps } from '@nex-ui/core';
 
 type SingleInputProps = FileInputProps<false>;
 type MultipleInputProps = FileInputProps<true>;

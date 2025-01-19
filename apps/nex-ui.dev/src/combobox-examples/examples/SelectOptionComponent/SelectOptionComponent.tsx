@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Combobox, Group, Input, InputBase, Text, useCombobox } from '@mantine/core';
+import { Combobox, Group, Input, InputBase, Text, useCombobox } from '@nex-ui/core';
 
 interface Item {
   emoji: string;

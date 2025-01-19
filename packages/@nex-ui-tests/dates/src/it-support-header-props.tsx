@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { render } from '@mantine-tests/core';
+import { render } from '@nex-ui-tests/core';
 
 interface Options {
   component: React.ComponentType<any>;

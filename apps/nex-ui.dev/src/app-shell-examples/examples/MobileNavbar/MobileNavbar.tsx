@@ -1,6 +1,6 @@
-import { AppShell, Burger, Group, UnstyledButton } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { AppShell, Burger, Group, UnstyledButton } from '@nex-ui/core';
+import { useDisclosure } from '@nex-ui/hooks';
+import { MantineLogo } from '@nex-uix/nex-ui-logo';
 import classes from './MobileNavbar.module.css';
 
 export function MobileNavbar() {

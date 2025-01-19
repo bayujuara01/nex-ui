@@ -60,7 +60,7 @@ To disable transitions, set `transitionDuration` to 0:
 When `multiple={false}`, set `defaultValue` as string:
 
 ```tsx
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 
 function Demo() {
   // Second item will be opened by default
@@ -83,7 +83,7 @@ function Demo() {
 When `multiple={true}`, set `defaultValue` as an array of strings:
 
 ```tsx
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 
 function Demo() {
   // Both items will be opened by default
@@ -109,7 +109,7 @@ When `multiple={false}`, set `value` as string:
 
 ```tsx
 import { useState } from 'react';
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string | null>(null);
@@ -134,7 +134,7 @@ When `multiple={true}`, set `value` as an array of strings:
 
 ```tsx
 import { useState } from 'react';
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string[]>([]);
@@ -192,7 +192,7 @@ Use [Styles API](/styles/styles-api/) to customize Accordion styles:
 describes `multiple` state:
 
 ```tsx
-import type { AccordionProps } from '@mantine/core';
+import type { AccordionProps } from '@nex-ui/core';
 
 type MultipleAccordionProps = AccordionProps<true>;
 type DefaultAccordionProps = AccordionProps<false>;
@@ -206,7 +206,7 @@ Set `order` on `Accordion` component to wrap accordion controls with h2-h6 headi
 The following example will wrap controls with h3 tag:
 
 ```tsx
-import { Accordion } from '@mantine/core';
+import { Accordion } from '@nex-ui/core';
 
 function Demo() {
   return <Accordion order={3}>{/* ...items */}</Accordion>;

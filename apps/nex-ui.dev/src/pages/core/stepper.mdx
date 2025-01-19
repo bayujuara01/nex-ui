@@ -84,7 +84,7 @@ You can get refs of step button and stepper root element (div):
 
 ```tsx
 import { useRef } from 'react';
-import { Stepper } from '@mantine/core';
+import { Stepper } from '@nex-ui/core';
 
 function MyStepper() {
   const firstStep = useRef<HTMLButtonElement>(null);
@@ -105,7 +105,7 @@ function MyStepper() {
 Instead you will need to use different approaches:
 
 ```tsx
-import { Stepper } from '@mantine/core';
+import { Stepper } from '@nex-ui/core';
 
 // This will not work, step children will not render
 function WillNotWork() {
@@ -142,7 +142,7 @@ function Demo() {
 to make component visible for screen readers in case you do not specify `label` or `description`:
 
 ```tsx
-import { Stepper } from '@mantine/core';
+import { Stepper } from '@nex-ui/core';
 
 function Demo() {
   return (

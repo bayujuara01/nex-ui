@@ -1,5 +1,5 @@
-import { Box } from '@mantine/core';
-import { Demo } from '@mantinex/demo';
+import { Box } from '@nex-ui/core';
+import { Demo } from '@nex-uix/demo';
 import { TimelineDemos } from '@docs/demos';
 import { PageSection } from '../PageSection/PageSection';
 import classes from './CustomizeWithProps.module.css';

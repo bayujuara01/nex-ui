@@ -1,9 +1,9 @@
 import { IconArrowUpRight } from '@tabler/icons-react';
 import cx from 'clsx';
-import { SimpleGrid, SimpleGridProps } from '@mantine/core';
-import { DiscordIcon, GithubIcon, XIcon } from '@mantinex/dev-icons';
-import { MantineLogo } from '@mantinex/mantine-logo';
-import { meta } from '@mantinex/mantine-meta';
+import { SimpleGrid, SimpleGridProps } from '@nex-ui/core';
+import { DiscordIcon, GithubIcon, XIcon } from '@nex-uix/dev-icons';
+import { MantineLogo } from '@nex-uix/nex-ui-logo';
+import { meta } from '@nex-uix/nex-ui-meta';
 import classes from './SocialCards.module.css';
 
 interface CardBaseProps extends React.ComponentPropsWithoutRef<'a'> {

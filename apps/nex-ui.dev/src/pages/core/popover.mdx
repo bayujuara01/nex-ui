@@ -14,7 +14,7 @@ You can control Popover state with `opened` and `onChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { Button, Popover } from '@mantine/core';
+import { Button, Popover } from '@nex-ui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);
@@ -78,7 +78,7 @@ You can enable or disable [Floating UI](https://floating-ui.com/) middlewares wi
 Example of turning off `shift` and `flip` middlewares:
 
 ```tsx
-import { Popover } from '@mantine/core';
+import { Popover } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -99,7 +99,7 @@ an object to the `middlewares` prop. For example, to change [shift](https://floa
 middleware padding to `20px` use the following configuration:
 
 ```tsx
-import { Popover } from '@mantine/core';
+import { Popover } from '@nex-ui/core';
 
 function Demo() {
   return (
@@ -148,7 +148,7 @@ Popover uses [FocusTrap](/core/focus-trap/) component to manage focus.
 Add `data-autofocus` attribute to element that should receive initial focus:
 
 ```tsx
-import { Popover } from '@mantine/core';
+import { Popover } from '@nex-ui/core';
 
 function Demo() {
   return (

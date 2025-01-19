@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 import cx from 'clsx';
-import { Box, FOCUS_CLASS_NAMES, Text } from '@mantine/core';
+import { Box, FOCUS_CLASS_NAMES, Text } from '@nex-ui/core';
 import { Frontmatter } from '@/types';
 import { getMdxSiblings } from './get-mdx-siblings';
 import classes from './MdxSiblings.module.css';

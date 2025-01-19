@@ -21,7 +21,7 @@ During server side rendering the hook will always return `false` as `window.matc
 if that is not a desired behavior, you can override the initial value:
 
 ```tsx
-import { useMediaQuery } from '@mantine/hooks';
+import { useMediaQuery } from '@nex-ui/hooks';
 
 function Demo() {
   // Set initial value in second argument and getInitialValueInEffect option to false
@@ -36,7 +36,7 @@ function Demo() {
 `@mantine/hooks` package exports `UseMediaQueryOptions` type – a type of the second argument of `useMediaQuery` hook.
 
 ```tsx
-import { useMediaQuery, UseMediaQueryOptions } from '@mantine/hooks';
+import { useMediaQuery, UseMediaQueryOptions } from '@nex-ui/hooks';
 
 const options: UseMediaQueryOptions = {
   getInitialValueInEffect: false,

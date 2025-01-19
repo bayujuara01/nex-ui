@@ -3,17 +3,17 @@ import { Frontmatter } from '@/types';
 export const MDX_FORM_DATA: Record<string, Frontmatter> = {
   useForm: {
     title: 'use-form',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/use-form',
     description: 'Manage form state',
-    source: '@mantine/form/src',
+    source: '@nex-ui/form/src',
     license: 'MIT',
     docs: 'form/use-form.mdx',
   },
 
   createFormContext: {
     title: 'Form context',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/create-form-context',
     description: 'Add context support to use-form with createFormContext',
     docs: 'form/use-form.mdx',
@@ -21,7 +21,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formErrors: {
     title: 'Form errors',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/errors',
     description: 'Manipulate form errors with use-form hook',
     docs: 'form/errors.mdx',
@@ -29,7 +29,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formNested: {
     title: 'Nested fields',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/nested',
     description: 'Manage nested arrays and object state with use-form hook',
     docs: 'form/nested.mdx',
@@ -37,7 +37,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formRecipes: {
     title: 'Recipes',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/recipes',
     description: 'use-form examples',
     docs: 'form/recipes.mdx',
@@ -45,7 +45,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formStatus: {
     title: 'Form status',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/status',
     description: 'Get fields and form touched, dirty and submitting statuses',
     docs: 'form/status.mdx',
@@ -53,7 +53,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formValidation: {
     title: 'Form validation',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/validation',
     description: 'Validate fields with use-form hook',
     docs: 'form/validation.mdx',
@@ -61,7 +61,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formSchemaValidation: {
     title: 'Form schema validation',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/schema-validation',
     description: 'use-form schema based validation with zod, yup, joi and superstruct',
     docs: 'form/schema-validation.mdx',
@@ -69,7 +69,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formValidators: {
     title: 'Form validators',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/validators',
     description: 'Premade validation functions',
     docs: 'form/validators.mdx',
@@ -77,7 +77,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formValues: {
     title: 'Form values',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/values',
     description: 'Manipulate form values with use-form',
     docs: 'form/values.mdx',
@@ -85,7 +85,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formActions: {
     title: 'Form actions',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/actions',
     description: 'Change form state from anywhere in the application',
     docs: 'form/actions.mdx',
@@ -93,7 +93,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formGetInputProps: {
     title: 'getInputProps',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/get-input-props',
     description: 'A handler to get input props for any field in the form',
     docs: 'form/get-input-props.mdx',
@@ -101,7 +101,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   formUncontrolled: {
     title: 'Uncontrolled mode',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/uncontrolled',
     description: 'use-form uncontrolled mode to improve performance',
     docs: 'form/uncontrolled.mdx',
@@ -109,7 +109,7 @@ export const MDX_FORM_DATA: Record<string, Frontmatter> = {
 
   useField: {
     title: 'use-field',
-    package: '@mantine/form',
+    package: '@nex-ui/form',
     slug: '/form/use-field',
     description: 'use-field hook – manage single field state',
     docs: 'form/use-field.mdx',

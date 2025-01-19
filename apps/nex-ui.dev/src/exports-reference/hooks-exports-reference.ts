@@ -1,7 +1,7 @@
 import { ExportReferenceGroup } from './types';
 
 export const HOOKS_EXPORTS_REFERENCE: ExportReferenceGroup = {
-  package: '@mantine/hooks',
+  package: '@nex-ui/hooks',
   exports: [
     {
       type: 'hook',
