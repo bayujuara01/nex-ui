@@ -31,20 +31,20 @@ export function Footer({ withNavbar }: FooterProps) {
               </Text>
             </div>
 
-            <div className={classes.groups}>{groups}</div>
+            {/*<div className={classes.groups}>{groups}</div>*/}
           </div>
 
           <div className={classes.afterFooter}>
             <Group justify="space-between" wrap="wrap">
               <Text fz="xs" className={classes.afterFooterNote}>
-                Built by <a href="https://github.com/rtivital">Vitaly Rtishchev</a> and{' '}
+                Built by <a href="https://github.com/bayujuara01">Bayu</a> and{' '}
                 <a href="https://github.com/mantinedev/mantine/graphs/contributors">
                   these awesome people
                 </a>
               </Text>
               <div className={classes.social}>
-                <DiscordButton className={classes.socialButton} />
-                <TwitterButton className={classes.socialButton} />
+                {/*<DiscordButton className={classes.socialButton} />*/}
+                {/*<TwitterButton className={classes.socialButton} />*/}
               </div>
             </Group>
           </div>

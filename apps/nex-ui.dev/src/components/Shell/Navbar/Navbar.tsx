@@ -2,7 +2,6 @@ import {
   IconApi,
   IconBrandMantine,
   IconCompass,
-  IconHeartHandshake,
   IconHelp,
   IconPalette,
 } from '@tabler/icons-react';
@@ -42,25 +41,11 @@ export function Navbar({ navbarOpened, onNavbarClose, mobileNavbarOnly }: Navbar
             Getting started
           </NavbarMainLink>
           <NavbarMainLink
-            icon={<IconBrandMantine style={{ width: rem(25), height: rem(25) }} stroke={1.5} />}
-            href="/about"
-            onNavbarClose={onNavbarClose}
-          >
-            About Mantine
-          </NavbarMainLink>
-          <NavbarMainLink
             icon={<IconApi style={{ width: rem(25), height: rem(25) }} stroke={1.5} />}
             href="/overview"
             onNavbarClose={onNavbarClose}
           >
             API Overview
-          </NavbarMainLink>
-          <NavbarMainLink
-            icon={<IconHeartHandshake style={{ width: rem(25), height: rem(25) }} stroke={1.5} />}
-            href="/contribute"
-            onNavbarClose={onNavbarClose}
-          >
-            Contribute
           </NavbarMainLink>
           <NavbarMainLink
             icon={<IconPalette style={{ width: rem(22), height: rem(22) }} stroke={1.5} />}
@@ -69,22 +54,14 @@ export function Navbar({ navbarOpened, onNavbarClose, mobileNavbarOnly }: Navbar
           >
             Colors generator
           </NavbarMainLink>
-          <NavbarMainLink
-            external
-            icon={<IconHelp style={{ width: rem(22), height: rem(22) }} stroke={1.5} />}
-            href="https://help.mantine.dev"
-            onNavbarClose={onNavbarClose}
-          >
-            Help center
-          </NavbarMainLink>
-          <NavbarMainLink
-            external
-            icon={<IconBrandMantine style={{ width: rem(22), height: rem(22) }} stroke={1.5} />}
-            href="https://ui.mantine.dev"
-            onNavbarClose={onNavbarClose}
-          >
-            Mantine UI
-          </NavbarMainLink>
+          {/*<NavbarMainLink*/}
+          {/*  external*/}
+          {/*  icon={<IconHelp style={{ width: rem(22), height: rem(22) }} stroke={1.5} />}*/}
+          {/*  href="https://help.mantine.dev"*/}
+          {/*  onNavbarClose={onNavbarClose}*/}
+          {/*>*/}
+          {/*  Help center*/}
+          {/*</NavbarMainLink>*/}
           <div className={classes.groups}>{groups}</div>
         </div>
       </ScrollArea>

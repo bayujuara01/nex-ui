@@ -61,7 +61,7 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
     ],
   },
   {
-    group: 'mantine-hooks',
+    group: 'nex hooks',
     pages: [
       {
         category: 'UI and Dom',
@@ -158,7 +158,7 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
     ],
   },
   {
-    group: 'mantine-form',
+    group: 'nex-form',
     pages: [
       MDX_DATA.useForm,
       MDX_DATA.useField,
@@ -177,7 +177,7 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
     ],
   },
   {
-    group: 'mantine-core',
+    group: 'nex-core',
     pages: [
       {
         category: 'layout',
@@ -332,7 +332,7 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
     ],
   },
   {
-    group: 'mantine-dates',
+    group: 'nex-dates',
     pages: [
       MDX_DATA.GettingStartedDates,
       MDX_DATA.DatesProvider,
@@ -349,7 +349,7 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
     ],
   },
   {
-    group: 'mantine-charts',
+    group: 'nex-charts',
     pages: [
       MDX_DATA.GettingStartedCharts,
       MDX_DATA.AreaChart,
@@ -382,23 +382,23 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
   {
     group: 'changelog',
     pages: [
-      MDX_DATA.Changelog7150,
-      MDX_DATA.Changelog7140,
-      MDX_DATA.Changelog7130,
-      MDX_DATA.Changelog7120,
-      MDX_DATA.Changelog7110,
-      MDX_DATA.Changelog7100,
-      MDX_DATA.Changelog790,
-      MDX_DATA.Changelog780,
-      MDX_DATA.Changelog770,
-      MDX_DATA.Changelog760,
-      MDX_DATA.Changelog750,
-      MDX_DATA.Changelog740,
-      MDX_DATA.Changelog730,
-      MDX_DATA.Changelog720,
-      MDX_DATA.Changelog710,
-      MDX_DATA.Changelog700,
-      MDX_DATA.AllReleases,
+      // MDX_DATA.Changelog7150,
+      // MDX_DATA.Changelog7140,
+      // MDX_DATA.Changelog7130,
+      // MDX_DATA.Changelog7120,
+      // MDX_DATA.Changelog7110,
+      // MDX_DATA.Changelog7100,
+      // MDX_DATA.Changelog790,
+      // MDX_DATA.Changelog780,
+      // MDX_DATA.Changelog770,
+      // MDX_DATA.Changelog760,
+      // MDX_DATA.Changelog750,
+      // MDX_DATA.Changelog740,
+      // MDX_DATA.Changelog730,
+      // MDX_DATA.Changelog720,
+      // MDX_DATA.Changelog710,
+      // MDX_DATA.Changelog700,
+      // MDX_DATA.AllReleases,
     ],
   },
 ];

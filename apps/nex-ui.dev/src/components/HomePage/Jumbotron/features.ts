@@ -4,7 +4,7 @@ export const FEATURES_DATA = [
   {
     icon: IconScale,
     title: 'Free and open source',
-    description: 'All packages have MIT license, you can use Mantine in any project',
+    description: 'All packages have MIT license, you can use Nex UI in any project',
   },
 
   {
@@ -16,6 +16,6 @@ export const FEATURES_DATA = [
   {
     icon: IconRocket,
     title: 'Use anywhere',
-    description: 'Mantine supports all modern frameworks: Next.js, Remix, etc.',
+    description: 'Nex UI supports all modern frameworks: Next.js, Remix, etc.',
   },
 ];
