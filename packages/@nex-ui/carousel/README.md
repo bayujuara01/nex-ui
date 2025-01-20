@@ -1,19 +1,17 @@
-# Mantine carousel
-
-[![npm](https://img.shields.io/npm/dm/@mantine/carousel)](https://www.npmjs.com/package/@mantine/carousel)
+# Nex UI carousel
 
 Embla based carousel
 
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantine/core @mantine/hooks @mantine/carousel
+yarn add @nex-ui/core @nex-ui/hooks @nex-ui/carousel
 
 # With npm
-npm install @mantine/core @mantine/hooks @mantine/carousel
+npm install @nex-ui/core @nex-ui/hooks @nex-ui/carousel
 ```
 
 ## License

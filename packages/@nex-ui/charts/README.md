@@ -1,19 +1,17 @@
-# @mantine/charts
+# @nex-ui/charts
 
-[![npm](https://img.shields.io/npm/dm/@mantine/charts)](https://www.npmjs.com/package/@mantine/charts)
+Charts components built with recharts and Nex UI
 
-Charts components built with recharts and Mantine
-
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantine/charts
+yarn add @nex-ui/charts
 
 # With npm
-npm install @mantine/charts
+npm install @nex-ui/charts
 ```
 
 ## License

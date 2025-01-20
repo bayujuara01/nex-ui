@@ -1,19 +1,17 @@
-# Mantine Store
+# Nex UI Store
 
-[![npm](https://img.shields.io/npm/dm/@mantine/store)](https://www.npmjs.com/package/@mantine/store)
+Global state manager for `@nex-ui/notifications`, `@nex-ui/nprogress`, `@nex-ui/spotlight` and other NEX UI packages.
 
-Global state manager for `@mantine/notifications`, `@mantine/nprogress`, `@mantine/spotlight` and other Mantine packages.
-
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantine/store
+yarn add @nex-ui/store
 
 # With npm
-npm install @mantine/store
+npm install @nex-ui/store
 ```
 
 ## License

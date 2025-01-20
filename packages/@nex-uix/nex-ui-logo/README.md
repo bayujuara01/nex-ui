@@ -1,25 +1,23 @@
-# @mantinex/mantine-logo
+# @nex-uix/nex-ui-logo
 
-[![npm](https://img.shields.io/npm/dm/@mantinex/mantine-logo)](https://www.npmjs.com/package/@mantinex/mantine-logo)
+Nex UI logo as react component
 
-Mantine logo as react component
-
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantinex/mantine-logo
+yarn add @nex-uix/nex-ui-logo
 
 # With npm
-npm install @mantinex/mantine-logo
+npm install @nex-uix/nex-ui-logo
 ```
 
 Then import styles:
 
 ```tsx
-import '@mantinex/mantine-logo/styles.css';
+import '@nex-uix/nex-ui-logo/styles.css';
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Mantine dates tests
+# Nex UI dates tests
 
-Test utilities for Mantine components.
+Test utilities for Nex UI components.
 
 ## License
 

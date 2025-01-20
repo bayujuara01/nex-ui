@@ -1,19 +1,17 @@
-# @mantinex/mantine-header
+# @nex-uix/nex-ui-header
 
-[![npm](https://img.shields.io/npm/dm/@mantinex/mantine-header)](https://www.npmjs.com/package/@mantinex/mantine-header)
+Components used in headers of *.nex-ui.dev websites
 
-Components used in headers of *.mantine.dev websites
-
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantinex/mantine-header
+yarn add @nex-uix/nex-ui-header
 
 # With npm
-npm install @mantinex/mantine-header
+npm install @nex-uix/nex-ui-header
 ```
 
 ## License

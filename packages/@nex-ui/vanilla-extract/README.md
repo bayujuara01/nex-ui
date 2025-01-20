@@ -1,19 +1,17 @@
-# Mantine Store
+# Nex UI binding for Vanilla Extract
 
-[![npm](https://img.shields.io/npm/dm/@mantine/vanilla-extract)](https://www.npmjs.com/package/@mantine/vanilla-extract)
+Nex UI theme integration with vanilla-extract
 
-Mantine theme integration with vanilla-extract
-
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantine/vanilla-extract
+yarn add @nex-ui/vanilla-extract
 
 # With npm
-npm install @mantine/vanilla-extract
+npm install @nex-ui/vanilla-extract
 ```
 
 ## License

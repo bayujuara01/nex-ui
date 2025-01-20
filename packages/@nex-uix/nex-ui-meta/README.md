@@ -1,19 +1,17 @@
-# @mantinex/mantine-meta
+# @nex-uix/nex-ui-meta
 
-[![npm](https://img.shields.io/npm/dm/@mantinex/mantine-meta)](https://www.npmjs.com/package/@mantinex/mantine-meta)
+Meta data for *.nex-ui.dev websites
 
-Meta data for *.mantine.dev websites
-
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantinex/mantine-meta
+yarn add @nex-uix/nex-ui-meta
 
 # With npm
-npm install @mantinex/mantine-meta
+npm install @nex-uix/nex-ui-meta
 ```
 
 ## License

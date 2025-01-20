@@ -1,19 +1,17 @@
-# Mantine Dropzone
-
-[![npm](https://img.shields.io/npm/dm/@mantine/dropzone)](https://www.npmjs.com/package/@mantine/dropzone)
+# NEX UI Dropzone
 
 Capture files from user
 
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantine/dropzone @mantine/core @mantine/hooks
+yarn add @nex-ui/dropzone @nex-ui/core @nex-ui/hooks
 
 # With npm
-npm install @mantine/dropzone @mantine/core @mantine/hooks
+npm install @nex-ui/dropzone @nex-ui/core @nex-ui/hooks
 ```
 
 ## License

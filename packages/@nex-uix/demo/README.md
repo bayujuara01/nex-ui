@@ -1,19 +1,17 @@
-# @mantinex/demo
+# @nex-uix/demo
 
-[![npm](https://img.shields.io/npm/dm/@mantinex/demo)](https://www.npmjs.com/package/@mantinex/demo)
+Demo base components used on *.nex-ui.dev websites
 
-Demo base components used on *.mantine.dev websites
-
-[View documentation](https://mantine.dev/)
+[View documentation](https://nex-ui.dev/)
 
 ## Installation
 
 ```bash
 # With yarn
-yarn add @mantinex/demo
+yarn add @nex-uix/demo
 
 # With npm
-npm install @mantinex/demo
+npm install @nex-uix/demo
 ```
 
 ## License
