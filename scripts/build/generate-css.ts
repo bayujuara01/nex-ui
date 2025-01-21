@@ -7,6 +7,10 @@ import postcss from 'postcss';
 import postcssModules from 'postcss-modules';
 import postcssPresetMantine from 'postcss-preset-mantine';
 import { getPath } from '../utils/get-path';
+import postcssPrefixAliasPlugin from "../postcss/postcss-prefix-alias-plugin";
+import {createLogger} from "../utils/signale";
+
+const logger = createLogger('generate-css');
 
 function transformFileName(filePath: string) {
   return path.basename(filePath).replace('.module.css', '.css');
@@ -17,9 +21,13 @@ async function processFile(
   scopeBehaviour: 'local' | 'global',
   outputFolder: string
 ) {
+  if (scopeBehaviour === 'global') {
+    logger.info(`Generating ${filePath}, output ${outputFolder}`);
+  }
   const result = await postcss([
     postcssPresetMantine,
     postcssModules({ generateScopedName, getJSON: () => {}, scopeBehaviour }),
+    postcssPrefixAliasPlugin()
   ]).process(fs.readFileSync(filePath, 'utf-8'), { from: path.basename(filePath) });
 
   const fileName = transformFileName(filePath);
