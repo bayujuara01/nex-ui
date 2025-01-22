@@ -13,7 +13,10 @@ function assignSizeVariables(
   name: string
 ) {
   keys(sizes).forEach((size) =>
-    Object.assign(variables, { [`--mantine-${name}-${size}`]: sizes[size] })
+    Object.assign(variables, {
+      [`--mantine-${name}-${size}`]: sizes[size],
+      [`--nex-${name}-${size}`]: `var(--mantine-${name}-${size})`,
+    })
   );
 }
 
@@ -41,12 +44,33 @@ export const defaultCssVariablesResolver: CSSVariablesResolver = (theme) => {
       '--mantine-heading-text-wrap': theme.headings.textWrap,
       '--mantine-radius-default': defaultRadius,
 
+      '--nex-scale': 'var(--mantine-scale)',
+      '--nex-cursor-type': 'var(--mantine-cursor-type)',
+      '--nex-color-scheme': 'var(--mantine-color-scheme)',
+      '--nex-webkit-font-smoothing': 'var(--mantine-webkit-font-smoothing)',
+      '--nex-moz-font-smoothing': 'var(--mantine-moz-font-smoothing)',
+      '--nex-color-white': 'var(--mantine-color-white)',
+      '--nex-color-black': 'var(--mantine-color-black)',
+      '--nex-line-height': 'var(--mantine-line-height)',
+      '--nex-font-family': 'var(--mantine-font-family)',
+      '--nex-font-family-monospace': 'var(--mantine-font-family-monospace)',
+      '--nex-font-family-headings': 'var(--mantine-font-family-headings)',
+      '--nex-heading-font-weight': 'var(--mantine-heading-font-weight)',
+      '--nex-heading-text-wrap': 'var(--mantine-heading-text-wrap)',
+      '--nex-radius-default': 'var(--mantine-radius-default)',
+
       // Primary colors
       '--mantine-primary-color-filled': `var(--mantine-color-${theme.primaryColor}-filled)`,
       '--mantine-primary-color-filled-hover': `var(--mantine-color-${theme.primaryColor}-filled-hover)`,
       '--mantine-primary-color-light': `var(--mantine-color-${theme.primaryColor}-light)`,
       '--mantine-primary-color-light-hover': `var(--mantine-color-${theme.primaryColor}-light-hover)`,
       '--mantine-primary-color-light-color': `var(--mantine-color-${theme.primaryColor}-light-color)`,
+
+      '--nex-primary-color-filled': `var(--mantine-color-${theme.primaryColor}-filled)`,
+      '--nex-primary-color-filled-hover': `var(--mantine-color-${theme.primaryColor}-filled-hover)`,
+      '--nex-primary-color-light': `var(--mantine-color-${theme.primaryColor}-light)`,
+      '--nex-primary-color-light-hover': `var(--mantine-color-${theme.primaryColor}-light-hover)`,
+      '--nex-primary-color-light-color': `var(--mantine-color-${theme.primaryColor}-light-color)`,
     },
     light: {
       '--mantine-primary-color-contrast': getPrimaryContrastColor(theme, 'light'),
@@ -61,6 +85,19 @@ export const defaultCssVariablesResolver: CSSVariablesResolver = (theme) => {
       '--mantine-color-default-color': 'var(--mantine-color-black)',
       '--mantine-color-default-border': 'var(--mantine-color-gray-4)',
       '--mantine-color-dimmed': 'var(--mantine-color-gray-6)',
+
+      '--nex-primary-color-contrast': 'var(--mantine-primary-color-contrast)',
+      '--nex-color-bright': 'var(--mantine-color-black)',
+      '--nex-color-text': 'var(--mantine-color-text)',
+      '--nex-color-body': 'var(--mantine-color-body)',
+      '--nex-color-error': 'var(--mantine-color-red-6)',
+      '--nex-color-placeholder': 'var(--mantine-color-gray-5)',
+      '--nex-color-anchor': `var(--mantine-color-${theme.primaryColor}-${lightPrimaryShade})`,
+      '--nex-color-default': 'var(--mantine-color-white)',
+      '--nex-color-default-hover': 'var(--mantine-color-gray-0)',
+      '--nex-color-default-color': 'var(--mantine-color-black)',
+      '--nex-color-default-border': 'var(--mantine-color-gray-4)',
+      '--nex-color-dimmed': 'var(--mantine-color-gray-6)',
     },
     dark: {
       '--mantine-primary-color-contrast': getPrimaryContrastColor(theme, 'dark'),
@@ -75,6 +112,19 @@ export const defaultCssVariablesResolver: CSSVariablesResolver = (theme) => {
       '--mantine-color-default-color': 'var(--mantine-color-white)',
       '--mantine-color-default-border': 'var(--mantine-color-dark-4)',
       '--mantine-color-dimmed': 'var(--mantine-color-dark-2)',
+
+      '--nex-primary-color-contrast': 'var(--mantine-primary-color-contrast)',
+      '--nex-color-bright': 'var(--mantine-color-white)',
+      '--nex-color-text': 'var(--mantine-color-dark-0)',
+      '--nex-color-body': 'var(--mantine-color-dark-7)',
+      '--nex-color-error': 'var(--mantine-color-red-8)',
+      '--nex-color-placeholder': 'var(--mantine-color-dark-3)',
+      '--nex-color-anchor': `var(--mantine-color-${theme.primaryColor}-4)`,
+      '--nex-color-default': 'var(--mantine-color-dark-6)',
+      '--nex-color-default-hover': 'var(--mantine-color-dark-5)',
+      '--nex-color-default-color': 'var(--mantine-color-white)',
+      '--nex-color-default-border': 'var(--mantine-color-dark-4)',
+      '--nex-color-dimmed': 'var(--mantine-color-dark-2)',
     },
   };
 
@@ -86,8 +136,8 @@ export const defaultCssVariablesResolver: CSSVariablesResolver = (theme) => {
   assignSizeVariables(result.variables, theme.radius, 'radius');
 
   theme.colors[theme.primaryColor].forEach((_, index) => {
-    result.variables[`--mantine-primary-color-${index}`] =
-      `var(--mantine-color-${theme.primaryColor}-${index})`;
+    result.variables[`--mantine-primary-color-${index}`] =  `var(--mantine-color-${theme.primaryColor}-${index})`;
+    result.variables[`--nex-primary-color-${index}`] =  `var(--mantine-primary-color-${index})`;
   });
 
   keys(theme.colors).forEach((color) => {
@@ -121,6 +171,7 @@ export const defaultCssVariablesResolver: CSSVariablesResolver = (theme) => {
 
     value.forEach((shade, index) => {
       result.variables[`--mantine-color-${color}-${index}`] = shade;
+      result.variables[`--nex-color-${color}-${index}`] = `var(--mantine-color-${color}-${index})`;
     });
 
     Object.assign(
@@ -149,8 +200,10 @@ export const defaultCssVariablesResolver: CSSVariablesResolver = (theme) => {
   keys(headings).forEach((heading) => {
     result.variables[`--mantine-${heading}-font-size`] = headings[heading].fontSize;
     result.variables[`--mantine-${heading}-line-height`] = headings[heading].lineHeight;
-    result.variables[`--mantine-${heading}-font-weight`] =
-      headings[heading].fontWeight || theme.headings.fontWeight;
+    result.variables[`--mantine-${heading}-font-weight`] = headings[heading].fontWeight || theme.headings.fontWeight;
+    result.variables[`--nex-${heading}-font-size`] = `var(${`--mantine-${heading}-font-size`}`;
+    result.variables[`--nex-${heading}-line-height`] = `var(${`--mantine-${heading}-line-height`}`;
+    result.variables[`--nex-${heading}-font-weight`] = `var(${`--mantine-${heading}-font-weight`}`;
   });
 
   return result;
