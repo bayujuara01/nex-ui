@@ -6,7 +6,7 @@ import { CopyButton, Button } from '@nex-ui/core';
 
 function Demo() {
   return (
-    <CopyButton value="https://mantine.dev">
+    <CopyButton value="https://google.com">
       {({ copied, copy }) => (
         <Button color={copied ? 'teal' : 'blue'} onClick={copy}>
           {copied ? 'Copied url' : 'Copy url'}
@@ -19,7 +19,7 @@ function Demo() {
 
 function Demo() {
   return (
-    <CopyButton value="https://mantine.dev">
+    <CopyButton value="https://google.com">
       {({ copied, copy }) => (
         <Button color={copied ? 'teal' : 'blue'} onClick={copy}>
           {copied ? 'Copied url' : 'Copy url'}

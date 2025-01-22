@@ -82,6 +82,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { ActionIcon } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/ActionIcon/ActionIcon.tsx',
     docs: 'core/action-icon.mdx',
+    refactor: true
   },
   CloseButton: {
     title: 'CloseButton',
@@ -94,6 +95,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { CloseButton } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/CloseButton/CloseButton.tsx',
     docs: 'core/close-button.mdx',
+    refactor: true
   },
   CopyButton: {
     title: 'CopyButton',
@@ -104,6 +106,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { CopyButton } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/CopyButton/CopyButton.tsx',
     docs: 'core/copy-button.mdx',
+    refactor: true
   },
   FileButton: {
     title: 'FileButton',
@@ -114,6 +117,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { FileButton } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/FileButton/FileButton.tsx',
     docs: 'core/file-button.mdx',
+    refactor: true
   },
   UnstyledButton: {
     title: 'UnstyledButton',
@@ -124,6 +128,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { UnstyledButton } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/UnstyledButton/UnstyledButton.tsx',
     docs: 'core/unstyled-button.mdx',
+    refactor: true
   },
   Tabs: {
     title: 'Tabs',
