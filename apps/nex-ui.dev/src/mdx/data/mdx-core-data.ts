@@ -45,6 +45,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Container } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Container/Container.tsx',
     docs: 'core/container.mdx',
+    refactor: true
   },
   Anchor: {
     title: 'Anchor',
@@ -197,6 +198,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Center } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Center/Center.tsx',
     docs: 'core/center.mdx',
+    refactor: true
   },
   Code: {
     title: 'Code',
@@ -801,6 +803,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Grid } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Grid/Grid.tsx',
     docs: 'core/grid.mdx',
+    refactor: true
   },
 
   HoverCard: {
@@ -1097,6 +1100,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Flex } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Flex/Flex.tsx',
     docs: 'core/flex.mdx',
+    refactor: true
   },
 
   List: {

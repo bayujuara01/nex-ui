@@ -21,7 +21,7 @@ const theme = createTheme({
 function Demo() {
   return (
     <NexProvider theme={theme}>
-      <Container size="responsive" bg="var(--mantine-color-blue-light)">
+      <Container size="responsive" bg="var(--nex-color-blue-light)">
         Container with responsive size
       </Container>
     </NexProvider>
@@ -56,7 +56,7 @@ const theme = createTheme({
 function Demo() {
   return (
     <NexThemeProvider theme={theme}>
-      <Container size="responsive" bg="var(--mantine-color-blue-light)">
+      <Container size="responsive" bg="var(--nex-color-blue-light)">
         Container with responsive size
       </Container>
     </NexThemeProvider>

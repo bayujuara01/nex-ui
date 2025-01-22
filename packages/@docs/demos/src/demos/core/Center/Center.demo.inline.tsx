@@ -8,10 +8,10 @@ import { IconArrowLeft } from '@tabler/icons-react';
 
 function Demo() {
   return (
-    <Anchor href="https://mantine.dev" target="_blank">
+    <Anchor href="https://nex-ui.dev" target="_blank">
       <Center inline>
         <IconArrowLeft style={{ width: rem(12), height: rem(12) }} />
-        <Box ml={5}>Back to Mantine website</Box>
+        <Box ml={5}>Back to Nex UI website</Box>
       </Center>
     </Anchor>
   );
@@ -20,10 +20,10 @@ function Demo() {
 
 function Demo() {
   return (
-    <Anchor href="https://mantine.dev" target="_blank">
+    <Anchor href="https://nex-ui.dev" target="_blank">
       <Center inline>
         <IconArrowLeft style={{ width: rem(12), height: rem(12) }} className="mantine-rotate-rtl" />
-        <Box ml={5}>Back to Mantine website</Box>
+        <Box ml={5}>Back to Nex UI website</Box>
       </Center>
     </Anchor>
   );
