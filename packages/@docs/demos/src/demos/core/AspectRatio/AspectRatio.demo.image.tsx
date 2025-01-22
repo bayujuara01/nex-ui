@@ -8,8 +8,8 @@ function Demo() {
   return (
     <AspectRatio ratio={1080 / 720} maw={300} mx="auto">
       <img
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png"
-        alt="Panda"
+        src="https://picsum.photos/300/200"
+        alt="Mountain"
       />
     </AspectRatio>
   );
@@ -20,8 +20,8 @@ function Demo() {
   return (
     <AspectRatio ratio={1080 / 720} maw={300} mx="auto">
       <img
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png"
-        alt="Panda"
+        src="https://picsum.photos/300/200"
+        alt="Mountain"
       />
     </AspectRatio>
   );

@@ -8,8 +8,8 @@ function Demo() {
   return (
     <AspectRatio ratio={16 / 9}>
       <iframe
-        src="https://www.youtube.com/embed/mzJ4vCjSt28"
-        title="YouTube video player"
+        src="https://www.youtube.com/embed/Tn6-PIqc4UM"
+        title="React in 100 Seconds"
         style={{ border: 0 }}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -23,8 +23,8 @@ function Demo() {
   return (
     <AspectRatio ratio={16 / 9}>
       <iframe
-        src="https://www.youtube.com/embed/mzJ4vCjSt28"
-        title="YouTube video player"
+        src="https://www.youtube.com/embed/Tn6-PIqc4UM"
+        title="React in 100 Seconds"
         style={{ border: 0 }}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

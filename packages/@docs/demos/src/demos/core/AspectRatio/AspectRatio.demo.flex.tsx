@@ -9,8 +9,8 @@ function Demo() {
     <div style={{ display: 'flex' }}>
       <AspectRatio ratio={1} style={{ flex: \`0 0 \${rem(100)}\` }}>
         <Image
-          src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-6.png"
-          alt="Avatar"
+          src="https://picsum.photos/200"
+          alt="Lorem Picsum"
         />
       </AspectRatio>
     </div>
@@ -23,8 +23,8 @@ function Demo() {
     <div style={{ display: 'flex' }}>
       <AspectRatio ratio={1} style={{ flex: `0 0 ${rem(100)}` }}>
         <Image
-          src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-6.png"
-          alt="Avatar"
+          src="https://picsum.photos/200"
+          alt="Lorem Picsum"
         />
       </AspectRatio>
     </div>

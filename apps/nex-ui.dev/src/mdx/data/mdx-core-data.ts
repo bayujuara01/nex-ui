@@ -524,6 +524,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { AspectRatio } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/AspectRatio/AspectRatio.tsx',
     docs: 'core/aspect-ratio.mdx',
+    refactor: true
   },
   Overlay: {
     title: 'Overlay',
@@ -888,6 +889,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Rating } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Rating/Rating.tsx',
     docs: 'core/rating.mdx',
+    refactor: true
   },
 
   Space: {
