@@ -8,7 +8,7 @@ import {
   getSize,
   getThemeColor,
   MantineColor,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -29,7 +29,7 @@ export interface DividerProps
   color?: MantineColor;
 
   /** Controls width/height (depends on orientation), `'xs'` by default */
-  size?: MantineSize | number | (string & {});
+  size?: NexSize | number | (string & {});
 
   /** Divider label, visible only when `orientation` is `horizontal` */
   label?: React.ReactNode;

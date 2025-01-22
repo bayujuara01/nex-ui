@@ -8,7 +8,7 @@ import {
   MantineColor,
   MantineGradient,
   MantineRadius,
-  MantineSize,
+  NexSize,
   polymorphicFactory,
   PolymorphicFactory,
   StylesApiProps,
@@ -42,7 +42,7 @@ export type BadgeCssVariables = {
 
 export interface BadgeProps extends BoxProps, StylesApiProps<BadgeFactory> {
   /** Controls `font-size`, `height` and horizontal `padding`, `'md'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** If set, badge `min-width` becomes equal to its `height` and horizontal padding is removed */
   circle?: boolean;

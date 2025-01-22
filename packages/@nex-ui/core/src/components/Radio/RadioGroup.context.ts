@@ -1,7 +1,7 @@
-import { createOptionalContext, MantineSize } from '../../core';
+import { createOptionalContext, NexSize } from '../../core';
 
 interface RadioGroupContextValue {
-  size: MantineSize | undefined;
+  size: NexSize | undefined;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement> | string) => void;
   name: string;

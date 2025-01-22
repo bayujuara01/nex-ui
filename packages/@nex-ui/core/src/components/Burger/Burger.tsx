@@ -8,7 +8,7 @@ import {
   getSize,
   getThemeColor,
   MantineColor,
-  MantineSize,
+  NexSize,
   rem,
   StylesApiProps,
   useProps,
@@ -32,7 +32,7 @@ export interface BurgerProps
     StylesApiProps<BurgerFactory>,
     ElementProps<'button'> {
   /** Controls burger `width` and `height`, numbers are converted to rem, `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Controls height of lines, by default calculated based on `size` prop */
   lineSize?: string | number;

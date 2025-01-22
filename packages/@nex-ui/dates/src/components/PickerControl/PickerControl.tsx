@@ -6,7 +6,7 @@ import {
   Factory,
   getFontSize,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   UnstyledButton,
   useProps,
@@ -44,7 +44,7 @@ export interface PickerControlProps
   lastInRange?: boolean;
 
   /** Component size */
-  size?: MantineSize;
+  size?: NexSize;
 }
 
 export type PickerControlFactory = Factory<{

@@ -8,7 +8,7 @@ import {
   Factory,
   getFontSize,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   UnstyledButton,
   useProps,
@@ -68,7 +68,7 @@ export interface CalendarHeaderSettings {
   withPrevious?: boolean;
 
   /** Component size */
-  size?: MantineSize;
+  size?: NexSize;
 }
 
 export interface CalendarHeaderProps

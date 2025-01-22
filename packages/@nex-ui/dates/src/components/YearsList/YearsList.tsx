@@ -5,7 +5,7 @@ import {
   ElementProps,
   factory,
   Factory,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -38,7 +38,7 @@ export interface YearsListSettings extends ControlsGroupSettings {
   getYearControlProps?: (date: Date) => Partial<PickerControlProps>;
 
   /** Component size */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** Determines whether controls should be separated by spacing, true by default */
   withCellSpacing?: boolean;

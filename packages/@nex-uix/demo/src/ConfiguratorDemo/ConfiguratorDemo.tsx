@@ -22,6 +22,7 @@ import {
 } from './controls';
 import { Code, getCodeArray } from './get-code-array';
 import classes from './ConfiguratorDemo.module.css';
+import {ConfiguratorRadiusControl, ConfiguratorRadiusControlOptions} from "./controls/ConfiguratorRadius.control";
 
 const ControlComponents = {
   boolean: ConfiguratorBooleanControl,
@@ -31,6 +32,7 @@ const ControlComponents = {
   select: ConfiguratorSelectControl,
   size: ConfiguratorSizeControl,
   number: ConfiguratorNumberControl,
+  radius: ConfiguratorRadiusControl,
 };
 
 export type ConfiguratorControlOptions =
@@ -40,7 +42,8 @@ export type ConfiguratorControlOptions =
   | ConfiguratorStringControlOptions
   | ConfiguratorSelectControlOptions
   | ConfiguratorSizeControlOptions
-  | ConfiguratorNumberControlOptions;
+  | ConfiguratorNumberControlOptions
+  | ConfiguratorRadiusControlOptions;
 
 export interface ConfiguratorDemoProps extends DemoAreaProps {
   code: Code;

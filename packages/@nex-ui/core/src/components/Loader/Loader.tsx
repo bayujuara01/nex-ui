@@ -7,7 +7,7 @@ import {
   getSize,
   getThemeColor,
   MantineColor,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -28,7 +28,7 @@ export interface LoaderProps
     StylesApiProps<LoaderFactory>,
     Omit<React.ComponentPropsWithoutRef<'svg'>, keyof BoxProps> {
   /** Controls `width` and `height` of the loader. `Loader` has predefined `xs`-`xl` values. Numbers are converted to rem. Default value is `'md'` */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Key of `theme.colors` or any valid CSS color, default value is `theme.primaryColor`  */
   color?: MantineColor;

@@ -5,7 +5,7 @@ import {
   factory,
   Factory,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -46,7 +46,7 @@ export interface DialogProps
   transitionProps?: TransitionOverride;
 
   /** Controls `width` of the dialog, `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 }
 
 export type DialogFactory = Factory<{

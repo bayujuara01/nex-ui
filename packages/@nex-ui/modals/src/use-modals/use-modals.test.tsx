@@ -1,6 +1,6 @@
 import { PropsWithChildren, useEffect } from 'react';
 import { render, renderHook, screen } from '@testing-library/react';
-import { MantineProvider } from '@nex-ui/core';
+import { NexProvider } from '@nex-ui/core';
 import { ContextModalProps } from '../context';
 import { ModalsProvider } from '../ModalsProvider';
 import { useModals } from './use-modals';
@@ -8,9 +8,9 @@ import { useModals } from './use-modals';
 describe('@mantine/modals/use-modals', () => {
   it('returns context value of ModalsProvider', () => {
     const wrapper = ({ children }: PropsWithChildren<unknown>) => (
-      <MantineProvider>
+      <NexProvider>
         <ModalsProvider>{children}</ModalsProvider>
-      </MantineProvider>
+      </NexProvider>
     );
 
     const hook = renderHook(() => useModals(), { wrapper });
@@ -31,9 +31,9 @@ describe('@mantine/modals/use-modals', () => {
     );
 
     const wrapper = ({ children }: any) => (
-      <MantineProvider>
+      <NexProvider>
         <ModalsProvider modals={{ contextTest: ContextModal }}>{children}</ModalsProvider>
-      </MantineProvider>
+      </NexProvider>
     );
 
     const testContent = 'context-modal-test-content';
@@ -56,11 +56,11 @@ describe('@mantine/modals/use-modals', () => {
 
   it('correctly renders a confirm modal with labels from the provider', () => {
     const wrapper = ({ children }: any) => (
-      <MantineProvider>
+      <NexProvider>
         <ModalsProvider labels={{ cancel: 'ProviderCancel', confirm: 'ProviderConfirm' }}>
           {children}
         </ModalsProvider>
-      </MantineProvider>
+      </NexProvider>
     );
 
     const Component = () => {
@@ -80,11 +80,11 @@ describe('@mantine/modals/use-modals', () => {
 
   it('correctly renders a confirm modal with overwritten provider labels', () => {
     const wrapper = ({ children }: any) => (
-      <MantineProvider>
+      <NexProvider>
         <ModalsProvider labels={{ cancel: 'ProviderCancel', confirm: 'ProviderConfirm' }}>
           {children}
         </ModalsProvider>
-      </MantineProvider>
+      </NexProvider>
     );
 
     const Component = () => {
@@ -107,9 +107,9 @@ describe('@mantine/modals/use-modals', () => {
 
   it('correctly renders a confirm modal with labels as HTMLElement', () => {
     const wrapper = ({ children }: any) => (
-      <MantineProvider>
+      <NexProvider>
         <ModalsProvider>{children}</ModalsProvider>
-      </MantineProvider>
+      </NexProvider>
     );
 
     const Component = () => {
@@ -136,9 +136,9 @@ describe('@mantine/modals/use-modals', () => {
 
   it('correctly renders a regular modal with children and a title', () => {
     const wrapper = ({ children }: any) => (
-      <MantineProvider>
+      <NexProvider>
         <ModalsProvider>{children}</ModalsProvider>
-      </MantineProvider>
+      </NexProvider>
     );
 
     const Component = () => {

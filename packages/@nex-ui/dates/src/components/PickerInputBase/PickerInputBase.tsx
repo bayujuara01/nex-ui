@@ -9,7 +9,7 @@ import {
   Factory,
   Input,
   InputVariant,
-  MantineSize,
+  NexSize,
   Modal,
   ModalProps,
   Popover,
@@ -77,7 +77,7 @@ export interface PickerInputBaseProps
   shouldClear: boolean;
   value: HiddenDatesInputValue;
   type: DatePickerType;
-  size?: MantineSize;
+  size?: NexSize;
 }
 
 export type PickerInputBaseFactory = Factory<{

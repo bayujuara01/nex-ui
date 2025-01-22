@@ -6,7 +6,7 @@ import {
   factory,
   Factory,
   getFontSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -29,7 +29,7 @@ export interface InputLabelProps
   required?: boolean;
 
   /** Controls label `font-size`, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** Root element of the label, `'label'` by default */
   labelElement?: 'label' | 'div';

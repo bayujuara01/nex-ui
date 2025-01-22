@@ -5,12 +5,12 @@ import {
   ElementProps,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
 } from '../../../core';
 import { useSliderContext } from '../Slider.context';
 
 export interface SliderRootProps extends BoxProps, ElementProps<'div'> {
-  size: MantineSize | (string & {}) | number;
+  size: NexSize | (string & {}) | number;
   children: React.ReactNode;
   color: MantineColor | undefined;
   disabled: boolean | undefined;

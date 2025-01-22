@@ -8,7 +8,7 @@ import {
   getFontSize,
   getLineHeight,
   getSpacing,
-  MantineSize,
+  NexSize,
   MantineSpacing,
   StylesApiProps,
   useProps,
@@ -37,7 +37,7 @@ export interface ListProps
   withPadding?: boolean;
 
   /** Controls `font-size` and `line-height`, `'md'` by default */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** Icon that replaces list item dot */
   icon?: React.ReactNode;

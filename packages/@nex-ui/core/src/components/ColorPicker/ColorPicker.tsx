@@ -9,7 +9,7 @@ import {
   Factory,
   getSize,
   getSpacing,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -75,7 +75,7 @@ export interface __ColorPickerProps {
   swatchesPerRow?: number;
 
   /** Controls size of hue, alpha and saturation sliders, `'md'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 }
 
 export interface ColorPickerProps

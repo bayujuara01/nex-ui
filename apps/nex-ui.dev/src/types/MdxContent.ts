@@ -64,6 +64,9 @@ export interface Frontmatter {
 
   /** Determines whether page header should be hidden */
   hideHeader?: boolean;
+
+  /** When pages success refactored into nex-ui based **/
+  refactor?: boolean;
 }
 
 export interface MdxContent {

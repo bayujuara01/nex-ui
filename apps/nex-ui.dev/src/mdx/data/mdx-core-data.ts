@@ -22,6 +22,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Button } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Button/Button.tsx',
     docs: 'core/button.mdx',
+    refactor: true
   },
   Loader: {
     title: 'Loader',

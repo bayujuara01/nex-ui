@@ -12,7 +12,7 @@ import {
   getSize,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -47,7 +47,7 @@ export interface ChipProps
   radius?: MantineRadius;
 
   /** Controls various properties related to component size, `'sm'` by default */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** Chip input type, `'checkbox'` by default */
   type?: 'radio' | 'checkbox';

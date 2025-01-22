@@ -10,7 +10,7 @@ import {
   MantineColor,
   MantineGradient,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -36,7 +36,7 @@ export interface ThemeIconProps
     StylesApiProps<ThemeIconFactory>,
     ElementProps<'div'> {
   /** Controls width and height of the button. Numbers are converted to rem. `'md'` by default. */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Key of `theme.colors` or any valid CSS color. Default value is `theme.primaryColor`.  */
   color?: MantineColor;

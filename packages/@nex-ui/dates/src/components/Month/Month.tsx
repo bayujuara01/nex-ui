@@ -8,7 +8,7 @@ import {
   Factory,
   getFontSize,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useResolvedStylesApi,
@@ -96,7 +96,7 @@ export interface MonthSettings {
   getDayAriaLabel?: (date: Date) => string;
 
   /** Controls size */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** Determines whether controls should be separated by spacing, true by default */
   withCellSpacing?: boolean;

@@ -15,7 +15,7 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   MantineSpacing,
   rem,
   StylesApiProps,
@@ -93,7 +93,7 @@ export interface StepperProps
   iconPosition?: 'right' | 'left';
 
   /** Controls size of various Stepper elements */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** Key of `theme.radius` or any valid CSS value to set steps border-radius, `"xl"` by default */
   radius?: MantineRadius;

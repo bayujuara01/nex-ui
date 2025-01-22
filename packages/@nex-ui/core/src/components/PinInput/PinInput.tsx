@@ -8,7 +8,7 @@ import {
   factory,
   getSize,
   MantineRadius,
-  MantineSize,
+  NexSize,
   MantineSpacing,
   StylesApiProps,
   useProps,
@@ -49,7 +49,7 @@ export interface PinInputProps
   radius?: MantineRadius;
 
   /** Controls inputs `width` and `height`, `'sm'` by default */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** If set, the first input is focused when component is mounted, `false` by default */
   autoFocus?: boolean;

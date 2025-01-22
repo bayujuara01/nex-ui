@@ -8,7 +8,7 @@ import {
   getRadius,
   getSize,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -23,7 +23,7 @@ export type ProgressRootCssVariables = {
 
 export interface __ProgressRootProps extends BoxProps, ElementProps<'div'> {
   /** Controls track height, `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Key of `theme.radius` or any valid CSS value to set `border-radius`, `theme.defaultRadius` by default */
   radius?: MantineRadius;

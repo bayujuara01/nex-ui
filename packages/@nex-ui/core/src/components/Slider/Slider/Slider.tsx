@@ -12,7 +12,7 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   rem,
   StylesApiProps,
   useDirection,
@@ -47,7 +47,7 @@ export interface SliderProps
   radius?: MantineRadius;
 
   /** Controls size of the track, `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Minimal possible value, `0` by default */
   min?: number;

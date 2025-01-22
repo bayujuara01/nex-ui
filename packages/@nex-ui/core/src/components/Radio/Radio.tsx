@@ -14,7 +14,7 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   parseThemeColor,
   StylesApiProps,
   useProps,
@@ -50,7 +50,7 @@ export interface RadioProps
   color?: MantineColor;
 
   /** Controls size of the component, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** A component that replaces default check icon */
   icon?: React.FC<RadioIconProps>;

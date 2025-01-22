@@ -153,13 +153,15 @@ export interface HeadingStyle {
   lineHeight: string;
 }
 
-export type MantineSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-export type MantineBreakpointsValues = Record<MantineSize | (string & {}), string>;
-export type MantineFontSizesValues = Record<MantineSize | (string & {}), string>;
-export type MantineRadiusValues = Record<MantineSize | (string & {}), string>;
-export type MantineSpacingValues = Record<MantineSize | (string & {}), string>;
-export type MantineShadowsValues = Record<MantineSize | (string & {}), string>;
-export type MantineLineHeightValues = Record<MantineSize | (string & {}), string>;
+export type NexSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type NexExtendedSize = NexSize | '2xl';
+export type NexRadiusExtendedSize = '3xs' | '2xs' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | 'full';
+export type MantineBreakpointsValues = Record<NexSize | (string & {}), string>;
+export type MantineFontSizesValues = Record<NexSize | (string & {}), string>;
+export type MantineRadiusValues = Record<(NexSize & NexRadiusExtendedSize) | (string & {}), string>;
+export type MantineSpacingValues = Record<NexSize | (string & {}), string>;
+export type MantineShadowsValues = Record<NexSize | (string & {}), string>;
+export type MantineLineHeightValues = Record<NexSize | (string & {}), string>;
 
 export type MantineBreakpoint = keyof MantineBreakpointsValues;
 export type MantineFontSize = keyof MantineFontSizesValues;

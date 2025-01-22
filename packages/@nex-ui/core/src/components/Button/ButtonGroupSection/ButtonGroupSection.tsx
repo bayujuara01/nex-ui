@@ -10,7 +10,7 @@ import {
   getSize,
   MantineGradient,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -44,7 +44,7 @@ export interface ButtonGroupSectionProps
   autoContrast?: boolean;
 
   /** Controls section `height`, `font-size` and horizontal `padding`, `'sm'` by default */
-  size?: MantineSize | `compact-${MantineSize}` | (string & {});
+  size?: NexSize | `compact-${NexSize}` | (string & {});
 }
 
 export type ButtonGroupSectionFactory = Factory<{

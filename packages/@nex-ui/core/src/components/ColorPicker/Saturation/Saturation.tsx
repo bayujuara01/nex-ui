@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { clampUseMovePosition, useMove, UseMovePosition } from '@nex-ui/hooks';
-import { Box, ElementProps, MantineSize } from '../../../core';
+import { Box, ElementProps, NexSize } from '../../../core';
 import { useColorPickerContext } from '../ColorPicker.context';
 import { HsvaColor } from '../ColorPicker.types';
 import { convertHsvaTo } from '../converters';
@@ -13,7 +13,7 @@ export interface SaturationProps extends ElementProps<'div', 'onChange'> {
   onScrubStart?: () => void;
   onScrubEnd?: () => void;
   saturationLabel?: string;
-  size: MantineSize | (string & {});
+  size: NexSize | (string & {});
   color: string;
   focusable?: boolean;
 }

@@ -150,18 +150,18 @@ function Demo() {
 }
 ```
 
-## MantineSize type
+## NexSize type
 
-`MantineSize` type is a union of `'xs' | 'sm' | 'md' | 'lg' | 'xl'` values. You can use to add types
+`NexSize` type is a union of `'xs' | 'sm' | 'md' | 'lg' | 'xl'` values. You can use to add types
 to various props that accept size as an argument, for example, `radius`, `shadow`, `p`.
 
 ```tsx
-import { MantineSize, Paper } from '@nex-ui/core';
+import { NexSize, Paper } from '@nex-ui/core';
 
 interface DemoProps {
-  size: MantineSize;
-  radius: MantineSize | (string & {}) | number;
-  shadow: MantineSize | string;
+  size: NexSize;
+  radius: NexSize | (string & {}) | number;
+  shadow: NexSize | string;
 }
 
 function Demo({ size, radius, shadow }: DemoProps) {
@@ -218,7 +218,7 @@ extending `{x}Props` interface with the new variant type in your `mantine.d.ts` 
 Example of adding custom variant type to [Button](/core/button) component:
 
 ```tsx
-import { ButtonVariant, MantineSize } from '@nex-ui/core';
+import { ButtonVariant, NexSize } from '@nex-ui/core';
 
 type ExtendedButtonVariant = ButtonVariant | 'contrast' | 'radial-gradient';
 

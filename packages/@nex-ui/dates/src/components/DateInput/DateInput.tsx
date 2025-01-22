@@ -10,7 +10,7 @@ import {
   Factory,
   Input,
   InputVariant,
-  MantineSize,
+  NexSize,
   Popover,
   PopoverProps,
   StylesApiProps,
@@ -304,7 +304,7 @@ export const DateInput = factory<DateInputFactory>((_props, ref) => {
               maxDate={maxDate}
               locale={locale}
               getDayProps={_getDayProps}
-              size={inputProps.size as MantineSize}
+              size={inputProps.size as NexSize}
               date={_date}
               onDateChange={setDate}
             />

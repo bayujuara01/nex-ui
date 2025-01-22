@@ -12,7 +12,7 @@ import {
   ElementProps,
   factory,
   Factory,
-  MantineSize,
+  NexSize,
   rem,
   StylesApiProps,
   useNexTheme,
@@ -31,7 +31,7 @@ export interface __ColorSliderProps extends ElementProps<'div', 'onChange'> {
   onChangeEnd?: (value: number) => void;
   onScrubStart?: () => void;
   onScrubEnd?: () => void;
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
   focusable?: boolean;
 }
 

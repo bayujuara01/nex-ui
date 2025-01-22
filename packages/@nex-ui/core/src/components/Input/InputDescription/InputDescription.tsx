@@ -6,7 +6,7 @@ import {
   factory,
   Factory,
   getFontSize,
-  MantineSize,
+  NexSize,
   rem,
   StylesApiProps,
   useProps,
@@ -28,7 +28,7 @@ export interface InputDescriptionProps
   __inheritStyles?: boolean;
 
   /** Controls description `font-size`, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 }
 
 export type InputDescriptionFactory = Factory<{

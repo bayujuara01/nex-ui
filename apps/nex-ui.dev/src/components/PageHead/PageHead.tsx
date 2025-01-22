@@ -9,7 +9,7 @@ const metaDescription =
   'React components and hooks library with native dark theme support and focus on usability, accessibility and developer experience';
 
 export function PageHead({ title, description }: PageHeadProps) {
-  const _title = title ? `${title} | Mantine` : 'Mantine';
+  const _title = title ? `${title} | Nex UI` : 'Nex UI';
   const _description = description || metaDescription;
   return (
     <Head>

@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { IconChevronDown } from '@tabler/icons-react';
-import { Box, Text, UnstyledButton } from '@nex-ui/core';
+import { IconChevronDown, IconCircleCheck } from '@tabler/icons-react';
+import {Box, Flex, Text, UnstyledButton} from '@nex-ui/core';
 import { Frontmatter, MdxPagesCategory, MdxPagesGroup } from '@/types';
 import { CATEGORY_ICONS } from './category-icons';
 import classes from './NavbarLinksGroup.module.css';
@@ -37,8 +37,12 @@ function NavbarLink({ data, onNavbarClose, linkRef }: NavbarLinkProps) {
       className={classes.link}
       onClick={onNavbarClose}
       ref={linkRef}
+      c={ data.refactor && data.slug !== router.pathname ? "green" : undefined}
     >
-      {data.title}
+      <Flex align="center">
+        <Box mr={4}>{data.title}</Box>
+        {data.refactor && <IconCircleCheck color={data.slug !== router.pathname ? "var(--nex-color-green-5)" : "var(--nex-color-blue-7)"} size={16} />}
+      </Flex>
     </UnstyledButton>
   );
 }

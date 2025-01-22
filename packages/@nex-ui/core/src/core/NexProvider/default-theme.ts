@@ -48,6 +48,7 @@ export const DEFAULT_THEME: NexTheme = {
     md: rem(16),
     lg: rem(18),
     xl: rem(20),
+    // '2xl': rem(24)
   },
 
   lineHeights: {
@@ -56,6 +57,7 @@ export const DEFAULT_THEME: NexTheme = {
     md: '1.55',
     lg: '1.6',
     xl: '1.65',
+    // '2xl': '1.7'
   },
 
   radius: {
@@ -64,6 +66,7 @@ export const DEFAULT_THEME: NexTheme = {
     md: rem(8),
     lg: rem(16),
     xl: rem(32),
+    // '2xl': rem(40)
   },
 
   spacing: {
@@ -72,6 +75,7 @@ export const DEFAULT_THEME: NexTheme = {
     md: rem(16),
     lg: rem(20),
     xl: rem(32),
+    // '2xl': rem(40)
   },
 
   breakpoints: {
@@ -80,6 +84,7 @@ export const DEFAULT_THEME: NexTheme = {
     md: '62em',
     lg: '75em',
     xl: '88em',
+    // '2xl': '101em'
   },
 
   shadows: {
@@ -96,6 +101,9 @@ export const DEFAULT_THEME: NexTheme = {
     xl: `0 ${rem(1)} ${rem(3)} rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 ${rem(36)} ${rem(
       28
     )} ${rem(-7)}, rgba(0, 0, 0, 0.04) 0 ${rem(17)} ${rem(17)} ${rem(-7)}`,
+    // '2xl': `0 ${rem(1)} ${rem(3)} rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0 ${rem(36)} ${rem(
+    //   28
+    // )} ${rem(-7)}, rgba(0, 0, 0, 0.04) 0 ${rem(17)} ${rem(17)} ${rem(-7)}`
   },
 
   other: {},

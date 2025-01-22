@@ -1,5 +1,5 @@
 import { useId, useUncontrolled } from '@nex-ui/hooks';
-import { factory, Factory, MantineSize, useProps } from '../../../core';
+import { factory, Factory, NexSize, useProps } from '../../../core';
 import { Input, InputWrapperProps, InputWrapperStylesNames } from '../../Input';
 import { InputsGroupFieldset } from '../../InputsGroupFieldset';
 import { RadioGroupProvider } from '../RadioGroup.context';
@@ -24,7 +24,7 @@ export interface RadioGroupProps
   wrapperProps?: Record<string, any>;
 
   /** Controls size of the `Input.Wrapper`, `'sm'` by default */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** `name` attribute of child radio inputs. By default, `name` is generated randomly. */
   name?: string;

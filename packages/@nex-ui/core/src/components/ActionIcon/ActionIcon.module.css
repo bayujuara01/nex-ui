@@ -1,9 +1,10 @@
 .root {
-  --ai-size-xs: 18px;
-  --ai-size-sm: 22px;
-  --ai-size-md: 28px;
-  --ai-size-lg: 34px;
-  --ai-size-xl: 44px;
+  --ai-size-xs: 26px;
+  --ai-size-sm: 32px;
+  --ai-size-md: 42px;
+  --ai-size-lg: 56px;
+  --ai-size-xl: 72px;
+  --ai-size-2xl: 98px;
 
   --ai-size-input-xs: 30px;
   --ai-size-input-sm: 36px;

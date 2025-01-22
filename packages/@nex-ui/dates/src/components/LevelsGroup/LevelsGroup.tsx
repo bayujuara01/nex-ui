@@ -4,7 +4,7 @@ import {
   ElementProps,
   factory,
   Factory,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -18,7 +18,7 @@ export interface LevelsGroupProps
     StylesApiProps<LevelsGroupFactory>,
     ElementProps<'div'> {
   __staticSelector?: string;
-  size?: MantineSize;
+  size?: NexSize;
 }
 
 export type LevelsGroupFactory = Factory<{

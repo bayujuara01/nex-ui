@@ -5,7 +5,7 @@ import {
   ElementProps,
   factory,
   Factory,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -52,7 +52,7 @@ export interface MonthsListProps
   year: Date;
 
   /** Component size */
-  size?: MantineSize;
+  size?: NexSize;
 }
 
 export type MonthsListFactory = Factory<{

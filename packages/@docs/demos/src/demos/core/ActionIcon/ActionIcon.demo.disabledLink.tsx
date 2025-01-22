@@ -10,7 +10,7 @@ function Demo() {
   return (
     <ActionIcon
       component="a"
-      href="https://mantine.dev"
+      href="https://google.com"
       data-disabled
       size="xl"
       aria-label="Open in a new tab"
@@ -26,7 +26,7 @@ function Demo() {
   return (
     <ActionIcon
       component="a"
-      href="https://mantine.dev"
+      href="https://google.com"
       data-disabled
       size="xl"
       aria-label="Open in a new tab"

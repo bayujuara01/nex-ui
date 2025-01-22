@@ -1,7 +1,7 @@
-import { createSafeContext, GetStylesApi, MantineSize } from '../../core';
+import { createSafeContext, GetStylesApi, NexSize } from '../../core';
 import type { GridFactory } from './Grid';
 
-export type GridBreakpoints = Record<MantineSize, string>;
+export type GridBreakpoints = Record<NexSize, string>;
 
 interface GridContextValue {
   getStyles: GetStylesApi<GridFactory>;

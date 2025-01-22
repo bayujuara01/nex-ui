@@ -15,7 +15,7 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -38,7 +38,7 @@ export interface PaginationRootProps
     StylesApiProps<PaginationRootFactory>,
     ElementProps<'div', 'value' | 'onChange'> {
   /** `height` and `min-width` of controls, `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Total number of pages, must be an integer */
   total: number;

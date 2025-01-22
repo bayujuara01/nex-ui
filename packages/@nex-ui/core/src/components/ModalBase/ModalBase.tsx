@@ -8,7 +8,7 @@ import {
   getShadow,
   getSpacing,
   MantineShadow,
-  MantineSize,
+  NexSize,
   MantineSpacing,
 } from '../../core';
 import { OptionalPortal, PortalProps } from '../Portal';
@@ -76,7 +76,7 @@ export interface ModalBaseProps extends BoxProps, ElementProps<'div', 'title'> {
   padding?: MantineSpacing;
 
   /** Controls width of the content area, `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Props passed down to react-remove-scroll, can be used to customize scroll lock behavior */
   removeScrollProps?: RemoveScrollProps;

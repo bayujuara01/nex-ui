@@ -12,7 +12,7 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -60,7 +60,7 @@ export interface SwitchProps
   color?: MantineColor;
 
   /** Controls size of all elements */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** Key of `theme.radius` or any valid CSS value to set `border-radius,` "xl" by default */
   radius?: MantineRadius;

@@ -8,7 +8,7 @@ function Demo() {
   return (
     <Button
       component="a"
-      href="https://mantine.dev"
+      href="https://google.com"
       data-disabled
       onClick={(event) => event.preventDefault()}
     >
@@ -22,7 +22,7 @@ function Demo() {
   return (
     <Button
       component="a"
-      href="https://mantine.dev"
+      href="https://google.com"
       data-disabled
       onClick={(event) => event.preventDefault()}
     >

@@ -14,7 +14,7 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   parseThemeColor,
   StylesApiProps,
   useProps,
@@ -48,7 +48,7 @@ export interface CheckboxProps
   color?: MantineColor;
 
   /** Controls size of the component, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** Key of `theme.radius` or any valid CSS value to set `border-radius,` `theme.defaultRadius` by default */
   radius?: MantineRadius;

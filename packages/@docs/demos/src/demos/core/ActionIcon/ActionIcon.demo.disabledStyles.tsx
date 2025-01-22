@@ -21,7 +21,7 @@ const cssCode = `
 .button {
   &:disabled,
   &[data-disabled] {
-    border-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    border-color: light-dark(var(--nex-color-gray-3), var(--nex-color-dark-4));
     background-color: transparent;
   }
 }

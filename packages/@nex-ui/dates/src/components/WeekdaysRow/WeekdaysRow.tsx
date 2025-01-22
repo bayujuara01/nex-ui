@@ -7,7 +7,7 @@ import {
   Factory,
   getFontSize,
   getSpacing,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -29,7 +29,7 @@ export interface WeekdaysRowProps
   __staticSelector?: string;
 
   /** Controls size */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** Dayjs locale, defaults to value defined in DatesProvider */
   locale?: string;

@@ -14,13 +14,13 @@ function Demo() {
   return (
     <Button.Group>
       <Button variant="default" radius="md" onClick={decrement}>
-        <IconChevronDown color="var(--mantine-color-red-text)" />
+        <IconChevronDown color="var(--nex-color-red-text)" />
       </Button>
-      <Button.GroupSection variant="default" bg="var(--mantine-color-body)" miw={80}>
+      <Button.GroupSection variant="default" bg="var(--nex-color-body)" miw={80}>
         {value}
       </Button.GroupSection>
       <Button variant="default" radius="md" onClick={increment}>
-        <IconChevronUp color="var(--mantine-color-teal-text)" />
+        <IconChevronUp color="var(--nex-color-teal-text)" />
       </Button>
     </Button.Group>
   );
@@ -33,13 +33,13 @@ function Demo() {
   return (
     <Button.Group>
       <Button variant="default" radius="md" onClick={decrement}>
-        <IconChevronDown color="var(--mantine-color-red-text)" />
+        <IconChevronDown color="var(--nex-color-red-text)" />
       </Button>
-      <Button.GroupSection variant="default" bg="var(--mantine-color-body)" miw={80}>
+      <Button.GroupSection variant="default" bg="var(--nex-color-body)" miw={80}>
         {value}
       </Button.GroupSection>
       <Button variant="default" radius="md" onClick={increment}>
-        <IconChevronUp color="var(--mantine-color-teal-text)" />
+        <IconChevronUp color="var(--nex-color-teal-text)" />
       </Button>
     </Button.Group>
   );

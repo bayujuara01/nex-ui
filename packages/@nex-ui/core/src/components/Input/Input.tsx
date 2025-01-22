@@ -7,7 +7,7 @@ import {
   getRadius,
   getSize,
   MantineRadius,
-  MantineSize,
+  NexSize,
   polymorphicFactory,
   PolymorphicFactory,
   rem,
@@ -93,7 +93,7 @@ export interface __InputProps {
   disabled?: boolean;
 
   /** Controls input `height` and horizontal `padding`, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** Determines whether the input should have `cursor: pointer` style, `false` by default */
   pointer?: boolean;
