@@ -13,8 +13,7 @@ import {
   getSize,
   getThemeColor,
   MantineColor,
-  MantineRadius,
-  NexSize,
+  MantineRadius, NexExtendedSize,
   parseThemeColor,
   StylesApiProps,
   useProps,
@@ -27,6 +26,7 @@ import { CheckboxGroup } from './CheckboxGroup/CheckboxGroup';
 import { CheckboxIndicator } from './CheckboxIndicator/CheckboxIndicator';
 import { CheckboxIcon } from './CheckIcon';
 import classes from './Checkbox.module.css';
+import {getPreferRadius} from "../../core/utils/get-size/get-size";
 
 export type CheckboxVariant = 'filled' | 'outline';
 export type CheckboxStylesNames = 'icon' | 'inner' | 'input' | InlineInputStylesNames;
@@ -47,8 +47,8 @@ export interface CheckboxProps
   /** Key of `theme.colors` or any valid CSS color to set input background color in checked state, `theme.primaryColor` by default */
   color?: MantineColor;
 
-  /** Controls size of the component, `'sm'` by default */
-  size?: NexSize | (string & {});
+  /** Controls size of the component, `'md'` by default */
+  size?: NexExtendedSize | (string & {});
 
   /** Key of `theme.radius` or any valid CSS value to set `border-radius,` `theme.defaultRadius` by default */
   radius?: MantineRadius;
@@ -110,7 +110,7 @@ const varsResolver = createVarsResolver<CheckboxFactory>(
     return {
       root: {
         '--checkbox-size': getSize(size, 'checkbox-size'),
-        '--checkbox-radius': radius === undefined ? undefined : getRadius(radius),
+        '--checkbox-radius': radius === undefined ? getPreferRadius(size) : getRadius(radius),
         '--checkbox-color': variant === 'outline' ? outlineColor : getThemeColor(color, theme),
         '--checkbox-icon-color': iconColor
           ? getThemeColor(iconColor, theme)
@@ -227,7 +227,7 @@ export const Checkbox = factory<CheckboxFactory>((_props, ref) => {
 });
 
 Checkbox.classes = { ...classes, ...InlineInputClasses };
-Checkbox.displayName = '@mantine/core/Checkbox';
+Checkbox.displayName = '@nex-ui/core/Checkbox';
 Checkbox.Group = CheckboxGroup;
 Checkbox.Indicator = CheckboxIndicator;
 Checkbox.Card = CheckboxCard;

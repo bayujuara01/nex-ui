@@ -10,7 +10,7 @@ function Demo() {
       label={
         <>
           I accept{' '}
-          <Anchor href="https://mantine.dev" target="_blank" inherit>
+          <Anchor href="https://google.com" target="_blank" inherit>
             terms and conditions
           </Anchor>
         </>
@@ -26,7 +26,7 @@ function Demo() {
       label={
         <>
           I accept{' '}
-          <Anchor href="https://mantine.dev" target="_blank" inherit>
+          <Anchor href="https://google.com" target="_blank" inherit>
             terms and conditions
           </Anchor>
         </>

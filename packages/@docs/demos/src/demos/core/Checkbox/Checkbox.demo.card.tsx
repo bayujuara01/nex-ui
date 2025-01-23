@@ -5,36 +5,36 @@ import classes from './Checkbox.demo.card.module.css';
 
 const cssCode = `.root {
   position: relative;
-  padding: var(--mantine-spacing-md);
+  padding: var(--nex-spacing-md);
   transition: border-color 150ms ease;
 
   &[data-checked] {
-    border-color: var(--mantine-primary-color-filled);
+    border-color: var(--nex-primary-color-filled);
   }
 
   @mixin hover {
     @mixin light {
-      background-color: var(--mantine-color-gray-0);
+      background-color: var(--nex-color-gray-0);
     }
 
     @mixin dark {
-      background-color: var(--mantine-color-dark-6);
+      background-color: var(--nex-color-dark-6);
     }
   }
 }
 
 .label {
-  font-family: var(--mantine-font-family-monospace);
+  font-family: var(--nex-font-family-monospace);
   font-weight: bold;
-  font-size: var(--mantine-font-size-md);
+  font-size: var(--nex-font-size-md);
   line-height: 1.3;
-  color: var(--mantine-color-bright);
+  color: var(--nex-color-bright);
 }
 
 .description {
   margin-top: 8px;
-  color: var(--mantine-color-dimmed);
-  font-size: var(--mantine-font-size-xs);
+  color: var(--nex-color-dimmed);
+  font-size: var(--nex-font-size-xs);
 }
 `;
 
@@ -56,7 +56,7 @@ function Demo() {
       <Group wrap="nowrap" align="flex-start">
         <Checkbox.Indicator />
         <div>
-          <Text className={classes.label}>@mantine/core</Text>
+          <Text className={classes.label}>@nex-ui/core</Text>
           <Text className={classes.description}>
             Core components library: inputs, buttons, overlays, etc.
           </Text>
@@ -80,7 +80,7 @@ function Demo() {
       <Group wrap="nowrap" align="flex-start">
         <Checkbox.Indicator />
         <div>
-          <Text className={classes.label}>@mantine/core</Text>
+          <Text className={classes.label}>@nex-ui/core</Text>
           <Text className={classes.description}>
             Core components library: inputs, buttons, overlays, etc.
           </Text>

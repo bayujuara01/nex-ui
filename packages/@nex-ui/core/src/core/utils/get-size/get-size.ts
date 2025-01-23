@@ -1,6 +1,14 @@
 import { isNumberLike } from '../is-number-like/is-number-like';
 import { rem } from '../units-converters';
 
+const preferredRadius = new Map<string | unknown, string>([[ 'xs', '2xs'],
+  [ 'sm', '2xs'],
+  [ 'md', 'xs'],
+  [ 'lg', 'sm'],
+  [ 'xl', 'sm'],
+  [ '2xl', 'sm']
+]);
+
 export function getSize(size: unknown, prefix = 'size', convertToRem = true): string | undefined {
   if (size === undefined) {
     return undefined;
@@ -23,6 +31,14 @@ export function getRadius(size: unknown) {
   }
 
   return getSize(size, 'mantine-radius');
+}
+
+export function getPreferRadius(size: unknown) {
+  if (size === undefined) {
+    return 'var(--nex-radius-default)';
+  }
+
+  return getSize(preferredRadius.get(size), 'nex-radius');
 }
 
 export function getFontSize(size: unknown) {

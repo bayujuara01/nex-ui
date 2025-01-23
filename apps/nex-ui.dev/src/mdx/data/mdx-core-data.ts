@@ -602,6 +602,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Checkbox } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Checkbox/Checkbox.tsx',
     docs: 'core/checkbox.mdx',
+    refactor: true
   },
 
   Combobox: {
