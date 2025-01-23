@@ -105,7 +105,7 @@ interface Configuration {
    ** In mobile mode the section always has 100% width and its
    ** collapsed state is controlled by the `collapsed.mobile`
    ** instead of `collapsed.desktop` */
-  breakpoint: MantineBreakpoint | (string & {}) | number;
+  breakpoint: NexBreakpoint | (string & {}) | number;
 
   /** Determines whether the section should be collapsed */
   collapsed?: { desktop?: boolean; mobile?: boolean };
@@ -261,7 +261,7 @@ function Demo() {
       <AppShell.Header>Header</AppShell.Header>
 
       <AppShell.Main
-        pt={`calc(${rem(60)} + var(--mantine-spacing-md))`}
+        pt={`calc(${rem(60)} + var(--nex-spacing-md))`}
       >
         {/* Content */}
       </AppShell.Main>

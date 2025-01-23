@@ -264,6 +264,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Group } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Group/Group.tsx',
     docs: 'core/group.mdx',
+    refactor: true
   },
   Highlight: {
     title: 'Highlight',
@@ -398,6 +399,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Stack } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Stack/Stack.tsx',
     docs: 'core/stack.mdx',
+    refactor: true
   },
   Switch: {
     title: 'Switch',
@@ -766,6 +768,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { AppShell } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/AppShell/AppShell.tsx',
     docs: 'core/app-shell.mdx',
+    refactor: true
   },
 
   Skeleton: {
@@ -790,6 +793,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { SimpleGrid } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/SimpleGrid/SimpleGrid.tsx',
     docs: 'core/simple-grid.mdx',
+    refactor: true
   },
 
   Grid: {
@@ -903,6 +907,7 @@ export const MDX_CORE_DATA: Record<string, Frontmatter> = {
     import: "import { Space } from '@nex-ui/core';",
     source: '@nex-ui/core/src/components/Space/Space.tsx',
     docs: 'core/space.mdx',
+    refactor: true
   },
 
   Indicator: {
