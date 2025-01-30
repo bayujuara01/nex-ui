@@ -1,11 +1,12 @@
 @layer mantine {.m_bf2d988c {
-  --checkbox-size-xs: 16px;
-  --checkbox-size-sm: 20px;
-  --checkbox-size-md: 24px;
-  --checkbox-size-lg: 30px;
-  --checkbox-size-xl: 36px;
+  --checkbox-size-xs: 12px;
+  --checkbox-size-sm: 16px;
+  --checkbox-size-md: 20px;
+  --checkbox-size-lg: 24px;
+  --checkbox-size-xl: 28px;
+  --checkbox-size-2xl: 32px;
 
-  --checkbox-size: var(--checkbox-size-sm);
+  --checkbox-size: var(--checkbox-size-md);
   --checkbox-color: var(--mantine-primary-color-filled);
   --checkbox-icon-color: var(--mantine-color-white);
 }

@@ -52,7 +52,7 @@ export function Jumbotron() {
 
           <Button
             component="a"
-            href="https://github.com/mantinedev/mantine"
+            href="https://github.com/bayujuara01/nex-ui"
             size="xl"
             variant="outline"
             radius="md"

@@ -1,4 +1,4 @@
-import { filterProps } from '../../utils';
+import  { filterProps } from '../../utils';
 import { useNexTheme } from '../NexThemeProvider';
 
 export function useProps<T extends Record<string, any>, U extends Partial<T> = {}>(

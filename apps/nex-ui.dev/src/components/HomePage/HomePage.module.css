@@ -14,8 +14,8 @@
 
     --docs-home-page-gradient: linear-gradient(
       52deg,
-      var(--mantine-color-blue-7) 3%,
-      var(--mantine-color-cyan-5) 97%
+      var(--mantine-color-orange-7) 3%,
+      var(--mantine-color-yellow-6) 97%
     );
   }
 

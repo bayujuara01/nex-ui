@@ -75,8 +75,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-b"
@@ -86,8 +86,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-c"
@@ -97,8 +97,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-d"
@@ -108,8 +108,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-e"
@@ -119,8 +119,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-f"
@@ -130,8 +130,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-g"
@@ -141,8 +141,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-h"
@@ -152,8 +152,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-i"
@@ -163,8 +163,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-j"
@@ -174,8 +174,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-k"
@@ -185,8 +185,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-l"
@@ -196,8 +196,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
         <linearGradient
           id="hero-m"
@@ -207,8 +207,8 @@ export function Hero() {
           y2="47.652"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={theme.colors.cyan[4]} />
-          <stop offset="1" stopColor={theme.colors.blue[6]} />
+          <stop stopColor={theme.colors.yellow[5]} />
+          <stop offset="1" stopColor={theme.colors.orange[7]} />
         </linearGradient>
       </defs>
     </svg>

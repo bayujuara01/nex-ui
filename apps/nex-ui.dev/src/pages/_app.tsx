@@ -30,8 +30,10 @@ import { Shell } from '@/components/Shell';
 import { FontsStyle } from '@/fonts';
 import { theme } from '../../theme';
 import { emotionCache } from '../emotion';
-
 import '../styles/variables.css';
+import {useEffect, useMemo, useState} from "react";
+import {HeaderControlsProps} from "@/components/Shell/Header/Header";
+import {headerControlsProperties} from "@/constants/properties-constant";
 
 const excludeShell = ['/', '/combobox', '/app-shell'];
 
@@ -44,8 +46,9 @@ async function loadShiki() {
 
   return shiki;
 }
-
+const color = ['red', 'orange', 'blue', 'green', 'yellow', 'violet'];
 export default function App({ Component, pageProps, router }: AppProps) {
+  const [themeState, setThemeState] = useState(theme);
   const shouldRenderShell = !excludeShell.includes(router.pathname);
   const [navbarOpened, setNavbarOpened] = useLocalStorage({
     key: 'mantine-navbar-opened',
@@ -53,6 +56,14 @@ export default function App({ Component, pageProps, router }: AppProps) {
   });
 
   useHotkeys([['mod + alt + N', () => setNavbarOpened(!navbarOpened)]]);
+
+  useEffect(() => {
+    const interval = setInterval(() => setThemeState((theme) => {
+      const randomColor = color[Math.floor(Math.random() * color.length)]
+      return { ...theme, primaryColor: randomColor}
+    }), 500);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -77,20 +88,21 @@ export default function App({ Component, pageProps, router }: AppProps) {
       <FontsStyle />
       <DirectionProvider initialDirection="ltr" detectDirection={false}>
         <NexEmotionProvider cache={emotionCache}>
-          <NexProvider theme={theme} defaultColorScheme="light">
+          <NexProvider theme={themeState} defaultColorScheme="light">
             <ShikiProvider loadShiki={loadShiki}>
               <Search />
               <Notifications />
               <ModalsProviderDemo>
                 <MdxProvider>
-                  <HotKeysHandler />
-                  {shouldRenderShell ? (
-                    <Shell withNavbar={navbarOpened}>
+
+                    <HotKeysHandler />
+                    {shouldRenderShell ? (
+                      <Shell withNavbar={navbarOpened} headerControlsProps={headerControlsProperties}>
+                        <Component {...pageProps} />
+                      </Shell>
+                    ) : (
                       <Component {...pageProps} />
-                    </Shell>
-                  ) : (
-                    <Component {...pageProps} />
-                  )}
+                    )}
                 </MdxProvider>
               </ModalsProviderDemo>
             </ShikiProvider>

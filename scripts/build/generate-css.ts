@@ -21,12 +21,9 @@ async function processFile(
   scopeBehaviour: 'local' | 'global',
   outputFolder: string
 ) {
-  if (scopeBehaviour === 'global') {
-    logger.info(`Generating ${filePath}, output ${outputFolder}`);
-  }
   const result = await postcss([
     postcssPresetMantine,
-    postcssModules({ generateScopedName, getJSON: () => {}, scopeBehaviour }),
+    postcssModules({ generateScopedName, getJSON: () => {}, scopeBehaviour, }),
     postcssPrefixAliasPlugin()
   ]).process(fs.readFileSync(filePath, 'utf-8'), { from: path.basename(filePath) });
 

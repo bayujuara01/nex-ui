@@ -13,15 +13,21 @@ import { Reviews } from './Reviews/Reviews';
 import { Theming } from './Theming/Theming';
 import { Usage } from './Usage/Usage';
 import { Waves } from './Waves/Waves';
+import { Button, Center} from "@nex-ui/core";
 import classes from './HomePage.module.css';
+import {headerControlsProperties} from "@/constants/properties-constant";
 
 export function HomePage() {
+
   return (
     <>
+      <Center>
+        <Button variant="filled" color="grape">Toxic</Button>
+      </Center>
       <Head>
         <title>Nex UI</title>
       </Head>
-      <Shell mobileNavbarOnly>
+      <Shell mobileNavbarOnly headerControlsProps={headerControlsProperties}>
         <div className={classes.root}>
           <Jumbotron />
           <Waves height={40} width={150} />

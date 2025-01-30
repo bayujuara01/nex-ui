@@ -3905,6 +3905,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@nex-ui/context-menu@workspace:packages/@nex-ui/context-menu":
+  version: 0.0.0-use.local
+  resolution: "@nex-ui/context-menu@workspace:packages/@nex-ui/context-menu"
+  dependencies:
+    "@nex-ui/core": "workspace:*"
+    "@nex-ui/hooks": "workspace:*"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+  peerDependencies:
+    "@nex-ui/core": ~7.15.6
+    "@nex-ui/hooks": ~7.15.6
+    react: ^18.x || ^19.x
+    react-dom: ^18.x || ^19.x
+  languageName: unknown
+  linkType: soft
+
 "@nex-ui/core@workspace:*, @nex-ui/core@workspace:packages/@nex-ui/core":
   version: 0.0.0-use.local
   resolution: "@nex-ui/core@workspace:packages/@nex-ui/core"
