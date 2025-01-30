@@ -45,16 +45,17 @@
     "type": "git",
     "directory": "packages/@nex-ui/context-menu"
   },
-  "peerDependencies": {
-    "@nex-ui/core": "~7.15.6",
-    "@nex-ui/hooks": "~7.15.6",
-    "react": "^18.x || ^19.x",
-    "react-dom": "^18.x || ^19.x"
-  },
   "devDependencies": {
     "@nex-ui/core": "workspace:*",
     "@nex-ui/hooks": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@nex-ui/core": "~7.15.5",
+    "@nex-ui/hooks": "~7.15.5",
+    "clsx": ">=2",
+    "react": "^18.x || ^19.x",
+    "react-dom": "^18.x || ^19.x"
   }
 }
