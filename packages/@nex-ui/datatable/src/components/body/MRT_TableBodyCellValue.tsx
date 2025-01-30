@@ -1,4 +1,4 @@
-import { Highlight, type HighlightProps } from '@mantine/core';
+import { Highlight, type HighlightProps } from '@nex-ui/core';
 
 import {
   type MRT_Cell,

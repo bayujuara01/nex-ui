@@ -8,7 +8,7 @@ import {
   Menu,
   Text,
   Tooltip,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { localizedFilterOption } from '../../fns/filterFns';
 import {

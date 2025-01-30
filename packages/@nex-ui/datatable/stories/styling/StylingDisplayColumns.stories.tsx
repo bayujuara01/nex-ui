@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core';
+import { Button } from '@nex-ui/core';
 
 import { MantineReactTable, type MRT_ColumnDef } from '../../src';
 

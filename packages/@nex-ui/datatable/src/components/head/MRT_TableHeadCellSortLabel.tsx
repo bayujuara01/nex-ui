@@ -7,7 +7,7 @@ import {
   type ActionIconProps,
   Indicator,
   Tooltip,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import type { MRT_Header, MRT_RowData, MRT_TableInstance } from '../../types';
 import { dataVariable } from '../../utils/style.utils';

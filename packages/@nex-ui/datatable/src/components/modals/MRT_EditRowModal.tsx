@@ -1,4 +1,4 @@
-import { Flex, Modal, type ModalProps, Stack } from '@mantine/core';
+import { Flex, Modal, type ModalProps, Stack } from '@nex-ui/core';
 
 import {
   type MRT_Row,

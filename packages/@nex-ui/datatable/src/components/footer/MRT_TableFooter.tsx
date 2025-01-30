@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import classes from './MRT_TableFooter.module.css';
 
-import { TableTfoot, type TableTfootProps } from '@mantine/core';
+import { TableTfoot, type TableTfootProps } from '@nex-ui/core';
 
 import { MRT_TableFooterRow } from './MRT_TableFooterRow';
 

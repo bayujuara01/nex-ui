@@ -1,6 +1,6 @@
 import { type DragEvent, type RefObject } from 'react';
 
-import { type ActionIconProps } from '@mantine/core';
+import { type ActionIconProps } from '@nex-ui/core';
 
 import {
   type MRT_CellValue,

@@ -8,7 +8,7 @@ import {
   Switch,
   type SwitchProps,
   Tooltip,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import {
   type MRT_Row,

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import classes from './MRT_ExpandAllButton.module.css';
 
-import { ActionIcon, type ActionIconProps, Tooltip } from '@mantine/core';
+import { ActionIcon, type ActionIconProps, Tooltip } from '@nex-ui/core';
 
 import { type MRT_RowData, type MRT_TableInstance } from '../../types';
 import { parseFromValuesOrFunc } from '../../utils/utils';

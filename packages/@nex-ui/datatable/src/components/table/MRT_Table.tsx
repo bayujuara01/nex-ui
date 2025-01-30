@@ -10,7 +10,7 @@ import {
   Table,
   type TableProps,
   useMantineColorScheme,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { useMRT_ColumnVirtualizer } from '../../hooks/useMRT_ColumnVirtualizer';
 import { type MRT_RowData, type MRT_TableInstance } from '../../types';

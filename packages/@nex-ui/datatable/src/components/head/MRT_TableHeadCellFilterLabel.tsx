@@ -10,7 +10,7 @@ import {
   Popover,
   Tooltip,
   Transition,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { MRT_TableHeadCellFilterContainer } from './MRT_TableHeadCellFilterContainer';
 

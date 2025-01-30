@@ -13,7 +13,7 @@ import {
   Collapse,
   Flex,
   Stack,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { type MRT_RowData, type MRT_TableInstance } from '../../types';
 import { getMRT_SelectAllHandler } from '../../utils/row.utils';

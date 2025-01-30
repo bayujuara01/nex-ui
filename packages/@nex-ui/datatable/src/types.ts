@@ -71,8 +71,8 @@ import {
   type TableTrProps,
   type TextInputProps,
   type UnstyledButtonProps,
-} from '@mantine/core';
-import { type DateInputProps } from '@mantine/dates';
+} from '@nex-ui/core';
+import { type DateInputProps } from '@nex-ui/dates';
 
 import { type MRT_AggregationFns } from './fns/aggregationFns';
 import { type MRT_FilterFns } from './fns/filterFns';
@@ -424,7 +424,7 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
     renderedColumnIndex?: number;
     renderedRowIndex?: number;
     row: MRT_Row<TData>;
-    rowRef?: RefObject<HTMLTableRowElement>;
+    rowRef?: RefObject<HTMLTableRowElement | null>;
     table: MRT_TableInstance<TData>;
   }) => ReactNode;
   /**

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import classes from './MRT_TableHeadRow.module.css';
 
-import { Box, TableTr, type TableTrProps } from '@mantine/core';
+import { Box, TableTr, type TableTrProps } from '@nex-ui/core';
 
 import { MRT_TableHeadCell } from './MRT_TableHeadCell';
 

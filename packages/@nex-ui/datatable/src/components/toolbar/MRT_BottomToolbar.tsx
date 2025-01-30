@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import commonClasses from './common.styles.module.css';
 import classes from './MRT_BottomToolbar.module.css';
 
-import { Box, type BoxProps } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { Box, type BoxProps } from '@nex-ui/core';
+import { useMediaQuery } from '@nex-ui/hooks';
 
 import { MRT_ProgressBar } from './MRT_ProgressBar';
 import { MRT_TablePagination } from './MRT_TablePagination';

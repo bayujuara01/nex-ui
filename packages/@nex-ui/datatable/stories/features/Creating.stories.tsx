@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { ActionIcon, Button, Select } from '@mantine/core';
+import { ActionIcon, Button, Select } from '@nex-ui/core';
 
 import {
   createRow,

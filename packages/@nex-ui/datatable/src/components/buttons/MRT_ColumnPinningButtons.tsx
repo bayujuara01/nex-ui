@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import classes from './MRT_ColumnPinningButtons.module.css';
 
-import { ActionIcon, Flex, Tooltip } from '@mantine/core';
+import { ActionIcon, Flex, Tooltip } from '@nex-ui/core';
 
 import {
   type MRT_Column,

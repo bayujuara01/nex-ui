@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Button, Checkbox, Flex, Group, SegmentedControl } from '@mantine/core';
+import { Button, Checkbox, Flex, Group, SegmentedControl } from '@nex-ui/core';
 
 import {
   MantineReactTable,

@@ -1,4 +1,4 @@
-import { Button, Container } from '@mantine/core';
+import { Button, Container } from '@nex-ui/core';
 
 import { MantineReactTable, useMantineReactTable } from '../../src';
 

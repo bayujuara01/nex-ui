@@ -10,7 +10,7 @@ import {
   type PaginationProps,
   Select,
   Text,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { type MRT_RowData, type MRT_TableInstance } from '../../types';
 import { parseFromValuesOrFunc } from '../../utils/utils';

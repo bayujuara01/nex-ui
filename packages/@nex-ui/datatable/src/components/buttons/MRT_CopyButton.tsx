@@ -9,7 +9,7 @@ import {
   Tooltip,
   UnstyledButton,
   type UnstyledButtonProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import {
   type MRT_Cell,

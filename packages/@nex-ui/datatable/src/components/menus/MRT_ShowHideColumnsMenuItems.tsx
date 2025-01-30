@@ -14,8 +14,8 @@ import {
   Switch,
   Text,
   Tooltip,
-  useMantineTheme,
-} from '@mantine/core';
+  useNexTheme,
+} from '@nex-ui/core';
 
 import {
   type MRT_CellValue,
@@ -43,7 +43,7 @@ export const MRT_ShowHideColumnsMenuItems = <TData extends MRT_RowData>({
   setHoveredColumn,
   table,
 }: Props<TData>) => {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const {
     getState,
     options: {

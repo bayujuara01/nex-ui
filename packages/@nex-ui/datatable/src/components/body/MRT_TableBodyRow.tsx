@@ -9,7 +9,7 @@ import {
   type TableProps,
   TableTr,
   type TableTrProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { Memo_MRT_TableBodyCell, MRT_TableBodyCell } from './MRT_TableBodyCell';
 import { MRT_TableDetailPanel } from './MRT_TableDetailPanel';
@@ -106,7 +106,7 @@ export const MRT_TableBodyRow = <TData extends MRT_RowData>({
       !pinnedRowIds ||
       !row.getIsPinned()
     )
-      return [];
+      {return [];}
     return [
       [...pinnedRowIds].reverse().indexOf(row.id),
       pinnedRowIds.indexOf(row.id),
@@ -131,7 +131,7 @@ export const MRT_TableBodyRow = <TData extends MRT_RowData>({
     }
   };
 
-  const rowRef = useRef<HTMLTableRowElement | null>(null);
+  const rowRef = useRef<HTMLTableRowElement>(null);
 
   let striped = tableProps.striped as boolean | string;
 
@@ -199,16 +199,17 @@ export const MRT_TableBodyRow = <TData extends MRT_RowData>({
           ? children
           : (virtualColumns ?? row.getVisibleCells()).map(
               (cellOrVirtualCell, renderedColumnIndex) => {
+                let currentRerenderColumnIndex = renderedColumnIndex;
                 let cell = cellOrVirtualCell as MRT_Cell<TData>;
                 if (columnVirtualizer) {
-                  renderedColumnIndex = (cellOrVirtualCell as MRT_VirtualItem)
+                  currentRerenderColumnIndex = (cellOrVirtualCell as MRT_VirtualItem)
                     .index;
                   cell = visibleCells[renderedColumnIndex];
                 }
                 const cellProps = {
                   cell,
                   numRows,
-                  renderedColumnIndex,
+                  renderedColumnIndex: currentRerenderColumnIndex,
                   renderedRowIndex,
                   rowRef,
                   table,
@@ -222,9 +223,9 @@ export const MRT_TableBodyRow = <TData extends MRT_RowData>({
                   !draggingRow &&
                   editingCell?.id !== cell.id &&
                   editingRow?.id !== row.id ? (
-                  <Memo_MRT_TableBodyCell key={cell.id} {...cellProps} />
+                  <Memo_MRT_TableBodyCell key={cell.id} {...cellProps} rowRef={rowRef} />
                 ) : (
-                  <MRT_TableBodyCell key={cell.id} {...cellProps} />
+                  <MRT_TableBodyCell key={cell.id} {...cellProps} rowRef={rowRef} />
                 );
               },
             )}

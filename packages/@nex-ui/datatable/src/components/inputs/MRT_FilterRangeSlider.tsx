@@ -4,7 +4,7 @@ import classes from './MRT_FilterRangeSlider.module.css';
 
 import { useEffect, useRef, useState } from 'react';
 
-import { RangeSlider, type RangeSliderProps } from '@mantine/core';
+import { RangeSlider, type RangeSliderProps } from '@nex-ui/core';
 
 import {
   type MRT_Header,

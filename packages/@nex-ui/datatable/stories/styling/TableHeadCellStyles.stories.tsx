@@ -1,4 +1,4 @@
-import { Box } from '@mantine/core';
+import { Box } from '@nex-ui/core';
 
 import { MantineReactTable, type MRT_ColumnDef } from '../../src';
 

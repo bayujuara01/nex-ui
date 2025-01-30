@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mantine/core';
+import { Box, Stack } from '@nex-ui/core';
 
 import {
   MantineReactTable,

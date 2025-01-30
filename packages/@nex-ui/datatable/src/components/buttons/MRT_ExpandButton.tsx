@@ -9,7 +9,7 @@ import {
   type ActionIconProps,
   Tooltip,
   useDirection,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import {
   type MRT_Row,

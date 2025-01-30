@@ -11,7 +11,7 @@ import {
   TableTd,
   type TableTrProps,
   Text,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { MRT_TableBodyRow } from './MRT_TableBodyRow';
 

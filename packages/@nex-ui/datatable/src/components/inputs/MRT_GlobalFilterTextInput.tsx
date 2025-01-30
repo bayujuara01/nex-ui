@@ -11,8 +11,8 @@ import {
   TextInput,
   type TextInputProps,
   Tooltip,
-} from '@mantine/core';
-import { useDebouncedValue } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { useDebouncedValue } from '@nex-ui/hooks';
 
 import { type MRT_RowData, type MRT_TableInstance } from '../../types';
 import { parseFromValuesOrFunc } from '../../utils/utils';

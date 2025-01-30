@@ -4,7 +4,7 @@ import classes from './MRT_ShowHideColumnsMenu.module.css';
 
 import { useMemo, useState } from 'react';
 
-import { Button, Flex, Menu } from '@mantine/core';
+import { Button, Flex, Menu } from '@nex-ui/core';
 
 import { MRT_ShowHideColumnsMenuItems } from './MRT_ShowHideColumnsMenuItems';
 

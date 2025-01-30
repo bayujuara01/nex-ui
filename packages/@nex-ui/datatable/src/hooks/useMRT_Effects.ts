@@ -32,8 +32,8 @@ export const useMRT_Effects = <TData extends MRT_RowData>(
   const totalRowCount = rowCount ?? getPrePaginationRowModel().rows.length;
 
   const rerender = useReducer(() => ({}), {})[1];
-  const initialBodyHeight = useRef<string>();
-  const previousTop = useRef<number>();
+  const initialBodyHeight = useRef<string>("");
+  const previousTop = useRef<number>(0);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -49,7 +49,7 @@ export const useMRT_Effects = <TData extends MRT_RowData>(
         document.body.style.height = '100dvh'; //hide page scrollbars when table is in full screen mode
       } else {
         document.body.style.height = initialBodyHeight.current as string;
-        if (!previousTop.current) return;
+        if (!previousTop.current) { return; }
         //restore scroll position
         window.scrollTo({
           behavior: 'instant',
@@ -68,7 +68,7 @@ export const useMRT_Effects = <TData extends MRT_RowData>(
 
   //if page index is out of bounds, set it to the last page
   useEffect(() => {
-    if (!enablePagination || isLoading || showSkeletons) return;
+    if (!enablePagination || isLoading || showSkeletons) { return; }
     const { pageIndex, pageSize } = pagination;
     const firstVisibleRowIndex = pageIndex * pageSize;
     if (firstVisibleRowIndex >= totalRowCount) {
@@ -85,7 +85,7 @@ export const useMRT_Effects = <TData extends MRT_RowData>(
   }, [sorting]);
 
   useEffect(() => {
-    if (!getCanRankRows(table)) return;
+    if (!getCanRankRows(table)) { return; }
     if (globalFilter) {
       table.setSorting([]);
     } else {

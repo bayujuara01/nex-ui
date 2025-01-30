@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import classes from './MRT_EditActionButtons.module.css';
 
-import { ActionIcon, Box, type BoxProps, Button, Tooltip } from '@mantine/core';
+import { ActionIcon, Box, type BoxProps, Button, Tooltip } from '@nex-ui/core';
 
 import {
   type MRT_Row,

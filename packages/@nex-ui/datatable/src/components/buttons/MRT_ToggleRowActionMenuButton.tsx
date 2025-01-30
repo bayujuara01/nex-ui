@@ -1,6 +1,6 @@
 import { type MouseEvent } from 'react';
 
-import { ActionIcon, Tooltip } from '@mantine/core';
+import { ActionIcon, Tooltip } from '@nex-ui/core';
 
 import { MRT_EditActionButtons } from './MRT_EditActionButtons';
 

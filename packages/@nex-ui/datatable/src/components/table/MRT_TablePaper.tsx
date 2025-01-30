@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import classes from './MRT_TablePaper.module.css';
 
-import { Paper, type PaperProps } from '@mantine/core';
+import { Paper, type PaperProps } from '@nex-ui/core';
 
 import { MRT_TableContainer } from './MRT_TableContainer';
 

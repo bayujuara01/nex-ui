@@ -2,7 +2,7 @@ import { type MouseEvent, useState } from 'react';
 
 import { type RowPinningPosition } from '@tanstack/react-table';
 
-import { ActionIcon, type ActionIconProps, Tooltip } from '@mantine/core';
+import { ActionIcon, type ActionIconProps, Tooltip } from '@nex-ui/core';
 
 import {
   type MRT_Row,

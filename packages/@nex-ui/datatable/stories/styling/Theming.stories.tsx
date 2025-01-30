@@ -1,4 +1,4 @@
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider } from '@nex-ui/core';
 
 import { MantineReactTable, type MRT_ColumnDef } from '../../src';
 

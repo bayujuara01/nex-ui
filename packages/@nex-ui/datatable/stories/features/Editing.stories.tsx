@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Center, Flex, Group, Stack, Switch, Text, Title } from '@mantine/core';
+import { Center, Flex, Group, Stack, Switch, Text, Title } from '@nex-ui/core';
 
 import {
   MantineReactTable,

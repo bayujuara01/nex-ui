@@ -1,6 +1,6 @@
 import { type MouseEvent } from 'react';
 
-import { ActionIcon, type ActionIconProps, Menu, Tooltip } from '@mantine/core';
+import { ActionIcon, type ActionIconProps, Menu, Tooltip } from '@nex-ui/core';
 
 import {
   type MRT_Row,

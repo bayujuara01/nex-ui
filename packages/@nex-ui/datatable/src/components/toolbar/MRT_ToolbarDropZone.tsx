@@ -4,7 +4,7 @@ import classes from './MRT_ToolbarDropZone.module.css';
 
 import { type DragEvent, useEffect } from 'react';
 
-import { Flex, type FlexProps, Text, Transition } from '@mantine/core';
+import { Flex, type FlexProps, Text, Transition } from '@nex-ui/core';
 
 import { type MRT_RowData, type MRT_TableInstance } from '../../types';
 

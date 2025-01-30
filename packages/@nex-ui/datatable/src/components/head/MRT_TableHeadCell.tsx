@@ -11,8 +11,8 @@ import {
   useState,
 } from 'react';
 
-import { Flex, TableTh, type TableThProps, useDirection } from '@mantine/core';
-import { useHover } from '@mantine/hooks';
+import { Flex, TableTh, type TableThProps, useDirection } from '@nex-ui/core';
+import { useHover } from '@nex-ui/hooks';
 
 import { MRT_TableHeadCellFilterContainer } from './MRT_TableHeadCellFilterContainer';
 import { MRT_TableHeadCellFilterLabel } from './MRT_TableHeadCellFilterLabel';

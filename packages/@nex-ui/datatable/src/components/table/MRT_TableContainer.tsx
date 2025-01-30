@@ -4,7 +4,7 @@ import classes from './MRT_TableContainer.module.css';
 
 import { useEffect, useLayoutEffect, useState } from 'react';
 
-import { Box, type BoxProps, LoadingOverlay } from '@mantine/core';
+import { Box, type BoxProps, LoadingOverlay } from '@nex-ui/core';
 
 import { MRT_Table } from './MRT_Table';
 

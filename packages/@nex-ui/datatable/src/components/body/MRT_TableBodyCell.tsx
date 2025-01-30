@@ -18,7 +18,7 @@ import {
   TableTd,
   type TableTdProps,
   useDirection,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { MRT_TableBodyCellValue } from './MRT_TableBodyCellValue';
 
@@ -40,7 +40,7 @@ interface Props<TData extends MRT_RowData, TValue = MRT_CellValue>
   numRows?: number;
   renderedColumnIndex?: number;
   renderedRowIndex?: number;
-  rowRef: RefObject<HTMLTableRowElement>;
+  rowRef: RefObject<HTMLTableRowElement | null>;
   table: MRT_TableInstance<TData>;
   virtualCell?: MRT_VirtualItem;
 }
@@ -110,7 +110,7 @@ export const MRT_TableBodyCell = <TData extends MRT_RowData>({
 
   const [skeletonWidth, setSkeletonWidth] = useState(100);
   useEffect(() => {
-    if ((!isLoading && !showSkeletons) || skeletonWidth !== 100) return;
+    if ((!isLoading && !showSkeletons) || skeletonWidth !== 100) {return;}
     const size = column.getSize();
     setSkeletonWidth(
       columnDefType === 'display'
@@ -200,7 +200,7 @@ export const MRT_TableBodyCell = <TData extends MRT_RowData>({
     useState(false);
 
   const onMouseEnter = () => {
-    if (!columnDef.enableCellHoverReveal) return;
+    if (!columnDef.enableCellHoverReveal) {return;}
     const div = cellHoverRevealDivRef.current;
     if (div) {
       const isOverflow = div.scrollWidth > div.clientWidth;
@@ -209,7 +209,7 @@ export const MRT_TableBodyCell = <TData extends MRT_RowData>({
   };
 
   const onMouseLeave = () => {
-    if (!columnDef.enableCellHoverReveal) return;
+    if (!columnDef.enableCellHoverReveal) {return;}
     setIsCellContentOverflowing(false);
   };
 
@@ -322,7 +322,7 @@ export const MRT_TableBodyCell = <TData extends MRT_RowData>({
                 columnDef.enableCellHoverReveal &&
                   !(isCreating || isEditing) &&
                   classes['cell-hover-reveal'],
-                isCellContentOverflowing && classes['overflowing'],
+                isCellContentOverflowing && classes.overflowing,
               )}
               ref={cellHoverRevealDivRef}
             >

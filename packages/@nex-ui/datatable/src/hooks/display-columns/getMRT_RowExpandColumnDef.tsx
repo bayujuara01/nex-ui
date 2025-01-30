@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
 
-import { Flex, Tooltip } from '@mantine/core';
+import { Flex, Tooltip } from '@nex-ui/core';
 
 import { MRT_ExpandAllButton } from '../../components/buttons/MRT_ExpandAllButton';
 import { MRT_ExpandButton } from '../../components/buttons/MRT_ExpandButton';

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import classes from './MRT_FilterRangeFields.module.css';
 
-import { Box, type BoxProps } from '@mantine/core';
+import { Box, type BoxProps } from '@nex-ui/core';
 
 import { MRT_FilterTextInput } from './MRT_FilterTextInput';
 

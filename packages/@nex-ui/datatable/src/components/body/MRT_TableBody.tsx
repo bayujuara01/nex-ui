@@ -8,7 +8,7 @@ import {
   type TableProps,
   TableTbody,
   type TableTbodyProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { MRT_TableBodyEmptyRow } from './MRT_TableBodyEmptyRow';
 import { Memo_MRT_TableBodyRow, MRT_TableBodyRow } from './MRT_TableBodyRow';

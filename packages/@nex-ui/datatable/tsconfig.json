@@ -1,37 +1,22 @@
 {
-  "include": [
-    "src",
-    "@types/node",
-    "stories"
-  ],
+  "include": ["./src", "../../../@types"],
+  "exclude": ["./lib", "./esm", "./cjs"],
   "compilerOptions": {
+    "rootDir": "src",
+
     "declaration": true,
-    "declarationDir": "types",
-    "emitDeclarationOnly": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
+    "declarationDir": "lib",
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "target": "ES2015",
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "jsx": "react-jsx",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "emitDeclarationOnly": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "sourceMap": true,
     "strict": true,
-    "target": "ES6",
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
-  },
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+    "composite": true
+  }
 }

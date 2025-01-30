@@ -1,6 +1,6 @@
 import classes from './MRT_ColumnActionMenu.module.css';
 
-import { ActionIcon, Menu, type MenuProps, Tooltip } from '@mantine/core';
+import { ActionIcon, Menu, type MenuProps, Tooltip } from '@nex-ui/core';
 
 import {
   type MRT_Header,

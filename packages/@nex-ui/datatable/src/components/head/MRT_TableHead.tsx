@@ -7,7 +7,7 @@ import {
   TableThead,
   type TableTheadProps,
   TableTr,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import { MRT_TableHeadRow } from './MRT_TableHeadRow';
 

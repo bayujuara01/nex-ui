@@ -1,4 +1,4 @@
-import { ActionIcon, type ActionIconProps, Tooltip } from '@mantine/core';
+import { ActionIcon, type ActionIconProps, Tooltip } from '@nex-ui/core';
 
 import {
   type HTMLPropsRef,

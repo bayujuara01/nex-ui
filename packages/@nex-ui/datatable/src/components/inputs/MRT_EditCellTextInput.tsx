@@ -7,7 +7,7 @@ import {
   type SelectProps,
   TextInput,
   type TextInputProps,
-} from '@mantine/core';
+} from '@nex-ui/core';
 
 import {
   type HTMLPropsRef,

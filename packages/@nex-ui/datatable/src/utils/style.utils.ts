@@ -1,16 +1,16 @@
-import { type MantineTheme } from '@mantine/core';
+import { type NexTheme } from '@nex-ui/core';
 
 import { type MantineShade } from '../types';
 
 export const parseCSSVarId = (id: string) => id.replace(/[^a-zA-Z0-9]/g, '_');
 
-export const getPrimaryShade = (theme: MantineTheme): number =>
+export const getPrimaryShade = (theme: NexTheme): number =>
   typeof theme.primaryShade === 'number'
     ? theme.primaryShade
     : (theme.primaryShade?.dark ?? 7);
 
 export const getPrimaryColor = (
-  theme: MantineTheme,
+  theme: NexTheme,
   shade?: MantineShade,
 ): string => theme.colors[theme.primaryColor][shade ?? getPrimaryShade(theme)];
 

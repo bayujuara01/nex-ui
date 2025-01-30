@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Button, Flex } from '@mantine/core';
+import { Button, Flex } from '@nex-ui/core';
 
 import {
   getMRT_RowSelectionHandler,

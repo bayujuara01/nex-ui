@@ -1,4 +1,4 @@
-import { ActionIcon, Box, Button, Title, Tooltip } from '@mantine/core';
+import { ActionIcon, Box, Button, Title, Tooltip } from '@nex-ui/core';
 
 import {
   MantineReactTable,

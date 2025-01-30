@@ -13,9 +13,9 @@ import {
   Select,
   TextInput,
   type TextInputProps,
-} from '@mantine/core';
-import { DateInput } from '@mantine/dates';
-import { useDebouncedValue } from '@mantine/hooks';
+} from '@nex-ui/core';
+import { DateInput } from '@nex-ui/dates';
+import { useDebouncedValue } from '@nex-ui/hooks';
 
 import { localizedFilterOption } from '../../fns/filterFns';
 import {

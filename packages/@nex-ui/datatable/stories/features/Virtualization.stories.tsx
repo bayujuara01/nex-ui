@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Modal } from '@mantine/core';
+import { Modal } from '@nex-ui/core';
 
 import { MantineReactTable, type MRT_ColumnDef } from '../../src';
 

@@ -1,4 +1,4 @@
-import { type ActionIconProps, Box } from '@mantine/core';
+import { type ActionIconProps, Box } from '@nex-ui/core';
 
 import {
   type MRT_Row,

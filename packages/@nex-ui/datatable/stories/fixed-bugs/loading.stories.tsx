@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { Menu } from '@mantine/core';
+import { Menu } from '@nex-ui/core';
 
 import { MantineReactTable, type MRT_ColumnDef } from '../../src';
 
