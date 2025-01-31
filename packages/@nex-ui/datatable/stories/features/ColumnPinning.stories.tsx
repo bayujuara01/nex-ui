@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -46,11 +46,11 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const ColumnPinningEnabled = () => (
-  <MantineReactTable columns={columns} data={data} enableColumnPinning />
+  <NexReactTable columns={columns} data={data} enableColumnPinning />
 );
 
 export const ColumnPinningInitial = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning
@@ -59,7 +59,7 @@ export const ColumnPinningInitial = () => (
 );
 
 export const ColumnPinningDisabledPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -93,7 +93,7 @@ export const ColumnPinningDisabledPerColumn = () => (
 );
 
 export const ColumnPinningWithSelect = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning
@@ -102,7 +102,7 @@ export const ColumnPinningWithSelect = () => (
 );
 
 export const ColumnPinningWithDetailPanel = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning

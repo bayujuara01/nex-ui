@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -11,7 +11,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof initData)[0]>[] = [
+const columns: NexTableColumnDef<(typeof initData)[0]>[] = [
   {
     accessorKey: 'id',
     header: 'ID',
@@ -51,7 +51,7 @@ export const RowDraggingEnabled = () => {
   const [data, _setData] = useState(() => initData);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       autoResetPageIndex={false}
       columns={columns}
       data={data}

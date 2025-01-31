@@ -4,9 +4,9 @@ import { Button, Flex } from '@nex-ui/core';
 
 import {
   getMRT_RowSelectionHandler,
-  MantineReactTable,
-  type MRT_ColumnDef,
-  MRT_SelectCheckbox,
+  NexReactTable,
+  type NexTableColumnDef,
+  NexTableSelectCheckbox,
 } from '../../src';
 
 import { faker } from '@faker-js/faker';
@@ -19,7 +19,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -45,7 +45,7 @@ const data = [...Array(15)].map(() => ({
 }));
 
 export const SelectionEnabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowNumbers
@@ -54,7 +54,7 @@ export const SelectionEnabled = () => (
 );
 
 export const SelectionEnabledGrid = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowNumbers
@@ -64,7 +64,7 @@ export const SelectionEnabledGrid = () => (
 );
 
 export const SelectionEnabledGridNoGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowNumbers
@@ -74,7 +74,7 @@ export const SelectionEnabledGridNoGrow = () => (
 );
 
 export const BatchSelectionDisabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableBatchRowSelection={false}
@@ -84,7 +84,7 @@ export const BatchSelectionDisabled = () => (
 );
 
 export const SelectionEnabledConditionally = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection={(row) => row.original.age >= 21}
@@ -92,7 +92,7 @@ export const SelectionEnabledConditionally = () => (
 );
 
 export const SelectionEnabledConditionallyWithInitial = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection={(row) => row.original.age >= 21}
@@ -110,7 +110,7 @@ export const SelectionEnabledConditionallyWithInitial = () => (
 );
 
 export const SelectionEnabledWithRowClick = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -131,7 +131,7 @@ export const ManualSelection = () => {
   console.info(rowSelection);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       mantineTableBodyRowProps={({ row }) => ({
@@ -151,7 +151,7 @@ export const ManualSelection = () => {
 };
 
 export const SelectAllModeAll = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -160,7 +160,7 @@ export const SelectAllModeAll = () => (
 );
 
 export const SelectAllModeAllConditionally = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection={(row) => row.original.age >= 21}
@@ -169,7 +169,7 @@ export const SelectAllModeAllConditionally = () => (
 );
 
 export const SelectAllModePage = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -178,7 +178,7 @@ export const SelectAllModePage = () => (
 );
 
 export const SelectAllDisabledCustomHeader = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     displayColumnDefOptions={{
@@ -190,7 +190,7 @@ export const SelectAllDisabledCustomHeader = () => (
 );
 
 export const SingleSelectionRadio = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableMultiRowSelection={false}
@@ -199,7 +199,7 @@ export const SingleSelectionRadio = () => (
 );
 
 export const SingleSelectionRadioWithRowClick = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableMultiRowSelection={false}
@@ -214,7 +214,7 @@ export const SingleSelectionRadioWithRowClick = () => (
 );
 
 export const SelectSwitch = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -223,7 +223,7 @@ export const SelectSwitch = () => (
 );
 
 export const SelectCheckboxSecondaryColor = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -232,7 +232,7 @@ export const SelectCheckboxSecondaryColor = () => (
 );
 
 export const AlertBannerBottom = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -241,7 +241,7 @@ export const AlertBannerBottom = () => (
 );
 
 export const AlertBannerHeadOverlay = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -250,7 +250,7 @@ export const AlertBannerHeadOverlay = () => (
 );
 
 export const CustomAlertBannerHeadOverlay = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -261,7 +261,7 @@ export const CustomAlertBannerHeadOverlay = () => (
     renderToolbarAlertBannerContent={({ selectedAlert, table }) => (
       <Flex justify="space-between">
         <Flex gap="xl" p="6px">
-          <MRT_SelectCheckbox table={table} /> {selectedAlert}{' '}
+          <NexTableSelectCheckbox table={table} /> {selectedAlert}{' '}
         </Flex>
         <Flex gap="md">
           <Button color="blue" leftSection={<IconSend />}>

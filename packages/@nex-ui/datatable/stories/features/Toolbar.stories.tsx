@@ -1,9 +1,9 @@
 import { ActionIcon, Box, Button, Title, Tooltip } from '@nex-ui/core';
 
 import {
-  MantineReactTable,
-  type MRT_ColumnDef,
-  MRT_ToggleFullScreenButton,
+  NexReactTable,
+  type NexTableColumnDef,
+  NexTableToggleFullScreenButton,
 } from '../../src';
 
 import { faker } from '@faker-js/faker';
@@ -16,7 +16,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -48,11 +48,11 @@ const data = [...Array(5)].map(() => ({
 }));
 
 export const ToolbarEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} enableRowSelection />
+  <NexReactTable columns={columns} data={data} enableRowSelection />
 );
 
 export const TopToolbarHidden = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -61,7 +61,7 @@ export const TopToolbarHidden = () => (
 );
 
 export const BottomToolbarHidden = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableBottomToolbar={false}
@@ -70,7 +70,7 @@ export const BottomToolbarHidden = () => (
 );
 
 export const NoToolbars = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableBottomToolbar={false}
@@ -80,7 +80,7 @@ export const NoToolbars = () => (
 );
 
 export const HideToolbarInternalActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -89,7 +89,7 @@ export const HideToolbarInternalActions = () => (
 );
 
 export const CustomToolbarInternalActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -97,7 +97,7 @@ export const CustomToolbarInternalActions = () => (
     renderToolbarInternalActions={({ table }) => {
       return (
         <>
-          <MRT_ToggleFullScreenButton table={table} />
+          <NexTableToggleFullScreenButton table={table} />
         </>
       );
     }}
@@ -105,7 +105,7 @@ export const CustomToolbarInternalActions = () => (
 );
 
 export const TableTitle = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -116,7 +116,7 @@ export const TableTitle = () => (
 );
 
 export const CustomTopToolbarActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -139,7 +139,7 @@ export const CustomTopToolbarActions = () => (
 );
 
 export const CustomBottomToolbarActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -162,7 +162,7 @@ export const CustomBottomToolbarActions = () => (
 );
 
 export const CustomTopToolbarSelectionActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -218,7 +218,7 @@ export const CustomTopToolbarSelectionActions = () => (
 );
 
 export const CustomBottomToolbarSelectionActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -274,7 +274,7 @@ export const CustomBottomToolbarSelectionActions = () => (
 );
 
 export const ToolbarAlertBannerBottom = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -311,7 +311,7 @@ export const ToolbarAlertBannerBottom = () => (
 );
 
 export const ToolbarAlertBannerBottomWithActionsAlsoBottom = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -348,7 +348,7 @@ export const ToolbarAlertBannerBottomWithActionsAlsoBottom = () => (
 );
 
 export const renderCustomTopToolbar = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     renderTopToolbar={() => (
@@ -358,7 +358,7 @@ export const renderCustomTopToolbar = () => (
 );
 
 export const renderCustomBottomToolbar = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     renderBottomToolbar={() => (

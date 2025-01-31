@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { Center, Flex, Group, Stack, Switch, Text } from '@nex-ui/core';
 
 import {
-  MantineReactTable,
-  type MRT_ColumnDef,
-  MRT_EditActionButtons,
-  useMantineReactTable,
+  NexReactTable,
+  type NexTableColumnDef,
+  NexTableEditActionButtons,
+  useNexReactTable,
 } from '../../src';
 
 import { type Meta } from '@storybook/react';
-import { useContextMenu } from 'mantine-contextmenu';
+import { useContextMenu } from '@nex-ui/context-menu';
 
 const meta: Meta = {
   title: 'Features/Empty Row Examples',
@@ -27,7 +27,7 @@ type Person = {
 
 const data: Person[] = [];
 
-const columns: MRT_ColumnDef<Person>[] = [
+const columns: NexTableColumnDef<Person>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -47,13 +47,13 @@ const columns: MRT_ColumnDef<Person>[] = [
 ];
 
 export const DefaultEmptyRow = () => {
-  const table = useMantineReactTable({ columns, data });
+  const table = useNexReactTable({ columns, data });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const CustomEmptyRow = () => {
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns,
     data,
     renderEmptyRowsFallback: () => (
@@ -63,14 +63,14 @@ export const CustomEmptyRow = () => {
     ),
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const EmptyRowContextMenu = () => {
   //Now that empty row is an actual row, same context menu can be used, that is used on actual row data
 
   const { showContextMenu } = useContextMenu();
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns,
     data,
     mantineTableBodyRowProps: {
@@ -88,12 +88,12 @@ export const EmptyRowContextMenu = () => {
     },
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const EmptyRowExplanationPannel = () => {
   //Now that empty row is an actual row, detail pannel is available for empty row as well
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns,
     data,
     renderDetailPanel: () => (
@@ -104,5 +104,5 @@ export const EmptyRowExplanationPannel = () => {
     ),
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };

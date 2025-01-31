@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -19,7 +19,7 @@ interface Row {
   state: string;
 }
 
-const columns: MRT_ColumnDef<Row>[] = [
+const columns: NexTableColumnDef<Row>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -54,7 +54,7 @@ export const CellContextMenu = () => {
   const { showContextMenu } = useContextMenu();
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       mantineTableBodyCellProps={({ cell }) => ({

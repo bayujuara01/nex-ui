@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -35,11 +35,11 @@ const data = [...Array(333)].map(() => ({
 }));
 
 export const PaginationEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const MantinePaginationEnabledDefault = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     paginationDisplayMode="pages"
@@ -47,11 +47,11 @@ export const MantinePaginationEnabledDefault = () => (
 );
 
 export const PaginationDisabledOrOverriden = () => (
-  <MantineReactTable columns={columns} data={data} enablePagination={false} />
+  <NexReactTable columns={columns} data={data} enablePagination={false} />
 );
 
 export const PaginationPositionBottom = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     positionPagination="bottom"
@@ -59,15 +59,15 @@ export const PaginationPositionBottom = () => (
 );
 
 export const PaginationPositionTop = () => (
-  <MantineReactTable columns={columns} data={data} positionPagination="top" />
+  <NexReactTable columns={columns} data={data} positionPagination="top" />
 );
 
 export const PaginationPositionTopAndBottom = () => (
-  <MantineReactTable columns={columns} data={data} positionPagination="both" />
+  <NexReactTable columns={columns} data={data} positionPagination="both" />
 );
 
 export const PaginationPositionTopAndBottomNoInternalActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableToolbarInternalActions={false}
@@ -76,7 +76,7 @@ export const PaginationPositionTopAndBottomNoInternalActions = () => (
 );
 
 export const PaginationHideRowsPerPageSwitcher = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
@@ -87,7 +87,7 @@ export const PaginationHideRowsPerPageSwitcher = () => (
 );
 
 export const CustomizePaginationComponents = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}

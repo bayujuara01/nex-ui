@@ -2,7 +2,7 @@ import Link from 'next/link';
 import cx from 'clsx';
 import { FOCUS_CLASS_NAMES, VisuallyHidden } from '@nex-ui/core';
 import { MantineLogoProps } from '@nex-uix/nex-ui-logo';
-import Logox from '@/components/LogoAssets/assets/nex-ui-logo-white.svg'
+import NexLogo from '@/components/LogoAssets/assets/nex-ui-logo-white.svg'
 import classes from './Logo.module.css';
 import Image from "next/image";
 
@@ -12,8 +12,7 @@ export function Logo(props: MantineLogoProps) {
       <VisuallyHidden>
         Welcome to Nex UI, React components library that you always wished for
       </VisuallyHidden>
-      <Image style={{ height: 50, width: 120 }} src={Logox} alt="lala"/>
-      {/*<Logox size={30} {...props} />*/}
+      <Image style={{ height: 50, width: 120 }} src={NexLogo} alt="Nexsoft"/>
     </Link>
   );
 }

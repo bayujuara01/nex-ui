@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Button } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -24,7 +24,7 @@ type Person = {
   zipCode: string;
 };
 
-const columns: MRT_ColumnDef<Person>[] = [
+const columns: NexTableColumnDef<Person>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -77,7 +77,7 @@ export const NoMemos = () => {
   const handleRegenerateData = () => setTableData([...generateData()]);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={tableData}
       editDisplayMode="row"
@@ -105,7 +105,7 @@ export const MemoCells = () => {
   const handleRegenerateData = () => setTableData([...generateData()]);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={tableData}
       editDisplayMode="row"
@@ -134,7 +134,7 @@ export const MemoRows = () => {
   const handleRegenerateData = () => setTableData([...generateData()]);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={tableData}
       editDisplayMode="row"
@@ -163,7 +163,7 @@ export const MemoTableBody = () => {
   const handleRegenerateData = () => setTableData([...generateData()]);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={tableData}
       editDisplayMode="row"

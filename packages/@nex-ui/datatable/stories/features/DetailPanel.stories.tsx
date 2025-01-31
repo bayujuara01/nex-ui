@@ -1,4 +1,4 @@
-import { MantineReactTable } from '../../src';
+import { NexReactTable } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -10,7 +10,7 @@ const meta: Meta = {
 export default meta;
 
 export const DetailPanelEnabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -46,7 +46,7 @@ export const DetailPanelEnabled = () => (
 );
 
 export const CustomExpandRotation = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -89,7 +89,7 @@ export const CustomExpandRotation = () => (
 );
 
 export const DetailPanelEnabledConditional = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -132,7 +132,7 @@ export const DetailPanelEnabledConditional = () => (
 );
 
 export const DetailPanelEnabledConditionalHide = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -182,7 +182,7 @@ export const DetailPanelEnabledConditionalHide = () => (
 );
 
 export const DetailPanelExpandColumnLast = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -229,7 +229,7 @@ export const DetailPanelExpandColumnLast = () => (
 );
 
 export const DetailPanelExpandedByDefault = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -266,7 +266,7 @@ export const DetailPanelExpandedByDefault = () => (
 );
 
 export const DetailPanelExpandAllDisabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',

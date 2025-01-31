@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { MantineReactTable, type MRT_ColumnDef, type MRT_Row } from '../../src';
+import { NexReactTable, type NexTableColumnDef, type NexTableRow } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -21,7 +21,7 @@ type Person = {
   state: string;
 };
 
-const columns: MRT_ColumnDef<Person>[] = [
+const columns: NexTableColumnDef<Person>[] = [
   {
     accessorKey: 'num',
     header: '#',
@@ -66,7 +66,7 @@ export const RowOrderingEnabled = () => {
   const [data, setData] = useState(() => initData);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       autoResetPageIndex={false}
       columns={columns}
       data={data}
@@ -77,7 +77,7 @@ export const RowOrderingEnabled = () => {
           const { draggingRow, hoveredRow } = table.getState();
           if (hoveredRow && draggingRow) {
             data.splice(
-              (hoveredRow as MRT_Row<Person>).index,
+              (hoveredRow as NexTableRow<Person>).index,
               0,
               data.splice(draggingRow.index, 1)[0],
             );
@@ -91,13 +91,13 @@ export const RowOrderingEnabled = () => {
 
 export const RowOrderingWithSelect = () => {
   const [data, setData] = useState(() => initData);
-  const [draggingRow, setDraggingRow] = useState<MRT_Row<Person> | null>(null);
-  const [hoveredRow, setHoveredRow] = useState<null | Partial<MRT_Row<Person>>>(
+  const [draggingRow, setDraggingRow] = useState<NexTableRow<Person> | null>(null);
+  const [hoveredRow, setHoveredRow] = useState<null | Partial<NexTableRow<Person>>>(
     null,
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       autoResetPageIndex={false}
       columns={columns}
       data={data}
@@ -129,13 +129,13 @@ export const RowOrderingWithSelect = () => {
 
 export const RowOrderingWithPinning = () => {
   const [data, setData] = useState(() => initData);
-  const [draggingRow, setDraggingRow] = useState<MRT_Row<Person> | null>(null);
-  const [hoveredRow, setHoveredRow] = useState<null | Partial<MRT_Row<Person>>>(
+  const [draggingRow, setDraggingRow] = useState<NexTableRow<Person> | null>(null);
+  const [hoveredRow, setHoveredRow] = useState<null | Partial<NexTableRow<Person>>>(
     null,
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       autoResetPageIndex={false}
       columns={columns}
       data={data}
@@ -166,13 +166,13 @@ export const RowOrderingWithPinning = () => {
 
 export const RowAndColumnOrdering = () => {
   const [data, setData] = useState(() => initData);
-  const [draggingRow, setDraggingRow] = useState<MRT_Row<Person> | null>(null);
-  const [hoveredRow, setHoveredRow] = useState<null | Partial<MRT_Row<Person>>>(
+  const [draggingRow, setDraggingRow] = useState<NexTableRow<Person> | null>(null);
+  const [hoveredRow, setHoveredRow] = useState<null | Partial<NexTableRow<Person>>>(
     null,
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       autoResetPageIndex={false}
       columns={columns}
       data={data}
@@ -206,7 +206,7 @@ export const RowOrderingWithRowVirtualization = () => {
   const [data, setData] = useState(() => initData);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       autoResetPageIndex={false}
       columns={columns}
       data={data}
@@ -219,7 +219,7 @@ export const RowOrderingWithRowVirtualization = () => {
           const { draggingRow, hoveredRow } = table.getState();
           if (hoveredRow && draggingRow) {
             data.splice(
-              (hoveredRow as MRT_Row<Person>).index,
+              (hoveredRow as NexTableRow<Person>).index,
               0,
               data.splice(draggingRow.index, 1)[0],
             );
@@ -248,7 +248,7 @@ export const RowOrderingWithColumnVirtualization = () => {
   const [data, setData] = useState(() => fakeData);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       autoResetPageIndex={false}
       columns={fakeColumns}
       data={data}
@@ -267,7 +267,7 @@ export const RowOrderingWithColumnVirtualization = () => {
           const { draggingRow, hoveredRow } = table.getState();
           if (hoveredRow && draggingRow) {
             data.splice(
-              (hoveredRow as MRT_Row<any>).index,
+              (hoveredRow as NexTableRow<any>).index,
               0,
               data.splice(draggingRow.index, 1)[0],
             );

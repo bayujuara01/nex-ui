@@ -1,9 +1,9 @@
 import { Box, Stack } from '@nex-ui/core';
 
 import {
-  MantineReactTable,
-  MRT_AggregationFns,
-  type MRT_ColumnDef,
+  NexReactTable,
+  NexTableAggregationFns,
+  type NexTableColumnDef,
 } from '../../src';
 
 import { faker } from '@faker-js/faker';
@@ -114,14 +114,14 @@ const columns = [
     ),
     header: 'Salary',
   },
-] as MRT_ColumnDef<(typeof data)[0]>[];
+] as NexTableColumnDef<(typeof data)[0]>[];
 
 export const Aggregation = () => (
-  <MantineReactTable columns={columns} data={data} enableGrouping />
+  <NexReactTable columns={columns} data={data} enableGrouping />
 );
 
 export const AggregationExpandedDefault = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -130,7 +130,7 @@ export const AggregationExpandedDefault = () => (
 );
 
 export const AggregationGroupedAndExpandedDefault = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -144,7 +144,7 @@ export const AggregationGroupedAndExpandedDefault = () => (
 );
 
 export const MultiAggregationPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -177,8 +177,8 @@ export const MultiAggregationPerColumn = () => (
         ),
         //manually set multiple aggregation functions
         aggregationFn: (columnId, leafRows: any, childRows: any) => [
-          MRT_AggregationFns.min(columnId, leafRows, childRows),
-          MRT_AggregationFns.max(columnId, leafRows, childRows),
+          NexTableAggregationFns.min(columnId, leafRows, childRows),
+          NexTableAggregationFns.max(columnId, leafRows, childRows),
         ],
         Footer: () => (
           <Stack>

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
 import {
-  MantineReactTable,
-  type MRT_ColumnDef,
-  type MRT_ColumnFiltersState,
+  NexReactTable,
+  type NexTableColumnDef,
+  type NexTableColumnFiltersState,
 } from '../../src';
 
 import { faker } from '@faker-js/faker';
@@ -15,7 +15,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -47,7 +47,7 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const FilterModesRefetch = () => {
-  const [columnFilters, setColumnFilters] = useState<MRT_ColumnFiltersState>(
+  const [columnFilters, setColumnFilters] = useState<NexTableColumnFiltersState>(
     [],
   );
 
@@ -56,7 +56,7 @@ export const FilterModesRefetch = () => {
   }, [columnFilters]);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       enableColumnFilterModes

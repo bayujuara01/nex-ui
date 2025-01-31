@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -17,7 +17,7 @@ interface Person {
   state: null | string;
 }
 
-const columns: MRT_ColumnDef<Person>[] = [
+const columns: NexTableColumnDef<Person>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -57,11 +57,11 @@ const blankData = [...Array(100)].map(() => ({
 }));
 
 export const Loading = () => (
-  <MantineReactTable columns={columns} data={[]} state={{ isLoading: true }} />
+  <NexReactTable columns={columns} data={[]} state={{ isLoading: true }} />
 );
 
 export const LoadingWithSomeData = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={[...data.slice(0, 5), ...blankData]}
     state={{ isLoading: true }}
@@ -69,7 +69,7 @@ export const LoadingWithSomeData = () => (
 );
 
 export const LoadingWithSelection = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={[]}
     enableRowSelection
@@ -78,7 +78,7 @@ export const LoadingWithSelection = () => (
 );
 
 export const LoadingWithDetailPanelExample = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={[]}
     renderDetailPanel={({ row }) => (
@@ -94,7 +94,7 @@ export const LoadingWithDetailPanelExample = () => (
 );
 
 export const SkeletonDisplayColumns = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={[]}
     enableExpanding
@@ -106,7 +106,7 @@ export const SkeletonDisplayColumns = () => (
 );
 
 export const ReloadingExample = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     state={{ showProgressBars: true }}
@@ -114,7 +114,7 @@ export const ReloadingExample = () => (
 );
 
 export const OnlyTopProgressBar = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineProgressProps={({ isTopToolbar }) => ({

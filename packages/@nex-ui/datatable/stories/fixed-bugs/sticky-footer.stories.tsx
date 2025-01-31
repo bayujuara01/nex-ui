@@ -1,4 +1,4 @@
-import { MantineReactTable, MRT_TableOptions } from '../../src';
+import { NexReactTable, NexTableTableOptions } from '../../src';
 
 import { type Meta } from '@storybook/react';
 
@@ -132,7 +132,7 @@ const mockColumns: any = [
 
 export const PinnedColumnsWithStickyFooter = () => {
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={mockColumns}
       data={mockData}
       enableColumnPinning

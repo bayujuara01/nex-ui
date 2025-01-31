@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -41,7 +41,7 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const enableRowNumbersOriginal = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowNumbers
@@ -50,7 +50,7 @@ export const enableRowNumbersOriginal = () => (
 );
 
 export const enableRowNumbersStatic = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowNumbers
@@ -59,7 +59,7 @@ export const enableRowNumbersStatic = () => (
 );
 
 export const enableRowNumbersOriginalVirtual = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableBottomToolbar={false}
@@ -70,7 +70,7 @@ export const enableRowNumbersOriginalVirtual = () => (
 );
 
 export const enableRowNumbersStaticVirtual = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableBottomToolbar={false}

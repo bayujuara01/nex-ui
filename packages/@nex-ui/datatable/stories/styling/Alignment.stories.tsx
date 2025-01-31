@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     footer: 'First Name',
@@ -52,15 +52,15 @@ const data = [...Array(25)].map(() => ({
 }));
 
 export const DefaultLeft = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const DefaultLeftGrid = () => (
-  <MantineReactTable columns={columns} data={data} layoutMode="grid" />
+  <NexReactTable columns={columns} data={data} layoutMode="grid" />
 );
 
 export const RightCells = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableBodyCellProps={{
@@ -76,7 +76,7 @@ export const RightCells = () => (
 );
 
 export const RightCellsGrid = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     layoutMode="grid"
@@ -93,7 +93,7 @@ export const RightCellsGrid = () => (
 );
 
 export const CenterCells = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableBodyCellProps={{
@@ -109,7 +109,7 @@ export const CenterCells = () => (
 );
 
 export const CenterCellsGrid = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     layoutMode="grid"
@@ -126,7 +126,7 @@ export const CenterCellsGrid = () => (
 );
 
 export const CenterCellsWithGrabHandle = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnDragging
@@ -143,7 +143,7 @@ export const CenterCellsWithGrabHandle = () => (
 );
 
 export const CenterCellsWithGrabHandleNoSorting = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnDragging
@@ -161,7 +161,7 @@ export const CenterCellsWithGrabHandleNoSorting = () => (
 );
 
 export const CenterCellsNoColumnActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnActions={false}
@@ -178,7 +178,7 @@ export const CenterCellsNoColumnActions = () => (
 );
 
 export const RightAlignNumberColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',

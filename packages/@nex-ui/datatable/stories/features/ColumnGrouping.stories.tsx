@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import {
-  MantineReactTable,
-  type MRT_Column,
-  type MRT_ColumnDef,
+  NexReactTable,
+  type NexTableColumn,
+  type NexTableColumnDef,
 } from '../../src';
 
 import { faker } from '@faker-js/faker';
@@ -44,7 +44,7 @@ const columns = [
     accessorKey: 'state',
     header: 'State',
   },
-] as MRT_ColumnDef<Person>[];
+] as NexTableColumnDef<Person>[];
 
 const data = [...Array(300)].map(() => ({
   city: faker.location.city(),
@@ -55,7 +55,7 @@ const data = [...Array(300)].map(() => ({
 }));
 
 export const ColumnGroupingEnabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -65,7 +65,7 @@ export const ColumnGroupingEnabled = () => (
 );
 
 export const GroupingColumnModeRemove = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -75,7 +75,7 @@ export const GroupingColumnModeRemove = () => (
 );
 
 export const GroupingColumnModeFalse = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -85,7 +85,7 @@ export const GroupingColumnModeFalse = () => (
 );
 
 export const GroupingColumnModeRemoveCustomHeader = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     displayColumnDefOptions={{
@@ -100,7 +100,7 @@ export const GroupingColumnModeRemoveCustomHeader = () => (
 );
 
 export const GroupingColumnModeRemovePaginatePreExpand = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -111,7 +111,7 @@ export const GroupingColumnModeRemovePaginatePreExpand = () => (
 );
 
 export const GroupingColumnModeRemoveCustomGroupedCell = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     displayColumnDefOptions={{
@@ -130,7 +130,7 @@ export const GroupingColumnModeRemoveCustomGroupedCell = () => (
 );
 
 export const ColumnGroupingEnabledWithSelection = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -140,7 +140,7 @@ export const ColumnGroupingEnabledWithSelection = () => (
 );
 
 export const ColumnGroupingEnabledWithSelectionRemove = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -151,7 +151,7 @@ export const ColumnGroupingEnabledWithSelectionRemove = () => (
 );
 
 export const ColumnGroupingNoDragHandles = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnDragging={false}
@@ -160,7 +160,7 @@ export const ColumnGroupingNoDragHandles = () => (
 );
 
 export const ColumnGroupingEnabledDropZoneBottom = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -169,7 +169,7 @@ export const ColumnGroupingEnabledDropZoneBottom = () => (
 );
 
 export const ColumnGroupingEnabledCustomAggregate = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -201,7 +201,7 @@ export const ColumnGroupingEnabledCustomAggregate = () => (
 );
 
 export const ColumnGroupingBannerOnBottom = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGrouping
@@ -210,7 +210,7 @@ export const ColumnGroupingBannerOnBottom = () => (
 );
 
 export const GroupingColumnsSetState = () => {
-  const [columns, setColumns] = useState<MRT_ColumnDef<any>[]>([]);
+  const [columns, setColumns] = useState<NexTableColumnDef<any>[]>([]);
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
@@ -288,15 +288,15 @@ export const GroupingColumnsSetState = () => {
     ]);
   }, []);
 
-  return <MantineReactTable columns={columns} data={data} enableGrouping />;
+  return <NexReactTable columns={columns} data={data} enableGrouping />;
 };
 
 export const ColumnGroupingDropZoneAlwaysVisible = () => {
   const [draggingColumn, setDraggingColumn] =
-    useState<MRT_Column<Person> | null>(null);
+    useState<NexTableColumn<Person> | null>(null);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       enableGrouping
@@ -315,7 +315,7 @@ export const ColumnGroupingDropZoneAlwaysVisible = () => {
 export const GroupingStateManaged = () => {
   const [grouping, setGrouping] = useState<string[]>([]);
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       enableGrouping
@@ -326,7 +326,7 @@ export const GroupingStateManaged = () => {
 };
 
 export const GroupingAndDraggingWithSomeDisabledGrouping = () => {
-  const _columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const _columns = useMemo<NexTableColumnDef<Person>[]>(
     () => [
       {
         accessorKey: 'firstName',
@@ -342,7 +342,7 @@ export const GroupingAndDraggingWithSomeDisabledGrouping = () => {
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={_columns}
       data={data}
       enableColumnDragging

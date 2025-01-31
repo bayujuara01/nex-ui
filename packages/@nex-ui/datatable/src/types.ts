@@ -74,9 +74,9 @@ import {
 } from '@nex-ui/core';
 import { type DateInputProps } from '@nex-ui/dates';
 
-import { type MRT_AggregationFns } from './fns/aggregationFns';
-import { type MRT_FilterFns } from './fns/filterFns';
-import { type MRT_SortingFns } from './fns/sortingFns';
+import { type NexTableAggregationFns } from './fns/aggregationFns';
+import { type NexTableFilterFns } from './fns/filterFns';
+import { type NexTableSortingFns } from './fns/sortingFns';
 import { type MRT_Icons } from './icons';
 
 export type { MRT_Icons };
@@ -100,55 +100,55 @@ export type HTMLPropsRef<T extends HTMLElement> = {
 
 export type MantineShade = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 
-export type MRT_PaginationProps = {
+export type NexTablePaginationProps = {
   rowsPerPageOptions?: string[];
   showRowsPerPage?: boolean;
 } & Partial<PaginationProps>;
 
-export type MRT_DensityState = 'md' | 'xl' | 'xs';
+export type NexTableDensityState = 'md' | 'xl' | 'xs';
 
-export type MRT_ColumnFilterFnsState = Record<string, MRT_FilterOption>;
+export type NexTableColumnFilterFnsState = Record<string, NexTableFilterOption>;
 
-export type MRT_RowData = Record<string, any>;
+export type NexRowData = Record<string, any>;
 
-export type MRT_CellValue = unknown;
+export type NexTableCellValue = unknown;
 
-export type MRT_ColumnFiltersState = ColumnFiltersState;
-export type MRT_ColumnOrderState = ColumnOrderState;
-export type MRT_ColumnPinningState = ColumnPinningState;
-export type MRT_ColumnSizingInfoState = ColumnSizingInfoState;
-export type MRT_ColumnSizingState = ColumnSizingState;
-export type MRT_ExpandedState = ExpandedState;
-export type MRT_GroupingState = GroupingState;
-export type MRT_PaginationState = PaginationState;
-export type MRT_RowSelectionState = RowSelectionState;
-export type MRT_SortingState = SortingState;
-export type MRT_Updater<T> = Updater<T>;
-export type MRT_VirtualItem = VirtualItem;
-export type MRT_VisibilityState = VisibilityState;
+export type NexTableColumnFiltersState = ColumnFiltersState;
+export type NexTableColumnOrderState = ColumnOrderState;
+export type NexTableColumnPinningState = ColumnPinningState;
+export type NexTableColumnSizingInfoState = ColumnSizingInfoState;
+export type NexTableColumnSizingState = ColumnSizingState;
+export type NexTableExpandedState = ExpandedState;
+export type NexTableGroupingState = GroupingState;
+export type NexTablePaginationState = PaginationState;
+export type NexTableRowSelectionState = RowSelectionState;
+export type NexTableSortingState = SortingState;
+export type NexTableUpdater<T> = Updater<T>;
+export type NexTableVirtualItem = VirtualItem;
+export type NexTableVisibilityState = VisibilityState;
 
-export type MRT_VirtualizerOptions<
+export type NexTableVirtualizerOptions<
   TScrollElement extends Element | Window = Element | Window,
   TItemElement extends Element = Element,
 > = VirtualizerOptions<TScrollElement, TItemElement>;
 
-export type MRT_ColumnVirtualizer<
+export type NexTableColumnVirtualizer<
   TScrollElement extends Element | Window = HTMLDivElement,
   TItemElement extends Element = HTMLTableCellElement,
 > = {
-  virtualColumns: MRT_VirtualItem[];
+  virtualColumns: NexTableVirtualItem[];
   virtualPaddingLeft?: number;
   virtualPaddingRight?: number;
 } & Virtualizer<TScrollElement, TItemElement>;
 
-export type MRT_RowVirtualizer<
+export type NexTableRowVirtualizer<
   TScrollElement extends Element | Window = HTMLDivElement,
   TItemElement extends Element = HTMLTableRowElement,
 > = {
-  virtualRows: MRT_VirtualItem[];
+  virtualRows: NexTableVirtualItem[];
 } & Virtualizer<TScrollElement, TItemElement>;
 
-export type MRT_ColumnHelper<TData extends MRT_RowData> = {
+export type NexTableColumnHelper<TData extends NexRowData> = {
   accessor: <
     TAccessor extends AccessorFn<TData> | DeepKeys<TData>,
     TValue extends TAccessor extends AccessorFn<TData, infer TReturn>
@@ -158,10 +158,10 @@ export type MRT_ColumnHelper<TData extends MRT_RowData> = {
         : never,
   >(
     accessor: TAccessor,
-    column: MRT_DisplayColumnDef<TData, TValue>,
-  ) => MRT_ColumnDef<TData, TValue>;
-  display: (column: MRT_DisplayColumnDef<TData>) => MRT_ColumnDef<TData>;
-  group: (column: MRT_GroupColumnDef<TData>) => MRT_ColumnDef<TData>;
+    column: NexTableDisplayColumnDef<TData, TValue>,
+  ) => NexTableColumnDef<TData, TValue>;
+  display: (column: NexTableDisplayColumnDef<TData>) => NexTableColumnDef<TData>;
+  group: (column: NexTableGroupColumnDef<TData>) => NexTableColumnDef<TData>;
 };
 
 export interface MRT_Localization {
@@ -258,34 +258,34 @@ export interface MRT_Localization {
   unpinAll: string;
 }
 
-export interface MRT_RowModel<TData extends MRT_RowData> {
-  flatRows: MRT_Row<TData>[];
-  rows: MRT_Row<TData>[];
-  rowsById: { [key: string]: MRT_Row<TData> };
+export interface NexTableRowModel<TData extends NexRowData> {
+  flatRows: NexTableRow<TData>[];
+  rows: NexTableRow<TData>[];
+  rowsById: { [key: string]: NexTableRow<TData> };
 }
 
-export type MRT_TableInstance<TData extends MRT_RowData> = {
-  getAllColumns: () => MRT_Column<TData>[];
-  getAllFlatColumns: () => MRT_Column<TData>[];
-  getAllLeafColumns: () => MRT_Column<TData>[];
-  getBottomRows: () => MRT_Row<TData>[];
-  getCenterLeafColumns: () => MRT_Column<TData>[];
-  getCenterRows: () => MRT_Row<TData>[];
-  getColumn: (columnId: string) => MRT_Column<TData>;
-  getExpandedRowModel: () => MRT_RowModel<TData>;
-  getFilteredSelectedRowModel: () => MRT_RowModel<TData>;
-  getFlatHeaders: () => MRT_Header<TData>[];
-  getHeaderGroups: () => MRT_HeaderGroup<TData>[];
-  getLeftLeafColumns: () => MRT_Column<TData>[];
-  getPaginationRowModel: () => MRT_RowModel<TData>;
-  getPreFilteredRowModel: () => MRT_RowModel<TData>;
-  getPrePaginationRowModel: () => MRT_RowModel<TData>;
-  getRightLeafColumns: () => MRT_Column<TData>[];
-  getRowModel: () => MRT_RowModel<TData>;
-  getSelectedRowModel: () => MRT_RowModel<TData>;
-  getState: () => MRT_TableState<TData>;
-  getTopRows: () => MRT_Row<TData>[];
-  options: MRT_StatefulTableOptions<TData>;
+export type NexTableTableInstance<TData extends NexRowData> = {
+  getAllColumns: () => NexTableColumn<TData>[];
+  getAllFlatColumns: () => NexTableColumn<TData>[];
+  getAllLeafColumns: () => NexTableColumn<TData>[];
+  getBottomRows: () => NexTableRow<TData>[];
+  getCenterLeafColumns: () => NexTableColumn<TData>[];
+  getCenterRows: () => NexTableRow<TData>[];
+  getColumn: (columnId: string) => NexTableColumn<TData>;
+  getExpandedRowModel: () => NexTableRowModel<TData>;
+  getFilteredSelectedRowModel: () => NexTableRowModel<TData>;
+  getFlatHeaders: () => NexTableHeader<TData>[];
+  getHeaderGroups: () => NexTableHeaderGroup<TData>[];
+  getLeftLeafColumns: () => NexTableColumn<TData>[];
+  getPaginationRowModel: () => NexTableRowModel<TData>;
+  getPreFilteredRowModel: () => NexTableRowModel<TData>;
+  getPrePaginationRowModel: () => NexTableRowModel<TData>;
+  getRightLeafColumns: () => NexTableColumn<TData>[];
+  getRowModel: () => NexTableRowModel<TData>;
+  getSelectedRowModel: () => NexTableRowModel<TData>;
+  getState: () => NexTableTableState<TData>;
+  getTopRows: () => NexTableRow<TData>[];
+  options: NexTableStatefulTableOptions<TData>;
   refs: {
     bottomToolbarRef: MutableRefObject<HTMLDivElement | null>;
     editInputRefs: MutableRefObject<Record<string, HTMLInputElement>>;
@@ -299,16 +299,16 @@ export type MRT_TableInstance<TData extends MRT_RowData> = {
     tablePaperRef: MutableRefObject<HTMLDivElement | null>;
     topToolbarRef: MutableRefObject<HTMLDivElement | null>;
   };
-  setColumnFilterFns: Dispatch<SetStateAction<MRT_ColumnFilterFnsState>>;
-  setCreatingRow: Dispatch<SetStateAction<MRT_Row<TData> | null | true>>;
-  setDensity: Dispatch<SetStateAction<MRT_DensityState>>;
-  setDraggingColumn: Dispatch<SetStateAction<MRT_Column<TData> | null>>;
-  setDraggingRow: Dispatch<SetStateAction<MRT_Row<TData> | null>>;
-  setEditingCell: Dispatch<SetStateAction<MRT_Cell<TData> | null>>;
-  setEditingRow: Dispatch<SetStateAction<MRT_Row<TData> | null>>;
-  setGlobalFilterFn: Dispatch<SetStateAction<MRT_FilterOption>>;
-  setHoveredColumn: Dispatch<SetStateAction<null | Partial<MRT_Column<TData>>>>;
-  setHoveredRow: Dispatch<SetStateAction<null | Partial<MRT_Row<TData>>>>;
+  setColumnFilterFns: Dispatch<SetStateAction<NexTableColumnFilterFnsState>>;
+  setCreatingRow: Dispatch<SetStateAction<NexTableRow<TData> | null | true>>;
+  setDensity: Dispatch<SetStateAction<NexTableDensityState>>;
+  setDraggingColumn: Dispatch<SetStateAction<NexTableColumn<TData> | null>>;
+  setDraggingRow: Dispatch<SetStateAction<NexTableRow<TData> | null>>;
+  setEditingCell: Dispatch<SetStateAction<NexTableCell<TData> | null>>;
+  setEditingRow: Dispatch<SetStateAction<NexTableRow<TData> | null>>;
+  setGlobalFilterFn: Dispatch<SetStateAction<NexTableFilterOption>>;
+  setHoveredColumn: Dispatch<SetStateAction<null | Partial<NexTableColumn<TData>>>>;
+  setHoveredRow: Dispatch<SetStateAction<null | Partial<NexTableRow<TData>>>>;
   setIsFullScreen: Dispatch<SetStateAction<boolean>>;
   setShowAlertBanner: Dispatch<SetStateAction<boolean>>;
   setShowColumnFilters: Dispatch<SetStateAction<boolean>>;
@@ -338,14 +338,14 @@ export type MRT_TableInstance<TData extends MRT_RowData> = {
   | 'options'
 >;
 
-export type MRT_DefinedTableOptions<TData extends MRT_RowData> = {
+export type NexTableDefinedTableOptions<TData extends NexRowData> = {
   icons: MRT_Icons;
   localization: MRT_Localization;
-} & Omit<MRT_TableOptions<TData>, 'icons' | 'localization'>;
+} & Omit<NexTableTableOptions<TData>, 'icons' | 'localization'>;
 
-export type MRT_StatefulTableOptions<TData extends MRT_RowData> = {
+export type NexTableStatefulTableOptions<TData extends NexRowData> = {
   state: Pick<
-    MRT_TableState<TData>,
+    NexTableTableState<TData>,
     | 'columnFilterFns'
     | 'columnOrder'
     | 'columnSizingInfo'
@@ -366,20 +366,20 @@ export type MRT_StatefulTableOptions<TData extends MRT_RowData> = {
     | 'showGlobalFilter'
     | 'showToolbarDropZone'
   >;
-} & MRT_DefinedTableOptions<TData>;
+} & NexTableDefinedTableOptions<TData>;
 
-export type MRT_TableState<TData extends MRT_RowData> = Prettify<
+export type NexTableTableState<TData extends NexRowData> = Prettify<
   {
-    columnFilterFns: MRT_ColumnFilterFnsState;
-    creatingRow: MRT_Row<TData> | null;
-    density: MRT_DensityState;
-    draggingColumn: MRT_Column<TData> | null;
-    draggingRow: MRT_Row<TData> | null;
-    editingCell: MRT_Cell<TData> | null;
-    editingRow: MRT_Row<TData> | null;
-    globalFilterFn: MRT_FilterOption;
-    hoveredColumn: null | Partial<MRT_Column<TData>>;
-    hoveredRow: null | Partial<MRT_Row<TData>>;
+    columnFilterFns: NexTableColumnFilterFnsState;
+    creatingRow: NexTableRow<TData> | null;
+    density: NexTableDensityState;
+    draggingColumn: NexTableColumn<TData> | null;
+    draggingRow: NexTableRow<TData> | null;
+    editingCell: NexTableCell<TData> | null;
+    editingRow: NexTableRow<TData> | null;
+    globalFilterFn: NexTableFilterOption;
+    hoveredColumn: null | Partial<NexTableColumn<TData>>;
+    hoveredRow: null | Partial<NexTableRow<TData>>;
     isFullScreen: boolean;
     isLoading: boolean;
     isSaving: boolean;
@@ -393,7 +393,7 @@ export type MRT_TableState<TData extends MRT_RowData> = Prettify<
   } & TableState
 >;
 
-export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
+export type NexTableColumnDef<TData extends NexRowData, TValue = unknown> = {
   /**
    * Either an `accessorKey` or a combination of an `accessorFn` and `id` are required for a data column definition.
    * Specify a function here to point to the correct property in the data object.
@@ -411,21 +411,21 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
    */
   accessorKey?: ({} & string) | DeepKeys<TData>;
   AggregatedCell?: (props: {
-    cell: MRT_Cell<TData, TValue>;
-    column: MRT_Column<TData, TValue>;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    cell: NexTableCell<TData, TValue>;
+    column: NexTableColumn<TData, TValue>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
-  aggregationFn?: Array<MRT_AggregationFn<TData>> | MRT_AggregationFn<TData>;
+  aggregationFn?: Array<NexTableAggregationFn<TData>> | NexTableAggregationFn<TData>;
   Cell?: (props: {
-    cell: MRT_Cell<TData, TValue>;
-    column: MRT_Column<TData, TValue>;
+    cell: NexTableCell<TData, TValue>;
+    column: NexTableColumn<TData, TValue>;
     renderedCellValue: number | ReactNode | string;
     renderedColumnIndex?: number;
     renderedRowIndex?: number;
-    row: MRT_Row<TData>;
+    row: NexTableRow<TData>;
     rowRef?: RefObject<HTMLTableRowElement | null>;
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   /**
    * Specify what type of column this is. Either `data`, `display`, or `group`. Defaults to `data`.
@@ -437,32 +437,32 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
    */
   columnDefType?: 'data' | 'display' | 'group';
   columnFilterModeOptions?: Array<
-    LiteralUnion<MRT_FilterOption & string>
+    LiteralUnion<NexTableFilterOption & string>
   > | null;
-  columns?: MRT_ColumnDef<TData>[];
+  columns?: NexTableColumnDef<TData>[];
   Edit?: (props: {
-    cell: MRT_Cell<TData, TValue>;
-    column: MRT_Column<TData, TValue>;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    cell: NexTableCell<TData, TValue>;
+    column: NexTableColumn<TData, TValue>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   editVariant?: 'multi-select' | 'select' | 'text';
   enableCellHoverReveal?: boolean;
-  enableClickToCopy?: ((cell: MRT_Cell<TData>) => boolean) | boolean;
+  enableClickToCopy?: ((cell: NexTableCell<TData>) => boolean) | boolean;
   enableColumnActions?: boolean;
   enableColumnDragging?: boolean;
   enableColumnFilterModes?: boolean;
   enableColumnOrdering?: boolean;
-  enableEditing?: ((row: MRT_Row<TData>) => boolean) | boolean;
+  enableEditing?: ((row: NexTableRow<TData>) => boolean) | boolean;
   enableFilterMatchHighlighting?: boolean;
   Filter?: (props: {
-    column: MRT_Column<TData, TValue>;
-    header: MRT_Header<TData>;
+    column: NexTableColumn<TData, TValue>;
+    header: NexTableHeader<TData>;
     rangeFilterIndex?: number;
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
-  filterFn?: MRT_FilterFn<TData>;
-  filterTooltipValueFn?: MRT_FilterTooltipValueFn;
+  filterFn?: NexTableFilterFn<TData>;
+  filterTooltipValueFn?: NexTableFilterTooltipValueFn;
   filterVariant?:
     | 'autocomplete'
     | 'checkbox'
@@ -475,9 +475,9 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
     | 'text';
   Footer?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
-        footer: MRT_Header<TData>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, TValue>;
+        footer: NexTableHeader<TData>;
+        table: NexTableTableInstance<TData>;
       }) => ReactNode)
     | ReactNode;
   /**
@@ -485,10 +485,10 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
    */
   footer?: string;
   GroupedCell?: (props: {
-    cell: MRT_Cell<TData, TValue>;
-    column: MRT_Column<TData, TValue>;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    cell: NexTableCell<TData, TValue>;
+    column: NexTableColumn<TData, TValue>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   /**
    * If `layoutMode` is `'grid'` or `'grid-no-grow'`, you can specify the flex grow value for individual columns to still grow and take up remaining space, or set to `false`/0 to not grow.
@@ -496,9 +496,9 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
   grow?: boolean | number;
   Header?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
-        header: MRT_Header<TData>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, TValue>;
+        header: NexTableHeader<TData>;
+        table: NexTableTableInstance<TData>;
       }) => ReactNode)
     | ReactNode;
   /**
@@ -517,127 +517,127 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
   id?: LiteralUnion<keyof TData & string>;
   mantineColumnActionsButtonProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, TValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>);
   mantineColumnDragHandleProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, TValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>);
   mantineCopyButtonProps?:
     | ((props: {
-        cell: MRT_Cell<TData, TValue>;
-        column: MRT_Column<TData, TValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<UnstyledButtonProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<UnstyledButtonProps>);
   mantineEditSelectProps?:
     | ((props: {
-        cell: MRT_Cell<TData, TValue>;
-        column: MRT_Column<TData, TValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<MultiSelectProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<MultiSelectProps>);
   mantineEditTextInputProps?:
     | ((props: {
-        cell: MRT_Cell<TData, TValue>;
-        column: MRT_Column<TData, TValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>);
   mantineFilterAutocompleteProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<AutocompleteProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<AutocompleteProps>);
   mantineFilterCheckboxProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, TValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>);
   mantineFilterDateInputProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<DateInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<DateInputProps>);
   mantineFilterMultiSelectProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<MultiSelectProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<MultiSelectProps>);
   mantineFilterRangeSliderProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<RangeSliderProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<RangeSliderProps>);
   mantineFilterSelectProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<SelectProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<SelectProps>);
   mantineFilterTextInputProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>);
   mantineTableBodyCellProps?:
     | ((props: {
-        cell: MRT_Cell<TData, TValue>;
-        column: MRT_Column<TData, TValue>;
+        cell: NexTableCell<TData, TValue>;
+        column: NexTableColumn<TData, TValue>;
         renderedRowIndex?: number;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableCellElement> & TableTdProps)
     | (HTMLPropsRef<HTMLTableCellElement> & TableTdProps);
   mantineTableFooterCellProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, TValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableCellElement> & TableThProps)
     | (HTMLPropsRef<HTMLTableCellElement> & TableThProps);
   mantineTableHeadCellProps?:
     | ((props: {
-        column: MRT_Column<TData, TValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, TValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableCellElement> & TableThProps)
     | (HTMLPropsRef<HTMLTableCellElement> & TableThProps);
   PlaceholderCell?: (props: {
-    cell: MRT_Cell<TData, TValue>;
-    column: MRT_Column<TData, TValue>;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    cell: NexTableCell<TData, TValue>;
+    column: NexTableColumn<TData, TValue>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderColumnActionsMenuItems?: (props: {
-    column: MRT_Column<TData, TValue>;
+    column: NexTableColumn<TData, TValue>;
     internalColumnMenuItems: ReactNode;
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderColumnFilterModeMenuItems?: (props: {
-    column: MRT_Column<TData, TValue>;
-    internalFilterOptions: MRT_InternalFilterOption[];
-    onSelectFilterMode: (filterMode: MRT_FilterOption) => void;
-    table: MRT_TableInstance<TData>;
+    column: NexTableColumn<TData, TValue>;
+    internalFilterOptions: NexTableInternalFilterOption[];
+    onSelectFilterMode: (filterMode: NexTableFilterOption) => void;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
-  sortingFn?: MRT_SortingFn<TData>;
+  sortingFn?: NexTableSortingFn<TData>;
   visibleInShowHideMenu?: boolean;
 } & Omit<
   ColumnDef<TData, TValue>,
@@ -653,90 +653,90 @@ export type MRT_ColumnDef<TData extends MRT_RowData, TValue = unknown> = {
   | 'sortingFn'
 >;
 
-export type MRT_DisplayColumnDef<
-  TData extends MRT_RowData,
+export type NexTableDisplayColumnDef<
+  TData extends NexRowData,
   TValue = unknown,
-> = Omit<MRT_ColumnDef<TData, TValue>, 'accessorFn' | 'accessorKey'>;
+> = Omit<NexTableColumnDef<TData, TValue>, 'accessorFn' | 'accessorKey'>;
 
-export type MRT_GroupColumnDef<TData extends MRT_RowData> = {
-  columns: MRT_ColumnDef<TData>[];
-} & MRT_DisplayColumnDef<TData, any>;
+export type NexTableGroupColumnDef<TData extends NexRowData> = {
+  columns: NexTableColumnDef<TData>[];
+} & NexTableDisplayColumnDef<TData, any>;
 
-export type MRT_DefinedColumnDef<
-  TData extends MRT_RowData,
+export type NexTableDefinedColumnDef<
+  TData extends NexRowData,
   TValue = unknown,
 > = {
-  _filterFn: MRT_FilterOption;
-  defaultDisplayColumn: Partial<MRT_ColumnDef<TData, TValue>>;
+  _filterFn: NexTableFilterOption;
+  defaultDisplayColumn: Partial<NexTableColumnDef<TData, TValue>>;
   id: string;
-} & Omit<MRT_ColumnDef<TData, TValue>, 'defaultDisplayColumn' | 'id'>;
+} & Omit<NexTableColumnDef<TData, TValue>, 'defaultDisplayColumn' | 'id'>;
 
-export type MRT_Column<TData extends MRT_RowData, TValue = unknown> = {
-  columnDef: MRT_DefinedColumnDef<TData, TValue>;
-  columns?: MRT_Column<TData>[];
-  filterFn?: MRT_FilterFn<TData>;
+export type NexTableColumn<TData extends NexRowData, TValue = unknown> = {
+  columnDef: NexTableDefinedColumnDef<TData, TValue>;
+  columns?: NexTableColumn<TData>[];
+  filterFn?: NexTableFilterFn<TData>;
   footer: string;
   header: string;
 } & Omit<
-  Column<TData, MRT_CellValue>,
+  Column<TData, NexTableCellValue>,
   'columnDef' | 'columns' | 'filterFn' | 'footer' | 'header'
 >;
 
-export type MRT_Header<TData extends MRT_RowData, TValue = unknown> = {
-  column: MRT_Column<TData, TValue>;
-} & Omit<Header<TData, MRT_CellValue>, 'column'>;
+export type NexTableHeader<TData extends NexRowData, TValue = unknown> = {
+  column: NexTableColumn<TData, TValue>;
+} & Omit<Header<TData, NexTableCellValue>, 'column'>;
 
-export type MRT_HeaderGroup<TData extends MRT_RowData> = {
-  headers: MRT_Header<TData>[];
+export type NexTableHeaderGroup<TData extends NexRowData> = {
+  headers: NexTableHeader<TData>[];
 } & Omit<HeaderGroup<TData>, 'headers'>;
 
-export type MRT_Row<TData extends MRT_RowData> = {
+export type NexTableRow<TData extends NexRowData> = {
   _valuesCache: Record<LiteralUnion<DeepKeys<TData> & string>, any>;
-  getAllCells: () => MRT_Cell<TData>[];
-  getVisibleCells: () => MRT_Cell<TData>[];
-  subRows?: MRT_Row<TData>[];
+  getAllCells: () => NexTableCell<TData>[];
+  getVisibleCells: () => NexTableCell<TData>[];
+  subRows?: NexTableRow<TData>[];
 } & Omit<
   Row<TData>,
   '_valuesCache' | 'getAllCells' | 'getVisibleCells' | 'subRows'
 >;
 
-export type MRT_Cell<TData extends MRT_RowData, TValue = unknown> = {
-  column: MRT_Column<TData, TValue>;
-  row: MRT_Row<TData>;
+export type NexTableCell<TData extends NexRowData, TValue = unknown> = {
+  column: NexTableColumn<TData, TValue>;
+  row: NexTableRow<TData>;
 } & Omit<Cell<TData, TValue>, 'column' | 'row'>;
 
-export type MRT_AggregationOption = keyof typeof MRT_AggregationFns & string;
+export type NexTableAggregationOption = keyof typeof NexTableAggregationFns & string;
 
-export type MRT_AggregationFn<TData extends MRT_RowData> =
+export type NexTableAggregationFn<TData extends NexRowData> =
   | AggregationFn<TData>
-  | MRT_AggregationOption;
+  | NexTableAggregationOption;
 
-export type MRT_SortingOption = LiteralUnion<
-  keyof typeof MRT_SortingFns & string
+export type NexTableSortingOption = LiteralUnion<
+  keyof typeof NexTableSortingFns & string
 >;
 
-export type MRT_SortingFn<TData extends MRT_RowData> =
-  | MRT_SortingOption
+export type NexTableSortingFn<TData extends NexRowData> =
+  | NexTableSortingOption
   | SortingFn<TData>;
 
-export type MRT_FilterOption = LiteralUnion<
-  keyof typeof MRT_FilterFns & string
+export type NexTableFilterOption = LiteralUnion<
+  keyof typeof NexTableFilterFns & string
 >;
 
-export type MRT_FilterFn<TData extends MRT_RowData> =
+export type NexTableFilterFn<TData extends NexRowData> =
   | FilterFn<TData>
-  | MRT_FilterOption;
+  | NexTableFilterOption;
 
-export type MRT_FilterTooltipValueFn<TValue = any> = (value: TValue) => string;
+export type NexTableFilterTooltipValueFn<TValue = any> = (value: TValue) => string;
 
-export type MRT_InternalFilterOption = {
+export type NexTableInternalFilterOption = {
   divider: boolean;
   label: string;
   option: string;
   symbol: string;
 };
 
-export type MRT_DisplayColumnIds =
+export type NexTableDisplayColumnIds =
   | 'mrt-row-actions'
   | 'mrt-row-drag'
   | 'mrt-row-expand'
@@ -745,10 +745,10 @@ export type MRT_DisplayColumnIds =
   | 'mrt-row-select'
   | 'mrt-row-spacer';
 
-export type MRT_CreateTableFeature<
-  TData extends MRT_RowData,
+export type NexTableCreateTableFeature<
+  TData extends NexRowData,
   TFeature = any,
-> = (table: MRT_TableInstance<TData>) => TFeature;
+> = (table: NexTableTableInstance<TData>) => TFeature;
 
 /**
  * `columns` and `data` props are the only required props, but there are over 150 other optional props.
@@ -759,10 +759,10 @@ export type MRT_CreateTableFeature<
  * See the full props list on the official docs site:
  * @link https://www.mantine-react-table.com/docs/api/table-options
  */
-export type MRT_TableOptions<TData extends MRT_RowData> = {
+export type NexTableTableOptions<TData extends NexRowData> = {
   columnFilterDisplayMode?: 'custom' | 'popover' | 'subheader';
   columnFilterModeOptions?: Array<
-    LiteralUnion<MRT_FilterOption & string>
+    LiteralUnion<NexTableFilterOption & string>
   > | null;
   /**
    * The columns to display in the table. `accessorKey`s or `accessorFn`s must match keys in the `data` prop.
@@ -774,14 +774,14 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
    * See all Columns Options on the official docs site:
    * @link https://www.mantine-react-table.com/docs/api/column-options
    */
-  columns: MRT_ColumnDef<TData>[];
+  columns: NexTableColumnDef<TData>[];
   columnVirtualizerInstanceRef?: MutableRefObject<null | Virtualizer<
     HTMLDivElement,
     HTMLTableCellElement
   >>;
   columnVirtualizerOptions?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => Partial<VirtualizerOptions<HTMLDivElement, HTMLTableCellElement>>)
     | Partial<VirtualizerOptions<HTMLDivElement, HTMLTableCellElement>>;
   createDisplayMode?: 'custom' | 'modal' | 'row';
@@ -795,25 +795,25 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
   /**
    * Instead of specifying a bunch of the same options for each column, you can just change an option in the `defaultColumn` prop to change a default option for all columns.
    */
-  defaultColumn?: Partial<MRT_ColumnDef<TData>>;
+  defaultColumn?: Partial<NexTableColumnDef<TData>>;
   /**
    * Change the default options for display columns.
    */
-  defaultDisplayColumn?: Partial<MRT_DisplayColumnDef<TData>>;
+  defaultDisplayColumn?: Partial<NexTableDisplayColumnDef<TData>>;
   displayColumnDefOptions?: Partial<{
-    [key in MRT_DisplayColumnIds]: Partial<MRT_DisplayColumnDef<TData>>;
+    [key in NexTableDisplayColumnIds]: Partial<NexTableDisplayColumnDef<TData>>;
   }>;
   editDisplayMode?: 'cell' | 'custom' | 'modal' | 'row' | 'table';
   enableBatchRowSelection?: boolean;
   enableBottomToolbar?: boolean;
-  enableClickToCopy?: ((cell: MRT_Cell<TData>) => boolean) | boolean;
+  enableClickToCopy?: ((cell: NexTableCell<TData>) => boolean) | boolean;
   enableColumnActions?: boolean;
   enableColumnDragging?: boolean;
   enableColumnFilterModes?: boolean;
   enableColumnOrdering?: boolean;
   enableColumnVirtualization?: boolean;
   enableDensityToggle?: boolean;
-  enableEditing?: ((row: MRT_Row<TData>) => boolean) | boolean;
+  enableEditing?: ((row: NexTableRow<TData>) => boolean) | boolean;
   enableExpandAll?: boolean;
   enableFacetedValues?: boolean;
   enableFilterMatchHighlighting?: boolean;
@@ -826,7 +826,7 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
   enableRowDragging?: boolean;
   enableRowNumbers?: boolean;
   enableRowOrdering?: boolean;
-  enableRowSelection?: ((row: MRT_Row<TData>) => boolean) | boolean;
+  enableRowSelection?: ((row: NexTableRow<TData>) => boolean) | boolean;
   enableRowVirtualization?: boolean;
   enableSelectAll?: boolean;
   enableStickyFooter?: boolean;
@@ -839,12 +839,12 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
   getRowId?: (
     originalRow: TData,
     index: number,
-    parentRow: MRT_Row<TData>,
+    parentRow: NexTableRow<TData>,
   ) => string | undefined;
-  globalFilterFn?: MRT_FilterOption;
-  globalFilterModeOptions?: MRT_FilterOption[] | null;
+  globalFilterFn?: NexTableFilterOption;
+  globalFilterModeOptions?: NexTableFilterOption[] | null;
   icons?: Partial<MRT_Icons>;
-  initialState?: Partial<MRT_TableState<TData>>;
+  initialState?: Partial<NexTableTableState<TData>>;
   /**
    * Changes which kind of CSS layout is used to render the table. `semantic` uses default semantic HTML elements, while `grid` adds CSS grid and flexbox styles
    */
@@ -858,168 +858,168 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
   localization?: Partial<MRT_Localization>;
   mantineBottomToolbarProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => BoxProps & HTMLPropsRef<HTMLDivElement>)
     | (BoxProps & HTMLPropsRef<HTMLDivElement>);
   mantineColumnActionsButtonProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>);
   mantineColumnDragHandleProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>);
   mantineCopyButtonProps?:
     | ((props: {
-        cell: MRT_Cell<TData, MRT_CellValue>;
-        column: MRT_Column<TData, MRT_CellValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, NexTableCellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<UnstyledButtonProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<UnstyledButtonProps>);
   mantineCreateRowModalProps?:
     | ((props: {
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & Partial<ModalProps>)
     | (HTMLPropsRef<HTMLDivElement> & Partial<ModalProps>);
   mantineDetailPanelProps?:
     | ((props: {
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => BoxProps & HTMLPropsRef<HTMLTableCellElement>)
     | (BoxProps & HTMLPropsRef<HTMLTableCellElement>);
   mantineEditRowModalProps?:
     | ((props: {
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & Partial<ModalProps>)
     | (HTMLPropsRef<HTMLDivElement> & Partial<ModalProps>);
   mantineEditSelectProps?:
     | ((props: {
-        cell: MRT_Cell<TData, MRT_CellValue>;
-        column: MRT_Column<TData, MRT_CellValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, NexTableCellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<SelectProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<SelectProps>);
   mantineEditTextInputProps?:
     | ((props: {
-        cell: MRT_Cell<TData, MRT_CellValue>;
-        column: MRT_Column<TData, MRT_CellValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, NexTableCellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>);
   mantineExpandAllButtonProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>);
   mantineExpandButtonProps?:
     | ((props: {
         renderedRowIndex?: number;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>);
   mantineFilterAutocompleteProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<AutocompleteProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<AutocompleteProps>);
   mantineFilterCheckboxProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<CheckboxProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<CheckboxProps>);
   mantineFilterDateInputProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<DateInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<DateInputProps>);
   mantineFilterMultiSelectProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<MultiSelectProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<MultiSelectProps>);
   mantineFilterRangeSliderProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<RangeSliderProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<RangeSliderProps>);
   mantineFilterSelectProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<SelectProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<SelectProps>);
   mantineFilterTextInputProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
         rangeFilterIndex?: number;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>);
   mantineHighlightProps?:
     | ((props: {
-        cell: MRT_Cell<TData, MRT_CellValue>;
-        column: MRT_Column<TData, MRT_CellValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, NexTableCellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLSpanElement> & Partial<HighlightProps>)
     | (HTMLPropsRef<HTMLSpanElement> & Partial<HighlightProps>);
   mantineLoadingOverlayProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & Partial<LoadingOverlayProps>)
     | (HTMLPropsRef<HTMLDivElement> & Partial<LoadingOverlayProps>);
   mantinePaginationProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
-      }) => Partial<HTMLPropsRef<HTMLDivElement> & MRT_PaginationProps>)
-    | Partial<HTMLPropsRef<HTMLDivElement> & MRT_PaginationProps>;
+        table: NexTableTableInstance<TData>;
+      }) => Partial<HTMLPropsRef<HTMLDivElement> & NexTablePaginationProps>)
+    | Partial<HTMLPropsRef<HTMLDivElement> & NexTablePaginationProps>;
   mantinePaperProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & PaperProps)
     | (HTMLPropsRef<HTMLDivElement> & PaperProps);
   mantineProgressProps?:
     | ((props: {
         isTopToolbar: boolean;
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & ProgressProps)
     | (HTMLPropsRef<HTMLDivElement> & ProgressProps);
   mantineRowDragHandleProps?:
     | ((props: {
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>)
     | (HTMLPropsRef<HTMLButtonElement> & Partial<ActionIconProps>);
   mantineSearchTextInputProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>)
     | (HTMLPropsRef<HTMLInputElement> & Partial<TextInputProps>);
   mantineSelectAllCheckboxProps?:
     | ((CheckboxProps | RadioProps | SwitchProps) &
         HTMLPropsRef<HTMLInputElement>)
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => (CheckboxProps | RadioProps | SwitchProps) &
         HTMLPropsRef<HTMLInputElement>);
   mantineSelectCheckboxProps?:
@@ -1027,98 +1027,98 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
         HTMLPropsRef<HTMLInputElement>)
     | ((props: {
         renderedRowIndex?: number;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => (CheckboxProps | RadioProps | SwitchProps) &
         HTMLPropsRef<HTMLInputElement>);
   mantineSkeletonProps?:
     | ((props: {
-        cell: MRT_Cell<TData, MRT_CellValue>;
-        column: MRT_Column<TData, MRT_CellValue>;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        cell: NexTableCell<TData, NexTableCellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & SkeletonProps)
     | (HTMLPropsRef<HTMLDivElement> & SkeletonProps);
   mantineTableBodyCellProps?:
     | ((props: {
-        cell: MRT_Cell<TData, MRT_CellValue>;
-        column: MRT_Column<TData, MRT_CellValue>;
+        cell: NexTableCell<TData, NexTableCellValue>;
+        column: NexTableColumn<TData, NexTableCellValue>;
         renderedColumnIndex?: number;
         renderedRowIndex?: number;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableCellElement> & TableTdProps)
     | (HTMLPropsRef<HTMLTableCellElement> & TableTdProps);
   mantineTableBodyProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableSectionElement> & TableTbodyProps)
     | (HTMLPropsRef<HTMLTableSectionElement> & TableTbodyProps);
   mantineTableBodyRowProps?:
     | ((props: {
         isDetailPanel?: boolean;
         renderedRowIndex?: number;
-        row: MRT_Row<TData>;
-        table: MRT_TableInstance<TData>;
+        row: NexTableRow<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableRowElement> & TableTrProps)
     | (HTMLPropsRef<HTMLTableRowElement> & TableTrProps);
   mantineTableContainerProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => BoxProps & HTMLPropsRef<HTMLDivElement>)
     | (BoxProps & HTMLPropsRef<HTMLDivElement>);
   mantineTableFooterCellProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableCellElement> & TableThProps)
     | (HTMLPropsRef<HTMLTableCellElement> & TableThProps);
   mantineTableFooterProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableSectionElement> & TableTfootProps)
     | (HTMLPropsRef<HTMLTableSectionElement> & TableTfootProps);
   mantineTableFooterRowProps?:
     | ((props: {
-        footerGroup: MRT_HeaderGroup<TData>;
-        table: MRT_TableInstance<TData>;
+        footerGroup: NexTableHeaderGroup<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableRowElement> & TableTrProps)
     | (HTMLPropsRef<HTMLTableRowElement> & TableTrProps);
   mantineTableHeadCellProps?:
     | ((props: {
-        column: MRT_Column<TData, MRT_CellValue>;
-        table: MRT_TableInstance<TData>;
+        column: NexTableColumn<TData, NexTableCellValue>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableCellElement> & TableThProps)
     | (HTMLPropsRef<HTMLTableCellElement> & TableThProps);
   mantineTableHeadProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableSectionElement> & TableTheadProps)
     | (HTMLPropsRef<HTMLTableSectionElement> & TableTheadProps);
   mantineTableHeadRowProps?:
     | ((props: {
-        headerGroup: MRT_HeaderGroup<TData>;
-        table: MRT_TableInstance<TData>;
+        headerGroup: NexTableHeaderGroup<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableRowElement> & TableTrProps)
     | (HTMLPropsRef<HTMLTableRowElement> & TableTrProps);
   mantineTableProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLTableElement> & TableProps)
     | (HTMLPropsRef<HTMLTableElement> & TableProps);
   mantineToolbarAlertBannerBadgeProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & Partial<BadgeProps>)
     | (HTMLPropsRef<HTMLDivElement> & Partial<BadgeProps>);
   mantineToolbarAlertBannerProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => HTMLPropsRef<HTMLDivElement> & Partial<AlertProps>)
     | (HTMLPropsRef<HTMLDivElement> & Partial<AlertProps>);
   mantineTopToolbarProps?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => BoxProps & HTMLPropsRef<HTMLDivElement>)
     | (BoxProps & HTMLPropsRef<HTMLDivElement>);
   /**
@@ -1128,36 +1128,36 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
    * @link https://www.mantine-react-table.com/docs/guides/memoize-components
    */
   memoMode?: 'cells' | 'rows' | 'table-body';
-  onColumnFilterFnsChange?: OnChangeFn<{ [key: string]: MRT_FilterOption }>;
+  onColumnFilterFnsChange?: OnChangeFn<{ [key: string]: NexTableFilterOption }>;
   onCreatingRowCancel?: (props: {
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => void;
-  onCreatingRowChange?: OnChangeFn<MRT_Row<TData> | null>;
+  onCreatingRowChange?: OnChangeFn<NexTableRow<TData> | null>;
   onCreatingRowSave?: (props: {
     exitCreatingMode: () => void;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
     values: Record<LiteralUnion<DeepKeys<TData> & string>, any>;
   }) => void;
-  onDensityChange?: OnChangeFn<MRT_DensityState>;
-  onDraggingColumnChange?: OnChangeFn<MRT_Column<TData> | null>;
-  onDraggingRowChange?: OnChangeFn<MRT_Row<TData> | null>;
-  onEditingCellChange?: OnChangeFn<MRT_Cell<TData> | null>;
+  onDensityChange?: OnChangeFn<NexTableDensityState>;
+  onDraggingColumnChange?: OnChangeFn<NexTableColumn<TData> | null>;
+  onDraggingRowChange?: OnChangeFn<NexTableRow<TData> | null>;
+  onEditingCellChange?: OnChangeFn<NexTableCell<TData> | null>;
   onEditingRowCancel?: (props: {
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => void;
-  onEditingRowChange?: OnChangeFn<MRT_Row<TData> | null>;
+  onEditingRowChange?: OnChangeFn<NexTableRow<TData> | null>;
   onEditingRowSave?: (props: {
     exitEditingMode: () => void;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
     values: Record<LiteralUnion<DeepKeys<TData> & string>, any>;
   }) => Promise<void> | void;
-  onGlobalFilterFnChange?: OnChangeFn<MRT_FilterOption>;
-  onHoveredColumnChange?: OnChangeFn<null | Partial<MRT_Column<TData>>>;
-  onHoveredRowChange?: OnChangeFn<null | Partial<MRT_Row<TData>>>;
+  onGlobalFilterFnChange?: OnChangeFn<NexTableFilterOption>;
+  onHoveredColumnChange?: OnChangeFn<null | Partial<NexTableColumn<TData>>>;
+  onHoveredRowChange?: OnChangeFn<null | Partial<NexTableRow<TData>>>;
   onIsFullScreenChange?: OnChangeFn<boolean>;
   onShowAlertBannerChange?: OnChangeFn<boolean>;
   onShowColumnFiltersChange?: OnChangeFn<boolean>;
@@ -1172,69 +1172,69 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
   positionToolbarAlertBanner?: 'bottom' | 'head-overlay' | 'none' | 'top';
   positionToolbarDropZone?: 'both' | 'bottom' | 'none' | 'top';
   renderBottomToolbar?:
-    | ((props: { table: MRT_TableInstance<TData> }) => ReactNode)
+    | ((props: { table: NexTableTableInstance<TData> }) => ReactNode)
     | ReactNode;
   renderBottomToolbarCustomActions?: (props: {
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderColumnActionsMenuItems?: (props: {
-    column: MRT_Column<TData, MRT_CellValue>;
+    column: NexTableColumn<TData, NexTableCellValue>;
     internalColumnMenuItems: ReactNode;
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderColumnFilterModeMenuItems?: (props: {
-    column: MRT_Column<TData, MRT_CellValue>;
-    internalFilterOptions: MRT_InternalFilterOption[];
-    onSelectFilterMode: (filterMode: MRT_FilterOption) => void;
-    table: MRT_TableInstance<TData>;
+    column: NexTableColumn<TData, NexTableCellValue>;
+    internalFilterOptions: NexTableInternalFilterOption[];
+    onSelectFilterMode: (filterMode: NexTableFilterOption) => void;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderCreateRowModalContent?: (props: {
     internalEditComponents: ReactNode[];
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderDetailPanel?: (props: {
     internalEditComponents: ReactNode[];
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderEditRowModalContent?: (props: {
     internalEditComponents: ReactNode[];
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderEmptyRowsFallback?: (props: {
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderGlobalFilterModeMenuItems?: (props: {
-    internalFilterOptions: MRT_InternalFilterOption[];
-    onSelectFilterMode: (filterMode: MRT_FilterOption) => void;
-    table: MRT_TableInstance<TData>;
+    internalFilterOptions: NexTableInternalFilterOption[];
+    onSelectFilterMode: (filterMode: NexTableFilterOption) => void;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderRowActionMenuItems?: (props: {
     renderedRowIndex?: number;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderRowActions?: (props: {
-    cell: MRT_Cell<TData, MRT_CellValue>;
+    cell: NexTableCell<TData, NexTableCellValue>;
     renderedRowIndex?: number;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderToolbarAlertBannerContent?: (props: {
     groupedAlert: null | ReactNode;
     selectedAlert: null | ReactNode;
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderToolbarInternalActions?: (props: {
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   renderTopToolbar?:
-    | ((props: { table: MRT_TableInstance<TData> }) => ReactNode)
+    | ((props: { table: NexTableTableInstance<TData> }) => ReactNode)
     | ReactNode;
   renderTopToolbarCustomActions?: (props: {
-    table: MRT_TableInstance<TData>;
+    table: NexTableTableInstance<TData>;
   }) => ReactNode;
   rowCount?: number;
   rowNumberDisplayMode?: 'original' | 'static';
@@ -1252,7 +1252,7 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
   >>;
   rowVirtualizerOptions?:
     | ((props: {
-        table: MRT_TableInstance<TData>;
+        table: NexTableTableInstance<TData>;
       }) => Partial<VirtualizerOptions<HTMLDivElement, HTMLTableRowElement>>)
     | Partial<VirtualizerOptions<HTMLDivElement, HTMLTableRowElement>>;
   selectAllMode?: 'all' | 'page';
@@ -1260,7 +1260,7 @@ export type MRT_TableOptions<TData extends MRT_RowData> = {
   /**
    * Manage state externally any way you want, then pass it back into MRT.
    */
-  state?: Partial<MRT_TableState<TData>>;
+  state?: Partial<NexTableTableState<TData>>;
 } & Omit<
   Partial<TableOptions<TData>>,
   | 'columns'

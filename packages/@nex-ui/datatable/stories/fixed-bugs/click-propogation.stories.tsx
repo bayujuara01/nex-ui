@@ -1,6 +1,6 @@
 import { Button, Menu } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -20,7 +20,7 @@ type Person = {
   state: string;
 };
 
-const columns: MRT_ColumnDef<Person>[] = [
+const columns: NexTableColumnDef<Person>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -53,7 +53,7 @@ const data = [...Array(6)].map(() => ({
 
 export const RowClickAndRowMenuActions = () => {
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       enableEditing
@@ -75,7 +75,7 @@ export const RowClickAndRowMenuActions = () => {
 
 export const RowClickAndRowButtonctions = () => {
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       enableEditing

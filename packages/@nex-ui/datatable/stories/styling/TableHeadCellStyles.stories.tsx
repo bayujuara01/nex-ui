@@ -1,6 +1,6 @@
 import { Box } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { getPrimaryColor } from '../../src/utils/style.utils';
 
@@ -13,7 +13,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -39,11 +39,11 @@ const data = [...Array(21)].map(() => ({
 }));
 
 export const DefaultTableHeadCellStyles = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const StyleAllMantineTableHeadCell = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableHeadCellProps={{
@@ -57,7 +57,7 @@ export const StyleAllMantineTableHeadCell = () => (
 );
 
 export const StyleTableHeadCellsIndividually = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -91,7 +91,7 @@ export const StyleTableHeadCellsIndividually = () => (
 );
 
 export const CustomHeadCellRenders = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',

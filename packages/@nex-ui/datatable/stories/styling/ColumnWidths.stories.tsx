@@ -1,4 +1,4 @@
-import { MantineReactTable } from '../../src';
+import { NexReactTable } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -18,7 +18,7 @@ const data = [...Array(21)].map(() => ({
 }));
 
 export const CustomWidthsSemantic = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -50,7 +50,7 @@ export const CustomWidthsSemantic = () => (
 );
 
 export const CustomWidthsGrid = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -83,7 +83,7 @@ export const CustomWidthsGrid = () => (
 );
 
 export const CustomWidthsGridNoGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -116,7 +116,7 @@ export const CustomWidthsGridNoGrow = () => (
 );
 
 export const CustomWidthsGridNoGrowIndividualGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -150,7 +150,7 @@ export const CustomWidthsGridNoGrowIndividualGrow = () => (
 );
 
 export const CustomWidthsGridIndividualShrink = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -184,7 +184,7 @@ export const CustomWidthsGridIndividualShrink = () => (
 );
 
 export const SmallWidthsSemantic = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -217,7 +217,7 @@ export const SmallWidthsSemantic = () => (
 );
 
 export const SmallWidthsGrid = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -251,7 +251,7 @@ export const SmallWidthsGrid = () => (
 );
 
 export const SmallWidthsGridNoGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -285,7 +285,7 @@ export const SmallWidthsGridNoGrow = () => (
 );
 
 export const SmallWidthsGridNoGrowIndividualGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',

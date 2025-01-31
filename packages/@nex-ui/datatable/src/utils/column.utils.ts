@@ -1,25 +1,25 @@
 import { type Row } from '@tanstack/react-table';
 
 import {
-  type MRT_Column,
-  type MRT_ColumnDef,
-  type MRT_ColumnOrderState,
-  type MRT_DefinedColumnDef,
-  type MRT_DefinedTableOptions,
-  type MRT_FilterOption,
-  type MRT_RowData,
+  type NexTableColumn,
+  type NexTableColumnDef,
+  type NexTableColumnOrderState,
+  type NexTableDefinedColumnDef,
+  type NexTableDefinedTableOptions,
+  type NexTableFilterOption,
+  type NexRowData,
 } from '../types';
 
-export const getColumnId = <TData extends MRT_RowData>(
-  columnDef: MRT_ColumnDef<TData>,
+export const getColumnId = <TData extends NexRowData>(
+  columnDef: NexTableColumnDef<TData>,
 ): string =>
   columnDef.id ?? columnDef.accessorKey?.toString?.() ?? columnDef.header;
 
-export const getAllLeafColumnDefs = <TData extends MRT_RowData>(
-  columns: MRT_ColumnDef<TData>[],
-): MRT_ColumnDef<TData>[] => {
-  const allLeafColumnDefs: MRT_ColumnDef<TData>[] = [];
-  const getLeafColumns = (cols: MRT_ColumnDef<TData>[]) => {
+export const getAllLeafColumnDefs = <TData extends NexRowData>(
+  columns: NexTableColumnDef<TData>[],
+): NexTableColumnDef<TData>[] => {
+  const allLeafColumnDefs: NexTableColumnDef<TData>[] = [];
+  const getLeafColumns = (cols: NexTableColumnDef<TData>[]) => {
     cols.forEach((col) => {
       if (col.columns) {
         getLeafColumns(col.columns);
@@ -32,13 +32,13 @@ export const getAllLeafColumnDefs = <TData extends MRT_RowData>(
   return allLeafColumnDefs;
 };
 
-export const prepareColumns = <TData extends MRT_RowData>({
+export const prepareColumns = <TData extends NexRowData>({
   columnDefs,
   tableOptions,
 }: {
-  columnDefs: MRT_ColumnDef<TData>[];
-  tableOptions: MRT_DefinedTableOptions<TData>;
-}): MRT_DefinedColumnDef<TData>[] => {
+  columnDefs: NexTableColumnDef<TData>[];
+  tableOptions: NexTableDefinedTableOptions<TData>;
+}): NexTableDefinedColumnDef<TData>[] => {
   const {
     aggregationFns = {},
     defaultDisplayColumn,
@@ -76,7 +76,7 @@ export const prepareColumns = <TData extends MRT_RowData>({
       if (Object.keys(filterFns).includes(columnFilterFns[columnDef.id])) {
         columnDef.filterFn =
           filterFns[columnFilterFns[columnDef.id]] ?? filterFns.fuzzy;
-        (columnDef as MRT_DefinedColumnDef<TData>)._filterFn =
+        (columnDef as NexTableDefinedColumnDef<TData>)._filterFn =
           columnFilterFns[columnDef.id];
       }
 
@@ -87,19 +87,19 @@ export const prepareColumns = <TData extends MRT_RowData>({
       }
     } else if (columnDef.columnDefType === 'display') {
       columnDef = {
-        ...(defaultDisplayColumn as MRT_ColumnDef<TData>),
+        ...(defaultDisplayColumn as NexTableColumnDef<TData>),
         ...columnDef,
       };
     }
     return columnDef;
-  }) as MRT_DefinedColumnDef<TData>[];
+  }) as NexTableDefinedColumnDef<TData>[];
 };
 
-export const reorderColumn = <TData extends MRT_RowData>(
-  draggedColumn: MRT_Column<TData>,
-  targetColumn: MRT_Column<TData>,
-  columnOrder: MRT_ColumnOrderState,
-): MRT_ColumnOrderState => {
+export const reorderColumn = <TData extends NexRowData>(
+  draggedColumn: NexTableColumn<TData>,
+  targetColumn: NexTableColumn<TData>,
+  columnOrder: NexTableColumnOrderState,
+): NexTableColumnOrderState => {
   if (draggedColumn.getCanPin()) {
     draggedColumn.pin(targetColumn.getIsPinned());
   }
@@ -112,9 +112,9 @@ export const reorderColumn = <TData extends MRT_RowData>(
   return newColumnOrder;
 };
 
-export const getDefaultColumnFilterFn = <TData extends MRT_RowData>(
-  columnDef: MRT_ColumnDef<TData>,
-): MRT_FilterOption => {
+export const getDefaultColumnFilterFn = <TData extends NexRowData>(
+  columnDef: NexTableColumnDef<TData>,
+): NexTableFilterOption => {
   const { filterVariant } = columnDef;
   if (filterVariant === 'multi-select') return 'arrIncludesSome';
   if (filterVariant?.includes('range')) return 'betweenInclusive';

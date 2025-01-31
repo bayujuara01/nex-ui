@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     columns: [
       {
@@ -51,11 +51,11 @@ const data = [...Array(55)].map(() => ({
 }));
 
 export const HeaderGroups = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const HeaderGroupsWithStickyHeader = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableStickyHeader
@@ -64,7 +64,7 @@ export const HeaderGroupsWithStickyHeader = () => (
 );
 
 export const HeaderAndFooterGroups = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         columns: [
@@ -107,20 +107,20 @@ export const HeaderAndFooterGroups = () => (
 );
 
 export const HeaderGroupsWithColumnOrdering = () => (
-  <MantineReactTable columns={columns} data={data} enableColumnOrdering />
+  <NexReactTable columns={columns} data={data} enableColumnOrdering />
 );
 
 export const HeaderGroupsWithColumnPinning = () => (
-  <MantineReactTable columns={columns} data={data} enableColumnPinning />
+  <NexReactTable columns={columns} data={data} enableColumnPinning />
 );
 
 export const HeaderGroupsWithColumResizing = () => (
-  <MantineReactTable columns={columns} data={data} enableColumnResizing />
+  <NexReactTable columns={columns} data={data} enableColumnResizing />
 );
 
 export const MixedHeaderGroups = () => {
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -156,7 +156,7 @@ export const MixedHeaderGroups = () => {
 
 export const DeepMixedHeaderGroups = () => {
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',

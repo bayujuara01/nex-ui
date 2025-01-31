@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -18,7 +18,7 @@ type Person = {
   state: string;
 };
 
-const columns: MRT_ColumnDef<Person>[] = [
+const columns: NexTableColumnDef<Person>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -55,11 +55,11 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const ColumnDraggingEnabled = () => (
-  <MantineReactTable columns={columns} data={data} enableColumnDragging />
+  <NexReactTable columns={columns} data={data} enableColumnDragging />
 );
 
 export const ColumnDraggingDisabledPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',

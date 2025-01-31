@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 
 import { Menu } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { type Meta } from '@storybook/react';
 
@@ -23,7 +23,7 @@ type Person = {
 };
 
 export const NestedLoadingDataWithInitialExpanded = () => {
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<NexTableColumnDef<Person>[]>(
     () => [
       {
         accessorKey: 'name.firstName',
@@ -50,7 +50,7 @@ export const NestedLoadingDataWithInitialExpanded = () => {
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={[]}
       state={{
@@ -62,7 +62,7 @@ export const NestedLoadingDataWithInitialExpanded = () => {
 };
 
 export const NestedLoadingDataWithInitialFilter = () => {
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<NexTableColumnDef<Person>[]>(
     () => [
       {
         accessorKey: 'name.firstName',
@@ -89,7 +89,7 @@ export const NestedLoadingDataWithInitialFilter = () => {
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={[]}
       state={{
@@ -101,7 +101,7 @@ export const NestedLoadingDataWithInitialFilter = () => {
 };
 
 export const NestedLoadingDataWithInitialGroup = () => {
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<NexTableColumnDef<Person>[]>(
     () => [
       {
         accessorKey: 'name.firstName',
@@ -128,7 +128,7 @@ export const NestedLoadingDataWithInitialGroup = () => {
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={[]}
       state={{
@@ -140,7 +140,7 @@ export const NestedLoadingDataWithInitialGroup = () => {
 };
 
 export const NestedLoadingDataWithInitialPage = () => {
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<NexTableColumnDef<Person>[]>(
     () => [
       {
         accessorKey: 'name.firstName',
@@ -167,7 +167,7 @@ export const NestedLoadingDataWithInitialPage = () => {
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={[]}
       state={{
@@ -179,7 +179,7 @@ export const NestedLoadingDataWithInitialPage = () => {
 };
 
 export const NestedLoadingDataWithInitialSort = () => {
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<NexTableColumnDef<Person>[]>(
     () => [
       {
         accessorKey: 'name.firstName',
@@ -206,7 +206,7 @@ export const NestedLoadingDataWithInitialSort = () => {
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={[]}
       state={{
@@ -218,7 +218,7 @@ export const NestedLoadingDataWithInitialSort = () => {
 };
 
 export const EmptyDatasetWithLoadingState = () => {
-  const columns = useMemo<MRT_ColumnDef<Person>[]>(
+  const columns = useMemo<NexTableColumnDef<Person>[]>(
     () => [
       {
         accessorFn: (row) => row.name.firstName,
@@ -245,7 +245,7 @@ export const EmptyDatasetWithLoadingState = () => {
   );
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={[]}
       editDisplayMode="table"

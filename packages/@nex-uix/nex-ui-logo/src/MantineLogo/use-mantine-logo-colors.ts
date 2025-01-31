@@ -1,6 +1,6 @@
 import { MantineColor, parseThemeColor, useNexTheme } from '@nex-ui/core';
 
-export type MantineLogoVariant = 'mantine.dev' | 'ui.mantine.dev';
+export type MantineLogoVariant = 'mantine.dev' | 'ui.mantine.dev' | 'ui' | 'component';
 
 export interface LogoProps extends React.ComponentPropsWithoutRef<'svg'> {
   color?: MantineColor;

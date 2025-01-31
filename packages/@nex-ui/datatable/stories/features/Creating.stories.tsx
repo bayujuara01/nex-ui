@@ -4,10 +4,10 @@ import { ActionIcon, Button, Select } from '@nex-ui/core';
 
 import {
   createRow,
-  MantineReactTable,
-  type MRT_Row,
-  type MRT_TableOptions,
-  useMantineReactTable,
+  NexReactTable,
+  type NexTableRow,
+  type NexTableTableOptions,
+  useNexReactTable,
 } from '../../src';
 
 import { faker } from '@faker-js/faker';
@@ -64,7 +64,7 @@ const expandingData = [...Array(5)].map(() => ({
 export const CreateRowIndexTop = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -74,7 +74,7 @@ export const CreateRowIndexTop = () => {
     exitEditingMode();
   };
 
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns: [
       {
         accessorKey: 'firstName',
@@ -110,13 +110,13 @@ export const CreateRowIndexTop = () => {
     ),
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const CreateRowIndexBottom = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -126,7 +126,7 @@ export const CreateRowIndexBottom = () => {
     exitEditingMode();
   };
 
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns: [
       {
         accessorKey: 'firstName',
@@ -162,13 +162,13 @@ export const CreateRowIndexBottom = () => {
     ),
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const CreateRowIndexIndex = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -178,7 +178,7 @@ export const CreateRowIndexIndex = () => {
     exitEditingMode();
   };
 
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns: [
       {
         accessorKey: 'firstName',
@@ -214,13 +214,13 @@ export const CreateRowIndexIndex = () => {
     ),
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const CreateRowIndexIndexVirtualized = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -230,7 +230,7 @@ export const CreateRowIndexIndexVirtualized = () => {
     exitEditingMode();
   };
 
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns: [
       {
         accessorKey: 'firstName',
@@ -267,7 +267,7 @@ export const CreateRowIndexIndexVirtualized = () => {
     ),
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const CreateRowIndexIndexExpanding = () => {
@@ -275,7 +275,7 @@ export const CreateRowIndexIndexExpanding = () => {
     number | undefined
   >();
 
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns: [
       {
         accessorKey: 'firstName',
@@ -340,14 +340,14 @@ export const CreateRowIndexIndexExpanding = () => {
     ),
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };
 
 export const CreateWithCustomEditCell = () => {
   const [tableData, setTableData] = useState(data);
-  const [creatingRow, setCreatingRow] = useState<MRT_Row<Person> | null>(null);
+  const [creatingRow, setCreatingRow] = useState<NexTableRow<Person> | null>(null);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -357,7 +357,7 @@ export const CreateWithCustomEditCell = () => {
     exitEditingMode();
   };
 
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns: [
       {
         accessorKey: 'firstName',
@@ -404,5 +404,5 @@ export const CreateWithCustomEditCell = () => {
     state: { creatingRow },
   });
 
-  return <MantineReactTable table={table} />;
+  return <NexReactTable table={table} />;
 };

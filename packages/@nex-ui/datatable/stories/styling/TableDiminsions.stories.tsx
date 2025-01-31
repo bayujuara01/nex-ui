@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -41,7 +41,7 @@ const data = [...Array(25)].map(() => ({
 }));
 
 export const MaxWidthAndCentered = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantinePaperProps={{
@@ -54,7 +54,7 @@ export const MaxWidthAndCentered = () => (
 );
 
 export const maxHeight = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableContainerProps={{
@@ -66,7 +66,7 @@ export const maxHeight = () => (
 );
 
 export const minHeight = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data.slice(0, 5)}
     mantineTableContainerProps={{
@@ -79,7 +79,7 @@ export const minHeight = () => (
 
 export const minHeightParent = () => (
   <div style={{ height: '700px' }}>
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data.slice(0, 5)}
       mantinePaperProps={{

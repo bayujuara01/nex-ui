@@ -1,6 +1,6 @@
 import { DirectionProvider } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { MRT_Localization_HE } from '../../src/locales/he';
 
@@ -13,7 +13,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -66,11 +66,11 @@ const data = [...Array(5)].map(() => ({
 }));
 
 export const SubRowTreeEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} enableExpanding />
+  <NexReactTable columns={columns} data={data} enableExpanding />
 );
 
 export const SubRowTreeLayoutGrid = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     displayColumnDefOptions={{
@@ -85,7 +85,7 @@ export const SubRowTreeLayoutGrid = () => (
 );
 
 export const SubRowTreeLayoutGridNoGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     displayColumnDefOptions={{
@@ -100,7 +100,7 @@ export const SubRowTreeLayoutGridNoGrow = () => (
 );
 
 export const SubRowTreeEnabledPositionLast = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding
@@ -112,7 +112,7 @@ export const SubRowTreeEnabledDefaultRTL = () => {
   return (
     <DirectionProvider initialDirection="rtl">
       <div style={{ direction: 'rtl' }}>
-        <MantineReactTable
+        <NexReactTable
           columns={columns}
           data={data}
           enableExpanding
@@ -127,7 +127,7 @@ export const SubRowTreeEnabledDefaultRTLAndPositionLast = () => {
   return (
     <DirectionProvider initialDirection="rtl">
       <div style={{ direction: 'rtl' }}>
-        <MantineReactTable
+        <NexReactTable
           columns={columns}
           data={data}
           enableExpanding
@@ -140,7 +140,7 @@ export const SubRowTreeEnabledDefaultRTLAndPositionLast = () => {
 };
 
 export const SubRowTreeDisableExpandAll = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpandAll={false}
@@ -149,7 +149,7 @@ export const SubRowTreeDisableExpandAll = () => (
 );
 
 export const SubRowTreeFilterFromLeafRows = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding
@@ -160,7 +160,7 @@ export const SubRowTreeFilterFromLeafRows = () => (
 );
 
 export const SubRowTreeMaxLeafRowFilterDepth0 = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding
@@ -171,7 +171,7 @@ export const SubRowTreeMaxLeafRowFilterDepth0 = () => (
 );
 
 export const SubRowTreeMaxLeafRowFilterDepth1 = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding
@@ -182,7 +182,7 @@ export const SubRowTreeMaxLeafRowFilterDepth1 = () => (
 );
 
 export const SubRowTreeMaxLeafRowFilterDepthAndFilterFromLeafRows = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding
@@ -194,7 +194,7 @@ export const SubRowTreeMaxLeafRowFilterDepthAndFilterFromLeafRows = () => (
 );
 
 export const SubRowTreeWithSelection = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding
@@ -204,7 +204,7 @@ export const SubRowTreeWithSelection = () => (
 );
 
 export const SubRowTreeWithSelectionNoSubRowSelection = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding
@@ -215,7 +215,7 @@ export const SubRowTreeWithSelectionNoSubRowSelection = () => (
 );
 
 export const SubRowTreeWithSingleSelection = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableExpanding

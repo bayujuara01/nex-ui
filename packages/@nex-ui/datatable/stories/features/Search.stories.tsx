@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -46,15 +46,15 @@ const data = [...Array(200)].map(() => ({
 }));
 
 export const SearchEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const SearchContains = () => (
-  <MantineReactTable columns={columns} data={data} globalFilterFn="contains" />
+  <NexReactTable columns={columns} data={data} globalFilterFn="contains" />
 );
 
 export const CustomGlobalFilterFn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     filterFns={{
@@ -66,11 +66,11 @@ export const CustomGlobalFilterFn = () => (
 );
 
 export const SearchGlobalFilterModes = () => (
-  <MantineReactTable columns={columns} data={data} enableGlobalFilterModes />
+  <NexReactTable columns={columns} data={data} enableGlobalFilterModes />
 );
 
 export const SearchGlobalFilterModeOptions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGlobalFilterModes
@@ -79,11 +79,11 @@ export const SearchGlobalFilterModeOptions = () => (
 );
 
 export const SearchRankedResultsEnabledByDefault = () => (
-  <MantineReactTable columns={columns} data={data} enableRowNumbers />
+  <NexReactTable columns={columns} data={data} enableRowNumbers />
 );
 
 export const SearchDisableRankedResults = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableGlobalFilterRankedResults={false}
@@ -92,7 +92,7 @@ export const SearchDisableRankedResults = () => (
 );
 
 export const ShowSearchRightBoxByDefault = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ showGlobalFilter: true }}
@@ -100,7 +100,7 @@ export const ShowSearchRightBoxByDefault = () => (
 );
 
 export const ShowSearchBoxLeftByDefault = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ showGlobalFilter: true }}
@@ -109,7 +109,7 @@ export const ShowSearchBoxLeftByDefault = () => (
 );
 
 export const ShowSearchBoxLeftByDefaultWithSelection = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowSelection
@@ -119,7 +119,7 @@ export const ShowSearchBoxLeftByDefaultWithSelection = () => (
 );
 
 export const JustASearchBox = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableToolbarInternalActions={false}
@@ -128,11 +128,11 @@ export const JustASearchBox = () => (
 );
 
 export const SearchDisabled = () => (
-  <MantineReactTable columns={columns} data={data} enableGlobalFilter={false} />
+  <NexReactTable columns={columns} data={data} enableGlobalFilter={false} />
 );
 
 export const CustomizeSearchTextBox = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ showGlobalFilter: true }}

@@ -1,6 +1,6 @@
 import { Menu } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -19,7 +19,7 @@ interface Row {
   state: string;
 }
 
-const columns: MRT_ColumnDef<Row>[] = [
+const columns: NexTableColumnDef<Row>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -51,11 +51,11 @@ const data: Row[] = [...Array(100)].map(() => ({
 }));
 
 export const ColumnActionsEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const ColumnActionsDisabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnActions={false}
@@ -63,7 +63,7 @@ export const ColumnActionsDisabled = () => (
 );
 
 export const ColumnActionsDisabledPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -94,7 +94,7 @@ export const ColumnActionsDisabledPerColumn = () => (
 );
 
 export const ColumnActionsEnabledPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -126,7 +126,7 @@ export const ColumnActionsEnabledPerColumn = () => (
 );
 
 export const CustomColumnActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     renderColumnActionsMenuItems={() => (
@@ -139,7 +139,7 @@ export const CustomColumnActions = () => (
 );
 
 export const CustomColumnActionsPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',

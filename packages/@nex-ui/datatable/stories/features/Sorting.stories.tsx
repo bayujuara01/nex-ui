@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -41,15 +41,15 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const SortingEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const DisableSorting = () => (
-  <MantineReactTable columns={columns} data={data} enableSorting={false} />
+  <NexReactTable columns={columns} data={data} enableSorting={false} />
 );
 
 export const DisableSortingForSpecificColumns = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -79,11 +79,11 @@ export const DisableSortingForSpecificColumns = () => (
 );
 
 export const DisableMultiSorting = () => (
-  <MantineReactTable columns={columns} data={data} enableMultiSort={false} />
+  <NexReactTable columns={columns} data={data} enableMultiSort={false} />
 );
 
 export const DisableSortingRemoval = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableSortingRemoval={false}
@@ -91,7 +91,7 @@ export const DisableSortingRemoval = () => (
 );
 
 export const SortRanking = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',

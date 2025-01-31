@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import { Button, Checkbox, Flex, Group, SegmentedControl } from '@nex-ui/core';
 
 import {
-  MantineReactTable,
-  type MRT_ColumnDef,
-  type MRT_ColumnFiltersState,
-  type MRT_FilterTooltipValueFn,
+  NexReactTable,
+  type NexTableColumnDef,
+  type NexTableColumnFiltersState,
+  type NexTableFilterTooltipValueFn,
 } from '../../src';
 
 import { MRT_Localization_EN } from '../../src/locales/en';
@@ -28,7 +28,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'isActive',
     Cell: ({ cell }) => (cell.getValue() ? 'Yes' : 'No'),
@@ -84,11 +84,11 @@ const data = [...Array(120)].map(() => ({
 }));
 
 export const FilteringEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const PopoverDisplayMode = () => (
-  <MantineReactTable
+  <NexReactTable
     columnFilterDisplayMode="popover"
     columns={columns}
     data={data}
@@ -96,7 +96,7 @@ export const PopoverDisplayMode = () => (
 );
 
 export const ColumnFilteringDisabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnFilters={false}
@@ -104,11 +104,11 @@ export const ColumnFilteringDisabled = () => (
 );
 
 export const FilteringDisabled = () => (
-  <MantineReactTable columns={columns} data={data} enableFilters={false} />
+  <NexReactTable columns={columns} data={data} enableFilters={false} />
 );
 
 export const FilterHighlightingDisabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableFilterMatchHighlighting={false}
@@ -116,7 +116,7 @@ export const FilterHighlightingDisabled = () => (
 );
 
 export const FilterFnAndFilterVariants = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorFn: (originalRow) => (originalRow.isActive ? 'true' : 'false'),
@@ -220,7 +220,7 @@ export const FilterFnAndFilterVariants = () => (
 );
 
 export const FilterFnAndFilterVariantsPopover = () => (
-  <MantineReactTable
+  <NexReactTable
     columnFilterDisplayMode="popover"
     columns={[
       {
@@ -324,7 +324,7 @@ export const FilterFnAndFilterVariantsPopover = () => (
 );
 
 export const FilterFnAndFilterVariantsFaceted = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -359,7 +359,7 @@ export const FilterFnAndFilterVariantsFaceted = () => (
 );
 
 export const EnableFilterModes = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -409,7 +409,7 @@ export const EnableFilterModes = () => (
 );
 
 export const EnableFilterModesPopover = () => (
-  <MantineReactTable
+  <NexReactTable
     columnFilterDisplayMode="popover"
     columns={[
       {
@@ -459,7 +459,7 @@ export const EnableFilterModesPopover = () => (
 );
 
 export const DisableSomeFilterTypesForCertainColumns = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -497,7 +497,7 @@ export const DisableSomeFilterTypesForCertainColumns = () => (
 );
 
 export const FilteringDisabledForCertainColumns = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -532,7 +532,7 @@ export const FilteringDisabledForCertainColumns = () => (
 );
 
 export const CustomFilterFunctionPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -575,7 +575,7 @@ export const CustomFilterFunctionPerColumn = () => (
 );
 
 export const CustomFilterFns = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -619,7 +619,7 @@ export const CustomFilterFns = () => (
 );
 
 export const CustomFilterComponent = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -675,7 +675,7 @@ export const CustomFilterComponent = () => (
 
 export const ManualFiltering = () => {
   const [rows, setRows] = useState(() => [...data]);
-  const [columnFilters, setColumnFilters] = useState<MRT_ColumnFiltersState>(
+  const [columnFilters, setColumnFilters] = useState<NexTableColumnFiltersState>(
     [],
   );
 
@@ -699,7 +699,7 @@ export const ManualFiltering = () => {
   }, [columnFilters]);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columnFilterModeOptions={null}
       columns={columns}
       data={rows}
@@ -711,7 +711,7 @@ export const ManualFiltering = () => {
 };
 
 export const ExternalSetFilterValue = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ showColumnFilters: true }}
@@ -748,14 +748,14 @@ export const ExternalSetFilterValue = () => (
 export const CustomTooltipValueFn = () => {
   const [localization, setLocalization] = useState(MRT_Localization_EN);
   const [locale, setLocale] = useState<string | undefined>('en');
-  const [columnFilters, setColumnFilters] = useState<MRT_ColumnFiltersState>(
+  const [columnFilters, setColumnFilters] = useState<NexTableColumnFiltersState>(
     [],
   );
   const [isActiveValueFn, setIsActiveValueFn] = useState<
-    MRT_FilterTooltipValueFn<string> | undefined
+    NexTableFilterTooltipValueFn<string> | undefined
   >(undefined);
   const [dateValueFn, setDateValueFn] = useState<
-    MRT_FilterTooltipValueFn<Date> | undefined
+    NexTableFilterTooltipValueFn<Date> | undefined
   >(undefined);
   const [enableValueFns, setEnableValueFns] = useState(true);
 
@@ -792,7 +792,7 @@ export const CustomTooltipValueFn = () => {
 
   return (
     <>
-      <MantineReactTable
+      <NexReactTable
         columns={[
           {
             accessorFn: (originalRow) =>

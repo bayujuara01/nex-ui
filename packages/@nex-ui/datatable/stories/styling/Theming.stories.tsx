@@ -1,6 +1,6 @@
 import { MantineProvider } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -11,7 +11,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -38,7 +38,7 @@ const data = [...Array(21)].map(() => ({
 }));
 
 export const DefaultTheme = () => (
-  <MantineReactTable columns={columns} data={data} enableRowSelection />
+  <NexReactTable columns={columns} data={data} enableRowSelection />
 );
 
 export const CustomLightTheme = () => {
@@ -63,7 +63,7 @@ export const CustomLightTheme = () => {
         primaryShade: { dark: 7, light: 6 },
       }}
     >
-      <MantineReactTable columns={columns} data={data} enableRowSelection />
+      <NexReactTable columns={columns} data={data} enableRowSelection />
     </MantineProvider>
   );
 };
@@ -90,7 +90,7 @@ export const CustomDarkTheme = () => {
         primaryShade: { dark: 7, light: 6 },
       }}
     >
-      <MantineReactTable columns={columns} data={data} enableRowSelection />
+      <NexReactTable columns={columns} data={data} enableRowSelection />
     </MantineProvider>
   );
 };

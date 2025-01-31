@@ -1,4 +1,4 @@
-import { MantineReactTable } from '../../src';
+import { NexReactTable } from '../../src';
 
 import { type Meta } from '@storybook/react';
 
@@ -9,7 +9,7 @@ const meta: Meta = {
 export default meta;
 
 export const SwitchFromEmptyToEqualsArray = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',

@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -14,7 +14,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -46,7 +46,7 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const StickyHeaderDisabledDefault = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ pagination: { pageIndex: 0, pageSize: 25 } }}
@@ -54,7 +54,7 @@ export const StickyHeaderDisabledDefault = () => (
 );
 
 export const EnableStickyHeader = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableStickyHeader
@@ -63,7 +63,7 @@ export const EnableStickyHeader = () => (
 );
 
 export const StickyHeaderShorterTable = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning
@@ -74,7 +74,7 @@ export const StickyHeaderShorterTable = () => (
   />
 );
 
-const columnsWithFooters: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columnsWithFooters: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     footer: 'First Name',
@@ -103,7 +103,7 @@ const columnsWithFooters: MRT_ColumnDef<(typeof data)[0]>[] = [
 ];
 
 export const disableStickyFooter = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columnsWithFooters}
     data={data}
     enableRowNumbers
@@ -115,7 +115,7 @@ export const disableStickyFooter = () => (
 );
 
 export const enableStickyFooter = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columnsWithFooters}
     data={data}
     enableRowNumbers

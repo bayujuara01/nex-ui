@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -35,11 +35,11 @@ const data = [...Array(21)].map(() => ({
 }));
 
 export const DefaultTableBodyCellStyles = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const StyleAllMantineTableBodyCell = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableBodyCellProps={{
@@ -52,7 +52,7 @@ export const StyleAllMantineTableBodyCell = () => (
 );
 
 export const StyleMantineTableBodyCellConditionallyIn1Column = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -88,7 +88,7 @@ export const StyleMantineTableBodyCellConditionallyIn1Column = () => (
 );
 
 export const CustomCellRender = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',

@@ -1,6 +1,6 @@
 import { Button, Menu } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -12,7 +12,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -44,7 +44,7 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const RowActionsEnabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowActions
@@ -81,7 +81,7 @@ export const RowActionsEnabled = () => (
 );
 
 export const RowActionsAndEditingEnabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableEditing
@@ -119,7 +119,7 @@ export const RowActionsAndEditingEnabled = () => (
 );
 
 export const RowActionsLastColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowActions
@@ -158,7 +158,7 @@ export const RowActionsLastColumn = () => (
 );
 
 export const CustomRowActionButtons = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowActions
@@ -188,7 +188,7 @@ export const CustomRowActionButtons = () => (
 );
 
 export const CustomRowActionButtonsLastColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowActions
@@ -219,7 +219,7 @@ export const CustomRowActionButtonsLastColumn = () => (
 );
 
 export const RowActionsWithVirtualization = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowActions
@@ -257,7 +257,7 @@ export const RowActionsWithVirtualization = () => (
 );
 
 export const RowActionsLastWithColumnOrdering = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnOrdering

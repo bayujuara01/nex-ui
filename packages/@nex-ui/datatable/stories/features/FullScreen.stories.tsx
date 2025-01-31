@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -11,7 +11,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     columns: [
       {
@@ -62,11 +62,11 @@ const data = [...Array(128)].map(() => ({
 }));
 
 export const FullScreenToggleEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const DisableFullScreenToggle = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableFullScreenToggle={false}
@@ -74,7 +74,7 @@ export const DisableFullScreenToggle = () => (
 );
 
 export const DefaultFullScreenOn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     initialState={{ isFullScreen: true }}
@@ -85,7 +85,7 @@ export const ControlledFullScreen = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={data}
       mantineTableBodyCellProps={({ cell }) => ({

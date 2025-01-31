@@ -1,6 +1,6 @@
 import { DirectionProvider } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -11,7 +11,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -49,13 +49,13 @@ const data = [...Array(88)].map(() => ({
 }));
 
 export const ColumnResizingEnabledDefaultOnChange = () => (
-  <MantineReactTable columns={columns} data={data} enableColumnResizing />
+  <NexReactTable columns={columns} data={data} enableColumnResizing />
 );
 
 export const ColumnResizingEnabledDefaultOnChangeRTL = () => (
   <DirectionProvider initialDirection="rtl">
     <div style={{ direction: 'rtl' }}>
-      <MantineReactTable
+      <NexReactTable
         columnResizeDirection="rtl"
         columns={columns}
         data={data}
@@ -66,7 +66,7 @@ export const ColumnResizingEnabledDefaultOnChangeRTL = () => (
 );
 
 export const ColumnResizingEnabledDefaultOnChangeGrid = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnResizing
@@ -75,7 +75,7 @@ export const ColumnResizingEnabledDefaultOnChangeGrid = () => (
 );
 
 export const ColumnResizingDefaultOnChangeGridWithIndividualShrink = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'id',
@@ -101,7 +101,7 @@ export const ColumnResizingDefaultOnChangeGridWithIndividualShrink = () => (
 export const ColumnResizingEnabledDefaultOnChangeGridRTL = () => (
   <DirectionProvider initialDirection="rtl">
     <div style={{ direction: 'rtl' }}>
-      <MantineReactTable
+      <NexReactTable
         columnResizeDirection="rtl"
         columns={columns}
         data={data}
@@ -113,7 +113,7 @@ export const ColumnResizingEnabledDefaultOnChangeGridRTL = () => (
 );
 
 export const ColumnResizingEnabledDefaultOnChangeSemantic = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnResizing
@@ -124,7 +124,7 @@ export const ColumnResizingEnabledDefaultOnChangeSemantic = () => (
 export const ColumnResizingEnabledDefaultOnChangeSemanticRTL = () => (
   <DirectionProvider initialDirection="rtl">
     <div style={{ direction: 'rtl' }}>
-      <MantineReactTable
+      <NexReactTable
         columnResizeDirection="rtl"
         columns={columns}
         data={data}
@@ -136,7 +136,7 @@ export const ColumnResizingEnabledDefaultOnChangeSemanticRTL = () => (
 );
 
 export const ColumnResizingEnabledNoColumnActions = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnActions={false}
@@ -145,7 +145,7 @@ export const ColumnResizingEnabledNoColumnActions = () => (
 );
 
 export const ColumnResizingDisabledSomeColumns = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -179,7 +179,7 @@ export const ColumnResizingDisabledSomeColumns = () => (
 );
 
 export const ColumnResizingEnabledOnEnd = () => (
-  <MantineReactTable
+  <NexReactTable
     columnResizeMode="onEnd"
     columns={columns}
     data={data}
@@ -190,7 +190,7 @@ export const ColumnResizingEnabledOnEnd = () => (
 export const ColumnResizingEnabledOnEndRTL = () => (
   <DirectionProvider initialDirection="rtl">
     <div style={{ direction: 'rtl' }}>
-      <MantineReactTable
+      <NexReactTable
         columnResizeDirection="rtl"
         columnResizeMode="onEnd"
         columns={columns}
@@ -202,7 +202,7 @@ export const ColumnResizingEnabledOnEndRTL = () => (
 );
 
 export const ColumnResizingCustomDefaultWidths = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     defaultColumn={{ maxSize: 300, minSize: 100, size: 150 }}
@@ -211,7 +211,7 @@ export const ColumnResizingCustomDefaultWidths = () => (
 );
 
 export const ColumnResizingWithPinning = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning
@@ -221,7 +221,7 @@ export const ColumnResizingWithPinning = () => (
 );
 
 export const ColumnResizingWithHeaderGroups = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         columns: [
@@ -268,7 +268,7 @@ export const ColumnResizingWithHeaderGroups = () => (
 );
 
 export const ColumnResizingWithHeaderGroupsGridGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         columns: [
@@ -317,7 +317,7 @@ export const ColumnResizingWithHeaderGroupsGridGrow = () => (
 );
 
 export const ColumnResizingLayoutGridGrow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns.slice(0, 3)}
     data={data}
     enableColumnResizing
@@ -329,7 +329,7 @@ export const ColumnResizingLayoutGridGrow = () => (
 export const ColumnResizingLayoutGridGrowRTL = () => (
   <DirectionProvider initialDirection="rtl">
     <div style={{ direction: 'rtl' }}>
-      <MantineReactTable
+      <NexReactTable
         columnResizeDirection="rtl"
         columns={columns.slice(0, 3)}
         data={data}

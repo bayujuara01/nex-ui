@@ -6,12 +6,12 @@ import {
 import { filterFns, type Row } from '@tanstack/react-table';
 
 import {
-  type MRT_FilterOption,
+  type NexTableFilterOption,
   type MRT_Localization,
-  type MRT_RowData,
+  type NexRowData,
 } from '../types';
 
-const fuzzy = <TData extends MRT_RowData>(
+const fuzzy = <TData extends NexRowData>(
   row: Row<TData>,
   columnId: string,
   filterValue: number | string,
@@ -26,7 +26,7 @@ const fuzzy = <TData extends MRT_RowData>(
 
 fuzzy.autoRemove = (val: any) => !val;
 
-const contains = <TData extends MRT_RowData>(
+const contains = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -40,7 +40,7 @@ const contains = <TData extends MRT_RowData>(
 
 contains.autoRemove = (val: any) => !val;
 
-const startsWith = <TData extends MRT_RowData>(
+const startsWith = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -54,7 +54,7 @@ const startsWith = <TData extends MRT_RowData>(
 
 startsWith.autoRemove = (val: any) => !val;
 
-const endsWith = <TData extends MRT_RowData>(
+const endsWith = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -68,7 +68,7 @@ const endsWith = <TData extends MRT_RowData>(
 
 endsWith.autoRemove = (val: any) => !val;
 
-const equals = <TData extends MRT_RowData>(
+const equals = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -78,7 +78,7 @@ const equals = <TData extends MRT_RowData>(
 
 equals.autoRemove = (val: any) => !val;
 
-const notEquals = <TData extends MRT_RowData>(
+const notEquals = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -88,7 +88,7 @@ const notEquals = <TData extends MRT_RowData>(
 
 notEquals.autoRemove = (val: any) => !val;
 
-const greaterThan = <TData extends MRT_RowData>(
+const greaterThan = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -100,7 +100,7 @@ const greaterThan = <TData extends MRT_RowData>(
 
 greaterThan.autoRemove = (val: any) => !val;
 
-const greaterThanOrEqualTo = <TData extends MRT_RowData>(
+const greaterThanOrEqualTo = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -108,7 +108,7 @@ const greaterThanOrEqualTo = <TData extends MRT_RowData>(
 
 greaterThanOrEqualTo.autoRemove = (val: any) => !val;
 
-const lessThan = <TData extends MRT_RowData>(
+const lessThan = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -120,7 +120,7 @@ const lessThan = <TData extends MRT_RowData>(
 
 lessThan.autoRemove = (val: any) => !val;
 
-const lessThanOrEqualTo = <TData extends MRT_RowData>(
+const lessThanOrEqualTo = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValue: number | string,
@@ -128,7 +128,7 @@ const lessThanOrEqualTo = <TData extends MRT_RowData>(
 
 lessThanOrEqualTo.autoRemove = (val: any) => !val;
 
-const between = <TData extends MRT_RowData>(
+const between = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValues: [number | string, number | string],
@@ -143,7 +143,7 @@ const between = <TData extends MRT_RowData>(
 
 between.autoRemove = (val: any) => !val;
 
-const betweenInclusive = <TData extends MRT_RowData>(
+const betweenInclusive = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   filterValues: [number | string, number | string],
@@ -158,7 +158,7 @@ const betweenInclusive = <TData extends MRT_RowData>(
 
 betweenInclusive.autoRemove = (val: any) => !val;
 
-const empty = <TData extends MRT_RowData>(
+const empty = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   _filterValue: number | string,
@@ -166,7 +166,7 @@ const empty = <TData extends MRT_RowData>(
 
 empty.autoRemove = (val: any) => !val;
 
-const notEmpty = <TData extends MRT_RowData>(
+const notEmpty = <TData extends NexRowData>(
   row: Row<TData>,
   id: string,
   _filterValue: number | string,
@@ -174,7 +174,7 @@ const notEmpty = <TData extends MRT_RowData>(
 
 notEmpty.autoRemove = (val: any) => !val;
 
-export const MRT_FilterFns = {
+export const NexTableFilterFns = {
   ...filterFns,
   between,
   betweenInclusive,
@@ -194,7 +194,7 @@ export const MRT_FilterFns = {
 
 export function localizedFilterOption(
   localization: MRT_Localization,
-  option: MRT_FilterOption,
+  option: NexTableFilterOption,
 ) {
   if (!option) {
     return '';

@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -46,11 +46,11 @@ const data = [...Array(50)].map(() => ({
 }));
 
 export const RowPinningStickyDefaultEnabled = () => (
-  <MantineReactTable columns={columns} data={data} enableRowPinning />
+  <NexReactTable columns={columns} data={data} enableRowPinning />
 );
 
 export const RowPinningStickyNoPagination = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -64,7 +64,7 @@ export const RowPinningStickyNoPagination = () => (
 );
 
 export const RowPinningStickyCustomRowHeight = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -84,7 +84,7 @@ export const RowPinningStickyCustomRowHeight = () => (
 );
 
 export const RowPinningSelectStickyMode = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -100,7 +100,7 @@ export const RowPinningSelectStickyMode = () => (
 );
 
 export const RowPinningTopAndBottomMode = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -115,7 +115,7 @@ export const RowPinningTopAndBottomMode = () => (
 );
 
 export const RowPinningTopMode = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -130,7 +130,7 @@ export const RowPinningTopMode = () => (
 );
 
 export const RowPinningSelectTopMode = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -146,7 +146,7 @@ export const RowPinningSelectTopMode = () => (
 );
 
 export const RowPinningBottomMode = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -161,7 +161,7 @@ export const RowPinningBottomMode = () => (
 );
 
 export const RowPinningSelectBottomMode = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -177,7 +177,7 @@ export const RowPinningSelectBottomMode = () => (
 );
 
 export const RowPinningWithStickyHeader = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -193,7 +193,7 @@ export const RowPinningWithStickyHeader = () => (
 );
 
 export const RowPinningWithGridLayout = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -208,7 +208,7 @@ export const RowPinningWithGridLayout = () => (
 );
 
 export const RowPinningStickyWithVirtualization = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -223,7 +223,7 @@ export const RowPinningStickyWithVirtualization = () => (
 );
 
 export const RowPinningTopWithVirtualization = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -239,7 +239,7 @@ export const RowPinningTopWithVirtualization = () => (
 );
 
 export const RowAndColumnPinning = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning

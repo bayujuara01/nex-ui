@@ -1,10 +1,10 @@
-import { IconLifebuoy, IconRocket, IconScale } from '@tabler/icons-react';
+import { IconLifebuoy, IconRocket, IconBrandReact } from '@tabler/icons-react';
 
 export const FEATURES_DATA = [
   {
-    icon: IconScale,
-    title: 'Free and open source',
-    description: 'All packages have MIT license, you can use Nex UI in any project',
+    icon: IconBrandReact,
+    title: 'React 18',
+    description: 'All packages at least for React 18 and will support for React 19',
   },
 
   {

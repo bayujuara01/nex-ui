@@ -3,13 +3,13 @@ import { useState } from 'react';
 import { Center, Flex, Group, Stack, Switch, Text, Title } from '@nex-ui/core';
 
 import {
-  MantineReactTable,
-  type MRT_Cell,
-  type MRT_ColumnDef,
-  type MRT_ColumnOrderState,
-  MRT_EditActionButtons,
-  type MRT_TableOptions,
-  useMantineReactTable,
+  NexReactTable,
+  type NexTableCell,
+  type NexTableColumnDef,
+  type NexTableColumnOrderState,
+  NexTableEditActionButtons,
+  type NexTableTableOptions,
+  useNexReactTable,
 } from '../../src';
 
 import { faker } from '@faker-js/faker';
@@ -93,12 +93,12 @@ const data: Person[] = [...Array(100)].map(() => ({
   lastName: faker.person.lastName(),
   phoneNumber: faker.phone.number(),
   state: faker.location.state(),
-  visitedStates: faker.helpers.multiple(faker.location.state),
+  visitedStates: faker.helpers.multiple(() => faker.location.state()),
 }));
 
 export const EditingEnabledEditModeModalDefault = () => {
   const [tableData, setTableData] = useState(data);
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -133,7 +133,7 @@ export const EditingEnabledEditModeModalDefault = () => {
   ];
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={columns}
       data={tableData}
       enableEditing
@@ -146,7 +146,7 @@ export const EditingEnabledEditModeModalDefault = () => {
 export const EditingEnabledEditModeRow = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -157,7 +157,7 @@ export const EditingEnabledEditModeRow = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -192,14 +192,14 @@ export const EditingEnabledEditModeRow = () => {
 export const EditingEnabledEditModeCell = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveCell = (cell: MRT_Cell<Person>, value: any) => {
+  const handleSaveCell = (cell: NexTableCell<Person>, value: any) => {
     //@ts-ignore
     tableData[cell.row.index][cell.column.id] = value;
     setTableData([...tableData]);
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -238,7 +238,7 @@ export const EditingEnabledEditModeCell = () => {
 export const EditingEnabledEditModeTable = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveCell = (cell: MRT_Cell<Person>, value: string) => {
+  const handleSaveCell = (cell: NexTableCell<Person>, value: string) => {
     //@ts-ignore
     tableData[+cell.row.index][cell.column.id] = value;
     setTableData([...tableData]);
@@ -246,7 +246,7 @@ export const EditingEnabledEditModeTable = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -285,7 +285,7 @@ export const EditingEnabledEditModeCustom = () => {
   const [tableData] = useState(data);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -318,7 +318,7 @@ export const EditingEnabledEditModeCustom = () => {
 export const CustomEditModal = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveCell = (cell: MRT_Cell<Person>, value: string) => {
+  const handleSaveCell = (cell: NexTableCell<Person>, value: string) => {
     //@ts-ignore
     tableData[+cell.row.index][cell.column.id] = value;
     setTableData([...tableData]);
@@ -326,7 +326,7 @@ export const CustomEditModal = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -363,7 +363,7 @@ export const CustomEditModal = () => {
             <Title order={5}>My Custom Edit Modal</Title>
             {internalEditComponents}
             <Flex justify="flex-end">
-              <MRT_EditActionButtons row={row} table={table} variant="text" />
+              <NexTableEditActionButtons row={row} table={table} variant="text" />
             </Flex>
           </Stack>
         );
@@ -371,7 +371,7 @@ export const CustomEditModal = () => {
     />
   );
 };
-const multiSelectColumns: MRT_ColumnDef<Person>[] = [
+const multiSelectColumns: NexTableColumnDef<Person>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -403,7 +403,7 @@ const multiSelectColumns: MRT_ColumnDef<Person>[] = [
 export const EditMultiSelectVariant = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -414,7 +414,7 @@ export const EditMultiSelectVariant = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={multiSelectColumns}
       data={tableData}
       editDisplayMode="row"
@@ -428,7 +428,7 @@ export const EditMultiSelectVariant = () => {
 export const EditMultiSelectVariantModal = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -439,7 +439,7 @@ export const EditMultiSelectVariantModal = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={multiSelectColumns}
       data={tableData}
       enableEditing
@@ -452,7 +452,7 @@ export const EditMultiSelectVariantModal = () => {
 export const EditSelectVariant = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -463,7 +463,7 @@ export const EditSelectVariant = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -502,7 +502,7 @@ export const EditSelectVariant = () => {
 export const EditSelectVariantAlternate = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -513,7 +513,7 @@ export const EditSelectVariantAlternate = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -597,7 +597,7 @@ export const EditSelectVariantAlternate = () => {
 export const EditingCustomizeInput = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -665,7 +665,7 @@ export const EditingCustomizeInput = () => {
   ];
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -784,7 +784,7 @@ export const EditingEnabledAsync = () => {
   const [tableData, setTableData] = useState(data);
   const [isSaving, setIsSaving] = useState(false);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -799,7 +799,7 @@ export const EditingEnabledAsync = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -837,7 +837,7 @@ export const EditingEnabledAsyncRow = () => {
   const [tableData, setTableData] = useState(data);
   const [isSaving, setIsSaving] = useState(false);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -852,7 +852,7 @@ export const EditingEnabledAsyncRow = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -901,7 +901,7 @@ export const EditingNestedData = () => {
   const [tableData, setTableData] = useState(() => nestedData);
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorFn: (row) => row.name.firstName,
@@ -948,7 +948,7 @@ export const EditingNestedData = () => {
 export const EditingEnabledEditModeTableWithGroupedRows = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -959,7 +959,7 @@ export const EditingEnabledEditModeTableWithGroupedRows = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -995,7 +995,7 @@ export const EditingEnabledEditModeTableWithGroupedRows = () => {
 export const EnableEditingConditionally = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -1006,7 +1006,7 @@ export const EnableEditingConditionally = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -1041,7 +1041,7 @@ export const EnableEditingConditionally = () => {
 export const EnableEditingConditionallyCell = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -1052,7 +1052,7 @@ export const EnableEditingConditionallyCell = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -1087,7 +1087,7 @@ export const EnableEditingConditionallyCell = () => {
 export const EnableEditingConditionallyTable = () => {
   const [tableData, setTableData] = useState(data);
 
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -1098,7 +1098,7 @@ export const EnableEditingConditionallyTable = () => {
   };
 
   return (
-    <MantineReactTable
+    <NexReactTable
       columns={[
         {
           accessorKey: 'firstName',
@@ -1132,7 +1132,7 @@ export const EnableEditingConditionallyTable = () => {
 
 export const EditingTurnedOnDynamically = () => {
   const [tableData, setTableData] = useState(data);
-  const handleSaveRow: MRT_TableOptions<Person>['onEditingRowSave'] = ({
+  const handleSaveRow: NexTableTableOptions<Person>['onEditingRowSave'] = ({
     exitEditingMode,
     row,
     values,
@@ -1169,12 +1169,12 @@ export const EditingTurnedOnDynamically = () => {
   const [enableRowNumbers, _setEnableRowNumbers] = useState(false);
   const [enableEditing, _setEnableEditing] = useState(false);
 
-  const [columnOrder, setColumnOrder] = useState<MRT_ColumnOrderState>(() => {
+  const [columnOrder, setColumnOrder] = useState<NexTableColumnOrderState>(() => {
     return [
       enableEditing && 'mrt-row-actions',
       enableRowNumbers && 'mrt-row-numbers',
       ...columns.map((c) => c.accessorKey),
-    ].filter(Boolean) as MRT_ColumnOrderState;
+    ].filter(Boolean) as NexTableColumnOrderState;
   });
 
   const updateColumnOrder = ({
@@ -1230,7 +1230,7 @@ export const EditingTurnedOnDynamically = () => {
         label="Enable Row Numbers"
         onChange={(e) => setEnableRowNumbers(e.currentTarget.checked)}
       />
-      <MantineReactTable
+      <NexReactTable
         columns={columns}
         data={tableData}
         enableEditing={enableEditing}
@@ -1270,7 +1270,7 @@ export const EditingInDetailPannel = () => {
     },
   ];
 
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns,
     data: withData ? data : [],
     renderDetailPanel: ({ internalEditComponents, row, table }) => (
@@ -1281,7 +1281,7 @@ export const EditingInDetailPannel = () => {
           </Group>
         </form>
         <Flex justify="flex-end">
-          <MRT_EditActionButtons row={row} table={table} variant="text" />
+          <NexTableEditActionButtons row={row} table={table} variant="text" />
         </Flex>
       </Center>
     ),
@@ -1299,7 +1299,7 @@ export const EditingInDetailPannel = () => {
         label="Show data"
         onChange={(e) => setWithData(e.currentTarget.checked)}
       />
-      <MantineReactTable table={table} />
+      <NexReactTable table={table} />
     </Stack>
   );
 };

@@ -1,6 +1,6 @@
 import { Button, Container } from '@nex-ui/core';
 
-import { MantineReactTable, useMantineReactTable } from '../../src';
+import { NexReactTable, useNexReactTable } from '../../src';
 
 import { type Meta } from '@storybook/react';
 
@@ -40,7 +40,7 @@ const data: DataItemType[] = [
 ];
 
 const CustomResetButton = () => {
-  const table = useMantineReactTable({
+  const table = useNexReactTable({
     columns: [
       {
         accessorKey: 'id',
@@ -82,7 +82,7 @@ const CustomResetButton = () => {
       <Button mb="lg" onClick={() => table.resetColumnFilters()}>
         Custom Reset Button
       </Button>
-      <MantineReactTable table={table} />
+      <NexReactTable table={table} />
     </Container>
   );
 };

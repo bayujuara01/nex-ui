@@ -48,7 +48,7 @@ async function loadShiki() {
 }
 const color = ['red', 'orange', 'blue', 'green', 'yellow', 'violet'];
 export default function App({ Component, pageProps, router }: AppProps) {
-  const [themeState, setThemeState] = useState(theme);
+  const [themeState] = useState(theme);
   const shouldRenderShell = !excludeShell.includes(router.pathname);
   const [navbarOpened, setNavbarOpened] = useLocalStorage({
     key: 'mantine-navbar-opened',
@@ -57,13 +57,13 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   useHotkeys([['mod + alt + N', () => setNavbarOpened(!navbarOpened)]]);
 
-  useEffect(() => {
-    const interval = setInterval(() => setThemeState((theme) => {
-      const randomColor = color[Math.floor(Math.random() * color.length)]
-      return { ...theme, primaryColor: randomColor}
-    }), 500);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => setThemeState((theme) => {
+  //     const randomColor = color[Math.floor(Math.random() * color.length)]
+  //     return { ...theme, primaryColor: randomColor}
+  //   }), 500);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <>

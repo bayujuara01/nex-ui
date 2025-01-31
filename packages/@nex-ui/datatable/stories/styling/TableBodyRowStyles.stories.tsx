@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -35,11 +35,11 @@ const data = [...Array(44)].map(() => ({
 }));
 
 export const DefaultTableBodyRowStyles = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const DisableRowHoverEffect = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableProps={{
@@ -49,7 +49,7 @@ export const DisableRowHoverEffect = () => (
 );
 
 export const StyleMantineTableBodyRow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableBodyRowProps={{
@@ -61,7 +61,7 @@ export const StyleMantineTableBodyRow = () => (
 );
 
 export const StripedRowsTrue = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableRowPinning
@@ -73,7 +73,7 @@ export const StripedRowsTrue = () => (
 );
 
 export const StripedRowsCustomColor = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning
@@ -89,7 +89,7 @@ export const StripedRowsCustomColor = () => (
 );
 
 export const StripedRowsOdd = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableProps={{
@@ -99,7 +99,7 @@ export const StripedRowsOdd = () => (
 );
 
 export const StripedRowsEven = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableProps={{
@@ -109,7 +109,7 @@ export const StripedRowsEven = () => (
 );
 
 export const StripedRowsTrueDetailPanel = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableProps={{
@@ -120,7 +120,7 @@ export const StripedRowsTrueDetailPanel = () => (
 );
 
 export const StripedRowsOddDetailPanel = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableProps={{
@@ -131,7 +131,7 @@ export const StripedRowsOddDetailPanel = () => (
 );
 
 export const StripedRowsEvenDetailPanel = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableProps={{
@@ -142,7 +142,7 @@ export const StripedRowsEvenDetailPanel = () => (
 );
 
 export const StripedRowsEvenDetailPanelVirtual = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enablePagination={false}
@@ -155,7 +155,7 @@ export const StripedRowsEvenDetailPanelVirtual = () => (
 );
 
 export const ConditionallyStyleMantineTableRow = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     mantineTableBodyRowProps={({ row }) => ({

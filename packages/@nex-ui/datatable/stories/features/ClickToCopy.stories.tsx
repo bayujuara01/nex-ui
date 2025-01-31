@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'name.firstName',
     header: 'First Name',
@@ -48,11 +48,11 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const ClickToCopyEnabled = () => (
-  <MantineReactTable columns={columns} data={data} enableClickToCopy />
+  <NexReactTable columns={columns} data={data} enableClickToCopy />
 );
 
 export const ClickToCopyEnabledPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'name.firstName',
@@ -85,7 +85,7 @@ export const ClickToCopyEnabledPerColumn = () => (
 );
 
 export const ClickToCopyDisabledPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'name.firstName',

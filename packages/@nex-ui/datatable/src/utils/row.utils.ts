@@ -2,16 +2,16 @@ import { type ChangeEvent, type MouseEvent } from 'react';
 
 import { rankGlobalFuzzy } from '../fns/sortingFns';
 import {
-  type MRT_Row,
-  type MRT_RowData,
-  type MRT_TableInstance,
+  type NexTableRow,
+  type NexRowData,
+  type NexTableTableInstance,
 } from '../types';
 import { parseFromValuesOrFunc } from './utils';
 
-export const getMRT_Rows = <TData extends MRT_RowData>(
-  table: MRT_TableInstance<TData>,
+export const getMRT_Rows = <TData extends NexRowData>(
+  table: NexTableTableInstance<TData>,
   all?: boolean,
-): MRT_Row<TData>[] => {
+): NexTableRow<TData>[] => {
   const {
     getCenterRows,
     getPrePaginationRowModel,
@@ -31,7 +31,7 @@ export const getMRT_Rows = <TData extends MRT_RowData>(
 
   const isRankingRows = getIsRankingRows(table);
 
-  let rows: MRT_Row<TData>[] = [];
+  let rows: NexTableRow<TData>[] = [];
   if (!isRankingRows) {
     rows =
       !enableRowPinning || rowPinningDisplayMode?.includes('sticky')
@@ -85,8 +85,8 @@ export const getMRT_Rows = <TData extends MRT_RowData>(
   return rows;
 };
 
-export const getCanRankRows = <TData extends MRT_RowData>(
-  table: MRT_TableInstance<TData>,
+export const getCanRankRows = <TData extends NexRowData>(
+  table: NexTableTableInstance<TData>,
 ) => {
   const {
     getState,
@@ -112,8 +112,8 @@ export const getCanRankRows = <TData extends MRT_RowData>(
   );
 };
 
-export const getIsRankingRows = <TData extends MRT_RowData>(
-  table: MRT_TableInstance<TData>,
+export const getIsRankingRows = <TData extends NexRowData>(
+  table: NexTableTableInstance<TData>,
 ) => {
   const { globalFilter, sorting } = table.getState();
 
@@ -124,12 +124,12 @@ export const getIsRankingRows = <TData extends MRT_RowData>(
   );
 };
 
-export const getIsRowSelected = <TData extends MRT_RowData>({
+export const getIsRowSelected = <TData extends NexRowData>({
   row,
   table,
 }: {
-  row: MRT_Row<TData>;
-  table: MRT_TableInstance<TData>;
+  row: NexTableRow<TData>;
+  table: NexTableTableInstance<TData>;
 }) => {
   const {
     options: { enableRowSelection },
@@ -144,14 +144,14 @@ export const getIsRowSelected = <TData extends MRT_RowData>({
 };
 
 export const getMRT_RowSelectionHandler =
-  <TData extends MRT_RowData>({
+  <TData extends NexRowData>({
     renderedRowIndex = 0,
     row,
     table,
   }: {
     renderedRowIndex?: number;
-    row: MRT_Row<TData>;
-    table: MRT_TableInstance<TData>;
+    row: NexTableRow<TData>;
+    table: NexTableTableInstance<TData>;
   }) =>
   (
     event: ChangeEvent<HTMLInputElement> | MouseEvent<HTMLTableRowElement>,
@@ -240,7 +240,7 @@ export const getMRT_RowSelectionHandler =
   };
 
 export const getMRT_SelectAllHandler =
-  <TData extends MRT_RowData>({ table }: { table: MRT_TableInstance<TData> }) =>
+  <TData extends NexRowData>({ table }: { table: NexTableTableInstance<TData> }) =>
   (
     event: ChangeEvent<HTMLInputElement> | MouseEvent<HTMLButtonElement>,
     value?: boolean,

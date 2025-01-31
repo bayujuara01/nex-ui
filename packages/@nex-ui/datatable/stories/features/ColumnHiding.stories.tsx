@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta;
 
-const columns: MRT_ColumnDef<(typeof data)[0]>[] = [
+const columns: NexTableColumnDef<(typeof data)[0]>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -51,15 +51,15 @@ const data = [...Array(100)].map(() => ({
 }));
 
 export const ColumnHidingEnabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const ColumnHidingDisabled = () => (
-  <MantineReactTable columns={columns} data={data} enableHiding={false} />
+  <NexReactTable columns={columns} data={data} enableHiding={false} />
 );
 
 export const ColumnHidingDisabledButWithOrdering = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnOrdering
@@ -68,7 +68,7 @@ export const ColumnHidingDisabledButWithOrdering = () => (
 );
 
 export const ColumnHidingDisabledButWithPinning = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnPinning
@@ -77,7 +77,7 @@ export const ColumnHidingDisabledButWithPinning = () => (
 );
 
 export const ColumnHidingDisabledPerColumn = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -115,7 +115,7 @@ export const ColumnHidingDisabledPerColumn = () => (
 );
 
 export const ColumnHidingWithHeaderGroups = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         columns: [

@@ -1,4 +1,4 @@
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -17,7 +17,7 @@ interface Row {
   state: string;
 }
 
-const columns: MRT_ColumnDef<Row>[] = [
+const columns: NexTableColumnDef<Row>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -49,11 +49,11 @@ const data: Row[] = [...Array(100)].map(() => ({
 }));
 
 export const HeaderActionsDisabledDefault = () => (
-  <MantineReactTable columns={columns} data={data} />
+  <NexReactTable columns={columns} data={data} />
 );
 
 export const HeaderActionsEnabled = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableHeaderActionsHoverReveal
@@ -61,7 +61,7 @@ export const HeaderActionsEnabled = () => (
 );
 
 export const HeaderActionsEnabledCenterAlign = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     defaultColumn={{
@@ -74,7 +74,7 @@ export const HeaderActionsEnabledCenterAlign = () => (
 );
 
 export const HeaderActionsEnabledRightAlign = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     defaultColumn={{
@@ -87,7 +87,7 @@ export const HeaderActionsEnabledRightAlign = () => (
 );
 
 export const HeaderActionsDisabledWithFeatures = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnOrdering
@@ -99,7 +99,7 @@ export const HeaderActionsDisabledWithFeatures = () => (
 );
 
 export const HeaderActionsEnabledWithFeatures = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     enableColumnOrdering
@@ -112,7 +112,7 @@ export const HeaderActionsEnabledWithFeatures = () => (
 );
 
 export const HeaderActionsEnabledWithFeaturesCenterAlign = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     defaultColumn={{
@@ -130,7 +130,7 @@ export const HeaderActionsEnabledWithFeaturesCenterAlign = () => (
 );
 
 export const HeaderActionsEnabledWithFeaturesRightAlign = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={columns}
     data={data}
     defaultColumn={{

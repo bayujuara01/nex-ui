@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { Modal } from '@nex-ui/core';
 
-import { MantineReactTable, type MRT_ColumnDef } from '../../src';
+import { NexReactTable, type NexTableColumnDef } from '../../src';
 
 import { faker } from '@faker-js/faker';
 import { type Meta } from '@storybook/react';
@@ -13,7 +13,7 @@ const meta: Meta = {
 
 export default meta;
 
-const longColumns: MRT_ColumnDef<any>[] = [
+const longColumns: NexTableColumnDef<any>[] = [
   {
     accessorKey: 'firstName',
     header: 'First Name',
@@ -93,7 +93,7 @@ const longData = [...Array(500)].map(() => ({
 }));
 
 export const EnableRowVirtualizationDense = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -115,7 +115,7 @@ export const EnableRowVirtualizationInModal = () => {
 
   return (
     <Modal onClose={() => setOpened(false)} opened={opened} size="xl">
-      <MantineReactTable
+      <NexReactTable
         columns={longColumns}
         data={longData}
         enableBottomToolbar={false}
@@ -129,7 +129,7 @@ export const EnableRowVirtualizationInModal = () => {
 };
 
 export const EnableRowVirtualizationComfortable = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -140,7 +140,7 @@ export const EnableRowVirtualizationComfortable = () => (
 );
 
 export const EnableRowVirtualizationSpacious = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -152,7 +152,7 @@ export const EnableRowVirtualizationSpacious = () => (
 );
 
 export const EnableRowVirtualizationTallContent = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -163,7 +163,7 @@ export const EnableRowVirtualizationTallContent = () => (
 );
 
 export const EnableRowVirtualizationWithColumnResizing = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -175,7 +175,7 @@ export const EnableRowVirtualizationWithColumnResizing = () => (
 );
 
 export const EnableRowVirtualizationWithDetailPanel = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -187,7 +187,7 @@ export const EnableRowVirtualizationWithDetailPanel = () => (
 );
 
 export const EnableRowVirtualizationWithMemoizedCells = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -201,7 +201,7 @@ export const EnableRowVirtualizationWithMemoizedCells = () => (
 );
 
 export const EnableRowVirtualizationWithMemoizedRows = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -215,7 +215,7 @@ export const EnableRowVirtualizationWithMemoizedRows = () => (
 );
 
 export const EnableRowVirtualizationStickyFooter = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -243,7 +243,7 @@ export const EnableRowVirtualizationStickyFooter = () => (
 );
 
 export const EnableColumnVirtualization = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData.slice(0, 10)}
     enableColumnVirtualization
@@ -252,7 +252,7 @@ export const EnableColumnVirtualization = () => (
 );
 
 export const EnableColumnVirtualizationWithPinning = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData.slice(0, 10)}
     enableColumnPinning
@@ -262,7 +262,7 @@ export const EnableColumnVirtualizationWithPinning = () => (
 );
 
 export const EnableColumnVirtualizationShortColumns = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns.slice(0, 3)}
     data={longData.slice(0, 10)}
     enableColumnVirtualization
@@ -271,7 +271,7 @@ export const EnableColumnVirtualizationShortColumns = () => (
 );
 
 export const EnableColumnVirtualizationWithFooter = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -296,7 +296,7 @@ export const EnableColumnVirtualizationWithFooter = () => (
 );
 
 export const EnableColumnVirtualizationStickyFooter = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={[
       {
         accessorKey: 'firstName',
@@ -322,7 +322,7 @@ export const EnableColumnVirtualizationStickyFooter = () => (
 );
 
 export const RowAndColumnVirtualization = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -334,7 +334,7 @@ export const RowAndColumnVirtualization = () => (
 );
 
 export const RowAndColumnVirtualizationWithFeatures = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={longColumns}
     data={longData}
     enableBottomToolbar={false}
@@ -363,7 +363,7 @@ const fakeData = [...Array(500)].map(() => ({
 }));
 
 export const MaxVirtualization = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={fakeColumns}
     data={fakeData}
     enableBottomToolbar={false}
@@ -379,7 +379,7 @@ export const MaxVirtualization = () => (
 );
 
 export const EmptyDataVirtualization = () => (
-  <MantineReactTable
+  <NexReactTable
     columns={fakeColumns}
     data={[]}
     enableBottomToolbar={false}
