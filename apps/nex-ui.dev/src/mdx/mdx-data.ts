@@ -9,6 +9,7 @@ import { MDX_META_DATA } from './data/mdx-meta-data';
 import { MDX_OTHERS_DATA } from './data/mdx-others-data';
 import { MDX_STYLES_DATA } from './data/mdx-styles-data';
 import { MDX_THEMING_DATA } from './data/mdx-theming-data';
+import { MDX_DATATABLE_DATA } from "./data/mdx-datatable-data";
 
 export const MDX_DATA: Record<string, Frontmatter> = {
   ...MDX_META_DATA,
@@ -21,4 +22,5 @@ export const MDX_DATA: Record<string, Frontmatter> = {
   ...MDX_FORM_DATA,
   ...MDX_DATES_DATA,
   ...MDX_CHARTS_DATA,
+  ...MDX_DATATABLE_DATA
 };

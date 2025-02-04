@@ -12,7 +12,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bayujuara01/nex-ui.git"
+    "url": "https://github.com/bayujuara01/nex-ui.git",
+    "directory": "packages/@nex-ui/datatable"
   },
   "funding": {
     "type": "github",
@@ -36,7 +37,6 @@
         "default": "./cjs/index.cjs"
       }
     },
-    "./package.json": "./package.json",
     "./locales/*": "./locales/*",
     "./styles.css": "./styles.css"
   },
@@ -46,18 +46,10 @@
     "styles.css",
     "src"
   ],
-  "size-limit": [
-    {
-      "path": "dist/index.cjs",
-      "limit": "53 KB"
-    },
-    {
-      "path": "dist/index.esm.mjs",
-      "limit": "50 KB"
-    }
-  ],
-  "engines": {
-    "node": ">=16"
+  "dependencies": {
+    "@tanstack/match-sorter-utils": "8.19.4",
+    "@tanstack/react-table": "8.20.5",
+    "@tanstack/react-virtual": "3.11.2"
   },
   "devDependencies": {
     "@nex-ui/context-menu": "workspace:*",
@@ -68,11 +60,6 @@
     "dayjs": ">=1.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  },
-  "dependencies": {
-    "@tanstack/match-sorter-utils": "8.19.4",
-    "@tanstack/react-table": "8.20.5",
-    "@tanstack/react-virtual": "3.11.2"
   },
   "peerDependencies": {
     "@nex-ui/core": "~7.15.x",

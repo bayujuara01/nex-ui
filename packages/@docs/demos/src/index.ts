@@ -109,7 +109,7 @@ export * as FloatingIndicatorDemos from './demos/core/FloatingIndicator';
 export * as TreeDemos from './demos/core/Tree';
 export * as AngleSliderDemos from './demos/core/AngleSlider';
 
-// @mantine/dates
+// @nex-ui/dates
 export * as YearPickerDemos from './demos/dates/YearPicker';
 export * as YearPickerInputDemos from './demos/dates/YearPickerInput';
 export * as MonthPickerDemos from './demos/dates/MonthPicker';
@@ -122,7 +122,7 @@ export * as DateTimePickerDemos from './demos/dates/DateTimePicker';
 export * as DateInputDemos from './demos/dates/DateInput';
 export * as CalendarDemos from './demos/dates/Calendar';
 
-// @mantine/charts
+// @nex-ui/charts
 export * as AreaChartDemos from './demos/charts/AreaChart';
 export * as BarChartDemos from './demos/charts/BarChart';
 export * as LineChartDemos from './demos/charts/LineChart';
@@ -135,6 +135,9 @@ export * as BubbleChartDemos from './demos/charts/BubbleChart';
 export * as CompositeChartDemos from './demos/charts/CompositeChart';
 export * as RadialBarChartDemos from './demos/charts/RadialBarChart';
 export * as FunnelChartDemos from './demos/charts/FunnelChart';
+
+// @nex-ui/datatable
+export * as DataTableDemos from './demos/datatable';
 
 // Extensions demos
 export * as NotificationsDemos from './demos/notifications';

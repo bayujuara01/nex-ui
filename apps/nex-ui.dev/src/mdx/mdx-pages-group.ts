@@ -367,6 +367,12 @@ export const MDX_PAGES_GROUPS: MdxPagesGroup[] = [
     ],
   },
   {
+    group: 'nex-datatable',
+    pages: [
+      MDX_DATA.GettingStartedDatatable,
+    ]
+  },
+  {
     group: 'extensions',
     pages: [
       MDX_DATA.CodeHighlight,

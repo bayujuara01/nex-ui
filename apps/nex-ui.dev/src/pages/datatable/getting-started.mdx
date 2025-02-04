@@ -1,0 +1,30 @@
+import { DataTableDemos } from '@docs/demos';
+import { Layout } from "@/layout";
+import { MDX_DATA } from "@/mdx";
+
+export default Layout(MDX_DATA.GettingStartedDatatable);
+
+## Installation
+
+<InstallScript packages="@nex-ui/datatable @nex-ui/core @nex-ui/hooks @nex-ui/dates @tabler/icons-react clsx dayjs" />
+
+After installation import package styles at the root of your application (Where you import your other Nex UI CSS styles.):
+
+```tsx
+import '@nex-ui/core/styles.css'; //import Nex UI styles needed by datatable
+import '@nex-ui/dates/styles.css'; //if using Nex UI date picker features
+import '@nex-ui/datatable/styles.css'; //import datatable styles
+```
+## Based on TanStack Table V8
+
+Most of the components in `@nex-ui/datatable` package are based on [@tanstack/react-table](https://tanstack.com/table/latest) library.
+
+## Pre-Built or 100% Custom
+
+Use the pre-built single component data grid with the `<NexReactTable />` component.
+Or build your own markup from scratch using the useNexReactTable hook.
+All internal Datatable components are exported for you to use as "lego blocks" to build your own custom tables.
+
+## Usage
+
+<Demo data={DataTableDemos.usage} />

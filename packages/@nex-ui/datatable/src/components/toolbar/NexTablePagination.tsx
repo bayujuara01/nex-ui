@@ -124,6 +124,7 @@ export const NexTablePagination = <TData extends NexRowData>({
                 disabled={pageIndex <= 0}
                 onClick={() => setPageIndex(0)}
                 variant="subtle"
+                size="input-sm"
               >
                 <IconChevronLeftPipe />
               </ActionIcon>
@@ -134,6 +135,7 @@ export const NexTablePagination = <TData extends NexRowData>({
               disabled={pageIndex <= 0}
               onClick={() => setPageIndex(pageIndex - 1)}
               variant="subtle"
+              size="input-sm"
             >
               <IconChevronLeft />
             </ActionIcon>
@@ -143,6 +145,7 @@ export const NexTablePagination = <TData extends NexRowData>({
               disabled={lastRowIndex >= totalRowCount}
               onClick={() => setPageIndex(pageIndex + 1)}
               variant="subtle"
+              size="input-sm"
             >
               <IconChevronRight />
             </ActionIcon>
@@ -153,6 +156,7 @@ export const NexTablePagination = <TData extends NexRowData>({
                 disabled={lastRowIndex >= totalRowCount}
                 onClick={() => setPageIndex(numberOfPages - 1)}
                 variant="subtle"
+                size="input-sm"
               >
                 <IconChevronRightPipe />
               </ActionIcon>

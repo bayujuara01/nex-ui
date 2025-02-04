@@ -8,6 +8,7 @@ import '@nex-ui/spotlight/styles.css';
 import '@nex-ui/carousel/styles.css';
 import '@nex-ui/tiptap/styles.css';
 import '@nex-ui/charts/styles.css';
+import '@nex-ui/datatable/styles.css';
 import '@nex-uix/demo/styles.css';
 import '@nex-uix/nex-ui-logo/styles.css';
 import '@nex-uix/nex-ui-header/styles.css';

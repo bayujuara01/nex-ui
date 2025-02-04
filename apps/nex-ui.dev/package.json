@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && echo 'mantine.dev' > out/CNAME && echo '' > out/.nojekyll",
+    "build": "next build",
     "build:alpha": "next build && echo 'alpha.mantine.dev' > out/CNAME && echo '' > out/.nojekyll",
     "clean": "rm -rf .next",
     "dev": "next dev -p 7545",
@@ -23,6 +23,7 @@
     "@nex-ui/code-highlight": "workspace:*",
     "@nex-ui/colors-generator": "workspace:*",
     "@nex-ui/core": "workspace:*",
+    "@nex-ui/datatable": "workspace:*",
     "@nex-ui/dates": "workspace:*",
     "@nex-ui/dropzone": "workspace:*",
     "@nex-ui/form": "workspace:*",
