@@ -10,7 +10,7 @@ import {
   getSize,
   getThemeColor,
   MantineColor,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useDirection,
   useProps,
@@ -61,7 +61,7 @@ export interface RatingProps
   fractions?: number;
 
   /** Controls component size, `'sm'` by default */
-  size?: MantineSize | number | (string & {});
+  size?: Exclude<NexSize, 'xl' | 'xs'> | number | (string & {});
 
   /** Number of controls, `5` by default */
   count?: number;

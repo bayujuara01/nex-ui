@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Divider, DividerProps, DividerStylesNames } from './Divider';
 
 const defaultProps: DividerProps = {

@@ -1,4 +1,4 @@
-import { createContextContainer, render, screen, tests } from '@mantine-tests/core';
+import { createContextContainer, render, screen, tests } from '@nex-ui-tests/core';
 import { Tabs } from '../Tabs';
 import { TabsList, TabsListProps, TabsListStylesNames } from './TabsList';
 

@@ -7,6 +7,10 @@ import postcss from 'postcss';
 import postcssModules from 'postcss-modules';
 import postcssPresetMantine from 'postcss-preset-mantine';
 import { getPath } from '../utils/get-path';
+import postcssPrefixAliasPlugin from "../postcss/postcss-prefix-alias-plugin";
+import {createLogger} from "../utils/signale";
+
+const logger = createLogger('generate-css');
 
 function transformFileName(filePath: string) {
   return path.basename(filePath).replace('.module.css', '.css');
@@ -19,7 +23,8 @@ async function processFile(
 ) {
   const result = await postcss([
     postcssPresetMantine,
-    postcssModules({ generateScopedName, getJSON: () => {}, scopeBehaviour }),
+    postcssModules({ generateScopedName, getJSON: () => {}, scopeBehaviour, }),
+    postcssPrefixAliasPlugin()
   ]).process(fs.readFileSync(filePath, 'utf-8'), { from: path.basename(filePath) });
 
   const fileName = transformFileName(filePath);
@@ -43,25 +48,25 @@ async function generateCSSLayers() {
   });
 }
 
-// Generates individual css files for each @mantine/core component
+// Generates individual css files for each @nex-ui/core component
 export async function generateCoreCSS() {
   const packagesPath = glob.convertPathToPattern(getPath('packages'));
-  const files = await glob(`${packagesPath}/@mantine/core/src/**/*.css`);
+  const files = await glob(`${packagesPath}/@nex-ui/core/src/**/*.css`);
   const modules = files.filter((file) => file.endsWith('.module.css'));
   const global = files.find((file) => file.endsWith('global.css'))!;
 
   fs.writeJsonSync(
-    getPath('apps/mantine.dev/src/.docgen/css-exports.json'),
+    getPath('apps/nex-ui.dev/src/.docgen/css-exports.json'),
     { modules: modules.map(transformFileName), global: transformFileName(global) },
     { spaces: 2 }
   );
 
-  const outputFolder = getPath('packages/@mantine/core/styles');
+  const outputFolder = getPath('packages/@nex-ui/core/styles');
 
   await fs.ensureDir(outputFolder);
 
   modules.forEach((file) => processFile(file, 'local', outputFolder));
-  processFile(global, 'global', outputFolder);
+  await processFile(global, 'global', outputFolder);
 }
 
 export async function generateCSS() {

@@ -6,7 +6,7 @@ import {
   factory,
   Factory,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -20,7 +20,7 @@ export type KbdCssVariables = {
 
 export interface KbdProps extends BoxProps, StylesApiProps<KbdFactory>, ElementProps<'kbd'> {
   /** Controls font-size and padding, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 }
 
 export type KbdFactory = Factory<{

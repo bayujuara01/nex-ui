@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { UnstyledButton, UnstyledButtonProps, UnstyledButtonStylesNames } from './UnstyledButton';
 
 const defaultProps: UnstyledButtonProps = {};

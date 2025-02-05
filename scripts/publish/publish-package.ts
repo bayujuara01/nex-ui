@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import chalk from 'chalk';
 import { $ } from 'zx';
 import { createLogger } from '../utils/signale';
@@ -12,7 +13,7 @@ interface PublishPackage {
 
 export async function publishPackage({ packagePath, name, tag }: PublishPackage) {
   try {
-    $`cd ${packagePath} && npm publish --access public --tag ${tag}`;
+    $`cd ${packagePath} && npm publish ${process.env.PACKAGE_REGISTRY ? `--registry ${process.env.PACKAGE_REGISTRY}` : ''} --access public --tag ${tag}`;
     logger.success(`Package ${chalk.cyan(name)} has been published`);
   } catch (error: any) {
     logger.error(`Failed to publish package ${chalk.red(name)}`);

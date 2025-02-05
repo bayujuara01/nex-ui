@@ -1,5 +1,5 @@
 import { createRef } from 'react';
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Chip, ChipProps, ChipStylesNames } from './Chip';
 
 const defaultProps: ChipProps = {

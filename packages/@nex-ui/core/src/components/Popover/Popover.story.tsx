@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { useState } from 'react';
-import { Box, MantineThemeProvider } from '../../core';
+import { Box, NexThemeProvider } from '../../core';
 import { Group } from '../Group';
 import { Tooltip } from '../Tooltip';
 import { Popover } from './Popover';
@@ -16,7 +16,7 @@ const content = Array(10)
 
 export function Uncontrolled() {
   return (
-    <MantineThemeProvider
+    <NexThemeProvider
       theme={{
         components: {
           PopoverDropdown: Popover.Dropdown.extend({
@@ -41,7 +41,7 @@ export function Uncontrolled() {
           <Popover.Dropdown>Dropdown</Popover.Dropdown>
         </Popover>
       </div>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

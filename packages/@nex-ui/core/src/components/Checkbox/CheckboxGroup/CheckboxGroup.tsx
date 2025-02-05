@@ -1,5 +1,5 @@
 import { useUncontrolled } from '@nex-ui/hooks';
-import { factory, Factory, MantineSize, useProps } from '../../../core';
+import { factory, Factory, NexSize, useProps } from '../../../core';
 import { Input, InputWrapperProps, InputWrapperStylesNames } from '../../Input';
 import { InputsGroupFieldset } from '../../InputsGroupFieldset';
 import { CheckboxGroupProvider } from '../CheckboxGroup.context';
@@ -23,7 +23,7 @@ export interface CheckboxGroupProps extends Omit<InputWrapperProps, 'onChange'> 
   wrapperProps?: Record<string, any>;
 
   /** Controls size of the `Input.Wrapper`, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** If set, value cannot be changed */
   readOnly?: boolean;

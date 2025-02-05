@@ -1,11 +1,11 @@
-import { MantineThemeProvider } from '../../core';
+import { NexThemeProvider } from '../../core';
 import { UnstyledButton } from './UnstyledButton';
 
 export default { title: 'UnstyledButton' };
 
 export function Usage() {
   return (
-    <MantineThemeProvider
+    <NexThemeProvider
       inherit
       theme={{
         components: {
@@ -20,7 +20,7 @@ export function Usage() {
       <div style={{ padding: 40 }}>
         <UnstyledButton styles={() => ({ root: { color: 'red' } })}>Button</UnstyledButton>
       </div>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

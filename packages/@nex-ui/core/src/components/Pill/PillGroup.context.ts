@@ -1,7 +1,7 @@
-import { createOptionalContext, MantineSize } from '../../core';
+import { createOptionalContext, NexSize } from '../../core';
 
 export interface PillGroupContextValue {
-  size: MantineSize | (string & {}) | undefined;
+  size: NexSize | (string & {}) | undefined;
   disabled: boolean | undefined;
 }
 

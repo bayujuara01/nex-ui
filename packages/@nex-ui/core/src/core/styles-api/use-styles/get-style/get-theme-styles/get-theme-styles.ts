@@ -1,8 +1,8 @@
-import { MantineTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { resolveStyles } from '../resolve-styles/resolve-styles';
 
 interface GetThemeStylesOptions {
-  theme: MantineTheme;
+  theme: NexTheme;
   themeName: string[];
   props: Record<string, any>;
   stylesCtx: Record<string, any> | undefined;

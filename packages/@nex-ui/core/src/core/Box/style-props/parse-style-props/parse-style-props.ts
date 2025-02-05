@@ -1,4 +1,4 @@
-import { MantineTheme } from '../../../MantineProvider';
+import { NexTheme } from '../../../NexProvider';
 import { keys } from '../../../utils';
 import { resolvers } from '../resolvers';
 import type { SystemPropData } from '../style-props-data';
@@ -49,7 +49,7 @@ function getBreakpointValue(value: StyleProp<unknown>, breakpoint: string) {
 
 interface ParseStylePropsOptions {
   styleProps: Record<string, StyleProp<any>>;
-  theme: MantineTheme;
+  theme: NexTheme;
   data: Record<string, SystemPropData>;
 }
 

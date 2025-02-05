@@ -1,6 +1,6 @@
 import { fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { PinInput, PinInputProps, PinInputStylesNames } from './PinInput';
 
 const defaultProps: PinInputProps = {};

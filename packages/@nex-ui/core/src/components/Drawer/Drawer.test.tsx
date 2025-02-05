@@ -1,4 +1,4 @@
-import { createContextContainer, render, tests } from '@mantine-tests/core';
+import { createContextContainer, render, tests } from '@nex-ui-tests/core';
 import { Drawer, DrawerProps, DrawerStylesNames } from './Drawer';
 import { DrawerBody, DrawerBodyProps } from './DrawerBody';
 import { DrawerCloseButton, DrawerCloseButtonProps } from './DrawerCloseButton';

@@ -1,0 +1,37 @@
+import { NprogressDemos } from '@docs/demos';
+import { Layout } from '@/layout';
+import { MDX_DATA } from '@/mdx';
+
+export default Layout(MDX_DATA.Nprogress);
+
+## Installation
+
+<InstallScript packages="@mantine/nprogress" />
+
+After installation import package styles at the root of your application:
+
+```tsx
+import '@nex-ui/nprogress/styles.css';
+```
+
+## Setup NavigationProgress
+
+Render `NavigationProgress` anywhere in your app within [NexProvider](/theming/mantine-provider/):
+
+```tsx
+import { NexProvider } from '@nex-ui/core';
+import { NavigationProgress } from '@nex-ui/nprogress';
+
+function Demo() {
+  return (
+    <NexProvider>
+      <NavigationProgress />
+      {/* Your app here */}
+    </NexProvider>
+  );
+}
+```
+
+## Usage
+
+<Demo data={NprogressDemos.usage} />

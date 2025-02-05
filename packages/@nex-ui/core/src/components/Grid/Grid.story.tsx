@@ -1,4 +1,4 @@
-import { MantineThemeProvider } from '../../core';
+import { NexThemeProvider } from '../../core';
 import { Button } from '../Button';
 import { Grid } from './Grid';
 
@@ -123,7 +123,7 @@ export function Order() {
 
 export function PxBreakpoints() {
   return (
-    <MantineThemeProvider
+    <NexThemeProvider
       theme={{
         breakpoints: {
           xs: '400px',
@@ -148,6 +148,6 @@ export function PxBreakpoints() {
           <Button fullWidth>Forth</Button>
         </Grid.Col>
       </Grid>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }

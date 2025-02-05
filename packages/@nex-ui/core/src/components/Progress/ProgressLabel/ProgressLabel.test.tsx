@@ -1,4 +1,4 @@
-import { createContextContainer, tests } from '@mantine-tests/core';
+import { createContextContainer, tests } from '@nex-ui-tests/core';
 import { ProgressRoot } from '../ProgressRoot/ProgressRoot';
 import { ProgressLabel, ProgressLabelProps, ProgressLabelStylesNames } from './ProgressLabel';
 

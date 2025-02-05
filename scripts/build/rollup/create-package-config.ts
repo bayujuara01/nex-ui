@@ -11,6 +11,7 @@ import { getPackagesList } from '../../packages/get-packages-list';
 import { getPath } from '../../utils/get-path';
 import { ROLLUP_EXCLUDE_USE_CLIENT } from './rollup-exclude-use-client';
 import { ROLLUP_EXTERNALS } from './rollup-externals';
+import postcssPrefixAliasPlugin from "../../postcss/postcss-prefix-alias-plugin";
 
 export function createPackageConfig(packagePath: string): RollupOptions {
   const packagesList = getPackagesList();
@@ -30,6 +31,7 @@ export function createPackageConfig(packagePath: string): RollupOptions {
     postcss({
       extract: true,
       modules: { generateScopedName },
+      plugins: [ postcssPrefixAliasPlugin() ]
     }),
     banner((chunk) => {
       if (!ROLLUP_EXCLUDE_USE_CLIENT.includes(chunk.fileName)) {

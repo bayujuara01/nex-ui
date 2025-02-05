@@ -1,0 +1,203 @@
+import { Button } from '@nex-ui/core';
+import { IconHeartFilled } from '@tabler/icons-react';
+import { FrameworksGuides } from '@/components/FrameworksGuides';
+import { SocialCards } from '@/components/SocialCards';
+import { Layout } from '@/layout';
+import { MDX_DATA } from '@/mdx';
+
+export default Layout(MDX_DATA.GettingStarted);
+
+# Getting started
+
+## Get started with a template
+
+The easiest way to get started is to use one of the templates.
+All templates include required dependencies and pre-configured settings.
+Some templates also include additional features like [Jest](https://jestjs.io/),
+[Storybook](https://storybook.js.org/), [ESLint](https://eslint.org/), etc.
+
+Templates include only `@nex-ui/core` and `@nex-ui/hooks` packages,
+if you need additional `@nex-ui/*` packages, follow installation instructions
+of the package you want to use.
+
+To get started with a template, open it on GitHub and click "Use this template"
+button. In order to use this feature you need to be logged in to your GitHub account.
+If you are not familiar with GitHub, you can find a detailed instruction on how to
+bootstrap a project from a template [in this article](https://help.mantine.dev/q/templates-usage).
+
+Templates list:
+
+<TemplatesList />
+
+[//]: # (## Community templates)
+
+[//]: # ()
+[//]: # (Community templates are created and maintained by the community members. These templates)
+
+[//]: # (include additional features and third-party integrations. You are welcome)
+
+[//]: # (to share your template with the community by following [this guide]&#40;https://help.mantine.dev/q/submit-template&#41;.)
+
+[//]: # ()
+[//]: # (<TemplatesList community />)
+
+## Framework guide
+
+If you want to add Mantine to an existing project or prefer to set up everything manually,
+follow one of the guides below to get started with Mantine and your preferred framework.
+
+<FrameworksGuides
+  primaryCols={{ lg: 2 }}
+  secondaryCols={{ xl: 3 }}
+  secondaryBreakpoint="xl"
+/>
+
+## Can I use Mantine with create-react-app?
+
+[Create React App](https://create-react-app.dev/) was deprecated in early 2023 ([comment from maintainers](https://github.com/reactjs/react.dev/pull/5487#issuecomment-1409720741)).
+It is not recommended to use it for new projects. It is recommended to use [Vite](https://vitejs.dev/) or [Next.js](https://nextjs.org/) instead.
+Starting from version 7.0, certain Mantine styling features are no longer officially supported in Create React App.
+If you still prefer to use Create React App, follow [this guide](https://help.mantine.dev/q/can-i-use-mantine-with-cra).
+
+## Get started without framework
+
+<PackagesInstallation />
+
+Install PostCSS plugins and [postcss-preset-mantine](/styles/postcss-preset):
+
+<InstallScript
+  packages="postcss postcss-preset-mantine postcss-simple-vars"
+  dev
+/>
+
+> **PostCSS without framework**
+>
+> If you are using a framework that is not officially supported,
+> you may need to configure PostCSS manually. Please refer to the framework's documentation for specific instructions.
+> For instance, if you are using Webpack, it will be necessary to install and set up [postcss-loader](https://webpack.js.org/loaders/postcss-loader/).
+
+Create `postcss.config.cjs` file at the root of your application with the following content:
+
+```js
+module.exports = {
+  plugins: {
+    'postcss-preset-mantine': {},
+    'postcss-simple-vars': {
+      variables: {
+        'mantine-breakpoint-xs': '36em',
+        'mantine-breakpoint-sm': '48em',
+        'mantine-breakpoint-md': '62em',
+        'mantine-breakpoint-lg': '75em',
+        'mantine-breakpoint-xl': '88em',
+      },
+    },
+  },
+};
+```
+
+Add styles imports to the root of your application. Usually styles are imported
+once in the root file. For example, if you are using Next.js with pages router,
+you can import styles in `_app.tsx` file:
+
+```tsx
+// core styles are required for all packages
+import '@nex-ui/core/styles.css';
+
+// other css files are required only if
+// you are using components from the corresponding package
+// import '@nex-ui/dates/styles.css';
+// import '@nex-ui/dropzone/styles.css';
+// import '@nex-ui/code-highlight/styles.css';
+// ...
+```
+
+Wrap your application with [NexProvider](/theming/mantine-provider/):
+
+```tsx
+import { createTheme, NexProvider } from '@nex-ui/core';
+
+const theme = createTheme({
+  /** Put your mantine theme override here */
+});
+
+function Demo() {
+  return (
+    <NexProvider theme={theme}>
+      {/* Your app here */}
+    </NexProvider>
+  );
+}
+```
+
+If your application has server side rendering, add [ColorSchemeScript](/theming/color-schemes)
+to the `<head />` of your application:
+
+```tsx
+import { ColorSchemeScript } from '@nex-ui/core';
+
+function Demo() {
+  return (
+    <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
+        <title>My awesome app</title>
+
+        <ColorSchemeScript />
+      </head>
+      <body>{/* Your app here */}</body>
+    </html>
+  );
+}
+```
+
+All set! You can now use Mantine components in your application.
+
+## Set up VS Code
+
+By default, VS Code does not recognize postcss syntax, you need to install
+[PostCSS Intellisense and Highlighting](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-postcss)
+to enable syntax highlighting and suppress variables (`$variable`) errors.
+
+To get CSS variables autocomplete, install [CSS Variable Autocomplete extension](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-css-variables).
+Then create `.vscode/settings.json` file in the root folder of your project with the following content:
+
+```json
+{
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "node_modules/@nex-ui/core/styles.css"
+  ]
+}
+```
+
+## Learn
+
+Before you jump into the code, it is recommended to learn more about Mantine theming and styling options.
+The most important documentation pages are:
+
+- [API overview](/overview) – overview of the most important Nex UI styling and theming features
+- [Theme object](/theming/theme-object) – learn about available theme properties
+- [Colors](/theming/colors) – learn how to add/replace colors in the theme object
+- [CSS modules](/styles/css-modules) – learn how to use CSS modules with Mantine
+- [postcss-preset-mantine](/styles/postcss-preset) – learn about `postcss-preset-mantine` functions and mixins
+- [Responsive styles](/styles/responsive) – learn how to apply responsive styles to components
+- [Styles API](/styles/styles-api) – learn how to style internal elements of any component
+- [Polymorphic components](/guides/polymorphic) – learn how to use polymorphic components to change rendered element
+
+[//]: # (## Get help)
+
+[//]: # (<SocialCards twitter={false} cols={{ xl: 2 }} />)
+
+
+## License
+
+All `@nex-ui/*` packages are distributed under [MIT](https://github.com/mantinedev/mantine/blob/master/LICENSE) license.
+You can use them in any project, commercial or not, with or without attribution. All `@nex-ui/*` packages
+dependencies are also distributed under MIT license.

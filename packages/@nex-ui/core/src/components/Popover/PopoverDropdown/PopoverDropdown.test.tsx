@@ -1,4 +1,4 @@
-import { createContextContainer, tests } from '@mantine-tests/core';
+import { createContextContainer, tests } from '@nex-ui-tests/core';
 import { Popover } from '../Popover';
 import { PopoverDropdown, PopoverDropdownProps } from './PopoverDropdown';
 

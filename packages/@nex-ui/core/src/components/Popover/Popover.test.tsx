@@ -1,4 +1,4 @@
-import { render, screen, tests, userEvent } from '@mantine-tests/core';
+import { render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { Popover, PopoverProps, PopoverStylesNames } from './Popover';
 import { PopoverDropdown } from './PopoverDropdown/PopoverDropdown';
 import { PopoverTarget } from './PopoverTarget/PopoverTarget';

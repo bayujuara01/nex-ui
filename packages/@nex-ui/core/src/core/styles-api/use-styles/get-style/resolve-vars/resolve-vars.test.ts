@@ -1,7 +1,7 @@
-import { DEFAULT_THEME, MantineTheme } from '../../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../../NexProvider';
 import { resolveVars } from './resolve-vars';
 
-const themeWithVars: MantineTheme = {
+const themeWithVars: NexTheme = {
   ...DEFAULT_THEME,
   components: {
     Test: {

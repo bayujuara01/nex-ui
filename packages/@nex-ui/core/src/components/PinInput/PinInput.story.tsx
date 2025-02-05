@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import { DEFAULT_THEME, MantineSize } from '../../core';
+import { DEFAULT_THEME, NexSize } from '../../core';
 import { Button } from '../Button';
 import { PinInput } from './PinInput';
 
@@ -146,7 +146,7 @@ export function Mask() {
 
 export function Sizes() {
   const sizes = Object.keys(DEFAULT_THEME.fontSizes).map((size) => (
-    <PinInput size={size as MantineSize} key={size} mt="md" />
+    <PinInput size={size as NexSize} key={size} mt="md" />
   ));
   return <div style={{ padding: 40 }}>{sizes}</div>;
 }

@@ -8,7 +8,7 @@ import {
   getRadius,
   getSize,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -27,7 +27,7 @@ export type PillCssVariables = {
 
 export interface PillProps extends BoxProps, StylesApiProps<PillFactory>, ElementProps<'div'> {
   /** Controls pill `font-size` and `padding`, `'sm'` by default */
-  size?: MantineSize;
+  size?: NexSize;
 
   /** Determines whether the remove button should be displayed, `false` by default */
   withRemoveButton?: boolean;
@@ -51,7 +51,7 @@ export type PillFactory = Factory<{
   stylesNames: PillStylesNames;
   vars: PillCssVariables;
   variant: PillVariant;
-  ctx: { size: MantineSize | (string & {}) | undefined };
+  ctx: { size: NexSize | (string & {}) | undefined };
   staticComponents: {
     Group: typeof PillGroup;
   };

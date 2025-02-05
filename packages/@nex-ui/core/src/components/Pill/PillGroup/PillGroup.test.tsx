@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { PillGroup, PillGroupProps, PillGroupStylesNames } from './PillGroup';
 
 const defaultProps: PillGroupProps = {};

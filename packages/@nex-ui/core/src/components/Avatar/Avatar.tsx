@@ -8,7 +8,7 @@ import {
   MantineColor,
   MantineGradient,
   MantineRadius,
-  MantineSize,
+  NexSize,
   polymorphicFactory,
   PolymorphicFactory,
   StylesApiProps,
@@ -38,7 +38,7 @@ export type AvatarCssVariables = {
 
 export interface AvatarProps extends BoxProps, StylesApiProps<AvatarFactory> {
   /** Width and height of the avatar, numbers are converted to rem, `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Key of `theme.radius` or any valid CSS value to set border-radius, `'100%'` by default */
   radius?: MantineRadius;

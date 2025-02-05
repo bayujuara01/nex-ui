@@ -1,4 +1,4 @@
-import { DEFAULT_THEME, MantineTheme } from '@nex-ui/core';
+import { DEFAULT_THEME, NexTheme } from '@nex-ui/core';
 import { render } from '../render';
 
 const randomNumber = (min = 10, max = 100) => Math.floor(Math.random() * (max - min + 1) + min);
@@ -8,7 +8,7 @@ const getTestObjectClassNames = (selectors: string[]) =>
     return acc;
   }, {});
 
-const getTestFunctionClassNames = (selectors: string[]) => (theme: MantineTheme, props: any) =>
+const getTestFunctionClassNames = (selectors: string[]) => (theme: NexTheme, props: any) =>
   selectors.reduce<Record<string, string>>((acc, selector) => {
     acc[selector] = `test-${
       props['data-test'] === undefined ? Math.random() : props['data-test']
@@ -82,7 +82,7 @@ export function itSupportsStylesApi<
   if (!options.compound) {
     it(`${name}: styles (inline function)`, () => {
       const classNames = getTestObjectClassNames(options.selectors);
-      const styles = (theme: MantineTheme, props: any) =>
+      const styles = (theme: NexTheme, props: any) =>
         options.selectors.reduce<Record<string, React.CSSProperties>>((acc, selector) => {
           acc[selector] = {
             outlineColor: props['data-test'],
@@ -189,7 +189,7 @@ export function itSupportsStylesApi<
 
     it(`${name}: styles (MantineProvider function)`, () => {
       const classNames = getTestObjectClassNames(options.selectors);
-      const styles = (theme: MantineTheme, props: any) =>
+      const styles = (theme: NexTheme, props: any) =>
         options.selectors.reduce<Record<string, React.CSSProperties>>((acc, selector) => {
           acc[selector] = {
             outlineColor: props['data-test'],

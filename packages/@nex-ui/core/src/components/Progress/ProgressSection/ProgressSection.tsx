@@ -9,7 +9,7 @@ import {
   getContrastColor,
   getThemeColor,
   MantineColor,
-  useMantineTheme,
+  useNexTheme,
   useProps,
 } from '../../../core';
 import { useProgressContext } from '../Progress.context';
@@ -65,7 +65,7 @@ export const ProgressSection = factory<ProgressSectionFactory>((props, ref) => {
   } = useProps('ProgressSection', defaultProps, props);
 
   const ctx = useProgressContext();
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const ariaAttributes = withAria
     ? {

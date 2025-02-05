@@ -6,7 +6,7 @@ import {
   Factory,
   getThemeColor,
   MantineColor,
-  useMantineTheme,
+  useNexTheme,
   useProps,
 } from '../../../core';
 import { CheckIcon } from '../../Checkbox';
@@ -132,7 +132,7 @@ export const StepperStep = factory<StepperStepFactory>((props, ref) => {
   } = useProps('StepperStep', defaultProps, props);
 
   const ctx = useStepperContext();
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const stylesApi = { classNames, styles };
 
   const _icon = state === 'stepCompleted' ? null : state === 'stepProgress' ? progressIcon : icon;

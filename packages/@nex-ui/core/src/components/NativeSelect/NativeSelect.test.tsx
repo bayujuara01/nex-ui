@@ -4,7 +4,7 @@ import {
   render,
   tests,
   userEvent,
-} from '@mantine-tests/core';
+} from '@nex-ui-tests/core';
 import { __InputStylesNames } from '../Input';
 import { NativeSelect, NativeSelectProps } from './NativeSelect';
 

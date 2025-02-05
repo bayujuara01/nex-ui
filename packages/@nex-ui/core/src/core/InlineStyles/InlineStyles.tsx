@@ -1,4 +1,4 @@
-import { useMantineStyleNonce } from '../MantineProvider';
+import { useMantineStyleNonce } from '../NexProvider';
 import { InlineStylesInput, stylesToString } from './styles-to-string/styles-to-string';
 
 export interface InlineStylesProps

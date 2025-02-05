@@ -6,7 +6,7 @@ import {
   factory,
   Factory,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -23,7 +23,7 @@ export interface ContainerProps
     StylesApiProps<ContainerFactory>,
     ElementProps<'div'> {
   /** Sets `max-width` of the container, value is not responsive – it is the same for all screen sizes. Numbers are converted to rem. Ignored when `fluid` prop is set. `'md'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Determines whether the container should take 100% of its parent width. If set, `size` prop is ignored. `false` by default. */
   fluid?: boolean;

@@ -1,7 +1,7 @@
-import { DEFAULT_THEME, MantineTheme } from '../../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../../NexProvider';
 import { getThemeClassNames } from './get-theme-class-names';
 
-const testTheme: MantineTheme = {
+const testTheme: NexTheme = {
   ...DEFAULT_THEME,
   components: {
     TestComponentObject: {

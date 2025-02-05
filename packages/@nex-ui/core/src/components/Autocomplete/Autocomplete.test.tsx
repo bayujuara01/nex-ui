@@ -1,4 +1,4 @@
-import { inputDefaultProps, inputStylesApiSelectors, tests } from '@mantine-tests/core';
+import { inputDefaultProps, inputStylesApiSelectors, tests } from '@nex-ui-tests/core';
 import { Autocomplete, AutocompleteProps, AutocompleteStylesNames } from './Autocomplete';
 
 const defaultProps: AutocompleteProps = {

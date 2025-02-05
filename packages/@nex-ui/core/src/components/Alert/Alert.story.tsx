@@ -1,5 +1,5 @@
 import { IconPhoto } from '@tabler/icons-react';
-import { MantineThemeProvider } from '../../core';
+import { NexThemeProvider } from '../../core';
 import { Alert } from './Alert';
 
 export default { title: 'Alert' };
@@ -133,7 +133,7 @@ export function WithoutDescription() {
 
 export function CSSVariables() {
   return (
-    <MantineThemeProvider
+    <NexThemeProvider
       theme={{
         components: {
           Alert: Alert.extend({
@@ -150,6 +150,6 @@ export function CSSVariables() {
           lost forever!
         </Alert>
       </div>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }

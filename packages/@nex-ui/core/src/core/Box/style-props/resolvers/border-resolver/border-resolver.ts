@@ -1,8 +1,8 @@
-import { MantineTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { rem } from '../../../../utils';
 import { colorResolver } from '../color-resolver/color-resolver';
 
-export function borderResolver(value: unknown, theme: MantineTheme) {
+export function borderResolver(value: unknown, theme: NexTheme) {
   if (typeof value === 'number') {
     return rem(value);
   }

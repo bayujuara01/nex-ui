@@ -7,7 +7,7 @@ import {
   getThemeColor,
   MantineColor,
   useDirection,
-  useMantineTheme,
+  useNexTheme,
   useProps,
 } from '../../../core';
 import { UnstyledButton, UnstyledButtonProps } from '../../UnstyledButton';
@@ -66,7 +66,7 @@ export const TabsTab = factory<TabsTabFactory>((_props, ref) => {
     ...others
   } = props;
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const { dir } = useDirection();
   const ctx = useTabsContext();
   const active = value === ctx.value;

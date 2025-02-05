@@ -7,7 +7,7 @@ import {
   MantineColor,
   MantineGradient,
   MantineRadius,
-  MantineSize,
+  NexSize,
   polymorphicFactory,
   PolymorphicFactory,
   StylesApiProps,
@@ -54,7 +54,7 @@ export interface ActionIconProps extends BoxProps, StylesApiProps<ActionIconFact
   loaderProps?: LoaderProps;
 
   /** Controls width and height of the button. Numbers are converted to rem. `'md'` by default. */
-  size?: MantineSize | `input-${MantineSize}` | (string & {}) | number;
+  size?: NexSize | `input-${NexSize}` | (string & {}) | number;
 
   /** Key of `theme.colors` or any valid CSS color. Default value is `theme.primaryColor`.  */
   color?: MantineColor;

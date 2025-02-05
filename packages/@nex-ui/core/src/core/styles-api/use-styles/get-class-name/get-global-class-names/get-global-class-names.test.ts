@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../../NexProvider';
 import { FOCUS_CLASS_NAMES, getGlobalClassNames } from './get-global-class-names';
 
 describe('@mantine/core/get-global-class-names', () => {

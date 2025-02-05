@@ -1,7 +1,7 @@
-import { MantineTheme } from '../../../../MantineProvider';
+import { NexTheme } from '../../../../NexProvider';
 import { rem } from '../../../../utils';
 
-export function spacingResolver(value: unknown, theme: MantineTheme) {
+export function spacingResolver(value: unknown, theme: NexTheme) {
   if (typeof value === 'number') {
     return rem(value);
   }

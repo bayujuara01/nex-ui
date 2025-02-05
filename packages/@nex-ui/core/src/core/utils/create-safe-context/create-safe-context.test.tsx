@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react';
-import { patchConsoleError } from '@mantine-tests/core';
+import { patchConsoleError } from '@nex-ui-tests/core';
 import { createSafeContext } from './create-safe-context';
 
 interface ContextType {

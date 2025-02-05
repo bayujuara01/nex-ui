@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { RadioIndicator, RadioIndicatorProps, RadioIndicatorStylesNames } from './RadioIndicator';
 
 const defaultProps: RadioIndicatorProps = {};

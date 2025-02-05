@@ -1,4 +1,4 @@
-import { createTheme, MantineThemeProvider, rem } from '../../core';
+import { createTheme, NexThemeProvider, rem } from '../../core';
 import { Container } from './Container';
 
 const CONTAINER_SIZES: Record<string, string> = {
@@ -28,11 +28,11 @@ export default { title: 'Container' };
 
 export function Usage() {
   return (
-    <MantineThemeProvider theme={theme}>
+    <NexThemeProvider theme={theme}>
       <Container size="xxs" h={50} bg="blue">
         Container
       </Container>
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

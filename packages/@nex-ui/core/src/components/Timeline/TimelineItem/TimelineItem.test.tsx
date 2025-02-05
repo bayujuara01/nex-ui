@@ -1,4 +1,4 @@
-import { createContextContainer, render, screen, tests } from '@mantine-tests/core';
+import { createContextContainer, render, screen, tests } from '@nex-ui-tests/core';
 import { Timeline } from '../Timeline';
 import { TimelineItem, TimelineItemProps, TimelineItemStylesNames } from './TimelineItem';
 

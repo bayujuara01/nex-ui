@@ -1,8 +1,8 @@
-import type { MantineTheme } from '../../MantineProvider';
+import type { NexTheme } from '../../NexProvider';
 import type { CssVarsProp, MantineStyleProp } from '../Box.types';
 
 interface GetBoxStyleOptions {
-  theme: MantineTheme;
+  theme: NexTheme;
   styleProps: React.CSSProperties;
   style?: MantineStyleProp;
   vars?: CssVarsProp;
@@ -10,7 +10,7 @@ interface GetBoxStyleOptions {
 
 function mergeStyles(
   styles: MantineStyleProp | CssVarsProp | undefined,
-  theme: MantineTheme
+  theme: NexTheme
 ): React.CSSProperties {
   if (Array.isArray(styles)) {
     return [...styles].reduce<Record<string, any>>(

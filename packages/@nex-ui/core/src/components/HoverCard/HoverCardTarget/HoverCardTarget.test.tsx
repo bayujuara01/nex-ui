@@ -1,4 +1,4 @@
-import { createContextContainer, patchConsoleError, render, tests } from '@mantine-tests/core';
+import { createContextContainer, patchConsoleError, render, tests } from '@nex-ui-tests/core';
 import { HoverCard } from '../HoverCard';
 import { HoverCardTarget, HoverCardTargetProps } from './HoverCardTarget';
 

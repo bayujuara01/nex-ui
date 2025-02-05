@@ -7,7 +7,7 @@ import {
   Factory,
   getDefaultZIndex,
   StylesApiProps,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useStyles,
 } from '../../core';
@@ -77,7 +77,7 @@ export const LoadingOverlay = factory<LoadingOverlayFactory>((_props, ref) => {
     ...others
   } = props;
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const getStyles = useStyles<LoadingOverlayFactory>({
     name: 'LoadingOverlay',

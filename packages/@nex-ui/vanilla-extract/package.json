@@ -1,0 +1,44 @@
+{
+  "name": "@nex-ui/vanilla-extract",
+  "version": "7.15.3",
+  "description": "Vanilla Extract integration for Nex UI theme",
+  "homepage": "https://nex-ui.dev",
+  "license": "MIT",
+  "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev@gmail.com>",
+  "keywords": [
+    "frontend",
+    "library",
+    "next",
+    "nextjs",
+    "react",
+    "vanilla-extract"
+  ],
+  "sideEffects": false,
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./cjs/index.cjs"
+      }
+    }
+  },
+  "repository": {
+    "url": "https://github.com/bayujuara01/nex-ui.git",
+    "type": "git",
+    "directory": "packages/@nex-ui/vanilla-extract"
+  },
+  "peerDependencies": {
+    "@nex-ui/core": "~7.15.3"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

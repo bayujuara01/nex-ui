@@ -1,4 +1,4 @@
-import { getBreakpointValue, keys, MantineTheme, rem } from '../../../../core';
+import { getBreakpointValue, keys, NexTheme, rem } from '../../../../core';
 import type { AppShellProps } from '../../AppShell';
 import { getBaseSize } from '../get-base-size/get-base-size';
 import type { CSSVariables, MediaQueryVariables } from '../get-variables/get-variables';
@@ -10,7 +10,7 @@ interface AssignNavbarVariablesInput {
   minMediaStyles: MediaQueryVariables;
   maxMediaStyles: MediaQueryVariables;
   navbar: AppShellProps['navbar'] | undefined;
-  theme: MantineTheme;
+  theme: NexTheme;
 }
 
 export function assignNavbarVariables({

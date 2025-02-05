@@ -1,6 +1,6 @@
-# Mantine tests
+# Nex UI tests
 
-Test utilities for Mantine components.
+Test utilities for Nex UI components.
 
 ## License
 

@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { Blockquote, BlockquoteProps, BlockquoteStylesNames } from './Blockquote';
 
 const defaultProps: BlockquoteProps = {

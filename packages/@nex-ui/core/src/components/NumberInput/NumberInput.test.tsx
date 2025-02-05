@@ -7,7 +7,7 @@ import {
   screen,
   tests,
   userEvent,
-} from '@mantine-tests/core';
+} from '@nex-ui-tests/core';
 import { __InputStylesNames } from '../Input';
 import { NumberInput, NumberInputHandlers, NumberInputProps } from './NumberInput';
 

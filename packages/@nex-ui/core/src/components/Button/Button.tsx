@@ -8,7 +8,7 @@ import {
   MantineColor,
   MantineGradient,
   MantineRadius,
-  MantineSize,
+  NexSize,
   polymorphicFactory,
   PolymorphicFactory,
   rem,
@@ -52,7 +52,7 @@ export interface ButtonProps extends BoxProps, StylesApiProps<ButtonFactory> {
   'data-disabled'?: boolean;
 
   /** Controls button `height`, `font-size` and horizontal `padding`, `'sm'` by default */
-  size?: MantineSize | `compact-${MantineSize}` | (string & {});
+  size?: NexSize | `compact-${NexSize}` | (string & {});
 
   /** Key of `theme.colors` or any valid CSS color, `theme.primaryColor` by default */
   color?: MantineColor;
@@ -237,6 +237,6 @@ export const Button = polymorphicFactory<ButtonFactory>((_props, ref) => {
 });
 
 Button.classes = classes;
-Button.displayName = '@mantine/core/Button';
+Button.displayName = '@nex-ui/core/Button';
 Button.Group = ButtonGroup;
 Button.GroupSection = ButtonGroupSection;

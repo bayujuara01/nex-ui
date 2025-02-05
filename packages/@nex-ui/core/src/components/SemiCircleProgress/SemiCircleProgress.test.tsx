@@ -1,4 +1,4 @@
-import { patchConsoleError, render, screen, tests } from '@mantine-tests/core';
+import { patchConsoleError, render, screen, tests } from '@nex-ui-tests/core';
 import {
   SemiCircleProgress,
   SemiCircleProgressProps,

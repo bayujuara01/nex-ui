@@ -1,4 +1,4 @@
-import { render, screen, tests } from '@mantine-tests/core';
+import { render, screen, tests } from '@nex-ui-tests/core';
 import { Input, InputProps, InputStylesNames } from './Input';
 import { InputDescription } from './InputDescription/InputDescription';
 import { InputError } from './InputError/InputError';

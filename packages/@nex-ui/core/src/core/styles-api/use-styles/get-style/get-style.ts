@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 import { MantineStyleProp } from '../../../Box';
-import { MantineTheme } from '../../../MantineProvider';
+import { NexTheme } from '../../../NexProvider';
 import { GetStylesApiOptions } from '../../styles-api.types';
 import { getThemeStyles } from './get-theme-styles/get-theme-styles';
 import { resolveStyle } from './resolve-style/resolve-style';
@@ -11,13 +11,13 @@ export type _Styles =
   | undefined
   | Partial<Record<string, CSSProperties>>
   | ((
-      theme: MantineTheme,
+      theme: NexTheme,
       props: Record<string, any>,
       ctx: Record<string, any> | undefined
     ) => Partial<Record<string, CSSProperties>>);
 
 export interface GetStyleInput {
-  theme: MantineTheme;
+  theme: NexTheme;
   themeName: string[];
   selector: string;
   rootSelector: string;

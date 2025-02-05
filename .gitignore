@@ -49,9 +49,9 @@ packages/@mantine/core/styles
 .stylelintcache
 ____test.*
 apps/help.mantine.dev/out
-apps/mantine.dev/components/___test.internal.tsx
-apps/mantine.dev/.cache
-apps/mantine.dev/out
-apps/mantine.dev/.next
-apps/mantine.dev/src/.docgen/
+apps/nex-ui.dev/components/___test.internal.tsx
+apps/nex-ui.dev/.cache
+apps/nex-ui.dev/out
+apps/nex-ui.dev/.next
+apps/nex-ui.dev/src/.docgen/
 .samples

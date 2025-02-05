@@ -5,7 +5,7 @@ import {
   getSpacing,
   InlineStyles,
   keys,
-  useMantineTheme,
+  useNexTheme,
 } from '../../core';
 import type { GridProps } from './Grid';
 import type { GridBreakpoints } from './Grid.context';
@@ -15,7 +15,7 @@ interface GridVariablesProps extends GridProps {
 }
 
 export function GridVariables({ gutter, selector, breakpoints, type }: GridVariablesProps) {
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const _breakpoints = breakpoints || theme.breakpoints;
 
   const baseStyles: Record<string, string | undefined> = filterProps({

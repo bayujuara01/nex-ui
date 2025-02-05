@@ -6,7 +6,7 @@ import {
   Factory,
   getFontSize,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useStyles,
 } from '../../core';
@@ -34,7 +34,7 @@ export interface InlineInputProps
   id: string;
   disabled: boolean | undefined;
   error: React.ReactNode;
-  size: MantineSize | (string & {}) | undefined;
+  size: NexSize | (string & {}) | undefined;
   labelPosition?: 'left' | 'right';
   bodyElement?: any;
   labelElement?: any;

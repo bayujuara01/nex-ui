@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../../MantineProvider';
+import { DEFAULT_THEME } from '../../../NexProvider';
 import { STYlE_PROPS_DATA } from '../style-props-data';
 import { parseStyleProps } from './parse-style-props';
 

@@ -6,7 +6,7 @@ import {
   factory,
   Factory,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -25,10 +25,10 @@ export interface PillGroupProps
     StylesApiProps<PillGroupFactory>,
     ElementProps<'div'> {
   /** Controls spacing between pills, by default controlled by `size` */
-  gap?: MantineSize | (string & {}) | number;
+  gap?: NexSize | (string & {}) | number;
 
   /** Controls size of the child `Pill` components and gap between them, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** Determines whether child `Pill` components should be disabled */
   disabled?: boolean;
@@ -39,7 +39,7 @@ export type PillGroupFactory = Factory<{
   ref: HTMLDivElement;
   stylesNames: PillGroupStylesNames;
   vars: PillGroupCssVariables;
-  ctx: { size: MantineSize | (string & {}) | undefined };
+  ctx: { size: NexSize | (string & {}) | undefined };
 }>;
 
 const defaultProps: Partial<PillGroupProps> = {};

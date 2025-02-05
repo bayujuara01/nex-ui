@@ -1,6 +1,6 @@
 import { CssVariable } from '../../Box';
 import { FactoryPayload } from '../../factory';
-import { MantineTheme } from '../../MantineProvider';
+import { NexTheme } from '../../NexProvider';
 
 export type TransformVars<V> = {
   [Key in keyof V]: V[Key] extends CssVariable ? Record<V[Key], string | undefined> : never;
@@ -13,13 +13,13 @@ export type PartialTransformVars<V> = {
 };
 
 export type VarsResolver<Payload extends FactoryPayload> = (
-  theme: MantineTheme,
+  theme: NexTheme,
   props: Payload['props'],
   ctx: Payload['ctx']
 ) => TransformVars<Payload['vars']>;
 
 export type PartialVarsResolver<Payload extends FactoryPayload> = (
-  theme: MantineTheme,
+  theme: NexTheme,
   props: Payload['props'],
   ctx: Payload['ctx']
 ) => PartialTransformVars<Payload['vars']>;

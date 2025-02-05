@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { AppShell, AppShellProps, AppShellStylesNames } from './AppShell';
 
 const defaultProps: AppShellProps = {};

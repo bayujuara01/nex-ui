@@ -10,7 +10,7 @@ import {
   getSize,
   MantineGradient,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -44,7 +44,7 @@ export interface ActionIconGroupSectionProps
   autoContrast?: boolean;
 
   /** Controls section `height`, `font-size` and horizontal `padding`, `'sm'` by default */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 }
 
 export type ActionIconGroupSectionFactory = Factory<{

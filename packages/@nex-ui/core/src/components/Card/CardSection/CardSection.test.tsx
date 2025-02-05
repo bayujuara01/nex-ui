@@ -1,4 +1,4 @@
-import { createContextContainer, render, tests } from '@mantine-tests/core';
+import { createContextContainer, render, tests } from '@nex-ui-tests/core';
 import { Card } from '../Card';
 import { CardSection, CardSectionProps, CardSectionStylesNames } from './CardSection';
 

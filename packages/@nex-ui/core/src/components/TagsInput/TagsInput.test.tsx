@@ -1,4 +1,4 @@
-import { inputDefaultProps, inputStylesApiSelectors, tests } from '@mantine-tests/core';
+import { inputDefaultProps, inputStylesApiSelectors, tests } from '@nex-ui-tests/core';
 import { TagsInput, TagsInputProps, TagsInputStylesNames } from './TagsInput';
 
 const defaultProps: TagsInputProps = {

@@ -1,4 +1,4 @@
-import { render, screen, tests, userEvent } from '@mantine-tests/core';
+import { render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { DirectionProvider } from '../../core';
 import { Tabs, TabsProps, TabsStylesNames } from './Tabs';
 import { TabsList } from './TabsList/TabsList';

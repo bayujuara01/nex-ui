@@ -13,7 +13,7 @@ import { MantineEmotionProvider } from '@mantine/emotion';
 import { ModalsProvider } from '@mantine/modals';
 import { Notifications } from '@mantine/notifications';
 import { ShikiProvider } from '@mantinex/shiki';
-import { theme } from '../apps/mantine.dev/theme';
+import { theme } from '../apps/nex-ui.dev/theme';
 
 export const parameters = {
   layout: 'fullscreen',

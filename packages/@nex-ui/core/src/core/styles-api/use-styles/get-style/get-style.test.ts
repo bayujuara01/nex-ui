@@ -1,7 +1,7 @@
-import { DEFAULT_THEME, MantineTheme } from '../../../MantineProvider';
+import { DEFAULT_THEME, NexTheme } from '../../../NexProvider';
 import { getStyle, GetStyleInput } from './get-style';
 
-const THEME_WITH_STYLES: MantineTheme = {
+const THEME_WITH_STYLES: NexTheme = {
   ...DEFAULT_THEME,
   components: {
     TestComponentObject: {
@@ -11,7 +11,7 @@ const THEME_WITH_STYLES: MantineTheme = {
     },
 
     TestComponentFunction: {
-      styles: (theme: MantineTheme, props: Record<string, any>) => ({
+      styles: (theme: NexTheme, props: Record<string, any>) => ({
         root: { background: props['data-color'], outlineColor: theme.colors.red[0] },
       }),
     },

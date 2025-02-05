@@ -1,4 +1,4 @@
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { TextStylesNames } from '../Text';
 import { Highlight, HighlightProps } from './Highlight';
 

@@ -1,4 +1,4 @@
-import { createContextContainer, tests } from '@mantine-tests/core';
+import { createContextContainer, tests } from '@nex-ui-tests/core';
 import { List } from '../List';
 import { ListItem, ListItemProps, ListItemStylesNames } from './ListItem';
 

@@ -1,5 +1,5 @@
 import { cleanup } from '@testing-library/react';
-import { render, screen, tests, userEvent } from '@mantine-tests/core';
+import { render, screen, tests, userEvent } from '@nex-ui-tests/core';
 import { Menu, MenuProps } from './Menu';
 import { MenuDivider } from './MenuDivider/MenuDivider';
 import { MenuDropdown } from './MenuDropdown/MenuDropdown';

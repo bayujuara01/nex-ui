@@ -6,7 +6,7 @@ import {
   Factory,
   factory,
   getSize,
-  MantineSize,
+  NexSize,
   StylesApiProps,
   useProps,
   useStyles,
@@ -22,7 +22,7 @@ export interface ComboboxChevronProps
   extends BoxProps,
     StylesApiProps<ComboboxChevronFactory>,
     ElementProps<'svg', 'opacity' | 'display'> {
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
   error?: React.ReactNode;
 }
 

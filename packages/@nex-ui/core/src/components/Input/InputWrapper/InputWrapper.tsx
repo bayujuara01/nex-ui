@@ -8,7 +8,7 @@ import {
   factory,
   Factory,
   getFontSize,
-  MantineSize,
+  NexSize,
   rem,
   StylesApiProps,
   useProps,
@@ -89,7 +89,7 @@ export interface InputWrapperProps
   id?: string;
 
   /** Controls size of `Input.Label`, `Input.Description` and `Input.Error` components */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** `Input.Label` root element, `'label'` by default */
   labelElement?: 'label' | 'div';

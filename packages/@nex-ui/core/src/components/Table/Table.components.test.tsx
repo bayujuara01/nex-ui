@@ -4,7 +4,7 @@ import {
   render,
   screen,
   tests,
-} from '@mantine-tests/core';
+} from '@nex-ui-tests/core';
 import { Table } from './Table';
 import {
   TableCaption,

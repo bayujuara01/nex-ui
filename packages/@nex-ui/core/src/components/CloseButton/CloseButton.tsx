@@ -4,7 +4,7 @@ import {
   getRadius,
   getSize,
   MantineRadius,
-  MantineSize,
+  NexSize,
   polymorphicFactory,
   PolymorphicFactory,
   rem,
@@ -26,7 +26,7 @@ export interface __CloseButtonProps {
   'data-disabled'?: boolean;
 
   /** Controls width and height of the button. Numbers are converted to rem. `'md'` by default. */
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
 
   /** Key of `theme.radius` or any valid CSS value to set border-radius. Numbers are converted to rem. `theme.defaultRadius` by default. */
   radius?: MantineRadius;

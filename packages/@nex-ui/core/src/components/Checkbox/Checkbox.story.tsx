@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MantineThemeProvider } from '../../core';
+import { NexThemeProvider } from '../../core';
 import { Stack } from '../Stack';
 import { Tooltip } from '../Tooltip';
 import { Checkbox } from './Checkbox';
@@ -108,9 +108,9 @@ export function CheckboxGroup() {
 
 export function CursorPointer() {
   return (
-    <MantineThemeProvider theme={{ cursorType: 'pointer' }}>
+    <NexThemeProvider theme={{ cursorType: 'pointer' }}>
       <Checkbox label="Hello" value="1" />
-    </MantineThemeProvider>
+    </NexThemeProvider>
   );
 }
 

@@ -1,4 +1,4 @@
-import { DEFAULT_THEME } from '../../MantineProvider';
+import { DEFAULT_THEME } from '../../NexProvider';
 import { px } from '../units-converters';
 import { getBreakpointValue } from './get-breakpoint-value';
 

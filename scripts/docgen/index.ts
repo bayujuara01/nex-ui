@@ -4,7 +4,7 @@ import { DOCGEN_PATHS } from './docgen-paths';
 
 generateDeclarations({
   tsConfigPath: getPath('tsconfig.json'),
-  outputPath: getPath('apps/mantine.dev/src/.docgen'),
+  outputPath: getPath('apps/nex-ui.dev/src/.docgen'),
   componentsPaths: DOCGEN_PATHS,
   excludeProps: ['ms', 'me', 'ps', 'pe'],
   typesReplacement: {

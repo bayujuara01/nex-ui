@@ -4,7 +4,7 @@ import {
   Factory,
   getFontSize,
   getSize,
-  MantineSize,
+  NexSize,
   MantineThemeComponent,
   rem,
   StylesApiProps,
@@ -59,7 +59,7 @@ export interface ComboboxProps extends __PopoverProps, StylesApiProps<ComboboxFa
   onOptionSubmit?: (value: string, optionProps: ComboboxOptionProps) => void;
 
   /** Controls items `font-size` and `padding`, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** Controls `padding` of the dropdown, `4` by default */
   dropdownPadding?: React.CSSProperties['padding'];

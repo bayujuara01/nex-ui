@@ -1,9 +1,9 @@
 import { forwardRef } from 'react';
-import { ElementProps, MantineSize } from '../../../core';
+import { ElementProps, NexSize } from '../../../core';
 import { __CloseButtonProps, CloseButton } from '../../CloseButton';
 
 export interface ComboboxClearButtonProps extends __CloseButtonProps, ElementProps<'button'> {
-  size?: MantineSize | (string & {}) | number;
+  size?: NexSize | (string & {}) | number;
   onClear: () => void;
 }
 

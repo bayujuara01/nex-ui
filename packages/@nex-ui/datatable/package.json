@@ -1,0 +1,74 @@
+{
+  "name": "@nex-ui/datatable",
+  "version": "2.0.0-beta.8",
+  "license": "MIT",
+  "description": "A fully featured Nex UI implementation of TanStack React Table V8, written from the ground up in TypeScript.",
+  "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev>",
+  "keywords": [
+    "react-table",
+    "tanstack table",
+    "data table",
+    "data grid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bayujuara01/nex-ui.git",
+    "directory": "packages/@nex-ui/datatable"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/kevinvandy"
+  },
+  "homepage": "https://www.nex-ui.dev/",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./cjs/index.cjs"
+      }
+    },
+    "./locales/*": "./locales/*",
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "dist",
+    "locales",
+    "styles.css",
+    "src"
+  ],
+  "dependencies": {
+    "@tanstack/match-sorter-utils": "8.19.4",
+    "@tanstack/react-table": "8.20.5",
+    "@tanstack/react-virtual": "3.11.2"
+  },
+  "devDependencies": {
+    "@nex-ui/context-menu": "workspace:*",
+    "@nex-ui/core": "workspace:*",
+    "@nex-ui/dates": "workspace:*",
+    "@nex-ui/hooks": "workspace:*",
+    "clsx": ">=2",
+    "dayjs": ">=1.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@nex-ui/core": "~7.15.x",
+    "@nex-ui/dates": "~7.15.x",
+    "@nex-ui/hooks": "~7.15.x",
+    "@tabler/icons-react": ">=2.23.0",
+    "clsx": ">=2",
+    "dayjs": ">=1.11",
+    "react": "^18.x || ^19.x",
+    "react-dom": "^18.x || ^19.x"
+  }
+}

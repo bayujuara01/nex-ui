@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDisclosure } from '@nex-ui/hooks';
-import { MantineThemeProvider } from '../../core';
+import { NexThemeProvider } from '../../core';
 import { Button } from '../Button';
 import { Modal } from '../Modal';
 import { SegmentedControl } from './SegmentedControl';
@@ -104,9 +104,9 @@ export function Disabled() {
 export function FocusRingAlways() {
   return (
     <div style={{ padding: 40 }}>
-      <MantineThemeProvider theme={{ focusRing: 'always' }} inherit>
+      <NexThemeProvider theme={{ focusRing: 'always' }} inherit>
         <SegmentedControl data={['React', 'Angular', 'Svelte', 'Vue']} />
-      </MantineThemeProvider>
+      </NexThemeProvider>
     </div>
   );
 }

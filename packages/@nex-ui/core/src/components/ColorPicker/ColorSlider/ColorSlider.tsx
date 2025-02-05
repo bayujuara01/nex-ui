@@ -12,10 +12,10 @@ import {
   ElementProps,
   factory,
   Factory,
-  MantineSize,
+  NexSize,
   rem,
   StylesApiProps,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useStyles,
 } from '../../../core';
@@ -31,7 +31,7 @@ export interface __ColorSliderProps extends ElementProps<'div', 'onChange'> {
   onChangeEnd?: (value: number) => void;
   onScrubStart?: () => void;
   onScrubEnd?: () => void;
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
   focusable?: boolean;
 }
 
@@ -93,7 +93,7 @@ export const ColorSlider = factory<ColorSliderFactory>((_props, ref) => {
   const ctxGetStyles = useColorPickerContext()?.getStyles;
   const getStyles = ctxGetStyles || _getStyles;
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
   const [position, setPosition] = useState({ y: 0, x: value / maxValue });
   const positionRef = useRef(position);
   const getChangeValue = (val: number) => (round ? Math.round(val * maxValue) : val * maxValue);

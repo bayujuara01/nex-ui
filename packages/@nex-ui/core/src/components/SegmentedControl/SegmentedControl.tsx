@@ -14,9 +14,9 @@ import {
   getThemeColor,
   MantineColor,
   MantineRadius,
-  MantineSize,
+  NexSize,
   StylesApiProps,
-  useMantineTheme,
+  useNexTheme,
   useProps,
   useStyles,
 } from '../../core';
@@ -76,7 +76,7 @@ export interface SegmentedControlProps
   color?: MantineColor;
 
   /** Controls `font-size`, `padding` and `height` properties, `'sm'` by default */
-  size?: MantineSize | (string & {});
+  size?: NexSize | (string & {});
 
   /** Key of `theme.radius` or any valid CSS value to set `border-radius`, numbers are converted to rem, `theme.defaultRadius` by default */
   radius?: MantineRadius;
@@ -169,7 +169,7 @@ export const SegmentedControl = factory<SegmentedControlFactory>((_props, ref) =
     varsResolver,
   });
 
-  const theme = useMantineTheme();
+  const theme = useNexTheme();
 
   const _data = data.map((item) =>
     typeof item === 'string' ? { label: item, value: item } : item

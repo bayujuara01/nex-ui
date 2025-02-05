@@ -1,4 +1,4 @@
-import { tests } from '@mantine-tests/core';
+import { tests } from '@nex-ui-tests/core';
 import { Center, CenterProps, CenterStylesNames } from './Center';
 
 const defaultProps: CenterProps = {

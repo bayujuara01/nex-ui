@@ -1,5 +1,5 @@
 import { IconMoodSmile } from '@tabler/icons-react';
-import { render, tests } from '@mantine-tests/core';
+import { render, tests } from '@nex-ui-tests/core';
 import { Notification, NotificationProps, NotificationStylesNames } from './Notification';
 
 const defaultProps: NotificationProps = {

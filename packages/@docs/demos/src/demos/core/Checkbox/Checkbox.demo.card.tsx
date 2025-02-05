@@ -1,0 +1,103 @@
+import { useState } from 'react';
+import { Checkbox, Group, Text } from '@nex-ui/core';
+import { MantineDemo } from '@nex-uix/demo';
+import classes from './Checkbox.demo.card.module.css';
+
+const cssCode = `.root {
+  position: relative;
+  padding: var(--nex-spacing-md);
+  transition: border-color 150ms ease;
+
+  &[data-checked] {
+    border-color: var(--nex-primary-color-filled);
+  }
+
+  @mixin hover {
+    @mixin light {
+      background-color: var(--nex-color-gray-0);
+    }
+
+    @mixin dark {
+      background-color: var(--nex-color-dark-6);
+    }
+  }
+}
+
+.label {
+  font-family: var(--nex-font-family-monospace);
+  font-weight: bold;
+  font-size: var(--nex-font-size-md);
+  line-height: 1.3;
+  color: var(--nex-color-bright);
+}
+
+.description {
+  margin-top: 8px;
+  color: var(--nex-color-dimmed);
+  font-size: var(--nex-font-size-xs);
+}
+`;
+
+const code = `
+import { useState } from 'react';
+import { Checkbox, Group, Text } from '@nex-ui/core';
+import classes from './Demo.module.css';
+
+function Demo() {
+  const [checked, setChecked] = useState(false);
+
+  return (
+    <Checkbox.Card
+      className={classes.root}
+      radius="md"
+      checked={checked}
+      onClick={() => setChecked((c) => !c)}
+    >
+      <Group wrap="nowrap" align="flex-start">
+        <Checkbox.Indicator />
+        <div>
+          <Text className={classes.label}>@nex-ui/core</Text>
+          <Text className={classes.description}>
+            Core components library: inputs, buttons, overlays, etc.
+          </Text>
+        </div>
+      </Group>
+    </Checkbox.Card>
+  );
+}
+`;
+
+function Demo() {
+  const [checked, setChecked] = useState(false);
+
+  return (
+    <Checkbox.Card
+      className={classes.root}
+      radius="md"
+      checked={checked}
+      onClick={() => setChecked((c) => !c)}
+    >
+      <Group wrap="nowrap" align="flex-start">
+        <Checkbox.Indicator />
+        <div>
+          <Text className={classes.label}>@nex-ui/core</Text>
+          <Text className={classes.description}>
+            Core components library: inputs, buttons, overlays, etc.
+          </Text>
+        </div>
+      </Group>
+    </Checkbox.Card>
+  );
+}
+
+export const card: MantineDemo = {
+  type: 'code',
+  centered: true,
+  maxWidth: 320,
+  component: Demo,
+  defaultExpanded: false,
+  code: [
+    { fileName: 'Demo.tsx', language: 'tsx', code },
+    { fileName: 'Demo.module.css', language: 'scss', code: cssCode },
+  ],
+};
