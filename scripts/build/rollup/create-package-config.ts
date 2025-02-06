@@ -2,6 +2,7 @@ import path from 'node:path';
 import alias, { Alias } from '@rollup/plugin-alias';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
+import babel from '@rollup/plugin-babel'
 import { generateScopedName } from 'hash-css-selector';
 import { RollupOptions } from 'rollup';
 import banner from 'rollup-plugin-banner2';
@@ -32,6 +33,12 @@ export function createPackageConfig(packagePath: string): RollupOptions {
       extract: true,
       modules: { generateScopedName },
       plugins: [ postcssPrefixAliasPlugin() ]
+    }),
+    babel({
+      babelHelpers: "bundled",
+      exclude: 'node_modules/**', // Ensure Babel processes only source files
+      extensions: ['.js', '.ts', '.tsx', '.jsx'], // Include TypeScript if needed
+      plugins: ["macros"]
     }),
     banner((chunk) => {
       if (!ROLLUP_EXCLUDE_USE_CLIENT.includes(chunk.fileName)) {

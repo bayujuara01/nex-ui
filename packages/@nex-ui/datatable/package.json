@@ -1,8 +1,9 @@
 {
   "name": "@nex-ui/datatable",
-  "version": "2.0.0-beta.8",
+  "version": "2.0.0-beta.10",
   "license": "MIT",
   "description": "A fully featured Nex UI implementation of TanStack React Table V8, written from the ground up in TypeScript.",
+  "homepage": "https://www.nex-ui.dev/",
   "author": "Bayu Seno Ariefyanto <ariefyantobayu.dev>",
   "keywords": [
     "react-table",
@@ -10,16 +11,6 @@
     "data table",
     "data grid"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bayujuara01/nex-ui.git",
-    "directory": "packages/@nex-ui/datatable"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/kevinvandy"
-  },
-  "homepage": "https://www.nex-ui.dev/",
   "sideEffects": [
     "*.css"
   ],
@@ -40,12 +31,11 @@
     "./locales/*": "./locales/*",
     "./styles.css": "./styles.css"
   },
-  "files": [
-    "dist",
-    "locales",
-    "styles.css",
-    "src"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bayujuara01/nex-ui.git",
+    "directory": "packages/@nex-ui/datatable"
+  },
   "dependencies": {
     "@tanstack/match-sorter-utils": "8.19.4",
     "@tanstack/react-table": "8.20.5",

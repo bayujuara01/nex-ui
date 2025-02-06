@@ -846,7 +846,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.16.7, @babel/helper-module-imports@npm:^7.25.9":
+"@babel/helper-module-imports@npm:^7.16.7, @babel/helper-module-imports@npm:^7.18.6, @babel/helper-module-imports@npm:^7.25.9":
   version: 7.25.9
   resolution: "@babel/helper-module-imports@npm:7.25.9"
   dependencies:
@@ -4505,6 +4505,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/plugin-babel@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "@rollup/plugin-babel@npm:6.0.4"
+  dependencies:
+    "@babel/helper-module-imports": "npm:^7.18.6"
+    "@rollup/pluginutils": "npm:^5.0.1"
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    "@types/babel__core": ^7.1.9
+    rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+  peerDependenciesMeta:
+    "@types/babel__core":
+      optional: true
+    rollup:
+      optional: true
+  checksum: 10c0/5a7c04fa6d608512b597835e749aef33e129ee9ed6cc9e33489b7d43937358fc8aba48b00819604d0bc9b7c20790a6c035e4136e8d9f70cf0d0f056ba547e700
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-node-resolve@npm:^15.3.0":
   version: 15.3.1
   resolution: "@rollup/plugin-node-resolve@npm:15.3.1"
@@ -6722,7 +6741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14, @types/babel__core@npm:^7.1.7, @types/babel__core@npm:^7.18.0":
+"@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.12, @types/babel__core@npm:^7.1.14, @types/babel__core@npm:^7.1.7, @types/babel__core@npm:^7.18.0":
   version: 7.20.5
   resolution: "@types/babel__core@npm:7.20.5"
   dependencies:
@@ -7118,6 +7137,13 @@ __metadata:
   version: 4.0.2
   resolution: "@types/parse-json@npm:4.0.2"
   checksum: 10c0/b1b863ac34a2c2172fbe0807a1ec4d5cb684e48d422d15ec95980b81475fac4fdb3768a8b13eef39130203a7c04340fc167bae057c7ebcafd7dec9fe6c36aeb1
+  languageName: node
+  linkType: hard
+
+"@types/preval.macro@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@types/preval.macro@npm:3.0.2"
+  checksum: 10c0/982fa13f2a66a744a51c0aba36fee688abbe86a7bae75a0bc9ef87eca3b62ff404abcbf3ed439ab42bc4a407de5a43c81545a5c09bda6967406a387b85fd3e13
   languageName: node
   linkType: hard
 
@@ -8419,7 +8445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-macros@npm:^3.1.0":
+"babel-plugin-macros@npm:^3.0.1, babel-plugin-macros@npm:^3.1.0":
   version: 3.1.0
   resolution: "babel-plugin-macros@npm:3.1.0"
   dependencies:
@@ -8463,6 +8489,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.4.0 || ^8.0.0-0 <8.0.0
   checksum: 10c0/40164432e058e4b5c6d56feecacdad22692ae0534bd80c92d5399ed9e1a6a2b6797c8fda837995daddd4ca391f9aa2d58c74ad465164922e0f73631eaf9c4f76
+  languageName: node
+  linkType: hard
+
+"babel-plugin-preval@npm:^5.0.0, babel-plugin-preval@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "babel-plugin-preval@npm:5.1.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.12.5"
+    "@types/babel__core": "npm:^7.1.12"
+    babel-plugin-macros: "npm:^3.0.1"
+    require-from-string: "npm:^2.0.2"
+  checksum: 10c0/d40814ca18f24df818a87e71ad8c1dc559cf69c0e44218bb9f5aef24680431a04e4bad8e96dc2679282b50b16a55c9597e37130d6bd5489b3eddab97d020ae5e
   languageName: node
   linkType: hard
 
@@ -16307,6 +16345,7 @@ __metadata:
     "@hello-pangea/dnd": "npm:18.0.0-beta.0"
     "@ianvs/prettier-plugin-sort-imports": "npm:^4.4.0"
     "@rollup/plugin-alias": "npm:^5.1.1"
+    "@rollup/plugin-babel": "npm:^6.0.4"
     "@rollup/plugin-node-resolve": "npm:^15.3.0"
     "@rollup/plugin-replace": "npm:^6.0.1"
     "@size-limit/preset-small-lib": "npm:^11.1.6"
@@ -16355,6 +16394,7 @@ __metadata:
     "@types/jest-axe": "npm:^3.5.9"
     "@types/lodash": "npm:^4.17.13"
     "@types/node": "npm:^22.9.1"
+    "@types/preval.macro": "npm:^3.0.2"
     "@types/react": "npm:19.0.1"
     "@types/react-dom": "npm:19.0.1"
     "@types/react-transition-group": "npm:^4.4.11"
@@ -16365,6 +16405,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^8.8.1"
     "@typescript-eslint/parser": "npm:^8.8.1"
     babel-loader: "npm:^9.2.1"
+    babel-plugin-preval: "npm:^5.1.0"
     chalk: "npm:^5.3.0"
     chroma-js: "npm:^3.1.2"
     clsx: "npm:^2.1.1"
@@ -16404,6 +16445,7 @@ __metadata:
     postcss-preset-mantine: "npm:1.17.0"
     postcss-simple-vars: "npm:^7.0.1"
     prettier: "npm:^3.3.3"
+    preval.macro: "npm:^5.0.0"
     prop-types: "npm:^15.8.1"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
@@ -18021,6 +18063,15 @@ __metadata:
     ansi-styles: "npm:^5.0.0"
     react-is: "npm:^18.0.0"
   checksum: 10c0/edc5ff89f51916f036c62ed433506b55446ff739358de77207e63e88a28ca2894caac6e73dcb68166a606e51c8087d32d400473e6a9fdd2dbe743f46c9c0276f
+  languageName: node
+  linkType: hard
+
+"preval.macro@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "preval.macro@npm:5.0.0"
+  dependencies:
+    babel-plugin-preval: "npm:^5.0.0"
+  checksum: 10c0/cee971359aa216190928bfff3c9b58f01b536bd6ded216f6f59b6f5405cfe32bb9535238d0e32afa7e68c0d0688e2cef5e894e19063c4a648d92c734fe218f6f
   languageName: node
   linkType: hard
 

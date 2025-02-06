@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { NexTable, NexReactTable, NexTableColumnDef,useNexReactTable } from "@nex-ui/datatable";
 import { MantineDemo } from "@nex-uix/demo";
-
+import preval from "preval.macro";
 
 const code = `
 import { useMemo } from "react";
@@ -104,6 +104,13 @@ function Demo() {
 }
 `;
 
+const codeJS = preval`
+  const ts = require('typescript');
+  module.exports = ts.transpileModule(\`${code}\`, {
+  compilerOptions: { module: ts.ModuleKind.ESNext, jsx: ts.JsxEmit.Preserve },
+  }).outputText
+`;
+
 type Person = {
   name: {
     firstName: string;
@@ -204,6 +211,7 @@ export const usage: MantineDemo = {
   type: 'code',
   component: Wrapper,
   code: [
-    { code, language: 'tsx', fileName: 'Demo.tsx' }
+    { code, language: 'tsx', fileName: 'Demo.tsx' },
+    { code: codeJS, language: 'tsx', fileName: 'Demo.jsx' },
   ]
 }
